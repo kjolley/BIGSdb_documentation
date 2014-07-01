@@ -285,60 +285,145 @@ Top level element. Contains child elements: system, field and sample.::
   * isolate databases only: Switches off display of publication filter in isolate query form by default: either 'yes' or 'no', default 'no'. (Version 1.8+)	
   * optional
 
-<field>
+::
 
-Element content: Field name + optional list <optlist> of allowed values, e.g.
+ <field>
 
-<field type="text" required="no" length="40" maindisplay="no"
-web="http://somewebsite.com/cgi-bin/script.pl?id=[?]" optlist="yes">epidemiology
-  <optlist>
-   <option>carrier</option>
-   <option>healthy contact</option>
-   <option>sporadic case</option>
-   <option>endemic</option>
-   <option>epidemic</option>
-   <option>pandemic</option>
-  </optlist>
-</field>
+Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
-Attribute	Description	Required
-type	data type: int, text, float or date	required
-min	minimum value for integer types.(introduced in v1.7)	optional
-max	maximum value for integer types. Special values such as CURRENT_YEAR can be used. (introduced in v1.7)	optional
-required	is data required for this field? 'yes' or 'no', default 'yes'	optional
-maindisplay	is field displayed in main table after database search? 'yes' or 'no', default 'yes'. This setting can be overridden by individual user preferences.	optional
-length	length of field, default 12	optional
-optlist	does this field have a list of allowed values? default 'no'. Surround each option with an <option> tag	optional
-dropdown	select if you want this field to have its own dropdown box on the query page. If the field has an option list it will use the values in it, otherwise all values defined in the database will be included: 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	optional
-comments	comments about the field	optional	
-web	URL that will be used to hyperlink field values. If [?] is included in the URL, this will be substituted for the actual field value.	optional
-regex	Regular expression used to constrain field values, e.g. regex="^[A-Z].*$" forces the first letter of the value to be capitalized.	optional
+  <field type="text" required="no" length="40" maindisplay="no"
+     web="http://somewebsite.com/cgi-bin/script.pl?id=[?]" optlist="yes">epidemiology
+    <optlist>
+     <option>carrier</option>
+     <option>healthy contact</option>
+     <option>sporadic case</option>
+     <option>endemic</option>
+     <option>epidemic</option>
+     <option>pandemic</option>
+    </optlist>
+  </field>
+
+* type	
+
+  * data type: int, text, float or date	
+  * required
+
+* min	
+
+  * minimum value for integer types.(introduced in v1.7)	
+  * optional
+
+* max	
+
+  * maximum value for integer types. Special values such as CURRENT_YEAR can be used. (introduced in v1.7)	
+  * optional
+
+* required	
+
+  * is data required for this field? 'yes' or 'no', default 'yes'	
+  * optional
+
+* maindisplay	
+
+  * is field displayed in main table after database search? 'yes' or 'no', default 'yes'. This setting can be * overridden by individual user preferences.	
+  * optional
+
+* length	
+
+  * length of field, default 12	
+  * optional
+
+* optlist	
+
+  * does this field have a list of allowed values? default 'no'. Surround each option with an <option> tag	
+  * optional
+
+* dropdown	
+
+  * select if you want this field to have its own dropdown box on the query page. If the field has an option list it will use the values in it, otherwise all values defined in the database will be included: 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	
+  * optional
+
+* comments	
+
+  * comments about the field	
+  * optional
+
+* web	
+
+  * URL that will be used to hyperlink field values. If [?] is included in the URL, this will be substituted for the actual field value.	
+  * optional
+
+* regex	
+
+  * regular expression used to constrain field values, e.g. regex="^[A-Z].*$" forces the first letter of the value to be capitalized.	
+  * optional
+
 Special values
+--------------
 The following special variables can be used in place of an actual value:
 
-    CURRENT_YEAR: the 4 digit value of the current year
+* CURRENT_YEAR: the 4 digit value of the current year
+::
 
-<sample>
+ <sample>
 
 Element content: Sample field name + optional list <optlist> of allowed values. Attributes are essentially the same as isolate field attributes, but refer to the samples table rather than the isolates table.
 
 The sample table, if defined, must include isolate_id and sample_id fields, which must also be described in the XML file. These must be set as integer fields.
+
 Sequence definition database XML attributes
-<db>
+-------------------------------------------
+::
+
+ <db>
 
 Top level element. Contains child elements: system, field and sample.
-<system>
-Attribute	Description	Required
-db	name of database on system	required
-dbtype	type of database: either 'isolates' or 'sequences'	required
-description	Description of database used throughout interface	required
-authentication	method of authentication: either 'builtin' or 'apache'. See user authentication. 	required
-webroot	URL of web root, which can be relative or absolute. The bigsdb.css stylesheet file should be located in this directory. Default '/'	optional
-script_path_includes	partial path of the bigsdb.pl script used to access the database. See user authentication.	optional
-curate_path_includes	partial path of the bigscurate.pl script used to curate the database. See user authentication.	optional
-read_access	Describes who can view data: either 'public' for everybody, or 'authenticated_users' for anybody who has been able to log in. Default 'public'.	optional
-disable_seq_downloads
-	Prevent users or curators from downloading all alleles for a locus (admins always can). 'yes' or 'no', default 'no'.	optional
+::
+
+ <system>
+* db
+
+  * name of database on system	
+  * required
+
+* dbtype	
+
+  * type of database: either 'isolates' or 'sequences'	
+  * required
+
+* description	
+
+  * description of database used throughout interface	
+  * required
+
+* authentication	
+
+  * method of authentication: either 'builtin' or 'apache'. See user authentication. 	
+  * required
+
+* webroot	
+
+  * URL of web root, which can be relative or absolute. The bigsdb.css stylesheet file should be located in this directory. Default '/'	
+  * optional
+
+* script_path_includes	
+
+  * partial path of the bigsdb.pl script used to access the database. See user authentication.	
+  * optional
+
+* curate_path_includes	
+
+  * partial path of the bigscurate.pl script used to curate the database. See user authentication.	
+  * optional
+
+* read_access	
+
+  * describes who can view data: either 'public' for everybody, or 'authenticated_users' for anybody who has been able to log in. Default 'public'.	
+  * optional
+
+* disable_seq_downloads
+	
+  * prevent users or curators from downloading all alleles for a locus (admins always can). 'yes' or 'no', default 'no'.	  * optional
 	
 Setting up the admin user
 =========================
