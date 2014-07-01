@@ -45,15 +45,14 @@ All databases on a system can use the same instance of the scripts, or alternati
  (substitute www-data for the web daemon user).
 
 Site-specific configuration
----------------------------
-
+===========================
 Site-specific configuration files are located in /etc/bigsdb by default.
 
 * :download:`bigsdb.conf <conf/bigsdb.conf>` - main configuration file
 * :download:`logging.conf <conf/logging.conf>` - error logging settings. See log4perl project website for advanced configuration details.
 
 Database-specific configuration
--------------------------------
+===============================
 Details for creating the databases can be found in the software distribution package.
 
 Each BIGSdb database on a system has its own configuration directory, by default in /etc/bigsdb/dbases. The database has a short configuration name used to specify it in a web query and this matches the name of the configuration sub-directory, e.g. http://pubmlst.org/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_isolates is the URL of the front page of the PubMLST Neisseria isolate database whose configuration settings are stored in /etc/bigsdb/dbases/pubmlst_neisseria_isolates. This database sub-directory contains a number of files (hyperlinks lead to the files used on the Neisseria database):
@@ -66,7 +65,32 @@ Each BIGSdb database on a system has its own configuration directory, by default
 * curate_footer.html - HTML markup that is inserted at the bottom of all curator's interface pages.
 
 User authentication
--------------------
+===================
+You can choose whether to allow Apache to handle your authentication or use built-in authentication.
+
+Apache authentication
+---------------------
+Using apache to provide your authentication allows a flexible range of methods and back-ends (see the Apache authentication HowTo for a start, or any number of tutorials on the web).
+
+At its simplest, use a .htaccess file in the directory containing the bigscurate.pl (and bigsdb.pl for restriction of read-access) script or by equivalent protection of the directory in the main Apache server configuration. It is important to note however that, by default, any BIGSdb database can be accessed by any instance of the BIGSdb script (including one which may not be protected by a .htaccess file, allowing public access). To ensure that only a particular instance (protected by a specific htaccess directive) can access the database, the following attributes can be set in the system tag of the database XML description file:
+
+* script_path_includes: the BIGSdb script path must contain the value set.
+* curate_path_includes: the BIGSdb curation script path must contain the value set.
+
+For public databases, the 'script_path_includes' attribute need not be set.
+
+To use apache authentication you need to set the authentication attribute in the system tag of the database XML configuration to 'apache'.
+
+Built-in authentication
+-----------------------
+BIGSdb has its own built-in authentication, using a separate database to store password and session hashes. The advantages of using this over many forms of apache authentication are:
+
+* Users are able to update their own passwords.
+* Passwords are not transmitted over the Internet in plain text.
+
+When a user logs in, the server provides a random one-time session variable and the user is prompted to enter their username and password. The password is encrypted within the browser using a Javscript one-way hash algorithm, and this is combined with the session variable and hashed again. This hash is passed to the server. The server compares this hash with its own calculated hash of the stored encrypted password and session variable that it originally sent to the browser. Implementation is based on `perl-md5-login <http://perl-md5-login.sourceforge.net/>`_.
+
+To use built-in authentication you need to set the authentication attribute in the system tag of the database XML configuration to 'builtin'.
 
 XML configuration attributes used in config.xml
 -----------------------------------------------
