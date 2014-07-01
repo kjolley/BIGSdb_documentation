@@ -8,7 +8,7 @@ BIGSdb consists of two main Perl scripts, bigsdb.pl and bigscurate.pl, that run 
 
 All databases on a system can use the same instance of the scripts, or alternatively any database can specify a particular path for each script, enabling these script directories to be protected by apache htaccess directives.
 
- * Software requirements
+ * :doc:`Software requirements <dependencies>`
  * Download from `SourceForge.net <http://sourceforge.net/projects/bigsdb/>`_ or `GitHub <https://github.com/kjolley/BIGSdb>`_.
 
 1. Unpack the distribution package in a temporary directory: ::
