@@ -359,7 +359,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * optional
 
 Special values
---------------
+^^^^^^^^^^^^^^
 The following special variables can be used in place of an actual value:
 
 * CURRENT_YEAR: the 4 digit value of the current year
