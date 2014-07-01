@@ -106,35 +106,52 @@ Top level element. Contains child elements: system, field and sample.::
  
     <system>
     
-+------------------------+-------------------------------------------------------------------+----------------+
-|Attribute	             |Description	                                                     |Required        |
-+========================+===================================================================+================+
-|db	                     |name of database on system	                                     |required        |
-+------------------------+-------------------------------------------------------------------+----------------+
-|dbtype	                 |type of database: either 'isolates' or 'sequences'	             |required        |
-+------------------------+-------------------------------------------------------------------+----------------+
-|description             |Description of database used throughout interface                  |required        |
-+------------------------+-------------------------------------------------------------------+----------------+
-|authentication	         |method of authentication: either 'builtin' or 'apache'. See user   |required        |
-|                        |authentication. 	                                                 |                |
-+------------------------+-------------------------------------------------------------------+----------------+
-|webroot  	             |URL of web root, which can be relative or absolute. The bigsdb.css |optional        |
-|                        |stylesheet file should be located in this directory. Default '/'.  |                |
-+------------------------+-------------------------------------------------------------------+----------------+
-|view	                 |database view containing isolate data, default 'isolates'	         |optional        |
-+------------------------+-------------------------------------------------------------------+----------------+
-|script_path_includes	 |partial path of the bigsdb.pl script used to access the database.  |optional        |
-|                        |See user authentication.	                                         |                |
-+------------------------+-------------------------------------------------------------------+----------------+
-|curate_path_includes	 |partial path of the bigscurate.pl script used to curate the        |optional        |
-|                        |database. See user authentication.	                             |                |
-+------------------------+-------------------------------------------------------------------+----------------+
++------------------------+-------------------------------------------------------------------+---------+
+|Attribute	         |Description	                                                     |Required |
++========================+===================================================================+=========+
+|db	                 |name of database on system.	                                     |required |
++------------------------+-------------------------------------------------------------------+---------+
+|dbtype	                 |type of database: either 'isolates' or 'sequences'.	             |required |
++------------------------+-------------------------------------------------------------------+---------+
+|description             |Description of database used throughout interface.                 |required |
++------------------------+-------------------------------------------------------------------+---------+
+|authentication	         |method of authentication: either 'builtin' or 'apache'. See user   |required |
+|                        |authentication. 	                                             |         |
++------------------------+-------------------------------------------------------------------+---------+
+|webroot                 |URL of web root, which can be relative or absolute. The bigsdb.css |optional |
+|                        |stylesheet file should be located in this directory. Default '/'.  |         |
++------------------------+-------------------------------------------------------------------+---------+
+|view	                 |database view containing isolate data, default 'isolates'	     |optional |
++------------------------+-------------------------------------------------------------------+---------+
+|script_path_includes	 |partial path of the bigsdb.pl script used to access the database.  |optional |
+|                        |See user authentication.	                                     |         |
++------------------------+-------------------------------------------------------------------+---------+
+|curate_path_includes	 |partial path of the bigscurate.pl script used to curate the        |optional |
+|                        |database. See user authentication.	                             |         |
++------------------------+-------------------------------------------------------------------+---------+
+|noshow	                 |comma-separated list of fields not to use in breakdown statistic   |optional |
+|                        |plugins.                                                           |	       |
++------------------------+-------------------------------------------------------------------+---------+
+|fieldgroup1 -           |allows multiple fields to be queried as a group. Value should be   |optional |
+|fieldgroup10            |the name of the group followed by a colon (:) followed by a comma- |         |
+|                        |separated list of fields to group, e.g. identifiers:id,strain,     |         |
+|                        |other_name.                                                        |         |
++------------------------+-------------------------------------------------------------------+---------+
+|maindisplay_aliases     |Default setting for whether isolates aliases are displayed in main |optional |
+|                        |results tables: either 'yes' or 'no', default 'no'. This setting   |         |
+|                        |can be overridden by individual user preferences.		     |         |
++------------------------+-------------------------------------------------------------------+---------+
+|read_access	         |Describes who can view data: either 'public' for everybody,        |optional |
+|                        |'authenticated_users' for anybody who has been able to log in, or  |         |
+|                        |'acl' (access control list) for fine-grained access control to     |         |
+|                        |individual isolate records. Default 'public'.	                     |         |
++------------------------+-------------------------------------------------------------------+---------+
+|write_access            |Describes who can curate isolate records: either 'acl' (access     |optional |
+|                        |control list) for fine-grained access control to individual isolate|         |
+|                        |records, or leave empty for anybody with curator permission to     |         |
+|                        |alter isolate records.	                                     |         |
++------------------------+-------------------------------------------------------------------+---------+
 
-noshow	comma-separated list of fields not to use in breakdown statistic plugins	optional
-fieldgroup1 - fieldgroup10	allows multiple fields to be queried as a group. Value should be the name of the group followed by a colon (:) followed by a comma-separated list of fields to group, e.g. identifiers:id,strain,other_name	optional
-maindisplay_aliases	Default setting for whether isolates aliases are displayed in main results tables: either 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	optional
-read_access	Describes who can view data: either 'public' for everybody, 'authenticated_users' for anybody who has been able to log in, or 'acl' (access control list) for fine-grained access control to individual isolate records. Default 'public'.	optional
-write_access	Describes who can curate isolate records: either 'acl' (access control list) for fine-grained access control to individual isolate records, or leave empty for anybody with curator permission to alter isolate records.	optional
 locus_superscript_prefix	superscript the first letter of a locus name if it is immediately following by an underscore, e.g. f_abcZ would be displayed as fabcZ within the interface: must be either 'yes' or 'no', default 'no'. This can be used to designate gene fragments (or any other meaning you like).	optional
 hide_unused_schemes	Sets whether a scheme is shown in a main results table if none of the isolates on that page have any data for the specific scheme: either 'yes' or 'no', default 'no'	optional
 use_temp_scheme_table	Sets whether entire schemes are imported in to the isolate database in to an indexed table rather than querying the seqdef scheme view for isolate results tables. Under some circumstances this can be considerably quicker than querying the seqdef scheme view (a few ms compared to >10s if the seqdef database contains multiple schemes with an uneven distribution of a large number of profiles so that the Postgres query planner picks a sequential rather than index scan). This scheme table can also be generated periodically using the update_scheme_cache.pl script to create a persistent cache. This is particularly useful for large schemes (>10000 profiles) but data will only be as fresh as the cache so ensure that the update script is run periodically. 	optional
