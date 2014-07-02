@@ -18,6 +18,7 @@ Linux packages
   * stretcher - used for sequence alignment in allele query.
 
 * Ipcress - part of exonerate package - used to simulate PCR reactions which can be used to filter the genome to predicted amplification products.
+* Xvfb - X virtual framebuffer - needed to support SplitsTree in command line mode as used in Genome Comparator.
 
 Perl modules
 ============
@@ -36,7 +37,7 @@ These are included with most Linux distributions.
 * `Data::UUID <http://search.cpan.org/~rjbs/Data-UUID/UUID.pm>`_ - Globally unique identifer handling for preference storage
 * `List::MoreUtils <http://search.cpan.org/~adamk/List-MoreUtils/lib/List/MoreUtils.pm>`_
 * `Time::Duration <http://search.cpan.org/~avif/Time-Duration/Duration.pm>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units
-* `Excel::Writer::XLSX <http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm>`_ - Used to export data in Excel format (introduced with version 1.7.2+)
+* `Excel::Writer::XLSX <http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm>`_ - Used to export data in Excel format
 * `Parallel::ForkManager <http://search.cpan.org/~szabgab/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading autotagger and autodefiner scripts.
 
 Optional packages

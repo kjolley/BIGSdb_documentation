@@ -12,13 +12,17 @@ The software has been released under the GNU General Public Licence version 3.
 .. image:: images/general/browse.png
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    dependencies
    installation
    dbase_setup
-   user_guide
+   administrator_guide
    curator_guide
+   offline_tools
+   user_guide
+   faqs
+  
  
 
 

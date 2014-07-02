@@ -92,10 +92,17 @@ To run plugins that require a long time to complete their analyses, an offline j
 
    (set to run every minute from the 'bigsdb' user account).
 
+   If you'd like to run this more frequently, e.g. every 30 seconds, multiple entries can be added to CRON with an appropriate sleep prior to running, e.g.::
+
+     * * * * * bigsdb  xvfb-run -a /usr/local/bin/bigsjobs 
+     * * * * * bigsdb  sleep 30;xvfb-run -a /usr/local/bin/bigsjobs 
+
 6. Create a log file, bigsdb_jobs.log, in /var/log owned by 'bigsdb', e.g.::
 
     sudo touch /var/log/bigsdb_jobs.log
     sudo chown bigsdb /var/log/bigsdb_jobs.log
+
+.. _delete-temp-files: 
 
 Periodically delete temporary files
 ===================================
@@ -112,3 +119,29 @@ The easiest way to clean the temp directories is to run a cleaning script period
 
  #Remove other tmp files from web tree older than 1 week
  find /var/www/tmp/ -type f -mmin +10080 -exec rm -f {} \; 2>/dev/null
+
+Log file rotation
+=================
+
+Set the log file to auto rotate by adding a file called 'bigsdb' with the following contents to /etc/logrotate.d: ::
+
+ /var/log/bigsdb.log {
+   weekly
+   rotate 4
+   compress
+   copytruncate
+   missingok
+   notifempty
+   create 640 root adm
+ }
+
+ /var/log/bigsdb_jobs.log {
+   weekly
+   rotate 4
+   compress
+   copytruncate
+   missingok
+   notifempty
+   create 640 root adm
+ }
+

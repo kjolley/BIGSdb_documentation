@@ -22,7 +22,7 @@ Databases are described in XML files telling BIGSdb everything it needs to know 
 Creating databases
 ==================
 
-There are templates available for the sequence definition and isolate databases.  There are SQL scripts found in the sql directory.
+There are templates available for the sequence definition and isolate databases.  These are SQL scripts found in the sql directory.
 
 To create a database, you will need to log in as the postgres user and use these templates.  For example to create a new sequence definition database called bigsdb_test_seqdef, navigate to the sql directory and log in as the postgres user, e.g.::
 
@@ -428,6 +428,8 @@ Setting up the admin user
 =========================
 The first admin user needs to be manually added to the users table of the database. Connect to the database using psql and add the following (changing details to suit the user).::
 
- INSERT INTO users (id,user_name,surname,first_name,email,affiliation,status,date_entered,datestamp,curator) VALUES (1,'keith','Jolley','Keith','keith.jolley@zoo.ox.ac.uk','University of Oxford, UK','admin','today','today',1);
+ INSERT INTO users (id, user_name, surname, first_name, email, affiliation, status, date_entered,
+ datestamp, curator) VALUES (1, 'keith', 'Jolley', 'Keith', 'keith.jolley@zoo.ox.ac.uk', 
+ 'University of Oxford, UK', 'admin', 'now', 'now', 1);
 
 If you are using built-in authentication, set the password for this user using the add_user.pl script. This encrypts the password to a hash and stores this within the authentication database.  Other users can be added by the admin user from the curation interface accessible from http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you have located your bigscurate.pl script).
