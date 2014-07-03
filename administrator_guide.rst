@@ -2,6 +2,9 @@
 Administrator's guide
 *********************
 
+General
+=======
+
 Setting curator permissions and access controls
 -----------------------------------------------
 

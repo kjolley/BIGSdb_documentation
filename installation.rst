@@ -44,6 +44,66 @@ All databases on a system can use the same instance of the scripts, or alternati
 
  (substitute www-data for the web daemon user).
 
+Configuring PostgreSQL
+======================
+PostgreSQL can be configured in many ways and how you do this will depend on your site requirements.
+
+The following security settings will allow the appropriate users 'apache' and
+'bigsdb' to access databases without allowing all logged in users full access.
+Only the UNIX users 'postgres' and 'webmaster' can log in to the databases
+as the Postgres user 'postgres'.
+
+You will need to edit the pg_hba.conf and pg_ident.conf files.  These are
+found somewhere like /etc/postgresql/9.1/main/
+
+pg_hba.conf
+-----------
+::
+
+ # Database administrative login by UNIX sockets
+ local   all         postgres                          ident map=mymap
+
+ # TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+
+ # "local" is for Unix domain socket connections only
+ local   all         all                               ident map=mymap
+ # IPv4 local connections:
+ host    all         all         127.0.0.1/32          md5
+ # IPv6 local connections:
+ host    all         all         ::1/128               md5
+
+pg_ident.conf
+-------------
+::
+
+ # MAPNAME     SYSTEM-USERNAME    PG-USERNAME
+
+   mymap       postgres           postgres
+   mymap       webmaster          postgres
+   mymap       www-data           apache
+   mymap       bigsdb             bigsdb
+   mymap       bigsdb             apache
+
+You may also need to change some settings in the postgresql.conf file.  As an example, a configuration for a machine with 16GB RAM, allowing connections from a separate web server may have the following configuration changes made: ::
+
+ listen_addresses = '*'
+ max_connections = 200
+ shared_buffers = 1024Mb
+ work_mem = 8Mb
+ effective_cache_size = 8192Mb
+ stats_temp_directory = '/dev/shm'
+
+Setting stats_temp_directory to /dev/shm makes use of a ramdisk usually available on Debian or Ubuntu systems for frequently updated working files.  This reduces a lot of unneccessary disk access.
+
+See `Tuning Your PostgreSQL Server <https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server>`_ for more details.
+
+Restart PostgreSQL after any changes, e.g. ::
+ 
+ /etc/init.d/postgresql restart
+
+
+
+
 Site-specific configuration
 ===========================
 Site-specific configuration files are located in /etc/bigsdb by default.
@@ -144,4 +204,15 @@ Set the log file to auto rotate by adding a file called 'bigsdb' with the follow
    notifempty
    create 640 root adm
  }
+
+Upgrading BIGSdb
+================
+
+Major version changes, e.g. 1.7 -> 1.8, indicate that there has been a change to the underlying database structure for one or more of the database types.  Scripts to upgrade the database are provided in sql/upgrade and are named by the database type and version number.  For example, to upgrade an isolate database (bigsdb_isolates) from version 1.7 to 1.8, log in as the postgres user and type: ::
+
+ psql -f isolatedb_v1.8.sql bigsdb_isolates
+
+Upgrades are sequential, so to upgrade from a version earlier than the last major version you would need to upgrade to the intermediate version first, e.g. to go from 1.6 -> 1.8, requires upgrading to 1.7 first.
+
+Minor version changes, e.g. 1.8.0 -> 1.8.1, have no modifications to the database structures.  There will be changes to the Perl library modules and possibly to the contents of the Javascript directory, images directory and CSS files.  The version number is stored with the bigsdb.pl script, so this should also be updated so that BIGSdb correctly reports its version.  
 
