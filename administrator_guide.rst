@@ -254,6 +254,100 @@ The materialized view is used, for example, for looking up a ST from a profile a
 Dataset partitioning
 --------------------
 
+Sets
+^^^^
+Along with loci, schemes and groups of schemes, BIGSdb also has the concept of a 'set'. Sets provide a means to take a large database with multiple loci and/or schemes and present a subset of these as though it was a complete database. The loci and schemes chosen to belong to a set can be renamed when used with this set. The rationale for this is that in a database with disparate isolates and a large number of loci, the naming of these loci may have to be long to specify a species name. For example, you may have a database that contains multiple MLST schemes for different species, but since these schemes may use different fragments of the same genes they may have to be named something like 'Streptococcus_pneumoniae_MLST_aroE' to uniquely specify them. If we define a set for 'Streptococcus pneumoniae' we can then choose to only include S. pneumoniae loci and therefore shorten their names, e.g. to 'aroE'.
+
+Additional metadata fields can also be associated with each set so it is possible to have a database containing genomes from multiple species and a generic set of metadata, then have additional specific metadata fields for particular species or genera. These additional fields only become visible and searchable when the specific set that they belong to has been selected.
+
+Configuration of sets
+^^^^^^^^^^^^^^^^^^^^^
+First sets need to be enabled in the XML configuration file (config.xml) of the database. Add the following attribute to the system tag: ::
+
+ sets="yes"
+
+With this attribute, the curation interface now has options to add sets, and then add loci or schemes to these sets.
+
+.. image:: /images/administration/dataset_partitioning.png
+
+The name of a locus or scheme to use within a set can be defined in the set_name field when adding loci or schemes to a set. Common names can also be set for loci - equivalent to the common name used within the loci table.
+
+Now when a user goes to the contents page of the database they will be presented with a dropdown menu of datasets and can choose either the 'whole database' or a specific set. This selection is remembered between sessions.
+
+.. image:: /images/administration/dataset_partitioning2.png
+
+Alternatively, a specific set can be selected within the XML config file so that only a specific set is available when accessed via that configuration. In that case, the user would be unaware that the database contains anything other than the loci and schemes available within the set.
+
+To specify this, add the following attributute to the system tag: ::
+
+ set_id="1"
+
+where the value is the name of the set.
+
+Set metadata
+^^^^^^^^^^^^
+Additional metadata fields can be set within the XML configuration file. They are specified as belonging to a metaset by prefixing the field name with 'meta_NAME:' where NAME is the name of the metaset, e.g. ::
+
+ <field type="text" required="no" length="30" maindisplay="no" optlist="yes">meta_1:clinical_outcome
+   <optlist>
+     <option>no sequeleae</option>
+     <option>hearing loss</option>
+     <option>amputation</option>
+     <option>death</option>
+   </optlist>
+ </field>
+
+Metaset fields can be defined just like any other :ref:`provenance field <isolate_xml>` and their position in the output is determined by their position in the XML file.
+
+Metaset fields can then be added to a set using the 'Add set metadata' link on the curator's page.
+
+.. image:: /images/administration/dataset_partitioning3.png
+
+A new database table needs to be added for each metaset. This should contain all the fields defined for a metaset. The table should also contain an isolate_id field to act as the foreign key linking to the isolate table, e.g. the SQL would look something like the following: ::
+
+ CREATE TABLE meta_1 (
+ isolate_id integer NOT NULL,
+ town text,
+ clinical_outcome text,
+ PRIMARY KEY (isolate_id),
+ CONSTRAINT m1_isolate_id FOREIGN KEY (isolate_id) REFERENCES isolates
+ ON DELETE CASCADE
+ ON UPDATE CASCADE
+ );
+
+ GRANT SELECT,UPDATE,INSERT,DELETE ON meta_1 TO apache;
+
+The above creates the database table for a metaset called '1', defining new text fields for 'town' and 'clinical_outcome'.
+
+Set views
+^^^^^^^^^
+Finally the isolate record table can be partitoned using database views and these views associated with a set. Create views using something like the following: ::
+
+ CREATE VIEW spneumoniae AS SELECT * FROM isolates WHERE species = 'Streptococcus pneumoniae';
+ GRANT SELECT ON spneumoniae TO apache;
+
+Add the available views to the XML file as a comma separated list in the system tag 'views' attribute: ::
+
+  <system
+   .....
+   sets="yes"
+   views="spneumoniae,saureus"
+  >
+  </system>
+
+Set the view to the set by using the 'Add set view' link on the curator's page.
+
+Using only defined sets
+^^^^^^^^^^^^^^^^^^^^^^^
+The only_sets attribute can be set to 'yes' to disable the option for 'Whole database' so that only sets can be viewed, e.g. ::
+
+  <system
+   .....
+   sets="yes"
+   only_sets="yes"
+  >
+  </system>
+
 Sequence definition databases
 =============================
 

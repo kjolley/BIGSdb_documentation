@@ -65,6 +65,8 @@ XML configuration attributes used in config.xml
 ===============================================
 The following lists describes the attributes used in the config.xml file that is used to describe databases.
 
+.. _isolate_xml:
+
 Isolate database XML attributes
 -------------------------------
 Please note that database structure described by the field and sample elements must match the physical structure of the database isolate and sample tables respectively.::
