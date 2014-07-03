@@ -35,7 +35,6 @@ then ::
 
 Create an isolate database the same way:::
  
- sudo su postgres
  createdb bigsdb_test_isolates
  psql -f isolatedb.sql bigsdb_test_isolates
 
@@ -193,7 +192,7 @@ Top level element. Contains child elements: system, field and sample.::
 
 * annotation	
 
-  * semi-colon separated list of accession numbers with descriptions (separated by a |), eg. 'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'. Currently used only by Genome Comparator plugin	
+  * semi-colon separated list of accession numbers with descriptions (separated by a \|), eg. 'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'. Currently used only by Genome Comparator plugin	
   * optional
 
 * sets	
@@ -333,6 +332,7 @@ Special values
 The following special variables can be used in place of an actual value:
 
 * CURRENT_YEAR: the 4 digit value of the current year
+
 ::
 
  <sample>
@@ -351,6 +351,7 @@ Top level element. Contains child elements: system, field and sample.
 ::
 
  <system>
+
 * db
 
   * name of database on system	
@@ -433,3 +434,18 @@ The first admin user needs to be manually added to the users table of the databa
  'University of Oxford, UK', 'admin', 'now', 'now', 1);
 
 If you are using built-in authentication, set the password for this user using the add_user.pl script. This encrypts the password to a hash and stores this within the authentication database.  Other users can be added by the admin user from the curation interface accessible from http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you have located your bigscurate.pl script).
+
+Updating PubMed citations
+=========================
+Publications listed in PubMed can be associated with individual isolate records, profiles, loci and sequences.  Full citations for these are stored within a local reference database, enabling these to be displayed within isolate records and searching by publication and author.  This local database is populated by a script that looks in BIGSdb databases for PubMed records not locally stored and then requests the full citation record from the PubMed database.
+
+The script is called getrefs.pl and can be found in the scripts/maintenance directory.  This script needs to know which BIGSdb databases and tables it needs to search for PubMed ids.  These are listed in a configuration file (usually called getrefs.conf) which contains two columns - the first is the name of the database, the second is a comma-separated list of tables to search, e.g. ::
+
+  pubmlst_bigsdb_neisseria_isolates          refs
+  pubmlst_bigsdb_neisseria_seqdef            profile_refs,sequence_refs,locus_refs
+
+The script can be called as follows: ::
+
+ getrefs.pl getrefs.conf
+
+This should be run periodically from a CRON job, e.g. every hour.
