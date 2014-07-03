@@ -31,7 +31,8 @@ Administration
   sudo su postgres
   psql bigsdb_test
 
-  CREATE VIEW public AS SELECT * FROM isolates WHERE id IN (SELECT isolate_id FROM project_members WHERE project_id=3);
+  CREATE VIEW public AS SELECT * FROM isolates WHERE id IN (SELECT isolate_id 
+    FROM project_members WHERE project_id=3);
   GRANT SELECT ON public TO apache;
 
  Create a private configuration that can access everything in the database in /etc/bigsdb/dbases/test_private. This will be accessible from http://IP_ADDRESS/cgi-bin/bigsdb/bigsdb.pl?db=test_private.
@@ -53,18 +54,4 @@ Administration
   view="public"
   read_access="public"
 
- *Restricting particular configurations to specific user accounts*
-
- Suppose you only wanted specific users to access the private configuration (or indeed, any specific configuration).
-
- In /etc/bigsdb/dbases/test_private/config.xml, add the following directive: ::
-
-  default_access="deny"
-
- This tells BIGSdb to deny access to anybody unless their account name appears within a file called users.allow within the config directory. The users.allow file should contain one username per line.
-
- Alternatively, you can deny access to specific users, while allowing every other authenticated user. In /etc/bigsdb/dbases/test_private/config.xml, add the following directive: ::
-
-  default_access="allow"
-
- This tells BIGSdb to allow access to anybody unless their account name appears within a file called users.deny within the config directory. The users.deny file should contain one username per line.
+See also :ref:`Restricting particular configurations to specific user accounts <default_access>`.

@@ -425,6 +425,8 @@ When a user logs in, the server provides a random one-time session variable and 
 
 To use built-in authentication you need to set the authentication attribute in the system tag of the database XML configuration to 'builtin'.
 
+.. _setup_admin_user:
+
 Setting up the admin user
 =========================
 The first admin user needs to be manually added to the users table of the database. Connect to the database using psql and add the following (changing details to suit the user).::
@@ -433,7 +435,7 @@ The first admin user needs to be manually added to the users table of the databa
  datestamp, curator) VALUES (1, 'keith', 'Jolley', 'Keith', 'keith.jolley@zoo.ox.ac.uk', 
  'University of Oxford, UK', 'admin', 'now', 'now', 1);
 
-If you are using built-in authentication, set the password for this user using the add_user.pl script. This encrypts the password to a hash and stores this within the authentication database.  Other users can be added by the admin user from the curation interface accessible from http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you have located your bigscurate.pl script).
+If you are using built-in authentication, set the password for this user using the :ref:`add_user.pl <set_first_password>` script. This encrypts the password to a hash and stores this within the authentication database.  Other users can be added by the admin user from the curation interface accessible from http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you have located your bigscurate.pl script).
 
 Updating PubMed citations
 =========================
