@@ -133,18 +133,123 @@ The first user account needs to be added to the database :ref:`manually <setup_a
 
 Enabling plugins
 ----------------
+Some plugins can be enabled/disabled for specific databases. If you look in the get_attributes function of the specific plugin file and see a value for system_flag, this value can be used in the system tag of the database configuration XML file to enable the plugin.
 
-Workflow for setting up a MLST scheme
--------------------------------------
+For example, the get_attributes function of the BURST plugin looks like: ::
+
+ sub get_attributes {
+	my %att = (
+		name        => 'BURST',
+		author      => 'Keith Jolley',
+		affiliation => 'University of Oxford, UK',
+		email       => 'keith.jolley@zoo.ox.ac.uk',
+		description => 'Perform BURST cluster analysis on query results query results',
+		category    => 'Cluster',
+		buttontext  => 'BURST',
+		menutext    => 'BURST',
+		module      => 'BURST',
+		version     => '1.0.0',
+		dbtype      => 'isolates,sequences',
+		section     => 'postquery',
+		order       => 10,
+		system_flag => 'BURST',
+		input       => 'query',
+		requires    => 'mogrify',
+		min         => 2,
+		max         => 1000
+	);
+	return \%att;
+ }
+
+The 'system_flag' attribute is set to 'BURST', so this plugin can be enabled for a database by adding: ::
+
+ BURST="yes"
+
+to the system tag of the database XML file. If the system_flag value is not defined then the plugin is always enabled if it is installed on the system.
 
 Temporarily disabling database updates
 --------------------------------------
+There may be instances where it is necessary to temporarily disable database updates. This may be during periods of server or database maintenance, for instance when running on a backup database server.
+
+Updates can be disabled on a global or database-specific level.
+
+Global
+^^^^^^
+In the /etc/bigsdb/bigsdb.conf file, add the following line: ::
+
+  disable_updates=yes
+
+An optional message can also be displayed by adding a disable_update_message value, e.g. ::
+
+  disable_update_message=The server is currently undergoing maintenance.
+
+Database-specific
+^^^^^^^^^^^^^^^^^
+The same attributes described above for use in the bigsdb.conf file can also be used within the system tag of the database config.xml file, e.g. ::
+
+ <system
+   db="bigsdb_neisseria"
+   dbtype="isolates"
+   ...
+   disable_updates="yes"
+   disable_update_message="The server is currently undergoing maintenance."
 
 Host mapping
 ------------
+During periods of server maintenance, it may be necessary to map a database host to an alternative server. This would allow a backup database server to be used while the primary database server is unavailable. In this scenario, you would probably also want to disable updates.
+
+Host mapping can be achieved by editing the /etc/bigsdb/host_mapping.conf file. Each host mapping is placed on a single line, with the current server followed by any amount of whitespace and then the new mapped host, e.g. ::
+
+ #Existing_host      Mapped_host
+  server1            server2
+  localhost	     server2
+
+[Lines beginning with a hash are comments and are ignored.]
+
+This configuration would use server2 instead of server 1 or localhost wherever they are defined in the database configuration (either host attribute in the database config.xml file, or within the loci or schemes tables).
 
 Improving performance
 ---------------------
+
+Use mod_perl
+^^^^^^^^^^^^
+
+The single biggest improvement to speed can be obtained by running BIGSdb under mod_perl. There's very little point trying anything else until you have mod_perl set up and running - this can improve start-up performance a hundred-fold since the script isn't compiled on each page access but persists in memory.
+
+Cache scheme definitions within an isolate database
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have a large number of allelic profiles defined for a scheme, you can cache these definitions within an isolate database to speed up querying of isolates by scheme criteria (e.g. by ST for a MLST scheme).
+
+To do this use the update_scheme_caches.pl script found in the scripts/maintenance directory, e.g. to cache all schemes in the pubmlst_bigsdb_neisseria_isolates database ::
+
+ update_scheme_caches.pl -d pubmlst_bigsdb_neisseria_isolates
+
+This script creates indexed tables within the isolate database called temp_scheme_X and temp_isolates_scheme_fields_1 (where X is the scheme_id). If these table aren't present, they are created as temporary tables every time a query is performed that requires a join against scheme definition data. This requires importing all profile definitions from the definitions database and determining scheme field values for all isolates. This may sound like it would be slow but caching only has a noticeable effect once you have >5000 profiles.
+
+Note that you will need to run this script periodically as a CRON job to refresh the cache.
+
+If queries are taking longer than 5 seconds to perform and a cache is not in place, you will see a warning message in bigsdb.log suggesting that the caches be set up.  Unless you see this warning, you probably don't need to do this.
+
+Use materialized views for scheme definitions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Because of the way BIGSdb allows any number of profile schemes to be set up, the data are stored in a normalised manner in multiple tables. A database view, e.g. scheme_1, is created that joins these tables so that they can be queried as you would a single table. A view, however, is only a pre-selected query rather than a physical table and you can not index columns on it to optimise query performance.
+
+A materialized view is a real table that is created from the view and refreshed every time the data in the underlying view changes. Because it is a real table, the database doesn't need to perform these joins every time it is queried and indexes can be set up on it, both of which greatly speeds up querying.
+
+To use materialized views within a seqdef database set the following attribute in the system tag of the XML description file: ::
+
+ materialized_views="yes"
+
+You will then need to run the 'configuration repair' function at the bottom of the administrator's main curation page for each scheme. This rebuilds the view and creates a materialized view called mv_scheme_X. This materialized view is updated automatically whenever profile data are added or altered via the web interface.
+
+If you want an isolate database to benefit from this materialized view, make sure you put 'mv_scheme_X' (where X is the scheme id) in the dbase_table field (rather than 'scheme_X') when setting up the scheme in the isolate database configuration.
+
+Please note that if you make changes to your profile data by means other than the web interface then the materialized view will not be updated. You can update it by running the following SQL command: ::
+
+ SELECT refresh_matview('mv_scheme_X');
+
+The materialized view is used, for example, for looking up a ST from a profile and vice-versa. Significant speed improvements will only be realised if you have lots of profiles (>5000) and you are doing lots of lookups, e.g. displaying more than the default 25 records per page.
 
 Dataset partitioning
 --------------------
@@ -163,6 +268,9 @@ Setting up client databases
 
 Rule-based queries
 ------------------
+
+Workflow for setting up a MLST scheme
+-------------------------------------
 
 Isolate databases
 =================
