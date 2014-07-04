@@ -354,6 +354,129 @@ Sequence definition databases
 Adding new loci
 ===============
 
+Single locus
+------------
+Click the add (+) loci link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_loci_seqdef.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+.. _seqdef_locus_fields:
+
+* id - The name of the locus.
+
+  * Allowed: Any value starting with a letter or underscore.
+
+* data_type - Describes whether the locus is defined by nucleotide or peptide sequence.
+
+  * Allowed: DNA/peptide.
+
+* allele_id_format - The format for allele identifiers.
+
+  * Allowed: integer/text.
+
+* length_varies	- Sets whether alleles can vary in length.	
+
+  * Allowed: true/false.
+
+* coding_sequence - Sets whether the locus codes for a protein.
+
+  * Allowed: true/false.
+
+* formatted_name - Name with HTML formatting (optional).
+
+  * This allows you to add formatting such as bold, italic, underline and superscripting to locus names as they appear in the web interface.
+  * Allowed: valid HTML.
+
+* common_name - The common name for the locus (optional).
+
+  * Allowed: Any value.
+
+* formatted_common_name - Common name with HTML formatting (optional).
+
+  * Allowed: valid HTML.
+
+* allele_id_regex - `Regular expression <http://en.wikipedia.org/wiki/Regular_expression>`_ to enforce allele id naming (optional).
+
+  * ^: the beginning of the string
+  * $:the end of the string
+  * \d: digit
+  * \D: non-digit
+  * \s: white space character
+  * \S: non white space character
+  * \w: alpha-numeric plus '_'
+  * .: any character
+  * \*: 0 or more of previous character
+  * +: 1 or more of previous character
+  * e.g. ^F\d-\d+$ states that an allele name must begin with a F followed by a single digit, then a dash, then one or more digits, e.g. F1-12 	Any valid Perl regex
+
+* length - Standard length of locus (required if length_varies is set to false.
+
+  * Allowed: Any integer.
+
+* min_length - Minimum length of locus (optional).
+
+  * Allowed: Any integer.
+
+* max_length - Maximum length of locus (optional).
+
+  * Allowed: Any integer (larger than the minimum length).
+
+* orf - Open reading frame of locus (optional). 
+
+  * 1-3 are the forward reading frame, 4-6 are the reverse reading frames.
+  * Allowed: 1-6.
+
+* genome_position - The start position of the locus on a reference genome (optional).
+
+  * Allowed: Any integer.
+
+* match_longest - Specifies whether in a sequence query to only return the longest match (optional).
+
+  * This is useful for some loci that can have some sequences shorter than others, e.g. peptide loci defining antigenic loops.  This can lead to instances of one sequence being longer than another but otherwise being identical.  In these cases, usually the longer sequence is the one that should be matched.
+  * Allowed: true/false. 
+
+* full_name - Full name of the locus (optional).
+
+  * Allowed: Any value.
+
+* product - Name of gene product (optional).
+
+  * Allowed: Any value.
+
+* description - Description of the locus (optional).
+
+  * Allowed: Any value.
+
+* aliases - Alternative names for the locus (optional).
+
+  * Enter each alias on a separate line in the text box.
+  * Allowed: Any value.
+
+* pubmed_ids - PubMed ids of publications describing the locus (optional).
+
+  * Enter each PubMed id on a separate line in the text box.
+  * Allowed: Any integer.
+
+* links - Hyperlinks pointing to additional resources to display in the locus description (optional).
+
+  * Enter each link on a separate line in the format with the URL first, followed by a | then the description (URL|description).
+
+Batch adding multiple loci
+--------------------------
+Click the batch add (++) loci link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_loci_seqdef2.png
+
+Click the link to download a header line for an Excel spreadsheet:
+
+.. image:: /images/administration/add_new_loci_seqdef3.png
+
+Fill in the spreadsheet using the fields described for :ref:`adding single loci <seqdef_locus_fields>`.
+
+Fill in the spreadsheet fields using the table above as a guide, then paste the completed table into the web form and press 'Submit query'.
+   
 Defining schemes
 ================
 
