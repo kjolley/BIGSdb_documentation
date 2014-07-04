@@ -480,14 +480,22 @@ Fill in the spreadsheet fields using the table above as a guide, then paste the 
 Defining schemes
 ================
 
+.. todo:: Add description.
+
 Setting up client databases
 ===========================
+
+.. todo:: Add description.
 
 Rule-based queries
 ==================
 
+.. todo:: Add description.
+
 Workflow for setting up a MLST scheme
 =====================================
+
+.. todo:: Add description.
 
 *****************
 Isolate databases
@@ -496,20 +504,35 @@ Isolate databases
 Adding new loci
 ===============
 
+.. todo:: Add description.
+
 Genome filtering
 ================
+
+.. todo:: Add description.
 
 Setting locus genome positions
 ==============================
 
+.. todo:: Add description.
+
 Defining schemes
 ================
+
+.. todo:: Add description.
 
 Defining composite fields
 =========================
 
+.. todo:: Add description.
+
 Extended provenance attributes (lookup tables)
 ==============================================
 
+.. todo:: Add description.
+
 Checking external database configuration settings
 =================================================
+
+.. todo:: Add description.
+
