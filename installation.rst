@@ -1,9 +1,10 @@
-****************************************
+########################################
 Installation and configuration of BIGSdb
-****************************************
+########################################
 
+*********************
 Software installation
-=====================
+*********************
 BIGSdb consists of two main Perl scripts, bigsdb.pl and bigscurate.pl, that run the query and curator's interfaces respectively. These need to be located somewhere within the web cgi-bin directories. In addition, there are a large number of library files, used by both these scripts, that are installed by default in /usr/local/lib/BIGSdb. Plugin scripts are stored within a 'Plugins' sub-directory of this library directory.
 
 All databases on a system can use the same instance of the scripts, or alternatively any database can specify a particular path for each script, enabling these script directories to be protected by apache htaccess directives.
@@ -44,8 +45,9 @@ All databases on a system can use the same instance of the scripts, or alternati
 
  (substitute www-data for the web daemon user).
 
+**********************
 Configuring PostgreSQL
-======================
+**********************
 PostgreSQL can be configured in many ways and how you do this will depend on your site requirements.
 
 The following security settings will allow the appropriate users 'apache' and
@@ -56,8 +58,7 @@ as the Postgres user 'postgres'.
 You will need to edit the pg_hba.conf and pg_ident.conf files.  These are
 found somewhere like /etc/postgresql/9.1/main/
 
-pg_hba.conf
------------
+**pg_hba.conf**
 ::
 
  # Database administrative login by UNIX sockets
@@ -72,8 +73,7 @@ pg_hba.conf
  # IPv6 local connections:
  host    all         all         ::1/128               md5
 
-pg_ident.conf
--------------
+**pg_ident.conf**
 ::
 
  # MAPNAME     SYSTEM-USERNAME    PG-USERNAME
@@ -101,18 +101,17 @@ Restart PostgreSQL after any changes, e.g. ::
  
  /etc/init.d/postgresql restart
 
-
-
-
+***************************
 Site-specific configuration
-===========================
+***************************
 Site-specific configuration files are located in /etc/bigsdb by default.
 
 * :download:`bigsdb.conf <conf/bigsdb.conf>` - main configuration file
 * :download:`logging.conf <conf/logging.conf>` - error logging settings. See log4perl project website for advanced configuration details.
 
+**********************************
 Setting up the offline job manager
-==================================
+**********************************
 To run plugins that require a long time to complete their analyses, an offline job manager has been developed. The plugin will save the parameters of a job to a job database and then provide a link to the job status page. An offline script, run frequently from CRON, will then process the job queue and update status and outputs via the job status page.
 
 1. Create a 'bigsdb' UNIX user, e.g.::
@@ -164,8 +163,9 @@ To run plugins that require a long time to complete their analyses, an offline j
 
 .. _delete-temp-files: 
 
+***********************************
 Periodically delete temporary files
-===================================
+***********************************
 There are two temporary directories (one public, one private) which may accumulate temporary files over time. Some of these are deleted automatically when no longer required but some cannot be cleaned automatically since they are used to display results after clicking a link or to pass the database query between pages of results.
 
 The easiest way to clean the temp directories is to run a cleaning script periodically, e.g. create a root-executable script in /etc/cron.hourly containing the following:::
@@ -180,9 +180,9 @@ The easiest way to clean the temp directories is to run a cleaning script period
  #Remove other tmp files from web tree older than 1 week
  find /var/www/tmp/ -type f -mmin +10080 -exec rm -f {} \; 2>/dev/null
 
+*****************
 Log file rotation
-=================
-
+*****************
 Set the log file to auto rotate by adding a file called 'bigsdb' with the following contents to /etc/logrotate.d: ::
 
  /var/log/bigsdb.log {
@@ -205,9 +205,9 @@ Set the log file to auto rotate by adding a file called 'bigsdb' with the follow
    create 640 root adm
  }
 
+****************
 Upgrading BIGSdb
-================
-
+****************
 Major version changes, e.g. 1.7 -> 1.8, indicate that there has been a change to the underlying database structure for one or more of the database types.  Scripts to upgrade the database are provided in sql/upgrade and are named by the database type and version number.  For example, to upgrade an isolate database (bigsdb_isolates) from version 1.7 to 1.8, log in as the postgres user and type: ::
 
  psql -f isolatedb_v1.8.sql bigsdb_isolates

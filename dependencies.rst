@@ -1,9 +1,9 @@
 ###################
 BIGSdb Dependencies
 ###################
+
 Required packages
 =================
-
 BIGSdb requires a number of software components to be installed:
 Linux packages
 
@@ -22,7 +22,6 @@ Linux packages
 
 Perl modules
 ============
-
 These are included with most Linux distributions.
 
 * `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database Independent interface - module used to interact with databases.

@@ -1,7 +1,6 @@
-**************
+##############
 Database setup
-**************
-
+##############
 There are two types of BIGSdb database:
 
 * sequence definition databases, containing
@@ -19,9 +18,9 @@ These two databases are independent but linked.  A single isolate database can c
 
 Databases are described in XML files telling BIGSdb everything it needs to know about them. Isolate databases can have any fields defined for the isolate table, allowing customisation of metadata - these fields are described in the XML file (config.xml) and must match the fields defined in the database itself.
 
+******************
 Creating databases
-==================
-
+******************
 There are templates available for the sequence definition and isolate databases.  These are SQL scripts found in the sql directory.
 
 To create a database, you will need to log in as the postgres user and use these templates.  For example to create a new sequence definition database called bigsdb_test_seqdef, navigate to the sql directory and log in as the postgres user, e.g.::
@@ -49,9 +48,9 @@ and alter the isolate table:::
 
 Remember that any fields added to the table need to be described in the config.xml file for this database.
 
+*******************************
 Database-specific configuration
-===============================
-
+*******************************
 Each BIGSdb database on a system has its own configuration directory, by default in /etc/bigsdb/dbases. The database has a short configuration name used to specify it in a web query and this matches the name of the configuration sub-directory, e.g. http://pubmlst.org/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_isolates is the URL of the front page of the PubMLST Neisseria isolate database whose configuration settings are stored in /etc/bigsdb/dbases/pubmlst_neisseria_isolates. This database sub-directory contains a number of files (hyperlinks lead to the files used on the Neisseria database):
 
 * :download:`config.xml <conf/config.xml>` - the database configuration file. Fields defined here correspond to fields in the isolate table of the database.
@@ -61,14 +60,15 @@ Each BIGSdb database on a system has its own configuration directory, by default
 * curate_header.html - HTML markup that is inserted at the top of all curator's interface pages.
 * curate_footer.html - HTML markup that is inserted at the bottom of all curator's interface pages.
 
+***********************************************
 XML configuration attributes used in config.xml
-===============================================
+***********************************************
 The following lists describes the attributes used in the config.xml file that is used to describe databases.
 
 .. _isolate_xml:
 
 Isolate database XML attributes
--------------------------------
+===============================
 Please note that database structure described by the field and sample elements must match the physical structure of the database isolate and sample tables respectively.::
  
     <db>
@@ -330,7 +330,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * optional
 
 Special values
-^^^^^^^^^^^^^^
+--------------
 The following special variables can be used in place of an actual value:
 
 * CURRENT_YEAR: the 4 digit value of the current year
@@ -344,7 +344,7 @@ Element content: Sample field name + optional list <optlist> of allowed values. 
 The sample table, if defined, must include isolate_id and sample_id fields, which must also be described in the XML file. These must be set as integer fields.
 
 Sequence definition database XML attributes
--------------------------------------------
+===========================================
 ::
 
  <db>
@@ -399,12 +399,13 @@ Top level element. Contains child elements: system, field and sample.
   * prevent users or curators from downloading all alleles for a locus (admins always can). 'yes' or 'no', default 'no'.	  
   * optional
 
+*******************
 User authentication
-===================
+*******************
 You can choose whether to allow Apache to handle your authentication or use built-in authentication.
 
 Apache authentication
----------------------
+=====================
 Using apache to provide your authentication allows a flexible range of methods and back-ends (see the Apache authentication HowTo for a start, or any number of tutorials on the web).
 
 At its simplest, use a .htaccess file in the directory containing the bigscurate.pl (and bigsdb.pl for restriction of read-access) script or by equivalent protection of the directory in the main Apache server configuration. It is important to note however that, by default, any BIGSdb database can be accessed by any instance of the BIGSdb script (including one which may not be protected by a .htaccess file, allowing public access). To ensure that only a particular instance (protected by a specific htaccess directive) can access the database, the following attributes can be set in the system tag of the database XML description file:
@@ -417,7 +418,7 @@ For public databases, the 'script_path_includes' attribute need not be set.
 To use apache authentication you need to set the authentication attribute in the system tag of the database XML configuration to 'apache'.
 
 Built-in authentication
------------------------
+=======================
 BIGSdb has its own built-in authentication, using a separate database to store password and session hashes. The advantages of using this over many forms of apache authentication are:
 
 * Users are able to update their own passwords.
@@ -429,8 +430,9 @@ To use built-in authentication you need to set the authentication attribute in t
 
 .. _setup_admin_user:
 
+*************************
 Setting up the admin user
-=========================
+*************************
 The first admin user needs to be manually added to the users table of the database. Connect to the database using psql and add the following (changing details to suit the user).::
 
  INSERT INTO users (id, user_name, surname, first_name, email, affiliation, status, date_entered,
@@ -439,8 +441,9 @@ The first admin user needs to be manually added to the users table of the databa
 
 If you are using built-in authentication, set the password for this user using the :ref:`add_user.pl <set_first_password>` script. This encrypts the password to a hash and stores this within the authentication database.  Other users can be added by the admin user from the curation interface accessible from http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you have located your bigscurate.pl script).
 
+*************************
 Updating PubMed citations
-=========================
+*************************
 Publications listed in PubMed can be associated with individual isolate records, profiles, loci and sequences.  Full citations for these are stored within a local reference database, enabling these to be displayed within isolate records and searching by publication and author.  This local database is populated by a script that looks in BIGSdb databases for PubMed records not locally stored and then requests the full citation record from the PubMed database.
 
 The script is called getrefs.pl and can be found in the scripts/maintenance directory.  This script needs to know which BIGSdb databases and tables it needs to search for PubMed ids.  These are listed in a configuration file (usually called getrefs.conf) which contains two columns - the first is the name of the database, the second is a comma-separated list of tables to search, e.g. ::

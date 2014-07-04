@@ -15,10 +15,12 @@ The software has been released under the GNU General Public Licence version 3.
    dependencies
    installation
    dbase_setup
-   administrator_guide
+   administration
    curator_guide
    offline_tools
-   user_guide
+   data_query
+   data_analysis
+   data_export
    faqs
   
  
