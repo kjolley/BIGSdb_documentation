@@ -351,6 +351,8 @@ The only_sets attribute can be set to 'yes' to disable the option for 'Whole dat
 Sequence definition databases
 *****************************
 
+.. _add_new_loci:
+
 Adding new loci
 ===============
 
@@ -479,23 +481,221 @@ Fill in the spreadsheet fields using the table above as a guide, then paste the 
    
 Defining schemes
 ================
+Schemes are collections of loci that may be associated with particular fields - one of these fields can be a primary key, i.e. a field that uniquely defines a particular combination of alleles at the associated loci.
 
-.. todo:: Add description.
+A specific example of a scheme is MLST - :ref:`see workflow for setting up a MLST scheme <mlst_workflow>`.
+
+To set up a new scheme, you need to:
+
+#. Add a new scheme description.
+#. Define loci as 'scheme members'.
+#. Add 'scheme fields' associated with the scheme.
+
+As with all configuration, tables can be populated using the batch interface (++) or one at a time (+). Details for the latter are described below:
+
+Click the add (+) scheme link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_scheme_seqdef.png
+
+Fill in the scheme description in the web form. The next available scheme id number will be filled in already.
+
+The display_order field accepts an integer that can be used to order the display of schemes in the interface - this can be left blank if you wish.
+
+.. image:: /images/administration/add_new_scheme_seqdef2.png
+
+To add loci to the scheme, click the add (+) scheme members link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_scheme_seqdef3.png
+
+Select the scheme name and a locus that you wish to add to the scheme from the appropriate drop-down boxes. :ref:`Loci need to have already been defined <add_new_loci>`. The field_order field allows you to set the display order of the locus within a profile - if these are left blank that alphabetical ordering is used.
+
+.. image:: /images/administration/add_new_scheme_seqdef4.png
+
+To add scheme fields, click the add (+) scheme fields link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_scheme_seqdef5.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+.. image:: /images/administration/add_new_scheme_seqdef6.png
+
+* scheme_id - Dropdown box of scheme names.
+
+  * Allowed: selection from list.
+
+* field	- Field name.
+
+  * Allowed: any value.
+
+* type - Format for values.
+
+  * Allowed: text/integer/date.
+
+* primary_key -	Set to true if field is the primary key. There can only be one primary key for a scheme.
+
+  * Allowed: true/false.
+
+* dropdown - Set to true if a dropdown box is displayed in the query interface, by default, for values of this field to be quickly selected. This option can be overridden by user preferences.
+
+  * Allowed: true/false.
+
+* description - This field isn't currently used.
+
+* field_order - Integer that sets the position of the field within scheme values in any results.
+
+  * Allowed: any integer.
+
+* value_regex - `Regular expression <http://en.wikipedia.org/wiki/Regular_expression>`_ to enforce field values.
+  
+  * ^: the beginning of the string
+  * $:the end of the string
+  * \d: digit
+  * \D: non-digit
+  * \s: white space character
+  * \S: non white space character
+  * \w: alpha-numeric plus '_'
+  * .: any character
+  * \*: 0 or more of previous character
+  * +: 1 or more of previous character
 
 Setting up client databases
 ===========================
+Sequence definition databases can have any number of isolate databases that connect as clients. Registering these databases allows the software to perform isolate data searches relevant to results returned by the sequence definition database, for example:
 
-.. todo:: Add description.
+* Determine the number of isolates that a given allele is found in and link to these.
+* Determine the number of isolates that a given scheme field, e.g. a sequence type, is found in and link to these.
+* Retrieve specific attributes of isolates that have a given allele, e.g. species that have a particular 16S allele, or penicillin resistance given a particular penA allele.
+
+Multiple client databases can be queried simultaneously.
+
+To register a client isolate database for a sequence definition database, click the add (+) client database link on the curator's interface contents page.
+
+.. image:: /images/administration/add_client_databases.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+.. image:: /images/administration/add_client_databases2.png
+
+* id - Index number of client database. The next available number is entered automatically but can be overridden.
+
+  * Allowed: any positive integer.
+
+* name - Short description of database. This is used within the interface result tables so it is better to make it as short as possible.
+
+  * Allowed: any text.
+
+* description -	Longer description of database.
+
+  * Allowed: any text.
+
+* dbase_name - Name of database (system name).
+
+  * Allowed: any text.
+
+* dbase_config_name - Name of database configuration - this is the text string that appears after the db= part of script URLs.
+
+  * Allowed: any text (no spaces)
+
+* dbase_host - Resolved name of IP address of database host (optional).
+
+  * Allowed: Network address, e.g. 129.67.26.52 or zoo-oban.zoo.ox.ac.uk
+  * Leave blank if running on the same machine as the seqdef database.
+
+* dbase_port - Network port on which the client database server is listening (optional)
+
+  * Allowed: integer.
+  * Leave blank unless using a non-standard port (5432).
+
+* dbase_user - Name of user with permission to access the client database
+
+  * Allowed: any text (no spaces).
+  * Depending on the database configuration you may be able to leave this blank.	
+* dbase_password - Password of database user
+  
+  * Allowed: any text (no spaces).
+  * Depending on the database configuration you may be able to leave this blank.
+
+* url -	URL of client database bigsdb.pl script
+
+  * Allowed: valid script path.
+  * This can be relative (e.g. /cgi-bin/bigsdb/bigsdb.pl) if running on the same machine as the seqdef database or absolute (including http://) if on a different machine.
+
+Look up isolates with given allele
+----------------------------------
+
+To link a locus, click the add (+) client database loci link on the curator's interface contents page.	
+
+.. image:: /images/administration/add_client_databases3.png
+
+Link the locus to the appropriate client database using the dropdown list boxes. If the locus is named differently in the client database, fill this name in the locus_alias.
+
+.. image:: /images/administration/add_client_databases4.png
+
+Now when information on a given allele is shown following a query, the software will list the number of isolates with that allele and link to a search on the database to retrieve these.
+
+.. image:: /images/administration/add_client_databases5.png
+
+Look up isolates with a given scheme primary key
+------------------------------------------------
+Setting this up is identical to setting up for alleles (see above) except you click on the add (+) client database schemes link and choose the scheme and client databases in the dropdown list boxes.
+
+Now when information on a given scheme profile (e.g. MLST sequence type) is shown following a query, the software will list the number of isolates with that profile and link to a search on the database to retrieve these.
+
+.. image:: /images/administration/add_client_databases6.png
+
+Look up specific isolate database fields linked to a given allele
+-----------------------------------------------------------------
+To link an allele to an isolate field, click the add (+) 'client database fields linked to loci' link on the curator's interface contents page.
+
+.. image:: /images/administration/add_client_databases7.png
+
+Select the client database and locus from the dropdown lists and enter the isolate database field that you'd like to link. The 'allele_query' field should be set to true.
+
+.. image:: /images/administration/add_client_databases8.png
+
+Now, in the allele record or following a sequence query that identifies an allele, all values for the chosen field from isolates with the corresponding allele are shown.
+
+.. image:: /images/administration/add_client_databases9.png
+
 
 Rule-based queries
 ==================
 
 .. todo:: Add description.
 
+.. _mlst_workflow:
+
 Workflow for setting up a MLST scheme
 =====================================
+The workflow for setting up a MLST scheme is as follows (the example seqdef database is called seqdef_db):
 
-.. todo:: Add description.
+**Seqdef database**
+
+1. Create appropriate loci
+2.   Create new scheme 'MLST'
+3.   Add scheme_field 'ST' with primary_key=TRUE (add clonal_complex if you want; set this with primary_key=FALSE)
+4.   Add each locus as a scheme_member
+5.   You'll then be able to add profiles
+
+**Isolate database**
+
+1. Create the same loci with the following additional parameters (example locus 'atpD')
+
+  * dbase_name: seqdef_db
+  * dbase_table: sequences
+  * dbase_id_field: allele_id
+  * dbase_id2_field: locus
+  * dbase_id_value: atpD
+  * dbase_seq_field: sequence
+  * url: something like /cgi-bin/bigsdb/bigsdb.pl?db=seqdef_db&page=alleleInfo&locus=atpD&allele_id=[?]
+
+2. Create scheme 'MLST' with:
+  
+  * dbase_name: seqdef_db
+  * dbase_table: scheme_1 (or whatever the id of your seqdef scheme is)
+
+3. Add scheme_field ST as before
+4. Add loci as scheme_members
 
 *****************
 Isolate databases
