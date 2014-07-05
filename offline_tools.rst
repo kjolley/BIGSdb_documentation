@@ -208,3 +208,22 @@ A full list of options can be found by typing: ::
 
  -y, --max ID
      Maximum isolate id.
+
+*************************************
+Cleanly interrupting offline curation
+*************************************
+Sometimes you may wish to stop running autotagger or allele autodefiner jobs as they can be run for a long time and as CRON jobs.  If these are running in single threaded mode, the easiest way is to simply send a kill signal to the process, i.e. identify the process id using 'top', e.g. 23232 and then ::
+
+ kill 23232
+
+The scripts should respond to this signal within a couple of seconds, clean up all their temporary files and write the history log (where appropriate).  Do not use 'kill -9' as this will terminate the processes immediately and not allow them to clean up.
+
+If these scripts are running using multiple threads, then you need to cleanly kill each of these.  The simplest way to terminte all autotagger jobs is to, type ::
+
+ pkill autotag
+
+The parent process will wait for all forked processes to cleanly terminate and then exit itself.
+
+Similarly, to terminate all allele autodefiner jobs, type ::
+
+ pkill scannew

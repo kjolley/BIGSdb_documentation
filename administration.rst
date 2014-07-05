@@ -80,7 +80,7 @@ Access control lists
 --------------------
 If access control lists are in use (set the read_access attribute to 'acl' in the system tag of the database XML configuration file), viewing and modifying of individual isolates can be restricted to particular users or usergroups.
 
-**Please note that access control lists are likely to be deprecated in future releases.  This is in favour of creating a new class of user that would be allowed to curate their own data only.**
+.. warning:: Please note that access control lists are likely to be deprecated in future releases.  This is in favour of creating a new class of user that would be allowed to curate their own data only.
 
 New isolate records are automatically set with the following access control:
 
@@ -478,6 +478,11 @@ Click the link to download a header line for an Excel spreadsheet:
 Fill in the spreadsheet using the fields described for :ref:`adding single loci <seqdef_locus_fields>`.
 
 Fill in the spreadsheet fields using the table above as a guide, then paste the completed table into the web form and press 'Submit query'.
+
+Defining locus extended attributes
+==================================
+
+.. todo:: Add description.
    
 Defining schemes
 ================
