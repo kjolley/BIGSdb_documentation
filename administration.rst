@@ -1274,8 +1274,27 @@ Now when you next perform :ref:`tag scanning <tag_scanning>` there will be an op
 ******************************
 Setting locus genome positions
 ******************************
+The genome position for a locus can be set directly by editing the locus record. To batch update multiple loci based on a tagged genome, however, a much easier way is possible. For this method to work, the reference genome must be represented by a single contig.
 
-.. todo:: Add description.
+From the curator's main page, you need to do a query to find the isolate that you will base your numbering on. Click 'isolate query' to take you to a standard query form.
+
+.. image:: /images/administration/genome_positions.png
+
+Perform your search and click the hyperlinked id number of the record.
+
+.. image:: /images/administration/genome_positions2.png
+
+In the isolate record, click the sequence bin 'Display' button to bring up details of the isolate contigs.
+
+.. image:: /images/administration/genome_positions3.png
+
+Click the 'Renumber' button:
+
+.. image:: /images/administration/genome_positions4.png
+
+A final confirmation screen is displayed with the option to remove existing numbering that doesn't appear within the reference genome. Click 'Renumber'.
+
+.. image:: /images/administration/genome_positions5.png
 
 .. index::
    single: composite fields
