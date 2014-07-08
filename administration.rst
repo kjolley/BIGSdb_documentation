@@ -1187,8 +1187,81 @@ Defining composite fields
 **********************************************
 Extended provenance attributes (lookup tables)
 **********************************************
+Lookup tables can be associated with an isolate database field such that the database can be queried by extended attributes. An example of this is the relationship between continent and country - every country belongs to a continent but you wouldn't want to store the continent with each isolate record (not only could data be entered inconsistently but it's redundant). Instead, each record may have a country field and the continent is then determined from the lookup table, allowing, for example, a search of isolates limited to those from Europe.
 
-.. todo:: Add description.
+To set up such an extended attribute, click the add (+) isolate field extended attributes link on the curator's main page.
+
+.. image:: /images/administration/extended_attributes.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+* isolate_field	- Dropdown list of isolate fields.
+
+  * Allowed: selection from list.
+
+* attribute - Name of extended attribute, e.g. continent.
+
+  * Allowed: any text (no spaces).
+
+* value_format - Format for values.
+
+  * Allowed: integer/float/text/date.
+
+* value_regex - `Regular expression <http://en.wikipedia.org/wiki/Regular_expression>`_ to enforce allele id naming.
+
+  * ^: the beginning of the string
+  * $:the end of the string
+  * \d: digit
+  * \D: non-digit
+  * \s: white space character
+  * \S: non white space character
+  * \w: alpha-numeric plus '_'
+  * .: any character
+  * \*: 0 or more of previous character
+  * +: 1 or more of previous character
+  * e.g. ^F\d-\d+$ states that a value must begin with a F followed by a single digit, then a dash, then one or more digits, e.g. F1-12
+
+* description - Long description - this isn't currently used but may be in the future.
+
+  * Allowed: any text.
+
+* url - URL used to hyperlink values in the isolate information page. Instances of [?] within the URL will be substituted with the value.
+
+  * Allowed: any valid URL (either relative or absolute).
+
+* length - Maximum length of extended attribute value.
+  
+  * Allowed: any positive integer.
+
+* field_order - Integer that sets the order of the field following it's parent isolate field.
+
+  * Allowed: any integer.
+
+The easiest way to populate the lookup table is to do a batch update copied from a spreadsheet. Click the batch add (++) isolate field extended attribute values link on the curator's main page (this link will only appear once an extended attribute has been defined).
+
+.. image:: /images/administration/extended_attributes2.png
+
+Download the Excel template:
+
+.. image:: /images/administration/extended_attributes3.png
+
+Fill in the columns with your values, e.g.
+
++-------------+---------+-----------+------+
+|isolate_field|attribute|field_value|value |
++=============+=========+===========+======+
+|country      |continent|Afghanistan|Asia  |
++-------------+---------+-----------+------+
+|country      |continent|Albania    |Europe|
++-------------+---------+-----------+------+
+|country      |continent|Algeria    |Africa|
++-------------+---------+-----------+------+
+|country      |continent|Andorra    |Europe|
++-------------+---------+-----------+------+
+|country      |continent|Angola     |Africa|
++-------------+---------+-----------+------+
+
+Paste from the spreadsheet in to the upload form and click 'Submit'.
 
 .. index::
    single: settings; validation
