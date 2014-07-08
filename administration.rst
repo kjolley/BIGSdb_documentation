@@ -1,3 +1,9 @@
+.. raw:: html
+
+	 <style> .red {color:red} </style>
+
+.. role:: red
+
 #####################
 Administrator's guide
 #####################
@@ -1190,6 +1196,12 @@ Extended provenance attributes (lookup tables)
 *************************************************
 Checking external database configuration settings
 *************************************************
+Click the 'Configuration check' link on the curator's index page.
 
-.. todo:: Add description.
+.. image:: /images/administration/config_check.png
 
+The software will check that required helper applications are installed and executable and, in isolate databases, test every locus and scheme external database to check for connectivity and that data can be retrieved.
+
+.. image:: /images/administration/config_check2.png
+
+Any problems will be highlighted with a red :red:`X`.
