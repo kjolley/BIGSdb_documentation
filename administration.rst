@@ -812,13 +812,78 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
   * \*: 0 or more of previous character
   * +: 1 or more of previous character
 
-.. index::
-   single: client databases
-
 Isolate databases
 =================
+As with all configuration, tables can be populated using the batch interface (++) or one at a time (+). Details for the latter are described below:
 
-.. todo:: Add description.
+Click the add (+) scheme link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_scheme_isolates.png
+
+Fill in the scheme description in the web form. Required fields have an exclamation mark (!) next to them:
+
+.. image:: /images/administration/add_new_scheme_isolates2.png
+
+* id - Index number of scheme - the next available number will be entered automatically.	
+  
+  * Allowed: any positive integer.
+
+* description - Short description - this is used in tables so make sure it's not too long.
+
+  * Allowed: any text.
+
+* isolate_display - Sets whether or not fields for this scheme are displayed in a detailed isolate record - this can be overridden by user preference.
+
+  * Allowed: allele only/sequence/hide.
+
+* main_display - Sets whether or not fields for this scheme are displayed in a main results table by default - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* query_field - Sets whether or not fields for this scheme can be used in queries by default - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* query_status - Sets whether a dropdown list box should be displayed in the query interface to filter results based on profile completion for this scheme - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* analysis - Sets whether or not alleles for this locus can be used in analysis functions by default - this can be overridden by user preference.
+  
+  * Allowed: true/false.
+
+* dbase_name - Name of seqdef database (system name) containing scheme profiles (optional).
+
+  * Allowed: any text.
+
+* dbase_host - Resolved name of IP address of database host - leave blank if running on the same machine as the isolate database (optional).
+
+  * Allowed: network address, e.g. 129.67.26.52 or zoo-oban.zoo.ox.ac.uk
+
+* dbase_port - Network port on which the sequence definition database server is listening - leave blank unless using a non-standard port, 5432 (optional).
+
+  * Allowed: integer.
+
+* dbase_user - Name of user with permission to access the sequence definition database - depending on the database configuration you may be able to leave this blank (optional).
+
+  * Allowed: any text (no spaces).
+
+* dbase_password - Password of database user - again depending on the database configuration you may be able to leave this blank (optional).
+
+  * Allowed: any text (no spaces).
+
+* dbase_table - Table in the sequence definition database that contains profiles for this scheme. If the definition database uses BIGSdb this will be 'scheme_X' where X is the scheme id number in the seqdef database.
+
+  * Allowed: any text (no spaces).
+
+* display_order - Integer reflecting the display position for this scheme within the interface (optional).
+
+  * Allowed: any integer.
+
+* allow_missing_loci - Allow profile definitions to contain '0' (locus missing) or 'N' (any allele).
+
+.. index::
+   single: client databases
 
 ***************************
 Setting up client databases
