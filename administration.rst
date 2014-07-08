@@ -1302,8 +1302,45 @@ A final confirmation screen is displayed with the option to remove existing numb
 *************************
 Defining composite fields
 *************************
+Composite fields are virtual fields that don't themselves exist within the database but are made up of values retrieved from other fields or schemes and formatted in a particular way. They are used for display and analysis purposes only and can not be searched against.
 
-.. todo:: Add description.
+One example of a composite field is used in the Neisseria PubMLST database which has a strain designation composite field made up of serogroup, PorA VR1 and VR2, FetA VR, ST and clonal complex designations in the format:
+
+[serogroup]: P1.[PorA_VR1],[PorA_VR2]: [FetA_VR]: ST-[ST] ([clonal_complex])
+
+e.g. A: P1.5-2,10: F1-5: ST-4 (cc4)
+
+Additionally, the clonal complex field in the above example is converted using a regular expression from 'ST-4 complex/subgroup IV' to 'cc4'.
+
+Composite fields can be added to the database by clicking the add (+) composite fields link on the curator's main page.
+
+.. image:: /images/administration/composite_fields.png
+
+Initially you just enter a name for the composite field and after which field it should be positioned. You can also set whether or not it should be displayed by default in main results tables following a query - this is overrideable by user preferences.
+
+.. image:: /images/administration/composite_fields2.png
+
+Once the field has been created it needs to be defined. This can be done from query composite field link on the main curator's page.
+
+.. image:: /images/administration/composite_fields3.png
+
+Select the composite field from the list and click 'Update'.
+
+.. image:: /images/administration/composite_fields4.png
+
+From this page you can build up your composite field from snippets of text, isolate field, locus and scheme field values. Enter new values in the boxes at the bottom of the page.
+
+.. image:: /images/administration/composite_fields5.png
+
+Once a field has been added to the composite field, it can be edited by clicking the 'edit' button next to it to add a regular expression to modify its value by specific rules, e.g. in the clonal complex field above, the regular expression is set as: ::
+
+ s/ST-(\S+) complex.*/cc$1/
+
+which extracts one or more non-space characters following the 'ST-' in a string that then contains the work 'complex', and appends this to 'cc' to produce the final string.
+
+This will convert 'ST-4 complex/subgroup IV' to 'cc4'.
+
+You can also define text to be used for when the field value is missing, e.g. 'ND'.
 
 .. index::
    single: extended attributes; provenance fields
