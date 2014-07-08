@@ -422,7 +422,7 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 * id - The name of the locus.
 
-  * Allowed: Any value starting with a letter or underscore.
+  * Allowed: any value starting with a letter or underscore.
 
 * data_type - Describes whether the locus is defined by nucleotide or peptide sequence.
 
@@ -447,7 +447,7 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 * common_name - The common name for the locus (optional).
 
-  * Allowed: Any value.
+  * Allowed: any value.
 
 * formatted_common_name - Common name with HTML formatting (optional).
 
@@ -465,19 +465,19 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
   * .: any character
   * \*: 0 or more of previous character
   * +: 1 or more of previous character
-  * e.g. ^F\d-\d+$ states that an allele name must begin with a F followed by a single digit, then a dash, then one or more digits, e.g. F1-12 	Any valid Perl regex
+  * e.g. ^F\d-\d+$ states that an allele name must begin with a F followed by a single digit, then a dash, then one or more digits, e.g. F1-12 
 
 * length - Standard length of locus (required if length_varies is set to false.
 
-  * Allowed: Any integer.
+  * Allowed: any integer.
 
 * min_length - Minimum length of locus (optional).
 
-  * Allowed: Any integer.
+  * Allowed: any integer.
 
 * max_length - Maximum length of locus (optional).
 
-  * Allowed: Any integer (larger than the minimum length).
+  * Allowed: any integer (larger than the minimum length).
 
 * orf - Open reading frame of locus (optional). 
 
@@ -486,7 +486,7 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 * genome_position - The start position of the locus on a reference genome (optional).
 
-  * Allowed: Any integer.
+  * Allowed: any integer.
 
 * match_longest - Specifies whether in a sequence query to only return the longest match (optional).
 
@@ -495,7 +495,7 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 * full_name - Full name of the locus (optional).
 
-  * Allowed: Any value.
+  * Allowed: any value.
 
 * product - Name of gene product (optional).
 
@@ -503,17 +503,17 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 * description - Description of the locus (optional).
 
-  * Allowed: Any value.
+  * Allowed: any value.
 
 * aliases - Alternative names for the locus (optional).
 
   * Enter each alias on a separate line in the text box.
-  * Allowed: Any value.
+  * Allowed: any value.
 
 * pubmed_ids - PubMed ids of publications describing the locus (optional).
 
   * Enter each PubMed id on a separate line in the text box.
-  * Allowed: Any integer.
+  * Allowed: any integer.
 
 * links - Hyperlinks pointing to additional resources to display in the locus description (optional).
 
@@ -539,21 +539,187 @@ Fill in the spreadsheet fields using the table above as a guide, then paste the 
 Isolate databases
 =================
 
+.. index::
+   pair: locus; adding
+
 Single locus
 ------------
 
 .. index::
    pair: locus; adding
 
-.. todo:: Add description.
+Click the add (+) loci link on the curator's interface contents page.
 
-Batch adding
-------------
+.. image:: /images/administration/add_new_loci_isolates.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+.. _isolate_locus_fields:
+
+* id - The name of the locus
+
+  * Allowed: any value starting with a letter or underscore.
+
+* data_type - Describes whether the locus is defined by nucleotide or peptide sequence.
+
+  * Allowed: DNA/peptide.
+
+* allele_id_format - The format for allele identifiers.
+
+  * Allowed: integer/text.
+
+* length_varies	- Sets whether alleles can vary in length.
+
+  * Allowed: true/false.
+
+* coding_sequence - Sets whether the locus codes for a protein.
+
+  * Allowed: true/false.
+
+* flag_table - Set to true to specify that the sequence definition database contains an allele flag table (which is the case for BIGSdb version 1.4 onwards).
+
+  * Allowed: true/false.
+
+* isolate_display - Sets how alleles for this locus are displayed in a detailed isolate record - this can be overridden by user preference.
+
+  * Allowed: allele only/sequence/hide.
+
+* main_display - Sets whether or not alleles for this locus are displayed in a main results table by default - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* query_field - Sets whether or not alleles for this locus can be used in queries by default - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* analysis - Sets whether or not alleles for this locus can be used in analysis functions by default - this can be overridden by user preference.
+
+  * Allowed: true/false.
+
+* formatted_name - Name with HTML formatting (optional).
+
+  * This allows you to add formatting such as bold, italic, underline and superscripting to locus names as they appear in the web interface.
+  * Allowed: valid HTML.
+
+* common_name - The common name for the locus (optional).
+
+  * Allowed: any value.
+
+* formatted_common_name - Common name with HTML formatting (optional).
+
+  * Allowed: valid HTML.
+
+* allele_id_regex - `Regular expression <http://en.wikipedia.org/wiki/Regular_expression>`_ to enforce allele id naming.
+
+  * ^: the beginning of the string
+  * $:the end of the string
+  * \d: digit
+  * \D: non-digit
+  * \s: white space character
+  * \S: non white space character
+  * \w: alpha-numeric plus '_'
+  * .: any character
+  * \*: 0 or more of previous character
+  * +: 1 or more of previous character
+  * e.g. ^F\d-\d+$ states that an allele name must begin with a F followed by a single digit, then a dash, then one or more digits, e.g. F1-12 	
+   
+* length - Standard length of locus (required if length_varies is set to false).
+
+  * Allowed: any integer.
+
+* orf - Open reading frame of locus (optional). 1-3 are the forward reading frame, 4-6 are the reverse reading frames.
+
+  * Allowed: 1-6.
+
+* genome_position - The start position of the locus on a reference genome.
+
+  * Allowed: any integer.
+
+* match_longest - Only select the longest exact match when tagging/querying.  
+
+  * This is useful for some loci that can have some sequences shorter than others, e.g. peptide loci defining antigenic loops.  This can lead to instances of one sequence being longer than another but otherwise being identical.  In these cases, usually the longer sequence is the one that should be matched.
+  * Allowed: true/false.
+
+* reference_sequence - Sequence used by the automated sequence comparison algorithms to identify sequences matching this locus.  **This is only used if a sequence definition database has not been set up for this locus.**
+
+* pcr_filter - Set to true if this locus is further defined by genome filtering using in silico PCR.
+
+  * Allowed: true/false.
+
+* probe_filter - Set to true if this locus is further defined by genome filtering using in silico hybdridization.
+
+  * Allowed: true/false.
+
+* dbase_name - Name of database (system name).
+
+  * Allowed: any text.
+
+* dbase_host - Resolved name of IP address of database host - leave blank if running on the same machine as the isolate database.
+
+  * Allowed: network address, e.g. 129.67.26.52 or zoo-oban.zoo.ox.ac.uk
+
+* dbase_port - Network port on which the sequence definition database server is listening - leave blank unless using a non-standard port (5432).
+
+  * Allowed: integer.
+
+* dbase_user - Name of user with permission to access the sequence definition database - depending on the database configuration you may be able to leave this blank.
+
+  * Allowed: any text (no spaces).
+
+* dbase_password - Password of database user - again depending on the database configuration you may be able to leave this blank.
+
+  * Allowed: any text (no spaces).
+
+* dbase_table - Table in the sequence definition database that contains allele sequences for this locus. If the definition database uses BIGSdb this will be 'sequences'.
+
+  * Allowed: any text (no spaces).
+
+* dbase_id_field - Primary field in sequence database that defines allele. If the definition database uses BIGSdb this will be 'allele_id'.
+
+  * Allowed: any text (no spaces).
+
+* dbase_id2_field - Secondary field in sequence database that defines alleles. If dbase_id_field uniquely defines alleles for this locus then this should be left blank. If the definition database uses BIGSdb this will be 'locus'.
+
+  * Allowed: any text (no spaces).
+
+* dbase_id2_value - Secondary field value in sequence database that defines alleles. If dbase_id_field uniquely defines alleles for this locus then this should be left blank. If the definition database uses BIGSdb this will be the name of the locus used in the id field
+
+  * Allowed: any text (no spaces).
+
+* dbase_seq_field - Field in sequence database containing allele sequence. If the definition database uses BIGSdb this will be 'sequence'.
+
+  * Allowed: any text (no spaces).
+
+* description_url - The URL used to hyperlink to locus information in the isolate information page. This can either be a relative (e.g. /cgi-bin/...) or an absolute (containing http://) URL.	
+
+  * Allowed: any valid URL.
+
+* url - The URL used to hyperlink to information about the allele. This can either be a relative or absolute URL. If [?] (including the square brackets) is included then this will be substituted for the allele value in the resultant URL. To link to the appropiate allele info page on a corresponding seqdef database you would need something like /cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=alleleInfo&locus=abcZ&allele_id=[?].
+
+  * Allowed: any valid URL.
+
+.. index::
+   single: locus; adding; copying existing record
+
+Using existing locus definition as a template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo:: Add description.
 
 .. index::
    pair: locus; adding
 
-.. todo:: Add description.
+Batch adding
+------------
+Click the batch add (++) loci link on the curator's interface contents page.
+
+.. image:: /images/administration/add_new_loci_isolates2.png
+
+Click the link to download an Excel template:
+
+.. image:: /images/administration/add_new_loci_isolates3.png
+
+Fill in the spreadsheet fields using the :ref:`table above as a guide <isolate_locus_fields>`, then paste the completed table into the web form and press 'Submit query'.
 
 **********************************
 Defining locus extended attributes
