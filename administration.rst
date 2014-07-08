@@ -554,6 +554,8 @@ Click the add (+) loci link on the curator's interface contents page.
 
 Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
 
+.. image:: /images/administration/add_new_loci_isolates4.png
+
 .. _isolate_locus_fields:
 
 * id - The name of the locus
@@ -703,8 +705,19 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 
 Using existing locus definition as a template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+When defining a new locus in the isolate database, it is possible to use an existing locus record as a template.  To do this, click the 'Show tools' link in the top-right of the screen:
 
-.. todo:: Add description.
+.. image:: /images/administration/add_new_loci_isolates5.png
+
+This displays a drop-down box containing existing loci.  Select the locus that you wish to use as a template, and click 'Copy'.
+
+.. image:: /images/administration/add_new_loci_isolates6.png
+
+The configuration will be copied over to the web form, with the exception of name fields.  Some fields will require you to change the value 'PUT_LOCUS_NAME_HERE' with the value you enter in the id field.  These are usually the dbase_id2_value, description_url and url fields:
+
+.. image:: /images/administration/add_new_loci_isolates7.png
+
+Complete the form and click 'Submit'.
 
 .. index::
    pair: locus; adding
@@ -1135,11 +1148,17 @@ Defining new loci based on annotated reference genome
 
 .. todo:: Add description.
 
+.. index::
+   single: genome filtering
+
 ****************
 Genome filtering
 ****************
 
 .. todo:: Add description.
+
+.. index::
+   single: locus positions; setting
 
 ******************************
 Setting locus genome positions
@@ -1147,17 +1166,26 @@ Setting locus genome positions
 
 .. todo:: Add description.
 
+.. index::
+   single: composite fields
+
 *************************
 Defining composite fields
 *************************
 
 .. todo:: Add description.
 
+.. index::
+   single: extended attributes; provenance fields
+
 **********************************************
 Extended provenance attributes (lookup tables)
 **********************************************
 
 .. todo:: Add description.
+
+.. index::
+   single: settings; validation
 
 *************************************************
 Checking external database configuration settings
