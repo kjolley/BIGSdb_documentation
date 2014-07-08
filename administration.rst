@@ -1160,8 +1160,113 @@ Defining new loci based on annotated reference genome
 ****************
 Genome filtering
 ****************
+Within a genome there may be multiple loci that share allele pools. If an allele sequence is tagged from a genome using only BLAST then there is no way to determine which locus has been identified. It is, however, possible to further define loci by their context, i.e. surrounding sequence.
 
-.. todo:: Add description.
+.. index:: 
+   single:genome filtering; in silico PCR
+   single:in silico PCR
+
+
+Filtering by in silico PCR
+==========================
+Provided a locus can be predicted to be specifically amplifed by a PCR reaction, the genome can be filtered to only look at regions prediced to fall within amplification products of one or more PCR reactions. Since this is in silico we don't need to worry about problems such as sequence secondary structure and primers can be any length.
+
+.. figure:: /images/administration/in_silico_pcr.png
+
+   Genome filtering by in silico PCR.
+
+To define a PCR reaction that can be linked to a locus definition, click the add (+) PCR reaction link on the curator's main page.
+
+.. image:: /images/administration/in_silico_pcr2.png
+
+In the resulting web form you can enter values for your two primer sequences (which can be any length), the minimum and maximum lengths of reaction products you wish to consider and a value for the allowed number of mismatches per primer.
+
+.. image:: /images/administration/in_silico_pcr3.png
+
+* id - PCR reaction identifier number.
+
+  * Allowed: integer.
+
+* description - Description of PCR reaction product.
+
+  * Allowed: any text.
+
+* primer1 - Primer 1 sequences
+
+  * Allowed: nucleotide sequence (IUPAC ambiguous characters allowed).
+
+* primer2 - Primer 2 sequence.
+
+  * Allowed: nucleotide sequence (IUPAC ambiguous characters allowed).
+
+* min_length - Minimum length of predicted PCR product.
+
+  * Allowed: integer.
+
+* max_length - Maximum length of predicted PCR product.
+
+* max_primer_mismatch - Number of mismatches allowed in primer sequence.
+
+  * Allowed: integer.
+  * Do not set this too high or the simulation will run slowly.
+
+Associating this with a particular locus is a two step process. First, create a locus link by clicking the add (+) PCR locus link on the curator's main page.  This link will only appear once a PCR reaction has been defined.
+
+.. image:: /images/administration/in_silico_pcr4.png
+
+Select the locus and PCR reaction name from the dropdown lists to create the link. You also need to edit the locus table and set the pcr_filter field to 'true'.
+
+Now when you next perform :ref:`tag scanning <tag_scanning>` there will be an option to use PCR filtering.
+
+.. index:: 
+   single: genome filtering; in silico hybridization
+   single: in silico hybridization
+
+Filtering by in silico hybridization
+====================================
+An alternative is to define a locus by proximity to a single probe sequence. This is especially useful if you have multiple contigs and the locus in question may be at the end of a contig so that it doesn't have upstream or downstream sequence available for PCR filtering.
+
+.. figure:: /images/administration/in_silico_hybridization.png
+
+   Filtering by in silico hybridization
+
+The process is very similar to setting up PCR filtering, but this time click the nucleotide probe link on the curator's content page.
+
+.. figure:: /images/administration/in_silico_hybridization2.png
+
+Enter the nucleotide sequence and a name for the probe. Next you need to link this to the locus in question. Click the add (+) probe locus links link on the curator's main page.  This link will only appear once a probe has been defined.
+
+.. figure:: /images/administration/in_silico_hybridization3.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+* probe_id - Dropdown list of probe names.	
+
+  * Allowed: selection from list.
+
+* locus	- Dropdown list of loci.
+
+  * Allowed: selection from list.
+
+* max_distance - Minimum distance of probe from end of locus.
+
+  * Allowed: any positive integer.
+
+* min_alignment	- Minimum length of alignment allowed.
+
+  * Allowed: any positive integer.
+
+* max_mismatch - Maximum number of mismatches allowed in alignment.
+
+  * Allowed: any positive integer.
+
+* max_gaps - Maximum number of gaps allowed in alignment.
+
+  * Allowed: any positive integer.
+
+Finally edit the locus table and set the probe_filter field for the specified locus to 'true'.
+
+Now when you next perform :ref:`tag scanning <tag_scanning>` there will be an option to use probe hybridization filtering.
 
 .. index::
    single: locus positions; setting

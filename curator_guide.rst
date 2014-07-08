@@ -58,5 +58,9 @@ Uploading sequence contigs linked to isolate records
 
 .. todo:: Add description.
 
+.. _tag_scanning:
 
+Automated web-based sequence tagging
+------------------------------------
 
+.. todo:: Add description.
