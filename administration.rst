@@ -960,6 +960,12 @@ Fill in the scheme description in the web form. Required fields have an exclamat
 .. index::
    single: client databases
 
+*******************************************
+Organizing schemes into hierarchical groups
+*******************************************
+
+.. todo:: Add description.
+
 ***************************
 Setting up client databases
 ***************************
@@ -1341,6 +1347,8 @@ Now when you next perform :ref:`tag scanning <tag_scanning>` there will be an op
 
 .. index::
    single: locus positions; setting
+
+.. _genome_positions:
 
 ******************************
 Setting locus genome positions
