@@ -11,6 +11,8 @@ Querying sequences to determine allele identity
 
 .. todo:: Add description.
 
+.. _locus_specific_query:
+
 Searching for specific sequences
 ================================
 

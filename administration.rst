@@ -528,6 +528,8 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 .. index::
    pair: locus; adding
 
+.. _batch_adding_loci_seqdef:
+
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page.
@@ -728,6 +730,8 @@ Complete the form and click 'Submit'.
 .. index::
    pair: locus; adding
 
+.. _batch_adding_loci_isolates:
+
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page.
@@ -743,8 +747,60 @@ Fill in the spreadsheet fields using the :ref:`table above as a guide <isolate_l
 **********************************
 Defining locus extended attributes
 **********************************
+You may want to add additional metadata for the allele definitions of some loci. Since these are likely to be specific to each locus, they cannot be defined generically within the standard locus definition.  We can, instead, define extended attributes.  Examples of these include higher order grouping of antigen sequences, antibody reactivities, identification of important mutations, or cross-referencing of alternative nomenclatures.
 
-.. todo:: Add description.
+To add extended attributes for a locus, click add (+) locus extended attributes in the sequence definition database curator's interface contents page.
+
+.. image:: /images/administration/locus_extended_attributes.png
+
+Fill in the web form with appropriate values. Required fields have an exclamation mark (!) next to them:
+
+.. image:: /images/administration/locus_extended_attributes2.png
+
+* locus - Select locus from dropdown box.
+
+  * Allowed: existing locus name.
+
+* field - Name of extended attributes.
+
+  * Allowed: any value.
+
+* value_format - Data type of attribute.
+
+  * Allowed: integer/text/boolean.
+
+* required - Specifies whether the attribute value but be defined when adding a new sequence.
+
+  * Allowed: true/false.
+
+* value_regex - `Regular expression <http://en.wikipedia.org/wiki/Regular_expression>`_ to enforce allele id naming (optional).
+
+  * ^: the beginning of the string
+  * $:the end of the string
+  * \d: digit
+  * \D: non-digit
+  * \s: white space character
+  * \S: non white space character
+  * \w: alpha-numeric plus '_'
+  * .: any character
+  * \*: 0 or more of previous character
+  * +: 1 or more of previous character
+
+* description - Description that will appear within the web form when adding new sequences (optional).
+
+  * Allowed: any value.
+
+* option_list - Pipe (|) separated list of allowed values (optional).
+
+* length - Maximum length of value (optional).
+
+  * Allowed: any integer.
+
+* field_order - Integer that sets the position of the field within scheme values in any results (optional).
+
+  * Allowed: any integer.
+
+Once extended attributes have been defined, they will appear in the web form when adding new sequences for that locus.  The values are searchable when using a :ref:`locus-specific sequence query <locus_specific_query>`, and they will appear within query results and allele information pages.
 
 .. index::
    pair: scheme; adding
@@ -1145,14 +1201,27 @@ The workflow for setting up a MLST scheme is as follows (the example seqdef data
 3. Add scheme_field ST as before
 4. Add loci as scheme_members
 
-*****************************************************
-Defining new loci based on annotated reference genome
-*****************************************************
-
 .. index::
    pair: locus; adding
 
-.. todo:: Add description.
+*****************************************************
+Defining new loci based on annotated reference genome
+*****************************************************
+An annotated reference genome can be used as the basis of defining loci.  The 'Databank scan' function of the isolate database will create an upload table suitable for pasting directly in to the batch locus add form of the :ref:`sequence definition <batch_adding_loci_seqdef>` or :ref:`isolate <batch_adding_loci_isolates>` databases.
+  
+Click 'Database scan' in the isolate database curator's contents pag.
+
+.. image:: /images/administration/database_scan.png
+
+Enter an EMBL or Genbank accession number for a complete annotated genome and press 'Submit'.
+
+.. image:: /images/administration/database_scan2.png
+
+A table of loci will be generated provided a valid accession number is provided.
+
+.. image:: /images/administration/database_scan3.png
+
+Click the link to 'Download tab-limited text' to display the text version suitable for loading in to the loci batch upload form.
 
 .. index::
    single: genome filtering
