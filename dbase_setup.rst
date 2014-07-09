@@ -343,6 +343,8 @@ Element content: Sample field name + optional list <optlist> of allowed values. 
 
 The sample table, if defined, must include isolate_id and sample_id fields, which must also be described in the XML file. These must be set as integer fields.
 
+.. _seqdef_xml:
+
 Sequence definition database XML attributes
 ===========================================
 ::
@@ -398,6 +400,30 @@ Top level element. Contains child elements: system, field and sample.
 	
   * prevent users or curators from downloading all alleles for a locus (admins always can). 'yes' or 'no', default 'no'.	  
   * optional
+
+* materialized_views
+
+  * enable materialized views: either 'yes' or 'no', default 'no'.
+
+* allele_flags
+
+  * enable flags to be set for alleles: either 'yes' or 'no', default 'no'.
+
+* allele_comments
+
+  * enable comments on allele sequences: either 'yes' or 'no', default 'no'.
+  * this is not enabled by default to discourage the practice of adding isolate information to allele definitions (this sort of information belongs in an isolate database).
+
+* sets
+
+  * use sets: either 'yes' or 'no', default 'no'.
+  * optional
+
+* set_id
+
+  * force the use of a specific set when accessing database via this XML configuration: Value is the name of the set.
+  * optional
+
 
 *******************
 User authentication

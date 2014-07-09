@@ -257,6 +257,7 @@ Improving performance
 
 .. index::
    single: performance; mod_perl 
+   single: mod_perl
 
 Use mod_perl
 ============
@@ -264,6 +265,7 @@ The single biggest improvement to speed can be obtained by running BIGSdb under 
 
 .. index::
    single: performance; caching schemes
+   pair: caching; schemes
 
 Cache scheme definitions within an isolate database
 ===================================================
@@ -281,6 +283,7 @@ If queries are taking longer than 5 seconds to perform and a cache is not in pla
 
 .. index::
    single: performance; materialized views
+   single: materialized views
 
 Use materialized views for scheme definitions
 =============================================
@@ -744,6 +747,9 @@ Click the link to download an Excel template:
 
 Fill in the spreadsheet fields using the :ref:`table above as a guide <isolate_locus_fields>`, then paste the completed table into the web form and press 'Submit query'.
 
+.. index::
+   pair: extended attributes; locus
+
 **********************************
 Defining locus extended attributes
 **********************************
@@ -803,7 +809,7 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 Once extended attributes have been defined, they will appear in the web form when adding new sequences for that locus.  The values are searchable when using a :ref:`locus-specific sequence query <locus_specific_query>`, and they will appear within query results and allele information pages.
 
 .. index::
-   pair: scheme; adding
+   pair: schemes; adding
    
 ****************
 Defining schemes
@@ -1422,7 +1428,7 @@ This will convert 'ST-4 complex/subgroup IV' to 'cc4'.
 You can also define text to be used for when the field value is missing, e.g. 'ND'.
 
 .. index::
-   single: extended attributes; provenance fields
+   pair: extended attributes; provenance fields
 
 **********************************************
 Extended provenance attributes (lookup tables)

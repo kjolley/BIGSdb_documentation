@@ -1,5 +1,5 @@
 ###################
-BIGSdb Dependencies
+BIGSdb dependencies
 ###################
 
 Required packages
