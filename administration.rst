@@ -1207,9 +1207,9 @@ The workflow for setting up a MLST scheme is as follows (the example seqdef data
 *****************************************************
 Defining new loci based on annotated reference genome
 *****************************************************
-An annotated reference genome can be used as the basis of defining loci.  The 'Databank scan' function of the isolate database will create an upload table suitable for pasting directly in to the batch locus add form of the :ref:`sequence definition <batch_adding_loci_seqdef>` or :ref:`isolate <batch_adding_loci_isolates>` databases.
+An annotated reference genome can be used as the basis of defining loci.  The 'Databank scan' function will create an upload table suitable for pasting directly in to the batch locus add form of the :ref:`sequence definition <batch_adding_loci_seqdef>` or :ref:`isolate <batch_adding_loci_isolates>` databases.
   
-Click 'Database scan' in the isolate database curator's contents pag.
+Click 'Database scan' on the curator's contents pag.
 
 .. image:: /images/administration/database_scan.png
 
@@ -1221,7 +1221,9 @@ A table of loci will be generated provided a valid accession number is provided.
 
 .. image:: /images/administration/database_scan3.png
 
-Click the link to 'Download tab-limited text' to display the text version suitable for loading in to the loci batch upload form.
+Tab-delimited text and Excel format files will be created to be used as the basis for upload files for the sequence definition and isolate databases.  Batch sequence files, in text and Excel formats, are also created for defining the first allele once the locus has been set up in the sequence definition database.
+
+.. image:: /images/administration/database_scan4.png
 
 .. index::
    single: genome filtering
