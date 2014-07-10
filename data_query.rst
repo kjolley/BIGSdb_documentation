@@ -6,6 +6,8 @@ Querying data
 Sequence definition databases
 *****************************
 
+.. _sequence_query:
+
 Querying sequences to determine allele identity
 ===============================================
 

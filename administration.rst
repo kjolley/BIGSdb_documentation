@@ -973,8 +973,31 @@ Fill in the scheme description in the web form. Required fields have an exclamat
 *******************************************
 Organizing schemes into hierarchical groups
 *******************************************
+Schemes can be organized in to groups, and these groups can in turn be members of other groups.  This faciliates hierarchical ordering of loci, but with the flexibility to allow loci and schemes to belong to multiple groups.
 
-.. todo:: Add description.
+This hierarchical structuring can be seen in various places within BIGSdb, for example the :ref:`allele download <download_alleles>` page.
+
+.. image:: /images/administration/scheme_groups.png
+
+Scheme groups can be added in both the sequence definition and isolate databases.  To add a new group, click the add (+) scheme group link on the curator's contents page.
+
+.. image:: /images/administration/scheme_groups2.png
+
+Enter a short name for the group - this will appear within drop-down list boxes and the hierarchical tree, so it needs to be fairly short.
+
+.. image:: /images/administration/scheme_groups3.png
+
+If you are creating a scheme group in the sequence definition database, there is an additional field called 'seq_query'.  Set this to true to add the scheme group to the dropdown lists in the :ref:`sequence query <sequence_query>` page.  This enables all loci belonging to schemes within the group to be queried together.
+
+Schemes can be added to groups by clicking the add (+) scheme group scheme members link.
+
+.. image:: /images/administration/scheme_groups4.png
+
+Select the scheme and the group to add it to, then click 'Submit'.
+
+.. image:: /images/administration/scheme_groups5.png
+
+Scheme groups can be added to other scheme groups in the same way by clicking the add (+) scheme group group members link.
 
 ***************************
 Setting up client databases
