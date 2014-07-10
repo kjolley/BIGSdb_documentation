@@ -244,14 +244,76 @@ Any problems with the data will be listed and highlighted within the table. Fix 
 ********************************************
 Updating and deleting single isolate records
 ********************************************
+First you need to locate the isolate record. You can either browse or use a search or list query.
 
-.. todo:: Add description.
+.. image:: /images/curation/update_isolate.png
+
+The query interface is the same as the :ref:`public query interface <isolate_query>`. Following a query, a results table of isolates will be displayed. There will be delete and update links for each record.
+
+.. image:: /images/curation/update_isolate2.png
+
+Clicking the 'Delete' link takes you to a page displaying the full isolate record. 
+
+.. image:: /images/curation/delete_isolate.png
+
+Pressing 'Delete' from this record page confirms the deletion. 
+
+Clicking the 'Update' link for an isolate takes you to an update form. Make the required changes and click 'Update'.
+
+.. image:: /images/curation/update_isolate3.png
+
+Allele designations can also be updated by clicking within the scheme tree and selecting the 'Add' or 'Update' link next to a displayed locus.
+
+.. image:: /images/curation/update_isolate4.png
+
+.. image:: /images/curation/update_isolate5.png
+
+Schemes will only appear in the tree if data for at least one of the loci within the scheme has been added.  You can additionally add or update allelic designations for a locus by choosing a locus in the drop-down list box and clicking 'Add/update'.
+
+.. image:: /images/curation/update_isolate6.png
+
+The allele designation update page allows you to modify an existing designation, or alternatively add additional designations. The sender, status (confirmed/provisional) and method (manual/automatic) needs to be set for each designation (all pending designations have a provisional status). The method is used to differentiate designations that have been determined manually from those determined by an automated algorithm.
+
+.. image:: /images/curation/update_isolate7.png
 
 ***************************************
 Batch updating multiple isolate records
 ***************************************
+Select 'batch update' isolates link on the curator's index page.
 
-.. todo:: Add description.
+.. image:: /images/curation/batch_update_isolate.png
+
+Prepare your update data in 3 columns in a spreadsheet:
+
+#. Unique identifier field
+#. Field to be updated
+#. New value for field
+
+You should also include a header line at the top - this isn't used so can contain anything but it should be present.
+
+Columns must be tab-delimited which they will be if you copy and paste directly from the spreadsheet.
+
+So, to update isolate id-100 and id-101 to serogroup B you would prepare the following: ::
+
+  id     field     value
+  100    serogroup B
+  101    serogroup B
+
+Select the field you are using as a unique identifier, in this case id, from the drop-down list box, and paste in the data. If the fields already have values set, you should also check the 'Overwrite existing data' checkbox.  Press 'submit'.
+
+.. image:: /images/curation/batch_update_isolate2.png
+
+ A confirmation page will be displayed if there are no problems. If there are problems, these will be listed.  Press 'Upload' to upload the changes.
+
+.. image:: /images/curation/batch_update_isolate3.png
+
+You can also use a secondary selection field such that a combination of two fields uniquely defines the isolate, for example using country and isolate name.
+
+So, for example, to update the serogroups of isolates CN100 and CN103, both from the UK, select the appropriate primary and secondary fields and prepare the data as follows: ::
+
+  isolate     country     field      value
+  CN100       UK          serogroup  B
+  CN103	      UK	  serogroup  B
 
 *********************************
 Deleting multiple isolate records

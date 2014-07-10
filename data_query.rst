@@ -37,6 +37,8 @@ Investigating allele differences
 Isolate databases
 *****************
 
+.. _isolate_query:
+
 Searching
 =========
 
