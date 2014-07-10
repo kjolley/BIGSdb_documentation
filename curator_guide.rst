@@ -303,7 +303,7 @@ Select the field you are using as a unique identifier, in this case id, from the
 
 .. image:: /images/curation/batch_update_isolate2.png
 
- A confirmation page will be displayed if there are no problems. If there are problems, these will be listed.  Press 'Upload' to upload the changes.
+A confirmation page will be displayed if there are no problems. If there are problems, these will be listed.  Press 'Upload' to upload the changes.
 
 .. image:: /images/curation/batch_update_isolate3.png
 
@@ -319,19 +319,75 @@ So, for example, to update the serogroups of isolates CN100 and CN103, both from
 Deleting multiple isolate records
 *********************************
 
-.. todo:: Add description.
+.. note::
 
-*************************************************
-Setting and modifying isolate allele designations
-*************************************************
+   Please note that standard curator accounts may not have permission to delete multiple isolates. Administrator accounts are always able to do this.
 
-.. todo:: Add description.
+Before you can delete multiple records, you need to search for them. From the curator's main page, click the Query isolates link:
+
+.. image:: /images/curation/batch_delete_isolate.png
+
+Enter search criteria that specifically return the isolates you wish to delete. Click 'Delete ALL'.
+
+.. image:: /images/curation/batch_delete_isolate2.png
+
+You will have a final chance to change your mind:
+
+.. image:: /images/curation/batch_delete_isolate3.png
+
+Click 'Confirm deletion!'.
 
 ****************************************************
 Uploading sequence contigs linked to isolate records
 ****************************************************
 
-.. todo:: Add description.
+Select isolate from drop-down list
+==================================
+To upload sequence data, click the sequences batch add (++) link on the curator's main page.
+
+.. image:: /images/curation/upload_contigs.png
+
+Select the isolate that you wish to link the sequence to from the dropdown list box. You also need to enter the person who sent the data. Optionally, you can add the sequencing method used.
+
+Paste sequence contigs in FASTA format in to the form.
+
+.. image:: /images/curation/upload_contigs2.png
+
+Click 'Submit'. A summary of the number of isolates and their lengths will be displayed. To confirm upload, click 'Upload'.
+
+.. image:: /images/curation/upload_contigs3.png
+
+It is also possible to upload data for multiple isolates at the same time, but these must exist as single contigs for each isolate. To do this, select 'Read identifier from FASTA' in the isolate id field and select the field that you wish to use as the identifier in the 'identifier field', e.g. to use isolate names select 'isolate' here.
+
+.. image:: /images/curation/upload_contigs4.png
+
+Provided the identifier used uniquely identifies the isolate you will get a confirmation screen. If the isolate name does not do this you'll probably have to use the database id number instead. Click 'Upload' to confirm.
+
+.. image:: /images/curation/upload_contigs5.png
+
+Select from isolate query
+=========================
+As an alternative to selecting the isolate from a dropdown list (which can become unwieldy for large databases), it is also possible to upload sequence data following an isolate query.
+
+Click the isolate query link from the curator's main page.
+
+.. image:: /images/curation/upload_contigs6.png
+
+Enter your search criteria. From the list of isolates displayed, click the 'Upload' link in the sequence bin column of the appropriate isolate record.
+
+.. image:: /images/curation/upload_contigs7.png
+
+The same upload form as detailed above is shown. Instead of a dropdown list for isolate selection, however, the chosen isolate will be pre-selected.
+
+.. image:: /images/curation/upload_contigs8.png
+
+Upload options
+==============
+On the upload form, you can select to filter out short sequences from your contig list.
+
+If your database has experiments defined (experiments are used for grouping sequences and can be used to filter the sequences used in :ref:`tag scanning <tag_scanning>`), you can also choose to upload your contigs as part of an experiment. To do this, select the experiment from the dropdown list box.
+
+.. image:: /images/curation/upload_contigs9.png
 
 .. _tag_scanning:
 
@@ -344,5 +400,11 @@ Automated web-based sequence tagging
 ********
 Projects
 ********
+
+.. todo:: Add description.
+
+*************************
+Isolate record versioning
+*************************
 
 .. todo:: Add description.
