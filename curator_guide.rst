@@ -507,14 +507,77 @@ If any new alleles are found, a link at the bottom will display these in a forma
 
    :ref:`Automated offline sequence tagging <autotagger>`
 
+.. index::
+   single: projects
+
 ********
 Projects
 ********
 
-.. todo:: Add description.
+Creating the project
+====================
+The first step in grouping by project is to set up a project.
+
+Click the add (+) project link on the curator's main page.
+
+.. image:: /images/curation/projects.png
+
+Enter a short description for the project.  This is used in drop-down list boxes within the query interfaces, so make sure it is not too long.
+
+You can also enter a full description.  If this is added, the project description is displayed at the top of an isolate information page.  The full description can include HTML formatting, including image links.
+
+Click 'Submit'.
+
+.. image:: /images/curation/projects2.png
+
+Explicitly adding isolates to a project
+=======================================
+Explicitly adding isolates to the project can be done individually or in batch mode. To add individually, click the add (+) project member link on the curator's main page.
+
+.. image:: /images/curation/projects3.png
+
+Select the project from the dropdown list box and enter the id of the isolate that you wish to add to the project. Click 'Submit'.
+
+.. image:: /images/curation/projects4.png
+
+To add isolates in batch mode. Click the batch add (++) project members link on the curator's main page.
+
+.. image:: /images/curation/projects5.png
+
+Download an Excel submission template:
+
+.. image:: /images/curation/projects6.png
+
+You will need to know the id number of the project - this is the id that was used when you created the project. Fill in the spreadsheet, listing the project and isolate ids. Copy and paste this to the web upload form. press 'Submit'.
+
+.. image:: /images/curation/projects7.png
 
 *************************
 Isolate record versioning
 *************************
 
-.. todo:: Add description.
+.. versionadded:: 1.9.0
+
+Versioning enables multiple versions of genomes to be uploaded to the database and be analysed separately.  When a new version is created, a copy of the provenance metadata, and publication links are created in a new isolate record.  The sequence bin and allele designations are not copied.
+
+By default, old versions of the record are not returned from queries.  Most query pages have a checkbox to 'Include old record versions' to override this.
+
+Links to different versions are displayed within an isolate record:
+
+.. image:: /images/curation/versions.png
+
+The different versions will also be listed in analysis plugins, with old versions identified with an [old version] designation after their name.
+
+To create a new version of an isolate record, query or browse for the isolate:
+
+.. image:: /images/curation/versions2.png
+
+Click the 'create' new version link next to the isolate record:
+
+.. image:: /images/curation/versions3.png
+
+The isolate record will be displayed.  The suggested id number for the new record will be displayed - you can change this.  By default, the new record will also be added to any projects that the old record is a member of.  Uncheck the 'Add new version to projects' checkbox to prevent this.
+
+Click the 'Create' button.
+
+.. image:: /images/curation/versions4.png
