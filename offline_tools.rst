@@ -2,6 +2,8 @@
 Offline curation tools
 ######################
 
+.. _autotagger:
+
 **********************************
 Automated offline sequence tagging
 **********************************

@@ -51,16 +51,44 @@ Press submit. By default, the system will test whether your sequence is similar 
 Sequences can be flagged with specific attributes - these are searchable when doing a sequence attribute query.  These are mainly for use with whole genome MLST type data.  Multiple flags can be selected by Ctrl-clicking the list.  Available flags are:
 
 * atypical
+
+  * Catch-all term for a sequence that is unusual compared to other alleles of locus.
+
 * contains IS element
+
+  * Coding sequence is interrupted by insertion sequence.
+
 * downstream fusion
+
+  * No stop codon present resulting in translation continuing.
+
 * frameshift
+
+  * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
+
 * internal stop codon
+
+  * Frameshift in sequence relative to other alleles, resulting in internal stop codon.
+
 * no start codon
+
+  * No apparent start codon in immediate vicinity of usual start.
+
 * phase variable: off
+
+  * Coding sequence has a homopolymeric run with a frameshift resulting in a stop codon preventing complete translation.
+
 * truncated
+
+  * Coding sequence is unusually short resulting in a truncated protein (not the same as running off the end of a contig).
+
 * upstream fusion
 
+  * No apparent start codon in immediate vicinity of usual start, likely due to a gene fusion (sequence is transcribed together with upstream coding sequence).
+
 Sequences can also be associated with PubMed, ENA or Genbank id numbers by entering these as lists (one value per line) in the appropriate form box.
+
+.. _batch_allele_upload:
 
 Batch adding multiple alleles
 =============================
@@ -394,8 +422,90 @@ If your database has experiments defined (experiments are used for grouping sequ
 ************************************
 Automated web-based sequence tagging
 ************************************
+Sequence tagging is the process of identifying alleles by scanning the sequence bin linked to an isolate record. Defined loci can either have a single reference sequence, that is defined in the locus table, or they can be linked to an external database that contains the sequences for known alleles. The tagging function uses BLAST to identify sequences and will tag the specific sequence region with locus information and an allele designation if a matching allele is identified by reference to an external database.
 
-.. todo:: Add description.
+Select 'scan' sequence tags on the curator's index page.
+
+.. image:: /images/curation/tag_scanning.png
+
+Next, select the isolates whose sequences you wish to scan against. Multiple isolates can be selected by holding down the Ctrl key. All isolates can be selected by clicking the 'All' button under the isolate selection list.
+
+Select either individual loci or schemes (collections of loci) to scan against. Again, multiple selections can be made.
+
+.. image:: /images/curation/tag_scanning2.png
+
+Choose your scan parameters. Lowering the value for BLASTN word size will increase the sensitivity of the search at the expense of time. Using TBLASTX is more sensitive but also much slower. TBLASTX can only be used to identify the sequence region rather than a specific allele (since it will only match the translated sequence and there may be multiple alleles that encode a particular peptide sequence).
+
+By default, for each isolate only loci that have not had either an allele designation made or a sequence region scanned will be scanned again. To rescan in these cases, select either or both the following:
+
+* Rescan even if allele designations are already set
+* Rescan even if allele sequences are tagged
+
+Options can be returned to their default setting by clicking the 'Defaults' button.
+
+.. image:: /images/curation/tag_scanning3.png
+
+Press 'Scan'. The system takes approximately 1-2 seconds to identify each sequence (depending on machine speed and size of definitions databases). Any identified sequences will be listed in a table, with checkboxes indicating whether allele sequences or sequence regions are to be tagged.
+
+.. image:: /images/curation/tag_scanning4.png
+
+Individual sequences can be extracted for inspection by clicking the 'extract →' link. The sequence (along with flanking regions) will be opened in another browser window or tab.
+
+Checkboxes are enabled against any new sequence region or allele designation. You can also set a flag for a particular sequence to mark an attribute.  These will be set automatically if these have been defined within the sequence definition database for an identified allele.  Available flags are:
+
+* ambiguous read
+
+  * Genome sequence contains ambiguous nucleotides in coding sequence.
+
+* apparent misassembly
+
+  * Sequence has a region of very high identity to existing allele in one region but looks completely different in another.
+
+* atypical
+
+  * Catch-all term for a sequence that is unusual compared to other alleles of locus.
+
+* contains IS element
+
+  * Coding sequence is interrupted by insertion sequence.
+
+* downstream fusion
+
+  * No stop codon present resulting in translation continuing.
+
+* frameshift
+
+  * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
+
+* internal stop codon
+
+  * Frameshift in sequence relative to other alleles, resulting in internal stop codon.
+
+* no start codon
+
+  * No apparent start codon in immediate vicinity of usual start.
+
+* phase variable: off
+
+  * Coding sequence has a homopolymeric run with a frameshift resulting in a stop codon preventing complete translation.
+
+* truncated
+
+  * Coding sequence is unusually short resulting in a truncated protein (not the same as running off the end of a contig).
+
+* upstream fusion
+
+  * No apparent start codon in immediate vicinity of usual start, likely due to a gene fusion (sequence is transcribed together with upstream coding sequence).
+
+Ensure any sequences you want to tag are selected, then press 'Tag alleles/sequences'.
+
+If any new alleles are found, a link at the bottom will display these in a format suitable for automatic allele assignment by :ref:`batch uploading to sequence definition <batch_allele_upload>` database.
+
+.. seealso::
+
+   Offline curation tools
+
+   :ref:`Automated offline sequence tagging <autotagger>`
 
 ********
 Projects
