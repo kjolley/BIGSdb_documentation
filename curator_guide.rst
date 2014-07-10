@@ -155,20 +155,91 @@ If instead you clicked 'Update', you will be able to modify attributes of the se
 *************************************
 Adding new scheme profile definitions
 *************************************
+Provided a scheme has been set up with at least one locus and a scheme field set as a primary key, there will be links on the curator's main page to add profiles for that scheme.
 
-.. todo:: Add description.
+To add a single profile you can click the add (+) profiles link next to the scheme name (e.g. MLST):
+
+.. image:: /images/curation/add_scheme_profile.png
+
+A form will be displayed with the next available primary key number already entered (provided integers are used for the primary key format). Enter the new profile, associated scheme fields, and the sender, then click 'Submit'. The new profile will be added provided the primary key or the profile has not previously been entered.
+
+.. image:: /images/curation/add_scheme_profile2.png
+
+More usually, profiles are added in a batch mode. It is often easier to do this even for a single profile since it allows copying and pasting data from a spreadsheet.
+
+Click the batch add (++) profiles link next to the scheme name:
+
+.. image:: /images/curation/add_scheme_profile3.png
+
+Click the 'Download submission template (xlsx format)' link to download an Excel submission template.
+
+.. image:: /images/curation/add_scheme_profile4.png
+
+Fill in the spreadsheet using the copied template, then copy and paste the whole spreadsheet in to the large form on the upload page. If the primary key has an integer format, you can exclude this column and the next available number will be used automatically. If the column is included, however, a value must be set.  Select the sender from the dropdown list box and then click 'Submit'.
+
+.. image:: /images/curation/add_scheme_profile5.png
+
+You will be given a final confirmation page stating what will be uploaded.  If you wish to proceed with the submission, click 'Import data'.
+
+.. image:: /images/curation/add_scheme_profile6.png
 
 ************************************************
 Updating and deleting scheme profile definitions
 ************************************************
+In order to update or delete a scheme profile, first you must select it. Click the query (?) profiles link next to the scheme name (e.g. MLST):
 
-.. todo:: Add description.
+.. image:: /images/curation/update_scheme_profile.png
+
+Search for your profile by entering search criteria (alternatively you can use the browse or list query functions).
+
+.. image:: /images/curation/update_scheme_profile2.png
+
+To delete the profile, click the 'Delete' link next to the profile. Alternatively, if your account has permission, you may be able to 'Delete ALL' records retrieved from the search.
+
+For deletion of a single record, the full record will be displayed. Confirm deletion by clicking 'Delete!'.
+
+.. image:: /images/curation/delete_scheme_profile.png
+
+To modify the profile, click the 'Update' link next to the profile following the query. A form will be displayed - make any changes and then click 'Update'.
+
+.. image:: /images/curation/update_scheme_profile3.png
 
 **********************
 Adding isolate records
 **********************
+To add a single record, click the add (+) isolates link on the curator's index page.
 
-.. todo:: Add description.
+.. image:: /images/curation/add_isolate.png
+
+The next available id will be filled in automatically but you are free to change this. Fill in the individual fields. Required fields are listed first and are marked with an exclamation mark (!). Some fields may have drop-down list boxes of allowed values. You can also enter allele designations for any loci that have been defined.
+
+.. image:: /images/curation/add_isolate2.png
+
+Press submit when finished.
+
+More usually, isolate records are added in batch mode, even when only a single record is added, since the submission can be prepared in a spreadsheet and copied and pasted.
+
+Select batch add (++) isolates link on the curator's index page.
+
+.. image:: /images/curation/add_isolate3.png
+
+Download a submission template in Excel format from the link.
+
+.. image:: /images/curation/add_isolate4.png
+
+Prepare your data in the spreadsheet - the column headings must match the database fields.  In databases with large numbers of loci, there won't be columns for each of these.  You can, however, manually add locus columns.
+
+Pick a sender from the drop-down list box and paste the data from your spreadsheet in to the web form. The next available isolate id number will be used automatically (this can be overridden if you manually add an id column).
+
+.. image:: /images/curation/add_isolate5.png
+
+Press submit. Data are checked for consistency and if there are no problems you can then confirm the submission.
+
+.. image:: /images/curation/add_isolate6.png
+
+Any problems with the data will be listed and highlighted within the table. Fix the data and resubmit if this happens.
+
+.. image:: /images/curation/add_isolate7.png
 
 ********************************************
 Updating and deleting single isolate records
@@ -176,9 +247,9 @@ Updating and deleting single isolate records
 
 .. todo:: Add description.
 
-**********************************
-Batch updating of multiple records
-**********************************
+***************************************
+Batch updating multiple isolate records
+***************************************
 
 .. todo:: Add description.
 
@@ -211,3 +282,5 @@ Automated web-based sequence tagging
 ********
 Projects
 ********
+
+.. todo:: Add description.

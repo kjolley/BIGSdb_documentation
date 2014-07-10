@@ -342,6 +342,10 @@ To specify this, add the following attributute to the system tag: ::
 
 where the value is the name of the set.
 
+.. note::
+
+   If the set_id attribute is set, database configuration settings in the curator's interface are disabled.  This is because when the configuration is constrained to a set, only loci and schemes already added to the set are visible, so functionality to edit schemes/loci would become very confusing.  To modify these settings, you either need to access the interface from a different configuration, i.e. an alternative config.xml with the set_id attribute not set, or temporarily remove the set_id directive from the current config.xml while making configuration changes.
+
 Set metadata
 ============
 Additional metadata fields can be set within the XML configuration file. They are specified as belonging to a metaset by prefixing the field name with 'meta_NAME:' where NAME is the name of the metaset, e.g. ::
