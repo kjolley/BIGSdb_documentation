@@ -968,7 +968,7 @@ Fill in the scheme description in the web form. Required fields have an exclamat
 * allow_missing_loci - Allow profile definitions to contain '0' (locus missing) or 'N' (any allele).
 
 .. index::
-   single: client databases
+   pair: groups; scheme
 
 *******************************************
 Organizing schemes into hierarchical groups
@@ -998,6 +998,9 @@ Select the scheme and the group to add it to, then click 'Submit'.
 .. image:: /images/administration/scheme_groups5.png
 
 Scheme groups can be added to other scheme groups in the same way by clicking the add (+) scheme group group members link.
+
+.. index::
+   single: client databases
 
 ***************************
 Setting up client databases
