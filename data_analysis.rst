@@ -2,6 +2,18 @@
 Data analysis plugins
 #####################
 
+.. _locus_explorer:
+
+**************
+Locus explorer
+**************
+
+.. todo:: Add description.
+
+.. seealso::
+
+   :ref:`Investigating allele differences <allele_differences>`.
+
 ***************
 Field breakdown
 ***************

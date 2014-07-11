@@ -4,6 +4,10 @@ Offline curation tools
 
 .. _autotagger:
 
+.. index::
+   single: offline curation; autotagger
+   single: autotagger
+
 **********************************
 Automated offline sequence tagging
 **********************************
@@ -105,6 +109,11 @@ A full list of options can be found by typing: ::
  -y, --max ID
      Maximum isolate id.
 
+.. _autodefiner:
+
+.. index::
+   single: offline curation; auto allele definer
+   single: auto allele definer
 
 ***********************************
 Automated offline allele definition
@@ -210,6 +219,10 @@ A full list of options can be found by typing: ::
 
  -y, --max ID
      Maximum isolate id.
+
+.. index::
+   pair: autotagger; stop
+   pair: auto allele definer; stop
 
 *************************************
 Cleanly interrupting offline curation
