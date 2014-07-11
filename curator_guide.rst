@@ -552,6 +552,8 @@ You will need to know the id number of the project - this is the id that was use
 
 .. image:: /images/curation/projects7.png
 
+.. _versioning:
+
 *************************
 Isolate record versioning
 *************************
