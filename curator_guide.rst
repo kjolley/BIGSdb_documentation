@@ -48,43 +48,9 @@ The status can either be:
 
 Press submit. By default, the system will test whether your sequence is similar enough to existing alleles defined for that locus. The sequence will be rejected if it isn't considered similar enough. This test can be overridden by checking the 'Override sequence similarity check' checkbox at the bottom.
 
-Sequences can be flagged with specific attributes - these are searchable when doing a sequence attribute query.  These are mainly for use with whole genome MLST type data.  Multiple flags can be selected by Ctrl-clicking the list.  Available flags are:
+.. seealso::
 
-* atypical
-
-  * Catch-all term for a sequence that is unusual compared to other alleles of locus.
-
-* contains IS element
-
-  * Coding sequence is interrupted by insertion sequence.
-
-* downstream fusion
-
-  * No stop codon present resulting in translation continuing.
-
-* frameshift
-
-  * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
-
-* internal stop codon
-
-  * Frameshift in sequence relative to other alleles, resulting in internal stop codon.
-
-* no start codon
-
-  * No apparent start codon in immediate vicinity of usual start.
-
-* phase variable: off
-
-  * Coding sequence has a homopolymeric run with a frameshift resulting in a stop codon preventing complete translation.
-
-* truncated
-
-  * Coding sequence is unusually short resulting in a truncated protein (not the same as running off the end of a contig).
-
-* upstream fusion
-
-  * No apparent start codon in immediate vicinity of usual start, likely due to a gene fusion (sequence is transcribed together with upstream coding sequence).
+   :ref:`allele sequence flags <allele_sequence_flags>`
 
 Sequences can also be associated with PubMed, ENA or Genbank id numbers by entering these as lists (one value per line) in the appropriate form box.
 
@@ -451,51 +417,11 @@ Press 'Scan'. The system takes approximately 1-2 seconds to identify each sequen
 
 Individual sequences can be extracted for inspection by clicking the 'extract →' link. The sequence (along with flanking regions) will be opened in another browser window or tab.
 
-Checkboxes are enabled against any new sequence region or allele designation. You can also set a flag for a particular sequence to mark an attribute.  These will be set automatically if these have been defined within the sequence definition database for an identified allele.  Available flags are:
+Checkboxes are enabled against any new sequence region or allele designation. You can also set a flag for a particular sequence to mark an attribute.  These will be set automatically if these have been defined within the sequence definition database for an identified allele.  
 
-* ambiguous read
+.. seealso::
 
-  * Genome sequence contains ambiguous nucleotides in coding sequence.
-
-* apparent misassembly
-
-  * Sequence has a region of very high identity to existing allele in one region but looks completely different in another.
-
-* atypical
-
-  * Catch-all term for a sequence that is unusual compared to other alleles of locus.
-
-* contains IS element
-
-  * Coding sequence is interrupted by insertion sequence.
-
-* downstream fusion
-
-  * No stop codon present resulting in translation continuing.
-
-* frameshift
-
-  * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
-
-* internal stop codon
-
-  * Frameshift in sequence relative to other alleles, resulting in internal stop codon.
-
-* no start codon
-
-  * No apparent start codon in immediate vicinity of usual start.
-
-* phase variable: off
-
-  * Coding sequence has a homopolymeric run with a frameshift resulting in a stop codon preventing complete translation.
-
-* truncated
-
-  * Coding sequence is unusually short resulting in a truncated protein (not the same as running off the end of a contig).
-
-* upstream fusion
-
-  * No apparent start codon in immediate vicinity of usual start, likely due to a gene fusion (sequence is transcribed together with upstream coding sequence).
+   :ref:`Sequence tag flags <sequence_tag_flags>`
 
 Ensure any sequences you want to tag are selected, then press 'Tag alleles/sequences'.
 

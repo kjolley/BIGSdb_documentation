@@ -85,39 +85,7 @@ Enter the search criteria you wish to search on. You may also see some drop-down
 
 .. image:: /images/data_query/query_profiles2.png
 
-Each field can be queried using the following modifiers:
-
-* =
-
-  * Case insensitive exact match.
-
-* contains
-
-  * Case insensitive match to a partial string, e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex.
-
-* starts with
-
-  * Match to values that start with the search term (case insensitive).
-
-* ends with
-
-  * Match to values that end with the search term (case sensitive).
-
-* >
-
-  * Greater than the search term.
-
-* <
-
-  * Less than the search term.
-
-* NOT
-
-  * Match to values that do not equal the search term (case insensitive).
-
-* NOT contain
-
-  * Match to values that do not contain the search term (case insensitive).
+Each field can be queried using :ref:`standard operators <query_operators>`.
 
 Clicking the hyperlink for any profile will display full information about the profile.
 
@@ -185,39 +153,7 @@ After the search has been submitted, the results will be displayed in a table.
 
 .. image:: /images/data_query/query_isolates3.png
 
-Each field can be queried using the following modifiers:
-
-* =
-
-  * Case insensitive exact match.
-
-* contains
-
-  * Case insensitive match to a partial string, e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex.
-
-* starts with
-
-  * Match to values that start with the search term (case insensitive).
-
-* ends with
-
-  * Match to values that end with the search term (case sensitive).
-
-* >
-
-  * Greater than the search term.
-
-* <
-
-  * Less than the search term.
-
-* NOT
-
-  * Match to values that do not equal the search term (case insensitive).
-
-* NOT contain
-
-  * Match to values that do not contain the search term (case insensitive).
+Each field can be queried using :ref:`standard operators <query_operators>`.
 
 More search features are available by clicking the 'Modify form options' tab on the right-hand side of the screen.
 
@@ -256,53 +192,50 @@ Make sure that the allele designation/scheme field values fieldset is displayed 
 
 .. image:: /images/data_query/query_isolates6.png
 
-Designations can be queried using the following modifiers:
-
-* =
-
-  * Case insensitive exact match.
-
-* contains
-
-  * Case insensitive match to a partial string, e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex.
-
-* starts with
-
-  * Match to values that start with the search term (case insensitive).
-
-* ends with
-
-  * Match to values that end with the search term (case sensitive).
-
-* >
-
-  * Greater than the search term.
-
-* <
-
-  * Less than the search term.
-
-* NOT
-
-  * Match to values that do not equal the search term (case insensitive).
-
-* NOT contain
-
-  * Match to values that do not contain the search term (case insensitive).
+Designations can be queried using :ref:`standard operators <query_operators>`.
 
 Additional search terms can be combined using the '+' button.
+
+Add your search terms and click 'Submit'.  Allele designation/scheme field queries will be combined with terms entered in other sections.
 
 .. image:: /images/data_query/query_isolates7.png
 
 Query by allele designation status
 ==================================
+Allele designations can be queried based on their status, i.e. whether they are confirmed or provisional.
+ 
+Make sure that the allele designation staus fieldset is displayed by selecting it in the 'Modify form options' tab.
 
-.. todo:: Add description.
+.. image:: /images/data_query/query_isolates8.png
+
+Select a locus from the dropdown box and either 'provisional' or 'confirmed'.  Additional query fields can be displayed by clicking the '+' button.  Click 'Submit'.
+
+.. image:: /images/data_query/query_isolates9.png
+
+Provisional allele designations are marked within the results tables with a pink background.  Any scheme field designations that depend on the allele in question, e.g. a MLST ST, will also be marked as provisional.
 
 Query by tagged sequence status
 ===============================
+Sequence tags identify the region of a contig within an isolate's sequence bin entries that correspond to a particular locus.  The presence or absence of these tags can be queried as can whether or not the sequence has an a flag associated with.  These flags designate specific characteristics of the sequences.
 
-.. todo:: Add description.
+Make sure that the tagged sequences status fieldset is displayed by selecting it in the 'Modify form options' tab.
+
+.. image:: /images/data_query/query_isolates10.png
+
+Select a specific locus in the dropdown box (or alternatively 'any locus') and a status.  Available status values are:
+
+* untagged
+* tagged
+* complete
+* incomplete
+* flagged: <specific flag>
+
+.. image:: /images/data_query/query_isolates11.png
+
+.. seealso::
+
+   :ref:`Sequence tag flags <sequence_tag_flags>`
+ 
 
 Query filters
 =============
