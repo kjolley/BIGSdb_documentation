@@ -760,6 +760,8 @@ Fill in the spreadsheet fields using the :ref:`table above as a guide <isolate_l
 .. index::
    pair: extended attributes; locus
 
+.. _locus_extended_attributes:
+
 **********************************
 Defining locus extended attributes
 **********************************
@@ -1553,6 +1555,12 @@ Paste from the spreadsheet in to the upload form and click 'Submit'.
 
 .. index::
    single: settings; validation
+
+***********************
+Sequence bin attributes
+***********************
+
+.. todo:: Add description.
 
 *************************************************
 Checking external database configuration settings

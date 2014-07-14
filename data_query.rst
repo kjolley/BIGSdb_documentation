@@ -50,8 +50,43 @@ The sequence query is not limited to single genes.  You can also paste or upload
 *****************************************
 Searching for specific allele definitions
 *****************************************
+To retrieve specific allele designations, click 'Sequence attribute search' on a sequence definition database contents page.
 
-.. todo:: Add description.
+.. image:: /images/data_query/sequence_attributes.png
+
+Enter your query using the dropdown search box - additional terms can be added by clicking the '+' button.
+
+Designations can be queried using :ref:`standard operators <query_operators>`.
+
+.. image:: /images/data_query/sequence_attributes2.png
+
+Click submit.
+
+.. image:: /images/data_query/sequence_attributes3.png
+
+Click the hyperlinked results to display allele records.
+
+.. image:: /images/data_query/sequence_attributes4.png
+
+.. image:: /images/data_query/sequence_attributes5.png
+
+Various search criteria can also be selected by combining with filters.  Click the filter heading to display these.
+
+.. image:: /images/data_query/sequence_attributes6.png
+
+Locus-specific attributes
+=========================
+Some loci have :ref:`extended attribute fields <locus_extended_attributes>`.  To query these, you need to navigate to a locus-specific query page, by clicking the 'locus-specific query' link on the sequence attribute search page.
+
+.. image:: /images/data_query/sequence_attributes7.png
+
+Pick the required locus from the dropdown box.
+
+.. image:: /images/data_query/sequence_attributes8.png
+
+The fields specific for that locus will be added to the dropdown query boxes.
+
+.. image:: /images/data_query/sequence_attributes9.png
 
 .. index::
    pair: browse; scheme profiles
@@ -493,9 +528,44 @@ A list of possible filters appears.  Click any checkbox for a filter you would l
 
 Modifying locus and scheme display options
 ==========================================
+Whether or not loci, schemes or scheme fields are displayed in result tables, isolate records, or within query dropdown boxes can all be set with default options when first defined.  These attributes can, however, be overridden by a user, and these selections will be remembered between sessions.
 
-.. todo:: Add description.
+The procedure to modify these attributes is the same for locus, schemes or scheme fields, so the steps for loci will be demonstrated only.
 
+Click the appropriate link on the isolate contents page.
 
+.. image:: /images/data_query/locus_options.png
 
+Either select the locus id by querying for it directly.
 
+.. image:: /images/data_query/locus_options2.png
+
+Designations can be queried using :ref:`standard operators <query_operators>`.
+
+Alternatively, you can search by filtering loci by schemes.  Click the 'Filter query by' header and select the scheme in the dropdown box.
+
+.. image:: /images/data_query/locus_options3.png
+
+Once loci have been selected, click Customize 'locus options'.
+
+.. image:: /images/data_query/locus_options4.png
+
+You can then choose to add or remove individual loci from the selection by clicking the appropriate checkboxes.  At the bottom of the page are a number of attributes that you can change - clicking 'Change' will affect all selected loci.
+
+Possible options for loci are:
+
+* isolate_display - Sets how the locus is displayed within an isolate record:
+
+  * allele only - display only identifier
+  * sequence - display the full sequence
+  * hide - don't show at all
+
+* main_display - Sets whether the locus is displayed in the main results table following a query.
+
+* query_field - Sets whether the locus appears in dropdown list boxes to be used within queries.
+
+* analysis - Sets whether the locus can be used in data analysis functions.
+
+.. note::
+
+   Settings for loci can be overridden by those set for schemes that they are members of.  For example, if you set a locus to be displayed within a main results table, but that locus is a member of a scheme and you set that scheme not to be displayed, then the locus will not be shown.  Conversely, if you set a scheme to be displayed, but set its member locus not to be shown, then that locus will not be displayed (but other loci and scheme fields may be, depending on their independent settings).
