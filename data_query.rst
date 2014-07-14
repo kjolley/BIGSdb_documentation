@@ -327,7 +327,7 @@ Select the number of loci that you'd like to match in the options dropdown box. 
 * Exact or nearest match
 * Exact match only
 * x or more matches
-* y o  more matches
+* y or more matches
 * z or more matches
 
 Where x,y, and z will range from n-1 to 1 where n is the number of loci in the scheme.
@@ -341,15 +341,38 @@ Click 'Submit'.
 ***************************************
 Retrieving list of isolates or profiles
 ***************************************
+Both isolate and sequence definition databases can be queried against a list of values matching any criteria (isolate provenace fields, alleles, or scheme fields).
 
-.. todo:: Add description.
+Click 'List query' on the main contents page.
+
+.. image:: /images/data_query/list_query.png
+
+Select the attribute you wish to search against in the drop-down list box and enter the list of attributes in the box (one per line).  Click 'Submit'.
+
+.. image:: /images/data_query/list_query2.png
 
 *****************************************
 Retrieving isolates by linked publication
 *****************************************
+Click 'Publications' in the Breakdown section of the contents page.
 
-.. todo:: Add description.
+.. image:: /images/data_query/publications.png
 
+A list of publications linked by isolates within the database will be displayed.
+
+.. image:: /images/data_query/publications2.png
+
+These can be filtered by author and/or year, and the sort order changed.
+
+.. image:: /images/data_query/publications3.png
+
+To display the isolate records for any of the displayed publications, click the  button to the right of the citation.
+
+.. image:: /images/data_query/publications4.png
+
+The abstract of the paper will be displayed (if available), along with all isolates linked to it.
+
+.. image:: /images/data_query/publications5.png
 
 .. index::
    single: options
