@@ -5,7 +5,7 @@ Concepts and terms
 ******
 BIGSdb
 ******
-BIGSdb is the software platform - not a specific database.  There are many instances of BIGSdb databases.
+BIGSdb is the software platform - not a specific database.  There are many instances of BIGSdb databases, so referring to 'the BIGSdb' is meaningless.
 
 .. index::
    single: loci

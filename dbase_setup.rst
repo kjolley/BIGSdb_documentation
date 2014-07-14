@@ -253,8 +253,17 @@ Top level element. Contains child elements: system, field and sample.::
   * optional
 
 * no_publication_filter	
+
   * isolate databases only: Switches off display of publication filter in isolate query form by default: either 'yes' or 'no', default 'no'. (Version 1.8+)	
   * optional
+
+* seqbin_size_threshold
+
+  * Sets the size values in Mbp to enable for the :ref:`seqbin filter <seqbin_filter>`.
+  * Example: seqbin_size_threshold="0.5,1,2,4".
+  * optional 
+
+.. _isolate_xml_field:
 
 ::
 
@@ -296,7 +305,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
 * maindisplay	
 
-  * is field displayed in main table after database search? 'yes' or 'no', default 'yes'. This setting can be * overridden by individual user preferences.	
+  * is field displayed in main table after database search? 'yes' or 'no', default 'yes'. This setting can be overridden by individual user preferences.	
   * optional
 
 * length	
@@ -311,7 +320,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
 * dropdown	
 
-  * select if you want this field to have its own dropdown box on the query page. If the field has an option list it will use the values in it, otherwise all values defined in the database will be included: 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	
+  * select if you want this field to have its own dropdown filter box on the query page. If the field has an option list it will use the values in it, otherwise all values defined in the database will be included: 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	
   * optional
 
 * comments	

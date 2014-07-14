@@ -186,6 +186,8 @@ A tab will be displayed.  Different options will be available here depending on 
 
 .. image:: /images/data_query/query_isolates5.png
 
+If the interface is modified, a button to 'Save options' becomes available within the tab.  If this is clicked, the modified form will be displayed the next time you go to the query page.
+
 .. index::
    pair: allele designations; query
  
@@ -272,24 +274,145 @@ Select a specific locus in the dropdown box (or alternatively 'any locus') and a
 .. index::
    single: filters 
 
+.. _query_filters:
+
 Query filters
 =============
+There are various filters that can additionally be applied to queries, or the filters can be applied solely on their own so that they filter the entire database.
 
-.. todo:: Add description.
+Make sure that the filters fieldset is displayed by selecting it in the 'Modify form options' tab.
+
+.. image:: /images/data_query/filters.png
+
+The filters displayed will depend on the database and what has been defined within it.  Common filters are:
+
+* Publication - Select one or more publication that has been linked to isolate records.
+* Project - Select one or more project that isolates belong to.
+* Profile completion - This is commonly displayed for MLST schemes.  Available options are:
+
+  * complete - All loci of the scheme have alleles designated.
+  * incomplete - One or more loci have not yet been designated.
+  * partial - The scheme is incomplete, but at least one locus has an allele designated.
+  * started - At least one locus has an allele designated.  The scheme mat be complete or partial.
+  * not started - The scheme has no loci with alleles designated.
+
+.. _seqbin_filter:
+
+* Sequence bin - Specify whether any sequence data has been associated with a record.  Specific threshold values may be selected if these have been :ref:`set up for the database <isolate_xml>`.
+* Provenance fields - Dropdown list boxes of values for specific provenance fields may be present if set for the database.  Users can choose to :ref:`add additional filters <modify_query_filters>`.
+
+.. index::
+   single: options
 
 *************************
 User-configurable options
 *************************
+The BIGSdb user interface is configurable in a number of ways. Choices made are remembered between sessions.  If the database requires you to log on, the options are associated with your user account, whereas if it is a public database, that you haven't logged in to, the options are associated with a browser cookie so they will be remembered if you connect from the same computer (using the same browser).
 
-.. index::
-   pair: provenance fields; modifying display
-   single: options; display
-   pair: options; query
+Most options are set by clicking the 'Set general options' link on the database contents page.  Most of the available options are visible for isolate databases, whereas sequence definition databases have fewer available.
+
+.. image:: /images/data_query/options.png
 
 General options
 ===============
+The general options tab is displayed by default.  If another tab is being shown, click the 'General options' header.
 
-.. todo:: Add description.
+.. image:: /images/data_query/options2.png
+
+The general tab allows the following options to be modified: 
+
+* Records per page
+* Page bar position
+* Nucleotides per line - Some analyses display sequence alignments. This option allows you to set the width of these alignments so suit your display.
+* Flanking sequence length - This sets the length of flanking sequence upstream and downstream of a particular locus that is included whenever a sequence is displayed. Flanking sequences are displayed fainter that the locus sequence.
+* Locus aliases - Loci can have multiple names (aliases). Setting this option will display all alternative names in results tables.
+* Tooltips (beginner's mode) - Most query forms have help available in the form of information tooltips.  These can be switched on/off here.  They can also be toggled off by clicking the Toggle: 'i' button at the top-right of the display of some pages.
+
+Click 'Set options' to remember any changes you make.
+
+.. index::
+   pair: options; main results table
+
+
+Main results table
+==================
+The 'main results table' tab contains options for the display of paged results following a query.
+
+Click the 'Main results table' header to display the tab.
+
+.. image:: /images/data_query/options3.png
+
+The 'main results table' tab will scroll up.
+
+.. image:: /images/data_query/options4.png
+
+This tab allows the following options to be modified:
+
+* Hyperlink allele designations - Hyperlinks point to an information page about the particular allele definition. Depending on the locus, these may exist on a different website.
+* Differentiate provisional allele designations - Allele designations can be set as confirmed or provisional, usually depending on the method of assignment. Selecting this option will display provisional designations in a different colour to confirmed designations.
+* Sequence bin records - Displays a tooltip linking to the sequence tag if available.
+* Sequence bin size - Displays the size of the sum of all contigs associated with each isolate record.
+
+.. index::
+   pair: options; isolate record
+
+Isolate record display
+======================
+The 'isolate record display' tab contains options for the display of a full isolate record.
+
+Click the 'Isolate record display' tab to display the tab.
+
+.. image:: /images/data_query/options5.png
+
+The 'Isolate record display' tab will scroll up.
+
+.. image:: /images/data_query/options6.png
+
+This tab allows the following options to be modified:
+
+* Differentiate provisional allele designations - Allele designations can be set as confirmed or provisional, usually depending on the method of assignment. Selecting this option will display provisional designations in a different colour to confirmed designations.
+* Display sender, curator and last updated records - Displays a tooltip containing sender information next to each allele designation.
+* Sequence bin information - Displays a tooltip with information about the position of the sequence if tagged within the sequence bin.
+* Allele flags - Displays information about whether alleles have flags defined in sequence definition databases.
+* Display full information about sample records - Used when the database is used as part of a basic laboratory information management system (LIMS). This option will display records of samples available for the displayed isolate.
+
+.. index::
+   pair: options; provenance fields
+
+Provenance field display
+========================
+The 'provenance field display' tab contains checkboxes for fields to display in the main results table.
+
+Click the 'Provenance field display' tab to display the tab.
+
+.. image:: /images/data_query/options7.png
+
+The 'Provenance field display' tab will scroll up.
+
+.. image:: /images/data_query/options8.png
+
+Some fields will be checked by default - these are defined during :ref:`database setup <isolate_xml_field>` (maindisplay option).
+
+Check any fields that you wish to be displayed and then click 'Set options'.  You can return to the default selection by clicking 'Default' followed by 'Set options'.
+
+.. index::
+   pair: options; query
+
+.. _modify_query_filters:
+
+Query filters
+=============
+The 'query filters' tab contains checkboxes for provenance fields and scheme completion status.  Checking these results in drop-down list box filters appearing in the query page :ref:`filters fieldset <query_filters>`.
+
+Click the 'Query filters' tab to display the tab.
+
+.. image:: /images/data_query/options9.png
+
+The 'Query filters' tab will scroll up.
+
+.. image:: /images/data_query/options10.png
+
+A list of possible filters appears.  Click any checkbox for a filter you would like to make available.  Click 'Set options' when done.  You can return to the default selection by clicking 'Default' followed by 'Set options'.
 
 .. index::
    pair: schemes; modifying display
