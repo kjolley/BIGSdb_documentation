@@ -301,6 +301,56 @@ The filters displayed will depend on the database and what has been defined with
 * Sequence bin - Specify whether any sequence data has been associated with a record.  Specific threshold values may be selected if these have been :ref:`set up for the database <isolate_xml>`.
 * Provenance fields - Dropdown list boxes of values for specific provenance fields may be present if set for the database.  Users can choose to :ref:`add additional filters <modify_query_filters>`.
 
+***************************
+Querying by allelic profile
+***************************
+If a scheme, such as MLST, has been defined for either an isolate database it is possible to query the database against complete or partial allelic profiles. Even if no scheme is defined, queries can be made against all loci.  This can also be done in sequence definition databases if the scheme has a primary key field defined.
+
+On the index page, click 'Search by combinations of loci (profiles)' for any defined scheme. Enter either a partial (any combination of loci) or complete profile. 
+
+.. image:: /images/data_query/profile_combinations.png
+
+If multiple schemes are defined, you may have to select the scheme you wish to query in the 'Schemes' dropdown box and click 'Select'.
+
+.. image:: /images/data_query/profile_combinations2.png
+
+Enter the combination of alleles that you want to query for.  Fields can be left blank.
+
+.. image:: /images/data_query/profile_combinations3.png
+
+Alternatively, for scheme profiles, you can enter a primary key value (e.g. ST) and select 'Autofill' to automatically fill in the associated profile.
+
+.. image:: /images/data_query/profile_combinations4.png
+
+Select the number of loci that you'd like to match in the options dropdown box.  Available options are:
+
+* Exact or nearest match
+* Exact match only
+* x or more matches
+* y o  more matches
+* z or more matches
+
+Where x,y, and z will range from n-1 to 1 where n is the number of loci in the scheme.
+
+.. image:: /images/data_query/profile_combinations5.png
+
+Click 'Submit'.
+
+.. image:: /images/data_query/profile_combinations6.png
+
+***************************************
+Retrieving list of isolates or profiles
+***************************************
+
+.. todo:: Add description.
+
+*****************************************
+Retrieving isolates by linked publication
+*****************************************
+
+.. todo:: Add description.
+
+
 .. index::
    single: options
 
@@ -423,23 +473,6 @@ Modifying locus and scheme display options
 
 .. todo:: Add description.
 
-***************************
-Querying by allelic profile
-***************************
-
-.. todo:: Add description.
-
-***************************************
-Retrieving list of isolates or profiles
-***************************************
-
-.. todo:: Add description.
-
-*****************************************
-Retrieving isolates by linked publication
-*****************************************
-
-.. todo:: Add description.
 
 
 
