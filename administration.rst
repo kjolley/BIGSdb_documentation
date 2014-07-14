@@ -314,9 +314,11 @@ Dataset partitioning
 
 Sets
 ====
-Along with loci, schemes and groups of schemes, BIGSdb also has the concept of a 'set'. Sets provide a means to take a large database with multiple loci and/or schemes and present a subset of these as though it was a complete database. The loci and schemes chosen to belong to a set can be renamed when used with this set. The rationale for this is that in a database with disparate isolates and a large number of loci, the naming of these loci may have to be long to specify a species name. For example, you may have a database that contains multiple MLST schemes for different species, but since these schemes may use different fragments of the same genes they may have to be named something like 'Streptococcus_pneumoniae_MLST_aroE' to uniquely specify them. If we define a set for 'Streptococcus pneumoniae' we can then choose to only include S. pneumoniae loci and therefore shorten their names, e.g. to 'aroE'.
+Sets provide a means to partition the database in to manageable units that can appear as smaller databases to an end user.  Sets can include constrained groups of isolates, loci, and schemes from the complete database and also include additional metadata fields only applicable to that set.
 
-Additional metadata fields can also be associated with each set so it is possible to have a database containing genomes from multiple species and a generic set of metadata, then have additional specific metadata fields for particular species or genera. These additional fields only become visible and searchable when the specific set that they belong to has been selected.
+.. seealso::
+
+   :ref:`Sets (concept) <sets>`
 
 Configuration of sets
 =====================
@@ -416,6 +418,10 @@ The only_sets attribute can be set to 'yes' to disable the option for 'Whole dat
 ***************
 Adding new loci
 ***************
+
+.. seealso::
+
+   :ref:`Loci (concept) <loci>`
 
 .. index::
    pair: locus; adding
@@ -827,6 +833,10 @@ To set up a new scheme, you need to:
 #. Add a new scheme description.
 #. Define loci as 'scheme members'.
 #. Add 'scheme fields' associated with the scheme.
+
+.. seealso::
+
+   :ref:`Schemes (concept) <schemes>`
 
 Sequence definition databases
 =============================
@@ -1269,6 +1279,8 @@ Tab-delimited text and Excel format files will be created to be used as the basi
 
 .. index::
    single: genome filtering
+
+.. _genome_filtering:
 
 ****************
 Genome filtering

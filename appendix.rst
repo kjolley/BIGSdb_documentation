@@ -11,19 +11,19 @@ Various query forms have operators for use with field values.  Available operato
 
 * =
 
-  * Case insensitive exact match.
+  * Exact match (case-insensitive).
 
 * contains
 
-  * Case insensitive match to a partial string, e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex.
+  * Match to a partial string (case-insensitive), e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex.
 
 * starts with
 
-  * Match to values that start with the search term (case insensitive).
+  * Match to values that start with the search term (case-insensitive).
 
 * ends with
 
-  * Match to values that end with the search term (case sensitive).
+  * Match to values that end with the search term (case-sensitive).
 
 * >
 
@@ -35,11 +35,11 @@ Various query forms have operators for use with field values.  Available operato
 
 * NOT
 
-  * Match to values that do not equal the search term (case insensitive).
+  * Match to values that do not equal the search term (case-insensitive).
 
 * NOT contain
 
-  * Match to values that do not contain the search term (case insensitive).
+  * Match to values that do not contain the search term (case-insensitive).
 
 .. _sequence_tag_flags:
 

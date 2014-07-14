@@ -41,7 +41,7 @@ As an alternative to pasting a sequence in to the box, you can also choose to up
 
 Querying whole genome data
 ==========================
-The sequenced query is not limited to single genes.  You can also paste or upload whole genomes - these can be in multiple contigs.  If you select a specific scheme from the dropdown box, all loci belonging to that scheme will be checked (although only exact matches are reported for a locus if one of the other loci has an exact match).  If all loci are matched, scheme fields will also be returned if these are defined.  This, for example, enables you to identify the MLST sequence type of a genome in one step.
+The sequence query is not limited to single genes.  You can also paste or upload whole genomes - these can be in multiple contigs.  If you select a specific scheme from the dropdown box, all loci belonging to that scheme will be checked (although only exact matches are reported for a locus if one of the other loci has an exact match).  If all loci are matched, scheme fields will also be returned if these are defined.  This, for example, enables you to identify the MLST sequence type of a genome in one step.
 
 .. image:: /images/data_query/sequence_query6.png
 
@@ -159,7 +159,7 @@ More search features are available by clicking the 'Modify form options' tab on 
 
 .. image:: /images/data_query/query_isolates4.png
 
-A tab will be displayed.  Different options will be available here depending on the database.  Possible options are:
+A tab will be displayed.  Different options will be available here depending on the database.  Queries will be combined from the values entered in all form sections.  Possible options are:
 
 * Allele designations/scheme field values
 
@@ -186,8 +186,13 @@ A tab will be displayed.  Different options will be available here depending on 
 
 .. image:: /images/data_query/query_isolates5.png
 
+.. index::
+   pair: allele designations; query
+ 
 Query by allele_designation/scheme field
 ========================================
+Queries can be combined with allele designation/scheme field values.
+
 Make sure that the allele designation/scheme field values fieldset is displayed by selecting it in the 'Modify form options' tab.
 
 .. image:: /images/data_query/query_isolates6.png
@@ -200,9 +205,12 @@ Add your search terms and click 'Submit'.  Allele designation/scheme field queri
 
 .. image:: /images/data_query/query_isolates7.png
 
+.. index::
+   single: allele designations; status
+
 Query by allele designation status
 ==================================
-Allele designations can be queried based on their status, i.e. whether they are confirmed or provisional.
+Allele designations can be queried based on their status, i.e. whether they are confirmed or provisional. Queries will be combined from the values entered in all form sections.
  
 Make sure that the allele designation staus fieldset is displayed by selecting it in the 'Modify form options' tab.
 
@@ -214,9 +222,12 @@ Select a locus from the dropdown box and either 'provisional' or 'confirmed'.  A
 
 Provisional allele designations are marked within the results tables with a pink background.  Any scheme field designations that depend on the allele in question, e.g. a MLST ST, will also be marked as provisional.
 
+.. index::
+   pair: sequence tags; query
+
 Query by tagged sequence status
 ===============================
-Sequence tags identify the region of a contig within an isolate's sequence bin entries that correspond to a particular locus.  The presence or absence of these tags can be queried as can whether or not the sequence has an a flag associated with.  These flags designate specific characteristics of the sequences.
+Sequence tags identify the region of a contig within an isolate's sequence bin entries that correspond to a particular locus.  The presence or absence of these tags can be queried as can whether or not the sequence has an a flag associated with.  These flags designate specific characteristics of the sequences. Queries will be combined from the values entered in all form sections. 
 
 Make sure that the tagged sequences status fieldset is displayed by selecting it in the 'Modify form options' tab.
 
@@ -225,17 +236,41 @@ Make sure that the tagged sequences status fieldset is displayed by selecting it
 Select a specific locus in the dropdown box (or alternatively 'any locus') and a status.  Available status values are:
 
 * untagged
+
+  * The locus has not been tagged within the sequence bin.
+
 * tagged
+
+  * The locus has been tagged within the sequence bin.
+
 * complete
+
+  * The locus sequence is complete.
+
 * incomplete
+
+  * The locus sequence is incomplete - normally because it continues beyond the end of a contig.
+
+* flagged: any
+
+  * The sequence for the  locus has a flag set.
+
+* flagged: none
+
+  * The sequence for the locus does not have a flag set.
+
 * flagged: <specific flag>
+
+  * The sequence for the locus has the specific flag chosen.
 
 .. image:: /images/data_query/query_isolates11.png
 
 .. seealso::
 
    :ref:`Sequence tag flags <sequence_tag_flags>`
- 
+
+.. index::
+   single: filters 
 
 Query filters
 =============
@@ -249,10 +284,12 @@ User-configurable options
 .. index::
    pair: provenance fields; modifying display
    single: options; display
-   single: options; querying
+   pair: options; query
 
 General options
 ===============
+
+.. todo:: Add description.
 
 .. index::
    pair: schemes; modifying display
