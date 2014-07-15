@@ -2,13 +2,16 @@
 BIGSdb dependencies
 ###################
 
+*****************
 Required packages
-=================
+*****************
 BIGSdb requires a number of software components to be installed:
-Linux packages
 
+Linux packages
+==============
 * Apache2 web server with mod_perl2
-* PostgreSQL database    Perl
+* PostgreSQL database
+* Perl
 * BioPerl
 * BLAST+
 * EMBOSS

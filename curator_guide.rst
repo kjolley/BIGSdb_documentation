@@ -331,6 +331,8 @@ You will have a final chance to change your mind:
 
 Click 'Confirm deletion!'.
 
+.. _upload_contigs:
+
 ****************************************************
 Uploading sequence contigs linked to isolate records
 ****************************************************

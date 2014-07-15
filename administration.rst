@@ -7,7 +7,6 @@
 #####################
 Administrator's guide
 #####################
-
 Please note that links displayed within the curation interface will vary depending on database contents and the permissions of the curator.
 
 .. index::
@@ -1559,8 +1558,19 @@ Paste from the spreadsheet in to the upload form and click 'Submit'.
 ***********************
 Sequence bin attributes
 ***********************
+It is possible that you will want to store extended attributes for sequence bin contigs when you upload them.  Examples may be read length, assembler version, etc.  Since there are almost infinite possibilities for these fields, and they are likely to change over time, they are not hard-coded within the database.  An administrator can, however, create their own attributes for a specific database and these will then be available in the web form when uploading new contig data.  The attributes are also searchable.
 
-.. todo:: Add description.
+To set up new attributes, click the add (+) 'sequence attributes' link on the isolate database curator's index page. 
+
+.. image:: /images/administration/sequence_attributes.png
+
+Enter the name of the attribute as the 'key', select the type of data (text, integer, float, date) and an optional short description.  Click 'Submit'.
+
+.. image:: /images/administration/sequence_attributes2.png
+
+This new attribute will then be available when :ref:`uploading contig data <upload_contigs>`.
+
+.. image:: /images/administration/sequence_attributes3.png
 
 *************************************************
 Checking external database configuration settings
