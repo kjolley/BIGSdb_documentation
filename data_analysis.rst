@@ -70,14 +70,39 @@ If there appear to be a lot of stop codons in the translation, it is possible th
 ***************
 Field breakdown
 ***************
+The field breakdown plugin for isolate databases displays the frequency of each value for fields stored in the isolates table. :ref:`Allele and scheme field breakdowns <scheme_breakdown>` are handled by a different plugin.
 
-.. todo:: Add description.
+The breakdown function can be selected for the whole database by clicking the 'Single field' link in the Breakdown section of the main contents page.
+
+.. image:: /images/data_analysis/field_breakdown.png
+
+Alternatively, a breakdown can be displayed of the dataset returned from a query by clicking the 'Fields' button in the Breakdown list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database.
+
+.. image:: /images/data_analysis/field_breakdown2.png
+
+A series of charts will be displayed. Pick the field to display from the list at the top.
+
+.. image:: /images/data_analysis/field_breakdown3.png
+
+The values used to generate the chart can be displayed or extracted by clicking the 'Display table' link at the bottom of the page. 
+
+.. image:: /images/data_analysis/field_breakdown4.png
+
+This displays a table that can be ordered by clicking the appropriate header.
+
+.. image:: /images/data_analysis/field_breakdown5.png
+
+The data can also be downloaded in tab-delimited text or Excel formats by clicking the appropriate links.
+
+.. image:: /images/data_analysis/field_breakdown6.png
 
 *******************
 Two field breakdown
 *******************
 
 .. todo:: Add description.
+
+.. _scheme_breakdown:
 
 ***************************
 Scheme and allele breakdown
