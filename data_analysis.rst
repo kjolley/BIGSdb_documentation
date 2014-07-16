@@ -124,8 +124,71 @@ The table values can be exported in a format suitable for copying in to a spread
 ***************************
 Scheme and allele breakdown
 ***************************
+The scheme and allele breakdown plugin displays the frequency of each allele and scheme field (e.g. ST or clonal complex).
 
-.. todo:: Add description.
+The function can be selected for the whole database by clicking the 'Scheme and allele breakdown' link on the main contents page.
+
+.. image:: /images/data_analysis/scheme_breakdown.png
+
+Alternatively, a breakdown can be displayed of the dataset returned from a query by clicking the 'Schemes/alleles' button in the Breakdown list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database.
+
+.. image:: /images/data_analysis/scheme_breakdown2.png
+
+A scheme tree is shown.  Select any combination of schemes to analyse.
+
+.. image:: /images/data_analysis/scheme_breakdown3.png
+
+Click 'Select'.
+
+A table showing the number of unique values for each locus and scheme field will be displayed.
+
+.. image:: /images/data_analysis/scheme_breakdown4.png
+
+A detailed display of allele or field frequencies can be displayed by clicking the appropriate 'Breakdown' button. 
+
+.. image:: /images/data_analysis/scheme_breakdown5.png
+
+The sorting of the table can be changed by clicking the appropriate header - this toggles between ascending and descending order.
+
+.. image:: /images/data_analysis/scheme_breakdown6.png
+
+The table values can be exported in a format suitable for copying in to a spreadsheet by clicking the 'Tab-delimited text' button.
+
+.. image:: /images/data_analysis/scheme_breakdown7.png
+
+You can also download the sequeneces for alleles designated in the dataset for the loci belonging to the scheme by clicking the appropriate 'Download' button in the first results table.
+
+.. image:: /images/data_analysis/scheme_breakdown8.png
+
+Sequences will be served in FASTA format in order of frequency. ::
+
+  >2
+  TTTGATACCGTTGCCGAAGGTTTGGGTGAAATTCGCGATTTATTGCGCCGTTACCACCGC
+  GTCGGCCATGAGTTGGAAAACGGTTCGGGTGAGGCTTTGTTGAAAGAACTCAACGAATTA
+  CAACTTGAAATCGAAGCGAAGGACGGCTGGAAGCTGGATGCGGCAGTCAAGCAGACTTTG
+  GGGGAACTCGGTTTGCCGGAAAACGAAAAAATCGGCAACCTTTCCGGCGGTCAGAAAAAG
+  CGTGTCGCCTTGGCGCAGGCTTGGGTGCAGAAGCCCGACGTATTGCTGCTGGACGAACCG
+  ACCAACCATTTGGATATCGACGCGATTATTTGGCTGGAAAATCTGCTCAAAGCGTTTGAA
+  GGCAGCTTGGTTGTGATTACCCACGACCGCCGTTTTTTGGACAATATCGCCACGCGGATT
+  GTCGAACTCGATC
+  >1
+  TTTGATACTGTTGCCGAAGGTTTGGGCGAAATTCGCGATTTATTGCGCCGTTATCATCAT
+  GTCAGCCATGAGTTGGAAAATGGTTCGAGTGAGGCCTTATTGAAAGAGCTCAACGAATTG
+  CAACTTGAGATCGAAGCGAAGGACGGCTGGAAGTTGGATGCGGCGGTGAAGCAGACTTTG
+  GGCGAACTCGGTTTGCCGGAAAACGAAAAAATCGGCAACCTCTCCGGCGGTCAGAAAAAG
+  CGCGTCGCCTTGGCGCAGGCTTGGGTGCAGAAGCCCGACGTATTGCTGCTCGATGAACCG
+  ACCAACCATTTGGACATCGACGCGATTATTTGGTTGGAAAACCTGCTCAAAGCGTTTGAA
+  GGCAGCCTGGTTGTGATTACCCACGACCGCCGTTTTTTGGACAATATCGCCACGCGGATT
+  GTCGAACTCGATC
+  >4
+  TTTGATACCGTTGCCGAAGGTTTGGGCGAAATTCGTGATTTATTGCGCCGTTATCATCAT
+  GTCAGCCATGAGTTGGAAAATGGTTCGAGTGAGGCTTTGTTGAAAGAACTCAACGAATTG
+  CAACTTGAAATCGAAGCGAAGGACGGCTGGAAACTGGATGCGGCAGTCAAGCAGACTTTG
+  GGGGAACTCGGTTTGCCGGAAAATGAAAAAATCGGCAACCTTTCCGGCGGTCAGAAAAAG
+  CGCGTCGCCTTGGCTCAGGCTTGGGTGCAAAAGCCCGACGTATTGCTGCTGGACGAGCCG
+  ACCAACCATTTGGATATCGACGCGATTATTTGGCTGGAAAATCTGCTCAAAGCGTTTGAA
+  GGCAGCTTGGTTGTGATTACCCACGACCGCCGTTTTTTGGACAATATCGCCACGCGGATT
+  GTCGAACTCGATC
 
 **********************
 Sequence bin breakdown
