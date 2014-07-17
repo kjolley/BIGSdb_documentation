@@ -2,6 +2,9 @@
 Data analysis plugins
 #####################
 
+.. index::
+   single: Locus Explorer
+
 .. _locus_explorer:
 
 **************
@@ -12,6 +15,9 @@ The locus explorer is a sequence definition database plugin.  It can create sche
 Click 'Locus Explorer' from the sequence definition database contents page. 
 
 .. image:: /images/data_analysis/locus_explorer.png 
+
+.. index::
+   pair: Locus Explorer; polymorphic sites
 
 Polymorphic site analysis
 =========================
@@ -43,6 +49,9 @@ The second part of the page shows a table listing nucleotide frequencies at each
 
    :ref:`Investigating allele differences <allele_differences>`.
 
+.. index::
+   pair: Locus Explorer; codon usage
+
 Codon usage
 ===========
 Select the alleles that you would like to include in the analysis. Again, variable length loci are limited to 200 sequences or fewer since these need to be aligned. Click ‘Codon’.
@@ -52,6 +61,9 @@ Select the alleles that you would like to include in the analysis. Again, variab
 The GC content of the alleles will be determined and a table of the codon frequencies displayed.
 
 .. image:: /images/data_analysis/locus_explorer9.png 
+
+.. index::
+   pair: Locus Explorer; translated sequences
 
 Aligned translations
 ====================
@@ -66,6 +78,9 @@ An aligned amino acid sequence will be displayed.
 .. image:: /images/data_analysis/locus_explorer11.png
 
 If there appear to be a lot of stop codons in the translation, it is possible that the orf value in the :ref:`locus definition <add_new_loci>` is not set correctly.
+
+.. index::
+   pair: breakdown; provenance field
 
 ***************
 Field breakdown
@@ -96,6 +111,9 @@ The data can also be downloaded in tab-delimited text or Excel formats by clicki
 
 .. image:: /images/data_analysis/field_breakdown6.png
 
+.. index::
+   pair: breakdown; two-field
+
 *******************
 Two field breakdown
 *******************
@@ -118,6 +136,10 @@ Click submit. The breakdown will be displayed as a table. Bar charts will also b
 .. image:: /images/data_analysis/two_field_breakdown4.png
 
 The table values can be exported in a format suitable for copying in to a spreadsheet by clicking 'Download as tab-delimited text' underneath the table.
+
+.. index::
+   pair: breakdown; scheme
+   pair: breakdown; allele
 
 .. _scheme_breakdown:
 
@@ -190,6 +212,9 @@ Sequences will be served in FASTA format in order of frequency. ::
   GGCAGCTTGGTTGTGATTACCCACGACCGCCGTTTTTTGGACAATATCGCCACGCGGATT
   GTCGAACTCGATC
 
+.. index::
+   pair: breakdown; sequence bin
+
 **********************
 Sequence bin breakdown
 **********************
@@ -220,6 +245,9 @@ You can choose to export the data in tab-delimited text or Excel formats by clic
 :ref:`Sequence bin records <sequence_bin_records>` can also be accessed by clicking the 'Display' button for each row of the table.
 
 .. image:: /images/data_analysis/seqbin_breakdown6.png 
+
+.. index::
+   single: Genome Comparator
 
 *****************
 Genome comparator
@@ -359,6 +387,9 @@ Unique strains
 --------------
 The table of unique strains is a list of isolates that are identical at every locus.  Every isolate is likely to be classed as unique if a whole genome analysis is performed, but with a constrained set of loci, such as those for MLST, this will group isolates that are indistinguishable at that level of resolution.
 
+.. index::
+   single: BLAST
+
 *****
 BLAST
 *****
@@ -431,6 +462,9 @@ Available options are:
 * Project - Only include isolates belonging to the chosen project. This enables you to select all isolates and filter to a project.
 * Experiment - Contig files can belong to an experiment. How this is used can vary between databases, but this enables you to only include contigs from a particular experiment.
 
+.. index::
+   single: BURST
+
 *****
 BURST
 *****
@@ -460,11 +494,38 @@ Groups can get very large, where linked profiles form sub-groups and an attempt 
 
 .. image:: /images/data_analysis/burst5.png
 
+.. index::
+   single: codon usage
+
 ***********
 Codon usage
 ***********
+The codon usage plugin for isolate databases calculates the absolute and relative synonymous codon usage by isolate and by locus.
 
-.. todo:: Add description.
+The function can be selected by clicking the 'Codon usage' link in the Analysis section of the main contents page.
+
+.. image:: /images/data_analysis/codon_usage.png
+
+Alternatively, it can be accessed following a query by clicking the 'Codons' button in the Analysis list at the bottom of the results table.  Please note that the list of functions here may vary depending on the setup of the database.
+
+.. image:: /images/data_analysis/codon_usage2.png
+
+Enter the ids of the isolate records to analyse - these will be already entered if you accessed the plugin following a query.  Select the loci you would like to analyse, either from the dropdown loci list, and/or by selecting one or more schemes.
+
+.. image:: /images/data_analysis/codon_usage3.png
+
+Click submit.  The job will be submitted to the queue and will start running shortly. Click the link to follow the job progress and view the output.
+  
+.. image:: /images/data_analysis/codon_usage4.png
+
+Four tab-delimited text files will be created.
+
+* Absolute frequency of codon usage by isolate
+* Absolute frequency of codon usage by locus
+* Relative synonymous codon usage by isolate
+* Relative synonymous codon usage by locus
+
+.. image:: /images/data_analysis/codon_usage5.png
 
 *******************
 Unique combinations
