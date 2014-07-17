@@ -535,7 +535,7 @@ Unique combinations
 *******************
 The Unique Combinations plugin calculates the frequencies of unique file combinations within an isolate dataset.  Provenance fields, composite fields, allele designations and scheme fields can be combined.
 
-The function can be selected by clicking the 'Unique combinations' link in the ABreakdown section of the main contents page.  This will run the analysis on the entire database.
+The function can be selected by clicking the 'Unique combinations' link in the Breakdown section of the main contents page.  This will run the analysis on the entire database.
 
 .. image:: /images/data_analysis/unique_combinations.png
 
@@ -579,8 +579,51 @@ A schematic of the locus is generated showing the polymorphic sites.  A full des
 ****************
 Presence/absence
 ****************
+This plugin displays the status of loci for isolate records.  It will shown whether a locus has been designated with an allele name, has a sequence tag, or both.
 
-.. todo:: Add description.
+The function can be selected by clicking the 'Presence/absence status of loci' link in the 'Analysis' section of the main contents page.
+
+.. image:: /images/data_analysis/presence.png
+
+Alternatively, it can be accessed following a query by clicking the ‘Presence/Absence’ button in the Analysis list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database.
+
+.. image:: /images/data_analysis/presence2.png
+
+Enter the ids of the isolate records to analyse - these will be already entered if you accessed the plugin following a query. Select the loci you would like to analyse, either from the dropdown loci list, and/or by selecting one or more schemes.
+
+.. image:: /images/data_analysis/presence3.png
+
+Click submit. The job will be submitted to the queue and will start running shortly. Click the link to follow the job progress and view the output.
+
+.. image:: /images/data_analysis/presence4.png
+
+When complete, a single text file will have been generated.
+
+.. image:: /images/data_analysis/presence5.png
+
+This is a tab-delimited text file that uses 'O' to represent presence and 'X' to represent a missing locus designation or tag. ::
+
+  id	pgm	adk	abcZ	pdhC	gdh	fumC	aroE
+  1	O	O	O	O	O	O	O
+  2	O	O	O	O	O	O	O
+  3	O	O	O	O	O	O	O
+  4	O	O	O	O	O	O	O
+  5	O	O	O	O	O	O	O
+  6	O	O	O	O	O	O	O
+  7	O	O	O	O	O	O	O
+  8	O	O	O	O	O	O	O
+  9	O	O	O	O	O	O	O
+  10	O	O	O	O	O	O	O
+
+Options
+=======
+There are a number of options that can be selected to modify the output.
+
+.. image:: /images/data_analysis/presence6.png
+
+With these you can change the symbols used and whether designations, or tags, or both are counted.
+
+You can also choose to generate a distance matrix based on presence/absence.
 
 **********
 Tag status
