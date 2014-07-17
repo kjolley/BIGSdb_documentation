@@ -19,6 +19,8 @@ Click 'Locus Explorer' from the sequence definition database contents page.
 .. index::
    pair: Locus Explorer; polymorphic sites
 
+.. _locus_explorer_snp:
+
 Polymorphic site analysis
 =========================
 Select the locus you would like to analyse in the Locus dropdown box.  The page will reload.
@@ -47,7 +49,8 @@ The second part of the page shows a table listing nucleotide frequencies at each
 
 .. seealso::
 
-   :ref:`Investigating allele differences <allele_differences>`.
+   * :ref:`Investigating allele differences <allele_differences>`.
+   * :ref:`Polymorphism analysis following isolate query <polymorphisms>`.
 
 .. index::
    pair: Locus Explorer; codon usage
@@ -530,14 +533,48 @@ Four tab-delimited text files will be created.
 *******************
 Unique combinations
 *******************
+The Unique Combinations plugin calculates the frequencies of unique file combinations within an isolate dataset.  Provenance fields, composite fields, allele designations and scheme fields can be combined.
 
-.. todo:: Add description.
+The function can be selected by clicking the 'Unique combinations' link in the ABreakdown section of the main contents page.  This will run the analysis on the entire database.
+
+.. image:: /images/data_analysis/unique_combinations.png
+
+Alternatively, it can be accessed following a query by clicking the 'Combinations' button in the Breakdown list at the bottom of the results table.  This will run the analysis on the dataset returned from the query.  Please note that the list of functions here may vary depending on the setup of the database.
+
+.. image:: /images/data_analysis/unique_combinations2.png
+
+Select the combination of fields to analyse, e.g. serogroup and finetyping antigens.
+
+.. image:: /images/data_analysis/unique_combinations3.png
+
+Click submit.  When the analysis has completed you will see a table showing the unique combinations of the selected fields along with the frequency and percentage of the combination.
+
+.. image:: /images/data_analysis/unique_combinations4.png
+
+The table can be downloaded in tab-delimited text or Excel formats by clicking hte links at the bottom of the page.
+
+.. image:: /images/data_analysis/unique_combinations5.png
+
+.. _polymorphisms:
 
 *************
 Polymorphisms
 *************
+The Polymorphisms plugin generates a :ref:`Locus Explorer <locus_explorer>` polymorphic site analysis on the alleles designated in an isolate dataset following a query.
 
-.. todo:: Add description.
+The analysis is accessed by clicking the 'Polymorphic sites' button in the Breakdown list at the bottom of a results table following a query.
+
+.. image:: /images/data_analysis/polymorphisms.png
+
+Select the locus that you would like to analyse from the list.
+
+.. image:: /images/data_analysis/polymorphisms2.png
+
+Click 'Analyse'.
+
+A schematic of the locus is generated showing the polymorphic sites.  A full description of this can be found in the :ref:`Locus Explorer polymorphic site analysis <locus_explorer_snp>` section.
+
+.. image:: /images/data_analysis/polymorphisms3.png
 
 ****************
 Presence/absence
