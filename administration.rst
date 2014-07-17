@@ -1013,6 +1013,8 @@ Scheme groups can be added to other scheme groups in the same way by clicking th
 .. index::
    single: client databases
 
+.. _client_databases:
+
 ***************************
 Setting up client databases
 ***************************

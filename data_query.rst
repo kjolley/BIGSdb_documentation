@@ -421,6 +421,8 @@ Most options are set by clicking the 'Set general options' link on the database 
 
 .. image:: /images/data_query/options.png
 
+.. _general_options:
+
 General options
 ===============
 The general options tab is displayed by default.  If another tab is being shown, click the 'General options' header.

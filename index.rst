@@ -20,6 +20,7 @@ The software has been released under the GNU General Public Licence version 3.  
    curator_guide
    offline_tools
    data_downloads
+   data_records
    data_query
    data_analysis
    data_export
