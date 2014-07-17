@@ -164,6 +164,8 @@ The first user account needs to be added to the database :ref:`manually <setup_a
 .. index::
    single: plugins; enabling
 
+.. _enabling_plugins:
+
 ****************
 Enabling plugins
 ****************
