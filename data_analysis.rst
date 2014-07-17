@@ -530,6 +530,9 @@ Four tab-delimited text files will be created.
 
 .. image:: /images/data_analysis/codon_usage5.png
 
+.. index::
+   single: unique combinations
+
 *******************
 Unique combinations
 *******************
@@ -554,6 +557,9 @@ Click submit.  When the analysis has completed you will see a table showing the 
 The table can be downloaded in tab-delimited text or Excel formats by clicking hte links at the bottom of the page.
 
 .. image:: /images/data_analysis/unique_combinations5.png
+
+.. index::
+   single: polymorphisms
 
 .. _polymorphisms:
 
@@ -625,8 +631,31 @@ With these you can change the symbols used and whether designations, or tags, or
 
 You can also choose to generate a distance matrix based on presence/absence.
 
+.. index::
+   single: sequence tag; status
+
 **********
 Tag status
 **********
+The tag status plugin displays a graphical representation of the status of loci designations or tags for isolate data.  It is accessed following a query by clicking the 'Tag status' button in the Breakdown section at the bottom of the results table.
 
-.. todo:: Add description.
+.. image:: /images/data_analysis/tag_status.png
+
+Select the loci you would like to analyse.
+
+.. image:: /images/data_analysis/tag_status2.png
+
+You should see a series of bars representing loci.  The colour of these bars designates whether they have an allele designation only, a sequence tag only, both designations or tags, or whether they have flags set.
+
+.. image:: /images/data_analysis/tag_status3.png
+
+Hovering the mouse over the bars will indicate the scheme represented.
+
+.. note::
+   Loci will be represented more than once if they are members of multiple selected schemes.
+
+Clicking any of the isolate id hyperlinks navigates to a page that breaks down the exacty status for all loci of that isolate.
+
+.. image:: /images/data_analysis/tag_status4.png
+
+There is a column each for allele designations and sequence tags.  If an allele designation is defined, the allele identifier is displayed.  Cells shaded in blue show that the designation or tag is present, whereas red indicates thet they are absent.
