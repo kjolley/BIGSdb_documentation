@@ -233,7 +233,7 @@ Sometimes you may wish to stop running autotagger or allele autodefiner jobs as 
 
 The scripts should respond to this signal within a couple of seconds, clean up all their temporary files and write the history log (where appropriate).  Do not use 'kill -9' as this will terminate the processes immediately and not allow them to clean up.
 
-If these scripts are running using multiple threads, then you need to cleanly kill each of these.  The simplest way to terminte all autotagger jobs is to, type ::
+If these scripts are running using multiple threads, then you need to cleanly kill each of these.  The simplest way to terminate all autotagger jobs is to, type ::
 
  pkill autotag
 
