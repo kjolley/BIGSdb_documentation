@@ -500,6 +500,8 @@ Groups can get very large, where linked profiles form sub-groups and an attempt 
 .. index::
    single: codon usage
 
+.. _codon_usage_plugin:
+
 ***********
 Codon usage
 ***********
