@@ -20,7 +20,7 @@ All databases on a system can use the same instance of the scripts, or alternati
 2. Copy the bigsdb.pl and bigscurate.pl scripts to a subdirectory of your web server's cgi-bin directory. Make sure these are readable and executable by the web server daemon.
 3. Copy the contents of the lib directory to /usr/local/lib/BIGSdb/. Make sure you include the Plugins and Offline directories which are subdirectories of the main lib directory.
 4. Copy the contents of the javascript directory to a javascript directory within the web root tree, i.e. accessible from http://your_website/javascript/.
-5. Copy the bigsdb.css stylesheet to the root directory of your website, i.e. accessible from http://your_website/bigsdb.css.
+5. Copy the bigsdb.css and jquery-ui.css stylesheet to the root directory of your website, i.e. accessible from http://your_website/bigsdb.css.
 6. Copy the images directory to the root directory of your website, i.e. accessible from http://your_website/images.
 7. Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of helper applications and database names in the bigsdb.conf file and modify for your system.
 8. Create a PostgreSQL database user called apache - this should not have any special priveleges. Use the createuser command to do this, e.g. ::
