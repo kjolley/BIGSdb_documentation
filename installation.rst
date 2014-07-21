@@ -36,10 +36,14 @@ All databases on a system can use the same instance of the scripts, or alternati
      psql
      ALTER ROLE apache WITH PASSWORD 'remote';
 
-9. Create PostgreSQL databases called bigsdb_auth, bigsdb_prefs and refs using the scripts in the sql directory. Create the database using the createdb command and set up the tables using the psql command, e.g. ::
+9. Create PostgreSQL databases called bigsdb_auth, bigsdb_prefs and bigsdb_refs using the scripts in the sql directory. Create the database using the createdb command and set up the tables using the psql command. ::
 
      createdb bigsdb_auth
      psql -f auth.sql bigsdb_auth
+     createdb bigsdb_prefs
+     psql -f prefs.sql bigsdb_prefs
+     createdb bigsdb_refs
+     psql -f refs.sql bigsdb_refs
 
 10. Create a writable temporary directory in the root of the web site called tmp, i.e. accessible from http://your_website/tmp.
 11. Create a log file, bigsdb.log, in /var/log owned by the web server daemon, e.g. ::
