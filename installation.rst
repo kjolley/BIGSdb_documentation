@@ -27,11 +27,11 @@ All databases on a system can use the same instance of the scripts, or alternati
 
      sudo su postgres
 
-Then use the createuser command to do this, e.g. ::
+ Then use the createuser command to do this, e.g. ::
 
-    createuser apache
+     createuser apache
 
-   From the psql command line, set the apache user password: ::
+ From the psql command line, set the apache user password: ::
 
      psql
      ALTER ROLE apache WITH PASSWORD 'remote';
