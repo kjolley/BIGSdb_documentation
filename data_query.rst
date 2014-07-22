@@ -339,7 +339,7 @@ The filters displayed will depend on the database and what has been defined with
 ***************************
 Querying by allelic profile
 ***************************
-If a scheme, such as MLST, has been defined for either an isolate database it is possible to query the database against complete or partial allelic profiles. Even if no scheme is defined, queries can be made against all loci.  This can also be done in sequence definition databases if the scheme has a primary key field defined.
+If a scheme, such as MLST, has been defined for an isolate database it is possible to query the database against complete or partial allelic profiles. Even if no scheme is defined, queries can be made against all loci.  This can also be done in sequence definition databases if the scheme has a primary key field defined.
 
 On the index page, click 'Search by combinations of loci (profiles)' for any defined scheme. Enter either a partial (any combination of loci) or complete profile. 
 
