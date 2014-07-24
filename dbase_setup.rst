@@ -323,6 +323,11 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * select if you want this field to have its own dropdown filter box on the query page. If the field has an option list it will use the values in it, otherwise all values defined in the database will be included: 'yes' or 'no', default 'no'. This setting can be overridden by individual user preferences.	
   * optional
 
+* userfield
+
+  * select if you want this field to have its own dropdown filter box of users (populated from the users table): 'yes' or 'no', default 'no'.
+  * optional
+
 * comments	
 
   * comments about the field	
