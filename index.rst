@@ -29,4 +29,4 @@ The software has been released under the GNU General Public Licence version 3.  
    database_schema
  
 
-
+* :ref:`genindex`
