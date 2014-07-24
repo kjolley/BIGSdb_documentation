@@ -1556,9 +1556,6 @@ Fill in the columns with your values, e.g.
 
 Paste from the spreadsheet in to the upload form and click 'Submit'.
 
-.. index::
-   single: settings; validation
-
 ***********************
 Sequence bin attributes
 ***********************
@@ -1575,6 +1572,9 @@ Enter the name of the attribute as the 'key', select the type of data (text, int
 This new attribute will then be available when :ref:`uploading contig data <upload_contigs>`.
 
 .. image:: /images/administration/sequence_attributes3.png
+
+.. index::
+   single: configuration settings; validation
 
 *************************************************
 Checking external database configuration settings
