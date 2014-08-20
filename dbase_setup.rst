@@ -438,6 +438,10 @@ Top level element. Contains child elements: system, field and sample.
   * force the use of a specific set when accessing database via this XML configuration: Value is the name of the set.
   * optional
 
+* diploid
+
+  * allow IUPAC 2-nuclotide ambiguity codes in allele definitions for use with diploid typing schemes: either 'yes' or 'no', default 'no' (Version 1.9.1+).
+  * optional
 
 *******************
 User authentication
