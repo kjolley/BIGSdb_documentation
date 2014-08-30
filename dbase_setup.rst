@@ -438,6 +438,16 @@ Top level element. Contains child elements: system, field and sample.
   * force the use of a specific set when accessing database via this XML configuration: Value is the name of the set.
   * optional
 
+* job_priority	
+
+  * Integer with default job priority for offline jobs (default:5)	
+  * optional
+
+* job_quota	
+
+  * Integer with number of offline jobs that can be queued or currently running for this database
+  * optional
+
 * diploid
 
   * allow IUPAC 2-nuclotide ambiguity codes in allele definitions for use with diploid typing schemes: either 'yes' or 'no', default 'no' (Version 1.9.1+).
