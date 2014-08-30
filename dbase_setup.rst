@@ -224,12 +224,12 @@ Top level element. Contains child elements: system, field and sample.::
 
 * job_priority	
 
-  * Isolate databases only: Integer with default job priority for offline jobs (default:5) (Version v1.7+)	
+  * Integer with default job priority for offline jobs (default:5)	
   * optional
 
-* dbase_job_quota	
+* job_quota	
 
-  * isolate databases only:Integer with number of offline jobs that can be queued or currently running for this database (Version 1.7+)	
+  * Integer with number of offline jobs that can be queued or currently running for this database
   * optional
 
 * default_seqdef_config	
