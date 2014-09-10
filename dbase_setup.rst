@@ -136,6 +136,12 @@ Top level element. Contains child elements: system, field and sample.::
     by a \|), eg. 
     'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'.
     Currently used only by Genome Comparator plugin.
+    
+* curate_only
+
+  * Set to 'yes' to hide field on an isolate information page in the standard
+    interface.  The field will be visible if the page is accessed via the 
+    curator's interface (version 1.10.0+).
   
 * curate_path_includes 
 
