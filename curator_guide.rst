@@ -452,7 +452,14 @@ Click the add (+) project link on the curator's main page.
 
 Enter a short description for the project.  This is used in drop-down list boxes within the query interfaces, so make sure it is not too long.
 
-You can also enter a full description.  If this is added, the project description is displayed at the top of an isolate information page.  The full description can include HTML formatting, including image links.
+You can also enter a full description.  If this is added, the project description can displayed at the top of an isolate information page (but see 'isolate_display' flag below).  The full description can include HTML formatting, including image links.
+
+.. versionadded:: 1.10.0
+   There are additionally two flags that affect how projects are listed:
+
+   * isolate_display - Setting this is required for the project and its description to be listed at the top of an isolate record (default: false).
+
+   * list - Setting this is required for the project to be listed in a page of projects linked from the main contents page.
 
 Click 'Submit'.
 
