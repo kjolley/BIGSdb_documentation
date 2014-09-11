@@ -1583,8 +1583,62 @@ Click the 'Configuration check' link on the curator's index page.
 
 .. image:: /images/administration/config_check.png
 
-The software will check that required helper applications are installed and executable and, in isolate databases, test every locus and scheme external database to check for connectivity and that data can be retrieved.
+The software will check that required helper applications are installed and
+executable and, in isolate databases, test every locus and scheme external
+database to check for connectivity and that data can be retrieved.
 
 .. image:: /images/administration/config_check2.png
 
 Any problems will be highlighted with a red :red:`X`.
+
+.. index::
+   pair: configuration; export
+
+******************************
+Exporting table configurations
+******************************
+Sometimes it is useful to transfer configurations between different databases
+or to export a configuration for troubleshooting.  Data from most of the tables
+can be exported in tab-delimited text format suitable for batch uploading. For
+example, to export scheme configuration data, click the '?' link (Update or
+delete) next to schemes in the curator's interface.
+
+.. image:: /images/administration/config_export.png
+
+Expand the filters and select the required scheme in the dropdown box, then
+press submit.
+
+.. image:: /images/administration/config_export2.png
+
+Click the button 'Export configuration/data'.
+
+.. image:: /images/administration/config_export3.png
+
+The three tables that are used to define a scheme (schemes, scheme_members and
+scheme_fields) are displayed in a format suitable for copy and pasting.
+
+::
+
+   schemes
+   -------
+   id description dbase_name  dbase_host  dbase_port  dbase_user  dbase_password dbase_table isolate_display   main_display   query_field query_status   analysis display_order  allow_missing_loci   curator  datestamp   date_entered
+   1  MLST  pubmlst_bigsdb_neisseria_seqdef              mv_scheme_1 1  1  1  1  1  1     2  2012-03-22  2009-11-12
+   
+   scheme_members
+   --------------
+   scheme_id   locus profile_name   field_order curator  datestamp
+   1  abcZ     1  2  2009-11-12
+   1  adk      2  2  2009-11-12
+   1  aroE     3  2  2009-11-12
+   1  fumC     4  2  2009-11-12
+   1  gdh      5  2  2009-11-12
+   1  pdhC     6  2  2009-11-12
+   1  pgm      7  2  2009-11-12
+   
+   scheme_fields
+   -------------
+   scheme_id   field type  primary_key description field_order url   isolate_display   main_display   query_field dropdown curator  datestamp
+   1  ST integer  1     1  /cgi-bin/bigsdb/bigsdb.pl?page=profileInfo&db=pubmlst_neisseria_seqdef&scheme_id=1&profile_id=[?]  1  1  1  0  2  2010-01-20
+   1  clonal_complex text  0     2     1  1  1  1  2  2009-11-16
+
+
