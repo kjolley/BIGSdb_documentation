@@ -174,9 +174,15 @@ To run plugins that require a long time to complete their analyses, an offline j
 ***********************************
 Periodically delete temporary files
 ***********************************
-There are two temporary directories (one public, one private) which may accumulate temporary files over time. Some of these are deleted automatically when no longer required but some cannot be cleaned automatically since they are used to display results after clicking a link or to pass the database query between pages of results.
+There are two temporary directories (one public, one private) which may
+accumulate temporary files over time. Some of these are deleted automatically
+when no longer required but some cannot be cleaned automatically since they are
+used to display results after clicking a link or to pass the database query
+between pages of results.
 
-The easiest way to clean the temp directories is to run a cleaning script periodically, e.g. create a root-executable script in /etc/cron.hourly containing the following:::
+The easiest way to clean the temp directories is to run a cleaning script
+periodically, e.g. create a root-executable script in /etc/cron.hourly
+containing the following:::
 
  #!/bin/sh
  #Remove temp BIGSdb files from secure tmp folder older than 1 week.
@@ -187,11 +193,32 @@ The easiest way to clean the temp directories is to run a cleaning script period
 
  #Remove other tmp files from web tree older than 1 week
  find /var/www/tmp/ -type f -mmin +10080 -exec rm -f {} \; 2>/dev/null
+ 
+*********************************************
+Prevent preference database getting too large
+*********************************************
+The preferences database stores user preferences for BIGSdb databases running
+on the site.  Every user will have a globally unique identifier (guid) stored
+in this database along with a datestamp indicating the last access time. On
+public databases that do not require logging in, this guid is stored as a 
+cookie on the user's computer.  Databases that require logging in use a 
+combination of database and username as the identifier.  Over time, the 
+preferences database can get quite large since every unique user will result 
+in an entry in the database.  Since many of these entries represent casual
+users, or even web indexing bots, they can be periodically cleaned out based
+on their last access time.  A weekly CRON job can be set up to remove any 
+entries older than a defined period.  For example, the following line entered
+in /etc/crontab will remove the preferences for any user that has not accessed
+any database in the past 6 months (the script will run at 6pm every Sunday). ::
+
+ #Prevent prefs database getting too large
+ 00   18 *  *  0  postgres    psql -c "DELETE FROM guid WHERE last_accessed < NOW() - INTERVAL '6 months'" bigsdb_prefs
 
 *****************
 Log file rotation
 *****************
-Set the log file to auto rotate by adding a file called 'bigsdb' with the following contents to /etc/logrotate.d: ::
+Set the log file to auto rotate by adding a file called 'bigsdb' with the 
+following contents to /etc/logrotate.d: ::
 
  /var/log/bigsdb.log {
    weekly
@@ -216,11 +243,22 @@ Set the log file to auto rotate by adding a file called 'bigsdb' with the follow
 ****************
 Upgrading BIGSdb
 ****************
-Major version changes, e.g. 1.7 -> 1.8, indicate that there has been a change to the underlying database structure for one or more of the database types.  Scripts to upgrade the database are provided in sql/upgrade and are named by the database type and version number.  For example, to upgrade an isolate database (bigsdb_isolates) from version 1.7 to 1.8, log in as the postgres user and type: ::
+Major version changes, e.g. 1.7 -> 1.8, indicate that there has been a change
+to the underlying database structure for one or more of the database types.
+Scripts to upgrade the database are provided in sql/upgrade and are named by
+the database type and version number.  For example, to upgrade an isolate
+database (bigsdb_isolates) from version 1.7 to 1.8, log in as the postgres user
+and type: ::
 
  psql -f isolatedb_v1.8.sql bigsdb_isolates
 
-Upgrades are sequential, so to upgrade from a version earlier than the last major version you would need to upgrade to the intermediate version first, e.g. to go from 1.6 -> 1.8, requires upgrading to 1.7 first.
+Upgrades are sequential, so to upgrade from a version earlier than the last
+major version you would need to upgrade to the intermediate version first, e.g.
+to go from 1.6 -> 1.8, requires upgrading to 1.7 first.
 
-Minor version changes, e.g. 1.8.0 -> 1.8.1, have no modifications to the database structures.  There will be changes to the Perl library modules and possibly to the contents of the Javascript directory, images directory and CSS files.  The version number is stored with the bigsdb.pl script, so this should also be updated so that BIGSdb correctly reports its version.  
+Minor version changes, e.g. 1.8.0 -> 1.8.1, have no modifications to the
+database structures.  There will be changes to the Perl library modules and
+possibly to the contents of the Javascript directory, images directory and CSS
+files.  The version number is stored with the bigsdb.pl script, so this should
+also be updated so that BIGSdb correctly reports its version.  
 
