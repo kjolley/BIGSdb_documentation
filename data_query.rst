@@ -462,6 +462,7 @@ This tab allows the following options to be modified:
 * Differentiate provisional allele designations - Allele designations can be set as confirmed or provisional, usually depending on the method of assignment. Selecting this option will display provisional designations in a different colour to confirmed designations.
 * Sequence bin records - Displays a tooltip linking to the sequence tag if available.
 * Sequence bin size - Displays the size of the sum of all contigs associated with each isolate record.
+* Contig count - Displays the number of contigs associated with each isolate record.
 
 .. index::
    pair: options; isolate record
