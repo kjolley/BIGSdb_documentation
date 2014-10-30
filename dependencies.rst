@@ -27,7 +27,7 @@ Perl modules
 ============
 These are included with most Linux distributions.
 
-* `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database Independentinterface - module used to interact with databases.
+* `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database independent interface - module used to interact with databases.
 * `DBD-Pg <http://search.cpan.org/~turnstep/DBD-Pg/Pg.pm>`_ - PostgreSQL database driver for DBI.
 * `XML::Parser::perlSAX <http://search.cpan.org/~kmacleod/libxml-perl/lib/XML/Parser/PerlSAX.pm>`_ - part of libxml-perl - Used to parse XML configuration files.
 * `Log::Log4perl <http://search.cpan.org/~mschilli/Log-Log4perl/lib/Log/Log4perl.pm>`_ - Configurable status and error logging.
