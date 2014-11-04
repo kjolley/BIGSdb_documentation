@@ -170,7 +170,7 @@ or from the :ref:`allele download page<download_alleles>`.
 To edit a locus description, first you need to find it.  Click the 
 update/delete (?) button next to 'locus descriptions' on the sequence database 
 curator's page (depending on the permissions set for your user account not all
-the links displayed may be displayed).
+the links shown here may be displayed).
 
 .. image:: /images/curation/locus_descriptions.png
 
