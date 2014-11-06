@@ -148,6 +148,11 @@ Top level element. Contains child elements: system, field and sample.::
   * Partial path of the bigscurate.pl script used to curate the database.
     See user authentication. 
     
+* default
+
+  * Default value.  This will be entered automatically in the web form but can
+    be overridden.
+    
 * default_access  
 
   * The default access to the database configuration, either 'allow' or 'deny'.
