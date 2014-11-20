@@ -70,7 +70,7 @@ A full list of options can be found by typing: ::
      New (previously untagged) isolates only. Combine with --new_max_alleles
      if required.
      
---new_max_alleles ALLELES
+ --new_max_alleles ALLELES
      Set the maximum number of alleles that can be designated or sequences
      tagged before an isolate is not considered new when using the --new_only
      option. 
