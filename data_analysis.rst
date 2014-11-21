@@ -329,17 +329,35 @@ Additionally, two other options are available in this fieldset:
 
 Distance matrix calculation fieldset
 ====================================
-This section provides options for the treatment of truncated and paralogous loci when generating the distance matrix.  
+This section provides options for the treatment of incomplete and paralogous
+loci when generating the distance matrix.  
 
 .. image:: /images/data_analysis/genome_comparator11.png
 
-For truncated loci, i.e. those that continue beyond the end of a contig so are incomplete you can:
+For incomplete loci, i.e. those that continue beyond the end of a contig so
+are incomplete you can:
 
-* Completely exclude from analysis - Any locus that is truncated in at least one isolate will be removed from the analysis completely (default).  Using this option means that if there is one bad genome with a lot of truncated sequences in your analysis, a large proportion of the loci may not be used to calculate distances.
-* Treat as a distinct allele - This treats all truncated sequences as a specific allele 'T'.  This varies from any other allele, but all truncated sequences will be treated as though they were identical.
-* Ignore in pairwise comparison - This is probably the best option (and will likely become the default).  In this case, truncated alleles are only excluded from the analysis when comparing the particular isolate that has it.  Other isolates with different alleles will be properly included.  The affect of this option will be to shorten the distances of isolates with poorly sequenced genomes with the others.
+* Completely exclude from analysis - Any locus that is incomplete in at least 
+  one isolate will be removed from the analysis completely (default).  Using this
+  option means that if there is one bad genome with a lot of incomplete sequences
+  in your analysis, a large proportion of the loci may not be used to calculate
+  distances.
 
-Paralogous loci, i.e. those with multiple good matches, can be excluded from the analysis (default).  This is the safest option since there is no guarantee that differences seen between isolates at paralogous loci are real if the alternative matches are equally good.
+* Treat as a distinct allele - This treats all incomplete sequences as a
+  specific allele 'T'.  This varies from any other allele, but all incomplete
+  sequences will be treated as though they were identical.
+
+* Ignore in pairwise comparison - This is probably the best option (and will
+  likely become the default).  In this case, incomplete alleles are only excluded
+  from the analysis when comparing the particular isolate that has it.  Other
+  isolates with different alleles will be properly included.  The affect of this
+  option will be to shorten the distances of isolates with poorly sequenced
+  genomes with the others.
+
+Paralogous loci, i.e. those with multiple good matches, can be excluded from
+the analysis (default).  This is the safest option since there is no guarantee
+that differences seen between isolates at paralogous loci are real if the
+alternative matches are equally good.
 
 Alignments fieldset
 ===================
