@@ -21,10 +21,10 @@ There are three types of user in BIGSdb:
 * Curator - can modify data but does not have full control of the database. :ref:`Individual permissions <curator_permissions>` can be set for each curator, so their roles can be controlled. A curator with no specific permissions set has no more power than a standard user.
 * Admin - has full control of the database, including setting permissions for curators and setting user passwords if built-in authentication is in use.
 
-.. _curator_permissions:
-
 .. index::
    single: permissions
+
+.. _curator_permissions:
 
 *******************
 Curator permissions
