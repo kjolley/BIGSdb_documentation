@@ -529,8 +529,9 @@ built-in authentication.
 Apache authentication
 =====================
 Using apache to provide your authentication allows a flexible range of methods
-and back-ends (see the Apache authentication HowTo for a start, or any number
-of tutorials on the web).
+and back-ends (see the 
+`Apache authentication HowTo <http://httpd.apache.org/docs/2.2/howto/auth.html>`_ 
+for a start, or any number of tutorials on the web).
 
 At its simplest, use a .htaccess file in the directory containing the
 bigscurate.pl (and bigsdb.pl for restriction of read-access) script or by
