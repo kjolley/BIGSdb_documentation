@@ -49,21 +49,19 @@ Individual permissions can be set for each curator:
 * designate_alleles - allowed to manually designate allele numbers for isolate records.
 * modify_profiles - allowed to add or modify scheme profiles (only used in a sequence definitions database).
 
-Permissions can be set by clicking the '+' button next to 'user permissions' on the curator's interface: 
+Permissions can be set by clicking the '?' button next to 'curator permissions' on the curator's interface: 
 
 .. image:: /images/administration/add_user_permissions.png
 
-Set specific permissions and then click 'Submit'.
+Choose one or more curators from the list (hold down Ctrl to select multiple
+values). click 'Select'.
    
 .. image:: /images/administration/add_user_permissions2.png
 
-If permissions have already been set for a user, click the 'Update or delete' link on the curator's page instead.
+Click the appropriate checkboxes to modify permissions.  There are also 
+'All/None' checkboxes to facilitate quicker selection of options.  Click 'Update'.
 
 .. image:: /images/administration/add_user_permissions3.png
-
-then search for the user by entering specific criteria, or simply press 'Submit' to display all users.  Update a specific user by clicking on the 'Update' link next to their name.
-
-.. image:: /images/administration/add_user_permissions4.png
 
 .. index::
    single: permissions; locus curation
