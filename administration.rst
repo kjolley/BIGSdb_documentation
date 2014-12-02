@@ -39,7 +39,6 @@ Individual permissions can be set for each curator:
 * modify_schemes - allowed to add or modify schemes.
 * modify_sequences - allowed to add sequences to the sequence bin (for isolate databases) or new allele definitions (for sequence definition databases).
 * modify_isolates - allowed to add or modify isolate records.
-* modify_isolates_acl - allowed to control who accesses isolate records (provided they themselves have access to a particular isolate).
 * modify_projects - allowed to create projects, modify their descriptions and add or remove isolate records to these.
 * modify_composites - allowed to add or modify composite fields (fields made up of other fields, including scheme fields defined in external databases). Composite fields involve defining regular expressions that are evaluated by Perl - this can be dangerous so this permission should be granted with discretion.
 * modify_field_attributes - allow user to create or modify secondary field attributes (lookup tables) for isolate record fields.
@@ -92,19 +91,6 @@ If you uncheck the 'Hide curator name from public view' checkbox, the curator na
 ******************
 Controlling access
 ******************
-
-Access control lists
-====================
-If access control lists are in use (set the read_access attribute to 'acl' in the system tag of the database XML configuration file), viewing and modifying of individual isolates can be restricted to particular users or usergroups.
-
-.. warning:: Please note that access control lists are likely to be deprecated in future releases.  This is in favour of creating a new class of user that would be allowed to curate their own data only.
-
-New isolate records are automatically set with the following access control:
-
-* All users: read, not write (all users are members of 'All users' group).
-* Curator who added data: read and write.
-
-All access controls can be modified by an admin or curator with appropriate permission. This can be done for individual isolate records or in batch mode following an isolate search in the curation interface.
 
 .. _default_access:
 

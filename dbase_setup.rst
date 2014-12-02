@@ -252,10 +252,9 @@ Top level element. Contains child elements: system, field and sample.::
   
 * read_access  
 
-  * Describes who can view data: either 'public' for everybody, 
-    'authenticated_users' for anybody who has been able to log in, or 'acl'
-    (access control list) for fine-grained access control to individual isolate
-    records. Default 'public'.   
+  * Describes who can view data: either 'public' for everybody or 
+    'authenticated_users' for anybody who has been able to log in. 
+    Default 'public'.   
 
 * script_path_includes  
 
@@ -313,12 +312,6 @@ Top level element. Contains child elements: system, field and sample.::
 
   * URL of web root, which can be relative or absolute. The bigsdb.css
     stylesheet file should be located in this directory. Default '/'.
-
-* write_access	
-
-  * Describes who can curate isolate records: either 'acl' (access control
-    list) for fine-grained access control to individual isolate records, or
-    leave empty for anybody with curator permission to alter isolate records.	
 
 .. _isolate_xml_field:
 
