@@ -105,6 +105,9 @@ A full list of options can be found by typing: ::
 
  -T, --already_tagged
      Scan even when sequence tagged (no designation).
+     
+ -v, --view VIEW
+     Isolate database view (overrides value set in config.xml).
 
  -w, --word_size SIZE
      BLASTN word size.
@@ -216,6 +219,9 @@ A full list of options can be found by typing: ::
 
  -T, --already_tagged
      Scan even when sequence tagged (no designation).
+     
+ -v, --view VIEW
+     Isolate database view (overrides value set in config.xml).     
 
  -w, --word_size SIZE
      BLASTN word size.
