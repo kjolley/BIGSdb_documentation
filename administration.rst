@@ -7,7 +7,8 @@
 #####################
 Administrator's guide
 #####################
-Please note that links displayed within the curation interface will vary depending on database contents and the permissions of the curator.
+Please note that links displayed within the curation interface will vary
+depending on database contents and the permissions of the curator.
 
 .. index::
    single: user types
@@ -15,11 +16,25 @@ Please note that links displayed within the curation interface will vary dependi
 *************
 Types of user
 *************
-There are three types of user in BIGSdb:
+There are four types of user in BIGSdb:
 
-* User - can view data but never modify it. Users should be created for every submitter of data so that records can be tracked, even if they do not actually use the database. Individual isolate records may not be available to every user if access control lists (ACLs) are configured for the database.
-* Curator - can modify data but does not have full control of the database. :ref:`Individual permissions <curator_permissions>` can be set for each curator, so their roles can be controlled. A curator with no specific permissions set has no more power than a standard user.
-* Admin - has full control of the database, including setting permissions for curators and setting user passwords if built-in authentication is in use.
+* User - can view data but never modify it. Users should be created for every 
+  submitter of data so that records can be tracked, even if they do not
+  actually use the database. Individual isolate records may not be available
+  to every user if access control lists (ACLs) are configured for the database.
+  
+* Submitter - can add and modify their own isolate data but not anyone elses.
+  A limited range of :ref:`Individual permissions <curator_permissions>` can
+  be set for each submitter, so their roles can be controlled. A submitter with
+  no specific permissions set has no more power than a standard user.
+  
+* Curator - can modify data but does not have full control of the database. 
+  :ref:`Individual permissions <curator_permissions>` can be set for each
+  curator, so their roles can be controlled. A curator with no specific
+  permissions set has no more power than a standard user.
+  
+* Admin - has full control of the database, including setting permissions for
+  curators and setting user passwords if built-in authentication is in use.
 
 .. index::
    single: permissions
@@ -32,23 +47,41 @@ Curator permissions
 Individual permissions can be set for each curator:
 
 * disable_access - if set to true, this user is completely barred from access.
-* modify_users - allowed to add or modify user records. They can change the status of users, but can not revoke admin priveleges from an account. They can also not raise the status of a user to admin level.
-* modify_usergroups - allowed to add or modify user groups and add users to these groups.
-* set_user_passwords - allowed to modify other users' passwords (if built-in authentication is in use).
+* modify_users - allowed to add or modify user records. They can change the
+  status of users, but can not revoke admin priveleges from an account. They
+  can also not raise the status of a user to admin level.
+* modify_usergroups - allowed to add or modify user groups and add users to
+  these groups.
+* set_user_passwords - allowed to modify other users' passwords (if built-in
+  authentication is in use).
 * modify_loci - allowed to add or modify loci.
 * modify_schemes - allowed to add or modify schemes.
-* modify_sequences - allowed to add sequences to the sequence bin (for isolate databases) or new allele definitions (for sequence definition databases).
+* modify_sequences - allowed to add sequences to the sequence bin (for isolate
+  databases) or new allele definitions (for sequence definition databases).
+* modify_experiments - define new experiments that can be used to group contigs
+  uploaded to the sequence bin.
 * modify_isolates - allowed to add or modify isolate records.
-* modify_projects - allowed to create projects, modify their descriptions and add or remove isolate records to these.
-* modify_composites - allowed to add or modify composite fields (fields made up of other fields, including scheme fields defined in external databases). Composite fields involve defining regular expressions that are evaluated by Perl - this can be dangerous so this permission should be granted with discretion.
-* modify_field_attributes - allow user to create or modify secondary field attributes (lookup tables) for isolate record fields.
-* modify_value_attributes - allow user to add or modify secondary field values for isolate record fields.
-* modify_probes - allow user to define PCR or hybridization reactions to filter tag scanning.
+* modify_projects - allowed to create projects, modify their descriptions and
+  add or remove isolate records to these.
+* modify_composites - allowed to add or modify composite fields (fields made up
+  of other fields, including scheme fields defined in external databases).
+  Composite fields involve defining regular expressions that are evaluated by
+  Perl - this can be dangerous so this permission should be granted with 
+  discretion.
+* modify_field_attributes - allow user to create or modify secondary field
+  attributes (lookup tables) for isolate record fields.
+* modify_value_attributes - allow user to add or modify secondary field values
+  for isolate record fields.
+* modify_probes - allow user to define PCR or hybridization reactions to filter
+  tag scanning.
 * tag_sequences - allowed to tag sequences with locus information.
-* designate_alleles - allowed to manually designate allele numbers for isolate records.
-* modify_profiles - allowed to add or modify scheme profiles (only used in a sequence definitions database).
+* designate_alleles - allowed to manually designate allele numbers for isolate
+  records.
+* modify_profiles - allowed to add or modify scheme profiles (only used in a
+  sequence definitions database).
 
-Permissions can be set by clicking the '?' button next to 'curator permissions' on the curator's interface: 
+Permissions can be set by clicking the '?' button next to 'curator permissions'
+on the curator's interface: 
 
 .. image:: /images/administration/add_user_permissions.png
 
