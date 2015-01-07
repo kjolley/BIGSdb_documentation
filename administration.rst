@@ -23,10 +23,11 @@ There are four types of user in BIGSdb:
   actually use the database. Individual isolate records may not be available
   to every user if access control lists (ACLs) are configured for the database.
   
-* Submitter - can add and modify their own isolate data but not anyone elses.
-  A limited range of :ref:`Individual permissions <curator_permissions>` can
-  be set for each submitter, so their roles can be controlled. A submitter with
-  no specific permissions set has no more power than a standard user.
+* Submitter (isolate databases only) - can add and modify their own isolate
+  data but not anyone elses. A limited range of 
+  :ref:`Individual permissions <curator_permissions>` can be set for each
+  submitter, so their roles can be controlled. A submitter with no specific
+  permissions set has no more power than a standard user.
   
 * Curator - can modify data but does not have full control of the database. 
   :ref:`Individual permissions <curator_permissions>` can be set for each
