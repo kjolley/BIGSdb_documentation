@@ -274,7 +274,14 @@ Top level element. Contains child elements: system, field and sample.::
 * set_id 
 
   * Force the use of a specific set when accessing database via this XML
-    configuration: Value is the name of the set.  
+    configuration: Value is the name of the set. 
+    
+* start_id
+
+  * Defines the minimum record id to be used when uploading new isolate 
+    records. This can be useful when it is anticipated that two databases may
+    be merged and it would be easier to do so if the id numbers in the two
+    databases were different.  Default: '1'.
     
 * tblastx_tagging 
 
