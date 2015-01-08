@@ -233,6 +233,8 @@ The 'system_flag' attribute is set to 'BURST', so this plugin can be enabled for
 
 to the system tag of the database XML file. If the system_flag value is not defined then the plugin is always enabled if it is installed on the system.
 
+.. _disable_updates:
+
 .. index::
    single: updates; disabling
 
@@ -270,9 +272,14 @@ The same attributes described above for use in the bigsdb.conf file can also be 
 ************
 Host mapping
 ************
-During periods of server maintenance, it may be necessary to map a database host to an alternative server. This would allow a backup database server to be used while the primary database server is unavailable. In this scenario, you would probably also want to disable updates.
+During periods of server maintenance, it may be necessary to map a database
+host to an alternative server. This would allow a backup database server to be
+used while the primary database server is unavailable. In this scenario, you
+would probably also want to :ref:`disable updates <disable_updates>`.
 
-Host mapping can be achieved by editing the /etc/bigsdb/host_mapping.conf file. Each host mapping is placed on a single line, with the current server followed by any amount of whitespace and then the new mapped host, e.g. ::
+Host mapping can be achieved by editing the /etc/bigsdb/host_mapping.conf file.
+Each host mapping is placed on a single line, with the current server followed
+by any amount of whitespace and then the new mapped host, e.g. ::
 
  #Existing_host      Mapped_host
   server1            server2
@@ -280,7 +287,9 @@ Host mapping can be achieved by editing the /etc/bigsdb/host_mapping.conf file. 
 
 [Lines beginning with a hash are comments and are ignored.]
 
-This configuration would use server2 instead of server 1 or localhost wherever they are defined in the database configuration (either host attribute in the database config.xml file, or within the loci or schemes tables).
+This configuration would use server2 instead of server 1 or localhost wherever
+they are defined in the database configuration (either host attribute in the
+database config.xml file, or within the loci or schemes tables).
 
 *********************
 Improving performance
