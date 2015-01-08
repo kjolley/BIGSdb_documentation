@@ -125,6 +125,11 @@ Top level element. Contains child elements: system, field and sample.::
 
   * Description of database used throughout interface.
   
+* align_limit
+
+  * Overrides the sequence export record alignment limit in the Sequence
+    Export plugin.  Default: '200'.
+  
 * all_plugins  
 
   * Enable all appropriate plugins for database: either 'yes' or 'no', default
@@ -136,6 +141,14 @@ Top level element. Contains child elements: system, field and sample.::
     by a \|), eg. 
     'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'.
     Currently used only by Genome Comparator plugin.
+    
+* codon_usage_limit
+
+  * Overrides the record limit for the Codon Usage plugin.  Default: '500'.
+  
+* contig_analysis_limit
+
+  * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
     
 * curate_only
 
@@ -184,6 +197,11 @@ Top level element. Contains child elements: system, field and sample.::
   * Allows multiple fields to be queried as a group. Value should be the name
     of the group followed by a colon (:) followed by a comma-separated list of
     fields to group, e.g. identifiers:id,strain,other_name.
+    
+* genome_comparator_limit
+
+  * Overrides the isolate number limit for the Genome Comparator plugin.
+    Default: '1000'.
     
 * hide_unused_schemes   
 
@@ -266,6 +284,11 @@ Top level element. Contains child elements: system, field and sample.::
   * Sets the size values in Mbp to enable for the 
     :ref:`seqbin filter <seqbin_filter>`.
   * Example: seqbin_size_threshold="0.5,1,2,4".
+  
+* seq_export_limit
+
+  * Overrides the sequence export limit (records x loci) in the Sequence
+    Export plugin.  Default: '1000000'.
     
 * sets   
 
@@ -453,6 +476,11 @@ Top level element. Contains child elements: system, field and sample.
 
   * Description of database used throughout interface.
   
+* align_limit
+
+  * Overrides the sequence export record alignment limit in the Sequence
+    Export plugin.  Default: '200'.
+
 * allele_comments
 
   * Enable comments on allele sequences: either 'yes' or 'no', default 'no'.
@@ -503,6 +531,11 @@ Top level element. Contains child elements: system, field and sample.
 
   * Partial path of the bigsdb.pl script used to access the database. See
     :ref:`user authentication <user_authentication>`.
+    
+* seq_export_limit
+
+  * Overrides the sequence export limit (records x loci) in the Sequence
+    Export plugin.  Default: '1000000'.
     
 * sets
 
