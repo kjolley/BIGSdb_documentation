@@ -446,7 +446,8 @@ Click 'Set options' to remember any changes you make.
 
 Main results table
 ==================
-The 'main results table' tab contains options for the display of paged results following a query.
+The 'main results table' tab contains options for the display of paged results
+following a query.
 
 Click the 'Main results table' header to display the tab.
 
@@ -458,11 +459,22 @@ The 'main results table' tab will scroll up.
 
 This tab allows the following options to be modified:
 
-* Hyperlink allele designations - Hyperlinks point to an information page about the particular allele definition. Depending on the locus, these may exist on a different website.
-* Differentiate provisional allele designations - Allele designations can be set as confirmed or provisional, usually depending on the method of assignment. Selecting this option will display provisional designations in a different colour to confirmed designations.
-* Sequence bin records - Displays a tooltip linking to the sequence tag if available.
-* Sequence bin size - Displays the size of the sum of all contigs associated with each isolate record.
-* Contig count - Displays the number of contigs associated with each isolate record.
+* Hyperlink allele designations - Hyperlinks point to an information page about
+  the particular allele definition. Depending on the locus, these may exist on
+  a different website.
+* Differentiate provisional allele designations - Allele designations can be
+  set as confirmed or provisional, usually depending on the method of
+  assignment. Selecting this option will display provisional designations in a
+  different colour to confirmed designations.
+* Information about sequence bin records - Creates a tooltip that displays
+  details about sequence tags corresponding to a locus. 
+* Sequence bin records - Displays a tooltip linking to the sequence tag if
+  available.
+* Sequence bin size - Displays the size of the sum of all contigs associated 
+  with each isolate record.
+* Contig count - Displays the number of contigs associated with each isolate
+  record.
+* Publications - Displays citations with links to PubMed for each record.
 
 .. index::
    pair: options; isolate record
