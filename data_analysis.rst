@@ -283,17 +283,26 @@ There will be a series of tables displaying variable loci, colour-coded to indic
 
 Analysis using annotated reference genome
 =========================================
-Select the isolate genomes that you wish to analyse and then either enter a Genbank accession number for the reference genome, or select from the list of reference genomes (this list will only be present if the administrator has :ref:`set it up <isolate_xml>`). Selecting reference genomes will hide the locus and scheme selection forms.
+Select the isolate genomes that you wish to analyse and then either enter a
+Genbank accession number for the reference genome, or select from the list of
+reference genomes (this list will only be present if the administrator has 
+:ref:`set it up <isolate_xml>`). Selecting reference genomes will hide the 
+locus and scheme selection forms.
 
 .. image:: /images/data_analysis/genome_comparator6.png
 
-Output is similar to when comparing against defined loci, but this time every coding sequence in the annotated reference will be BLASTed against the selected genomes. Because allele designations are not defined, the allele found in the reference genome is designated allele 1, the next different sequence is allele 2 etc.
+Output is similar to when comparing against defined loci, but this time every
+coding sequence in the annotated reference will be BLASTed against the selected
+genomes. Because allele designations are not defined, the allele found in the
+reference genome is designated allele 1, the next different sequence is allele
+2 etc.
 
 .. image:: /images/data_analysis/genome_comparator10.png
 
 Include in identifiers fieldset
 ===============================
-This selection box allows you to choose which isolate provenance fields will be included in the results table and sequence exports.
+This selection box allows you to choose which isolate provenance fields will be
+included in the results table and sequence exports.
 
 .. image:: /images/data_analysis/genome_comparator7.png
 
@@ -301,7 +310,8 @@ Multiple values can be selected by clicking while holding down Ctrl.
 
 Reference genome fieldset
 =========================
-This section allows you to choose a reference genome to use as the source of comparator sequences.
+This section allows you to choose a reference genome to use as the source of
+comparator sequences.
 
 .. image:: /images/data_analysis/genome_comparator8.png
 
@@ -313,19 +323,43 @@ There are three possibilities here:
 
 Parameters/options fieldset
 ===========================
-This section allows you to modify BLAST parameters.  This affects sensitivity and speed.
+This section allows you to modify BLAST parameters.  This affects sensitivity
+and speed.
 
 .. image:: /images/data_analysis/genome_comparator9.png
 
-* Min % identity - This sets the threshold identity that a matching sequence has to be in order to be considered (default: 70%).  Only the best match is used.
-* Min % alignment - This sets the percentage of the length of reference allele sequence that the alignment has to cover in order to be considered (default: 50%).
-* BLASTN word size - This is the length of the initial identical match that BLAST requires before extending a match (default: 15).  Increasing this value improves speed at the expense of sensitivity.  The default value gives good results in most cases, but increasing this to 20 is almost as good (there was 1 difference among 2000 loci in a test run) and will speed up the analysis approximately two-fold.
-* Use TBLASTX - This compares the six-frame translation of your nucleotide query sequence against the six-frame translation of the contig sequences.  Sequences will be classed as identical if they result in the same translated sequence even if the nucleotide sequence is different.  This is significantly slower than using BLASTN.
+* Min % identity - This sets the threshold identity that a matching sequence
+  has to be in order to be considered (default: 70%).  Only the best match is
+  used.
+* Min % alignment - This sets the percentage of the length of reference allele
+  sequence that the alignment has to cover in order to be considered (default: 
+  50%).
+* BLASTN word size - This is the length of the initial identical match that
+  BLAST requires before extending a match (default: 15).  Increasing this value
+  improves speed at the expense of sensitivity.  The default value gives good
+  results in most cases, but increasing this to 20 is almost as good (there was
+  1 difference among 2000 loci in a test run) and will speed up the analysis
+  approximately two-fold.
+* Use TBLASTX - This compares the six-frame translation of your nucleotide
+  query sequence against the six-frame translation of the contig sequences. 
+  Sequences will be classed as identical if they result in the same translated
+  sequence even if the nucleotide sequence is different.  This is significantly
+  slower than using BLASTN.
 
 Additionally, two other options are available in this fieldset:
 
-* Use tagged designations - When analysing using defined loci, Genome Comparator can use the designations stored within the database (this is the default).  This is much quicker since it doesn't need to run BLAST against these sequences.  If a designation is missing, BLAST will be run for that locus anyway.
-* Disable HTML output - If running Genome Comparator against a large number of genomes, the resulting table may get so large that your web browser struggles to render it properly and may use up too much memory on your computer.  Clicking this button prevents this output - this output is not required for further analysis since everything present in it is also generated in Excel format at the end.  HTML output is automatically disabled when more than 150 genomes are analysed. 
+* Use tagged designations - When analysing using defined loci, Genome
+  Comparator can use the designations stored within the database (this is the
+  default).  This is much quicker since it doesn't need to run BLAST against
+  these sequences.  If a designation is missing, BLAST will be run for that
+  locus anyway.
+* Disable HTML output - If running Genome Comparator against a large number of
+  genomes, the resulting table may get so large that your web browser struggles
+  to render it properly and may use up too much memory on your computer. 
+  Clicking this button prevents this output - this output is not required for
+  further analysis since everything present in it is also generated in Excel
+  format at the end.  HTML output is automatically disabled when more than 150
+  genomes are analysed. 
 
 Distance matrix calculation fieldset
 ====================================
@@ -338,26 +372,40 @@ For incomplete loci, i.e. those that continue beyond the end of a contig so
 are incomplete you can:
 
 * Completely exclude from analysis - Any locus that is incomplete in at least 
-  one isolate will be removed from the analysis completely (default).  Using this
-  option means that if there is one bad genome with a lot of incomplete sequences
-  in your analysis, a large proportion of the loci may not be used to calculate
+  one isolate will be removed from the analysis completely.  Using this option
+  means that if there is one bad genome with a lot of incomplete sequences in
+  your analysis, a large proportion of the loci may not be used to calculate
   distances.
 
 * Treat as a distinct allele - This treats all incomplete sequences as a
-  specific allele 'T'.  This varies from any other allele, but all incomplete
+  specific allele 'I'.  This varies from any other allele, but all incomplete
   sequences will be treated as though they were identical.
 
-* Ignore in pairwise comparison - This is probably the best option (and will
-  likely become the default).  In this case, incomplete alleles are only excluded
-  from the analysis when comparing the particular isolate that has it.  Other
-  isolates with different alleles will be properly included.  The affect of this
-  option will be to shorten the distances of isolates with poorly sequenced
-  genomes with the others.
+* Ignore in pairwise comparison (default) - This is probably the best option.
+  In this case, incomplete alleles are only excluded from the analysis when
+  comparing the particular isolate that has it.  Other isolates with different
+  alleles will be properly included.  The effect of this option will be to
+  shorten the distances of isolates with poorly sequenced genomes with the
+  others.
 
 Paralogous loci, i.e. those with multiple good matches, can be excluded from
 the analysis (default).  This is the safest option since there is no guarantee
 that differences seen between isolates at paralogous loci are real if the
-alternative matches are equally good.
+alternative matches are equally good.  NB: Loci are also only classed as
+paralogous when the alternative matches identify different sequences, otherwise
+multiple contigs of the same sequence region would result in false positives.
+
+When paralogous loci are excluded, there are two further options:
+
+* Exclude when paralogous in all isolates (default).  Loci are only classed as
+  paralogous when there are multiple hits in every genome (except if a genome
+  is missing the locus entirely, in which case that genome is ignored in the
+  calculation).  This is generally the option that you will want to use with
+  the default BLAST parameters since you can often expect multiple hits even
+  when loci are not paralogous if you have used relaxed thresholds.
+* Exclude when paralogous in any isolate.  Unless you use stringent BLAST
+  thresholds, this is likely to overestimate the number of paralogous loci, but
+  may be useful if you are specifically looking for them.
 
 Alignments fieldset
 ===================
