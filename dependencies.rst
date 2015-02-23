@@ -48,7 +48,7 @@ Installing these packages will enable extra functionality, but they are not requ
 
 * ChartDirector - library used for generating charts. Used by some plugins.
 * ImageMagick - mogrify used by some plugins.
-* MAFFT - sequence alignment used by some plugins.
+* MAFFT 6.8+ - sequence alignment used by some plugins.
 * Muscle - sequence alignment used by some plugins.
 * Splitstree4 - used by GenomeComparator plugin.
 
