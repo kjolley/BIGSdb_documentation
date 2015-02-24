@@ -327,23 +327,56 @@ If queries are taking longer than 5 seconds to perform and a cache is not in pla
 
 Use materialized views for scheme definitions
 =============================================
-Because of the way BIGSdb allows any number of profile schemes to be set up, the data are stored in a normalised manner in multiple tables. A database view, e.g. scheme_1, is created that joins these tables so that they can be queried as you would a single table. A view, however, is only a pre-selected query rather than a physical table and you can not index columns on it to optimise query performance.
+Because of the way BIGSdb allows any number of profile schemes to be set up, 
+the data are stored in a normalised manner in multiple tables. A database 
+view, e.g. scheme_1, is created that joins these tables so that they can be 
+queried as you would a single table. A view, however, is only a pre-selected 
+query rather than a physical table and you can not index columns on it to 
+optimise query performance.
 
-A materialized view is a real table that is created from the view and refreshed every time the data in the underlying view changes. Because it is a real table, the database doesn't need to perform these joins every time it is queried and indexes can be set up on it, both of which greatly speeds up querying.
+A materialized view is a real table that is created from the view and refreshed
+every time the data in the underlying view changes. Because it is a real table,
+the database doesn't need to perform these joins every time it is queried and
+indexes can be set up on it, both of which greatly speeds up querying.
 
-To use materialized views within a seqdef database set the following attribute in the system tag of the XML description file: ::
+To use materialized views within a seqdef database set the following attribute
+in the system tag of the XML description file: ::
 
  materialized_views="yes"
 
-You will then need to run the 'configuration repair' function at the bottom of the administrator's main curation page for each scheme. This rebuilds the view and creates a materialized view called mv_scheme_X. This materialized view is updated automatically whenever profile data are added or altered via the web interface.
+You will then need to run the 'configuration repair' function at the bottom of
+the administrator's main curation page for each scheme. This rebuilds the view
+and creates a materialized view called mv_scheme_X. This materialized view is
+updated automatically whenever profile data are added or altered via the web
+interface.
 
-If you want an isolate database to benefit from this materialized view, make sure you put 'mv_scheme_X' (where X is the scheme id) in the dbase_table field (rather than 'scheme_X') when setting up the scheme in the isolate database configuration.
+If you want an isolate database to benefit from this materialized view, make
+sure you put 'mv_scheme_X' (where X is the scheme id) in the dbase_table field
+(rather than 'scheme_X') when setting up the scheme in the isolate database
+configuration.
 
-Please note that if you make changes to your profile data by means other than the web interface then the materialized view will not be updated. You can update it by running the following SQL command: ::
+Please note that if you make changes to your profile data by means other than
+the web interface then the materialized view will not be updated. You can
+update it by running the following SQL command: ::
 
  SELECT refresh_matview('mv_scheme_X');
 
-The materialized view is used, for example, for looking up a ST from a profile and vice-versa. Significant speed improvements will only be realised if you have lots of profiles (>5000) and you are doing lots of lookups, e.g. displaying more than the default 25 records per page.
+The materialized view is used, for example, for looking up a ST from a profile
+and vice-versa. Significant speed improvements will only be realised if you
+have lots of profiles (>5000) and you are doing lots of lookups, e.g.
+displaying more than the default 25 records per page.
+
+Use a ramdisk for the secure temporary directory
+================================================
+If you are running BIGSdb on a large server with lots of RAM, you could use
+some of this as a ramdisk for temporary files.  Debian/Ubuntu systems make
+available up to half the system RAM as a ramdisk mounted under /run/shm (or
+/dev/shm) by default.  Set the secure_tmp_dir to this RAM disk and you should
+see significant improvement in operations requiring the writing of lots of
+temporary files, e.g. tag scanning and the Genome Comparator plugin.  This is
+only likely to be appropriate if you have very large amounts of RAM available.
+As an example, the server hosting the PubMLST databases is a dedicated machine
+with 1TB RAM with temporary files rarely using more than 50GB space.
 
 .. index::
    pair: partitioning; sets
