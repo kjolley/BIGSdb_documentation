@@ -11,24 +11,37 @@ Offline curation tools
 **********************************
 Automated offline sequence tagging
 **********************************
-Sequence tagging is the process of identifying alleles by scanning the sequence bin linked to an isolate record. Loci need to be defined in an external sequence definition database that contains the sequences for known alleles. The tagging function uses BLAST to identify sequences and will tag the specific sequence region with locus information and an allele designation if a matching allele is identified by reference to an external database.
+Sequence tagging is the process of identifying alleles by scanning the 
+sequence bin linked to an isolate record. Loci need to be defined in an 
+external sequence definition database that contains the sequences for known 
+alleles. The tagging function uses BLAST to identify sequences and will tag 
+the specific sequence region with locus information and an allele designation 
+if a matching allele is identified by reference to an external database.
 
-There is a script called 'autotag.pl' in the BIGSdb package. This can be used to tag genome sequences from the command line.
+There is a script called 'autotag.pl' in the BIGSdb package. This can be used 
+to tag genome sequences from the command line.
 
-Before autotag.pl can be run for the first time, a log file needs to be created. This can be created if it doesn't already exist with the following: ::
+Before autotag.pl can be run for the first time, a log file needs to be 
+created. This can be created if it doesn't already exist with the following: ::
 
   sudo touch /var/log/bigsdb_scripts.log
   sudo chown bigsdb /var/log/bigsdb_scripts.log
 
-The autotag.pl script should be installed in /usr/local/bin. It is run as follows: ::
+The autotag.pl script should be installed in /usr/local/bin. It is run as 
+follows: ::
 
   autotag.pl --database <database configuration>
 
-where <database configuration> is the name used for the argument 'db' when using the BIGSdb application.
+where <database configuration> is the name used for the argument 'db' when 
+using the BIGSdb application.
 
-If you have multiple processor cores available, use the --threads option to set the number of jobs to run in parallel.  Isolates for scanning will be split among the threads.
+If you have multiple processor cores available, use the --threads option to 
+set the number of jobs to run in parallel.  Isolates for scanning will be split
+among the threads.
 
-The script must be run by a user that can both write to the log file and access the databases, e.g. the 'bigsdb' user (see 'Setting up the offline job manager').
+The script must be run by a user that can both write to the log file and access
+the databases, e.g. the 'bigsdb' user (see 'Setting up the offline job 
+manager').
 
 A full list of options can be found by typing: ::
   
@@ -127,22 +140,31 @@ A full list of options can be found by typing: ::
 ***********************************
 Automated offline allele definition
 ***********************************
-There is a script called 'scannew.pl' in the BIGSdb scripts/automation directory. This can be used to identify new alleles from the command line. This can (optionally) upload these to a sequence definition database.
+There is a script called 'scannew.pl' in the BIGSdb scripts/automation 
+directory. This can be used to identify new alleles from the command line. 
+This can (optionally) upload these to a sequence definition database.
 
-Before scannew.pl can be run for the first time, a log file needs to be created. This can be created if it doesn't already exist with the following: ::
+Before scannew.pl can be run for the first time, a log file needs to be 
+created. This can be created if it doesn't already exist with the following: ::
 
   sudo touch /var/log/bigsdb_scripts.log
   sudo chown bigsdb /var/log/bigsdb_scripts.log
 
-The autotag.pl script should be installed in /usr/local/bin. It is run as follows: ::
+The autotag.pl script should be installed in /usr/local/bin. It is run as 
+follows: ::
 
   scannew.pl --database <database configuration>
 
-where <database configuration> is the name used for the argument 'db' when using the BIGSdb application.  
+where <database configuration> is the name used for the argument 'db' when 
+using the BIGSdb application.  
 
-If you have multiple processor cores available, use the --threads option to set the number of jobs to run in parallel.  Loci for scanning will be split among the threads.
+If you have multiple processor cores available, use the --threads option to 
+set the number of jobs to run in parallel.  Loci for scanning will be split 
+among the threads.
 
-The script must be run by a user that can both write to the log file and access the databases, e.g. the 'bigsdb' user (see 'Setting up the offline job manager').
+The script must be run by a user that can both write to the log file and access
+the databases, e.g. the 'bigsdb' user (see 'Setting up the offline job 
+manager').
 
 A full list of options can be found by typing: ::
 
@@ -239,18 +261,82 @@ A full list of options can be found by typing: ::
 *************************************
 Cleanly interrupting offline curation
 *************************************
-Sometimes you may wish to stop running autotagger or allele autodefiner jobs as they can be run for a long time and as CRON jobs.  If these are running in single threaded mode, the easiest way is to simply send a kill signal to the process, i.e. identify the process id using 'top', e.g. 23232 and then ::
+Sometimes you may wish to stop running autotagger or allele autodefiner jobs as
+they can be run for a long time and as CRON jobs.  If these are running in 
+single threaded mode, the easiest way is to simply send a kill signal to the 
+process, i.e. identify the process id using 'top', e.g. 23232 and then ::
 
  kill 23232
 
-The scripts should respond to this signal within a couple of seconds, clean up all their temporary files and write the history log (where appropriate).  Do not use 'kill -9' as this will terminate the processes immediately and not allow them to clean up.
+The scripts should respond to this signal within a couple of seconds, clean up 
+all their temporary files and write the history log (where appropriate).  Do 
+not use 'kill -9' as this will terminate the processes immediately and not 
+allow them to clean up.
 
-If these scripts are running using multiple threads, then you need to cleanly kill each of these.  The simplest way to terminate all autotagger jobs is to, type ::
+If these scripts are running using multiple threads, then you need to cleanly 
+kill each of these.  The simplest way to terminate all autotagger jobs is to, 
+type ::
 
  pkill autotag
 
-The parent process will wait for all forked processes to cleanly terminate and then exit itself.
+The parent process will wait for all forked processes to cleanly terminate and 
+then exit itself.
 
 Similarly, to terminate all allele autodefiner jobs, type ::
 
  pkill scannew
+
+***************************************
+Uploading contigs from the command line
+***************************************
+There is a script called upload_contigs.pl in the BIGSdb scripts/maintenance
+directory.  This can be used to upload contigs from a local FASTA file for a
+specified isolate record.
+
+The upload_contigs.pl script should be installed in /usr/local/bin.  It is run
+as follows: ::
+
+ upload_contigs.pl --database <NAME> --isolate <ID> --file <FILE> 
+     --curator <ID> --sender <ID> 
+
+The script must be run by a user who has the appropriate database permissions
+and the local configuration settings should be modified to match the database
+user account to be used. The default setting uses the 'apache' user which is 
+used by the BIGSdb web interface.
+
+A full list of options can be found by typing: ::
+
+ upload_contigs.pl --help   
+ 
+ NAME
+     upload_contigs.pl - Upload contigs to BIGSdb isolate database
+
+ SYNOPSIS
+     upload_contigs.pl --database NAME --isolate ID --file FILE 
+          --curator ID --sender ID [options]
+
+ OPTIONS
+ -a, --append
+     Upload contigs even if isolate already has sequences in the bin.
+    
+ -c, --curator ID  
+     Curator id number. 
+    
+ -d, --database NAME
+     Database configuration name.
+    
+ -f, --file FILE
+     Full path and filename of contig file.
+
+ -h, --help
+     This help page.
+
+ -i, --isolate ID  
+     Isolate id of record to upload to.  
+    
+ -m, --method METHOD  
+     Method, e.g. 'Illumina', default 'unknown'.  
+    
+ -s, --sender ID  
+     Sender id number.        
+     
