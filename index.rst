@@ -24,6 +24,7 @@ The software has been released under the GNU General Public Licence version 3.  
    data_query
    data_analysis
    data_export
+   rest
    faqs
    appendix
    database_schema

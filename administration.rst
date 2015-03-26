@@ -1712,5 +1712,55 @@ scheme_fields) are displayed in a format suitable for copy and pasting.
    scheme_id   field type  primary_key description field_order url   isolate_display   main_display   query_field dropdown curator  datestamp
    1  ST integer  1     1  /cgi-bin/bigsdb/bigsdb.pl?page=profileInfo&db=pubmlst_neisseria_seqdef&scheme_id=1&profile_id=[?]  1  1  1  0  2  2010-01-20
    1  clonal_complex text  0     2     1  1  1  1  2  2009-11-16
+   
+.. _create_client_credentials:
 
+.. index::
+   pair: RESTful interface; client authorization
 
+*************************************************************************
+Authorizing third-party client software to access authenticated resources
+*************************************************************************
+If you are running the :ref:`RESTful API <restful_api>`, you will need to
+specifically authorize client software to connect to authenticated resources.
+This involves creating a client key and a client secret that is used to sign
+requests coming from the application.  The client key and secret should be 
+provided to the application developer.
+
+There is a script to do this in the scripts/maintenace directory of the 
+download archive.  The script is called create_client_credentials and should
+be run by the postgres user.  A full list of options can be found by typing: ::
+
+   create_client_credentials.pl --help
+   
+   NAME
+       create_client_credentials.pl - Generate and populate 
+       authentication database with third party application (API client) 
+       credentials.
+   
+   SYNOPSIS
+       create_client_credentials.pl --application NAME [options]
+   
+   OPTIONS
+   -a, --application NAME  
+       Name of application.
+       
+   -d, --deny
+       Set default permission to 'deny'.  Permissions for access to specific 
+       database configurations will have to be set.  If not included, the default
+       permission will allow access to all resources by the client.
+       
+   -h, --help
+       This help page.
+       
+   -i, --insert
+       Add credentials to authentication database.  This will fail if a matching
+       application version already exists (use --update in this case to overwrite
+       existing credentials).
+       
+   -u, --update
+       Update exisitng credentials in the authentication database.
+       
+   -v, --version VERSION  
+       Version of application (optional).
+    

@@ -41,7 +41,7 @@ then ::
  createdb bigsdb_test_seqdef
  psql -f seqdef.sql bigsdb_test_seqdef
 
-Create an isolate database the same way:::
+Create an isolate database the same way: ::
  
  createdb bigsdb_test_isolates
  psql -f isolatedb.sql bigsdb_test_isolates

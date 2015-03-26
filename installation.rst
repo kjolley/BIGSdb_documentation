@@ -262,3 +262,131 @@ possibly to the contents of the Javascript directory, images directory and CSS
 files.  The version number is stored with the bigsdb.pl script, so this should
 also be updated so that BIGSdb correctly reports its version.  
 
+.. _restful_api:
+
+************************************
+Running the BIGSdb RESTful interface
+************************************
+BIGSdb has an Application Programming Interface (API) that allows third-party
+applications to access the data within the databases.  The script that runs
+this is called bigsrest.pl.  This is a Dancer2 application that can be run 
+using a wide range of options, e.g. as a stand-alone script, using Perl 
+webservers with plackup, or from apache.  Full documentation for 
+`deploying Dancer2 applications <https://metacpan.org/pod/Dancer::Deployment>`_
+can be found online.
+
+The script requires a new database that describes the resources to make
+available.  This is specified in the bigsdb.conf file as the value of the
+'rest_db' attribute.  By default, the database is named bigsdb_rest.
+
+A SQL file to create this database can be found in the sql directory of the
+download archive.  It is called rest.sql.  To create the database, as the
+postgres user, navigate to the sql directory and type ::
+
+  createdb bigsdb_rest
+  psql -f rest.sql bigsdb_rest
+ 
+This database will need to be populated using psql or any tool that can be used
+to edit PostgreSQL databases.  The database contains three tables that together
+describe and group the databases resources that will be made available through
+the API. The tables are:
+
+* resources
+   * this contains two fields (both compulsory):
+      * **dbase_config** - the name of the database configuration used with
+        the database.  This is the same as the name of the directory that 
+        contains the config.xml file in the /etc/bigsdb/dbases directory.
+      * **description** - short description of the database.
+
+* groups (used to group related resources together)
+   * this contains two fields (compulsory fields shown in bold):
+      * **name** - short name of group.  This is usually a single word and is also
+        the key that links resources to groups.
+      * **description** - short description of group.
+      * long_description - fuller description of group.
+
+* group_resources (used to add resources to groups)
+   * this contains two fields (both compulsory)
+      * **group_name** - name of group.  This must already exist in the groups
+        table.
+      * **dbase_config** - the name of database resource.  This must already
+        exist in the resources table.
+  
+For example, to describe the PubMLST resources for Neisseria, connect to the
+bigsdb_rest database using psql, ::
+
+   psql bigsdb_rest
+   
+Then enter the following SQL commands.  First add the database resources: ::
+
+   INSERT INTO resources (dbase_config,description) VALUES
+   ('pubmlst_neisseria_seqdef','Neisseria sequence/profile definitions');
+   INSERT INTO resources (dbase_config,description) VALUES
+   ('pubmlst_neisseria_isolates','Neisseria isolates');
+   
+Then create a 'neisseria' group that will contain these resources: ::
+
+   INSERT INTO groups (name,description) VALUES 
+   ('neisseria','Neisseria spp.');
+   
+Finally, add the database resources to the group: ::
+
+   INSERT INTO group_resources (group_name,dbase_config) VALUES 
+   ('neisseria','pubmlst_neisseria_seqdef');
+   INSERT INTO group_resources (group_name,dbase_config) VALUES 
+   ('neisseria','pubmlst_neisseria_isolates');
+      
+The REST API will need to run on its own network port.  By default this is port 
+3000.  To run as a stand-alone script, from the script directory, as the bigsdb 
+user, simply type: ::
+
+   ./bigsrest.pl
+   
+This will start the API on port 3000.  You will be able to check 
+that this is running using a web browser by navigating to http://localhost:3000
+on the local machine, or using the server IP address from a remote machine.
+You may need to modify your server firewall rules to allow connection to this
+port.
+
+Running as a stand-alone script is useful for testing, but you can achieve much
+better performance using a Perl webserver with plackup.  There are various
+options to choose.  PubMLST uses 
+`Starman <http://search.cpan.org/dist/Starman/>`_.
+
+To run the API using Starman, type the following as the bigsdb user: ::
+
+   plackup -a /var/rest/bigsrest.pl -s Starman -E deployment
+   
+where the value of -a refers to the location of the bigsrest.pl script.  
+Starman defaults to using port 5000.  
+
+Proxying the API to use a standard web port
+===========================================
+Usually you will want your API to be available on the standard web port 80.
+To do this you will need to set up a virtual host using a different domain
+name from your web site to proxy the API port.  For example, PubMLST has a
+separate domain 'http://rest.pubmlst.org' for its API.  This is set up as a
+virtual host directive in apache with the following configuration file: ::
+
+   <VirtualHost *>
+     ServerName rest.pubmlst.org
+     DocumentRoot /var/rest
+     ServerAdmin keith.jolley@zoo.ox.ac.uk
+      <Directory /var/rest>
+       AllowOverride None
+       Require all granted
+     </Directory>
+   
+     ProxyPass / http://rest.pubmlst.org:5000/
+     ProxyPassReverse / http://rest.pubmlst.org:5000/
+   
+     <Proxy *>
+         Order allow,deny
+         Allow from all
+     </Proxy>
+   
+     ErrorLog  /var/log/apache2/rest.pubmlst.org-error.log
+     CustomLog /var/log/apache2/rest.pubmlst.org-access.log common
+   
+   </VirtualHost>
+
