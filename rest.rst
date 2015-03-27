@@ -5,9 +5,9 @@ The REST API allows third-party applications to retrive data stored within
 BIGSdb databases.  To use the REST API, your application will make a HTTP
 request and parse the response.  The response format is JSON.  
 
-*********
+*****************************
 Resources (under development)
-*********
+*****************************
 * :ref:`/ or /db<db_no_arg>`
 * :ref:`/db/{database}<db>`
 
@@ -27,7 +27,7 @@ Lists database resources available using the API.
 
 **Optional query parameters:** None
 
-**Example request URI:** http:/rest.pubmlst.org/
+**Example request URI:** http://rest.pubmlst.org/
 
 **Response:** List of resource groupings (ordered by name).  Groups may consist
 of paired databases for sequence definitions and isolate data, or any set of
@@ -59,7 +59,7 @@ database.
 
 **Optional parameters:** None
 
-**Example request URI:** http:/rest.pubmlst.org/db/pubmlst_neisseria_isolates
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates
 
 **Response:** Object containing a subset of the following key/value pairs:
 
