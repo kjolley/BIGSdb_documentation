@@ -1,6 +1,74 @@
 ###############################################
 RESTful Application Programming Interface (API)
 ###############################################
+The REST API allows third-party applications to retrive data stored within
+BIGSdb databases.  To use the REST API, your application will make a HTTP
+request and parse the response.  The response format is JSON.  
+
+*********
+Resources (under development)
+*********
+* :ref:`/ or /db<db_no_arg>`
+* :ref:`/db/{database}<db>`
+
+.. _db_no_arg:
+
+.. index::
+   single: API resources; /db [no argument]
+   single: API resources; /
+   
+/ or /db
+========
+Lists database resources available using the API.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** None
+
+**Optional query parameters:** None
+
+**Example request URI:** http:/rest.pubmlst.org/
+
+**Response:** List of resource groupings (ordered by name).  Groups may consist
+of paired databases for sequence definitions and isolate data, or any set of
+related resources.  Each group contains:
+
+* name [string] - short name (usually a single word)
+* description [string] - fuller description
+* databases [array] - list of database objects, each consists of three 
+  key/value pairs:
+
+   * name [string] - name of database config
+   * description [string] - short description of resource
+   * href [string] - URI to access resource
+   
+.. _db:
+
+.. index::
+   single: API resources; /db
+
+/db/{database}
+==============
+Lists resources available for specified database configuration.  These will 
+vary depending on whether the resource is an isolate or a sequence definition
+database.
+
+**Supported methods:** GET, POST
+
+**Required query parameter:** Database configuration name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http:/rest.pubmlst.org/db/pubmlst_neisseria_isolates
+
+**Response:** Object containing a subset of the following key/value pairs:
+
+* fields [string] - URI to isolate provenance field information
+* isolates [string] - URI to isolate records
+* schemes [string] - URI to list of schemes
+* loci [string] - URI to list of loci
+* records [number] - count of available records
+
 
 **************
 Authentication
