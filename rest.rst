@@ -3,18 +3,51 @@ RESTful Application Programming Interface (API)
 ###############################################
 The REST API allows third-party applications to retrive data stored within
 BIGSdb databases.  To use the REST API, your application will make a HTTP
-request and parse the response.  The response format is JSON.  
+request and parse the response.  The response format is JSON (except for routes
+that request a FASTA file).  
 
-*****************************
-Resources (under development)
-*****************************
-* :ref:`/ or /db<db_no_arg>`
+***************************
+Passing optional parameters
+***************************
+Optional parameters can be passed as arguments to the query URL by adding a '?'
+followed by the first argument and its value (separated by a '=').  Additional
+parameters are separated by a '&', e.g.
+
+http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=100
+
+*********
+Resources
+*********
+* :ref:`/ or /db<db>`
 * :ref:`/db/{database}<db>`
+* :ref:`/db/{database}/loci<db_loci>`
+* :ref:`/db/{database}/loci/{locus}<db_loci_locus>`
+* :ref:`/db/{database}/alleles/{locus}<db_alleles_locus>`
+* :ref:`/db/{database}/alleles/{locus}/{allele_id}<db_alleles_locus_allele_id>`
+* :ref:`/db/{database}/alleles_fasta/{locus}<db_alleles_fasta_locus>`
+* /db/{database}/schemes
+* /db/{database}/schemes/{scheme_id}
+* /db/{database}/schemes/{scheme_id}/fields/{field}
+* /db/{database}/schemes/{scheme_id}/profiles
+* /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+* /db/{database}/isolates
+* /db/{database}/isolates/{isolate_id}
+* /db/{database}/isolates/{isolate_id}/allele_designations
+* /db/{database}/isolates/{isolate_id}/allele_designations/{locus}
+* /db/{database}/isolates/{isolate_id}/allele_ids
+* /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations
+* /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids
+* /db/{database}/isolates/{isolate_id}/contigs
+* /db/{database}/isolates/{isolate_id}/contigs_fasta
+* /db/{database}/isolates/{isolate_id}/contigs/{contig_id}
+* /db/{database}/fields
+* :ref:`/db/{database}/users/{user_id}<db_users_user_id>`
+
 
 .. _db_no_arg:
 
 .. index::
-   single: API resources; /db [no argument]
+   single: API resources; /db
    single: API resources; /
    
 / or /db
@@ -45,7 +78,7 @@ related resources.  Each group contains:
 .. _db:
 
 .. index::
-   single: API resources; /db
+   single: API resources; /db/{database}
 
 /db/{database}
 ==============
@@ -55,7 +88,7 @@ database.
 
 **Supported methods:** GET, POST
 
-**Required query parameter:** Database configuration name [string]
+**Required query parameter:** {database}: Database configuration name [string]
 
 **Optional parameters:** None
 
@@ -66,9 +99,213 @@ database.
 * fields [string] - URI to isolate provenance field information
 * isolates [string] - URI to isolate records
 * schemes [string] - URI to list of schemes
-* loci [string] - URI to list of loci
-* records [number] - count of available records
+* :ref:`loci<db_loci>` [string] - URI to list of loci
+* records [integer] - count of available records
 
+.. _db_loci:
+
+.. index::
+   single: API resources; /db/{database}/loci
+
+/db/{database}/loci
+===================
+Lists loci defined within specified database configuration.
+
+**Supported methods:** GET, POST
+
+**Required query parameter:** {database}: Database configuration name [string]
+
+**Optional parameters:** page [integer], page_size [integer].  Set very large
+page size to return all results in one go.
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
+
+**Response:** Object containing:
+
+* loci [array] - List of :ref:`URIs to defined locus records<db_loci_locus>`.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+   * previous - URI to previous page of results
+   * next - URI to next page of results
+   * first - URI to first page of results
+   * last - URI to last page of results
+   
+.. _db_loci_locus:
+
+.. index::
+   single: API resources; /db/{database}/loci/{locus}
+
+/db/{database}/loci/{locus}
+===========================
+Provides information about a locus, including links to allele sequences (in 
+seqdef databases).
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database}: Database configuration name [string]
+ * {locus}: Locus name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ
+
+**Response:** Object containing a subset of the following key/value pairs:
+
+* id [string] - locus name
+* data_type [string] - 'DNA' or 'peptide'
+* allele_id_format [string] - 'integer' or 'text'
+* allele_id_regex [string] - regular expression constraining allele ids
+* common_name [string]
+* aliases [array] - list of alternative names of the locus
+* length_varies [boolean]
+* length [integer] - length if alleles are of a fixed length
+* coding_sequence [boolean]
+* orf [integer] - 1-6
+* schemes [array] - list of scheme objects, each consisting of:
+   * scheme [string] - URI to scheme information
+   * description [string]
+* min_length [integer] (seqdef databases) - minimum length for variable length
+  loci
+* max_length [integer] (seqdef databases) - maximum length for variable length
+  loci
+* alleles [string] (seqdef databases) - :ref:`URI to list of allele records
+  <db_alleles_locus>`
+* alleles_fasta [string] (seqdef databases) - :ref:`URI to FASTA file of all
+  alleles of locus<db_alleles_fasta_locus>`
+* curators [array] (seqdef databases) - list of URIs to user records of 
+  curators of the locus
+* publications [array] (seqdef databases) - list of PubMed id numbers of papers
+  describing the locus
+* full_name [string] (seqdef databases)
+* product [string] (seqdef databases)
+* description [string] (seqdef databases)
+* extended_attributes [array] (seqdef databases) - list of extended attribute
+  objects.  Each consists of a subset of the following fields:
+  
+    * field [string] - field name
+    * value_format [string] - 'integer', 'text', or 'boolean' 
+    * value_regex [string] - regular expression constraining value
+    * description [string] - description of field
+    * length [integer] - maximum length of field
+    * required [boolean]
+    * allowed_values [array] - list of allowed values
+    
+* genome_position [integer] (isolate databases)
+
+.. _db_alleles_locus:
+
+.. index::
+   single: API resources; /db/{database}/alleles/{locus}
+
+/db/{database}/alleles/{locus}
+==============================
+Lists alleles defined for specific locus.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database}: Database configuration name [string]
+ * {locus}: Locus name [string]
+
+**Optional parameters:** page [integer], page_size [integer].  Set very large
+page size to return all results in one go.
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles/abcZ
+
+**Response:** Object containing:
+
+* alleles [array] - List of :ref:`URIs to defined allele records
+  <db_alleles_locus_allele_id>`.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+   * previous - URI to previous page of results
+   * next - URI to next page of results
+   * first - URI to first page of results
+   * last - URI to last page of results
+   
+.. _db_alleles_locus_allele_id:
+
+.. index::
+   single: API resources; /db/{database}/alleles/{locus}/{allele_id} 
+   
+/db/{database}/alleles/{locus}/{allele_id}
+==========================================
+Provides information about an allele including its sequence.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database}: Database configuration name [string]
+ * {locus}: Locus name [string]
+ * {allele_id}: Allele identifier [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles/abcZ/5
+
+**Response:** Object containing the following key/value pairs:   
+
+* locus [string] - :ref:`URI to locus description<db_loci_locus>`
+* allele_id [string] - allele identifier
+* sequence [string] - sequence
+* status [string] - either 'Sanger trace checked', 'WGS: manual extract', 
+  'WGS: automated extract', or 'unchecked'
+* sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
+* curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
+* date_entered [string] - record creation date (ISO 8601 format)
+* datestamp [string] - last updated date (ISO 8601 format)
+
+.. _db_alleles_fasta_locus:
+
+.. index::
+   single: API resources; /db/{database}/alleles_fasta/{locus} 
+
+/db/{database}/alleles_fasta/{locus}
+====================================
+Provides all alleles defined for a locus in FASTA format.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database}: Database configuration name [string]
+ * {locus}: Locus name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles_fasta/abcZ
+
+**Response:** FASTA format file of alleles sequences 
+
+.. _db_users_user_id:
+
+.. index::
+   single: API resources; /db/{database}/users/{user_id} 
+
+/db/{database}/users/{user_id}
+==============================
+Provides information about data senders and curators.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database}: Database configuration name [string]
+ * {user_id}: User id number [integer]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/users/2
+
+**Response:** Object containing the following key/value pairs:
+
+* id [integer] - user id number
+* first_name [string]
+* surname [string]
+* affiliation [string] - institutional affiliation
+* email [string] - E-mail address
 
 **************
 Authentication
@@ -139,8 +376,8 @@ following parameters and to be signed using the consumer secret:
  * oauth_request_url (request URL)
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
- * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970)
-    * this must be within 600 seconds of the current time.
+ * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be 
+   within 600 seconds of the current time.
  * oauth_callback ('oob' for desktop applications)
  * oauth_nonce (random string)
  * oauth_version ('1.0')
@@ -208,8 +445,8 @@ token secret:
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
  * oauth_token (request token)
- * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970)
-    * this must be within 600 seconds of the current time.
+ * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be 
+   within 600 seconds of the current time.
  * oauth_nonce (random string)
  * oauth_version ('1.0')
 
@@ -247,8 +484,8 @@ secret and access token secret:
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
  * oauth_token (access token)
- * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970)
-    * this must be within 600 seconds of the current time.
+ * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be
+   within 600 seconds of the current time.
  * oauth_nonce (random string)
  * oauth_version ('1.0')
 
@@ -284,8 +521,8 @@ to be signed using the consumer secret and session token secret:
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
  * oauth_token (session token)
- * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970)
-    * this must be within 600 seconds of the current time.
+ * oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be
+   within 600 seconds of the current time.
  * oauth_nonce (random string)
  * oauth_version ('1.0')
   
