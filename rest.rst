@@ -22,13 +22,14 @@ Resources
 * :ref:`/db/{database}<db>`
 * :ref:`/db/{database}/loci<db_loci>`
 * :ref:`/db/{database}/loci/{locus}<db_loci_locus>`
-* :ref:`/db/{database}/alleles/{locus}<db_alleles_locus>`
-* :ref:`/db/{database}/alleles/{locus}/{allele_id}<db_alleles_locus_allele_id>`
-* :ref:`/db/{database}/alleles_fasta/{locus}<db_alleles_fasta_locus>`
-* /db/{database}/schemes
-* /db/{database}/schemes/{scheme_id}
-* /db/{database}/schemes/{scheme_id}/fields/{field}
-* /db/{database}/schemes/{scheme_id}/profiles
+* :ref:`/db/{database}/loci/{locus}/alleles<db_loci_locus_alleles>`
+* :ref:`/db/{database}/loci/{locus}/alleles_fasta<db_loci_locus_alleles_fasta>`
+* :ref:`/db/{database}/loci/{locus}/alleles/{allele_id}<db_loci_locus_alleles_allele_id>`
+* :ref:`/db/{database}/schemes<db_schemes>`
+* :ref:`/db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
+* :ref:`/db/{database}/schemes/{scheme_id}/fields/{field}<db_schemes_scheme_id_fields_field>`
+* :ref:`/db/{database}/schemes/{scheme_id}/profiles<db_schemes_scheme_id_profiles>`
+* /db/{database}/schemes/{scheme_id}/profiles_csv
 * /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
 * /db/{database}/isolates
 * /db/{database}/isolates/{isolate_id}
@@ -88,7 +89,7 @@ database.
 
 **Supported methods:** GET, POST
 
-**Required query parameter:** {database}: Database configuration name [string]
+**Required query parameter:** {database} - Database configuration name [string]
 
 **Optional parameters:** None
 
@@ -113,7 +114,7 @@ Lists loci defined within specified database configuration.
 
 **Supported methods:** GET, POST
 
-**Required query parameter:** {database}: Database configuration name [string]
+**Required query parameter:** {database} - Database configuration name [string]
 
 **Optional parameters:** page [integer], page_size [integer].  Set very large
 page size to return all results in one go.
@@ -144,8 +145,8 @@ seqdef databases).
 **Supported methods:** GET, POST
 
 **Required query parameters:** 
- * {database}: Database configuration name [string]
- * {locus}: Locus name [string]
+ * {database} - Database configuration name [string]
+ * {locus} - Locus name [string]
 
 **Optional parameters:** None
 
@@ -171,9 +172,9 @@ seqdef databases).
 * max_length [integer] (seqdef databases) - maximum length for variable length
   loci
 * alleles [string] (seqdef databases) - :ref:`URI to list of allele records
-  <db_alleles_locus>`
+  <db_loci_locus_alleles>`
 * alleles_fasta [string] (seqdef databases) - :ref:`URI to FASTA file of all
-  alleles of locus<db_alleles_fasta_locus>`
+  alleles of locus<db_loci_locus_alleles_fasta>`
 * curators [array] (seqdef databases) - list of URIs to user records of 
   curators of the locus
 * publications [array] (seqdef databases) - list of PubMed id numbers of papers
@@ -194,31 +195,31 @@ seqdef databases).
     
 * genome_position [integer] (isolate databases)
 
-.. _db_alleles_locus:
+.. _db_loci_locus_alleles:
 
 .. index::
-   single: API resources; /db/{database}/alleles/{locus}
+   single: API resources; /db/{database}/loci/{locus}/alleles
 
-/db/{database}/alleles/{locus}
-==============================
+/db/{database}/loci/{locus}/alleles
+===================================
 Lists alleles defined for specific locus.
 
 **Supported methods:** GET, POST
 
 **Required query parameters:** 
- * {database}: Database configuration name [string]
- * {locus}: Locus name [string]
+ * {database} - Database configuration name [string]
+ * {locus} - Locus name [string]
 
 **Optional parameters:** page [integer], page_size [integer].  Set very large
 page size to return all results in one go.
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles/abcZ
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 
 **Response:** Object containing:
 
 * alleles [array] - List of :ref:`URIs to defined allele records
-  <db_alleles_locus_allele_id>`.  
+  <db_loci_locus_alleles_allele_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
@@ -227,25 +228,46 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles/abcZ
    * first - URI to first page of results
    * last - URI to last page of results
    
-.. _db_alleles_locus_allele_id:
+.. _db_loci_locus_alleles_fasta:
 
 .. index::
-   single: API resources; /db/{database}/alleles/{locus}/{allele_id} 
+   single: API resources; /db/{database}/loci/{locus}/alleles_fasta
+
+/db/{database}/loci/{locus}/alleles_fasta
+=========================================
+Provides all alleles defined for a locus in FASTA format.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database} - Database configuration name [string]
+ * {locus} - Locus name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
+
+**Response:** FASTA format file of alleles sequences 
    
-/db/{database}/alleles/{locus}/{allele_id}
-==========================================
+.. _db_loci_locus_alleles_allele_id:
+
+.. index::
+   single: API resources; /db/{database}/loci/{locus}/alleles/{allele_id} 
+   
+/db/{database}/loci/{locus}/alleles/{allele_id}
+===============================================
 Provides information about an allele including its sequence.
 
 **Supported methods:** GET, POST
 
 **Required query parameters:** 
- * {database}: Database configuration name [string]
- * {locus}: Locus name [string]
- * {allele_id}: Allele identifier [string]
+ * {database} - Database configuration name [string]
+ * {locus} - Locus name [string]
+ * {allele_id} - Allele identifier [string]
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles/abcZ/5
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles/5
 
 **Response:** Object containing the following key/value pairs:   
 
@@ -259,26 +281,125 @@ Provides information about an allele including its sequence.
 * date_entered [string] - record creation date (ISO 8601 format)
 * datestamp [string] - last updated date (ISO 8601 format)
 
-.. _db_alleles_fasta_locus:
+.. _db_schemes:
 
 .. index::
-   single: API resources; /db/{database}/alleles_fasta/{locus} 
+   single: API resources; /db/{database}/schemes 
 
-/db/{database}/alleles_fasta/{locus}
-====================================
-Provides all alleles defined for a locus in FASTA format.
+/db/{database}/schemes
+======================
+
+Lists schemes defined within specified database configuration.
+
+**Supported methods:** GET, POST
+
+**Required query parameter:** {database} - Database configuration name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes
+
+**Response:** List of scheme objects, each containing:
+
+* scheme [string] - URI to scheme information
+* description [string] 
+
+.. _db_schemes_scheme_id:
+
+.. index::
+   single: API resources; /db/{database}/schemes/{scheme_id}
+
+/db/{database}/schemes/{scheme_id}
+==================================
+
+Provides information about a scheme, including links to allelic profiles (in 
+seqdef databases, if appropriate).
 
 **Supported methods:** GET, POST
 
 **Required query parameters:** 
- * {database}: Database configuration name [string]
- * {locus}: Locus name [string]
+ * {database} - Database configuration name [string]
+ * {scheme_id} - Scheme id number [integer]
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/alleles_fasta/abcZ
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1
 
-**Response:** FASTA format file of alleles sequences 
+**Response:** Object containing a subset of the following key/value pairs:
+
+* id [integer]
+* description [string]
+* locus_count [integer] - number of loci belonging to scheme
+* loci [array] - list of :ref:`URIs to locus descriptions<db_loci_locus>`
+* has_primary_key_field [boolean]
+* fields [array] - list of :ref:`URIs to scheme field descriptions
+  <db_schemes_scheme_id_fields_field>`
+* primary_key_field [string] - :ref:`URI to primary key field description
+  <db_schemes_scheme_id_fields_field>`
+* profile_count [integer] - number of defined profiles (only for schemes with
+  primary keys defined - only seqdef databases)
+* profiles [array] - URI to list of profile definitions (only seqdef databases)
+* profiles_csv [string] - URI to tab-delimited file of all scheme profiles
+
+
+.. _db_schemes_scheme_id_fields_field:
+
+.. index::
+   single: API resources; /db/{database}/schemes/{scheme_id}/fields/{field}
+
+/db/{database}/schemes/{scheme_id}/fields/{field}
+=================================================
+
+Provides information about scheme fields.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+* {database} - Database configuration name [string]
+* {scheme_id} - Scheme id number [integer]
+* {field} - Field name [string]
+ 
+**Optional parameters:** None
+ 
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/fields/ST
+ 
+**Response:** Object containing the following key/value pairs:
+ 
+* field [string] - field name
+* type [string] - data type of field (integer or text)
+* primary_key [boolean] - true if field is the scheme primary key
+
+.. _db_schemes_scheme_id_profiles:
+
+.. index::
+   single: API resources; /db/{database}/schemes/{scheme_id}/profiles
+
+/db/{database}/schemes/{scheme_id}/profiles
+===========================================
+Lists allelic profiles defined for a specific scheme.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database} - Database configuration name [string]
+ * {scheme_id} - Scheme id [integer]
+
+**Optional parameters:** page [integer], page_size [integer].  Set very large
+page size to return all results in one go.
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
+
+**Response:** Object containing:
+
+* profiles [array] - List of URIs to defined profile records. 
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+   * previous - URI to previous page of results
+   * next - URI to next page of results
+   * first - URI to first page of results
+   * last - URI to last page of results
 
 .. _db_users_user_id:
 
@@ -292,8 +413,8 @@ Provides information about data senders and curators.
 **Supported methods:** GET, POST
 
 **Required query parameters:** 
- * {database}: Database configuration name [string]
- * {user_id}: User id number [integer]
+ * {database} - Database configuration name [string]
+ * {user_id} - User id number [integer]
 
 **Optional parameters:** None
 
