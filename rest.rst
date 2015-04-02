@@ -29,8 +29,8 @@ Resources
 * :ref:`/db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
 * :ref:`/db/{database}/schemes/{scheme_id}/fields/{field}<db_schemes_scheme_id_fields_field>`
 * :ref:`/db/{database}/schemes/{scheme_id}/profiles<db_schemes_scheme_id_profiles>`
-* /db/{database}/schemes/{scheme_id}/profiles_csv
-* /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+* :ref:`/db/{database}/schemes/{scheme_id}/profiles_csv<db_schemes_scheme_id_profiles_csv>`
+* :ref:`/db/{database}/schemes/{scheme_id}/profiles/{profile_id}<db_schemes_scheme_id_profiles_profile_id>`
 * /db/{database}/isolates
 * /db/{database}/isolates/{isolate_id}
 * /db/{database}/isolates/{isolate_id}/allele_designations
@@ -400,6 +400,63 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   
+.. _db_schemes_scheme_id_profiles_csv:
+
+.. index::
+   single: API resources; /db/{database}/schemes/{scheme_id}/profiles_csv
+   
+/db/{database}/schemes/{scheme_id}/profiles_csv
+===============================================
+Provides all profiles defined for a scheme in CSV (tab-delimited) format.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database} - Database configuration name [string]
+ * {scheme_id} - Scheme id [integer]
+
+**Optional parameters:** None
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
+
+**Response:**  Tab-delimited text file of allelic profiles
+
+.. _db_schemes_scheme_id_profiles_profile_id:
+
+.. index::
+   single: API resources; /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+
+/db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+========================================================
+Provides information about a specific allelic profile defined for a scheme.
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+ * {database} - Database configuration name [string]
+ * {scheme_id} - Scheme id [integer]
+ * {profile_id} - Profile id [string/integer] 
+
+**Optional parameters:** None
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
+
+**Response:** Object containing the following key/value pairs:   
+
+* *primary_key_term* [string/integer] - The field name is the primary key, 
+  e.g. ST.  The value is the primary key value (primary_id used as an 
+  argument).
+* alleles [object] - :ref:`list of URIs to allele descriptions
+  <db_loci_locus_alleles_allele_id>`
+* *other_scheme_fields* [string/integer] - Each scheme field will have its own
+  value if defined.  The field name is the name of the field.
+* sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
+* curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
+* date_entered [string] - record creation date (ISO 8601 format)
+* datestamp [string] - last updated date (ISO 8601 format)
 
 .. _db_users_user_id:
 
