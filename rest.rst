@@ -116,8 +116,10 @@ Lists loci defined within specified database configuration.
 
 **Required query parameter:** {database} - Database configuration name [string]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
 
@@ -212,8 +214,10 @@ Lists alleles defined for specific locus.
 * {database} - Database configuration name [string]
 * {locus} - Locus name [string]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
@@ -391,8 +395,10 @@ Lists allelic profiles defined for a specific scheme.
 * {database} - Database configuration name [string]
 * {scheme_id} - Scheme id [integer]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
@@ -480,8 +486,10 @@ Provides list of isolate records.
 
 **Required query parameter:** {database} - Database configuration name [string]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
 
@@ -577,8 +585,10 @@ Provides a list of full allele designation records for the specified isolate.
 * {database} - Database configuration name [string]
 * {isolate_id} - Isolate identifier [integer]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations
@@ -645,8 +655,10 @@ Returns array of allele identifiers for isolate.
 * {database} - Database configuration name [string]
 * {isolate_id} - Isolate identifier [integer]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
@@ -737,8 +749,10 @@ Returns a list of contig records for the specified isolate.
 * {database} - Database configuration name [string]
 * {isolate_id} - Isolate identifier [integer]
 
-**Optional parameters:** page [integer], page_size [integer].  Set very large
-page size to return all results in one go.
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer] - Set very large page size to return all results in one go.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
