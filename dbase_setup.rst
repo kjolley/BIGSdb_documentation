@@ -203,6 +203,11 @@ Top level element. Contains child elements: system, field and sample.::
   * Overrides the isolate number limit for the Genome Comparator plugin.
     Default: '1000'.
     
+* genome_comparator_max_ref_loci
+
+  * Overrides the limit on number of loci allowed in a reference genome.
+    Default: '10000'. 
+    
 * hide_unused_schemes   
 
   * Sets whether a scheme is shown in a main results table if none of the
