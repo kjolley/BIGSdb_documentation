@@ -5,25 +5,47 @@ Installation and configuration of BIGSdb
 *********************
 Software installation
 *********************
-BIGSdb consists of two main Perl scripts, bigsdb.pl and bigscurate.pl, that run the query and curator's interfaces respectively. These need to be located somewhere within the web cgi-bin directories. In addition, there are a large number of library files, used by both these scripts, that are installed by default in /usr/local/lib/BIGSdb. Plugin scripts are stored within a 'Plugins' sub-directory of this library directory.
+BIGSdb consists of two main Perl scripts, bigsdb.pl and bigscurate.pl, that run
+the query and curator's interfaces respectively. These need to be located 
+somewhere within the web cgi-bin directories. In addition, there are a large 
+number of library files, used by both these scripts, that are installed by 
+default in /usr/local/lib/BIGSdb. Plugin scripts are stored within a 'Plugins'
+sub-directory of this library directory.
 
-All databases on a system can use the same instance of the scripts, or alternatively any database can specify a particular path for each script, enabling these script directories to be protected by apache htaccess directives.
+All databases on a system can use the same instance of the scripts, or 
+alternatively any database can specify a particular path for each script, 
+enabling these script directories to be protected by apache htaccess 
+directives.
 
  * :doc:`Software requirements <dependencies>`
- * Download from `SourceForge.net <http://sourceforge.net/projects/bigsdb/>`_ or `GitHub <https://github.com/kjolley/BIGSdb>`_.
+ * Download from `SourceForge.net <http://sourceforge.net/projects/bigsdb/>`_ 
+   or `GitHub <https://github.com/kjolley/BIGSdb>`_.
 
 1. Unpack the distribution package in a temporary directory: ::
 
     gunzip bigsdb_1.x.x.tar.gz
     tar xvf bigsdb_1.x.x.tar
 
-2. Copy the bigsdb.pl and bigscurate.pl scripts to a subdirectory of your web server's cgi-bin directory. Make sure these are readable and executable by the web server daemon.
-3. Copy the contents of the lib directory to /usr/local/lib/BIGSdb/. Make sure you include the Plugins and Offline directories which are subdirectories of the main lib directory.
-4. Copy the contents of the javascript directory to a javascript directory within the web root tree, i.e. accessible from http://your_website/javascript/.
-5. Copy the bigsdb.css and jquery-ui.css stylesheets to the root directory of your website, i.e. accessible from http://your_website/bigsdb.css.
-6. Copy the images directory to the root directory of your website, i.e. accessible from http://your_website/images.
-7. Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of helper applications and database names in the bigsdb.conf file and modify for your system.
-8. Create a PostgreSQL database user called apache - this should not have any special priveleges. First you will need to log in as the postgres user: ::
+2. Copy the bigsdb.pl and bigscurate.pl scripts to a subdirectory of your web
+   server's cgi-bin directory. Make sure these are readable and executable by 
+   the web server daemon.
+3. Copy the contents of the lib directory to /usr/local/lib/BIGSdb/. Make sure
+   you include the Plugins and Offline directories which are subdirectories of
+   the main lib directory.
+4. Copy the contents of the javascript directory to a javascript directory 
+   within the web root tree, i.e. accessible from 
+   http://your_website/javascript/.
+5. Copy the contents of the css directory to a css directory within the web
+   root tree, i.e. accessible from http://your_website/css/.
+6. Copy the contents of the fonts directory to a fonts directory within the web
+   root tree, i.e. accessible from http://your_website/fonts/.  
+7. Copy the images directory to the root directory of your website, i.e. 
+   accessible from http://your_website/images/.
+8. Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of
+   helper applications and database names in the bigsdb.conf file and modify 
+   for your system.
+9. Create a PostgreSQL database user called apache - this should not have any
+   special priveleges. First you will need to log in as the postgres user: ::
 
      sudo su postgres
 
@@ -36,7 +58,9 @@ All databases on a system can use the same instance of the scripts, or alternati
      psql
      ALTER ROLE apache WITH PASSWORD 'remote';
 
-9. Create PostgreSQL databases called bigsdb_auth, bigsdb_prefs and bigsdb_refs using the scripts in the sql directory. Create the database using the createdb command and set up the tables using the psql command. ::
+10. Create PostgreSQL databases called bigsdb_auth, bigsdb_prefs and bigsdb_refs
+    using the scripts in the sql directory. Create the database using the 
+    createdb command and set up the tables using the psql command. ::
 
      createdb bigsdb_auth
      psql -f auth.sql bigsdb_auth
@@ -45,8 +69,10 @@ All databases on a system can use the same instance of the scripts, or alternati
      createdb bigsdb_refs
      psql -f refs.sql bigsdb_refs
 
-10. Create a writable temporary directory in the root of the web site called tmp, i.e. accessible from http://your_website/tmp.
-11. Create a log file, bigsdb.log, in /var/log owned by the web server daemon, e.g. ::
+11. Create a writable temporary directory in the root of the web site called
+    tmp, i.e. accessible from http://your_website/tmp.
+12. Create a log file, bigsdb.log, in /var/log owned by the web server daemon,
+    e.g. ::
 
      touch /var/log/bigsdb.log
      chown www-data /var/log/bigsdb.log
