@@ -239,6 +239,20 @@ any database in the past 6 months (the script will run at 6pm every Sunday). ::
 
  #Prevent prefs database getting too large
  00   18 *  *  0  postgres    psql -c "DELETE FROM guid WHERE last_accessed < NOW() - INTERVAL '6 months'" bigsdb_prefs
+ 
+***************************************
+Purging old jobs from the jobs database
+***************************************
+If you are running the offline job manager, the jobs database (default 
+bigsdb_jobs) contains the parameters and output messages of these jobs.  Job
+output files are only
+:ref:`usually kept on the server for 7 days<delete-temp-files>` so there is
+no point keeping the database entries for longer than this.   These can be
+purged with a daily cron job, e.g. set the following in /etc/crontab (the 
+script will run at 5am every day). ::
+
+ #Purge jobs older than 7 days from the jobs database.
+ 00   5  *  *  *  postgres psql -c "DELETE FROM jobs where (stop_time IS NOT NULL AND stop_time < now()-interval '7 days') OR (status LIKE 'rejected%' AND submit_time < now()-interval '7 days')" bigsdb_jobs > /dev/null 2>&1
 
 *****************
 Log file rotation
