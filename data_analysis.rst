@@ -335,11 +335,11 @@ and speed.
   sequence that the alignment has to cover in order to be considered (default: 
   50%).
 * BLASTN word size - This is the length of the initial identical match that
-  BLAST requires before extending a match (default: 15).  Increasing this value
+  BLAST requires before extending a match (default: 20).  Increasing this value
   improves speed at the expense of sensitivity.  The default value gives good
-  results in most cases, but increasing this to 20 is almost as good (there was
-  1 difference among 2000 loci in a test run) and will speed up the analysis
-  approximately two-fold.
+  results in most cases.  The default setting used to be 15 but the new default
+  of 20 is almost as good (there was 1 difference among 2000 loci in a test 
+  run) but the analysis runs twice as fast.
 * Use TBLASTX - This compares the six-frame translation of your nucleotide
   query sequence against the six-frame translation of the contig sequences. 
   Sequences will be classed as identical if they result in the same translated
