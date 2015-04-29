@@ -625,8 +625,8 @@ details to suit the user).::
  'University of Oxford, UK', 'admin', 'now', 'now', 1);
 
 If you are using built-in authentication, set the password for this user using
-the :ref:`add_user.pl <set_first_password>` script. This encrypts the password
-to a hash and stores this within the authentication database.  Other users can
+the :ref:`add_user.pl <set_first_password>` script. This hashes the password
+and stores this within the authentication database.  Other users can
 be added by the admin user from the curation interface accessible from
 http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you
 have located your bigscurate.pl script).
