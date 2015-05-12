@@ -502,11 +502,18 @@ Top level element. Contains child elements: system, field and sample.
   * Partial path of the bigscurate.pl script used to curate the database. See
     :ref:`user authentication <user_authentication>`.
     
+* curate_script
+
+  * Relative web path to curation script.  Default 'bigscurate.pl' (version 
+    1.11+).
+  * This is only needed if automated submissions are enabled.  If bigscurate.pl
+    is in a different directory from bigsdb.pl, you need to include the whole 
+    web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
 * diploid
 
   * Allow IUPAC 2-nuclotide ambiguity codes in allele definitions for use with
-    diploid typing schemes: either 'yes' or 'no', default 'no' 
-    (Version 1.9.1+).
+    diploid typing schemes: either 'yes' or 'no', default 'no'.
     
 * disable_seq_downloads
    
@@ -524,7 +531,14 @@ Top level element. Contains child elements: system, field and sample.
     
 * materialized_views
 
-  * Enable materialized views: either 'yes' or 'no', default 'no'.     
+  * Enable materialized views: either 'yes' or 'no', default 'no'.   
+  
+* query_script
+
+  * Relative web path to bigsdb script.  Default 'bigsdb.pl' (version 1.11+).
+  * This is only needed if automated submissions are enabled.  If bigsdb.pl is
+    in a different directory from bigscurate.pl, you need to include the whole 
+    web path, e.g. /cgi-bin/bigsdb/bigsdb.pl.  
      
 * read_access  
 
@@ -550,6 +564,14 @@ Top level element. Contains child elements: system, field and sample.
 
   * Force the use of a specific set when accessing database via this XML
     configuration: Value is the name of the set.
+    
+* submissions
+
+  * Enable automated submission system: either 'yes' or 'no', default 'no' 
+    (version 1.11+).
+  * The curate_script and query_script paths should also be set, either in
+    the bigsdb.conf file (for site-wide configuration) or within the system
+    attribute of config.xml.
 
 * webroot	
 
