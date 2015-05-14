@@ -31,8 +31,8 @@ General
  and database servers.  All offline jobs and tagging of genomes is performed
  on the database server.  These have the following specification:
  
- web server: 16 cores, 64GB RAM
- database server: 64 cores, 1TB RAM, 3TB RAID 10 local storage
+  * web server: 16 cores, 64GB RAM
+  * database server: 64 cores, 1TB RAM, 3TB RAID 10 local storage
 
 Installation
 ============
