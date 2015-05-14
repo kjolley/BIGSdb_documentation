@@ -251,6 +251,8 @@ You can choose to export the data in tab-delimited text or Excel formats by clic
 
 .. index::
    single: Genome Comparator
+   
+.. _genome_comparator:
 
 *****************
 Genome comparator
