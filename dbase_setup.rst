@@ -533,6 +533,15 @@ Top level element. Contains child elements: system, field and sample.
 
   * Enable materialized views: either 'yes' or 'no', default 'no'.   
   
+* profile_submissions
+
+  * Enable profile submissions (automated submission system): either 'yes' 
+    or 'no', default 'no' (version 1.11+).
+  * To enable, you will also need to set submissions="yes".  By default, 
+    profile submissions are disabled since generally new profiles should be
+    accompanied by representative isolate data, and the profile can be 
+    extracted from that. 
+  
 * query_script
 
   * Relative web path to bigsdb script.  Default 'bigsdb.pl' (version 1.11+).
