@@ -942,7 +942,7 @@ usually a 42 character alphanumeric (including punctuation) string, e.g.
 Getting a request token
 =======================
 
-* **Relative URL:** /oauth/get_request_token
+* **Relative URL:** /db/{database}/oauth/get_request_token
 * **Supported methods:** GET, POST
  
 The application uses the consumer key to obtain a request token.  The request
@@ -1009,7 +1009,7 @@ The verifier code is valid for 60 minutes.
 
 Getting an access token
 =======================
-* **Relative URL:** /oauth/get_access_token
+* **Relative URL:** /db/{database}/oauth/get_access_token
 * **Supported methods:** GET, POST
  
 The application uses the request token, verifier code and its consumer key to 
@@ -1049,7 +1049,7 @@ following parameters:
 
 Getting a session token
 =======================
-* **Relative URL:** /oauth/get_session_token
+* **Relative URL:** /db/{database}/oauth/get_session_token
 * **Supported methods:** GET, POST
 
 The application uses the access token and its consumer key to obtain a session
