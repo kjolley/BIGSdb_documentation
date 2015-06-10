@@ -43,6 +43,7 @@ These are included with most Linux distributions.
 * `Parallel::ForkManager <http://search.cpan.org/~szabgab/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading autotagger and autodefiner scripts.
 * `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
 * `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
+* `Mail::Sender <http://search.cpan.org/~jenda/Mail-Sender/Sender.pm>`_ - [optional] - Used to send E-mail messages by submission system.
 
 Optional packages
 =================
