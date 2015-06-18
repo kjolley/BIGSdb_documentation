@@ -88,6 +88,8 @@ database):
 * curate_footer.html - HTML markup that is inserted at the bottom of all
   curator's interface pages.
 
+.. _xml:
+
 ***********************************************
 XML configuration attributes used in config.xml
 ***********************************************

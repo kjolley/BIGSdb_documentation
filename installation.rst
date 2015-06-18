@@ -194,7 +194,38 @@ To run plugins that require a long time to complete their analyses, an offline j
 
     sudo touch /var/log/bigsdb_jobs.log
     sudo chown bigsdb /var/log/bigsdb_jobs.log
+    
+********************************
+Setting up the submission system
+********************************
+The submission system allows users to submit new data to the database for
+curation.  Submissions are placed in a queue for a curator to upload.
+All communication between submitters and curators can occur via the submission
+system.
 
+1.  Create a writable submissions directory in the root of the web site called
+    submissions, i.e. accessible from http://your_website/submissions.  This is
+    used for file uploads.  The directory should be writable by the Apache web
+    daemon (user 'www-data' on Debian/Ubuntu systems).The actual directory can
+    be outside of the web root and made accessible using a symlink, e.g. the 
+    default location is /var/submissions symlinked to /var/www/submissions 
+    (assuming your web site is located in /var/www), e.g. ::
+   
+      sudo touch /var/submissions
+      sudo chown www-data:www-data /var/submissions
+      sudo ln -s /var/submissions /var/www
+     
+2.  Set the submission_dir location in bigsdb.conf.
+ 
+3.  Make sure the curate_script and query_script values are set in bigsdb.conf.
+    These point to the web-accessible location of the web scripts and are
+    required to allow curators to be directed between the web interfaces as
+    needed.
+    
+4.  Set submissions="yes" in the system tag of the 
+    :ref:`database config.xml file<xml>` of each database for which submissions
+    should be enabled. 
+   
 .. _delete-temp-files: 
 
 ***********************************
