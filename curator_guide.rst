@@ -31,22 +31,37 @@ Adding new allele sequence definitions
 
 Single allele
 =============
-To add a single new allele, click the sequences (all loci) add (+) link on the curator's main page - if only a few loci are defined with permission for the current user to curate then they will be listed individually and the specific locus allele addition links can also be used.
+To add a single new allele, click the sequences (all loci) add (+) link on the
+curator's main page - if only a few loci are defined with permission for the
+current user to curate then they will be listed individually and the specific
+locus allele addition links can also be used.
 
 .. image:: /images/curation/add_alleles.png 
 
-Select the locus from the dropdown list box. The next available allele id will be entered automatically (if the allele id format is set to integer). Paste the sequence in to form, set the status and select the sender name from the dropdown box. If the sender does not appear in the box, you will need to add them to the registered users.
+Select the locus from the dropdown list box. The next available allele id will
+be entered automatically (if the allele id format is set to integer). Paste
+the sequence in to form, set the status and select the sender name from the
+dropdown box. If the sender does not appear in the box, you will need to add
+them to the registered users.
 
 The status can either be:
 
 * Sanger trace checked
-* WGS: manual extract
-* WGS: automated extract
+* WGS: manual extract ( BIGSdb)
+* WGS: automated extract (BIGSdb)
+* WGS: visually checked
+* WGS: automatically checked
 * unchecked
 
 .. image:: /images/curation/add_alleles2.png 
 
-Press submit. By default, the system will test whether your sequence is similar enough to existing alleles defined for that locus. The sequence will be rejected if it isn't considered similar enough. This test can be overridden by checking the 'Override sequence similarity check' checkbox at the bottom.
+Press submit. By default, the system will test whether your sequence is similar
+enough to existing alleles defined for that locus. The sequence will be
+rejected if it isn't considered similar enough. This test can be overridden by
+checking the 'Override sequence similarity check' checkbox at the bottom.  It
+will also check that the sequence length is within the allowed range for that
+locus.  These checks can also be overridden by checking the 'Override sequence
+length check' checkbox, allowing the addition of unusual length alleles.
 
 .. seealso::
 
