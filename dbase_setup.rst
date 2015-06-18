@@ -159,7 +159,15 @@ Top level element. Contains child elements: system, field and sample.::
 * curate_path_includes 
 
   * Partial path of the bigscurate.pl script used to curate the database.
-    See user authentication. 
+    See user authentication.
+    
+* curate_script
+
+  * Relative web path to curation script. Default ‘bigscurate.pl’
+    (version 1.11+).
+  * This is only needed if automated submissions are enabled. If bigscurate.pl
+    is in a different directory from bigsdb.pl, you need to include the whole 
+    web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
     
 * default
 
@@ -271,7 +279,14 @@ Top level element. Contains child elements: system, field and sample.::
 * privacy   
 
   * Displays E-mail address for sender in isolate information page if set to
-    'no'. Default 'yes'.  
+    'no'. Default 'yes'.
+    
+* query_script
+
+  * Relative web path to bigsdb script. Default ‘bigsdb.pl’ (version 1.11+).
+  * This is only needed if automated submissions are enabled. If bigsdb.pl is
+    in a different directory from bigscurate.pl, you need to include the whole
+    web path, e.g. /cgi-bin/bigsdb/bigsdb.pl.
   
 * read_access  
 
@@ -310,6 +325,14 @@ Top level element. Contains child elements: system, field and sample.::
     records. This can be useful when it is anticipated that two databases may
     be merged and it would be easier to do so if the id numbers in the two
     databases were different.  Default: '1'.
+    
+* submissions
+
+  * Enable automated submission system: either 'yes' or 'no', default 'no'
+    (version 1.11+).
+  * The curate_script and query_script paths should also be set, either in
+    the bigsdb.conf file (for site-wide configuration) or within the system
+    attribute of config.xml.
     
 * tblastx_tagging 
 
