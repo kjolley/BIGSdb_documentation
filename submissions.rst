@@ -133,7 +133,7 @@ depend on the policies of the individual databases.  Sequences determined by
 Sanger sequencing should normally have forward and reverse trace files 
 attached.
 
-Files can be added tot he submission by clicking the 'Browse' button in the
+Files can be added to the submission by clicking the 'Browse' button in the
 'Supporting files' section.
 
 .. image:: /images/submissions/submission11.png
@@ -163,3 +163,77 @@ Your submission will then be listed under 'Pending submissions' on your
 submission page.
 
 .. image:: /images/submissions/submission15.png
+
+******************
+Profile submission
+******************
+Even if the submission system has been enabled, submission of profiles has to
+be specifically enabled.  Many databases require submission of representative
+isolate data for any new allelic profile for schemes such as MLST.  In this
+case any new profiles can be readily extracted from the isoate data so profiles
+do not need to be submitted separately.
+
+Start
+=====
+Click the appropriate profiles link under submission type on the submission 
+management page.
+
+.. image:: /images/submissions/submission16.png
+
+Download the Excel submission template
+
+.. image:: /images/submissions/submission17.png
+
+Paste in profile(s)
+===================
+Fill in the template.  The first column 'id' can be used to enter an identifier
+that is meaningful to you - it is used to report back the results but is not
+uploaded to the database.  It can be left blank, or the entire column can be
+removed - in which case individual profiles will be identified by row number.
+Click submit.
+
+.. image:: /images/submissions/submission18.png
+
+Some basic checks will be performed.  These include whether the profile has
+already been assigned and whether each allele identifier exists.  The 
+submission cannot proceed if the checks fail.
+
+.. image:: /images/submissions/submission19.png
+
+Provided the checks pass, you will then be able to add additional information
+to your submission
+
+Add message to curator
+======================
+If you wish to enter a message to the curator, enter this in the messages box
+and click 'Add message'.
+
+.. image:: /images/submissions/submission20.png
+
+The message will be attached.  A curator may respond to the message and attach
+their own, with the full conversation becoming part of the submission record.
+
+.. image:: /images/submissions/submission21.png
+
+Add supporting files
+====================
+Some submissions may require the attachment of supporting files.  These files 
+can be added to the submission by clicking the 'Browse' button in the 
+'Supporting files' section.
+
+Select the file in the selection box,then click 'Upload files'.
+
+Finalize submission
+===================
+Make sure the 'E-mail submission updates' box is checked if you wish to receive
+E-mail notification of the result of your submission.  This setting is 
+remembered between sessions.
+
+Click 'Finalize submission!'.
+
+.. image:: /images/submissions/submission22.png
+
+Your submission will then be listed under 'Pending submissions' on your 
+submission page.
+
+.. image:: /images/submissions/submission23.png
