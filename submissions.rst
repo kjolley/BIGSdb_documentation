@@ -98,7 +98,10 @@ how the sequence was obtained:
 Paste in sequence(s)
 ====================
 Paste in the new variant sequences to the box.  This can either be a stand-
-alone sequence or multiple sequences in FASTA format.  Click submit.
+alone sequence or multiple sequences in FASTA format.  The sequences must be
+trimmed to the start and end points of the loci - check existing allele 
+definitions if in doubt.  The submission is likely to be rejected if sequences
+are not trimmed.  Click submit.
    
 .. image:: /images/submissions/submission6.png
    
@@ -180,7 +183,7 @@ management page.
 
 .. image:: /images/submissions/submission16.png
 
-Download the Excel submission template
+Download the Excel submission template.
 
 .. image:: /images/submissions/submission17.png
 
@@ -237,3 +240,34 @@ Your submission will then be listed under 'Pending submissions' on your
 submission page.
 
 .. image:: /images/submissions/submission23.png
+
+******************
+Isolate submission
+******************
+New isolate data can only be submitted from within the appropriate isolate
+database.  You may be required to submit isolate data if you would like to get
+a new MLST sequence type defined, but this depends on individual database 
+policy.
+
+Start
+=====
+Click the 'isolates' link under submission type on the submission management
+page.
+
+.. image:: /images/submissions/submission24.png
+
+Download the Excel submission template.
+
+.. image:: /images/submissions/submission25.png
+
+Fill in the template.  Some fields are required and cannot be left blank.  
+Check the 'Description of database fields' link on the database contents page
+to see a description of the fields and allowed values where these have been
+defined.  Where allowed values have been set, the template will have dropdown
+boxes (although these require newer versions of Excel to work).
+
+Some databases may have hundreds of loci defined, and most will not have a 
+column in the template. You can add new columns for any loci that have been 
+defined and for which you would like to include allelic information for. 
+These locus names must be the primary locus identifier.  A list of loci can be
+found in the 'allowed_loci' tab of the Excel submission template.

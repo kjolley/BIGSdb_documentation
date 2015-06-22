@@ -793,6 +793,11 @@ Fill in the web form with appropriate values. Required fields have an exclamatio
 * url - The URL used to hyperlink to information about the allele. This can either be a relative or absolute URL. If [?] (including the square brackets) is included then this will be substituted for the allele value in the resultant URL. To link to the appropiate allele info page on a corresponding seqdef database you would need something like /cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=alleleInfo&locus=abcZ&allele_id=[?].
 
   * Allowed: any valid URL.
+  
+* submission_template - Sets whether or not a column for this locus is 
+  included in the Excel submission template.
+  
+  * Allowed: true/false (default: false)
 
 .. index::
    single: locus; adding; copying existing record
