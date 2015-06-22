@@ -149,7 +149,7 @@ The file will be uploaded and shown in a table.
 
 .. image:: /images/submissions/submission13.png
 
-Files can be removed from the submission, by checking the appropriate 'Delete'
+Files can be removed from the submission by checking the appropriate 'Delete'
 box and clicking 'Delete selected files'.
 
 Finalize submission
@@ -193,7 +193,8 @@ Fill in the template.  The first column 'id' can be used to enter an identifier
 that is meaningful to you - it is used to report back the results but is not
 uploaded to the database.  It can be left blank, or the entire column can be
 removed - in which case individual profiles will be identified by row number.
-Click submit.
+
+Copy and paste the entire contents of the submission worksheet. Click submit.
 
 .. image:: /images/submissions/submission18.png
 
@@ -224,7 +225,7 @@ Some submissions may require the attachment of supporting files.  These files
 can be added to the submission by clicking the 'Browse' button in the 
 'Supporting files' section.
 
-Select the file in the selection box,then click 'Upload files'.
+Select the file in the selection box, then click 'Upload files'.
 
 Finalize submission
 ===================
@@ -260,6 +261,8 @@ Download the Excel submission template.
 
 .. image:: /images/submissions/submission25.png
 
+Paste in isolate data
+=====================
 Fill in the template.  Some fields are required and cannot be left blank.  
 Check the 'Description of database fields' link on the database contents page
 to see a description of the fields and allowed values where these have been
@@ -271,3 +274,69 @@ column in the template. You can add new columns for any loci that have been
 defined and for which you would like to include allelic information for. 
 These locus names must be the primary locus identifier.  A list of loci can be
 found in the 'allowed_loci' tab of the Excel submission template.
+
+Copy and paste the entire contents of the submission worksheet. Click submit.
+
+.. image:: /images/submissions/submission26.png
+
+Some basic checks will be performed.  These include checking all field values
+conform to allowed lists or data types.  The submission cannot proceed if any
+checks fail.
+
+.. image:: /images/submissions/submission27.png
+
+Provided the checks pass, you will then be able to add additional information
+to your submission.
+
+.. _isolate_submission_message:
+
+Add message to curator
+======================
+If you wish to enter a message to the curator, enter this in the messages box
+and click 'Add message'.
+
+.. image:: /images/submissions/submission28.png
+
+The message will be attached.  A curator may respond to the message and attach
+their own, with the full conversation becoming part of the submission record.
+
+.. image:: /images/submissions/submission29.png
+
+Add supporting files
+====================
+You can add any files required to support the submission.  You may, for 
+example, wish to include a genome sequence for an isolate record (contigs in
+FASTA format).  If you are doing this, make sure that the filename can be 
+unambiguously linked to the appropriate isolate record and 
+:ref:`add a message<isolate_submission_message>`.
+
+Files can be added to the submission by clicking the 'Browse' button in the
+'Supporting files' section.
+
+.. image:: /images/submissions/submission30.png
+
+Select the file in the selection box, then click 'Upload files'.
+
+.. image:: /images/submissions/submission31.png
+
+The file will be uploaded and shown in a table.
+
+.. image:: /images/submissions/submission32.png
+
+Files can be removed from the submission by checking the appropriate 'Delete'
+box and clicking 'Delete selected files'.
+
+Finalize submission
+===================
+Make sure the 'E-mail submission updates' box is checked if you wish to receive
+E-mail notification of the result of your submission.  This setting is 
+remembered between sessions.
+
+Click 'Finalize submission!'.
+
+.. image:: /images/submissions/submission33.png
+
+Your submission will then be listed under 'Pending submissions' on your 
+submission page.
+
+.. image:: /images/submissions/submission34.png
