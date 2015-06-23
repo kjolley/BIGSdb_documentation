@@ -104,7 +104,7 @@ Closing the submission
 ======================
 You can add a message to the submitter by entering it in the message box and 
 clicking 'Add message'.  Once sequences have all been either assigned or 
-rejected, the 'Close submission button' will be displayed.  Click this to close
+rejected, the 'Close submission' button will be displayed.  Click this to close
 the submission.  The submitter will be notified of their submission status.
 
 .. image:: /images/curate_submissions/curate_submissions16.png
@@ -112,6 +112,83 @@ the submission.  The submitter will be notified of their submission status.
 ********
 Profiles
 ********
+Click the appropriate submission on the 'Manage submissions' page.
+
+.. image:: /images/curate_submissions/curate_submissions17.png
+
+You will see a table summarizing the profiles in the submission and their 
+current status.
+
+.. image:: /images/curate_submissions/curate_submissions18.png
+
+Individual profile curation
+===========================
+Individual profiles can be curated singly by clicking the 'Curate' links next
+to the profile in the table.
+
+.. image:: /images/curate_submissions/curate_submissions19.png
+
+Clicking this link takes you to the curation interface 
+:ref:`single profile upload page<single_profile_upload>`. The upload form will
+be filled with details from the submission.
+
+.. image:: /images/curate_submissions/curate_submissions20.png
+
+Clicking 'Submit' from this form will define the new profile and add it to the
+database.  A link on the confirmation page will take you back to the submission
+management page.
+
+.. image:: /images/curate_submissions/curate_submissions21.png
+
+You will find that the status of the newly assigned profile has changed in the
+summary table.  The assigned value and status are determined on display and
+should always reflect the live database values.
+
+.. image:: /images/curate_submissions/curate_submissions22.png
+
+Batch profile curation
+======================
+Often, you will want to batch upload submitted profiles.  This can be done by
+clicking the 'Batch curate' button.
+
+.. image:: /images/curate_submissions/curate_submissions23.png
+
+This takes you to the 
+:ref:`batch profile upload page<batch_profile_upload>` in the curators' 
+interface.
+
+The upload form will be filled with details from the submission.
+
+.. image:: /images/curate_submissions/curate_submissions24.png
+
+After upload, a link on the confirmation page leads back to the submission
+management page.
+
+.. image:: /images/curate_submissions/curate_submissions25.png
+
+The status of the profiles should reflect their newly assigned status.
+
+.. image:: /images/curate_submissions/curate_submissions26.png
+
+Rejecting profiles
+==================
+Sometimes you may need to reject all, or some of, the profiles in the 
+submission.  This may be because isolate data had not been made available, 
+against the policy of the database.  You can do this by changing the value in
+the status dropdown box next to each profile.  Click 'Update' to make the 
+change.
+
+.. image:: /images/curate_submissions/curate_submissions27.png
+
+Closing the submission
+======================
+You can add a message to the submitter by entering it in the message box and
+clicking 'Add message'.  Once profiles have all been either assigned or 
+rejected, the 'Close submission' button will be displayed.  Click this to
+close the submission.  The submitter will be notified of their submission 
+status.
+
+.. image:: /images/curate_submissions/curate_submissions28.png
 
 ********
 Isolates

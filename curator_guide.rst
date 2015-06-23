@@ -276,6 +276,8 @@ Fill in the form as needed:
    
 Click 'Submit' when finished.
 
+.. _single_profile_upload:
+
 *************************************
 Adding new scheme profile definitions
 *************************************
@@ -288,6 +290,8 @@ To add a single profile you can click the add (+) profiles link next to the sche
 A form will be displayed with the next available primary key number already entered (provided integers are used for the primary key format). Enter the new profile, associated scheme fields, and the sender, then click 'Submit'. The new profile will be added provided the primary key or the profile has not previously been entered.
 
 .. image:: /images/curation/add_scheme_profile2.png
+
+.. _batch_profile_upload:
 
 More usually, profiles are added in a batch mode. It is often easier to do this even for a single profile since it allows copying and pasting data from a spreadsheet.
 
