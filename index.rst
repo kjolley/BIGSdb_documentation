@@ -18,6 +18,7 @@ The software has been released under the GNU General Public Licence version 3.  
    dbase_setup
    administration
    curator_guide
+   curate_submissions
    offline_tools
    data_downloads
    data_records

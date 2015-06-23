@@ -38,6 +38,8 @@ relevant for users with a status of 'user' or 'submitter'.
 Adding new allele sequence definitions
 **************************************
 
+.. _single_allele_upload:
+
 Single allele
 =============
 To add a single new allele, click the sequences (all loci) add (+) link on the
@@ -112,6 +114,8 @@ Press submit.  You will be presented with a page indicating what data will be up
 If there are any problems with the submission, these should be indicated at this stage, e.g.:
 
 .. image:: /images/curation/add_alleles7.png
+
+.. _batch_allele_fasta_upload:
 
 Upload using a FASTA file
 -------------------------
