@@ -345,6 +345,8 @@ The next available id will be filled in automatically but you are free to change
 
 Press submit when finished.
 
+.. _batch_isolate_upload:
+
 More usually, isolate records are added in batch mode, even when only a single record is added, since the submission can be prepared in a spreadsheet and copied and pasted.
 
 Select batch add (++) isolates link on the curator's index page.

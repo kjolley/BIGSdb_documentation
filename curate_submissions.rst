@@ -193,3 +193,43 @@ status.
 ********
 Isolates
 ********
+Clicking the appropriate submission on the 'Manage submissions' page.
+
+.. image:: /images/curate_submissions/curate_submissions29.png
+
+You will see a table summarizing the submission.
+
+.. image:: /images/curate_submissions/curate_submissions30.png
+
+Click the 'Batch curate' button.
+
+.. image:: /images/curate_submissions/curate_submissions31.png
+
+This will take you to the 
+:ref:`batch isolate upload page<batch_isolate_upload>` in the curators' 
+interface.
+
+The upload form will be filled with details from the submission.
+
+.. image:: /images/curate_submissions/curate_submissions32.png
+
+Click submit to check and then import if there are no errors.  
+
+After upload, a link on the confirmation page leads back to the submission
+management page.
+
+.. image:: /images/curate_submissions/curate_submissions33.png
+
+Closing the submission
+======================
+You can add a message to the submitter by entering it in the message box and 
+clicking ‘Add message’.  Change the record status to either 'accepted' or
+'rejected' depending on whether you have accepted the submission.  Click 
+'Update'.
+
+.. image:: /images/curate_submissions/curate_submissions34.png
+
+The 'Close submission' button will now appear.  Click this to close the 
+submission.  The submitter will be notified of their submission status.
+
+.. image:: /images/curate_submissions/curate_submissions35.png
