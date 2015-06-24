@@ -217,13 +217,17 @@ system.
       sudo ln -s /var/submissions /var/www
      
 2.  Set the submission_dir location in bigsdb.conf.
+
+3.  Set the smtp_server in bigsdb.conf to the IP or DNS name of your 
+    organisation's SMTP smarthost.  Depending on how your E-mail system is 
+    configured, you may be able to use the localhost address (127.0.0.1).
  
-3.  Make sure the curate_script and query_script values are set in bigsdb.conf.
+4.  Make sure the curate_script and query_script values are set in bigsdb.conf.
     These point to the web-accessible location of the web scripts and are
     required to allow curators to be directed between the web interfaces as
     needed.
     
-4.  Set submissions="yes" in the system tag of the 
+5.  Set submissions="yes" in the system tag of the 
     :ref:`database config.xml file<xml>` of each database for which submissions
     should be enabled. 
    
