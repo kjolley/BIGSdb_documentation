@@ -219,7 +219,7 @@ system.
 2.  Set the submission_dir location in bigsdb.conf.
 
 3.  Set the smtp_server in bigsdb.conf to the IP or DNS name of your 
-    organisation's SMTP smarthost.  Depending on how your E-mail system is 
+    organisation's SMTP relay.  Depending on how your E-mail system is 
     configured, you may be able to use the localhost address (127.0.0.1).
  
 4.  Make sure the curate_script and query_script values are set in bigsdb.conf.
