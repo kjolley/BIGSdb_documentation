@@ -94,6 +94,13 @@ A full list of options can be found by typing: ::
  -o, --order
      Order so that isolates last tagged the longest time ago get scanned first
      (ignored if -r used).
+     
+ --only_already_tagged
+     Only check loci that already have a tag present (but no allele 
+     designation). This must be combined with the --already_tagged option or 
+     no loci will match. This option is used to perform a catch-up scan where 
+     a curator has previously tagged sequence regions prior to alleles being 
+     defined, without the need to scan all missing loci.
            
  -p, --projects LIST
      Comma-separated list of project isolates to scan.
