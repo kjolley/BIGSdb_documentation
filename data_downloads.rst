@@ -1,24 +1,32 @@
 ####################
 Definition downloads
 ####################
-The sequence definition database defines alleles, i.e. links an allele identifier to a sequence.  It also defines scheme, e.g. MLST, profiles.
+The sequence definition database defines alleles, i.e. links an allele 
+identifier to a sequence.  It also defines scheme, e.g. MLST, profiles.
 
 .. _download_alleles:
 
 ***************************
 Allele sequence definitions
 ***************************
-Click the 'Allele sequences' link in the 'Downloads' section.  Depending on the database, you may see either a hierarchical scheme tree or a table of loci.  You can choose to display links either by scheme using the scheme tree, as an alphabetical list or a page of all schemes, by selecting the approrpiate link at the top of the page.
+Click the 'Allele sequences' link in the 'Downloads' section.  Depending on 
+the database, you may see either a hierarchical scheme tree or a table of 
+loci. You can choose to display links either by scheme using the scheme tree, 
+as an alphabetical list or a page of all schemes, by selecting the 
+approrpiate link at the top of the page.
 
 Scheme tree
 ===========
 .. image:: /images/data_downloads/alleles.png
 
-You can drill down through the tree by clicking branch nodes.  Clicking the labels of internal nodes will display tables of all schemes belonging to that scheme group.  Clicking the labels of terminal nodes will display that single scheme table.
+You can drill down through the tree by clicking branch nodes.  Clicking the 
+labels of internal nodes will display tables of all schemes belonging to that 
+scheme group.  Clicking the labels of terminal nodes will display that single 
+scheme table.
 
 .. image:: /images/data_downloads/alleles2.png
 
-Click the green download link for the required locus
+Click the download link for the required locus
 
 .. image:: /images/data_downloads/alleles3.png
 
@@ -54,11 +62,13 @@ Alleles will be downloaded in FASTA format, e.g. ::
 
 Alphabetical list
 =================
-Loci can be displayed in an alphabetical list.  Loci will be grouped in to tables by initial letter.  If common names are set for loci, they will be listed by both primary and common names.
+Loci can be displayed in an alphabetical list.  Loci will be grouped in to 
+tables by initial letter.  If common names are set for loci, they will be 
+listed by both primary and common names.
 
 .. image:: /images/data_downloads/alleles4.png
 
-Click the green download links for the required locus.
+Click the download links for the required locus.
 
 All loci by scheme
 ==================
@@ -70,14 +80,16 @@ Click the green download links for the required locus.
 
 Download locus table
 ====================
-The locus table can be downloaded in tab-delimited text or Excel formats by clicking the links following table display.
+The locus table can be downloaded in tab-delimited text or Excel formats by 
+clicking the links following table display.
 
 .. image:: /images/data_downloads/alleles6.png
 
 **************************
 Scheme profile definitions
 **************************
-Scheme profiles, e.g. those for MLST, can be downloaded by clicking the appropriate link on the contents page.
+Scheme profiles, e.g. those for MLST, can be downloaded by clicking the 
+appropriate link on the contents page.
 
 .. image:: /images/data_downloads/profiles.png
 
