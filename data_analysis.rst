@@ -388,7 +388,8 @@ reference genome is designated allele 1, the next different sequence is allele
 Include in identifiers fieldset
 ===============================
 This selection box allows you to choose which isolate provenance fields will be
-included in the results table and sequence exports.
+included in the results table.  This does not affect the output of the 
+alignments as taxa names are limited in length by the alignment programs.
 
 .. image:: /images/data_analysis/genome_comparator7.png
 
