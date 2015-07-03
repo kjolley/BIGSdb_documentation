@@ -349,6 +349,9 @@ A full list of options can be found by typing: ::
     
  -m, --method METHOD  
      Method, e.g. 'Illumina', default 'unknown'.  
+     
+ --min_length LENGTH
+     Exclude contigs with length less than value.
     
  -s, --sender ID  
      Sender id number.        
