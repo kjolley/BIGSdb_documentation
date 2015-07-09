@@ -45,8 +45,8 @@ based on the policy of the database.
 
 Clicking this link takes you to the curation interface 
 :ref:`single sequence upload page<single_allele_upload>`.  The upload form will
-be filled with details from the submission.  You will need to manually set the
-status from the dropdown list of values.
+be filled with details from the submission.  You may wish to manually change 
+the status from the dropdown list of values.
 
 .. image:: /images/curate_submissions/curate_submissions7.png
 
@@ -73,8 +73,8 @@ This takes you to the
 :ref:`batch FASTA upload page<batch_allele_fasta_upload>` in the curators' 
 interface.
 
-The upload form will be filled with details from the submission.  You will need
-to manually set the status from the dropdown list of values.
+The upload form will be filled with details from the submission.  You may wish
+to manually change the status from the dropdown list of values.
 
 .. image:: /images/curate_submissions/curate_submissions11.png
 
@@ -100,10 +100,16 @@ sequence.  Click 'Update' to make the change.
 
 .. image:: /images/curate_submissions/curate_submissions15.png
 
+Requesting additonal information
+================================
+You can send a message to the submitter by entering it in the Messages box and
+clicking 'Send now'.  This will append a message to the submission and send an
+update to the submitter so that they can respond.
+
 Closing the submission
 ======================
 You can add a message to the submitter by entering it in the message box and 
-clicking 'Add message'.  Once sequences have all been either assigned or 
+clicking 'Append'. Once sequences have all been either assigned or 
 rejected, the 'Close submission' button will be displayed.  Click this to close
 the submission.  The submitter will be notified of their submission status.
 
@@ -180,10 +186,16 @@ change.
 
 .. image:: /images/curate_submissions/curate_submissions27.png
 
+Requesting additonal information
+================================
+You can send a message to the submitter by entering it in the Messages box and
+clicking 'Send now'.  This will append a message to the submission and send an
+update to the submitter so that they can respond.
+
 Closing the submission
 ======================
 You can add a message to the submitter by entering it in the message box and
-clicking 'Add message'.  Once profiles have all been either assigned or 
+clicking 'Append'.  Once profiles have all been either assigned or 
 rejected, the 'Close submission' button will be displayed.  Click this to
 close the submission.  The submitter will be notified of their submission 
 status.
@@ -220,10 +232,16 @@ management page.
 
 .. image:: /images/curate_submissions/curate_submissions33.png
 
+Requesting additonal information
+================================
+You can send a message to the submitter by entering it in the Messages box and
+clicking 'Send now'.  This will append a message to the submission and send an
+update to the submitter so that they can respond.
+
 Closing the submission
 ======================
 You can add a message to the submitter by entering it in the message box and 
-clicking ‘Add message’.  Change the record status to either 'accepted' or
+clicking ‘Append’.  Change the record status to either 'accepted' or
 'rejected' depending on whether you have accepted the submission.  Click 
 'Update'.
 
