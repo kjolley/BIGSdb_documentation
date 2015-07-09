@@ -120,7 +120,7 @@ additional information to your submission.
 Add message to curator
 ======================
 If you wish to enter a message to the curator, enter this in the messages
-box and click 'Add message'.  
+box and click 'Append'.  
 
 .. image:: /images/submissions/submission9.png
 
@@ -210,7 +210,7 @@ to your submission
 Add message to curator
 ======================
 If you wish to enter a message to the curator, enter this in the messages box
-and click 'Add message'.
+and click 'Append'.
 
 .. image:: /images/submissions/submission20.png
 
@@ -293,7 +293,7 @@ to your submission.
 Add message to curator
 ======================
 If you wish to enter a message to the curator, enter this in the messages box
-and click 'Add message'.
+and click 'Append'.
 
 .. image:: /images/submissions/submission28.png
 
