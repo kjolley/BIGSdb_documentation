@@ -936,7 +936,7 @@ Hovering the mouse over the bars will indicate the scheme represented.
    selected schemes.
 
 Clicking any of the isolate id hyperlinks navigates to a page that breaks down 
-the exacty status for all loci of that isolate.
+the exact status for all loci of that isolate.
 
 .. image:: /images/data_analysis/tag_status4.png
 
