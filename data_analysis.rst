@@ -128,7 +128,7 @@ at the top.
 .. image:: /images/data_analysis/field_breakdown3.png
 
 The values used to generate the chart can be displayed or extracted by clicking
-the 'Display table' link at the bottom of the page. 
+the 'Table' link at the bottom of the page. 
 
 .. image:: /images/data_analysis/field_breakdown4.png
 
