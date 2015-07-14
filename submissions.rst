@@ -340,3 +340,16 @@ Your submission will then be listed under 'Pending submissions' on your
 submission page.
 
 .. image:: /images/submissions/submission34.png
+
+************************************************
+Removing submissions from your notification list
+************************************************
+Once a submission has been closed by a curator, the results will be displayed
+in your 'Manage submissions' area.  You can remove submissions once you have 
+noted the result by clicking the 'Remove' link.
+
+.. image:: /images/submissions/submission35.png
+
+Alternatively, submissions will be removed automatically a specified period of
+time after closure.  By default, this time is 90 days, but this can vary 
+depending on the site configuration.
