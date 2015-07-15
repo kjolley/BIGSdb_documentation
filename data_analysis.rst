@@ -31,8 +31,9 @@ will reload.
 .. image:: /images/data_analysis/locus_explorer2.png 
 
 Select the alleles that you would like to include in the analysis.  Variable 
-length loci are limited to 200 sequences or fewer since these need to be 
-aligned.  Click 'Polymorphic sites'.
+length loci are limited to 2000 sequences or fewer since these need to be 
+aligned.  Select 'Polymorphic Sites' in the Analysis selection and click 
+'Submit'.
 
 .. image:: /images/data_analysis/locus_explorer3.png 
 
