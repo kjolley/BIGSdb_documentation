@@ -67,6 +67,12 @@ Batch allele curation
 Often, you will want to batch upload submitted sequences.  This can be done by
 clicking the 'Batch curate' button.
 
+.. note::
+ 
+   Batch curation is only available for loci that do not have extended 
+   attributes defined. Entries for these loci require additional values set for
+   these additional fields and so need to be handled individually.
+
 .. image:: /images/curate_submissions/curate_submissions10.png
 
 This takes you to the 
