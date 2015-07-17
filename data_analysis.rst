@@ -201,11 +201,11 @@ vary depending on the setup of the database.
 
 .. image:: /images/data_analysis/scheme_breakdown2.png
 
-A scheme tree is shown.  Select any combination of schemes to analyse.
+A scheme tree is shown.  Select any combination of schemes to analyse. Click 
+'Select'.
 
 .. image:: /images/data_analysis/scheme_breakdown3.png
 
-Click 'Select'.
 
 A table showing the number of unique values for each locus and scheme field 
 will be displayed.
