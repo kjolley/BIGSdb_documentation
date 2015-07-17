@@ -173,11 +173,19 @@ Profile submission
 Even if the submission system has been enabled, submission of profiles has to
 be specifically enabled.  Many databases require submission of representative
 isolate data for any new allelic profile for schemes such as MLST.  In this
-case any new profiles can be readily extracted from the isoate data so profiles
-do not need to be submitted separately.
+case any new profiles can be readily extracted from the isolate data so 
+profiles do not need to be submitted separately.
 
 Start
 =====
+.. note::
+
+   Most MLST databases on PubMLST.org require you to submit an isolate record
+   for each new ST that you wish to be defined. In these cases, direct profile
+   submissions are disabled and you are required to make an 
+   :ref:`isolate submission<isolate_submissions>` containing the allelic 
+   profile.
+
 Click the appropriate profiles link under submission type on the submission 
 management page.
 
@@ -241,6 +249,8 @@ Your submission will then be listed under 'Pending submissions' on your
 submission page.
 
 .. image:: /images/submissions/submission23.png
+
+.. _isolate_submissions: 
 
 ******************
 Isolate submission
