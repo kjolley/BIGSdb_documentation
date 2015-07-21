@@ -238,6 +238,18 @@ management page.
 
 .. image:: /images/curate_submissions/curate_submissions33.png
 
+.. note::
+
+   Depending on the database policy, definitions of new scheme profiles, e.g. 
+   for MLST, may require submission of representative isolate records. Where
+   this is the case, the curator will need to extract the new profile from the
+   submitted record.  The tab-delimited isolate text file can be downloaded 
+   from the archive of supporting files linked on the submission and used
+   directly for :ref:`batch adding new profiles<batch_profile_upload>`. 
+   Alternatively, the curator could use the 
+   :ref:`Export functionality<isolate_export>` of the database to generate the
+   file required for batch profile definition after upload of the isolate data. 
+
 Requesting additonal information
 ================================
 You can send a message to the submitter by entering it in the Messages box and
