@@ -244,7 +244,7 @@ management page.
    for MLST, may require submission of representative isolate records. Where
    this is the case, the curator will need to extract the new profile from the
    submitted record.  The tab-delimited isolate text file can be downloaded 
-   from the archive of supporting files linked on the submission and used
+   from the archive of supporting files linked to the submission and used
    directly for :ref:`batch adding new profiles<batch_profile_upload>`. 
    Alternatively, the curator could use the 
    :ref:`Export functionality<isolate_export>` of the database to generate the

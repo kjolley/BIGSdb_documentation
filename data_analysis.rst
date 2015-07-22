@@ -177,6 +177,12 @@ than 30.
 The table values can be exported in a format suitable for copying in to a 
 spreadsheet by clicking 'Download as tab-delimited text' underneath the table.
 
+.. note::
+
+   The job will be submitted to the offline job queue if the query returns 
+   10,000 or more isolates. In this case, the buttons to reverse the axes or to
+   change whether values or percentages are shown will not be available.
+
 .. index::
    pair: breakdown; scheme
    pair: breakdown; allele
