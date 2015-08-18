@@ -188,7 +188,16 @@ A full list of options can be found by typing: ::
 
  OPTIONS
  -a, --assign
-      Assign new alleles in definitions database.
+     Assign new alleles in definitions database.
+      
+ --allow_frameshift
+     Allow sequences to contain a frameshift so that the length is not a 
+     multiple of 3, or an internal stop codon. To be used with 
+     --coding_sequences option to allow automated curation of pseudogenes.
+     New alleles assigned will be flagged either 'frameshift' or 'internal stop
+     codon' if appropriate.  Essentially, combining these two options only 
+     checks that the sequence starts with a start codon and ends with a stop
+     codon.   
 
  -A, --alignment INT
      Percentage alignment (default: 100).
