@@ -218,7 +218,7 @@ A full list of options can be found by typing: ::
      Comma-separated list of isolate ids to scan (ignored if -p used).
      
  --isolate_list_file FILE  
-    File containing list of isolate ids (ignored if -i or -p used).
+     File containing list of isolate ids (ignored if -i or -p used).
            
  -I, --exclude_isolates LIST
      Comma-separated list of isolate ids to ignore.
