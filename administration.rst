@@ -337,6 +337,8 @@ mod_perl set up and running - this can improve start-up performance a
 hundred-fold since the script isn't compiled on each page access but persists 
 in memory.
 
+.. _scheme_caching:
+
 .. index::
    single: performance; caching schemes
    pair: caching; schemes
@@ -368,6 +370,11 @@ the curators' page. This link is only present if the caches have been
 previously generated.
 
 .. image:: /images/administration/refresh_caches.png
+
+You can also set cache_schemes="yes" in the system tag of config.xml to enable
+automatic refreshing of the caches when batch adding new isolates (you should
+still periodically run the update_scheme_caches.pl script via CRON to ensure
+any changes in the sequence definition database are picked up).
 
 If queries are taking longer than 5 seconds to perform and a cache is not in 
 place, you will see a warning message in bigsdb.log suggesting that the caches 

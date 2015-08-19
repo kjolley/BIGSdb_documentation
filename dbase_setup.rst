@@ -144,6 +144,12 @@ Top level element. Contains child elements: system, field and sample.::
     'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'.
     Currently used only by Genome Comparator plugin.
     
+* cache_schemes
+
+  * Enable automatic refreshing of scheme field caches when batch adding new
+    isolates: either 'yes' or 'no', default 'no'.
+  * See :ref:`scheme caching<scheme_caching>`.
+    
 * codon_usage_limit
 
   * Overrides the record limit for the Codon Usage plugin.  Default: '500'.
