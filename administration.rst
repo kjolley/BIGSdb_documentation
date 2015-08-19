@@ -363,7 +363,11 @@ would be slow but caching only has a noticeable effect once you have >5000
 profiles.
 
 Note that you will need to run this script periodically as a CRON job to 
-refresh the cache.
+refresh the cache.  Admins can also refresh the caches manually from a link on
+the curators' page. This link is only present if the caches have been 
+previously generated.
+
+.. image:: /images/administration/refresh_caches.png
 
 If queries are taking longer than 5 seconds to perform and a cache is not in 
 place, you will see a warning message in bigsdb.log suggesting that the caches 
