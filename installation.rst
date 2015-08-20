@@ -206,7 +206,7 @@ system.
 1.  Create a writable submissions directory in the root of the web site called
     submissions, i.e. accessible from http://your_website/submissions.  This is
     used for file uploads.  The directory should be writable by the Apache web
-    daemon (user 'www-data' on Debian/Ubuntu systems).The actual directory can
+    daemon (user 'www-data' on Debian/Ubuntu systems). The actual directory can
     be outside of the web root and made accessible using a symlink provided 
     your Apache configuration allows this, e.g. the default location is 
     /var/submissions symlinked to /var/www/submissions (assuming your web site
