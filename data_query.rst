@@ -125,6 +125,9 @@ The query form can be modified by clicking the 'Modify form options' tab:
 
 .. image:: /images/data_query/sequence_attributes10.png
 
+.. index::
+   pair: list query; alleles
+
 A list box can be added by clicking the 'Show' button for 'Allele id list box'.
 
 .. image:: /images/data_query/sequence_attributes11.png
