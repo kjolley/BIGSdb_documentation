@@ -151,12 +151,14 @@ Browsing scheme profile definitions
 ***********************************
 If a sequence definition database has schemes defined that include a primary 
 key field, i.e. collections of loci that together create profiles, e.g. for 
-MLST, click the link to 'Browse profiles'. 
+MLST, these can be browsed by clicking the link to 'Search, browse or enter
+list of profiles'. 
 
 .. image:: /images/data_query/browse_profiles.png
 
-Choose the field to order the results by, the number of results per page to 
-display, and click 'Browse all records'.
+Leave query form fields blank (the display of these may vary depending on 
+modification options set by the user).  Choose the field to order the results 
+by, the number of results per page to display, and click 'Submit'.
 
 .. image:: /images/data_query/browse_profiles2.png
 
@@ -171,15 +173,13 @@ profile.
 ***********************************
 Querying scheme profile definitions
 ***********************************
-click the link to 'Search profiles' for the appropriate scheme on the main 
-contents page.
+Click the link to 'Search, browse of enter list of profiles'.
 
 .. image:: /images/data_query/query_profiles.png
 
-Enter the search criteria you wish to search on. You may also see some 
-drop-down list boxes that allow further filtering of results.  You can add 
-search criteria by clicking the '+' button in the 'Locus/scheme fields' 
-section.  These can be combined using 'AND' or 'OR'. 
+Enter the search criteria you wish to search on. You can add search criteria 
+by clicking the '+' button in the 'Locus/scheme fields' section.  These can 
+be combined using 'AND' or 'OR'. 
 
 .. image:: /images/data_query/query_profiles2.png
 
@@ -189,6 +189,34 @@ Clicking the hyperlink for any profile will display full information about the
 profile.
 
 .. image:: /images/data_query/query_profiles3.png
+
+Other query options are available by clicking the 'Modify form options' tab.
+
+.. image:: /images/data_query/query_profiles4.png
+
+For example, you can enter a list of attributes to query on by clicking the
+'Show' button next to 'Attribute values list'. 
+
+.. image:: /images/data_query/query_profiles5.png
+
+A list box will appear within the page.  Hide the form modification tab by
+clicking the 'X' in the corner or the purple tab again.  Now you can choose
+the attribute to search on along with a list of values.
+
+.. image:: /images/data_query/query_profiles6.png
+
+List values will be combined with any other attributes entered in the query 
+form allowing complex queries can be constructed.
+
+You can also add filters to the form by again clicking the 'Modify form 
+options' tab and selecting 'Filters'.
+
+.. image:: /images/data_query/query_profiles7.png
+
+Available filters will vary depending on the database.  These will be combined
+with other query criteria or lists of attributes.
+
+.. image:: /images/data_query/query_profiles8.png
 
 .. _allele_differences:
 
@@ -243,10 +271,29 @@ A list of nucleotide differences and/or an alignment will be displayed.
 .. _isolate_query:
 
 *********************
+Browsing isolate data
+*********************
+Isolate records can be browsed by clicking the link to 'Search or browse 
+database'. 
+
+.. image:: /images/data_query/browse_isolates.png
+
+Leave query form fields blank (the display of these may vary depending on 
+modification options set by the user).  Choose the field to order the results 
+by, the number of results per page to display, and click 'Submit'.
+
+.. image:: /images/data_query/browse_isolates2.png
+
+Clicking the hyperlink for any record will display full information about the 
+profile.
+
+.. image:: /images/data_query/browse_isolates3.png
+
+*********************
 Querying isolate data
 *********************
-The 'Search database' page of an isolate database allows you to search by 
-combinations of provenance criteria, scheme and locus data, and more. 
+The 'Search or browse database' page of an isolate database allows you to also
+search by combinations of provenance criteria, scheme and locus data, and more. 
 
 .. image:: /images/data_query/query_isolates.png
 
@@ -271,6 +318,11 @@ A tab will be displayed.  Different options will be available here depending on
 the database.  Queries will be combined from the values entered in all form 
 sections.  Possible options are:
 
+* Provenance fields
+
+  * Search by combination of provenance field values, e.g. country, year, 
+    sender.
+
 * Allele designations/scheme field values
 
   * Search by combination of allele designations and/or scheme fields e.g. ST, 
@@ -284,6 +336,10 @@ sections.  Possible options are:
 
   * Search by whether tagged sequence data is available for a locus.  You can 
     also search by sequence flags.
+    
+* Attribute values list
+
+  * Enter a list of values for any provenance field, locus, or scheme field.
 
 * Filters
 
@@ -407,6 +463,22 @@ a status.  Available status values are:
 
 .. _query_filters:
 
+Query by list of attributes
+===========================
+The query form can be modified with a list box in to which a list of values
+for a chosen attribute can be entered - this could be a list of ids, isolate
+names, alleles or scheme fields.  This list will be combined with any other
+criteria or filter used on the page.
+
+If the list box is not shown, add it by selecting it in the 'Modify form 
+options' tab.
+
+.. image:: /images/data_query/query_isolates12.png
+
+Select the attribute to query and enter a list of values.
+
+.. image:: /images/data_query/query_isolates13.png
+
 Query filters
 =============
 There are various filters that can additionally be applied to queries, or the 
@@ -491,22 +563,6 @@ scheme.
 Click 'Submit'.
 
 .. image:: /images/data_query/profile_combinations6.png
-
-***************************************
-Retrieving list of isolates or profiles
-***************************************
-Both isolate and sequence definition databases can be queried against a list of
-values matching any criteria (isolate provenace fields, alleles, or scheme 
-fields).
-
-Click 'List query' on the main contents page.
-
-.. image:: /images/data_query/list_query.png
-
-Select the attribute you wish to search against in the drop-down list box and 
-enter the list of attributes in the box (one per line).  Click 'Submit'.
-
-.. image:: /images/data_query/list_query2.png
 
 *****************************************
 Retrieving isolates by linked publication
