@@ -361,7 +361,7 @@ next time you go to the query page.
 .. index::
    pair: allele designations; query
  
-Query by allele_designation/scheme field
+Query by allele designation/scheme field
 ========================================
 Queries can be combined with allele designation/scheme field values.
 
