@@ -247,7 +247,13 @@ Top level element. Contains child elements: system, field and sample.::
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
-    'isolate'.   
+    'isolate'.
+    
+* locus_aliases
+
+  * Display locus aliases and use them in dropdown lists by default: must be
+    either 'yes' or 'no', default 'no'. This option can be overridden by a user
+    preference.   
     
 * locus_superscript_prefix 
 
