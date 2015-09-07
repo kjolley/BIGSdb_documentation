@@ -436,6 +436,26 @@ To run the API using Starman, type the following as the bigsdb user: ::
 where the value of -a refers to the location of the bigsrest.pl script.  
 Starman defaults to using port 5000.  
 
+Different Linux distributions use different means to control services/daemons.
+To start the REST interface on system boot on systems using upstart, create a 
+file called bigsdb-rest.conf in /etc/init.  The contents of this file should
+be something like (modify file paths as appropriate): ::
+
+  description "Start BIGSdb REST interface"
+  version "1.0"
+  author "Keith Jolley"
+
+  start on runlevel [12345]
+
+  ## tell upstart we're creating a daemon
+  expect fork
+  
+  script
+  
+  exec su -s /bin/sh -c 'exec "$0" "$@"' bigsdb -- /usr/local/bin/plackup -a /var/rest/bigsrest.pl -s Starman -E deployment
+  
+  end script
+
 Proxying the API to use a standard web port
 ===========================================
 Usually you will want your API to be available on the standard web port 80.
