@@ -576,6 +576,11 @@ Provides information about an isolate.
    * fields [object] - consisting of key/value pairs where the key is the name
      of each scheme field
      
+* projects [array] - list of project objects, each containing the following:
+
+   * id [string] - :ref:`URI to project information<db_projects_project_id>`
+   * description [string] - description of project
+     
 .. _db_isolates_isolate_id_allele_designations:
 
 .. index::
