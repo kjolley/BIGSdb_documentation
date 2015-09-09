@@ -43,7 +43,9 @@ Resources
 * :ref:`/db/{database}/contigs/{contig_id}<db_contigs_contig_id>`
 * :ref:`/db/{database}/fields<db_fields>`
 * :ref:`/db/{database}/users/{user_id}<db_users_user_id>`
-
+* :ref:`/db/{database}/projects<db_projects>`
+* :ref:`/db/{database}/projects/{project_id}<db_projects_project_id>`
+* :ref:`/db/{database}/projects/{project_id}/isolates<db_projects_project_id_isolates>`
 
 .. _db_no_arg:
 
@@ -101,6 +103,7 @@ database.
 * :ref:`isolates<db_isolates>` [string] - URI to isolate records
 * :ref:`schemes<db_schemes>` [string] - URI to list of schemes
 * :ref:`loci<db_loci>` [string] - URI to list of loci
+* :ref:`projects<db_projects>` [string] - URI to list of projects
 * records [integer] - count of available records
 
 .. _db_loci:
@@ -134,6 +137,7 @@ Lists loci defined within specified database configuration.
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_loci_locus:
 
@@ -235,6 +239,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_loci_locus_alleles_fasta:
 
@@ -298,7 +303,6 @@ Provides information about an allele including its sequence.
 
 /db/{database}/schemes
 ======================
-
 Lists schemes defined within specified database configuration.
 
 **Supported methods:** GET, POST
@@ -321,7 +325,6 @@ Lists schemes defined within specified database configuration.
 
 /db/{database}/schemes/{scheme_id}
 ==================================
-
 Provides information about a scheme, including links to allelic profiles (in 
 seqdef databases, if appropriate).
 
@@ -352,7 +355,6 @@ seqdef databases, if appropriate).
 * profiles [array] - URI to list of profile definitions (only seqdef databases)
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
 
-
 .. _db_schemes_scheme_id_fields_field:
 
 .. index::
@@ -360,7 +362,6 @@ seqdef databases, if appropriate).
 
 /db/{database}/schemes/{scheme_id}/fields/{field}
 =================================================
-
 Provides information about scheme fields.
 
 **Supported methods:** GET, POST
@@ -416,6 +417,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_schemes_scheme_id_profiles_csv:
 
@@ -507,6 +509,7 @@ Provides list of isolate records.
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
 
 .. _db_isolates_isolate_id:
 
@@ -609,6 +612,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designat
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_isolates_isolate_id_allele_designations_locus:
 
@@ -680,6 +684,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_isolates_isolate_id_schemes_scheme_id_allele_designations:
 
@@ -775,6 +780,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
    * next - URI to next page of results
    * first - URI to first page of results
    * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
    
 .. _db_isolates_isolate_id_contigs_fasta:
 
@@ -892,6 +898,93 @@ Provides information about data senders and curators.
 * surname [string]
 * affiliation [string] - institutional affiliation
 * email [string] - E-mail address
+
+.. _db_projects:
+
+.. index::
+   single: API resources; /db/{database}/projects
+
+/db/{database}/projects
+=======================
+Lists projects defined within specified isolate database configuration.
+
+**Supported methods:** GET, POST
+
+**Required query parameter:** {database} - Database configuration name [string]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects
+
+**Response:** List of project objects, each containing:
+
+* project [string] - :ref:`URI to project information<db_projects_project_id>`
+* description [string] 
+* isolate_count [integer] - number of isolates in project
+
+.. _db_projects_project_id:
+
+.. index::
+   single: API resources; /db/{database}/projects/{project_id}
+
+/db/{database}/projects/{project_id}
+====================================
+Provides information about a project, including links to member isolates (in 
+isolate databases).
+
+**Supported methods:** GET, POST
+
+**Required query parameters:** 
+
+* {database} - Database configuration name [string]
+* {project_id} - Project id number [integer]
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3
+
+**Response:** Object containing a subset of the following key/value pairs:
+
+* id [integer]
+* description [string]
+* isolate_count [integer] - number of isolates belonging to the project
+* isolates [string] - :ref:`URI to list of URIs of member isolate records<db_projects_project_id_isolates>`. 
+
+.. _db_projects_project_id_isolates:
+
+.. index::
+   single: API resources; /db/{database}/projects/{project_id}/isolates
+
+/db/{database}/projects/{project_id}/isolates
+=============================================
+Provides list of records of isolates that are members of the specified project.
+
+**Supported methods:** GET, POST
+
+**Required query parameter:** 
+
+* {database} - Database configuration name [string]
+* {project_id} - Project id number [integer]
+
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging. 
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3/isolates
+
+**Response:** Object containing:
+
+* isolates [array] - List of URIs to isolate records.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+   * previous - URI to previous page of results
+   * next - URI to next page of results
+   * first - URI to first page of results
+   * last - URI to last page of results
+   * return_all - URI to page containing all results (paging disabled)
 
 **************
 Authentication
