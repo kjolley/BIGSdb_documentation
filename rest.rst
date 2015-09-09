@@ -183,8 +183,8 @@ seqdef databases).
   <db_loci_locus_alleles>`
 * alleles_fasta [string] (seqdef databases) - :ref:`URI to FASTA file of all
   alleles of locus<db_loci_locus_alleles_fasta>`
-* curators [array] (seqdef databases) - list of URIs to user records of 
-  curators of the locus
+* curators [array] (seqdef databases) - list of 
+  :ref:`URIs to user records<db_users_user_id>` of curators of the locus
 * publications [array] (seqdef databases) - list of PubMed id numbers of papers
   describing the locus
 * full_name [string] (seqdef databases)
@@ -354,6 +354,8 @@ seqdef databases, if appropriate).
   primary keys defined - only seqdef databases)
 * profiles [array] - URI to list of profile definitions (only seqdef databases)
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
+* curators [array] (seqdef databases) - list of 
+  :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
 
 .. _db_schemes_scheme_id_fields_field:
 
