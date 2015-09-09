@@ -580,6 +580,9 @@ Provides information about an isolate.
 
    * id [string] - :ref:`URI to project information<db_projects_project_id>`
    * description [string] - description of project
+   
+* new_version [string] - URI to newer version of record
+* old_version [string] - URI to older version of record
      
 .. _db_isolates_isolate_id_allele_designations:
 
