@@ -57,7 +57,7 @@ Resources
 ========
 Lists database resources available using the API.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** None
 
@@ -89,7 +89,7 @@ Lists resources available for specified database configuration.  These will
 vary depending on whether the resource is an isolate or a sequence definition
 database.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** {database} - Database configuration name [string]
 
@@ -115,7 +115,7 @@ database.
 ===================
 Lists loci defined within specified database configuration.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** {database} - Database configuration name [string]
 
@@ -149,7 +149,7 @@ Lists loci defined within specified database configuration.
 Provides information about a locus, including links to allele sequences (in 
 seqdef databases).
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -212,7 +212,7 @@ seqdef databases).
 ===================================
 Lists alleles defined for specific locus.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -250,7 +250,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 =========================================
 Provides all alleles defined for a locus in FASTA format.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -272,7 +272,7 @@ Provides all alleles defined for a locus in FASTA format.
 ===============================================
 Provides information about an allele including its sequence.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -305,7 +305,7 @@ Provides information about an allele including its sequence.
 ======================
 Lists schemes defined within specified database configuration.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** {database} - Database configuration name [string]
 
@@ -328,7 +328,7 @@ Lists schemes defined within specified database configuration.
 Provides information about a scheme, including links to allelic profiles (in 
 seqdef databases, if appropriate).
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -366,7 +366,7 @@ seqdef databases, if appropriate).
 =================================================
 Provides information about scheme fields.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -393,7 +393,7 @@ Provides information about scheme fields.
 ===========================================
 Lists allelic profiles defined for a specific scheme.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -430,7 +430,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 ===============================================
 Provides all profiles defined for a scheme in CSV (tab-delimited) format.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -453,7 +453,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
 ========================================================
 Provides information about a specific allelic profile defined for a scheme.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -489,7 +489,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
 =======================
 Provides list of isolate records.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** {database} - Database configuration name [string]
 
@@ -522,7 +522,7 @@ Provides list of isolate records.
 ====================================
 Provides information about an isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -595,7 +595,7 @@ Provides information about an isolate.
 ========================================================
 Provides a list of full allele designation records for the specified isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -633,7 +633,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designat
 ================================================================
 Provides a full allele designation record.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -667,7 +667,7 @@ designations for the same locus), each containing:
 ===============================================
 Returns array of allele identifiers for isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -707,7 +707,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
 Provides a list of full allele designation records for loci belonging to 
 the specified scheme and isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -734,7 +734,7 @@ specified scheme that has been designated.
 Provides a list of allele identifiers for loci belonging to the specified
 scheme and isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -763,7 +763,7 @@ for the specific locus.
 ============================================
 Returns a list of contig records for the specified isolate.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -801,7 +801,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
 ==================================================
 Provides all contigs associated with an isolate record in FASTA format.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
  * {database} - Database configuration name [string]
@@ -826,7 +826,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?h
 =======================================================
 Provides a record of a specified contig.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
  * {database} - Database configuration name [string]
@@ -858,7 +858,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062
 =====================
 Provides a list of isolate provenance field descriptions.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
  * {database} - Database configuration name [string]
@@ -891,7 +891,7 @@ following key/value pairs:
 ==============================
 Provides information about data senders and curators.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
  * {database} - Database configuration name [string]
@@ -918,7 +918,7 @@ Provides information about data senders and curators.
 =======================
 Lists projects defined within specified isolate database configuration.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** {database} - Database configuration name [string]
 
@@ -942,7 +942,7 @@ Lists projects defined within specified isolate database configuration.
 Provides information about a project, including links to member isolates (in 
 isolate databases).
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameters:** 
 
@@ -969,7 +969,7 @@ isolate databases).
 =============================================
 Provides list of records of isolates that are members of the specified project.
 
-**Supported methods:** GET, POST
+**Supported method:** GET
 
 **Required query parameter:** 
 
@@ -1053,7 +1053,7 @@ Getting a request token
 =======================
 
 * **Relative URL:** /db/{database}/oauth/get_request_token
-* **Supported methods:** GET, POST
+* **Supported method:** GET
  
 The application uses the consumer key to obtain a request token.  The request
 token is a temporary token used to initiate user authorization for the 
@@ -1061,7 +1061,7 @@ application and will expire in 60 minutes.  The request needs to contain the
 following parameters and to be signed using the consumer secret:
  
  * oauth_consumer_key
- * oauth_request_method ('POST')
+ * oauth_request_method ('GET')
  * oauth_request_url (request URL)
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
@@ -1120,7 +1120,7 @@ The verifier code is valid for 60 minutes.
 Getting an access token
 =======================
 * **Relative URL:** /db/{database}/oauth/get_access_token
-* **Supported methods:** GET, POST
+* **Supported method:** GET
  
 The application uses the request token, verifier code and its consumer key to 
 obtain an access token.  The access token does not expire but can be revoked
@@ -1129,7 +1129,7 @@ the following parameters and to be signed using the consumer secret and request
 token secret:
  
  * oauth_consumer_key
- * oauth_request_method ('POST')
+ * oauth_request_method ('GET')
  * oauth_request_url (request URL)
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
@@ -1160,7 +1160,7 @@ following parameters:
 Getting a session token
 =======================
 * **Relative URL:** /db/{database}/oauth/get_session_token
-* **Supported methods:** GET, POST
+* **Supported method:** GET
 
 The application uses the access token and its consumer key to obtain a session
 token.  The session token is valid for 12 hours before it expires.  The request
@@ -1168,7 +1168,7 @@ needs to contain the following parameters and to be signed using the consumer
 secret and access token secret:
  
  * oauth_consumer_key
- * oauth_request_method ('POST')
+ * oauth_request_method ('GET')
  * oauth_request_url (request URL)
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
@@ -1198,14 +1198,14 @@ following parameters:
  
 Accessing protected resources
 =============================
-* **Supported methods:** GET, POST
+* **Supported method:** GET
 
 The application uses the session token and its consumer key to access a 
 protected resource.  The request needs to contain the following parameters and
 to be signed using the consumer secret and session token secret:
  
  * oauth_consumer_key
- * oauth_request_method ('POST')
+ * oauth_request_method ('GET')
  * oauth_request_url (request URL)
  * oauth_signature_method ('HMAC-SHA1')
  * oauth_signature
