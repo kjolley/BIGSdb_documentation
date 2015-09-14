@@ -4,7 +4,7 @@ RESTful Application Programming Interface (API)
 The REST API allows third-party applications to retrive data stored within
 BIGSdb databases.  To use the REST API, your application will make a HTTP
 request and parse the response.  The response format is JSON (except for routes
-that request a FASTA file).  
+that request a FASTA or CSV file).  
 
 ***************************
 Passing optional parameters
@@ -104,7 +104,6 @@ database.
 * :ref:`schemes<db_schemes>` [string] - URI to list of schemes
 * :ref:`loci<db_loci>` [string] - URI to list of loci
 * :ref:`projects<db_projects>` [string] - URI to list of projects
-* records [integer] - count of available records
 
 .. _db_loci:
 
@@ -129,6 +128,7 @@ Lists loci defined within specified database configuration.
 
 **Response:** Object containing:
 
+* records [int] - Number of loci.
 * loci [array] - List of :ref:`URIs to defined locus records<db_loci_locus>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -230,6 +230,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 
 **Response:** Object containing:
 
+* records [int] - Number of alleles
 * alleles [array] - List of :ref:`URIs to defined allele records
   <db_loci_locus_alleles_allele_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
@@ -313,10 +314,13 @@ Lists schemes defined within specified database configuration.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes
 
-**Response:** List of scheme objects, each containing:
+**Response:** 
 
-* scheme [string] - URI to scheme information
-* description [string] 
+* records [int] - Number of schemes
+* schemes [array] - list of scheme objects, each containing:
+
+  * scheme [string] - URI to scheme information
+  * description [string] 
 
 .. _db_schemes_scheme_id:
 
@@ -350,9 +354,7 @@ seqdef databases, if appropriate).
   <db_schemes_scheme_id_fields_field>`
 * primary_key_field [string] - :ref:`URI to primary key field description
   <db_schemes_scheme_id_fields_field>`
-* profile_count [integer] - number of defined profiles (only for schemes with
-  primary keys defined - only seqdef databases)
-* profiles [array] - URI to list of profile definitions (only seqdef databases)
+* profiles [string] - URI to list of profile definitions (only seqdef databases)
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
 * curators [array] (seqdef databases) - list of 
   :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
@@ -411,6 +413,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 
 **Response:** Object containing:
 
+* records [int] - Number of profiles
 * profiles [array] - List of URIs to defined profile records. 
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -503,6 +506,7 @@ Provides list of isolate records.
 
 **Response:** Object containing:
 
+* records [int] - Number of isolates
 * isolates [array] - List of URIs to isolate records.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -613,8 +617,9 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designat
 
 **Response:** Object containing:
 
+* records [int] - Number of allele designations
 * allele_designations [array] - List of :ref:`URIs to allele designation records
-  <db_isolates_isolate_id_allele_designations_locus>`
+  <db_isolates_isolate_id_allele_designations_locus>`.
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
@@ -685,6 +690,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
 
 **Response:** Object containing:
 
+* records [int] - Number of allele id objects
 * allele_ids [array] - List of allele id objects, each consisting of a 
   key/value pair where the key is the locus name.  
   Pages are 100 records by default.  Page size can be modified using the 
@@ -720,9 +726,11 @@ the specified scheme and isolate.
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_designations
 
-**Response:** Array containing :ref:`allele designation objects
-<db_isolates_isolate_id_allele_designations_locus>` for each locus in the 
-specified scheme that has been designated.
+**Response:** 
+
+* records [int] - Number of allele designation objects
+* Array containing :ref:`allele designation objects<db_isolates_isolate_id_allele_designations_locus>` 
+  for each locus in the specified scheme that has been designated.
 
 .. _db_isolates_isolate_id_schemes_scheme_id_allele_ids:
 
@@ -747,12 +755,15 @@ scheme and isolate.
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_ids
 
-**Response:** Array containing allele id objects for each locus in the 
-specified scheme that has been designated.  Each allele_id object contains a 
-key which is the name of the locus with a value that may be either a string, 
-integer or array of strings or integers (required where there are multiple
-designations for a locus).  The data type depends on the allele_id_format set
-for the specific locus.
+**Response:** 
+
+* records [int] - Number of allele id objects
+* allele_ids [array] - List containing allele id objects for each locus in the 
+  specified scheme that has been designated.  Each allele_id object contains a 
+  key which is the name of the locus with a value that may be either a string, 
+  integer or array of strings or integers (required where there are multiple
+  designations for a locus).  The data type depends on the allele_id_format set
+  for the specific locus.
 
 .. _db_isolates_isolate_id_contigs:
 
@@ -781,6 +792,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
 
 **Response:** Object containing:
 
+* records [int] - Number of contigs
 * contigs [array] - List of :ref:`URIs to contig records
   <db_contigs_contig_id>`
   Pages are 100 records by default.  Page size can be modified using the 
@@ -926,11 +938,13 @@ Lists projects defined within specified isolate database configuration.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects
 
-**Response:** List of project objects, each containing:
+**Response:** 
 
-* project [string] - :ref:`URI to project information<db_projects_project_id>`
-* description [string] 
-* isolate_count [integer] - number of isolates in project
+* projects [array] - List of project objects, each containing:
+
+  * project [string] - :ref:`URI to project information<db_projects_project_id>`
+  * description [string] 
+  * isolate_count [integer] - number of isolates in project
 
 .. _db_projects_project_id:
 
@@ -957,7 +971,6 @@ isolate databases).
 
 * id [integer]
 * description [string]
-* isolate_count [integer] - number of isolates belonging to the project
 * isolates [string] - :ref:`URI to list of URIs of member isolate records<db_projects_project_id_isolates>`. 
 
 .. _db_projects_project_id_isolates:
@@ -986,6 +999,7 @@ Provides list of records of isolates that are members of the specified project.
 
 **Response:** Object containing:
 
+* records [int] - Number of isolates in the project
 * isolates [array] - List of URIs to isolate records.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
