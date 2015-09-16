@@ -206,14 +206,19 @@ system.
 1.  Create a writable submissions directory in the root of the web site called
     submissions, i.e. accessible from http://your_website/submissions.  This is
     used for file uploads.  The directory should be writable by the Apache web
-    daemon (user 'www-data' on Debian/Ubuntu systems). The actual directory can
-    be outside of the web root and made accessible using a symlink provided 
-    your Apache configuration allows this, e.g. the default location is 
-    /var/submissions symlinked to /var/www/submissions (assuming your web site
-    is located in /var/www), e.g. ::
+    daemon (user 'www-data' on Debian/Ubuntu systems). If you are running the
+    :ref:`RESTful interface<restful_api>` the directory should also be writable
+    by the bigsdb user. To ensure this, make the directory group-writable and 
+    add the bigsdb user to the apache group ('www-data' on Debian/Ubuntu 
+    systems). The actual directory can be outside of the web root and made 
+    accessible using a symlink provided your Apache configuration allows this, 
+    e.g. the default location is /var/submissions symlinked to 
+    /var/www/submissions (assuming your web site is located in /var/www), 
+    e.g. ::
    
       sudo touch /var/submissions
       sudo chown www-data:www-data /var/submissions
+      sudo chmod 775 /var/submissions
       sudo ln -s /var/submissions /var/www
      
 2.  Set the submission_dir location in bigsdb.conf.
