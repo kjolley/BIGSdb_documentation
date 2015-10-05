@@ -210,9 +210,16 @@ system.
     :ref:`RESTful interface<restful_api>` the directory should also be writable
     by the bigsdb user. To ensure this, make the directory group-writable and 
     add the bigsdb user to the apache group ('www-data' on Debian/Ubuntu 
-    systems). The actual directory can be outside of the web root and made 
-    accessible using a symlink provided your Apache configuration allows this, 
-    e.g. the default location is /var/submissions symlinked to 
+    systems). If you will be allowing submissions via the RESTful interface, 
+    you should also add the apache user ('www-data' on Debian/Ubuntu systems)
+    to the bigsdb group, e.g. ::
+    
+       sudo usermod -a -G www-data bigsdb
+       sudo usermod -a -G bigsdb www-data
+       
+    The actual directory can be outside of the web root 
+    and made accessible using a symlink provided your Apache configuration 
+    allows this, e.g. the default location is /var/submissions symlinked to 
     /var/www/submissions (assuming your web site is located in /var/www), 
     e.g. ::
    
