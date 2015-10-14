@@ -407,7 +407,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
 * **type**	
 
-  * Data type: int, text, float or date.
+  * Data type: int, text, float, bool, or date.
   
 * comments  
   * optional
