@@ -2,13 +2,17 @@
 RESTful Application Programming Interface (API)
 ###############################################
 The REST API allows third-party applications to retrive data stored within
-BIGSdb databases.  To use the REST API, your application will make a HTTP
-request and parse the response.  The response format is JSON (except for routes
-that request a FASTA or CSV file).  
+BIGSdb databases or to send new submissions to database curators. To use the 
+REST API, your application will make a HTTP request and parse the response.  
+The response format is JSON (except for routes that request a FASTA or CSV 
+file). 
 
-***************************
-Passing optional parameters
-***************************
+Access to protected resources, i.e. those requiring an account, can be accessed
+via the API using :ref:`OAuth authentication<api_oauth>`.
+
+**************************************
+Passing additional/optional parameters
+**************************************
 Optional parameters can be passed as arguments to the query URL by adding a '?'
 followed by the first argument and its value (separated by a '=').  Additional
 parameters are separated by a '&', e.g.
@@ -18,48 +22,92 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=
 *********
 Resources
 *********
-* :ref:`/ or /db<db>`
-* :ref:`/db/{database}<db>`
-* :ref:`/db/{database}/loci<db_loci>`
-* :ref:`/db/{database}/loci/{locus}<db_loci_locus>`
-* :ref:`/db/{database}/loci/{locus}/alleles<db_loci_locus_alleles>`
-* :ref:`/db/{database}/loci/{locus}/alleles_fasta<db_loci_locus_alleles_fasta>`
-* :ref:`/db/{database}/loci/{locus}/alleles/{allele_id}<db_loci_locus_alleles_allele_id>`
-* :ref:`/db/{database}/schemes<db_schemes>`
-* :ref:`/db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
-* :ref:`/db/{database}/schemes/{scheme_id}/fields/{field}<db_schemes_scheme_id_fields_field>`
-* :ref:`/db/{database}/schemes/{scheme_id}/profiles<db_schemes_scheme_id_profiles>`
-* :ref:`/db/{database}/schemes/{scheme_id}/profiles_csv<db_schemes_scheme_id_profiles_csv>`
-* :ref:`/db/{database}/schemes/{scheme_id}/profiles/{profile_id}<db_schemes_scheme_id_profiles_profile_id>`
-* :ref:`/db/{database}/isolates<db_isolates>`
-* :ref:`/db/{database}/isolates/{isolate_id}<db_isolates_isolate_id>`
-* :ref:`/db/{database}/isolates/{isolate_id}/allele_designations<db_isolates_isolate_id_allele_designations>`
-* :ref:`/db/{database}/isolates/{isolate_id}/allele_designations/{locus}<db_isolates_isolate_id_allele_designations_locus>`
-* :ref:`/db/{database}/isolates/{isolate_id}/allele_ids<db_isolates_isolate_id_allele_ids>`
-* :ref:`/db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations<db_isolates_isolate_id_schemes_scheme_id_allele_designations>`
-* :ref:`/db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids<db_isolates_isolate_id_schemes_scheme_id_allele_ids>`
-* :ref:`/db/{database}/isolates/{isolate_id}/contigs<db_isolates_isolate_id_contigs>`
-* :ref:`/db/{database}/isolates/{isolate_id}/contigs_fasta<db_isolates_isolate_id_contigs_fasta>`
-* :ref:`/db/{database}/contigs/{contig_id}<db_contigs_contig_id>`
-* :ref:`/db/{database}/fields<db_fields>`
-* :ref:`/db/{database}/users/{user_id}<db_users_user_id>`
-* :ref:`/db/{database}/projects<db_projects>`
-* :ref:`/db/{database}/projects/{project_id}<db_projects_project_id>`
-* :ref:`/db/{database}/projects/{project_id}/isolates<db_projects_project_id_isolates>`
+* :ref:`GET / or /db<db>` - List site resources
+* :ref:`GET /db/{database}<db_db>` - List database resources
+* :ref:`GET /db/{database}/loci<db_loci>` - List loci
+* :ref:`GET /db/{database}/loci/{locus}<db_loci_locus>` - Retrieve locus record
+* :ref:`GET /db/{database}/loci/{locus}/alleles<db_loci_locus_alleles>`
+  - Retrieve list of alleles defined for a locus
+* :ref:`GET /db/{database}/loci/{locus}/alleles_fasta<db_loci_locus_alleles_fasta>`
+  - Download alleles in FASTA format
+* :ref:`GET /db/{database}/loci/{locus}/alleles/{allele_id}<db_loci_locus_alleles_allele_id>`
+  - Retrieve full allele information
+* :ref:`GET /db/{database}/schemes<db_schemes>` - List schemes
+* :ref:`GET /db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
+  - Retrieve scheme information
+* :ref:`GET /db/{database}/schemes/{scheme_id}/fields/{field}<db_schemes_scheme_id_fields_field>`
+  - Retrieve information about scheme field
+* :ref:`GET /db/{database}/schemes/{scheme_id}/profiles<db_schemes_scheme_id_profiles>`
+  - List allelic profiles defined for scheme
+* :ref:`GET /db/{database}/schemes/{scheme_id}/profiles_csv<db_schemes_scheme_id_profiles_csv>`
+  - Download allelic profiles in CSV (tab-delimited) format
+* :ref:`GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id}<db_schemes_scheme_id_profiles_profile_id>`
+  - Retrieve allelic profile record
+* :ref:`GET /db/{database}/isolates<db_isolates>` 
+  - Retrieve list of isolate records
+* :ref:`GET /db/{database}/isolates/{isolate_id}<db_isolates_isolate_id>`
+  - Retrieve isolate record
+* :ref:`GET /db/{database}/isolates/{isolate_id}/allele_designations<db_isolates_isolate_id_allele_designations>`
+  - Retrieve list of allele designations
+* :ref:`GET /db/{database}/isolates/{isolate_id}/allele_designations/{locus}<db_isolates_isolate_id_allele_designations_locus>`
+  - Retrieve full allele designation record
+* :ref:`GET /db/{database}/isolates/{isolate_id}/allele_ids<db_isolates_isolate_id_allele_ids>`
+  - Retrieve allele identifiers
+* :ref:`GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations<db_isolates_isolate_id_schemes_scheme_id_allele_designations>`
+  - Retrieve scheme allele designation records
+* :ref:`GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids<db_isolates_isolate_id_schemes_scheme_id_allele_ids>`
+  - Retrieve list of scheme allele identifiers
+* :ref:`GET /db/{database}/isolates/{isolate_id}/contigs<db_isolates_isolate_id_contigs>`
+  - Retrieve list of contigs
+* :ref:`GET /db/{database}/isolates/{isolate_id}/contigs_fasta<db_isolates_isolate_id_contigs_fasta>`
+  - Download contigs in FASTA format
+* :ref:`GET /db/{database}/contigs/{contig_id}<db_contigs_contig_id>`
+  - Retrieve contig record
+* :ref:`GET /db/{database}/fields<db_fields>`
+  - Retrieve list of isolate provenance field descriptions
+* :ref:`GET /db/{database}/users/{user_id}<db_users_user_id>`
+  - Retrieve user information
+* :ref:`GET /db/{database}/projects<db_projects>`
+  - Retrieve list of projects
+* :ref:`GET /db/{database}/projects/{project_id}<db_projects_project_id>`
+  - Retrieve project information
+* :ref:`GET /db/{database}/projects/{project_id}/isolates<db_projects_project_id_isolates>`
+  - Retrieve list of isolates belonging to a project
+* :ref:`GET /db/{database}/submissions<get_db_submissions>`
+  - Retrieve list of submissions
+* :ref:`POST /db/{database}/submissions <post_db_submissions>`
+  - Create new submission
+* :ref:`GET /db/{database}/submissions/{type}<db_submissions_submissions_type>`
+  - Retrieve submissions of a specified type
+* :ref:`GET /db/{database}/submissions/{type}/pending<db_submissions_submissions_type_pending>`
+  - Retrieve pending submissions of a specified type
+* :ref:`GET /db/{database}/submissions/{type}/closed<db_submissions_submissions_type_closed>`
+  - Retrieve closed submissions of a specified type
+* :ref:`GET /db/{database}/submissions/pending<db_submissions_submissions_pending>`
+  - Retrieve pending submissions
+* :ref:`GET /db/{database}/submissions/closed<db_submissions_submissions_closed>`
+  - Retrieve closed submissions
+* :ref:`GET /db/{database}/submissions/{submission_id}<get_db_submissions_submissions_submission_id>`
+  - Retrieve submission record
+* :ref:`DELETE /db/{database}/submissions/{submission_id}<del_db_submissions_submissions_submission_id>`
+  - Delete submission record
+* GET /db/{database}/submissions/{submission_id}/messages
+* POST /db/{database}/submissions/{submission_id}/messages
+* GET /db/{database}/submissions/{submission_id}/files
+* POST /db/{database}/submissions/{submission_id}/files
+* GET /db/{database}/submissions/{submission_id}/files/{filename}
+* DELETE /db/{database}/submissions/{submission_id}/files/{filename}
 
-.. _db_no_arg:
+.. _db:
 
 .. index::
-   single: API resources; /db
-   single: API resources; /
+   single: API resources; GET /db
+   single: API resources; GET /
+   single: API resources; list site resources
    
-/ or /db
-========
-Lists database resources available using the API.
-
-**Supported method:** GET
-
-**Required query parameters:** None
+GET / or /db - List site resources
+==================================
+**Required route parameters:** None
 
 **Optional query parameters:** None
 
@@ -74,24 +122,22 @@ related resources.  Each group contains:
 * databases [array] - list of database objects, each consists of three 
   key/value pairs:
 
-   * name [string] - name of database config
-   * description [string] - short description of resource
-   * href [string] - URI to access resource
+  * name [string] - name of database config
+  * description [string] - short description of resource
+  * href [string] - URI to access resource
    
-.. _db:
+.. _db_db:
 
 .. index::
-   single: API resources; /db/{database}
+   single: API resources; GET /db/{database}
+   single: API resources; list database resources
 
-/db/{database}
-==============
-Lists resources available for specified database configuration.  These will 
-vary depending on whether the resource is an isolate or a sequence definition
-database.
+GET /db/{database} - List database resources
+============================================
+These will vary depending on whether the resource is an isolate or a sequence 
+definition database.
 
-**Supported method:** GET
-
-**Required query parameter:** {database} - Database configuration name [string]
+**Required route parameter:** database [string] - Database configuration name
 
 **Optional parameters:** None
 
@@ -108,15 +154,12 @@ database.
 .. _db_loci:
 
 .. index::
-   single: API resources; /db/{database}/loci
+   single: API resources; GET /db/{database}/loci
+   single: API resources; list loci
 
-/db/{database}/loci
-===================
-Lists loci defined within specified database configuration.
-
-**Supported method:** GET
-
-**Required query parameter:** {database} - Database configuration name [string]
+GET /db/{database}/loci - List loci
+===================================
+**Required route parameter:** database [string] - Database configuration name
 
 **Optional parameters:** 
 
@@ -133,28 +176,28 @@ Lists loci defined within specified database configuration.
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
    
 .. _db_loci_locus:
 
 .. index::
-   single: API resources; /db/{database}/loci/{locus}
+   single: API resources; GET /db/{database}/loci/{locus}
+   single: API resources; retrieve locus record
 
-/db/{database}/loci/{locus}
-===========================
+GET /db/{database}/loci/{locus} - Retrieve locus record
+=======================================================
 Provides information about a locus, including links to allele sequences (in 
 seqdef databases).
 
-**Supported method:** GET
+**Required route parameters:** 
 
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {locus} - Locus name [string]
+* database [string] - Database configuration name
+* locus [string] - Locus name
 
 **Optional parameters:** None
 
@@ -173,8 +216,10 @@ seqdef databases).
 * coding_sequence [boolean]
 * orf [integer] - 1-6
 * schemes [array] - list of scheme objects, each consisting of:
-   * scheme [string] - URI to scheme information
-   * description [string]
+
+  * scheme [string] - URI to scheme information
+  * description [string]
+  
 * min_length [integer] (seqdef databases) - minimum length for variable length
   loci
 * max_length [integer] (seqdef databases) - maximum length for variable length
@@ -191,33 +236,30 @@ seqdef databases).
 * product [string] (seqdef databases)
 * description [string] (seqdef databases)
 * extended_attributes [array] (seqdef databases) - list of extended attribute
-  objects.  Each consists of a subset of the following fields:
+  objects.  Each consists of a subset of the following fields:  
   
-    * field [string] - field name
-    * value_format [string] - 'integer', 'text', or 'boolean' 
-    * value_regex [string] - regular expression constraining value
-    * description [string] - description of field
-    * length [integer] - maximum length of field
-    * required [boolean]
-    * allowed_values [array] - list of allowed values
+  * field [string] - field name
+  * value_format [string] - 'integer', 'text', or 'boolean' 
+  * value_regex [string] - regular expression constraining value
+  * description [string] - description of field
+  * length [integer] - maximum length of field
+  * required [boolean]
+  * allowed_values [array] - list of allowed values
     
 * genome_position [integer] (isolate databases)
 
 .. _db_loci_locus_alleles:
 
 .. index::
-   single: API resources; /db/{database}/loci/{locus}/alleles
+   single: API resources; GET /db/{database}/loci/{locus}/alleles
+   single: API resources; retrieve list of alleles defined for a locus
 
-/db/{database}/loci/{locus}/alleles
-===================================
-Lists alleles defined for specific locus.
+GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a locus
+======================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {locus} - Locus name [string]
+* database [string] - Database configuration name
+* locus [string] - Locus name
 
 **Optional parameters:** 
 
@@ -236,27 +278,25 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
    
 .. _db_loci_locus_alleles_fasta:
 
 .. index::
-   single: API resources; /db/{database}/loci/{locus}/alleles_fasta
+   single: API resources; GET /db/{database}/loci/{locus}/alleles_fasta
+   single: API resources; download alleles in FASTA format
 
-/db/{database}/loci/{locus}/alleles_fasta
-=========================================
-Provides all alleles defined for a locus in FASTA format.
+GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
+================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {locus} - Locus name [string]
+* database [string] - Database configuration name
+* locus [string] - Locus name
 
 **Optional parameters:** None
 
@@ -267,19 +307,16 @@ Provides all alleles defined for a locus in FASTA format.
 .. _db_loci_locus_alleles_allele_id:
 
 .. index::
-   single: API resources; /db/{database}/loci/{locus}/alleles/{allele_id} 
+   single: API resources; GET /db/{database}/loci/{locus}/alleles/{allele_id} 
+   single: API resources; retrieve full allele information
    
-/db/{database}/loci/{locus}/alleles/{allele_id}
-===============================================
-Provides information about an allele including its sequence.
+GET /db/{database}/loci/{locus}/alleles/{allele_id} - Retrieve full allele information
+======================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {locus} - Locus name [string]
-* {allele_id} - Allele identifier [string]
+* database [string] - Database configuration name
+* locus [string] - Locus name
+* allele_id [string] - Allele identifier
 
 **Optional parameters:** None
 
@@ -300,15 +337,12 @@ Provides information about an allele including its sequence.
 .. _db_schemes:
 
 .. index::
-   single: API resources; /db/{database}/schemes 
+   single: API resources; GET /db/{database}/schemes 
+   single: API resources; list schemes
 
-/db/{database}/schemes
-======================
-Lists schemes defined within specified database configuration.
-
-**Supported method:** GET
-
-**Required query parameter:** {database} - Database configuration name [string]
+GET /db/{database}/schemes - List schemes
+=========================================
+**Required route parameter:** database [string] - Database configuration name
 
 **Optional parameters:** None
 
@@ -316,28 +350,25 @@ Lists schemes defined within specified database configuration.
 
 **Response:** 
 
-* records [int] - Number of schemes
+* records [integer] - Number of schemes
 * schemes [array] - list of scheme objects, each containing:
 
-  * scheme [string] - URI to scheme information
+  * scheme [string] - :ref:`URI to scheme information<db_schemes_scheme_id>`
   * description [string] 
 
 .. _db_schemes_scheme_id:
 
 .. index::
-   single: API resources; /db/{database}/schemes/{scheme_id}
+   single: API resources; GET /db/{database}/schemes/{scheme_id}
+   single: API resources; retrieve scheme information
 
-/db/{database}/schemes/{scheme_id}
-==================================
-Provides information about a scheme, including links to allelic profiles (in 
-seqdef databases, if appropriate).
+GET /db/{database}/schemes/{scheme_id} - Retrieve scheme information
+====================================================================
+Includes links to allelic profiles (in seqdef databases, if appropriate).
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {scheme_id} - Scheme id number [integer]
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id number
 
 **Optional parameters:** None
 
@@ -362,19 +393,16 @@ seqdef databases, if appropriate).
 .. _db_schemes_scheme_id_fields_field:
 
 .. index::
-   single: API resources; /db/{database}/schemes/{scheme_id}/fields/{field}
+   single: API resources; GET /db/{database}/schemes/{scheme_id}/fields/{field}
+   single: API resources; retrieve information about scheme field
 
-/db/{database}/schemes/{scheme_id}/fields/{field}
-=================================================
-Provides information about scheme fields.
+GET /db/{database}/schemes/{scheme_id}/fields/{field} - Retrieve information about scheme field
+===============================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {scheme_id} - Scheme id number [integer]
-* {field} - Field name [string]
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id number
+* field [string] - Field name
  
 **Optional parameters:** None
  
@@ -389,18 +417,15 @@ Provides information about scheme fields.
 .. _db_schemes_scheme_id_profiles:
 
 .. index::
-   single: API resources; /db/{database}/schemes/{scheme_id}/profiles
+   single: API resources; GET /db/{database}/schemes/{scheme_id}/profiles
+   single: API resources; list allelic profiles defined for scheme
 
-/db/{database}/schemes/{scheme_id}/profiles
-===========================================
-Lists allelic profiles defined for a specific scheme.
+GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined for scheme
+==========================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {scheme_id} - Scheme id [integer]
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id
 
 **Optional parameters:** 
 
@@ -418,27 +443,25 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
    
 .. _db_schemes_scheme_id_profiles_csv:
 
 .. index::
-   single: API resources; /db/{database}/schemes/{scheme_id}/profiles_csv
+   single: API resources; GET /db/{database}/schemes/{scheme_id}/profiles_csv
+   single: API resources; download allelic profiles in CSV (tab-delimited) format
    
-/db/{database}/schemes/{scheme_id}/profiles_csv
-===============================================
-Provides all profiles defined for a scheme in CSV (tab-delimited) format.
+GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles in CSV (tab-delimited) format
+=============================================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {scheme_id} - Scheme id [integer]
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id
 
 **Optional parameters:** None
 
@@ -450,19 +473,16 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
 .. _db_schemes_scheme_id_profiles_profile_id:
 
 .. index::
-   single: API resources; /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+   single: API resources; GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id}
+   single: API resources; retrieve specific allelic profile record
 
-/db/{database}/schemes/{scheme_id}/profiles/{profile_id}
-========================================================
-Provides information about a specific allelic profile defined for a scheme.
+GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id} - Retrieve allelic profile record
+==============================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {scheme_id} - Scheme id [integer]
-* {profile_id} - Profile id [string/integer] 
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id
+* profile_id [string/integer] - Profile id 
 
 **Optional parameters:** None
 
@@ -486,15 +506,12 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
 .. _db_isolates:
 
 .. index::
-   single: API resources; /db/{database}/isolates 
+   single: API resources; GET /db/{database}/isolates 
+   single: API resources; retrieve list of isolate records
 
-/db/{database}/isolates
-=======================
-Provides list of isolate records.
-
-**Supported method:** GET
-
-**Required query parameter:** {database} - Database configuration name [string]
+GET /db/{database}/isolates - Retrieve list of isolate records
+==============================================================
+**Required route parameter:** database [string] - Database configuration name
 
 **Optional parameters:** 
 
@@ -511,27 +528,25 @@ Provides list of isolate records.
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
 
 .. _db_isolates_isolate_id:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}
+   single: API resources; GET /db/{database}/isolates/{isolate_id}
+   single: API resources; retrieve isolate record
    
-/db/{database}/isolates/{isolate_id}
-====================================
-Provides information about an isolate.
+GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
+==================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
 
 **Optional parameters:** None
 
@@ -543,49 +558,49 @@ Provides information about an isolate.
   the :ref:`/fields route<db_fields>`.  The fields will vary by database but 
   will always contain the following:
   
-   * id [integer]
-   * sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
-   * curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
-   * date_entered [string] - record creation date (ISO 8601 format)
-   * datestamp [string] - last updated date (ISO 8601 format) 
+  * id [integer]
+  * sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
+  * curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
+  * date_entered [string] - record creation date (ISO 8601 format)
+  * datestamp [string] - last updated date (ISO 8601 format) 
    
 * publications [array] (seqdef databases) - list of PubMed id numbers of papers
   that refer to the isolate
 * sequence_bin [object] - consists of the following key/value pairs:
 
-   * contigs_fasta [string] - :ref:`URI to FASTA file containing all the contigs
-     belonging to this isolate<db_isolates_isolate_id_contigs_fasta>`
-   * contigs [string] - :ref:`URI to list of contig records
-     <db_isolates_isolate_id_contigs>`
-   * contig_count [integer] - number of contigs
-   * total_length [integer] - total length of contigs
+  * contigs_fasta [string] - :ref:`URI to FASTA file containing all the contigs
+    belonging to this isolate<db_isolates_isolate_id_contigs_fasta>`
+  * contigs [string] - :ref:`URI to list of contig records
+    <db_isolates_isolate_id_contigs>`
+  * contig_count [integer] - number of contigs
+  * total_length [integer] - total length of contigs
    
 * allele_designations [object] - consists of the following key/value pairs:
 
-   * allele_ids - :ref:`URI to list of all allele_id values
-     <db_isolates_isolate_id_allele_ids>` defined for the isolate
-   * designation_count - number of allele designations defined for the isolate
-   * full_designations - :ref:`URI to list of full allele designation records
-     <db_isolates_isolate_id_allele_designations>`
+  * allele_ids - :ref:`URI to list of all allele_id values
+    <db_isolates_isolate_id_allele_ids>` defined for the isolate
+  * designation_count - number of allele designations defined for the isolate
+  * full_designations - :ref:`URI to list of full allele designation records
+    <db_isolates_isolate_id_allele_designations>`
    
 * schemes [array] - list of scheme objects, each containing the following:
 
-   * description [string] - description of scheme
-   * loci_designated_count [integer] - number of loci within scheme that have
-     an allele designated for this isolate.
-   * allele_ids [string] - :ref:`URI to list of all allele_id values defined for this
-     scheme<db_isolates_isolate_id_schemes_scheme_id_allele_ids>` for this 
-     isolate
-   * full_designations [string] - :ref:`URI to list of full allele designation 
-     records<db_isolates_isolate_id_schemes_scheme_id_allele_designations>` for
-     this isolate
-   * fields [object] - consisting of key/value pairs where the key is the name
-     of each scheme field
+  * description [string] - description of scheme
+  * loci_designated_count [integer] - number of loci within scheme that have
+    an allele designated for this isolate.
+  * allele_ids [string] - :ref:`URI to list of all allele_id values defined for this
+    scheme<db_isolates_isolate_id_schemes_scheme_id_allele_ids>` for this 
+    isolate
+  * full_designations [string] - :ref:`URI to list of full allele designation 
+    records<db_isolates_isolate_id_schemes_scheme_id_allele_designations>` for
+    this isolate
+  * fields [object] - consisting of key/value pairs where the key is the name
+    of each scheme field
      
 * projects [array] - list of project objects, each containing the following:
 
-   * id [string] - :ref:`URI to project information<db_projects_project_id>`
-   * description [string] - description of project
+  * id [string] - :ref:`URI to project information<db_projects_project_id>`
+  * description [string] - description of project
    
 * new_version [string] - URI to newer version of record
 * old_version [string] - URI to older version of record
@@ -593,18 +608,15 @@ Provides information about an isolate.
 .. _db_isolates_isolate_id_allele_designations:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/allele_designations
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/allele_designations
+   single: API resources; retrieve list of allele designations
      
-/db/{database}/isolates/{isolate_id}/allele_designations
-========================================================
-Provides a list of full allele designation records for the specified isolate.
+GET /db/{database}/isolates/{isolate_id}/allele_designations - Retrieve list of allele designation records
+==========================================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
 
 **Optional parameters:** 
 
@@ -623,28 +635,26 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designat
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
    
 .. _db_isolates_isolate_id_allele_designations_locus:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/allele_designations/{locus}  
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/allele_designations/{locus} 
+   single: API resources; retrieve full allele designation record
    
-/db/{database}/isolates/{isolate_id}/allele_designations/{locus}
-================================================================
-Provides a full allele designation record.
+GET /db/{database}/isolates/{isolate_id}/allele_designations/{locus} - Retrieve full allele designation record
+==============================================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
-* {locus} - Locus mame [string]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
+* locus [string] - Locus name
 
 **Optional parameters:** None
 
@@ -666,18 +676,15 @@ designations for the same locus), each containing:
 .. _db_isolates_isolate_id_allele_ids:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/allele_ids
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/allele_ids
+   single: API resources; retrieve allele identifiers
 
-/db/{database}/isolates/{isolate_id}/allele_ids
-===============================================
-Returns array of allele identifiers for isolate.
+GET /db/{database}/isolates/{isolate_id}/allele_ids - Retrieve allele identifiers
+=================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
 
 **Optional parameters:** 
 
@@ -696,30 +703,27 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
    
 .. _db_isolates_isolate_id_schemes_scheme_id_allele_designations:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations
+   single: API resources; retrieve scheme allele designation records
      
   
-/db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations
-============================================================================
-Provides a list of full allele designation records for loci belonging to 
-the specified scheme and isolate.
+GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations - Retrieve scheme allele designation records
+=============================================================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
-* {scheme_id} - Scheme identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
+* scheme_id [integer] - Scheme identifier
 
 **Optional parameters:** None
 
@@ -729,26 +733,23 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allel
 **Response:** 
 
 * records [int] - Number of allele designation objects
-* Array containing :ref:`allele designation objects<db_isolates_isolate_id_allele_designations_locus>` 
+* allele_designations [array] - List of
+  :ref:`allele designation objects<db_isolates_isolate_id_allele_designations_locus>` 
   for each locus in the specified scheme that has been designated.
 
 .. _db_isolates_isolate_id_schemes_scheme_id_allele_ids:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids
+   single: API resources; retrieve list of scheme allele identifiers
 
-/db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids
-===================================================================
-Provides a list of allele identifiers for loci belonging to the specified
-scheme and isolate.
+GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids - Retrieve list of scheme allele identifiers
+====================================================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
-* {scheme_id} - Scheme identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
+* scheme_id [integer] - Scheme identifier
 
 **Optional parameters:** None
 
@@ -768,18 +769,15 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allel
 .. _db_isolates_isolate_id_contigs:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/contigs
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/contigs
+   single: API resources; retrieve list of contigs
 
-/db/{database}/isolates/{isolate_id}/contigs
-============================================
-Returns a list of contig records for the specified isolate.
+GET /db/{database}/isolates/{isolate_id}/contigs - Retrieve list of contigs
+===========================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {isolate_id} - Isolate identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
 
 **Optional parameters:** 
 
@@ -807,22 +805,21 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
 .. _db_isolates_isolate_id_contigs_fasta:
 
 .. index::
-   single: API resources; /db/{database}/isolates/{isolate_id}/contigs_fasta
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/contigs_fasta
+   single: API resources; download contigs in FASTA format
    
-/db/{database}/isolates/{isolate_id}/contigs_fasta
-==================================================
-Provides all contigs associated with an isolate record in FASTA format.
+GET /db/{database}/isolates/{isolate_id}/contigs_fasta - Download contigs in FASTA format
+=========================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
- * {database} - Database configuration name [string]
- * {isolate_id} - Isolate identifier [integer]
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
 
 **Optional parameter:** 
- * header [string] - either 'original_designation' or 'id' (default is 
-   'id'). This selects whether the FASTA header lines contain
-   the originally uploaded FASTA headers or the sequence bin id numbers.
+
+* header [string] - either 'original_designation' or 'id' (default is 
+  'id'). This selects whether the FASTA header lines contain
+  the originally uploaded FASTA headers or the sequence bin id numbers.
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?header=original_designation
@@ -832,17 +829,15 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?h
 .. _db_contigs_contig_id:
 
 .. index::
-   single: API resources; /db/{database}/contigs/{contig_id}
+   single: API resources; GET /db/{database}/contigs/{contig_id}
+   single: API resources; retrieve contig record
 
-/db/{database}/contigs/{contig_id}
-=======================================================
-Provides a record of a specified contig.
+GET /db/{database}/contigs/{contig_id} - Retrieve contig record
+===============================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
- * {database} - Database configuration name [string]
- * {contig_id} - Contig identifier [integer]
+* database [string] - Database configuration name
+* contig_id [integer] - Contig identifier
 
 **Optional parameters:** None
 
@@ -864,16 +859,14 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062
 .. _db_fields:
 
 .. index::
-   single: API resources; /db/{database}/fields 
+   single: API resources; GET /db/{database}/fields 
+   single: API resources; retrieve list of isolate provenance field descriptions
 
-/db/{database}/fields
-=====================
-Provides a list of isolate provenance field descriptions.
+GET /db/{database}/fields - Retrieve list of isolate provenance field descriptions
+==================================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
- * {database} - Database configuration name [string]
+* database [string] - Database configuration name
 
 **Optional parameters:** None
 
@@ -897,17 +890,17 @@ following key/value pairs:
 .. _db_users_user_id:
 
 .. index::
-   single: API resources; /db/{database}/users/{user_id} 
+   single: API resources; GET /db/{database}/users/{user_id} 
+   single: API resources; retrieve user information
 
-/db/{database}/users/{user_id}
-==============================
-Provides information about data senders and curators.
+GET /db/{database}/users/{user_id} - Retrieve user information
+==============================================================
+Users may be data submitters or curators.
 
-**Supported method:** GET
+**Required route parameters:** 
 
-**Required query parameters:** 
- * {database} - Database configuration name [string]
- * {user_id} - User id number [integer]
+* database [string] - Database configuration name
+* user_id [integer] - User id number
 
 **Optional parameters:** None
 
@@ -924,15 +917,12 @@ Provides information about data senders and curators.
 .. _db_projects:
 
 .. index::
-   single: API resources; /db/{database}/projects
+   single: API resources; GET /db/{database}/projects
+   single: API resources; retrieve list of projects
 
-/db/{database}/projects
-=======================
-Lists projects defined within specified isolate database configuration.
-
-**Supported method:** GET
-
-**Required query parameter:** {database} - Database configuration name [string]
+GET /db/{database}/projects - Retrieve list of projects
+=======================================================
+**Required route parameter:** database [string] - Database configuration name
 
 **Optional parameters:** None
 
@@ -949,19 +939,15 @@ Lists projects defined within specified isolate database configuration.
 .. _db_projects_project_id:
 
 .. index::
-   single: API resources; /db/{database}/projects/{project_id}
+   single: API resources; GET /db/{database}/projects/{project_id}
+   single: API resources; retrieve project information
 
-/db/{database}/projects/{project_id}
-====================================
-Provides information about a project, including links to member isolates (in 
-isolate databases).
+GET /db/{database}/projects/{project_id} - Retrieve project information
+=======================================================================
+**Required route parameters:** 
 
-**Supported method:** GET
-
-**Required query parameters:** 
-
-* {database} - Database configuration name [string]
-* {project_id} - Project id number [integer]
+* database [string] - Database configuration name
+* project_id [integer] - Project id number
 
 **Optional parameters:** None
 
@@ -976,18 +962,15 @@ isolate databases).
 .. _db_projects_project_id_isolates:
 
 .. index::
-   single: API resources; /db/{database}/projects/{project_id}/isolates
+   single: API resources; GET /db/{database}/projects/{project_id}/isolates
+   single: API resources; retrieve list of isolates belonging to a project
 
-/db/{database}/projects/{project_id}/isolates
-=============================================
-Provides list of records of isolates that are members of the specified project.
+GET /db/{database}/projects/{project_id}/isolates - Retrieve list of isolates belonging to a project
+====================================================================================================
+**Required route parameter:** 
 
-**Supported method:** GET
-
-**Required query parameter:** 
-
-* {database} - Database configuration name [string]
-* {project_id} - Project id number [integer]
+* database [string] - Database configuration name
+* project_id [integer] - Project id number
 
 **Optional parameters:** 
 
@@ -1004,11 +987,324 @@ Provides list of records of isolates that are members of the specified project.
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
-   * previous - URI to previous page of results
-   * next - URI to next page of results
-   * first - URI to first page of results
-   * last - URI to last page of results
-   * return_all - URI to page containing all results (paging disabled)
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
+   
+.. _get_db_submissions:
+
+.. index::
+   single: API resources; GET /db/{database}/submissions  
+   single: API resources; retrieve list of submissions
+   
+GET /db/{database}/submissions - retrieve list of submissions
+=============================================================
+**Required route parameter:** database [string] - Database configuration name
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/submissions
+
+**Response:** Object containing:
+
+* records [int] - Number of submissions
+* submissions [array] - List of :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>`
+* status [object] - containing:
+
+  * closed - URI to closed submissions
+  * pending - URI to pending submissions
+  
+* type [object] - containing one or more of:
+
+  * alleles - URI to allele sequence submissions
+  * profiles - URI to profile submissions
+  * isolates - URI to isolate submissions
+  
+.. _post_db_submissions:  
+
+.. index::
+   single: API resources; POST /db/{database}/submissions  
+   single: API resources; create new submission
+
+POST /db/{database}/submissions - create new submission
+=======================================================
+**Required route parameter:** database [string] - Database configuration name
+
+**Required additional parameters:**
+
+* type [string] - either:
+
+  * alleles (sequence definition databases only)
+  * profiles (sequence definition databases only)
+  * isolates (isolate databases only)
+   
+ The following are required with the specified database type:
+
+ **Allele submissions**
+
+* locus [string] - name of locus
+* technology [string] - name of sequencing technology: either '454', 
+  'Illumina', 'Ion Torrent', 'PacBio', 'Oxford Nanopore', 'Sanger', 
+  'Solexa', 'SOLiD', or 'other'
+* read_length [string] - read length of sequencing: either '<100', 
+  '100-199', '200-299', '300-499', '>500', or any positive integer (only 
+  required for Illumina)
+* coverage [string] - mean coverage of sequencing: either '<20x', '20-49x',
+  '50-99x', '>100x', or any positive integer (only required for Illumina)
+* assembly [string] - assembly method: either 'de nono' or 'mapped'
+* software [string] - name of assembly software
+* sequences [string] - either single sequence of multiple sequences in FASTA
+  format
+     
+ **Profile submissions**
+  
+* scheme_id [int] - scheme id number
+* profiles [string] - tab-delimited profile data - this should include a header
+  line containing the name of each locus
+  
+ **Isolate submissions**
+ 
+* isolates [string] - tab-delimited isolate data - this should include a header
+  line containing each field or locus included
+   
+**Optional parameters:**
+
+* message [string] - correspondence to the curator
+* email [int] - set to 1 to enable E-mail updates (E-mails will be sent to the
+  registered user account address).
+  
+**Response:** Object containing: 
+
+* submission - :ref:`URI to submission record<get_db_submissions_submissions_submission_id>`
+
+.. _db_submissions_submissions_type:
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{type}
+   single: API resources; retrieve submissions of a specified type
+
+GET /db/{database}/submissions/{type} - Retrieve submissions of a specified type
+================================================================================
+Only submissions made by the logged in user will be returned.
+
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* type [string] - Either 'alleles', 'profiles', 'isolates'
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles
+
+**Response:** Object containing:
+
+* records [int] - Number of submissions of specified type
+* submissions [array] - List of 
+  :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>` 
+  of specified type
+* status [object] - containing:
+
+  * closed [string] - URI to closed submissions of specified type
+  * pending [string] - URI to pending submissions of specified type
+  
+.. _db_submissions_submissions_type_pending:  
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{type}/pending 
+   single: API resources; retrieve pending submissions of a specified type
+   
+GET /db/{database}/submissions/{type}/pending - Retrieve pending submissions of a specified type
+================================================================================================
+Only submissions made by the logged in user will be returned.
+
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* type [string] - Either 'alleles', 'profiles', 'isolates'
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles/pending
+
+**Response:** Object containing:
+
+* records [int] - Number of pending submissions of specified type
+* submissions [array] - List of 
+  :ref:`URIs to pending submission records<get_db_submissions_submissions_submission_id>` 
+  of specified type
+
+.. _db_submissions_submissions_type_closed:  
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{type}/closed 
+   single: API resources; retrieve closed submissions of a specified type
+   
+GET /db/{database}/submissions/{type}/closed - Retrieve closed submissions of a specified type
+==============================================================================================
+Only submissions made by the logged in user will be returned.
+
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* type [string] - Either 'alleles', 'profiles', 'isolates'
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles/closed
+
+**Response:** Object containing:
+
+* records [int] - Number of closed submissions of specified type
+* submissions [array] - List of 
+  :ref:`URIs to closed submission records<get_db_submissions_submissions_submission_id>` 
+  of specified type
+
+.. _db_submissions_submissions_pending:  
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/pending 
+   single: API resources; retrieve pending submissions
+   
+GET /db/{database}/submissions/pending - Retrieve pending submissions
+=====================================================================
+Only submissions made by the logged in user will be returned.
+
+**Required route parameter:** 
+
+* database [string] - Database configuration name
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/pending
+
+**Response:** Object containing:
+
+* records [int] - Number of pending submissions
+* submissions [array] - List of 
+  :ref:`URIs to pending submission records<get_db_submissions_submissions_submission_id>`
+
+.. _db_submissions_submissions_closed:  
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/closed 
+   single: API resources; retrieve closed submissions
+   
+GET /db/{database}/submissions/closed - Retrieve closed submissions
+===================================================================
+Only submissions made by the logged in user will be returned.
+
+**Required route parameter:** 
+
+* database [string] - Database configuration name
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/closed
+
+**Response:** Object containing:
+
+* records [int] - Number of closed submissions
+* submissions [array] - List of 
+  :ref:`URIs to closed submission records<get_db_submissions_submissions_submission_id>`
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{submission_id}
+   single: API resources; retrieve submission record
+ 
+.. _get_db_submissions_submissions_submission_id:   
+ 
+GET /db/{database}/submissions/{submission_id} - Retrieve submission record
+===========================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
+
+**Response:** Object containing some of the following:
+
+* id [string] - Submission id
+* type [string] - Either 'alleles', 'profiles', 'isolates'
+* date_submitted [string] - Submission date (ISO 8601 format)
+* datestamp [string] - Last updated date (ISO 8601 format)
+* submitter [string] - :ref:`URI to user details<db_users_user_id>` of submitter
+* curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
+* status [string] - either 'started', 'pending', or 'closed'
+* outcome [string] - either 'good' (data uploaded), 'bad' (data rejected), or 
+  'mixed' (parts of submission accepted)
+* correspondence [array] - List of correspondence objects in time order. Each
+  contains:
+  
+  * user [string] :ref:`URI to user details<db_users_user_id>` of user
+  * timestamp [string]
+  * message [string]
+
+ **Allele submissions**
+
+* locus [string] - name of locus
+* technology [string] - name of sequencing technology: either '454', 
+  'Illumina', 'Ion Torrent', 'PacBio', 'Oxford Nanopore', 'Sanger', 
+  'Solexa', 'SOLiD', or 'other'
+* read_length [string] - read length of sequencing: either '<100', 
+  '100-199', '200-299', '300-499', '>500', or any positive integer (only 
+  required for Illumina)
+* coverage [string] - mean coverage of sequencing: either '<20x', '20-49x',
+  '50-99x', '>100x', or any positive integer (only required for Illumina)
+* assembly [string] - assembly method: either 'de nono' or 'mapped'
+* software [string] - name of assembly software
+* seqs [array] - List of sequence objects each containing:
+
+  * seq_id [string] - Sequence identifier
+  * assigned_id [string] - Allele identifier if uploaded to the database
+    (otherwise undefined)
+  * status [string] - Either 'pending', 'assigned', or 'rejected'
+  * sequence [string]
+
+ **Profile submissions**
+
+* scheme [string] - :ref:`URI to scheme information<db_schemes_scheme_id>`
+* profiles [array] - List of profile record objects. Each contains:
+
+  * profile_id [string] - Record identifier
+  * assigned_id [string] - Profile identifier if uploaded to the database 
+    (otherwise undefined)
+  * status [string] - Either 'pending', 'assigned', or 'rejected'
+  * designations [object] containing key/value pairs for each locus containing
+    the allele identifier
+    
+ **Isolate submissions**
+  
+* isolates [array] - List of isolate record objects. Each contains key/value
+  pairs for included fields.
+  
+.. index::
+   single: API resources; DELETE /db/{database}/submissions/{submission_id}
+   single: API resources; delete submission record
+  
+.. _del_db_submissions_submissions_submission_id: 
+
+DELETE /db/{database}/submissions/{submission_id} - Delete submission record
+============================================================================
+You must be the owner and the record must be closed.
+
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
+
+**Response:** message [string] - 'Submission deleted'
+
+.. _api_oauth:
 
 **************
 Authentication
