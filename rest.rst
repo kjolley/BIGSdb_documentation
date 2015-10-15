@@ -302,7 +302,7 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
 
-**Response:** FASTA format file of alleles sequences 
+**Response:** FASTA format file of allele sequences 
    
 .. _db_loci_locus_alleles_allele_id:
 
@@ -1054,7 +1054,7 @@ POST /db/{database}/submissions - create new submission
   required for Illumina)
 * coverage [string] - mean coverage of sequencing: either '<20x', '20-49x',
   '50-99x', '>100x', or any positive integer (only required for Illumina)
-* assembly [string] - assembly method: either 'de nono' or 'mapped'
+* assembly [string] - assembly method: either 'de novo' or 'mapped'
 * software [string] - name of assembly software
 * sequences [string] - either single sequence of multiple sequences in FASTA
   format
@@ -1256,7 +1256,7 @@ GET /db/{database}/submissions/{submission_id} - Retrieve submission record
   required for Illumina)
 * coverage [string] - mean coverage of sequencing: either '<20x', '20-49x',
   '50-99x', '>100x', or any positive integer (only required for Illumina)
-* assembly [string] - assembly method: either 'de nono' or 'mapped'
+* assembly [string] - assembly method: either 'de novo' or 'mapped'
 * software [string] - name of assembly software
 * seqs [array] - List of sequence objects each containing:
 
