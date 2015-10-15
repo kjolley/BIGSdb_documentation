@@ -89,14 +89,20 @@ Resources
   - Retrieve closed submissions
 * :ref:`GET /db/{database}/submissions/{submission_id}<get_db_submissions_submissions_submission_id>`
   - Retrieve submission record
-* :ref:`DELETE /db/{database}/submissions/{submission_id}<del_db_submissions_submissions_submission_id>`
+* :ref:`DELETE /db/{database}/submissions/{submission_id}<del_db_submissions_submission_id>`
   - Delete submission record
-* GET /db/{database}/submissions/{submission_id}/messages
-* POST /db/{database}/submissions/{submission_id}/messages
-* GET /db/{database}/submissions/{submission_id}/files
-* POST /db/{database}/submissions/{submission_id}/files
-* GET /db/{database}/submissions/{submission_id}/files/{filename}
-* DELETE /db/{database}/submissions/{submission_id}/files/{filename}
+* :ref:`GET /db/{database}/submissions/{submission_id}/messages<get_db_submissions_submission_id_messages>`
+  - Retrieve submission correspondence
+* :ref:`POST /db/{database}/submissions/{submission_id}/messages<post_db_submissions_submission_id_messages>`
+  - Add submission correspondence
+* :ref:`GET /db/{database}/submissions/{submission_id}/files<get_db_submissions_submission_id_files>`
+  - retrieve list of supporting files uploaded for submission
+* :ref:`POST /db/{database}/submissions/{submission_id}/files<post_db_submissions_submission_id_files>`
+  - Upload submission supporting file
+* :ref:`GET /db/{database}/submissions/{submission_id}/files/{filename}<get_db_submissions_submission_id_files_filename>`
+  - Download submission supporting file
+* :ref:`DELETE /db/{database}/submissions/{submission_id}/files/{filename}<delete_db_submissions_submission_id_files_filename>`
+  - Delete submission supoorting file
 
 .. _db:
 
@@ -1287,7 +1293,7 @@ GET /db/{database}/submissions/{submission_id} - Retrieve submission record
    single: API resources; DELETE /db/{database}/submissions/{submission_id}
    single: API resources; delete submission record
   
-.. _del_db_submissions_submissions_submission_id: 
+.. _del_db_submissions_submission_id: 
 
 DELETE /db/{database}/submissions/{submission_id} - Delete submission record
 ============================================================================
@@ -1302,7 +1308,128 @@ You must be the owner and the record must be closed.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
 
-**Response:** message [string] - 'Submission deleted'
+**Response:** message [string] - 'Submission deleted.'
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{submission_id}/messages
+   single: API resources; retrieve submission correspondence
+  
+.. _get_db_submissions_submission_id_messages: 
+
+GET /db/{database}/submissions/{submission_id}/messages - Retrieve submission correspondence
+============================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/messages
+
+**Response:** Array of correspondence objects in time order. Each contains:
+  
+* user [string] :ref:`URI to user details<db_users_user_id>` of user
+* timestamp [string]
+* message [string]
+
+.. index::
+   single: API resources; POST /db/{database}/submissions/{submission_id}/messages
+   single: API resources; add submission correspondence
+  
+.. _post_db_submissions_submission_id_messages: 
+
+POST /db/{database}/submissions/{submission_id}/messages - Add submission correspondence
+========================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Required additional parameter:**
+
+* message [string] - Message text
+
+**Optional parameters:** None
+
+**Response:** message [string] - 'Message added.'
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{submission_id}/files
+   single: API resources; retrieve list of supporting files uploaded for submission
+  
+.. _get_db_submissions_submission_id_files: 
+
+GET /db/{database}/submissions/{submission_id}/files - Retrieve list of supporting files uploaded for submission
+================================================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/files
+
+**Response:** Array of URIs to files
+
+.. index::
+   single: API resources; POST /db/{database}/submissions/{submission_id}/files
+   single: API resources; upload submission supporting file
+  
+.. _post_db_submissions_submission_id_files: 
+
+POST /db/{database}/submissions/{submission_id}/files - Upload submission supporting file 
+=========================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+
+**Required additional parameters:**
+
+* filename [string] - Name of file to store within submission
+* upload [base64 encoded data] - Raw file data
+
+**Optional parameters:** None
+
+**Response:** message [string] - 'File uploaded.'
+
+.. index::
+   single: API resources; GET /db/{database}/submissions/{submission_id}/files/{filename}
+   single: API resources; download submission supporting file
+  
+.. _get_db_submissions_submission_id_files_filename: 
+
+GET /db/{database}/submissions/{submission_id}/files/{filename} - Download submission supporting file
+=====================================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+* filename [string] - Name of file
+
+**Optional parameters:** None
+
+**Response:** File download
+
+.. index::
+   single: API resources; DELETE /db/{database}/submissions/{submission_id}/files/{filename}
+   single: API resources; delete submission supporting file
+  
+.. _delete_db_submissions_submission_id_files_filename: 
+
+DELETE /db/{database}/submissions/{submission_id}/files/{filename} - Delete submission supporting file
+======================================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* submission_id [string] - Submission id
+* filename [string] - Name of file
+
+**Optional parameters:** None
+
+**Response:** message [string] - 'File deleted.'
 
 .. _api_oauth:
 
