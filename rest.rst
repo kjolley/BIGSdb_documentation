@@ -102,7 +102,7 @@ Resources
 * :ref:`GET /db/{database}/submissions/{submission_id}/files/{filename}<get_db_submissions_submission_id_files_filename>`
   - Download submission supporting file
 * :ref:`DELETE /db/{database}/submissions/{submission_id}/files/{filename}<delete_db_submissions_submission_id_files_filename>`
-  - Delete submission supoorting file
+  - Delete submission supporting file
 
 .. _db:
 
