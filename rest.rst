@@ -77,16 +77,6 @@ Resources
   - Retrieve list of submissions
 * :ref:`POST /db/{database}/submissions <post_db_submissions>`
   - Create new submission
-* :ref:`GET /db/{database}/submissions/{type}<db_submissions_submissions_type>`
-  - Retrieve submissions of a specified type
-* :ref:`GET /db/{database}/submissions/{type}/pending<db_submissions_submissions_type_pending>`
-  - Retrieve pending submissions of a specified type
-* :ref:`GET /db/{database}/submissions/{type}/closed<db_submissions_submissions_type_closed>`
-  - Retrieve closed submissions of a specified type
-* :ref:`GET /db/{database}/submissions/pending<db_submissions_submissions_pending>`
-  - Retrieve pending submissions
-* :ref:`GET /db/{database}/submissions/closed<db_submissions_submissions_closed>`
-  - Retrieve closed submissions
 * :ref:`GET /db/{database}/submissions/{submission_id}<get_db_submissions_submissions_submission_id>`
   - Retrieve submission record
 * :ref:`DELETE /db/{database}/submissions/{submission_id}<del_db_submissions_submission_id>`
@@ -1010,7 +1000,13 @@ GET /db/{database}/submissions - retrieve list of submissions
 =============================================================
 **Required route parameter:** database [string] - Database configuration name
 
-**Optional parameters:** None
+**Optional parameters:** 
+
+* type [string] - either 'alleles', 'profiles' or 'isolates'
+* status [string] - either 'closed' or 'pending'
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging. 
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/submissions
 
@@ -1085,136 +1081,6 @@ POST /db/{database}/submissions - create new submission
 **Response:** Object containing: 
 
 * submission - :ref:`URI to submission record<get_db_submissions_submissions_submission_id>`
-
-.. _db_submissions_submissions_type:
-
-.. index::
-   single: API resources; GET /db/{database}/submissions/{type}
-   single: API resources; retrieve submissions of a specified type
-
-GET /db/{database}/submissions/{type} - Retrieve submissions of a specified type
-================================================================================
-Only submissions made by the logged in user will be returned.
-
-**Required route parameters:** 
-
-* database [string] - Database configuration name
-* type [string] - Either 'alleles', 'profiles', 'isolates'
-
-**Optional parameters:** None
-
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles
-
-**Response:** Object containing:
-
-* records [int] - Number of submissions of specified type
-* submissions [array] - List of 
-  :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>` 
-  of specified type
-* status [object] - containing:
-
-  * closed [string] - URI to closed submissions of specified type
-  * pending [string] - URI to pending submissions of specified type
-  
-.. _db_submissions_submissions_type_pending:  
-
-.. index::
-   single: API resources; GET /db/{database}/submissions/{type}/pending 
-   single: API resources; retrieve pending submissions of a specified type
-   
-GET /db/{database}/submissions/{type}/pending - Retrieve pending submissions of a specified type
-================================================================================================
-Only submissions made by the logged in user will be returned.
-
-**Required route parameters:** 
-
-* database [string] - Database configuration name
-* type [string] - Either 'alleles', 'profiles', 'isolates'
-
-**Optional parameters:** None
-
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles/pending
-
-**Response:** Object containing:
-
-* records [int] - Number of pending submissions of specified type
-* submissions [array] - List of 
-  :ref:`URIs to pending submission records<get_db_submissions_submissions_submission_id>` 
-  of specified type
-
-.. _db_submissions_submissions_type_closed:  
-
-.. index::
-   single: API resources; GET /db/{database}/submissions/{type}/closed 
-   single: API resources; retrieve closed submissions of a specified type
-   
-GET /db/{database}/submissions/{type}/closed - Retrieve closed submissions of a specified type
-==============================================================================================
-Only submissions made by the logged in user will be returned.
-
-**Required route parameters:** 
-
-* database [string] - Database configuration name
-* type [string] - Either 'alleles', 'profiles', 'isolates'
-
-**Optional parameters:** None
-
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/alleles/closed
-
-**Response:** Object containing:
-
-* records [int] - Number of closed submissions of specified type
-* submissions [array] - List of 
-  :ref:`URIs to closed submission records<get_db_submissions_submissions_submission_id>` 
-  of specified type
-
-.. _db_submissions_submissions_pending:  
-
-.. index::
-   single: API resources; GET /db/{database}/submissions/pending 
-   single: API resources; retrieve pending submissions
-   
-GET /db/{database}/submissions/pending - Retrieve pending submissions
-=====================================================================
-Only submissions made by the logged in user will be returned.
-
-**Required route parameter:** 
-
-* database [string] - Database configuration name
-
-**Optional parameters:** None
-
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/pending
-
-**Response:** Object containing:
-
-* records [int] - Number of pending submissions
-* submissions [array] - List of 
-  :ref:`URIs to pending submission records<get_db_submissions_submissions_submission_id>`
-
-.. _db_submissions_submissions_closed:  
-
-.. index::
-   single: API resources; GET /db/{database}/submissions/closed 
-   single: API resources; retrieve closed submissions
-   
-GET /db/{database}/submissions/closed - Retrieve closed submissions
-===================================================================
-Only submissions made by the logged in user will be returned.
-
-**Required route parameter:** 
-
-* database [string] - Database configuration name
-
-**Optional parameters:** None
-
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/closed
-
-**Response:** Object containing:
-
-* records [int] - Number of closed submissions
-* submissions [array] - List of 
-  :ref:`URIs to closed submission records<get_db_submissions_submissions_submission_id>`
 
 .. index::
    single: API resources; GET /db/{database}/submissions/{submission_id}
