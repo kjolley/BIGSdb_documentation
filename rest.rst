@@ -1014,16 +1014,13 @@ GET /db/{database}/submissions - retrieve list of submissions
 
 * records [int] - Number of submissions
 * submissions [array] - List of :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>`
-* status [object] - containing:
+* paging [object] - Some or all of the following:
 
-  * closed - URI to closed submissions
-  * pending - URI to pending submissions
-  
-* type [object] - containing one or more of:
-
-  * alleles - URI to allele sequence submissions
-  * profiles - URI to profile submissions
-  * isolates - URI to isolate submissions
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
   
 .. _post_db_submissions:  
 
