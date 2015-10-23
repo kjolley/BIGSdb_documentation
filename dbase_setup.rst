@@ -723,5 +723,8 @@ e.g. ::
 The script can be called as follows: ::
 
  getrefs.pl getrefs.conf
+ 
+ Run either as the 'postgres' user or an account that is allowed to connect as
+ the postgres user.
 
 This should be run periodically from a CRON job, e.g. every hour.
