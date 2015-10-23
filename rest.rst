@@ -1055,8 +1055,8 @@ POST /db/{database}/submissions - create new submission
   '50-99x', '>100x', or any positive integer (only required for Illumina)
 * assembly [string] - assembly method: either 'de novo' or 'mapped'
 * software [string] - name of assembly software
-* sequences [string] - either single sequence of multiple sequences in FASTA
-  format
+* sequences [string] - either single raw sequence or multiple sequences in 
+  FASTA format
      
  **Profile submissions**
   
