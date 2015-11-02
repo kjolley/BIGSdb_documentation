@@ -380,6 +380,43 @@ queries will be combined with terms entered in other sections.
 .. image:: /images/data_query/query_isolates7.png
 
 .. index::
+   pair: allele designations; count
+   
+Query by allele designation count
+=================================
+Queries can be combined with counts of the total number of designations or for
+individual loci.
+
+Make sure that the allele designation counts fieldset is displayed by selecting
+it in the 'Modify form options' tab.
+
+.. image:: /images/data_query/query_isolates14.png
+
+For example, to find all isolates that have designations at >1000 loci, select
+'total designations > 1000', then click 'Submit'.
+
+.. image:: /images/data_query/query_isolates15.png
+
+You can also search for isolates where any isolate has a particular number of
+designations. Use the term 'any locus' to do this.
+
+Finally, you can search for isolates with a specific number of designations at
+a specific locus.
+
+.. image:: /images/data_query/query_isolates16.png
+
+Additional search terms can be combined using the '+' button. Designation count
+queries will be combined with terms entered in other sections.
+
+.. note::
+
+   Searches for 'all loci' with counts that include zero, e.g. 'count of any 
+   locus = 0' or with a '<' operator are not supported. This is because such 
+   searches have to identify every isolate for which one or more loci are 
+   missing. In databases with thousands of loci this can be a very expensive 
+   database query.
+ 
+.. index::
    single: allele designations; status
 
 Query by allele designation status
@@ -402,6 +439,43 @@ Click 'Submit'.
 Provisional allele designations are marked within the results tables with a 
 pink background.  Any scheme field designations that depend on the allele in 
 question, e.g. a MLST ST, will also be marked as provisional.
+
+.. index::
+   pair: sequence tags; count
+   
+Query by sequence tag count
+===========================
+Queries can be combined with counts of the total number of tags or for
+individual loci.
+
+Make sure that the tagged sequence counts fieldset is displayed by selecting
+it in the 'Modify form options' tab.
+
+.. image:: /images/data_query/query_isolates17.png
+
+For example, to find all isolates that have sequence tags at >1000 loci, select
+'total tags > 1000', then click 'Submit'.
+
+.. image:: /images/data_query/query_isolates18.png
+
+You can also search for isolates where any isolate has a particular number of
+sequence tags. Use the term 'any locus' to do this.
+
+Finally, you can search for isolates with a specific number of tags at
+a specific locus.
+
+.. image:: /images/data_query/query_isolates19.png
+
+Additional search terms can be combined using the '+' button. Sequence tag 
+count queries will be combined with terms entered in other sections.
+
+.. note::
+
+   Searches for 'all loci' with counts that include zero, e.g. 'count of any 
+   locus = 0' or with a '<' operator are not supported. This is because such 
+   searches have to identify every isolate for which one or more loci are 
+   not tagged. In databases with thousands of loci this can be a very expensive
+   database query.
 
 .. index::
    pair: sequence tags; query
