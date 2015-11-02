@@ -354,7 +354,7 @@ sections.  Possible options are:
 
 .. image:: /images/data_query/query_isolates5.png
 
-If the interface is modified, a button to 'Save options' becomes available 
+If the interface is modified, a button to save options becomes available 
 within the tab.  If this is clicked, the modified form will be displayed the 
 next time you go to the query page.
 
