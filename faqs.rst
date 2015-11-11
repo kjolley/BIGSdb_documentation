@@ -33,6 +33,12 @@ General
  
   * web server: 16 cores, 64GB RAM
   * database server: 64 cores, 1TB RAM, 3TB RAID 10 local storage
+  
+2. **Why might icons be missing when using Internet Explorer?**
+
+ This can occur if you have Compatibility Mode enabled. BIGSdb generates valid
+ HTML5 and Compatibility Mode should not be used. Please ensure this is not
+ enabled in the Internet Explorer tools section.
 
 Installation
 ============
