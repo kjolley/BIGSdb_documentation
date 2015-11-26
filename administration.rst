@@ -61,7 +61,7 @@ Individual permissions can be set for each curator:
 
 * disable_access - if set to true, this user is completely barred from access.
 * modify_users - allowed to add or modify user records. They can change the
-  status of users, but can not revoke admin priveleges from an account. They
+  status of users, but can not revoke admin privileges from an account. They
   can also not raise the status of a user to admin level.
 * modify_usergroups - allowed to add or modify user groups and add users to
   these groups.
