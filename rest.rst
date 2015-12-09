@@ -13,11 +13,15 @@ via the API using :ref:`OAuth authentication<api_oauth>`.
 **************************************
 Passing additional/optional parameters
 **************************************
-Optional parameters can be passed as arguments to the query URL by adding a '?'
-followed by the first argument and its value (separated by a '=').  Additional
-parameters are separated by a '&', e.g.
+If you are using a method called with GET, optional parameters can be passed as 
+arguments to the query URL by adding a '?' followed by the first argument and 
+its value (separated by a '=').  Additional parameters are separated by a '&', 
+e.g.
 
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=100
+
+Methods called with POST require their arguments to be sent as JSON within the
+post body.
 
 *********
 Resources
