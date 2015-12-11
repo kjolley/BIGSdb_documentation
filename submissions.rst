@@ -346,6 +346,29 @@ submission page.
 
 .. image:: /images/submissions/submission34.png
 
+*****************
+Genome submission
+*****************
+Submitting genomes uses the same process as standard 
+:ref:`isolate submission<isolate_submissions>`. The only difference is that 
+there are a couple of extra required fields in the submission table:
+
+* assembly_filename - this is the name of the FASTA file containing the
+  assembly contigs. This must be uploaded as a supporting file - you will not
+  be able to finalize the submission until every isolate record has a matching
+  contig file.
+  
+* sequence_method - the sequencing technology used to generate the sequences. 
+  The allowed values are listed on the submission page.
+  
+To start the submission, click the 'genomes' link under submission type on the
+submission management page.
+
+.. image:: /images/submissions/submission36.png
+
+Then follow the steps for :ref:`isolate submission<isolate_submissions>`, 
+uploading the contigs files as supporting files.
+
 ************************************************
 Removing submissions from your notification list
 ************************************************
