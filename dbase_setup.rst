@@ -349,6 +349,11 @@ Top level element. Contains child elements: system, field and sample.::
     the bigsdb.conf file (for site-wide configuration) or within the system
     attribute of config.xml.
     
+* submissions_deleted_days
+
+  * Overrides the default number of days before closed submissions are deleted
+    from the system. Default: '90'. 
+    
 * tblastx_tagging 
 
   * Sets whether tagging can be performed using TBLASTX: either 'yes' or 'no',
@@ -630,6 +635,11 @@ Top level element. Contains child elements: system, field and sample.
   * The curate_script and query_script paths should also be set, either in
     the bigsdb.conf file (for site-wide configuration) or within the system
     attribute of config.xml.
+    
+* submissions_deleted_days
+
+  * Overrides the default number of days before closed submissions are deleted
+    from the system. Default: '90'. 
 
 * webroot	
 
