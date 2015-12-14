@@ -177,10 +177,11 @@ Top level element. Contains child elements: system, field and sample.::
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
     
-* default
+* daily_rest_submissions_limit
 
-  * Default value.  This will be entered automatically in the web form but can
-    be overridden.
+  * Overrides the limit on number of submissions that can be made to the 
+    database via the RESTful interface. This is useful to prevent flooding of
+    the submission system by aberrant scripts. Default: '100'. 
     
 * default_access  
 
@@ -414,6 +415,11 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
   * Comments about the field.  These will be displayed in the field description
     plugin and as tooltips within the curation interface.
+    
+* default
+
+  * Default value.  This will be entered automatically in the web form but can
+    be overridden.
   
 * dropdown  
 
@@ -546,6 +552,12 @@ Top level element. Contains child elements: system, field and sample.
   * This is only needed if automated submissions are enabled.  If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
+* daily_rest_submissions_limit
+
+  * Overrides the limit on number of submissions that can be made to the 
+    database via the RESTful interface. This is useful to prevent flooding of
+    the submission system by aberrant scripts. Default: '100'. 
     
 * diploid
 
