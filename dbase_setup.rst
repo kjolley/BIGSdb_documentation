@@ -158,12 +158,6 @@ Top level element. Contains child elements: system, field and sample.::
 
   * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
     
-* curate_only
-
-  * Set to 'yes' to hide field on an isolate information page in the standard
-    interface.  The field will be visible if the page is accessed via the 
-    curator's interface (version 1.10.0+).
-  
 * curate_path_includes 
 
   * Partial path of the bigscurate.pl script used to curate the database.
@@ -176,6 +170,14 @@ Top level element. Contains child elements: system, field and sample.::
   * This is only needed if automated submissions are enabled. If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
+* curators_only
+
+  * Set to 'yes' to prevent ordinary authenticated users having access to
+    database configuration. This is only effective if read_access is set to
+    'authenticated_users'. This may be useful if you have different 
+    configurations for curation and querying with some data hidden in the
+    configuration used by standard users. Default 'no'.
     
 * daily_rest_submissions_limit
 
@@ -421,6 +423,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * Comments about the field.  These will be displayed in the field description
     plugin and as tooltips within the curation interface.
     
+* curate_only
+
+  * Set to 'yes' to hide field on an isolate information page in the standard
+    interface.  The field will be visible if the page is accessed via the 
+    curator's interface (version 1.10.0+).
+    
 * default
 
   * Default value.  This will be entered automatically in the web form but can
@@ -557,6 +565,14 @@ Top level element. Contains child elements: system, field and sample.
   * This is only needed if automated submissions are enabled.  If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
+* curators_only
+
+  * Set to 'yes' to prevent ordinary authenticated users having access to
+    database configuration. This is only effective if read_access is set to
+    'authenticated_users'. This may be useful if you have different 
+    configurations for curation and querying with some data hidden in the
+    configuration used by standard users. Default 'no'.
     
 * daily_rest_submissions_limit
 
