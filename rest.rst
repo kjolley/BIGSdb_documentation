@@ -1043,6 +1043,7 @@ POST /db/{database}/submissions - create new submission
   * alleles (sequence definition databases only)
   * profiles (sequence definition databases only)
   * isolates (isolate databases only)
+  * genomes (isolate databases only)
    
  The following are required with the specified database type:
 
@@ -1072,6 +1073,17 @@ POST /db/{database}/submissions - create new submission
  
 * isolates [string] - tab-delimited isolate data - this should include a header
   line containing each field or locus included
+  
+ **Genome submissions**
+ 
+* isolates [string] - tab-delimited isolate data - this should include a header
+  line containing each field or locus included as well as for 
+  'assembly_filename' and 'sequence_method'. The 'sequence_method' should be
+  either '454', 'Illumina', 'Ion Torrent', 'PacBio', 'Oxford Nanopore', 
+  'Sanger', 'Solexa', 'SOLiD', or 'other'.  Following submission, contig files
+  should be uploaded with the same names as set for 'assembly_filename'. This
+  can be done using the 
+  :ref:`file upload route<post_db_submissions_submission_id_files>`.
    
 **Optional parameters:**
 
@@ -1082,6 +1094,15 @@ POST /db/{database}/submissions - create new submission
 **Response:** Object containing: 
 
 * submission - :ref:`URI to submission record<get_db_submissions_submissions_submission_id>`
+
+  For genome submissions, the response object will also contain:
+  
+* missing_files [array] - List of filenames that need to be 
+  uploaded to complete the submission. These filenames are defined in the 
+  'assembly_filename' field of the isolate record upload. The files should 
+  contain the contig assemblies.
+* message [string] - 'Please upload missing contig files to complete 
+  submission.'
 
 .. index::
    single: API resources; GET /db/{database}/submissions/{submission_id}
