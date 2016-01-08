@@ -266,9 +266,9 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only isolates added after specified date 
+* added_after [date] - Include only alleles added after specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only isolates last modified after specified 
+* updated_after [date] - Include only alleles last modified after specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
@@ -304,9 +304,9 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 
 **Optional parameters:** 
 
-* added_after [date] - Include only isolates added after specified date 
+* added_after [date] - Include only alleles added after specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only isolates last modified after specified 
+* updated_after [date] - Include only alleles last modified after specified 
   date (ISO 8601 format).
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
@@ -441,9 +441,9 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only isolates added after specified date 
+* added_after [date] - Include only profiles added after specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only isolates last modified after specified 
+* updated_after [date] - Include only profiles last modified after specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
@@ -478,9 +478,9 @@ GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles 
 
 **Optional parameters:** 
 
-* added_after [date] - Include only isolates added after specified date 
+* added_after [date] - Include only profiles added after specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only isolates last modified after specified 
+* updated_after [date] - Include only profiles last modified after specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
