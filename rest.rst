@@ -266,6 +266,10 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
@@ -298,7 +302,12 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 * database [string] - Database configuration name
 * locus [string] - Locus name
 
-**Optional parameters:** None
+**Optional parameters:** 
+
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
 
@@ -432,6 +441,10 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
@@ -463,7 +476,12 @@ GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles 
 * database [string] - Database configuration name
 * scheme_id [integer] - Scheme id
 
-**Optional parameters:** None
+**Optional parameters:** 
+
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
 
 **Example request URI:** 
 http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
@@ -518,6 +536,10 @@ GET /db/{database}/isolates - Retrieve list of isolate records
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
 
