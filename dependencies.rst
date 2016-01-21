@@ -44,6 +44,7 @@ These are included with most Linux distributions.
 * `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
 * `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
 * `Mail::Sender <http://search.cpan.org/~jenda/Mail-Sender/Sender.pm>`_ - [optional] - Used to send E-mail messages by submission system.
+* `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - [optional] - Used to validate E-mails sent by job manager.
 
 Optional packages
 =================
