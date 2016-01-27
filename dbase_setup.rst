@@ -32,7 +32,7 @@ databases.  These are SQL scripts found in the sql directory.
 To create a database, you will need to log in as the postgres user and use
 these templates.  For example to create a new sequence definition database
 called bigsdb_test_seqdef, navigate to the sql directory and log in as the
-postgres user, e.g.::
+postgres user, e.g. ::
 
  sudo su postgres
 
@@ -49,11 +49,11 @@ Create an isolate database the same way: ::
 The standard fields in the isolate table are limited to essential fields
 required by the system.  To add new fields, you need to log in to the database
 and alter this table.  For example, to add fields for country and year, first
-log in to the newly created isolate database as the postgres user:::
+log in to the newly created isolate database as the postgres user: ::
 
  psql bigsdb_test_isolates
 
-and alter the isolate table:::
+and alter the isolate table: ::
 
  ALTER TABLE isolates ADD country text;
  ALTER TABLE isolates ADD year int;
