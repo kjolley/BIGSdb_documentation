@@ -364,6 +364,12 @@ Top level element. Contains child elements: system, field and sample.::
 * user   
 
   * Username for access to isolates database, default 'apache'.
+  
+* user_job_quota 
+
+  * Integer with number of offline jobs that can be queued or currently running
+    for this database by any specific user - this parameter is only effective
+    if users have to log in.
       
 * use_temp_scheme_table 
 
@@ -656,6 +662,12 @@ Top level element. Contains child elements: system, field and sample.
 
   * Overrides the default number of days before closed submissions are deleted
     from the system. Default: '90'. 
+    
+* user_job_quota 
+
+  * Integer with number of offline jobs that can be queued or currently running
+    for this database by any specific user - this parameter is only effective 
+    if users have to log in.
 
 * webroot	
 
