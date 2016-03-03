@@ -55,19 +55,32 @@ A full list of options can be found by typing: ::
 
  OPTIONS
  -0, --missing
-    Marks missing loci as provisional allele 0. Sets default word size to 15.
+     Marks missing loci as provisional allele 0. Sets default word size to 15.
            
  -d, --database NAME
      Database configuration name.
+    
+ -e, --exemplar
+     Only use alleles with the 'exemplar' flag set in BLAST searches to identify
+     locus within genome. Specific allele is then identified using a database 
+     lookup. This may be quicker than using all alleles for the BLAST search, 
+     but will be at the expense of sensitivity. If no exemplar alleles are set 
+     for a locus then all alleles will be used. Sets default word size to 15.
+
+ -f --fast
+     Perform single BLAST query against all selected loci together. This will
+     take longer to return any results but the overall scan should finish 
+     quicker. This method will also use more memory - this can be used with
+     --exemplar to mitigate against this.
 
  -h, --help
      This help page.
 
  -i, --isolates LIST  
      Comma-separated list of isolate ids to scan (ignored if -p used).
-     
+    
  --isolate_list_file FILE  
-    File containing list of isolate ids (ignored if -i or -p used).
+     File containing list of isolate ids (ignored if -i or -p used).
            
  -I, --exclude_isolates LIST
      Comma-separated list of isolate ids to ignore.
@@ -83,24 +96,24 @@ A full list of options can be found by typing: ::
      much sequence.
            
  -n, --new_only
-     New (previously untagged) isolates only. Combine with --new_max_alleles
+     New (previously untagged) isolates only.  Combine with --new_max_alleles
      if required.
-     
+    
  --new_max_alleles ALLELES
      Set the maximum number of alleles that can be designated or sequences
      tagged before an isolate is not considered new when using the --new_only
-     option. 
+     option.    
 
  -o, --order
      Order so that isolates last tagged the longest time ago get scanned first
      (ignored if -r used).
-     
+    
  --only_already_tagged
-     Only check loci that already have a tag present (but no allele 
-     designation). This must be combined with the --already_tagged option or 
-     no loci will match. This option is used to perform a catch-up scan where 
-     a curator has previously tagged sequence regions prior to alleles being 
-     defined, without the need to scan all missing loci.
+     Only check loci that already have a tag present (but no allele designation).
+     This must be combined with the --already_tagged option or no loci will
+     match. This option is used to perform a catch-up scan where a curator has
+     previously tagged sequence regions prior to alleles being defined, without
+     the need to scan all missing loci.
            
  -p, --projects LIST
      Comma-separated list of project isolates to scan.
@@ -128,7 +141,7 @@ A full list of options can be found by typing: ::
 
  -T, --already_tagged
      Scan even when sequence tagged (no designation).
-     
+    
  -v, --view VIEW
      Isolate database view (overrides value set in config.xml).
 
@@ -140,6 +153,7 @@ A full list of options can be found by typing: ::
 
  -y, --max ID
      Maximum isolate id.
+
 
 .. _autodefiner:
 

@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'BIGSdb'
-copyright = u'2014-2015, Keith Jolley'
+copyright = u'2014-2016, Keith Jolley'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
