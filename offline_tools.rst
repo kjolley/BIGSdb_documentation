@@ -154,6 +154,65 @@ A full list of options can be found by typing: ::
  -y, --max ID
      Maximum isolate id.
 
+.. _defining_exemplars:
+
+.. index::
+   pair: exemplar alleles; defining
+
+*************************
+Defining exemplar alleles
+*************************
+Exemplar alleles are a subset of the total number of alleles defined for a
+locus that encompass the known diversity within a specified identity threshold.
+They can be used to speed up :ref:`autotagging<autotagger>` as the BLAST 
+queries are performed against exemplars to identify the locus region in the 
+genome followed by a direct database lookup of the sequence found to identify 
+the exact allele found. This is usually combined with the autotagger --fast 
+option.
+
+There is a script called 'find_exemplars.pl' in the BIGSdb scripts/maintenance
+directory. 
+
+A full list of options can be found by typing: ::
+
+ find_exemplars.pl --help
+ 
+ NAME
+     find_exemplars.pl - Identify and mark exemplar alleles for use
+     by tagging functions
+
+ SYNOPSIS
+     find_exemplars.pl --database NAME   [options]
+
+ OPTIONS
+
+ --database NAME
+     Database configuration name.
+    
+ --datatype DNA|peptide
+     Only define exemplars for specified data type (DNA or peptide)    
+   
+ --exclude_loci LIST
+     Comma-separated list of loci to exclude
+    
+ --help
+     This help page.
+    
+ --loci LIST
+     Comma-separated list of loci to scan (ignored if -s used).
+  
+ --locus_regex REGEX
+     Regex for locus names.
+    
+ --schemes LIST
+     Comma-separated list of scheme loci to scan.
+    
+ --update
+     Update exemplar flags in database.
+    
+ --variation IDENTITY
+     Value for percentage identity variation that exemplar alleles
+     cover (smaller value will result in more exemplars). Default: 10. 
 
 .. _autodefiner:
 
