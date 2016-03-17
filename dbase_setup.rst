@@ -209,7 +209,12 @@ Top level element. Contains child elements: system, field and sample.::
 * default_seqdef_script 
 
   * Isolate databases only: URL of BIGSdb script running the seqdef database
-    (default: '/cgi-bin/bigsdb/bigsdb.pl'). 
+    (default: '/cgi-bin/bigsdb/bigsdb.pl').
+    
+* export_limit
+
+  * Overrides the default allowed number of data points (isolates x columns) to
+    export. Default: '25000000'. 
   
 * fieldgroup1 - fieldgroup10  
 
