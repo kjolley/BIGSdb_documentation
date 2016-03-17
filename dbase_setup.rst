@@ -749,6 +749,8 @@ be added by the admin user from the curation interface accessible from
 http://your_website/cgi-bin/private/bigscurate.pl?db=test_db (or wherever you
 have located your bigscurate.pl script).
 
+.. _updating_citations:
+
 *************************
 Updating PubMed citations
 *************************
