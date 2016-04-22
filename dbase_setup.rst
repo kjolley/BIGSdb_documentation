@@ -376,20 +376,6 @@ Top level element. Contains child elements: system, field and sample.::
     for this database by any specific user - this parameter is only effective
     if users have to log in.
       
-* use_temp_scheme_table 
-
-  * Sets whether entire schemes are imported in to the isolate database in to
-    an indexed table rather than querying the seqdef scheme view for isolate
-    results tables. Under some circumstances this can be considerably quicker
-    than querying the seqdef scheme view (a few ms compared to >10s if the
-    seqdef database contains multiple schemes with an uneven distribution of
-    a large number of profiles so that the Postgres query planner picks a
-    sequential rather than index scan). This scheme table can also be generated
-    periodically using the update_scheme_cache.pl script to create a persistent
-    cache. This is particularly useful for large schemes (>10000 profiles) but
-    data will only be as fresh as the cache so ensure that the update script
-    is run periodically.   
-
 * view
 
   * Database view containing isolate data, default 'isolates'.

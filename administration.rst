@@ -381,51 +381,6 @@ place, you will see a warning message in bigsdb.log suggesting that the caches
 be set up.  Unless you see this warning regularly, you probably don't need to 
 do this.
 
-.. index::
-   single: performance; materialized views
-   single: materialized views
-
-Use materialized views for scheme definitions
-=============================================
-Because of the way BIGSdb allows any number of profile schemes to be set up, 
-the data are stored in a normalised manner in multiple tables. A database 
-view, e.g. scheme_1, is created that joins these tables so that they can be 
-queried as you would a single table. A view, however, is only a pre-selected 
-query rather than a physical table and you can not index columns on it to 
-optimise query performance.
-
-A materialized view is a real table that is created from the view and refreshed
-every time the data in the underlying view changes. Because it is a real table,
-the database doesn't need to perform these joins every time it is queried and
-indexes can be set up on it, both of which greatly speeds up querying.
-
-To use materialized views within a seqdef database set the following attribute
-in the system tag of the XML description file: ::
-
- materialized_views="yes"
-
-You will then need to run the 'configuration repair' function at the bottom of
-the administrator's main curation page for each scheme. This rebuilds the view
-and creates a materialized view called mv_scheme_X. This materialized view is
-updated automatically whenever profile data are added or altered via the web
-interface.
-
-If you want an isolate database to benefit from this materialized view, make
-sure you put 'mv_scheme_X' (where X is the scheme id) in the dbase_table field
-(rather than 'scheme_X') when setting up the scheme in the isolate database
-configuration.
-
-Please note that if you make changes to your profile data by means other than
-the web interface then the materialized view will not be updated. You can
-update it by running the following SQL command: ::
-
- SELECT refresh_matview('mv_scheme_X');
-
-The materialized view is used, for example, for looking up a ST from a profile
-and vice-versa. Significant speed improvements will only be realised if you
-have lots of profiles (>5000) and you are doing lots of lookups, e.g.
-displaying more than the default 25 records per page.
-
 Use a ramdisk for the secure temporary directory
 ================================================
 If you are running BIGSdb on a large server with lots of RAM, you could use
@@ -1611,7 +1566,7 @@ database is called seqdef_db):
 2. Create scheme 'MLST' with:
   
   * dbase_name: seqdef_db
-  * dbase_table: scheme_1 (or whatever the id of your seqdef scheme is)
+  * dbase_table: mv_scheme_1 (or whatever the id of your seqdef scheme is)
 
 3. Add scheme_field ST as before
 4. Add loci as scheme_members
