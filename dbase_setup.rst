@@ -596,10 +596,6 @@ Top level element. Contains child elements: system, field and sample.
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
-* materialized_views
-
-  * Enable materialized views: either 'yes' or 'no', default 'no'.   
-  
 * profile_submissions
 
   * Enable profile submissions (automated submission system): either 'yes' 
