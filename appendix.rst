@@ -79,6 +79,10 @@ Sequences tagged in the sequence bin can have features indicated by specific fla
 * no start codon
 
   * No apparent start codon in immediate vicinity of usual start.
+  
+* no stop codon
+
+  * No stop codon in immediate vicinity of usual stop.
 
 * phase variable: off
 
@@ -122,6 +126,10 @@ Sequences can be flagged with specific attributes - these are searchable when do
 * no start codon
 
   * No apparent start codon in immediate vicinity of usual start.
+  
+* no stop codon
+
+  * No stop codon in immediate vicinity of usual stop.
 
 * phase variable: off
 
