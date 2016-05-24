@@ -353,7 +353,7 @@ To do this use the update_scheme_caches.pl script found in the
 scripts/maintenance directory, e.g. to cache all schemes in the 
 pubmlst_bigsdb_neisseria_isolates database ::
 
- update_scheme_caches.pl -d pubmlst_bigsdb_neisseria_isolates
+ update_scheme_caches.pl --database pubmlst_bigsdb_neisseria_isolates
 
 This script creates indexed tables within the isolate database called 
 temp_scheme_X and temp_isolates_scheme_fields_1 (where X is the scheme_id). 
@@ -364,6 +364,42 @@ and determining scheme field values for all isolates. This may sound like it
 would be slow but caching only has a noticeable effect once you have >5000 
 profiles.
 
+You are able to update the cache for a single scheme, or a list of schemes, 
+and choose the method of update. For large schemes, such as cgMLST, a full 
+refresh may take a long time, so you may wish to only perform this infrequently
+(perhaps once a week) with more regular 'daily' or 'daily_replace' updates.
+A full list of options available are shown by typing ::
+
+   update_scheme_caches.pl --help
+   
+   NAME
+       update_scheme_caches.pl - Update scheme field caches
+   
+   SYNOPSIS
+       update_scheme_caches.pl --database NAME [options]
+   
+   OPTIONS
+   
+   --database NAME
+       Database configuration name.
+       
+   --help
+       This help page.
+       
+   --method METHOD
+       Update method - the following values are allowed:
+       full: Completely recreate caches
+       incremental: Only add values for records not in cache.
+       daily: Only add values for records not in cache updated today.
+       daily_replace: Refresh values only for records updated today.
+          
+   --quiet
+       Don't output progress messages.
+       
+   --schemes SCHEMES
+       Comma-separated list of scheme ids to use.
+       If left empty, all schemes will be updated.
+
 Note that you will need to run this script periodically as a CRON job to 
 refresh the cache.  Admins can also refresh the caches manually from a link on
 the curators' page. This link is only present if the caches have been 
@@ -372,9 +408,10 @@ previously generated.
 .. image:: /images/administration/refresh_caches.png
 
 You can also set cache_schemes="yes" in the system tag of config.xml to enable
-automatic refreshing of the caches when batch adding new isolates (you should
-still periodically run the update_scheme_caches.pl script via CRON to ensure
-any changes in the sequence definition database are picked up).
+automatic refreshing of the caches (using the 'daily' method) when batch adding
+new isolates (you should still periodically run the update_scheme_caches.pl 
+script via CRON to ensure any changes in the sequence definition database are 
+picked up).
 
 If queries are taking longer than 5 seconds to perform and a cache is not in 
 place, you will see a warning message in bigsdb.log suggesting that the caches 
