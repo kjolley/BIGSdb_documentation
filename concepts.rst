@@ -116,7 +116,6 @@ threshold of pairwise allelic mismatches. Currently, single-linkage clustering
 is supported whereby each member of a group must have no more than the 
 specified number of allelic differences with at least one other member of the
 group.
- 
 
 .. index::
    single: sequence tags

@@ -1609,6 +1609,208 @@ database is called seqdef_db):
 4. Add loci as scheme_members
 
 .. index::
+   pair: scheme profiles; automated assignment
+
+***************************************
+Automated assignment of scheme profiles
+***************************************
+It is not practical to define cgMLST profiles via the web interface. A script
+is provided in the scripts/automation directory of the BIGSdb package called
+define_profiles.pl that can be used to scan an isolate database and 
+automatically define cgMLST profiles in the corresponding sequence definition
+database.
+
+The script is run as follows: ::
+
+ define_profiles.pl --database <name> --scheme <scheme_id>
+ 
+A full list of options can be found by typing: ::
+
+   define_profiles.pl --help          
+   NAME
+       define_profiles.pl - Define scheme profiles found in isolate database
+       
+   SYNOPSIS
+       define_profiles.pl --database NAME --scheme SCHEME_ID [options]
+   
+   OPTIONS
+   
+   --cache
+       Update scheme field cache in isolate database.
+   
+   --database NAME
+       Database configuration name.
+       
+   --help
+       This help page.
+       
+   --exclude_isolates LIST
+       Comma-separated list of isolate ids to ignore.
+       
+   --exclude_projects LIST
+       Comma-separated list of projects whose isolates will be excluded.
+       
+   --ignore_multiple_hits
+       Set allele designation to 'N' if there are multiple designations set for
+       a locus. The default is to use the lowest allele value in the profile
+       definition.
+    
+   --isolates LIST
+       Comma-separated list of isolate ids to scan (ignored if -p used).
+       
+   --isolate_list_file FILE  
+       File containing list of isolate ids (ignored if -i or -p used).
+                
+   --max ID
+       Maximum isolate id.
+       
+   --min ID
+       Minimum isolate id.
+       
+   --min_size SIZE
+       Minimum size of seqbin (bp) - limit search to isolates with at least this
+       much sequence.
+       
+   --missing NUMBER
+       Set the number of loci that are allowed to be missing in the profile. If
+       the remote scheme does not allow missing loci then this number will be set
+       to 0.  Default=0.
+       
+   --projects LIST
+       Comma-separated list of project isolates to scan.
+    
+   --scheme SCHEME_ID
+       Scheme id number.
+   
+.. index::
+   pair: classification groups; adding
+   
+*************************************************************
+Scheme profile clustering - setting up classification schemes
+*************************************************************
+Classification groups are a way to cluster scheme profiles using a specified
+threshold of pairwise allelic mismatches. Any number of different 
+classification schemes can sit on top of a standard scheme (such as cgMLST), 
+allowing different similarity thresholds to be pre-determined. Currently, 
+single-linkage clustering is supported whereby each member of a group must 
+have no more than the specified number of allelic differences with at least 
+one other member of the group. 
+
+Defining classification scheme in sequence definition database
+==============================================================
+Once a scheme has been defined, add a classification scheme by clicking the 
+add classification schemes (+) link on the curator's interface contents page.
+
+.. image:: /images/administration/classification_schemes.png
+
+Select the underlying scheme and enter a name for the classification scheme,
+the number of mismatches allowed in order to include a scheme profile in a 
+group, and a description. An example name for such a scheme could be 
+'Nm_cgc_25' indicating that this is a classification scheme for 
+*Neisseria meningitidis* core genome cluster with a threshold of 25 mismatches.
+
+You can additionally choose whether a relative threshold is used to calculate
+the number of mismatches to account for missing loci in pairwise comparisons. 
+In this case, in order to be grouped, the number of matching alleles must 
+exceed: ::
+
+ (number of common loci x (total loci - defined threshold)) / total loci
+ 
+rather than ::
+
+ total loci - defined threshold
+ 
+when an absolute threshold is used.
+
+As this threshold has to be calculated for each pairwise comparison, clustering
+using relative thresholds is slower than using an absolute value, and probably
+makes little real world difference.
+
+The status can be 'experimental' or 'stable'. The status of a scheme will be
+shown in the web interface to indicate that any groupings are subject to change
+and do not form part of the stable nomenclature.  
+
+Press 'Submit' to create the classification scheme.
+
+.. image:: /images/administration/classification_schemes2.png
+
+Defining classification scheme in isolate database
+==================================================
+Duplicate the scheme definition from the sequence definition database. Click
+the add classification schemes (+) link on the curator's interface contents 
+page.
+
+.. image:: /images/administration/classification_schemes3.png
+
+Enter the same details used in the sequence definition database. If a different
+id number is used in the isolate and sequence definition databases, you can
+set the seqdef id in the seqdef_cscheme_id field (the default is to use the 
+same id).
+
+You can also define a display order - this is an integer field on which the 
+ordering of classification schemes is sorted when displayed in the isolate 
+information page.
+
+.. image:: /images/administration/classification_schemes4.png
+
+It is a good idea to :ref:`check the configuration<config_check>`.
+
+.. index::
+   pair: core genome; clustering
+
+Clustering
+==========
+Clustering is performed using the cluster.pl script found in the 
+scripts/automation directory of the BIGSdb package. It should be run by the
+bigsdb user account (or any account with access to the databases).
+
+Currently only single-linkage clustering is supported.
+
+The script is run as follows from the command line: ::
+
+ cluster.pl --database <database configuration> --cscheme <classification scheme id>
+ 
+A full list of options can be found by typing: ::
+
+   cluster.pl --help
+   NAME
+       cluster.pl - Cluster cgMLST profiles using classification groups.
+       
+   SYNOPSIS
+       cluster.pl --database NAME --cscheme_id SCHEME_ID [options]
+   
+   OPTIONS
+   
+   --cscheme CLASSIFICATION_SCHEME_ID
+       Classification scheme id number.
+   
+   --database NAME
+       Database configuration name.
+       
+   --help
+       This help page.
+       
+   --reset
+       Remove all groups and profiles currently defined for classification group.
+       
+.. note:: 
+
+   Note that for classification schemes to be accessible within the isolate 
+   database, :ref:`scheme cache tables<scheme_caching>` must be generated and kept
+   up-to-date.
+   
+Where an isolate has been clustered in to a group with other isolates, this
+information is available in the 
+:ref:`isolate information page<isolate_records>`.
+
+.. image:: /images/administration/classification_schemes5.png
+
+Clicking the hyperlinks will take you to a table containing matching isolates,
+from where standard analyses can be performed.
+
+.. image:: /images/administration/classification_schemes6.png
+
+.. index::
    pair: locus; adding
 
 *****************************************************
@@ -2013,6 +2215,8 @@ This new attribute will then be available when
 
 .. index::
    single: configuration settings; validation
+   
+.. _config_check:  
 
 *************************************************
 Checking external database configuration settings
