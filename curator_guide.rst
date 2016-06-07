@@ -88,6 +88,11 @@ The status can either be:
 
   * If none of the above match, then the sequence should be entered as 
     unchecked.
+    
+You can also choose whether to designate the sequence as a type allele or not.
+Type alleles can be used to constrain the sequence search space when defining
+new alleles using the :ref:`web-based scanner<tag_scanning>` or 
+:ref:`offline auto allele definer<autodefiner>`.
 
 .. image:: /images/curation/add_alleles2.png 
 
@@ -126,7 +131,21 @@ Download a template Excel file from the following page.
 
 Fill in the spreadsheet.  If the locus uses integer allele identifiers, the 
 allele_id can be left blank and the next available number will be used 
-automatically.   Paste the entire sheet in to the web form and select the 
+automatically.   
+
+The status can be either: 'Sanger trace checked', 
+'WGS: manual extract (BIGSdb)', 'WGS: automated extract (BIGSdb)', 
+'WGS: visually checked', 'WGS: automatically checked' or 'unchecked'. See 
+full explanations for these in the 
+:ref:`single allele upload<single_allele_upload>` section.
+
+The 'type_allele' field is boolean (true/false) and specifies if the sequence
+should be considered as a type allele. These can be used to constrain the 
+sequence search space when defining new alleles using the 
+:ref:`web-based scanner<tag_scanning>` or 
+:ref:`offline auto allele definer<autodefiner>`.
+
+Paste the entire sheet in to the web form and select the 
 sender from the dropdown box.
 
 Additionally, there are a number of options available.  Some of these will 
@@ -750,6 +769,12 @@ in these cases, select either or both the following:
 
 * Rescan even if allele designations are already set
 * Rescan even if allele sequences are tagged
+
+You can select to only use type alleles to identify the locus. This will
+constrain the search space so that allele definitions don't become more 
+variable over time. If a partial match is found to a type allele then a full 
+database lookup will be performed to identify any known alleles. An allele can
+be given a status of type allele when :ref:`defining<single_allele_upload>`.
 
 Options can be returned to their default setting by clicking the 'Defaults' 
 button.

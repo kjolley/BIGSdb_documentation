@@ -333,6 +333,14 @@ A full list of options can be found by typing: ::
 
  --threads THREADS
      Maximum number of threads to use.
+     
+ --type_alleles
+     Only use alleles with the 'type_allele' flag set to identify locus.
+     If a partial match is found then a full database lookup will be performed
+     to identify any known alleles. Using this option will constrain the search
+     space so that allele definitions don't become more variable over time. Note
+     that you must have at least one allele defined as a type allele for a locus
+     if you use this option otherwise you will not find any matches!
 
  -T, --already_tagged
      Scan even when sequence tagged (no designation).
@@ -369,7 +377,7 @@ not use 'kill -9' as this will terminate the processes immediately and not
 allow them to clean up.
 
 If these scripts are running using multiple threads, then you need to cleanly 
-kill each of these.  The simplest way to terminate all autotagger jobs is to, 
+kill each of these.  The simplest way to terminate all autotagger jobs is to 
 type ::
 
  pkill autotag
