@@ -179,6 +179,11 @@ Top level element. Contains child elements: system, field and sample.::
     configurations for curation and querying with some data hidden in the
     configuration used by standard users. Default 'no'.
     
+* daily_pending_submissions
+
+  * Overrides the daily limit on pending submissions that a user can submit
+    via the web submission system. Default: '15'.
+
 * daily_rest_submissions_limit
 
   * Overrides the limit on number of submissions that can be made to the 
@@ -365,6 +370,11 @@ Top level element. Contains child elements: system, field and sample.::
 
   * Sets whether tagging can be performed using TBLASTX: either 'yes' or 'no',
     default 'no'.
+    
+* total_pending_submissions
+
+  * Overrides the total limit on pending submissions that a user can submit
+    via the web submission system. Default: '20'.
     
 * user   
 
@@ -571,6 +581,11 @@ Top level element. Contains child elements: system, field and sample.
     configurations for curation and querying with some data hidden in the
     configuration used by standard users. Default 'no'.
     
+* daily_pending_submissions
+
+  * Overrides the daily limit on pending submissions that a user can submit
+    via the web submission system. Default: '15'.
+    
 * daily_rest_submissions_limit
 
   * Overrides the limit on number of submissions that can be made to the 
@@ -649,6 +664,11 @@ Top level element. Contains child elements: system, field and sample.
 
   * Overrides the default number of days before closed submissions are deleted
     from the system. Default: '90'. 
+    
+* total_pending_submissions
+
+  * Overrides the total limit on pending submissions that a user can submit
+    via the web submission system. Default: '20'.
     
 * user_job_quota 
 
