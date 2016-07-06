@@ -2227,7 +2227,9 @@ Click the 'Configuration check' link on the curator's index page.
 
 The software will check that required helper applications are installed and
 executable and, in isolate databases, test every locus and scheme external
-database to check for connectivity and that data can be retrieved.
+database to check for connectivity and that data can be retrieved. By default,
+only loci which have an issue will be displayed but you can click the 'show
+all loci' link to display them all.
 
 .. image:: /images/administration/config_check2.png
 
