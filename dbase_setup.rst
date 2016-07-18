@@ -163,6 +163,11 @@ Top level element. Contains child elements: system, field and sample.::
   * URL of curator's index page, which can be relative or absolute. This will
     be used to add a link in the dropdown menu.
     
+* curate_link
+
+  * URL to curator's interface, which can be relative or absolute. This will 
+    be used to create a link in the public interface dropdown menu.
+    
 * curate_path_includes 
 
   * Partial path of the bigscurate.pl script used to curate the database.
