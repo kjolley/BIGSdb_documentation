@@ -141,7 +141,15 @@ Site-specific configuration
 Site-specific configuration files are located in /etc/bigsdb by default.
 
 * :download:`bigsdb.conf <conf/bigsdb.conf>` - main configuration file
-* :download:`logging.conf <conf/logging.conf>` - error logging settings. See log4perl project website for advanced configuration details.
+* :download:`logging.conf <conf/logging.conf>` - error logging settings. 
+  See log4perl project website for advanced configuration details.
+
+The dropdown menu can be customized by modifying the menu_header.html file 
+located in /etc/bigsdb. Any HTML in this file will be inserted at the top of
+the menu. The included file displays the BIGSdb logo hyperlinked
+to the root of the web site. This file can be edited as you wish, or 
+alternatively menu_header.html can be placed in the root directory of the
+web site - this will be used in preference to the version in /etc/bigsdb.
 
 **********************************
 Setting up the offline job manager

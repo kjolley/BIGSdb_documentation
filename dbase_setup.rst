@@ -157,6 +157,11 @@ Top level element. Contains child elements: system, field and sample.::
 * contig_analysis_limit
 
   * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
+  
+* curator_home
+
+  * URL of curator's index page, which can be relative or absolute. This will
+    be used to add a link in the dropdown menu.
     
 * curate_path_includes 
 
@@ -397,8 +402,8 @@ Top level element. Contains child elements: system, field and sample.::
  
 * webroot	
 
-  * URL of web root, which can be relative or absolute. The bigsdb.css
-    stylesheet file should be located in this directory. Default '/'.
+  * URL of web root, which can be relative or absolute. This is used to provide
+    a hyperlinked item in the dropdown menu. Default '/'.
 
 .. _isolate_xml_field:
 
@@ -560,6 +565,11 @@ Top level element. Contains child elements: system, field and sample.
 
   * Enable flags to be set for alleles: either 'yes' or 'no', default 'no'.
   
+* curator_home
+
+  * URL of curator's index page, which can be relative or absolute. This will
+    be used to add a link in the dropdown menu.
+  
 * curate_path_includes  
 
   * Partial path of the bigscurate.pl script used to curate the database. See
@@ -678,8 +688,8 @@ Top level element. Contains child elements: system, field and sample.
 
 * webroot	
 
-  * URL of web root, which can be relative or absolute. The bigsdb.css
-    stylesheet file should be located in this directory. Default '/'.	
+  * URL of web root, which can be relative or absolute. This is used to provide
+    a hyperlinked item in the dropdown menu. Default '/'.	
   
 .. _user_authentication:
 
