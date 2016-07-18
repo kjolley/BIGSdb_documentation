@@ -324,7 +324,15 @@ Top level element. Contains child elements: system, field and sample.::
 
   * Describes who can view data: either 'public' for everybody or 
     'authenticated_users' for anybody who has been able to log in. 
-    Default 'public'.   
+    Default 'public'.  
+    
+* related_databases
+
+  * Semi-colon separated list of links to related BIGSdb databases on the
+    system. This should be in the form of database configuration name followed
+    by a '|' and the description, e.g. 
+    'pubmlst_neisseria_seqdef|Sequence and profile definitions'.
+    This is used to populate the dropdown menu.
 
 * script_path_includes  
 
@@ -642,6 +650,14 @@ Top level element. Contains child elements: system, field and sample.
   * Describes who can view data: either 'public' for everybody, or
     'authenticated_users' for anybody who has been able to log in. Default
     'public'.   
+    
+* related_databases
+
+  * Semi-colon separated list of links to related BIGSdb databases on the
+    system. This should be in the form of database configuration name followed
+    by a '|' and the description, e.g. 
+    'pubmlst_neisseria_isolates|Isolates'.
+    This is used to populate the dropdown menu.
  
 * script_path_includes  
 
