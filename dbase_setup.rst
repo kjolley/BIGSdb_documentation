@@ -87,6 +87,9 @@ database):
   interface pages.
 * curate_footer.html - HTML markup that is inserted at the bottom of all
   curator's interface pages.
+  
+The header files can alternatively be placed in the root directory of the web
+site for site-wide use.
 
 .. _xml:
 
