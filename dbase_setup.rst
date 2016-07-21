@@ -87,9 +87,17 @@ database):
   interface pages.
 * curate_footer.html - HTML markup that is inserted at the bottom of all
   curator's interface pages.
+* profile_submit.html - HTML markup for text that is inserted in to the 
+  submission interface prior to profile submission finalization. This can be 
+  used to add specific instructions such as the requirement to make an isolate
+  submission.
+* allele_submit.html - HTML markup for text that is inserted in to the
+  submission interface prior to allele submission finalization. This can be
+  used to add specific instructions such as the requirement to attach Sanger
+  trace files.
   
-The header files can alternatively be placed in the root directory of the web
-site for site-wide use.
+The header and footer files can alternatively be placed in the root directory 
+of the web site for site-wide use.
 
 .. _xml:
 
