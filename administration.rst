@@ -1247,11 +1247,9 @@ exclamation mark (!) next to them:
 
   * Allowed: any text (no spaces).
 
-* dbase_table - Table in the sequence definition database that contains 
-  profiles for this scheme. If the definition database uses BIGSdb this will 
-  be 'scheme_X' where X is the scheme id number in the seqdef database.
+* dbase_id - Id of scheme in the sequence definition database. 
 
-  * Allowed: any text (no spaces).
+  * Allowed: any integer.
 
 * display_order - Integer reflecting the display position for this scheme 
   within the interface (optional).
@@ -1603,7 +1601,7 @@ database is called seqdef_db):
 2. Create scheme 'MLST' with:
   
   * dbase_name: seqdef_db
-  * dbase_table: mv_scheme_1 (or whatever the id of your seqdef scheme is)
+  * dbase_id: 1 (or whatever the id of your seqdef scheme is)
 
 3. Add scheme_field ST as before
 4. Add loci as scheme_members
