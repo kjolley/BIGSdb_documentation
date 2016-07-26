@@ -773,12 +773,6 @@ exclamation mark (!) next to them:
 
   * Allowed: true/false.
 
-* flag_table - Set to true to specify that the sequence definition database 
-  contains an allele flag table (which is the case for BIGSdb version 1.4 
-  onwards).
-
-  * Allowed: true/false.
-
 * isolate_display - Sets how alleles for this locus are displayed in a 
   detailed isolate record - this can be overridden by user preference.
 
@@ -892,32 +886,8 @@ exclamation mark (!) next to them:
 
   * Allowed: any text (no spaces).
 
-* dbase_table - Table in the sequence definition database that contains allele 
-  sequences for this locus. If the definition database uses BIGSdb this will 
-  be 'sequences'.
-
-  * Allowed: any text (no spaces).
-
-* dbase_id_field - Primary field in sequence database that defines allele. If 
-  the definition database uses BIGSdb this will be 'allele_id'.
-
-  * Allowed: any text (no spaces).
-
-* dbase_id2_field - Secondary field in sequence database that defines alleles. 
-  If dbase_id_field uniquely defines alleles for this locus then this should be
-  left blank. If the definition database uses BIGSdb this will be 'locus'.
-
-  * Allowed: any text (no spaces).
-
-* dbase_id2_value - Secondary field value in sequence database that defines 
-  alleles. If dbase_id_field uniquely defines alleles for this locus then this 
-  should be left blank. If the definition database uses BIGSdb this will be 
-  the name of the locus used in the id field
-
-  * Allowed: any text (no spaces).
-
-* dbase_seq_field - Field in sequence database containing allele sequence. If 
-  the definition database uses BIGSdb this will be 'sequence'.
+* dbase_id - Name of locus in seqdef database. This is usually the same as the
+  id field.
 
   * Allowed: any text (no spaces).
 
