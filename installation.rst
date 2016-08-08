@@ -32,13 +32,12 @@ directives.
 3. Copy the contents of the lib directory to /usr/local/lib/BIGSdb/. Make sure
    you include the Plugins and Offline directories which are subdirectories of
    the main lib directory.
-4. Copy the contents of the javascript directory to a javascript directory 
-   within the web root tree, i.e. accessible from 
-   http://your_website/javascript/.
-5. Copy the contents of the css directory to a css directory within the web
-   root tree, i.e. accessible from http://your_website/css/.
-6. Copy the contents of the fonts directory to a fonts directory within the web
-   root tree, i.e. accessible from http://your_website/fonts/.  
+4. Copy the javascript directory to the root directory of your website, i.e. 
+   accessible from http://your_website/javascript/.
+5. Copy the css directory to root directory of your website, i.e. accessible 
+   from http://your_website/css/.
+6. Copy the fonts directory to the root directory of your website, i.e. 
+   accessible from http://your_website/fonts/.  
 7. Copy the images directory to the root directory of your website, i.e. 
    accessible from http://your_website/images/.
 8. Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of
