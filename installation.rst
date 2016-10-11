@@ -367,7 +367,7 @@ applications to access the data within the databases.  The script that runs
 this is called bigsrest.pl.  This is a Dancer2 application that can be run 
 using a wide range of options, e.g. as a stand-alone script, using Perl 
 webservers with plackup, or from apache.  Full documentation for 
-`deploying Dancer2 applications <https://metacpan.org/pod/Dancer::Deployment>`_
+`deploying Dancer2 applications <http://search.cpan.org/~xsawyerx/Dancer2-0.200002/lib/Dancer2/Manual/Deployment.pod>`_
 can be found online.
 
 The script requires a new database that describes the resources to make
@@ -505,3 +505,4 @@ virtual host directive in apache with the following configuration file: ::
    
    </VirtualHost>
 
+You should also set 'rest_behind_proxy=1' in bigsdb.conf. 
