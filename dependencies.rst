@@ -46,6 +46,8 @@ These are included with most Linux distributions.
 * `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
 * `Mail::Sender <http://search.cpan.org/~jenda/Mail-Sender/Sender.pm>`_ - [optional] - Used to send E-mail messages by submission system.
 * `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - [optional] - Used to validate E-mails sent by job manager.
+* `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - [required by PhyloViz plugin] - Used to interact with PhyloViz API
+* `LWP::UserAgent <http://search.cpan.org/~ether/libwww-perl/>`_ - [required by PhyloViz plugin] - Used to interact with PhyloViz API
 
 Optional packages
 =================
