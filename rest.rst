@@ -38,6 +38,8 @@ Resources
   - Retrieve full allele information
 * :ref:`POST /db/{database}/loci/{locus}/sequence<db_loci_locus_sequence>`
   - Query sequence to identify allele
+* :ref:`POST /db/{database}/sequence<db_sequence>` 
+  - Query sequence to identify allele without specifying locus
 * :ref:`GET /db/{database}/schemes<db_schemes>` - List schemes
 * :ref:`GET /db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
   - Retrieve scheme information
@@ -348,7 +350,7 @@ GET /db/{database}/loci/{locus}/alleles/{allele_id} - Retrieve full allele infor
 .. _db_loci_locus_sequence:
 
 .. index::
-   single: API resources; GET /db/{database}/loci/{locus}/sequence 
+   single: API resources; POST /db/{database}/loci/{locus}/sequence 
    single: API resources; query allele sequence
 
 POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
@@ -369,6 +371,36 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
 * exact_matches [array] - list of match objects, each consisting of:
 
   * allele_id
+  * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
+  
+.. note::
+   This method currently only supports exact matches. Whitespace is removed
+   from the sequence and it is capitalized before querying the database.
+   
+.. _db_sequence:
+
+.. index::
+   single: API resources; POST /db/{database}/sequence 
+   single: API resources; query allele sequence without specifying locus
+
+POST /db/{database}/sequence - Query sequence to identify allele without specifying locus
+=========================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+
+**Required additional parameters:**
+
+* sequence [string] - Sequence string
+
+**Optional parameters:** None
+
+**Response:** Object containing the following key/value pairs: 
+
+* exact_matches [array] - list of match objects, each consisting of:
+
+  * locus [string] - locus name
+  * allele_id [string] - allele identifier
   * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
   
 .. note::
