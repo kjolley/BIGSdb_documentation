@@ -36,6 +36,8 @@ Resources
   - Download alleles in FASTA format
 * :ref:`GET /db/{database}/loci/{locus}/alleles/{allele_id}<db_loci_locus_alleles_allele_id>`
   - Retrieve full allele information
+* :ref:`POST /db/{database}/loci/{locus}/sequence<db_loci_locus_sequence>`
+  - Query sequence to identify allele
 * :ref:`GET /db/{database}/schemes<db_schemes>` - List schemes
 * :ref:`GET /db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
   - Retrieve scheme information
@@ -343,12 +345,42 @@ GET /db/{database}/loci/{locus}/alleles/{allele_id} - Retrieve full allele infor
 * date_entered [string] - record creation date (ISO 8601 format)
 * datestamp [string] - last updated date (ISO 8601 format)
 
+.. _db_loci_locus_sequence:
+
+.. index::
+   single: API resources; GET /db/{database}/loci/{locus}/sequence 
+   single: API resources; query allele sequence
+
+POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
+=============================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* locus [string] - Locus name
+
+**Required additional parameters:**
+
+* sequence [string] - Sequence string
+
+**Optional parameters:** None
+
+**Response:** Object containing the following key/value pairs: 
+
+* exact_matches [array] - list of match objects, each consisting of:
+
+  * allele_id
+  * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
+  
+.. note::
+   This method currently only supports exact matches. Whitespace is removed
+   from the sequence and it is capitalized before querying the database.
+
 .. _db_schemes:
 
 .. index::
    single: API resources; GET /db/{database}/schemes 
    single: API resources; list schemes
-
+   
 GET /db/{database}/schemes - List schemes
 =========================================
 **Required route parameter:** database [string] - Database configuration name
