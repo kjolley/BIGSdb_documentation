@@ -941,6 +941,14 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062
 * curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
 * date_entered [string] - record creation date (ISO 8601 format)
 * datestamp [string] - last updated date (ISO 8601 format) 
+* loci [array] - list of sequence tag objects consisting of:
+
+  * locus [string] - :ref:`URI to locus description<db_loci_locus>`
+  * locus_name [string]
+  * start [integer]
+  * end [integer]
+  * direction [string] - forward/reverse
+  * complete [boolean] - true/false
 
 .. _db_fields:
 
