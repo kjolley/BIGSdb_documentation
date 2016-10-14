@@ -28,10 +28,18 @@ Various query forms have operators for use with field values.  Available operato
 * >
 
   * Greater than the search term.
+  
+* >=
+
+  * Greater than or equal the search term.
 
 * <
 
   * Less than the search term.
+  
+* <=
+
+  * Less than or equal the search term.
 
 * NOT
 
