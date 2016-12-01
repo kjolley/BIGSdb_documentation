@@ -15,8 +15,9 @@ submissions' link on the database front page.
 Registering a user account
 **************************
 You must have an account for the appropriate database in order to use the 
-submission system.  This will need to be set up by a curator, so contact them
-in the first instance.
+submission system.  On systems utilizing site-wide databases, such as PubMLST,
+this can be done automatically via the web. Other sites may require you to
+contact a curator to set this up.
 
 *****************
 Allele submission
