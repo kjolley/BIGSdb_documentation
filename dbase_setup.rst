@@ -121,6 +121,9 @@ Top level element. Contains child elements: system, field and sample.::
  
     <system>
     
+Any value set here can be overridden in a 
+:ref:`system.overrides file<system_overrides>`.
+    
 * **authentication**  
 
   * Method of authentication: either 'builtin' or 'apache'. 
@@ -561,6 +564,9 @@ Top level element. Contains child elements: system, field and sample.
 ::
 
  <system>
+ 
+Any value set here can be overridden in a 
+:ref:`system.overrides file<system_overrides>`.
 
 * **authentication**  
 
@@ -733,7 +739,25 @@ Top level element. Contains child elements: system, field and sample.
 * webroot	
 
   * URL of web root, which can be relative or absolute. This is used to provide
-    a hyperlinked item in the dropdown menu. Default '/'.	
+    a hyperlinked item in the dropdown menu. Default '/'.
+
+.. _system_overrides:
+    
+************************************
+Over-riding values set in config.xml
+************************************
+Any attribute used in the system tag of the database config.xml file can be
+over-ridden using a file called system.overrides, placed in the same directory
+as config.xml. This is very useful as it allows you to set up multiple configs
+for a database, with the config.xml files symlinked so that any changes to one
+will be seen in each database configuration. An example of why you may wish to
+do this would be if you create separate public and private views of the 
+isolate table that filters on some attribute. The system.overrides file uses
+key value pairs separated by = with the values quoted, e.g. :: 
+
+   view="private"
+   read_access="authenticated_users"
+   description="Private view of database"
   
 .. _user_authentication:
 
