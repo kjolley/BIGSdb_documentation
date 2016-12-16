@@ -249,6 +249,105 @@ system.
 5.  Set submissions="yes" in the system tag of the 
     :ref:`database config.xml file<xml>` of each database for which submissions
     should be enabled. 
+    
+.. _site-wide-db: 
+    
+************************************
+Setting up a site-wide user database
+************************************
+A site-wide user database allows users to register themselves for accounts and
+associate these with specific databases. It means that a single set of log-in
+credentials can be used across databases, rather than each database maintaining
+its own.
+
+Users can access/update their account details by calling the bigsdb.pl script
+without any additional attributes, e.g. http://website/cgi-bin/bigsdb.pl.
+
+Site admins can access administration features by calling the bigscurate.pl
+script without any additional attributes.
+
+1.  Create a user database, e.g. pubmlst_bigsdb_users::
+
+      createdb pubmlst_bigsdb_users
+      psql -f users.sql pubmlst_bigsdb_users
+      
+    Set up sync_user_dbase_users.pl to run every hour as a CRON JOB, e.g. in 
+    /etc/crontab, add the following to run this at 5 minutes past each hour :: 
+    
+      05  *  *  *  *  bigsdb   /usr/local/bin/sync_user_dbase_users.pl --user_database pubmlst_bigsdb_users
+    
+    Add the user database details to each database that you want to allow to 
+    use it.
+    
+    You need to :ref:`add the users database details<setting_site_users_db>` 
+    to each client database that will use it.
+    
+2.  If you want to allow users to register themselves you need to modify 
+    bigsdb.conf.
+
+    You can define multiple user databases (as a comma-separated list) but 
+    usually you would have just one. Define this using the site_user_dbs 
+    attribute. Use a short domain (site) name separated by a pipe (|) and the
+    name of the database, e.g. add the following to /etc/bigsdb.conf:: 
+
+      site_user_dbs=PubMLST|pubmlst_bigsdb_users
+
+    Make sure default database connection parameters are set in 
+    /etc/bigsdb/db.conf.
+    
+3.  Set up site admin user in new user database. This has to be done manually -
+    other users will either be able to register themselves or be created by 
+    curators from other databases.:: 
+    
+      psql pubmlst_bigsdb_users
+      INSERT INTO USERS (user_name,surname,first_name,email,affiliation,
+        date_entered,datestamp,status) VALUES ('kjolley','Jolley','Keith',
+        'keith.jolley@zoo.ox.ac.uk','University of Oxford, UK','now','now',
+        'validated');
+        
+    Set the password for this user using the add_user.pl script (change 
+    XXXXXXXX to the password value):: 
+    
+      add_user.pl -a -d pubmlst_bigsdb_users -n kjolley -p XXXXXXXX
+      
+    Add specific permissions that this admin user can have by directly adding
+    the following terms to the permissions table: 
+    
+    * set_site_user_passwords: 
+      
+      * Allow admin to set user passwords.
+      
+    * import_dbase_configs: 
+    
+      * Allow admin to define which database configurations are made available
+        for registration.
+      
+    * merge_users
+    
+      * Allow admin to merge user accounts.
+      
+    * modify_users
+    
+      * Allow admin to edit user details.
+      
+    e.g. ::
+    
+      psql pubmlst_bigsdb_users
+      INSERT INTO permissions (user_name,permission,curator,datestamp) VALUES 
+        ('kjolley','import_dbase_configs','kjolley','now');
+      
+4.  Specific :ref:`permissions can be set for curators<curator_permissions>` in
+    individual databases:
+
+    * import_site_users
+      
+      * This allows the curator to import site users in to the database.
+        
+    * modify_site_users
+      
+      * You may not wish to do this! - It allows the curator of any database 
+        with this permission to change the details of a user that may be used
+        on other databases on the site.
    
 .. _delete-temp-files: 
 

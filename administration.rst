@@ -92,6 +92,10 @@ Individual permissions can be set for each curator:
   records.
 * modify_profiles - allowed to add or modify scheme profiles (only used in a
   sequence definitions database).
+* import_site_users - allowed to import site users in to the database.
+* modify_site_users - allowed to modify site user details (you may not want to
+  this! The user account can be used by multiple databases on the site and any
+  changes to user details will be seen throughout the site).
 
 Permissions can be set by clicking the '?' button next to 'curator permissions'
 on the curator's interface: 
@@ -569,6 +573,30 @@ database' so that only sets can be viewed, e.g. ::
    only_sets="yes"
   >
   </system>
+  
+.. _setting_site_users_db:
+
+**********************************
+Setting a site-wide users database
+**********************************
+On large sites you may wish to employ a site-wide users database so that user
+details are kept in a single location and the user can log in to any database
+using the same credentials.
+
+Once a :ref:`site-wide user database has been set up<site-wide-db>`, this can
+be defined within each client database as follows. From the curators' contents
+page, click the add (+) user databases link:
+
+.. image:: /images/administration/add_users_database1.png
+
+Enter the user database details. You only need to enter the full database
+connection details if these are different from those set in db.conf. Press
+submit.
+
+.. image:: /images/administration/add_users_database2.png
+
+Curators will need :ref:`specific permissions<curator_permissions>` set to be
+able to modify details in, or import users from a site-wide users database.
 
 .. _add_new_loci:
 

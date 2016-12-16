@@ -44,10 +44,11 @@ These are included with most Linux distributions.
 * `Parallel::ForkManager <http://search.cpan.org/~szabgab/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading autotagger and autodefiner scripts.
 * `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
 * `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
-* `Mail::Sender <http://search.cpan.org/~jenda/Mail-Sender/Sender.pm>`_ - [optional] - Used to send E-mail messages by submission system.
-* `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - [optional] - Used to validate E-mails sent by job manager.
+* `Email::Sender <http://search.cpan.org/~rjbs/EMail-Sender/lib/Email/Sender.pm>`_ - Used to send E-mail messages by submission system.
+* `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - Used to validate E-mails sent by job manager.
 * `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - [required by PhyloViz plugin] - Used to interact with PhyloViz API
-* `LWP::UserAgent <http://search.cpan.org/~ether/libwww-perl/>`_ - [required by PhyloViz plugin] - Used to interact with PhyloViz API
+* `LWP::UserAgent <http://search.cpan.org/~ether/libwww-perl/>`_ - [required by PhyloViz and PhyloTree plugins] - Used to upload via API
+* `Archive::Zip <http://search.cpan.org/~phred/Archive-Zip/>`_ - [required by PhyloTree plugin] - Used to upload to iTOL
 
 Optional packages
 =================
