@@ -329,6 +329,12 @@ Top level element. Contains child elements: system, field and sample.::
   * Displays E-mail address for sender in isolate information page if set to
     'no'. Default 'yes'.
     
+* public_login
+
+  * Optionally allow users to log in to a public database - this is useful as
+    any jobs will be associated with the user and their preferences will also
+    be linked to the account. Set to 'no' to disable. Default 'yes'.
+    
 * query_script
 
   * Relative web path to bigsdb script. Default ‘bigsdb.pl’ (version 1.11+).
@@ -653,6 +659,12 @@ Top level element. Contains child elements: system, field and sample.
     profile submissions are disabled since generally new profiles should be
     accompanied by representative isolate data, and the profile can be 
     extracted from that. 
+    
+* public_login
+
+  * Optionally allow users to log in to a public database - this is useful as
+    any jobs will be associated with the user and their preferences will also
+    be linked to the account. Set to 'no' to disable. Default 'yes'.
   
 * query_script
 
