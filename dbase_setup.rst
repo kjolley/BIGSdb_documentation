@@ -741,6 +741,41 @@ Any value set here can be overridden in a
   * URL of web root, which can be relative or absolute. This is used to provide
     a hyperlinked item in the dropdown menu. Default '/'.
 
+**********************************************
+Over-riding global defaults set in bigsdb.conf
+**********************************************
+Certain values set in bigsdb.conf can be over-ridden by corresponding values
+set in a database-specific config.xml file. These can be set within the system
+tag like other attributes:
+
+ * query_script
+ 
+   * Relative web path to bigsdb script.
+ 
+ * curate_script
+ 
+   * Relative web path to curation script.
+   
+ * prefs_db
+ 
+   * The name of the preferences database.
+   
+ * auth_db
+ 
+   * The name of the authentication database.
+   
+ * tmp_dir
+ 
+   * Path to the web-accessible temporary directory.
+   
+ * secure_tmp_dir
+ 
+   * Path to the web-inaccessible (secure) temporary directory.
+   
+ * ref_db
+ 
+   * The name of the references database.
+
 .. _system_overrides:
     
 ************************************
