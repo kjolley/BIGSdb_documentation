@@ -64,6 +64,24 @@ identify the MLST sequence type of a genome in one step.
 
 .. image:: /images/data_query/sequence_query6.png
 
+*********************************************************
+Querying multiple sequences to identify allele identities
+*********************************************************
+You can also query mutiple sequences together. These should be in FASTA format.
+Click 'Batch sequence query' from the contents page.
+
+.. image:: /images/data_query/batch_seq_query1.png 
+
+Paste your sequences (FASTA format) in to the box. Select a specific locus, 
+scheme or 'All loci'.
+
+.. image:: /images/data_query/batch_seq_query2.png 
+
+The best match will be displayed for each sequence in your file. If this isn't
+an exact match, the differences will be listed.
+
+.. image:: /images/data_query/batch_seq_query3.png 
+
 .. _locus_specific_query:
 
 *****************************************
