@@ -171,11 +171,13 @@ Any value set here can be overridden in a
 * contig_analysis_limit
 
   * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
-  
-* curator_home
+    
+* curate_config
 
-  * URL of curator's index page, which can be relative or absolute. This will
-    be used to add a link in the dropdown menu.
+  * The database configuration that should be used for curation if different
+    from the current configuration. This is used when the submission system is
+    being used so that curation links in the 'Manage submissions' pages for
+    curators load the correct database configuration.
     
 * curate_link
 
@@ -194,6 +196,11 @@ Any value set here can be overridden in a
   * This is only needed if automated submissions are enabled. If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
+* curator_home
+
+  * URL of curator's index page, which can be relative or absolute. This will
+    be used to add a link in the dropdown menu.
     
 * curators_only
 
@@ -601,10 +608,12 @@ Any value set here can be overridden in a
 
   * Enable flags to be set for alleles: either 'yes' or 'no', default 'no'.
   
-* curator_home
+* curate_config
 
-  * URL of curator's index page, which can be relative or absolute. This will
-    be used to add a link in the dropdown menu.
+  * The database configuration that should be used for curation if different
+    from the current configuration. This is used when the submission system is
+    being used so that curation links in the 'Manage submissions' pages for
+    curators load the correct database configuration.
   
 * curate_path_includes  
 
@@ -618,6 +627,11 @@ Any value set here can be overridden in a
   * This is only needed if automated submissions are enabled.  If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
+    
+* curator_home
+
+  * URL of curator's index page, which can be relative or absolute. This will
+    be used to add a link in the dropdown menu.
     
 * curators_only
 
