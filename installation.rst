@@ -133,6 +133,21 @@ See `Tuning Your PostgreSQL Server <https://wiki.postgresql.org/wiki/Tuning_Your
 Restart PostgreSQL after any changes, e.g. ::
  
  /etc/init.d/postgresql restart
+ 
+************************************
+Setting global connection parameters
+************************************
+Global database connection parameters can be entered in /etc/bigsdb/db.conf.
+This allows you to set default values for the host, port, user and password.
+Default values are as follows:
+
+ * dbhost: localhost
+ * dbport: 5432
+ * dbuser: apache
+ * dbpassword: remote
+ 
+These can all be over-ridden in individual :ref:`database configuration 
+config.xml files<xml>` using the terms host, port, user, and password.
 
 ***************************
 Site-specific configuration
