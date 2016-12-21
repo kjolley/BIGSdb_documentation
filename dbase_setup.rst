@@ -99,6 +99,11 @@ database):
 The header and footer files can alternatively be placed in the root directory 
 of the web site for site-wide use.
 
+There are four additional files, site_header.html, site_footer.html, 
+curate_site_header.html and curate_site_footer.html which are used when either
+bigsdb.pl or bigscurate.pl are called without a database configuration. These
+should be placed in the root directory of the web site.
+
 .. _xml:
 
 ***********************************************

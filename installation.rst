@@ -348,6 +348,12 @@ script without any additional attributes.
       * You may not wish to do this! - It allows the curator of any database 
         with this permission to change the details of a user that may be used
         on other databases on the site.
+        
+5.  HTML header files can be defined for use when bigsdb.pl or bigscurate.pl 
+    are called withouth a database configuration, such as when a user is 
+    registering or modifying their user details. These files, site_header.html,
+    site_footer.html, site_curate_header.html and site_curate_footer.html 
+    should be placed in the root directory of the web site. 
    
 .. _delete-temp-files: 
 
