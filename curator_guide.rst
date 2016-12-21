@@ -540,6 +540,8 @@ the data and resubmit if this happens.
 
 .. image:: /images/curation/add_isolate7.png
 
+.. _update_delete_isolate:
+
 ********************************************
 Updating and deleting single isolate records
 ********************************************
@@ -665,6 +667,31 @@ You will have a final chance to change your mind:
 .. image:: /images/curation/batch_delete_isolate3.png
 
 Click 'Confirm deletion!'.
+
+****************************
+Retiring isolate identifiers
+****************************
+Sometimes there is a requirement to prevent the automated assignment of a 
+particular isolate identifier number - an isolate with that identifier may 
+have been commonly used and has since been removed. Reassignment of the 
+identifier to a new isolate record may lead to confusion, so in this instance,
+it would be better to prevent this.
+
+You can retire an isolate identifier by clicking the 'Add' retired isolates
+link on the isolates database curators' page.
+
+.. image:: /images/curation/retire_isolate1.png
+
+Enter the isolate id to retire and click 'Submit'.
+
+.. image:: /images/curation/retire_isolate2.png
+
+You cannot retire an isolate identifier that already exists, so you must delete 
+it before retiring it.  Once an identifier is retired, you will not be able to 
+create a new isolate record using that identifier.  
+
+You can also retire an isolate identifier when you 
+:ref:`delete an isolate record<update_delete_isolate>`. 
 
 .. index::
    single: isolate aliases
