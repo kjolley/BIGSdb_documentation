@@ -1656,6 +1656,11 @@ A full list of options can be found by typing: ::
        
    --isolate_list_file FILE  
        File containing list of isolate ids (ignored if -i or -p used).
+
+   --match_missing
+       Treat missing loci as specific alleles rather than 'any'. This will 
+       allow profiles for every isolate that has <= threshold of missing alleles 
+       to be defined but may result in some isolates having >1 ST.    
                 
    --max ID
        Maximum isolate id.
