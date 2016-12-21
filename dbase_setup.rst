@@ -104,6 +104,14 @@ curate_site_header.html and curate_site_footer.html which are used when either
 bigsdb.pl or bigscurate.pl are called without a database configuration. These
 should be placed in the root directory of the web site.
 
+You can also add HTML meta attributes (such as a favicon) by including a file
+called meta.html in the database configuration directory. For example to set
+a favicon this file can contain something like the following: ::
+
+   <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+   
+These attributes will appear in the <head> section of the HTML page.
+
 .. _xml:
 
 ***********************************************
