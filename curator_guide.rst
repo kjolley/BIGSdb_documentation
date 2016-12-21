@@ -210,6 +210,8 @@ will not be uploaded (you can still upload the others), e.g.
 
 .. image:: /images/curation/add_alleles11.png
 
+.. _update_delete_allele:
+
 *************************************************
 Updating and deleting allele sequence definitions
 *************************************************
@@ -244,7 +246,9 @@ ALL'. This allows you to quickly delete all alleles returned from a search.
 If you choose to delete, you will be presented with a final confirmation 
 screen. To go ahead, click 'Delete!'. Deletion will not be possible if the 
 allele is part of a scheme profile - if it is you will need to delete any 
-profiles that it is a member of first.
+profiles that it is a member of first. You can also choose to delete and
+retire the allele identifier. If you do this, the allele identifier will not
+be re-used.
 
 .. image:: /images/curation/delete_allele.png
 
@@ -281,6 +285,9 @@ Select the locus from the dropdown list box and enter the allele id. Click
 You cannot retire an allele that already exists, so you must delete it before
 retiring it.  Once an identifier is retired, you will not be able to create a 
 new allele with that name.  
+
+You can also retire an allele identifier when you 
+:ref:`delete an allele<update_delete_allele>`. 
 
 ***************************
 Updating locus descriptions
@@ -418,6 +425,8 @@ you wish to proceed with the submission, click 'Import data'.
 
 .. image:: /images/curation/add_scheme_profile6.png
 
+.. _update_delete_profile:
+
 ************************************************
 Updating and deleting scheme profile definitions
 ************************************************
@@ -436,7 +445,9 @@ Alternatively, if your account has permission, you may be able to 'Delete ALL'
 records retrieved from the search.
 
 For deletion of a single record, the full record will be displayed. Confirm 
-deletion by clicking 'Delete!'.
+deletion by clicking 'Delete'. You can also choose to delete and
+retire the profile identifier. If you do this, the profile identifier will not
+be re-used.
 
 .. image:: /images/curation/delete_scheme_profile.png
 
@@ -444,6 +455,33 @@ To modify the profile, click the 'Update' link next to the profile following
 the query. A form will be displayed - make any changes and then click 'Update'.
 
 .. image:: /images/curation/update_scheme_profile3.png
+
+***********************************
+Retiring scheme profile definitions
+***********************************
+Sometimes there is a requirement to prevent the automated assignment of a 
+particular profile identifier (e.g. ST) - a profile with that identifier may 
+have been commonly used and has since been removed. Reassignment of the 
+identifier to a new profile may lead to confusion, so in this instance, it 
+would be better to prevent this.
+
+You can retire a profile identifier by clicking the 'Add' retired profiles
+link on the sequence database curators' page.
+
+.. image:: /images/curation/retire_profile1.png
+
+Select the scheme from the dropdown list box and enter the profile id. Click
+'Submit'.
+
+.. image:: /images/curation/retire_profile2.png
+
+You cannot retire a profile identifier that already exists, so you must delete 
+it before retiring it.  Once an identifier is retired, you will not be able to 
+create a new profile with that name.  
+
+You can also retire an allele identifier when you 
+:ref:`delete a profile<update_delete_profile>`. 
+
 
 .. index::
    pair: adding; isolates
