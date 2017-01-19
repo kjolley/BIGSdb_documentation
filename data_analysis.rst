@@ -440,26 +440,6 @@ and speed.
   results in most cases.  The default setting used to be 15 but the new default
   of 20 is almost as good (there was 1 difference among 2000 loci in a test 
   run) but the analysis runs twice as fast.
-* Use TBLASTX - This compares the six-frame translation of your nucleotide
-  query sequence against the six-frame translation of the contig sequences. 
-  Sequences will be classed as identical if they result in the same translated
-  sequence even if the nucleotide sequence is different.  This is significantly
-  slower than using BLASTN.
-
-Additionally, two other options are available in this fieldset:
-
-* Use tagged designations - When analysing using defined loci, Genome
-  Comparator can use the designations stored within the database (this is the
-  default).  This is much quicker since it doesn't need to run BLAST against
-  these sequences.  If a designation is missing, BLAST will be run for that
-  locus anyway.
-* Disable HTML output - If running Genome Comparator against a large number of
-  genomes, the resulting table may get so large that your web browser struggles
-  to render it properly and may use up too much memory on your computer. 
-  Clicking this button prevents this output - this output is not required for
-  further analysis since everything present in it is also generated in Excel
-  format at the end.  HTML output is automatically disabled when more than 150
-  genomes are analysed. 
 
 Distance matrix calculation fieldset
 ====================================
@@ -494,18 +474,6 @@ that differences seen between isolates at paralogous loci are real if the
 alternative matches are equally good.  NB: Loci are also only classed as
 paralogous when the alternative matches identify different sequences, otherwise
 multiple contigs of the same sequence region would result in false positives.
-
-When paralogous loci are excluded, there are two further options:
-
-* Exclude when paralogous in all isolates (default).  Loci are only classed as
-  paralogous when there are multiple hits in every genome (except if a genome
-  is missing the locus entirely, in which case that genome is ignored in the
-  calculation).  This is generally the option that you will want to use with
-  the default BLAST parameters since you can often expect multiple hits even
-  when loci are not paralogous if you have used relaxed thresholds.
-* Exclude when paralogous in any isolate.  Unless you use stringent BLAST
-  thresholds, this is likely to overestimate the number of paralogous loci, but
-  may be useful if you are specifically looking for them.
 
 Alignments fieldset
 ===================
