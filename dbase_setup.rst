@@ -281,6 +281,14 @@ Any value set here can be overridden in a
   * Overrides the limit on number of loci allowed in a reference genome.
     Default: '10000'. 
     
+* genome_comparator_threads
+
+  * The number of threads to use for data gathering (BLAST, database
+    queries) to populate data structure for Genome Comparator analysis. You
+    should not set this to less than 2 as this will prevent job cancelling due
+    to the way isolates are queued.
+    Default: '2'.
+    
 * hide_unused_schemes   
 
   * Sets whether a scheme is shown in a main results table if none of the
