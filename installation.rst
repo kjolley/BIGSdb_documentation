@@ -91,7 +91,8 @@ as the Postgres user 'postgres'.
 You will need to edit the pg_hba.conf and pg_ident.conf files.  These are
 found somewhere like /etc/postgresql/9.1/main/
 
-**pg_hba.conf**
+pg_hba.conf
+===========
 ::
 
  # Database administrative login by UNIX sockets
@@ -106,7 +107,8 @@ found somewhere like /etc/postgresql/9.1/main/
  # IPv6 local connections:
  host    all         all         ::1/128               md5
 
-**pg_ident.conf**
+pg_ident.conf
+=============
 ::
 
  # MAPNAME     SYSTEM-USERNAME    PG-USERNAME
@@ -594,6 +596,36 @@ be something like (modify file paths as appropriate): ::
   exec su -s /bin/sh -c 'exec "$0" "$@"' bigsdb -- /usr/local/bin/plackup -a /var/rest/bigsrest.pl -s Starman -E deployment
   
   end script
+  
+The service will then start automatically on boot or can be manually started 
+by calling: ::
+
+  sudo service bigsdb-rest start 
+  
+For systems using systemd, create a file in /etc/systemd/system called 
+bigsdb-rest.service with the following contents (again, modify file paths
+as appropriate): ::
+
+  [Unit]
+  Description=BIGSdb REST interface
+  After=network.target
+  
+  [Service]
+  User=bigsdb
+  ExecStart=/usr/bin/plackup -a /var/rest/bigsrest.pl -s Starman -E deployment
+  Restart=always
+
+  [Install]
+  WantedBy=multi-user.target
+  
+To start the service automatically on boot you need to enable it: ::
+
+  sudo systemctl enable bigsdb-rest.service
+
+It can also be manually started by calling: ::
+
+  sudo systemctl start bigsdb-rest.service
+
 
 Proxying the API to use a standard web port
 ===========================================
