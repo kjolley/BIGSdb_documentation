@@ -479,7 +479,7 @@ You cannot retire a profile identifier that already exists, so you must delete
 it before retiring it.  Once an identifier is retired, you will not be able to 
 create a new profile with that name.  
 
-You can also retire an allele identifier when you 
+You can also retire a profile definition when you 
 :ref:`delete a profile<update_delete_profile>`. 
 
 
