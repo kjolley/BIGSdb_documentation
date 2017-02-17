@@ -35,6 +35,7 @@ These are included with most Linux distributions.
 * `Data::UUID <http://search.cpan.org/~rjbs/Data-UUID/UUID.pm>`_ - Globally unique identifer handling for preference storage.
 * `DBD-Pg <http://search.cpan.org/~turnstep/DBD-Pg/Pg.pm>`_ - PostgreSQL database driver for DBI.
 * `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database independent interface - module used to interact with databases.
+* `Email::MIME <http://search.cpan.org/~rjbs/Email-MIME/lib/Email/MIME.pm>`_ - Used to format E-mail messages.
 * `Email::Sender <http://search.cpan.org/~rjbs/EMail-Sender/lib/Email/Sender.pm>`_ - Used to send E-mail messages by submission system.
 * `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - Used to validate E-mails sent by job manager.
 * `Error <http://search.cpan.org/~shlomif/Error/lib/Error.pm>`_ - Exception handling.
