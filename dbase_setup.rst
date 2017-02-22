@@ -683,6 +683,16 @@ Any value set here can be overridden in a
   * Prevent users or curators from downloading all alleles for a locus (admins
     always can). 'yes' or 'no', default 'no'.
     
+* isolate_database
+
+  * The config name of the isolate database. This is used to provide a link to
+    isolate submissions. You also need to set isolate_submissions="yes".
+    
+* isolate_submissions
+
+  * Set to yes to provide a link to isolate submissions. The isolate_database
+    attribute also needs to be set. Default: 'no'.
+    
 * job_priority 
 
   * Integer with default job priority for offline jobs (default:5).   
