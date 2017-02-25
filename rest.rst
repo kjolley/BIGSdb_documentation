@@ -1007,7 +1007,7 @@ GET /db/{database}/field/{field} - Retrieve values set for a provenance field
 
 **Response:** Object containing:
 
-* records [int] - Number of isolates
+* records [int] - Number of values
 * values [array] - List of values used in isolate records.  
   Pages are 100 records by default. Page size can be modified using the 
   page_size parameter.
