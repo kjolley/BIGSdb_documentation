@@ -73,6 +73,8 @@ Resources
   - Retrieve contig record
 * :ref:`GET /db/{database}/fields<db_fields>`
   - Retrieve list of isolate provenance field descriptions
+* :ref:`GET /db/{database}/field/{field}<db_field_field>`
+  - Retrieve values set for a provenance field
 * :ref:`GET /db/{database}/users/{user_id}<db_users_user_id>`
   - Retrieve user information
 * :ref:`GET /db/{database}/projects<db_projects>`
@@ -979,7 +981,43 @@ following key/value pairs:
 * regex [string] - regular expression that constrains the allowed value of the
   field
 * comments [string]
-* allowed values [array] - list of allowed values for the field [string]
+* allowed values [array] - list of allowed values for the field
+* values [string] - URI to list of used field values
+
+.. _db_field_field:
+
+.. index::
+   single: API resources; GET /db/{database}/field/{field}
+   single: API resources; retrieve values set for a provenance field
+   
+GET /db/{database}/field/{field} - Retrieve values set for a provenance field
+=============================================================================
+**Required route parameters:**
+
+* database [string] - Database configuration name
+* field [string] - Provenance metadata field name
+
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging.
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/field/country
+
+**Response:** Object containing:
+
+* records [int] - Number of isolates
+* values [array] - List of values used in isolate records.  
+  Pages are 100 records by default. Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
 
 .. _db_users_user_id:
 
@@ -1361,7 +1399,7 @@ GET /db/{database}/submissions/{submission_id}/files - Retrieve list of supporti
   
 .. _post_db_submissions_submission_id_files: 
 
-POST /db/{database}/submissions/{submission_id}/files - Upload submission supporting file 
+POST /db/{database}/submissions/{submission_id}/files - Upload submission supporting file
 =========================================================================================
 **Required route parameters:** 
 
