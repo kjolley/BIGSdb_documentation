@@ -53,6 +53,8 @@ Resources
   - Retrieve allelic profile record
 * :ref:`GET /db/{database}/isolates<db_isolates>` 
   - Retrieve list of isolate records
+* :ref:`POST /db/{database}/isolates/search<db_isolates_search>`
+  - Search isolate database
 * :ref:`GET /db/{database}/isolates/{isolate_id}<db_isolates_isolate_id>`
   - Retrieve isolate record
 * :ref:`GET /db/{database}/isolates/{isolate_id}/allele_designations<db_isolates_isolate_id_allele_designations>`
@@ -362,7 +364,7 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
 * database [string] - Database configuration name
 * locus [string] - Locus name
 
-**Required additional parameters:**
+**Required additional parameters (JSON-encoded in POST body):**
 
 * sequence [string] - Sequence string
 
@@ -391,7 +393,7 @@ POST /db/{database}/sequence - Query sequence to identify allele without specify
 
 * database [string] - Database configuration name
 
-**Required additional parameters:**
+**Required additional parameters (JSON-encoded in POST body):**
 
 * sequence [string] - Sequence string
 
@@ -643,8 +645,8 @@ GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
 **Response:** Object containing some or all of the following key/value pairs:
 
 * provenance [object] - set of key/value pairs.  Keys are defined by calling
-  the :ref:`/fields route<db_fields>`.  The fields will vary by database but 
-  will always contain the following:
+  the :ref:`/fields route<db_fields>` route.  The fields will vary by database 
+  but will always contain the following:
   
   * id [integer]
   * sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
@@ -914,6 +916,66 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?h
 
 **Response:** FASTA format file of isolate contig sequences
 
+.. _db_isolates_search:
+
+.. index::
+   single: API resources; POST /db/{database}/isolates/search
+   single: API resources; search isolate database
+   
+POST /db/{database}/isolates/search
+===================================
+**Required route parameters:**
+
+* database [string] - Database configuration name
+
+**Optional parameters (appended to URI):**
+
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging. 
+
+**Query parameters (JSON-encoded in POST body)**
+You must include at least one query parameter.
+
+Flattened parameter names in the following forms are supported: 
+
+* field.{field} - key/value pairs for provenance fields. Supported field names
+  can be found by calling the :ref:`/fields route<db_fields>`. The fields will 
+  vary by database.
+  
+* locus.{locus} - key/value pairs of locus and its allele designation.
+  Supported locus names can be found by calling the 
+  :ref:`/loci route<db_loci>`.
+
+* scheme.{scheme_id}.{scheme_field} - key/value pairs of scheme fields and 
+  their values. Supported field names can be determined by following routes
+  from the :ref:`/schemes route<db_schemes>`.
+  
+Parameters have to be flattened rather than using a nested JSON object to 
+support passing via OAuth.
+  
+**Example method call using curl:**
+The following searches for *Neisseria* ST-11 isolates from Europe in 2015 
+(MLST is scheme#1 in this database). ::
+
+  curl -s -H "Content-Type: application/json" -X POST \
+  "http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/search" \
+  -d '{"field.continent":"europe","field.year":2015,"scheme.1.ST":11}'
+  
+**Response**: Object containing:
+
+* records [int] - Number of isolates
+* isolates [array] - List of URIs to isolate records.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
+
 .. _db_contigs_contig_id:
 
 .. index::
@@ -1168,7 +1230,7 @@ POST /db/{database}/submissions - create new submission
 =======================================================
 **Required route parameter:** database [string] - Database configuration name
 
-**Required additional parameters:**
+**Required additional parameters (JSON-encoded in POST body):**
 
 * type [string] - either:
 
@@ -1366,7 +1428,7 @@ POST /db/{database}/submissions/{submission_id}/messages - Add submission corres
 * database [string] - Database configuration name
 * submission_id [string] - Submission id
 
-**Required additional parameter:**
+**Required additional parameter (JSON-encoded in POST body):**
 
 * message [string] - Message text
 
@@ -1406,7 +1468,7 @@ POST /db/{database}/submissions/{submission_id}/files - Upload submission suppor
 * database [string] - Database configuration name
 * submission_id [string] - Submission id
 
-**Required additional parameters:**
+**Required additional parameters (JSON-encoded in POST body):**
 
 * filename [string] - Name of file to store within submission
 * upload [base64 encoded data] - Raw file data
