@@ -934,7 +934,8 @@ POST /db/{database}/isolates/search
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 
-**Query parameters (JSON-encoded in POST body)**
+**Query parameters (JSON-encoded in POST body):**
+
 You must include at least one query parameter.
 
 Flattened parameter names in the following forms are supported: 
