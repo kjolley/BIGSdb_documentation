@@ -922,8 +922,8 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?h
    single: API resources; POST /db/{database}/isolates/search
    single: API resources; search isolate database
    
-POST /db/{database}/isolates/search
-===================================
+POST /db/{database}/isolates/search - Search isolate database
+=============================================================
 **Required route parameters:**
 
 * database [string] - Database configuration name
