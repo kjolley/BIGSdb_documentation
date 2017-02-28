@@ -952,8 +952,8 @@ Flattened parameter names in the following forms are supported:
   their values. Supported field names can be determined by following routes
   from the :ref:`/schemes route<db_schemes>`.
   
-Parameters have to be flattened rather than using a nested JSON object to 
-support passing via OAuth.
+Parameters have to be flattened rather than using nested attributes to support
+passing via OAuth.
   
 **Example method call using curl:**
 The following searches for *Neisseria* ST-11 isolates from Europe in 2015 
