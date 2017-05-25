@@ -1695,7 +1695,9 @@ classification schemes can sit on top of a standard scheme (such as cgMLST),
 allowing different similarity thresholds to be pre-determined. Currently, 
 single-linkage clustering is supported whereby each member of a group must 
 have no more than the specified number of allelic differences with at least 
-one other member of the group. 
+one other member of the group.
+
+.. _seqdef_classification_schemes:
 
 Defining classification scheme in sequence definition database
 ==============================================================
@@ -2172,19 +2174,19 @@ Download the Excel template:
 
 Fill in the columns with your values, e.g.
 
-+-------------+---------+-----------+------+
-|isolate_field|attribute|field_value|value |
-+=============+=========+===========+======+
-|country      |continent|Afghanistan|Asia  |
-+-------------+---------+-----------+------+
-|country      |continent|Albania    |Europe|
-+-------------+---------+-----------+------+
-|country      |continent|Algeria    |Africa|
-+-------------+---------+-----------+------+
-|country      |continent|Andorra    |Europe|
-+-------------+---------+-----------+------+
-|country      |continent|Angola     |Africa|
-+-------------+---------+-----------+------+
+ +-------------+---------+-----------+------+
+ |isolate_field|attribute|field_value|value |
+ +=============+=========+===========+======+
+ |country      |continent|Afghanistan|Asia  |
+ +-------------+---------+-----------+------+
+ |country      |continent|Albania    |Europe|
+ +-------------+---------+-----------+------+
+ |country      |continent|Algeria    |Africa|
+ +-------------+---------+-----------+------+
+ |country      |continent|Andorra    |Europe|
+ +-------------+---------+-----------+------+
+ |country      |continent|Angola     |Africa|
+ +-------------+---------+-----------+------+
 
 Paste from the spreadsheet in to the upload form and click 'Submit'.
 

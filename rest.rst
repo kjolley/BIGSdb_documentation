@@ -28,6 +28,10 @@ Resources
 *********
 * :ref:`GET / or /db<db>` - List site resources
 * :ref:`GET /db/{database}<db_db>` - List database resources
+* :ref:`GET /db/{database}/classification_schemes<db_classification_schemes>`
+  - List classification schemes
+* :ref:`GET /db/{database}/classification_schemes/{classification_scheme_id}<db_classification_schemes_id>`
+  - Retrieve classification scheme information and groups
 * :ref:`GET /db/{database}/loci<db_loci>` - List loci
 * :ref:`GET /db/{database}/loci/{locus}<db_loci_locus>` - Retrieve locus record
 * :ref:`GET /db/{database}/loci/{locus}/alleles<db_loci_locus_alleles>`
@@ -159,6 +163,58 @@ definition database.
 * :ref:`loci<db_loci>` [string] - URI to list of loci
 * :ref:`projects<db_projects>` [string] - URI to list of projects
 
+.. _db_classification_schemes:
+
+.. index::
+   single: API resources; GET /db/{database}/classification_schemes
+   single: API resources; list classification schemes
+
+GET /db/{database}/classification_schemes - List classification schemes
+=======================================================================
+Sequence definition databases only.
+
+**Required route parameter:** database [string] - Database configuration name
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes
+
+**Response:** Object containing:
+
+* records [int] - Number of classification schemes.
+* classification_schemes [array] - List of :ref:`URIs to classificaton schemes<db_classification_schemes_id>`.
+
+.. _db_classification_schemes_id:
+
+.. index::
+   single: API resources; GET /db/{database}/classification_schemes/{classification_scheme_id}
+   single: API resources; retrieve classification scheme information and groups
+
+GET /db/{database}/classification_schemes/{classification_scheme_id} - Retrieve classification scheme information and groups
+============================================================================================================================
+Sequence definition databases only.
+
+**Required route parameters:**
+
+* database [string] - Database configuration name
+* classification_scheme_id [integer] - Classification scheme id number
+
+**Optional parameters:** None
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes/1
+
+**Response:** Object containing some or all of:
+
+* id [integer] - Classification scheme id
+* name [text] - Name of classification scheme
+* description [text] - Description of classification scheme
+* relative_threshold [boolean] - True if a :ref:`relative thresold<seqdef_classification_schemes>` is used
+* inclusion_threshold [integer] - The threshold for number of loci difference used to group
+* groups [object] containing key/value pairs consisting of:
+
+  * group_id [array] - list of :ref:`URIs to profiles<db_schemes_scheme_id_profiles_profile_id>` 
+    belonging to the group
+
 .. _db_loci:
 
 .. index::
@@ -179,7 +235,7 @@ GET /db/{database}/loci - List loci
 
 **Response:** Object containing:
 
-* records [int] - Number of loci.
+* records [int] - Number of loci
 * loci [array] - List of :ref:`URIs to defined locus records<db_loci_locus>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -520,7 +576,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 **Response:** Object containing:
 
 * records [int] - Number of profiles
-* profiles [array] - List of URIs to defined profile records. 
+* profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. 
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
