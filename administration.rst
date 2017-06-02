@@ -627,7 +627,7 @@ exclamation mark (!) next to them:
 
 * id - The name of the locus.
 
-  * Allowed: any value starting with a letter or underscore.
+  * Allowed: any value starting with a letter, number or underscore.
 
 * data_type - Describes whether the locus is defined by nucleotide or peptide 
   sequence.
