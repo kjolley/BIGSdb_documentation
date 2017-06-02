@@ -126,6 +126,15 @@ A full list of options can be found by typing: ::
 
  -r, --random
      Shuffle order of isolate ids to scan.
+     
+ --reuse_blast
+     Reuse the BLAST database for every isolate (when running --fast option). 
+     All loci will be scanned rather than just those missing from an isolate. 
+     Consequently, this may be slower if isolates have already been scanned, 
+     and for the first isolate scanned by a thread. On larger schemes, such as 
+     wgMLST, or when isolates have not been previously scanned, setting up the
+     BLAST database can take a significant amount of time, so this may be 
+     quicker. This option is always selected if --new_only is used.
 
  -R, --locus_regex REGEX
      Regex for locus names.
