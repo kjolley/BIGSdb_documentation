@@ -23,6 +23,30 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=
 Methods called with POST require their arguments to be sent as JSON within the
 post body.
 
+****************************
+Paging using request headers
+****************************
+Paging of results can be selected using query parameters as described above. 
+In this case, methods that support paging will include a paging object in the 
+JSON response. This will contain links to the next page, last page etc.
+
+The API also supports paging using request headers. The following request 
+headers are supported:
+
+* X-OFFSET
+* X-PER-PAGE
+
+e.g. ::
+
+  curl -i -H "X-PER-PAGE:10" -H "X-OFFSET:0" http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
+  
+If either of these headers are used, the paging object is no longer returned
+as part of the JSON response. The response will include the following headers:
+
+* X-OFFSET
+* X-PER-PAGE
+* X-TOTAL-PAGES
+
 *********
 Resources
 *********
