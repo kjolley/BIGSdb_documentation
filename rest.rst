@@ -649,6 +649,12 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
   * first - URI to first page of results
   * last - URI to last page of results
   * return_all - URI to page containing all results (paging disabled)
+  
+.. note::
+
+  This method also supports content negotiation. If the request accepts header
+  includes TSV or CSV, then the call is redirected to 
+  :ref:`/db/{database}/schemes/{scheme_id}/profiles_csv<db_schemes_scheme_id_profiles_csv>`.
    
 .. _db_schemes_scheme_id_profiles_csv:
 
