@@ -1157,11 +1157,11 @@ following key/value pairs:
 .. _db_field_field:
 
 .. index::
-   single: API resources; GET /db/{database}/field/{field}
+   single: API resources; GET /db/{database}/fields/{field}
    single: API resources; retrieve values set for a provenance field
    
-GET /db/{database}/field/{field} - Retrieve values set for a provenance field
-=============================================================================
+GET /db/{database}/fields/{field} - Retrieve values set for a provenance field
+==============================================================================
 **Required route parameters:**
 
 * database [string] - Database configuration name
@@ -1173,7 +1173,7 @@ GET /db/{database}/field/{field} - Retrieve values set for a provenance field
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging.
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/field/country
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields/country
 
 **Response:** Object containing:
 
