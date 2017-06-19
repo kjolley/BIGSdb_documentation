@@ -23,6 +23,7 @@ The software has been released under the GNU General Public Licence version 3.  
    data_downloads
    data_records
    data_query
+   user_projects
    data_analysis
    data_export
    submissions

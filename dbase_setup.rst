@@ -451,6 +451,11 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database by any specific user - this parameter is only effective
     if users have to log in.
+    
+* user_projects
+
+  * Sets whether authenticated users can create their own projects in order
+    to group isolates: either 'yes' or 'no', default 'no'.
       
 * view
 

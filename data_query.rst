@@ -625,11 +625,6 @@ a status.  Available status values are:
 
    :ref:`Sequence tag flags <sequence_tag_flags>`
 
-.. index::
-   single: filters 
-
-.. _query_filters:
-
 Query by list of attributes
 ===========================
 The query form can be modified with a list box in to which a list of values
@@ -645,6 +640,11 @@ options' tab.
 Select the attribute to query and enter a list of values.
 
 .. image:: /images/data_query/query_isolates13.png
+
+.. index::
+   single: filters 
+
+.. _query_filters:
 
 Query filters
 =============
