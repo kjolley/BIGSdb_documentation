@@ -1,5 +1,7 @@
 .. index::
    single: user projects
+   
+.. _user_projects:
 
 #############
 User projects
