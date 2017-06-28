@@ -244,6 +244,14 @@ Any value set here can be overridden in a
     in the configuration directory.  See
     :ref:`default access <default_access>`.
     
+* default_private_records
+
+  * The default number of private isolate records that a user can upload. The
+    user account must have a status of either 'submitter', 'curator', or 
+    'admin'. This value is used to set the private_quota field when creating a 
+    new user record (which can be overridden for individual users). Changing it
+    will not affect the quotas of existing users. Default: '0'.
+    
 * default_seqdef_config 
 
   * Isolate databases only: Name of the default seqdef database configuration
