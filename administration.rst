@@ -2302,7 +2302,7 @@ This involves creating a client key and a client secret that is used to sign
 requests coming from the application.  The client key and secret should be 
 provided to the application developer.
 
-There is a script to do this in the scripts/maintenace directory of the 
+There is a script to do this in the scripts/maintenance directory of the 
 download archive.  The script is called create_client_credentials and should
 be run by the postgres user.  A full list of options can be found by typing: ::
 
