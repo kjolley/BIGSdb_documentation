@@ -272,6 +272,16 @@ Any value set here can be overridden in a
 
   * Overrides the default allowed number of data points (isolates x columns) to
     export. Default: '25000000'. 
+    
+* fast_scan
+
+  * Sets whether fast mode scanning is enabled via the web interface. This will
+    scan all loci together, using exemplar sequences. In cases where multiple
+    loci are being scanned this should be significantly faster than the 
+    standard locus-by-locus scan, but it will take longer for the first results
+    to appear. :ref:`Allele exemplars<defining_exemplars>` should be defined 
+    if you enable this option. Set to 'yes' to enable.
+    Default: 'no'.
   
 * fieldgroup1 - fieldgroup10  
 
