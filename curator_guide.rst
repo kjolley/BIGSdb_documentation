@@ -875,15 +875,24 @@ variable over time. If a partial match is found to a type allele then a full
 database lookup will be performed to identify any known alleles. An allele can
 be given a status of type allele when :ref:`defining<single_allele_upload>`.
 
+If fast scanning is enabled, there will also be an option to 'Scan selected
+loci together'. This can be significantly quicker than a locus-by-locus search 
+against all alleles but is not enabled by default as it can use more memory on
+the server and requires :ref:`exemplar alleles<defining_exemplars>` to be 
+defined.
+
 Options can be returned to their default setting by clicking the 'Defaults' 
 button.
 
 .. image:: /images/curation/tag_scanning3.png
 
 Press 'Scan'. The system takes approximately 1-2 seconds to identify each 
-sequence (depending on machine speed and size of definitions databases). Any 
-identified sequences will be listed in a table, with checkboxes indicating 
-whether allele sequences or sequence regions are to be tagged.
+sequence (depending on machine speed and size of definitions databases). 
+Alternatively, if 'Scan selected loci together' is available and selected, it 
+may take longer to return initial results but total time should be less (e.g. 
+a 2000 loci cgMLST scheme may be returned in 1-2 minutes). Any identified 
+sequences will be listed in a table, with checkboxes indicating whether allele 
+sequences or sequence regions are to be tagged.
 
 .. image:: /images/curation/tag_scanning4.png
 

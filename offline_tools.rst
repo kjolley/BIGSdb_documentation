@@ -179,6 +179,10 @@ genome followed by a direct database lookup of the sequence found to identify
 the exact allele found. This is usually combined with the autotagger --fast 
 option.
 
+Once exemplars have been defined you may also wish to set the fast_scan="yes"
+option in the config.xml file. This enables their use for scanning within the
+web curators' interface. 
+
 There is a script called 'find_exemplars.pl' in the BIGSdb scripts/maintenance
 directory. 
 
