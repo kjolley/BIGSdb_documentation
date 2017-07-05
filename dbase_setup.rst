@@ -550,12 +550,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   
 * max 
 
-  * Maximum value for integer types. Special values such as CURRENT_YEAR can be
-    used.
+  * Maximum value for integer and date types. Special values such as 
+    CURRENT_YEAR and CURRENT_DATE can be used.
 
 * min	
 
-  * Minimum value for integer types.
+  * Minimum value for integer and date types.
   
 * optlist   
 
@@ -585,6 +585,7 @@ Special values
 --------------
 The following special variables can be used in place of an actual value:
 
+* CURRENT_DATE: current date in yyyy-mm-dd format
 * CURRENT_YEAR: the 4 digit value of the current year
 
 ::
