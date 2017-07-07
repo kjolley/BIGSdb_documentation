@@ -55,7 +55,8 @@ Optional packages
 =================
 Installing these packages will enable extra functionality, but they are not required by the core BIGSdb package.
 
-* ChartDirector - library used for generating charts. Used by some plugins.
+* ChartDirector (Perl) - library used for generating charts. 
+  Used by some plugins.
 * ImageMagick - mogrify used by some plugins.
 * MAFFT 6.8+ - sequence alignment used by some plugins.
 * Muscle - sequence alignment used by some plugins.
