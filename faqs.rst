@@ -6,7 +6,7 @@ General
 =======
 1. **What is the minimum specification of hardware required to run BIGSdb?**
 
- The software will run on very modest hardware - a number of PubMLST mirrors
+ The software will run on fairly modest hardware - a number of PubMLST mirrors
  have been set up on virtual machines with 1 processor core and 4 GB RAM.
  This should be considered an absolute minimum specification though.  For an 
  installation with only local users, the following minimum is recommended:
@@ -21,17 +21,18 @@ General
  is roughly twice the total size of your contigs), although this is not
  absolutely required.
  
- Offline jobs, such as :ref:`Genome Comparator <genome_comparator>` will use a
- processor core each, so if you want to run multiple jobs in parallel then you
- may want more cores (and memory).  Tagging of new genomes using the offline
- :ref:`autotagger <autotagger>` can be run in multi-threaded mode so the
- more cores available the faster this will be.
+ Offline jobs, such as :ref:`Genome Comparator <genome_comparator>` will use
+ multiple cores (depending on the settings in bigsdb.conf), so if you want to 
+ run multiple jobs in parallel then you may want more cores (and memory).  
+ Tagging of new genomes using the offline :ref:`autotagger <autotagger>` is
+ usually run in multi-threaded mode so the more cores available the faster 
+ this will be.
  
  As a comparison, the PubMLST site is run on two machines - separate web 
- and database servers.  All offline jobs and tagging of genomes is performed
- on the database server.  These have the following specification:
+ and database servers. All offline jobs and tagging of genomes is performed
+ on the database server. These have the following specification:
  
-  * web server: 16 cores, 64GB RAM
+  * web server: 40 cores, 128GB RAM
   * database server: 64 cores, 1TB RAM, 3TB RAID 10 local storage
   
 2. **Why might icons be missing when using Internet Explorer?**
