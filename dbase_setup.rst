@@ -557,6 +557,13 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
   * Minimum value for integer and date types.
   
+* no_curate
+
+  * Setting this will hide the field in the curator interface and prevent it
+    from being manually modified. This is useful for fields that are populated
+    by automated scripts or database triggers. Can be 'yes' or 'no', default
+    'no'.
+  
 * optlist   
 
   * Sets if this field has a list of allowed values, default 'no'. Surround
