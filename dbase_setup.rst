@@ -714,6 +714,13 @@ Any value set here can be overridden in a
   * Prevent users or curators from downloading all alleles for a locus (admins
     always can). 'yes' or 'no', default 'no'.
     
+* exemplars
+
+  * Use exemplar sequences in the BLAST caches used for the sequence query
+    pages. This is useful on larger databases as it speeds up the query 
+    significantly. :ref:`Exemplar alleles<defining_exemplars>` *MUST* be 
+    defined otherwise sequence queries will fail. 'yes' or 'no', default 'no'.
+    
 * isolate_database
 
   * The config name of the isolate database. This is used to provide a link to
