@@ -403,7 +403,9 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 
 **Response:** Object containing:
 
-* records [int] - Number of alleles
+* records [int] - Number of alleles.
+* last_updated [date] - Latest allele addition/modification date 
+  (ISO 8601 format). 
 * alleles [array] - List of :ref:`URIs to defined allele records
   <db_loci_locus_alleles_allele_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
@@ -639,6 +641,8 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 **Response:** Object containing:
 
 * records [int] - Number of profiles
+* last_updated [date] - Latest profile addition/modification date 
+  (ISO 8601 format). 
 * profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. 
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
