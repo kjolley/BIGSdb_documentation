@@ -12,8 +12,8 @@ quotas are enabled, these projects can include private records that can then be
 shared with other user accounts.
 
 .. note::
-   Private projects can be enabled by an administrator by setting 
-   'private_projects="yes"' in the :ref:`config.xml<isolate_xml>` file for the
+   User projects can be enabled by an administrator by setting 
+   'user_projects="yes"' in the :ref:`config.xml<isolate_xml>` file for the
    database.
 
 To create a new project, go to the isolate database contents page and click
