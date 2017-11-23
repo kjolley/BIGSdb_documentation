@@ -404,6 +404,11 @@ Any value set here can be overridden in a
     by a '|' and the description, e.g. 
     'pubmlst_neisseria_seqdef|Sequence and profile definitions'.
     This is used to populate the dropdown menu.
+    
+* remote_contigs
+
+  * Optionally allow the use of remote contigs. These are stored in a remote
+    BIGSdb database, accessible via the RESTful API. Set to 'yes' to enable.
 
 * script_path_includes  
 
