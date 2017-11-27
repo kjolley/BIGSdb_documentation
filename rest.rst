@@ -1,3 +1,5 @@
+_restful_api:
+
 ###############################################
 RESTful Application Programming Interface (API)
 ###############################################

@@ -988,3 +988,110 @@ Run either as the 'postgres' user or an account that is allowed to connect as
 the postgres user.
 
 This should be run periodically from a CRON job, e.g. every hour.
+
+.. _accessing_remote_contigs:
+
+************************************
+Configuring access to remote contigs
+************************************
+It is possible for isolate records to have contigs in an external BIGSdb 
+database. These must be accessible via the :ref:`RESTful API<restful_api>`. 
+The advantage of this is that it enables multiple isolate databases to use the
+same genome assemblies without having to duplicate the storage of those 
+assemblies. If access to the external database requires authenticated access,
+OAuth settings can be set to enable contig retrieval.
+
+To enable remote contigs, set the remote_contigs attribute in the 
+:ref:`<system><isolate_xml>` tag of config.xml, i.e. ::
+
+ remote_contigs = "yes"
+ 
+.. _oauth_remote_contigs:
+  
+Setting up authentication
+=========================
+A client key for the BIGSdb remote contig manager needs to be generated. This
+can be done using the 
+:ref:`create_client_credentials.pl<create_client_credentials>` script, e.g. ::
+
+ create_client_credentials.pl --a 'BIGSdb remote contig manager' --insert
+ 
+This will generate a client id (key) and a client secret and add them to the
+authentication database. 
+
+You will then need to obtain an access token and access secret using the client
+key and secret with the get_oauth_access_token.pl script. You will need to
+enter the API database URI (e.g. 
+http://rest.pubmlst.org/db/pubmlst_rmlst_isolates) and the web database URL 
+(e.g. https://pubmlst.org/bigsdb?db=pubmlst_rmlst_isolates). You will then be
+prompted to follow a link and log in to the database with your user 
+credentials. A verification code will be generated. You need to enter this in
+to the script when prompted. An access token and secret will be returned to 
+you.
+
+From the curators' page, click the oauth credentials add link.
+
+.. image:: /images/dbase_setup/oauth.png
+
+Populate the OAuth_credentials table with the client key/secret and access
+token/secret. You should also enter the root REST URI for the database 
+(e.g. http://rest.pubmlst.org/db/pubmlst_rmlst_isolates). 
+
+.. image:: /images/dbase_setup/oauth2.png
+
+.. _processing_remote_contigs:
+
+Processing remote contigs
+=========================
+When remote contigs are first linked to a record, the sequences are downloaded
+in bulk (without their metadata). This allows the sequence lengths to be 
+recorded as this is needed for various queries and outputs. The curator is then
+given an option to process the contigs, which involves downloading each contig 
+individually to record metadata including the original designation and the 
+sequence platform used. This may take a while so it may be preferable to
+perform this task offline. This can be done using the process_remote_contigs.pl
+script found in the scripts/automation directory. Options for using this script
+are shown below: ::
+
+   remote_contigs.pl --help
+   NAME
+       process_remote_contigs.pl
+       Download, check length and create checksum contigs stored as URIs
+   
+   SYNOPSIS
+       process_remote_contigs.pl --database NAME [options]
+   
+   OPTIONS
+              
+   --database NAME
+       Database configuration name.
+       
+   --exclude_isolates LIST
+       Comma-separated list of isolate ids to ignore.
+       
+   --exclude_projects LIST
+       Comma-separated list of projects whose isolates will be excluded.
+       
+   --help
+       This help page.
+       
+   --isolates LIST  
+       Comma-separated list of isolate ids to scan (ignored if -p used).
+       
+   --isolate_list_file FILE  
+       File containing list of isolate ids (ignored if -i or -p used).
+       
+   --min ID
+       Minimum isolate id.
+   
+   --max ID
+       Maximum isolate id.
+              
+   --projects LIST
+       Comma-separated list of project isolates to scan.
+       
+   --quiet
+       Only display errors.
+
+
+ 
