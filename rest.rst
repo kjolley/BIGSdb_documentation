@@ -107,7 +107,7 @@ Resources
   - Retrieve contig record
 * :ref:`GET /db/{database}/fields<db_fields>`
   - Retrieve list of isolate provenance field descriptions
-* :ref:`GET /db/{database}/field/{field}<db_field_field>`
+* :ref:`GET /db/{database}/fields/{field}<db_field_field>`
   - Retrieve values set for a provenance field
 * :ref:`GET /db/{database}/users/{user_id}<db_users_user_id>`
   - Retrieve user information
