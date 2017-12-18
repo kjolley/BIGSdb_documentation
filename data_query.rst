@@ -241,9 +241,9 @@ with other query criteria or lists of attributes.
 
 .. _profile_definitions:
 
-**************************************
-Identfying allelic profile definitions
-**************************************
+***************************************
+Identifying allelic profile definitions
+***************************************
 For schemes such as MLST you can query allelic combinations to identify 
 the sequence type (or more generically, the primary key of the profile).
 
