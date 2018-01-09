@@ -487,11 +487,13 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
 * database [string] - Database configuration name
 * locus [string] - Locus name
 
+**Optional route parameters:**
+
+* details [1/0] - Return detailed exact match parameters
+
 **Required additional parameters (JSON-encoded in POST body):**
 
 * sequence [string] - Sequence string
-
-**Optional parameters:** None
 
 **Response:** Object containing the following key/value pairs: 
 
@@ -500,9 +502,25 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
   * allele_id
   * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
   
-.. note::
-   This method currently only supports exact matches. Whitespace is removed
-   from the sequence and it is capitalized before querying the database.
+  additionally if 'details' parameter passed:
+  
+  * start - start position on query
+  * end - end position on query
+  * orientation - forward/reverse
+  * length - length of matched allele
+  
+* best_match [object] - consisting of key/value pairs (if no exact matches)
+
+  * allele_id 
+  * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
+  * start - start position on query (predicted taking account of allele length)
+  * end - end position on query (predicted taking account of allele length)
+  * orientation - forward/reverse
+  * length - length of matched allele
+  * alignment - length of BLAST alignment
+  * mismatches - number of mismatches
+  * identity - %identity of match
+  * gaps - number of gaps in alignment
    
 .. _db_sequence:
 
