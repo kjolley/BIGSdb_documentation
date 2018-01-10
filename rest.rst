@@ -792,11 +792,11 @@ POST /db/{database}/schemes/{scheme_id}/sequence - Query sequence to extract all
   * length - length of matched allele
   * contig - contig name if FASTA file is uploaded 
   
-Example curl call to upload a FASTA file and extract MLST results from 
-Neisseria database: ::
+Example curl call to upload a FASTA file 'contigs.fasta' and extract MLST 
+results from Neisseria database: ::
    
-    (echo -n '{"sequence": "'; base64 contigs_fasta; echo '"}') | 
-    curl -s -H "Content-Type: application/json" -X POST "http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/sequence?base64=1" -d @-
+    (echo -n '{"base64":true,"sequence": "'; base64 contigs.fasta; echo '"}') | 
+    curl -s -H "Content-Type: application/json" -X POST "http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/sequence" -d @-
   
 .. note::
    This method only supports exact matches. If no match is indicated 
