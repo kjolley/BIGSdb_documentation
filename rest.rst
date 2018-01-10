@@ -83,6 +83,8 @@ Resources
   - Download allelic profiles in CSV (tab-delimited) format
 * :ref:`GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id}<db_schemes_scheme_id_profiles_profile_id>`
   - Retrieve allelic profile record
+* :ref:`POST /db/{database}/schemes/{scheme_id}/sequence<db_schemes_scheme_id_sequence>`
+  - Query sequence to extract allele designations/fields for a scheme
 * :ref:`GET /db/{database}/isolates<db_isolates>` 
   - Retrieve list of isolate records
 * :ref:`POST /db/{database}/isolates/search<db_isolates_search>`
@@ -487,13 +489,14 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
 * database [string] - Database configuration name
 * locus [string] - Locus name
 
-**Optional route parameters:**
-
-* details [1/0] - Return detailed exact match parameters
-
 **Required additional parameters (JSON-encoded in POST body):**
 
-* sequence [string] - Sequence string
+* sequence [string] - Sequence string or base64-encoded FASTA file
+
+**Optional parameters (JSON-encoded in POST body):**
+
+* details [true/false] - Return detailed exact match parameters
+* base64 [true/false] - Sequence is a base64-encoded FASTA file
 
 **Response:** Object containing the following key/value pairs: 
 
@@ -508,6 +511,7 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
   * end - end position on query
   * orientation - forward/reverse
   * length - length of matched allele
+  * contig - contig name if FASTA file is uploaded
   
 * best_match [object] - consisting of key/value pairs (if no exact matches)
 
@@ -536,21 +540,34 @@ POST /db/{database}/sequence - Query sequence to identify allele without specify
 
 **Required additional parameters (JSON-encoded in POST body):**
 
-* sequence [string] - Sequence string
+* sequence [string] - Sequence string or base64-encoded FASTA file
 
-**Optional parameters:** None
+**Optional parameters (JSON-encoded in POST body):**
 
-**Response:** Object containing the following key/value pairs: 
+* details [true/false] - Return detailed exact match parameters
+* base64 [true/false] - Sequence is a base64-encoded FASTA file
 
-* exact_matches [array] - list of match objects, each consisting of:
+**Response:**
 
-  * locus [string] - locus name
-  * allele_id [string] - allele identifier
+* exact_matches [object] consisting of locus keys, each consisting of array 
+  of match objects consisting of:
+
+  * allele_id
   * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
   
+  additionally if 'details' parameter passed:
+  
+  * start - start position on query
+  * end - end position on query
+  * orientation - forward/reverse
+  * length - length of matched allele
+  * contig - contig name if FASTA file is uploaded
+  
 .. note::
-   This method currently only supports exact matches. Whitespace is removed
-   from the sequence and it is capitalized before querying the database.
+   This method only supports exact matches. If no match is indicated 
+   for a specific locus, use the 
+   :ref:`locus-specific call<db_loci_locus_sequence>` to identify the closest
+   match.
 
 .. _db_schemes:
 
@@ -738,6 +755,55 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
 * date_entered [string] - record creation date (ISO 8601 format)
 * datestamp [string] - last updated date (ISO 8601 format)
 
+.. _db_schemes_scheme_id_sequence:
+
+.. index::
+   single: API resources; POST /db/{database}/schemes/{scheme_id}/sequence 
+   single: API resources; query scheme sequences
+
+POST /db/{database}/schemes/{scheme_id}/sequence - Query sequence to extract allele designations/fields for a scheme
+====================================================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id
+
+**Required additional parameters (JSON-encoded in POST body):**
+
+* sequence [string] - Sequence string or base64-encoded FASTA file
+
+**Optional parameters (JSON-encoded in POST body):**
+
+* details [true/false] - Return detailed exact match parameters
+* base64 [true/false] - Sequence is a base64-encoded FASTA file
+
+**Response:** Object containing the following key/value pairs: 
+
+* exact_matches [array] - list of match objects, each consisting of:
+
+  * allele_id
+  * href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`.
+  
+  additionally if 'details' parameter passed:
+  
+  * start - start position on query
+  * end - end position on query
+  * orientation - forward/reverse
+  * length - length of matched allele
+  * contig - contig name if FASTA file is uploaded 
+  
+Example curl call to upload a FASTA file and extract MLST results from 
+Neisseria database: ::
+   
+    (echo -n '{"sequence": "'; base64 contigs_fasta; echo '"}') | 
+    curl -s -H "Content-Type: application/json" -X POST "http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/sequence?base64=1" -d @-
+  
+.. note::
+   This method only supports exact matches. If no match is indicated 
+   for a specific locus, use the 
+   :ref:`locus-specific call<db_loci_locus_sequence>` to identify the closest
+   match.
+  
 .. _db_isolates:
 
 .. index::
