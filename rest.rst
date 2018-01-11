@@ -513,6 +513,10 @@ POST /db/{database}/loci/{locus}/sequence - Query sequence to identify allele
   * length - length of matched allele
   * contig - contig name if FASTA file is uploaded
   
+  If the locus is linked to field data in client isolate databases, there may 
+  also be an object called 'linked_data' containing values and frequencies of
+  the field for the returned allele.
+  
 * best_match [object] - consisting of key/value pairs (if no exact matches)
 
   * allele_id 
@@ -562,6 +566,10 @@ POST /db/{database}/sequence - Query sequence to identify allele without specify
   * orientation - forward/reverse
   * length - length of matched allele
   * contig - contig name if FASTA file is uploaded
+  
+  If the locus is linked to field data in client isolate databases, there may 
+  also be an object called 'linked_data' containing values and frequencies of
+  the field for the returned allele.
   
 .. note::
    This method only supports exact matches. If no match is indicated 
@@ -791,6 +799,10 @@ POST /db/{database}/schemes/{scheme_id}/sequence - Query sequence to extract all
   * orientation - forward/reverse
   * length - length of matched allele
   * contig - contig name if FASTA file is uploaded 
+  
+  If the locus is linked to field data in client isolate databases, there may 
+  also be an object called 'linked_data' containing values and frequencies of
+  the field for the returned allele.
   
 Example curl call to upload a FASTA file 'contigs.fasta' and extract MLST 
 results from Neisseria database: ::
