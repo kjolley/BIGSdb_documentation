@@ -283,7 +283,11 @@ A full list of options can be found by typing: ::
      New alleles assigned will be flagged either 'frameshift' or 'internal stop
      codon' if appropriate.  Essentially, combining these two options only 
      checks that the sequence starts with a start codon and ends with a stop
-     codon.   
+     codon. 
+     
+ --allow_subsequences
+     Allow definition of sub- or super-sequences. By default these will not
+     be assigned. 
 
  -A, --alignment INT
      Percentage alignment (default: 100).
