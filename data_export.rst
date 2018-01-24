@@ -131,6 +131,10 @@ will be included.
 
 Click submit.
 
+The export job will be submitted to the job queue.
+
+.. image:: /images/data_export/profile_export4.png
+
 The profiles will be exported in tab-delimited text and Excel formats.
 
 *************
