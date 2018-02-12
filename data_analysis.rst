@@ -354,7 +354,11 @@ Comparator interface.
 
 Analysis using defined loci
 ===========================
-Select the isolate genomes that you wish to analyse and then either the loci 
+Select the isolate genomes that you wish to analyse. These will either be in 
+a dropdown list or, if there are too many in the database, a text input where
+a list can be entered. You can also upload your own genomes for analysis - 
+these should be either a single file in FASTA format (if you have just one 
+genome), or a zip file containing multiple FASTA files. Select either the loci 
 from the list or a set of schemes.  Press submit.
 
 .. image:: /images/data_analysis/genome_comparator3.png
