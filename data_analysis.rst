@@ -953,18 +953,18 @@ Select the isolates to include. The tree can be generated from allelic profiles
 of any selection of loci, or more conveniently, you can select a scheme in the
 Scheme selector to include all loci belonging to that scheme.
 
-.. note::
-   This analysis currently depends on allele designations having been defined 
-   within the database. It is not able to scan genomes itself (unlike Genome 
-   Comparator), so make sure that genomes have been tagged at the loci you 
-   wish to include before using GrapeTree.
-
 Additional fields can be selected to be included as metadata for use in 
 colouring nodes - select any fields you wish to include. Multiple selections
 can be made by holding down shift or ctrl while selecting. Click 'Submit' to 
 start the analysis.
 
 .. image:: /images/data_analysis/grapetree3.png
+
+.. note::
+   This analysis currently depends on allele designations having been defined 
+   within the database. It is not able to scan genomes itself (unlike Genome 
+   Comparator), so make sure that genomes have been tagged at the loci you 
+   wish to include before using GrapeTree.
 
 The job will be sent to the job queue. When it has finished, click the button
 marked 'Launch GrapeTree'.
