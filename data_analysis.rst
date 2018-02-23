@@ -986,9 +986,9 @@ follows:
   * Nodes coloured by clonal complex
   * Labels removed
   * Branches collapsed where <=100 loci different
-  * Set node size to 200%
+  * Node size set to 200%
   * Kurtosis (node size relative to number of isolates) set to 75%
-  * Allow dynamic rendering to run to fan out nodes
+  * Dynamic rendering allowed to run to fan out nodes
   
 .. image:: /images/data_analysis/grapetree6.png
 
