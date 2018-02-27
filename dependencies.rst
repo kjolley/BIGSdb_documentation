@@ -41,7 +41,7 @@ These are included with most Linux distributions.
 * `Error <http://search.cpan.org/~shlomif/Error/lib/Error.pm>`_ - Exception handling.
 * `Excel::Writer::XLSX <http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm>`_ - Used to export data in Excel format.
 * `IO::String <http://search.cpan.org/~gaas/IO-String/String.pm>`_
-* `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - [required by PhyloViz plugin] - Used to interact with PhyloViz API
+* `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - Used to manipulate JSON data.
 * `List::MoreUtils <http://search.cpan.org/~adamk/List-MoreUtils/lib/List/MoreUtils.pm>`_ (version 0.28+).
 * `Log::Dispatch::File <http://search.cpan.org/~drolsky/Log-Dispatch/lib/Log/Dispatch/File.pm>`_ - Object for logging to file.
 * `Log::Log4perl <http://search.cpan.org/~mschilli/Log-Log4perl/lib/Log/Log4perl.pm>`_ - Configurable status and error logging.
