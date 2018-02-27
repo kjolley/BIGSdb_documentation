@@ -47,7 +47,7 @@ These are included with most Linux distributions.
 * `Log::Log4perl <http://search.cpan.org/~mschilli/Log-Log4perl/lib/Log/Log4perl.pm>`_ - Configurable status and error logging.
 * `LWP::UserAgent <http://search.cpan.org/~ether/libwww-perl/>`_ - [required by PhyloViz and PhyloTree plugins] - Used to upload via API
 * `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
-* `Parallel::ForkManager <http://search.cpan.org/~szabgab/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading tools and plugins.
+* `Parallel::ForkManager <http://search.cpan.org/~yanick/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading tools and plugins.
 * `Time::Duration <http://search.cpan.org/~avif/Time-Duration/Duration.pm>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units.
 * `XML::Parser::perlSAX <http://search.cpan.org/~kmacleod/libxml-perl/lib/XML/Parser/PerlSAX.pm>`_ - part of libxml-perl - Used to parse XML configuration files.
 
