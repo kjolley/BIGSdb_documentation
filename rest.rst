@@ -865,7 +865,10 @@ GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
 * database [string] - Database configuration name
 * isolate_id [integer] - Isolate identifier
 
-**Optional parameters:** None
+**Optional parameter:** 
+
+* provenance_only [integer] - Set to non-zero value to only return provenance
+  metadata
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1
 
