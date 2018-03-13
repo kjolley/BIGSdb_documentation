@@ -490,7 +490,7 @@ Available options are:
 
 * Produce alignments - Selecting this will produce the alignment files, as well
   as XMFA and FASTA outputs of aligned sequences.  This will result in the 
-  analysis taking approximately twice as long to run.
+  analysis taking longer to run.
 * Include ref sequences in alignment - When doing analysis using an annotated 
   reference, selecting this will include the reference sequence in the 
   alignment files.
