@@ -504,7 +504,7 @@ Available options are:
     quicker than MUSCLE, uses less memory, and produces comparable results.
   * MUSCLE - This was originally the only choice. It is still included to 
     enable previous analyses to be re-run and compared but it is recommended 
-    that MAFFT isused otherwise.
+    that MAFFT is used otherwise.
 
 Core genome analysis fieldset
 =============================
