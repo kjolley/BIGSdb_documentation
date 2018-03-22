@@ -319,6 +319,11 @@ GET /db/{database}/loci - List loci
   * first - URI to first page of results
   * last - URI to last page of results
   * return_all - URI to page containing all results (paging disabled)
+  
+.. note::
+   See also the :ref:`scheme specific version<db_schemes_scheme_id_loci>`, 
+   allowing filtering by date of last allele update for just the loci that
+   are members of a scheme.
    
 .. _db_loci_locus:
 
