@@ -298,11 +298,11 @@ GET /db/{database}/loci - List loci
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 * alleles_added_after [date] - Include only loci with alleles added after 
-  specified date (ISO 8601 format). Only recognized in sequence definitions 
-  database.
+  specified date (ISO 8601 format). Only recognized in sequence definition 
+  databases.
 * alleles_updated_after [date] - Include only loci with alleles last modified 
   after specified date (ISO 8601 format). Only recognized in sequence 
-  definitions database.
+  definition databases.
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
 
