@@ -73,6 +73,8 @@ Resources
 * :ref:`GET /db/{database}/schemes<db_schemes>` - List schemes
 * :ref:`GET /db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
   - Retrieve scheme information
+* :ref:`GET /db/{database}/schemes/{scheme_id}/loci<db_schemes_scheme_id_loci>` 
+  - Retrieve scheme loci
 * :ref:`GET /db/{database}/schemes/{scheme_id}/fields/{field}<db_schemes_scheme_id_fields_field>`
   - Retrieve information about scheme field
 * :ref:`GET /db/{database}/schemes/{scheme_id}/profiles<db_schemes_scheme_id_profiles>`
@@ -636,6 +638,35 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
 * curators [array] (seqdef databases) - list of 
   :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
+  
+.. _db_schemes_scheme_id_loci:
+
+.. index::
+   single: API resources; GET /db/{database}/schemes/{scheme_id}/loci
+   single: API resources; retrieve scheme loci
+  
+GET /db/{database}/schemes/{scheme_id}/loci - Retrieve scheme loci
+==================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id number
+
+**Optional parameters:**
+
+* alleles_added_after [date] - Include only loci with alleles added after 
+  specified date (ISO 8601 format). Only recognized in sequence definition 
+  databases.
+* alleles_updated_after [date] - Include only loci with alleles last modified 
+  after specified date (ISO 8601 format). Only recognized in sequence 
+  definition databases.
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/loci
+
+**Response:** Object containing:
+
+* records [integer] - Number of loci
+* loci [array] - List of :ref:`URIs to defined locus records<db_loci_locus>`. 
 
 .. _db_schemes_scheme_id_fields_field:
 
