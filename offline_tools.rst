@@ -223,7 +223,7 @@ A full list of options can be found by typing: ::
  --update
      Update exemplar flags in database.
     
- --variation IDENTITY
+ --variation DISSIMILARITY
      Value for percentage identity variation that exemplar alleles
      cover (smaller value will result in more exemplars). Default: 10. 
 
