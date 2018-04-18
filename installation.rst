@@ -36,8 +36,8 @@ directives.
    accessible from http://your_website/javascript/.
 5. Copy the css directory to root directory of your website, i.e. accessible 
    from http://your_website/css/.
-6. Copy the fonts directory to the root directory of your website, i.e. 
-   accessible from http://your_website/fonts/.  
+6. Copy the webfonts directory to the root directory of your website, i.e. 
+   accessible from http://your_website/webfonts/.  
 7. Copy the images directory to the root directory of your website, i.e. 
    accessible from http://your_website/images/.
 8. Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of
