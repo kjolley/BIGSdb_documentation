@@ -105,6 +105,8 @@ Resources
   - Retrieve list of contigs
 * :ref:`GET /db/{database}/isolates/{isolate_id}/contigs_fasta<db_isolates_isolate_id_contigs_fasta>`
   - Download contigs in FASTA format
+* :ref:`GET /db/{database}/isolates/{isolate_id}/history<db_isolates_isolate_id_history>`
+  - Retrieve isolate update history
 * :ref:`GET /db/{database}/contigs/{contig_id}<db_contigs_contig_id>`
   - Retrieve contig record
 * :ref:`GET /db/{database}/fields<db_fields>`
@@ -973,6 +975,8 @@ GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
 
   * id [string] - :ref:`URI to project information<db_projects_project_id>`
   * description [string] - description of project
+  
+* history [string] - :ref:`URI to isolate history record<db_isolates_isolate_id_history>`
    
 * new_version [string] - URI to newer version of record
 * old_version [string] - URI to older version of record
@@ -1168,6 +1172,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
+
    * previous - URI to previous page of results
    * next - URI to next page of results
    * first - URI to first page of results
@@ -1197,6 +1202,34 @@ GET /db/{database}/isolates/{isolate_id}/contigs_fasta - Download contigs in FAS
 http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?header=original_designation
 
 **Response:** FASTA format file of isolate contig sequences
+
+.. _db_isolates_isolate_id_history:
+
+.. index::
+   single: API resources; GET /db/{database}/isolates/{isolate_id}/history
+   single: API resources; retrieve isolate update history
+   
+GET /db/{database}/isolates/{isolate_id}/history - Retrieve isolate update history
+==================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* isolate_id [integer] - Isolate identifier
+
+**Optional parameters:** None
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history
+
+**Response:** Object containing:
+
+* records [int] - Number of updayes
+* contigs [array] - List of update objects each consisting of the following 
+  key/value pairs:
+  
+  * curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
+  * timestamp [string] - Time of update
+  * actions [array] - List of update descriptions [strings]
 
 .. _db_isolates_search:
 
