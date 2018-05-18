@@ -1868,7 +1868,7 @@ further define loci by their context, i.e. surrounding sequence.
 Filtering by *in silico* PCR
 ============================
 Provided a locus can be predicted to be specifically amplifed by a PCR 
-reaction, the genome can be filtered to only look at regions prediced to fall 
+reaction, the genome can be filtered to only look at regions predicted to fall 
 within amplification products of one or more PCR reactions. Since this is *in 
 silico* we don't need to worry about problems such as sequence secondary 
 structure and primers can be any length.
