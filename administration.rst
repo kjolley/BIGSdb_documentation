@@ -68,6 +68,9 @@ Individual permissions can be set for each curator:
 * set_user_passwords - allowed to modify other users' passwords (if built-in
   authentication is in use).
 * modify_loci - allowed to add or modify loci.
+* modify_locus_descriptions - allowed to modify the description text and 
+  external hyperlinks used. Even with this setting, only loci for which a 
+  user is explicitly set as a curator can be modified.
 * modify_schemes - allowed to add or modify schemes.
 * modify_sequences - allowed to add sequences to the sequence bin (for isolate
   databases) or new allele definitions (for sequence definition databases).
