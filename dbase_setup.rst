@@ -1029,7 +1029,9 @@ credentials. A verification code will be generated. You need to enter this in
 to the script when prompted. An access token and secret will be returned to 
 you.
 
-From the curators' page, click the oauth credentials add link.
+From the curators' page, click the oauth credentials add link in the 
+administrator settings. This function is normally hidden, so you may need to 
+click the 'Show all' toggle to display it.
 
 .. image:: /images/dbase_setup/oauth.png
 

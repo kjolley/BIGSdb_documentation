@@ -100,8 +100,8 @@ Individual permissions can be set for each curator:
   this! The user account can be used by multiple databases on the site and any
   changes to user details will be seen throughout the site).
 
-Permissions can be set by clicking the '?' button next to 'curator permissions'
-on the curator's interface: 
+Permissions can be set by clicking the Update/delete button in the Permissions
+box in the admin functions area of the curator's interface: 
 
 .. image:: /images/administration/add_user_permissions.png
 
@@ -191,8 +191,8 @@ Setting user passwords
 *authentication system.*
 
 If you are an administrator or a curator with specific permission to change 
-other users' passwords, you should see a link to 'set user passwords' at the 
-bottom of the curator's index page. Click this.
+other users' passwords, you should see a 'User passwords' box in the admin
+section of the curator's index page. Click the 'Set passwords' link.
 
 .. image:: /images/administration/set_passwords.png
 
