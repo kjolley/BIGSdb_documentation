@@ -1,3 +1,5 @@
+.. _private_records:
+
 ###############
 Private records
 ###############

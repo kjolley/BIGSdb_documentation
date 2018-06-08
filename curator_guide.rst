@@ -658,7 +658,7 @@ Deleting multiple isolate records
    this.
 
 Before you can delete multiple records, you need to search for them. From the 
-curator's main page, click the Query isolates link:
+curator's main page, click the update/delete isolates link:
 
 .. image:: /images/curation/batch_delete_isolate.png
 
@@ -678,12 +678,13 @@ Retiring isolate identifiers
 ****************************
 Sometimes there is a requirement to prevent the automated assignment of a 
 particular isolate identifier number - an isolate with that identifier may 
-have been commonly used and has since been removed. Reassignment of the 
+have been commonly referred to and has since been removed. Reassignment of the 
 identifier to a new isolate record may lead to confusion, so in this instance,
 it would be better to prevent this.
 
 You can retire an isolate identifier by clicking the 'Add' retired isolates
-link on the isolates database curators' page.
+link on the isolates database curators' page. This function is normally hidden,
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/retire_isolate1.png
 
@@ -716,7 +717,8 @@ If batch adding isolates, they can be entered as a semi-colon (;) separated
 list in the aliases column.
 
 As stated above, aliases can also be batch added. To do this, click the batch
-add (++) link on the curator's index page.
+add (++) isolate aliases link on the curator's index page. This function is 
+normally hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/isolate_aliases1.png
 
@@ -743,7 +745,8 @@ record. This can be done when :ref:`adding the isolate <adding_isolates>`, where
 lists of PubMed ids can be entered in to the web form.
 
 They can also be associated in batch after the upload of isolate records. Click
-the PubMed links batch add (++) link on the curator's main page.
+the PubMed batch add (++) link on the curator's main page. This function is 
+normally hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/add_publications.png
 
@@ -772,14 +775,15 @@ Uploading sequence contigs linked to isolate records
 
 Select isolate from drop-down list
 ==================================
-To upload sequence data, click the sequences batch add (++) link on the 
-curator's main page.
+To upload sequence data, click the sequences batch add (++) sequence bin link 
+on the curator's main page.
 
 .. image:: /images/curation/upload_contigs.png
 
 Select the isolate that you wish to link the sequence to from the dropdown 
-list box. You also need to enter the person who sent the data. Optionally, 
-you can add the sequencing method used.
+list box (or if the database is large and there are too many isolates to list,
+enter the id in the text box). You also need to enter the person who sent the 
+data. Optionally, you can add the sequencing method used.
 
 Paste sequence contigs in FASTA format in to the form.
 
@@ -790,27 +794,13 @@ displayed. To confirm upload, click 'Upload'.
 
 .. image:: /images/curation/upload_contigs3.png
 
-It is also possible to upload data for multiple isolates at the same time, but
-these must exist as single contigs for each isolate. To do this, select 'Read 
-identifier from FASTA' in the isolate id field and select the field that you 
-wish to use as the identifier in the 'identifier field', e.g. to use isolate 
-names select 'isolate' here.
-
-.. image:: /images/curation/upload_contigs4.png
-
-Provided the identifier used uniquely identifies the isolate you will get a 
-confirmation screen. If the isolate name does not do this you'll probably have 
-to use the database id number instead. Click 'Upload' to confirm.
-
-.. image:: /images/curation/upload_contigs5.png
-
 Select from isolate query
 =========================
-As an alternative to selecting the isolate from a dropdown list (which can 
-become unwieldy for large databases), it is also possible to upload sequence 
+As an alternative to selecting the isolate from a dropdown list (or entering
+the id on large databases), it is also possible to upload sequence 
 data following an isolate query.
 
-Click the isolate query link from the curator's main page.
+Click the isolate update/delete link from the curator's main page.
 
 .. image:: /images/curation/upload_contigs6.png
 
@@ -995,7 +985,8 @@ Creating the project
 ====================
 The first step in grouping by project is to set up a project.
 
-Click the add (+) project link on the curator's main page.
+Click the add (+) project link on the curator's main page. This function is 
+normally hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/projects.png
 
@@ -1014,6 +1005,18 @@ There are additionally two flags that affect how projects are listed:
 
 * list - Setting this is required for the project to be listed in a page of 
   projects linked from the main contents page.
+  
+There are a further two option flags:
+
+* private - Setting this makes the project a private 
+  :ref:`user project<user_projects>`. You will be set as the project owner and
+  will be the only user able to access it by default. You can add additional
+  users or user groups who will be able to access and update the project data
+  later.
+  
+* no_quota - If set, isolates added to this project will not count against a
+  user's quota of :ref:`private records<private_records>` (only relevant to 
+  private projects).
 
 Click 'Submit'.
 
@@ -1023,7 +1026,8 @@ Explicitly adding isolates to a project
 =======================================
 Explicitly adding isolates to the project can be done individually or in batch
 mode. To add individually, click the add (+) project member link on the 
-curator's main page.
+curator's main page. This function is normally hidden, so you may need to click
+the 'Show all' toggle to display it.
 
 .. image:: /images/curation/projects3.png
 
