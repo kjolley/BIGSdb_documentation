@@ -3,7 +3,11 @@ Curator's guide
 ###############
 
 Please note that links displayed within the curation interface will vary 
-depending on database contents and the permissions of the curator.
+depending on database contents and the permissions of the curator. Some  
+infrequently used links are usually hidden by default. These can be enabled
+by clicking the 'Show all' toggle switch.
+
+.. image:: /images/curation/show_all.png 
 
 .. index::
    single: users; adding
@@ -42,10 +46,8 @@ Adding new allele sequence definitions
 
 Single allele
 =============
-To add a single new allele, click the sequences (all loci) add (+) link on the
-curator's main page - if only a few loci are defined with permission for the
-current user to curate then they will be listed individually and the specific
-locus allele addition links can also be used.
+To add a single new allele, click the sequences add (+) link on the
+curator's main page.
 
 .. image:: /images/curation/add_alleles.png 
 
@@ -121,7 +123,7 @@ provided all sequences are for the same locus and have the same status.
 
 Upload using a spreadsheet
 --------------------------
-Click the batch add (++) sequences (all loci) link on the curator's main page.
+Click the batch add (++) sequences link on the curator's main page.
 
 .. image:: /images/curation/add_alleles3.png 
 
@@ -225,15 +227,14 @@ Updating and deleting allele sequence definitions
    profile first, then re-create it after deleting and re-adding the allele.
 
 In order to update or delete an allele, first you must select it. Click the 
-query (?) sequences (all loci) link - if only a few loci are defined with 
-permission for the current user to curate then they will be listed individually
-and the specific locus query links can also be used.
+update/delete sequences link.
 
 .. image:: /images/curation/update_alleles.png
 
 Either search for specific attributes in the search form, or leave it blank and
 click 'Submit' to return all alleles. For a specific allele, select the locus 
-in the filter and enter the allele number in the allele_id field.
+in the filter (click the small arrow next to 'Filter query by' to expand the 
+filter) and enter the allele number in the allele_id field.
 
 .. image:: /images/curation/update_alleles2.png
 
@@ -273,7 +274,8 @@ new sequence may lead to confusion, so in this instance, it would be better to
 prevent this.
 
 You can retire an allele identifier by clicking the 'Add' retired allele ids
-link on the sequence database curators' page.
+link on the sequence database curators' page. This function is normally hidden,
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/retire_allele1.png
 
@@ -305,14 +307,15 @@ or from the :ref:`allele download page<download_alleles>`.
    new locus is defined.  The following instructions assume that this is the 
    case.  It is possible for this record to be deleted or it may never have 
    existed if the locus was created using an old version of BIGSdb.  If the 
-   record does not exist, it can be added by clicking the Add (+) button next 
-   to 'locus descriptions'.  Fill in the fields in the same way as described 
-   below.
+   record does not exist, it can be added by clicking the Add (+) button in 
+   the 'locus descriptions' box.  Fill in the fields in the same way as 
+   described below.
    
 To edit a locus description, first you need to find it.  Click the 
-update/delete (?) button next to 'locus descriptions' on the sequence database 
+update/delete button in the 'locus descriptions' box on the sequence database 
 curator's page (depending on the permissions set for your user account not all
-the links shown here may be displayed).
+the links shown here may be displayed). This function is normally hidden,
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/locus_descriptions.png
 
@@ -383,8 +386,8 @@ Provided a scheme has been set up with at least one locus and a scheme field
 set as a primary key, there will be links on the curator's main page to add 
 profiles for that scheme.
 
-To add a single profile you can click the add (+) profiles link next to the 
-scheme name (e.g. MLST):
+To add a single profile you can click the add (+) profiles link in the box 
+named after the scheme name (e.g. MLST):
 
 .. image:: /images/curation/add_scheme_profile.png
 
@@ -431,7 +434,8 @@ you wish to proceed with the submission, click 'Import data'.
 Updating and deleting scheme profile definitions
 ************************************************
 In order to update or delete a scheme profile, first you must select it. Click 
-the query (?) profiles link next to the scheme name (e.g. MLST):
+the update/delete profiles link in the scheme profiles box named after the 
+scheme (e.g. MLST):
 
 .. image:: /images/curation/update_scheme_profile.png
 
@@ -465,8 +469,9 @@ have been commonly used and has since been removed. Reassignment of the
 identifier to a new profile may lead to confusion, so in this instance, it 
 would be better to prevent this.
 
-You can retire a profile identifier by clicking the 'Add' retired profiles
-link on the sequence database curators' page.
+You can retire a profile identifier by clicking the 'Add' link in the 'Retired
+profiles' box on the sequence database curators' page. This function is 
+normally hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/curation/retire_profile1.png
 
