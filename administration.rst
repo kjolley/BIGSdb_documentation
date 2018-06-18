@@ -463,7 +463,8 @@ the database. Add the following attribute to the system tag: ::
  sets="yes"
 
 With this attribute, the curation interface now has options to add sets, and 
-then add loci or schemes to these sets.
+then add loci or schemes to these sets. These functions are normally hidden,
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/dataset_partitioning.png
 
@@ -588,7 +589,8 @@ using the same credentials.
 
 Once a :ref:`site-wide user database has been set up<site-wide-db>`, this can
 be defined within each client database as follows. From the curators' contents
-page, click the add (+) user databases link:
+page, click the add (+) user databases link. This function is normally hidden,
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/add_users_database1.png
 
@@ -619,7 +621,9 @@ Sequence definition databases
 
 Single locus
 ------------
-Click the add (+) loci link on the curator's interface contents page.
+Click the add (+) loci link on the curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef.png
 
@@ -746,7 +750,9 @@ exclamation mark (!) next to them:
 
 Batch adding
 ------------
-Click the batch add (++) loci link on the curator's interface contents page.
+Click the batch add (++) loci link on the curator's interface contents page. 
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef2.png
 
@@ -772,7 +778,9 @@ Single locus
 .. index::
    pair: locus; adding
 
-Click the add (+) loci link on the curator's interface contents page.
+Click the add (+) loci link on the curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/add_new_loci_isolates.png
 
@@ -974,7 +982,9 @@ Complete the form and click 'Submit'.
 
 Batch adding
 ------------
-Click the batch add (++) loci link on the curator's interface contents page.
+Click the batch add (++) loci link on the curator's interface contents page. 
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
 
 .. image:: /images/administration/add_new_loci_isolates2.png
 
@@ -1002,7 +1012,9 @@ of antigen sequences, antibody reactivities, identification of important
 mutations, or cross-referencing of alternative nomenclatures.
 
 To add extended attributes for a locus, click add (+) locus extended attributes
-in the sequence definition database curator's interface contents page.
+in the sequence definition database curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/locus_extended_attributes.png
 
@@ -1092,7 +1104,9 @@ Sequence definition databases
 As with all configuration, tables can be populated using the batch interface 
 (++) or one at a time (+). Details for the latter are described below:
 
-Click the add (+) scheme link on the curator's interface contents page.
+Click the add (+) scheme link on the curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef.png
 
@@ -1105,7 +1119,8 @@ display of schemes in the interface - this can be left blank if you wish.
 .. image:: /images/administration/add_new_scheme_seqdef2.png
 
 To add loci to the scheme, click the add (+) scheme members link on the 
-curator's interface contents page.
+curator's interface contents page. This function is normally hidden, so you 
+may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef3.png
 
@@ -1177,7 +1192,9 @@ Isolate databases
 As with all configuration, tables can be populated using the batch interface 
 (++) or one at a time (+). Details for the latter are described below:
 
-Click the add (+) scheme link on the curator's interface contents page.
+Click the add (+) scheme link on the curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/add_new_scheme_isolates.png
 
@@ -1277,7 +1294,8 @@ for example the :ref:`allele download <download_alleles>` page.
 
 Scheme groups can be added in both the sequence definition and isolate 
 databases.  To add a new group, click the add (+) scheme group link on the 
-curator's contents page.
+curator's contents page. This function is normally hidden, so you may need to 
+click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/scheme_groups2.png
 
@@ -1292,8 +1310,8 @@ group to the dropdown lists in the :ref:`sequence query <sequence_query>`
 page.  This enables all loci belonging to schemes within the group to be 
 queried together.
 
-Schemes can be added to groups by clicking the add (+) scheme group scheme 
-members link.
+Schemes can be added to groups by clicking the add (+) group members (scheme) 
+link.
 
 .. image:: /images/administration/scheme_groups4.png
 
