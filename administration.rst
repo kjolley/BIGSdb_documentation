@@ -1346,7 +1346,9 @@ database, for example:
 Multiple client databases can be queried simultaneously.
 
 To register a client isolate database for a sequence definition database, click
-the add (+) client database link on the curator's interface contents page.
+the add (+) client database link on the curator's interface contents page. This 
+function is normally hidden, so you may need to click the 'Show all' toggle 
+to display it.
 
 .. image:: /images/administration/add_client_databases.png
 
@@ -1724,6 +1726,8 @@ Defining classification scheme in sequence definition database
 ==============================================================
 Once a scheme has been defined, add a classification scheme by clicking the 
 add classification schemes (+) link on the curator's interface contents page.
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
 
 .. image:: /images/administration/classification_schemes.png
 
@@ -1762,7 +1766,8 @@ Defining classification scheme in isolate database
 ==================================================
 Duplicate the scheme definition from the sequence definition database. Click
 the add classification schemes (+) link on the curator's interface contents 
-page.
+page. This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
 
 .. image:: /images/administration/classification_schemes3.png
 
@@ -1846,7 +1851,9 @@ directly in to the batch locus add form of the
 :ref:`sequence definition <batch_adding_loci_seqdef>` or 
 :ref:`isolate <batch_adding_loci_isolates>` databases.
   
-Click 'Database scan' on the curator's contents pag.
+Click 'Database scan' within the 'Loci' group on the curator's contents page. 
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
 
 .. image:: /images/administration/database_scan.png
 
@@ -1899,7 +1906,8 @@ structure and primers can be any length.
    Genome filtering by *in silico* PCR.
 
 To define a PCR reaction that can be linked to a locus definition, click the 
-add (+) PCR reaction link on the curator's main page.
+add (+) PCR reaction link on the curator's main page. This function is normally
+hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/in_silico_pcr2.png
 
@@ -2069,7 +2077,8 @@ Additionally, the clonal complex field in the above example is converted using
 a regular expression from 'ST-4 complex/subgroup IV' to 'cc4'.
 
 Composite fields can be added to the database by clicking the add (+) 
-composite fields link on the curator's main page.
+composite fields link on the curator's main page. This function is normally 
+hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/composite_fields.png
 
@@ -2127,7 +2136,8 @@ determined from the lookup table, allowing, for example, a search of isolates
 limited to those from Europe.
 
 To set up such an extended attribute, click the add (+) isolate field extended 
-attributes link on the curator's main page.
+attributes link on the curator's main page. This function is normally hidden, 
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/extended_attributes.png
 
@@ -2185,7 +2195,8 @@ exclamation mark (!) next to them:
 The easiest way to populate the lookup table is to do a batch update copied 
 from a spreadsheet. Click the batch add (++) isolate field extended attribute 
 values link on the curator's main page (this link will only appear once an 
-extended attribute has been defined).
+extended attribute has been defined). This function is normally hidden, 
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/extended_attributes2.png
 
@@ -2223,7 +2234,8 @@ specific database and these will then be available in the web form when
 uploading new contig data.  The attributes are also searchable.
 
 To set up new attributes, click the add (+) 'sequence attributes' link on the 
-isolate database curator's index page. 
+isolate database curator's index page. This function is normally hidden, 
+so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/sequence_attributes.png
 
@@ -2268,8 +2280,9 @@ Exporting table configurations
 Sometimes it is useful to transfer configurations between different databases
 or to export a configuration for troubleshooting.  Data from most of the tables
 can be exported in tab-delimited text format suitable for batch uploading. For
-example, to export scheme configuration data, click the '?' link (Update or
-delete) next to schemes in the curator's interface.
+example, to export scheme configuration data, click the query link (Update or
+delete) next to schemes in the curator's interface. This function is normally 
+hidden, so you may need to click the 'Show all' toggle to display it.
 
 .. image:: /images/administration/config_export.png
 
