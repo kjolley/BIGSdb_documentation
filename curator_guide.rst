@@ -775,7 +775,7 @@ Uploading sequence contigs linked to isolate records
 
 Select isolate from drop-down list
 ==================================
-To upload sequence data, click the sequences batch add (++) sequence bin link 
+To upload sequence data, click the sequences add (+) sequence bin link 
 on the curator's main page.
 
 .. image:: /images/curation/upload_contigs.png
