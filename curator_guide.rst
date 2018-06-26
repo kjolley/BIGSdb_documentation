@@ -767,11 +767,11 @@ searching, the references database needs to be
 .. _upload_contigs:
 
 .. index::
-   single: uploading contigs
+   single: uploading contigs - single isolate
 
-****************************************************
-Uploading sequence contigs linked to isolate records
-****************************************************
+******************************************************
+Uploading sequence contigs linked to an isolate record
+******************************************************
 
 Select isolate from drop-down list
 ==================================
@@ -826,6 +826,64 @@ as part of an experiment. To do this, select the experiment from the dropdown
 list box.
 
 .. image:: /images/curation/upload_contigs9.png
+
+.. _upload_contigs_batch:
+
+.. index::
+   single: batch uploading contigs - multiple isolates
+
+*******************************************************************
+Batch uploading sequence contigs linked to multiple isolate records
+*******************************************************************
+To upload contigs for multiple isolates, click the batch add (++) sequence bin
+link on the curator's main page.
+
+.. image:: /images/curation/upload_contigs10.png
+
+The first step is to upload the name of the contig file that will be linked to
+each isolate record. This can be done by pasting two columns in tab-delimited 
+text format (e.g. from a spreadsheet) - the first column contains the isolate
+identifier, the second contains the filename of the contigs file, which should
+be in FASTA format. 
+
+You can choose which field to use for identifying the isolates, e.g. id 
+(database id) or isolate (name of isolate). The value provided for this field
+needs to uniquely identify the isolate in the database - please note that only 
+id is guaranteed to be unique. 
+
+.. image:: /images/curation/upload_contigs11.png
+
+Click Submit. The system will check to make sure that the isolate records are
+uniquely identified (if not, you will see an error message informing you of 
+this and you will need to use the database id and the identifier). You will 
+then see a file upload form.
+
+.. image:: /images/curation/upload_contigs12.png
+
+Drag and drop your FASTA format contig files in to the dotted drop area. 
+Provided the filenames exactly match the filename you stated, these will be 
+uploaded to a staging area.
+
+Click 'Validate' to check that these files are valid FASTA format.
+
+.. image:: /images/curation/upload_contigs13.png
+
+The files will be checked and a table will be displayed showing the total 
+sequence size and number of contigs found. Select the data sender and, 
+optionally the sequencing method from the dropdown lists. The click 
+'Upload validated contigs'. 
+
+.. image:: /images/curation/upload_contigs14.png
+
+You can also choose to filter out short contigs from the upload by selecting
+the checkbox and choosing the minimum length from the dropdown box in the 
+options settings.
+
+.. image:: /images/curation/upload_contigs15.png
+
+A confirmation message will be displayed after clicking the Upload button.
+
+.. image:: /images/curation/upload_contigs16.png
 
 .. _link_contigs:
 
