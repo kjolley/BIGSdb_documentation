@@ -297,7 +297,14 @@ Any value set here can be overridden in a
 * genome_comparator_max_ref_loci
 
   * Overrides the limit on number of loci allowed in a reference genome.
-    Default: '10000'. 
+    Default: '10000'.
+    
+* genome_comparator_recommended_schemes
+
+  * Comma-separated list of recommended schemes to suggest to Genome Comparator
+    users. If lots of schemes are defined, a user may be tempted to click 'All
+    loci' and this may not be the best option. Populating this attribute, 
+    results in an additional list of preferred schemes that can be chosen.
     
 * genome_comparator_threads
 
