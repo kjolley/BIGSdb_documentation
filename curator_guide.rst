@@ -870,7 +870,7 @@ Click 'Validate' to check that these files are valid FASTA format.
 
 The files will be checked and a table will be displayed showing the total 
 sequence size and number of contigs found. Select the data sender and, 
-optionally the sequencing method from the dropdown lists. The click 
+optionally the sequencing method from the dropdown lists. Then click 
 'Upload validated contigs'. 
 
 .. image:: /images/curation/upload_contigs14.png
