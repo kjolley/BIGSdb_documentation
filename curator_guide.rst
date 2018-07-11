@@ -855,7 +855,7 @@ id is guaranteed to be unique.
 
 Click Submit. The system will check to make sure that the isolate records are
 uniquely identified (if not, you will see an error message informing you of 
-this and you will need to use the database id and the identifier). You will 
+this and you will need to use the database id as the identifier). You will 
 then see a file upload form.
 
 .. image:: /images/curation/upload_contigs12.png
