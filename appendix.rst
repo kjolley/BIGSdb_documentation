@@ -79,6 +79,10 @@ Sequences tagged in the sequence bin can have features indicated by specific fla
 * frameshift
 
   * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
+  
+* indel
+
+  * Insertion/deletion in sequence that is uncommon compared to other alleles.
 
 * internal stop codon
 
@@ -126,6 +130,10 @@ Sequences can be flagged with specific attributes - these are searchable when do
 * frameshift
 
   * Frameshift in sequence relative to other alleles, not resulting in internal stop codon.
+  
+* indel
+
+  * Insertion/deletion in sequence that is uncommon compared to other alleles.
 
 * internal stop codon
 
