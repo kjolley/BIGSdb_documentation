@@ -977,7 +977,7 @@ is populated by a script that looks in BIGSdb databases for PubMed records not
 locally stored and then requests the full citation record from the PubMed
 database.
 
-The script is called getrefs.pl and can be found in the scripts/maintenance
+The script is called get_refs.pl and can be found in the scripts/maintenance
 directory.  This script needs to know which BIGSdb databases and tables it
 needs to search for PubMed ids.  These are listed in a configuration file
 (usually called getrefs.conf) which contains two columns - the first is the
@@ -989,7 +989,7 @@ e.g. ::
 
 The script can be called as follows: ::
 
- getrefs.pl getrefs.conf
+ get_refs.pl getrefs.conf
  
 Run either as the 'postgres' user or an account that is allowed to connect as
 the postgres user.
