@@ -92,7 +92,7 @@ Enter the username of the person you wish to share with and click 'Add user':
 .. image:: /images/user_projects/user_projects9.png
 
 If user groups are in use, you can also share your project with all members of
-a user group (provided you are also a member of this group) from the same page.
+a user group from the same page.
 
 Once a user has been added, you can give them permission to administer (add 
 other users, modify the description or delete) or add/remove records to the 
