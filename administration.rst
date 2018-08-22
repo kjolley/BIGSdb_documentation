@@ -1611,11 +1611,7 @@ database is called seqdef_db):
    'atpD')
 
   * dbase_name: seqdef_db
-  * dbase_table: sequences
-  * dbase_id_field: allele_id
-  * dbase_id2_field: locus
-  * dbase_id_value: atpD
-  * dbase_seq_field: sequence
+  * dbase_id: atpD
   * url: something like 
     /cgi-bin/bigsdb/bigsdb.pl?db=seqdef_db&page=alleleInfo&locus=atpD&allele_id=[?]
 
