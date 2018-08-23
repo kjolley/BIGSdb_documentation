@@ -9,7 +9,8 @@ User projects
 If user projects are enabled, authenticated users are able to set up their own
 projects in order to group isolates for analysis. If private data and user 
 quotas are enabled, these projects can include private records that can then be
-shared with other user accounts.
+shared with other user accounts. Note, that simply adding a record to a user
+project does not make the record itself private.
 
 .. note::
    User projects can be enabled by an administrator by setting 
