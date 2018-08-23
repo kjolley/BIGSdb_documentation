@@ -265,6 +265,8 @@ for a database by adding: ::
 
 to the system tag of the database XML file. If the system_flag value is not 
 defined then the plugin is always enabled if it is installed on the system.
+If the system_flag value is set to 'no' then the plugin will be disabled even
+if the all_plugins attribute is set to 'yes'.
 
 .. _disable_updates:
 
