@@ -33,6 +33,7 @@ These are included with most Linux distributions.
 * `Config::Tiny <http://search.cpan.org/~rsavage/Config-Tiny/lib/Config/Tiny.pm>`_ - Configuration file handling.
 * `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
 * `Data::UUID <http://search.cpan.org/~rjbs/Data-UUID/UUID.pm>`_ - Globally unique identifer handling for preference storage.
+* `Data::Random <https://metacpan.org/pod/Data::Random>`_
 * `DBD-Pg <http://search.cpan.org/~turnstep/DBD-Pg/Pg.pm>`_ - PostgreSQL database driver for DBI.
 * `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database independent interface - module used to interact with databases.
 * `Email::MIME <http://search.cpan.org/~rjbs/Email-MIME/lib/Email/MIME.pm>`_ - Used to format E-mail messages.
