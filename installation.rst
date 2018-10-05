@@ -476,8 +476,7 @@ to go from 1.6 -> 1.8, requires upgrading to 1.7 first.
 Minor version changes, e.g. 1.8.0 -> 1.8.1, have no modifications to the
 database structures.  There will be changes to the Perl library modules and
 possibly to the contents of the Javascript directory, images directory and CSS
-files.  The version number is stored with the bigsdb.pl script, so this should
-also be updated so that BIGSdb correctly reports its version.  
+files.
 
 .. _restful_api:
 
