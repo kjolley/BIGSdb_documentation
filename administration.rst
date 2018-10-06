@@ -170,7 +170,9 @@ In the config.xml, add the following directive: ::
 
 This tells BIGSdb to deny access to anybody unless their account name appears 
 within a file called users.allow within the config directory. The users.allow 
-file should contain one username per line.
+file should contain one username per line. You can also use a usergroups.allow
+file. This file should contain the names of user groups, the members of which
+are allowed access. The file should contain one user group name per line.
 
 Alternatively, you can deny access to specific users, while allowing every 
 other authenticated user. In config.xml, add the following directive: ::
