@@ -1877,7 +1877,7 @@ The client id is usually a 24 character alphanumeric string.  The secret is
 usually a 42 character alphanumeric (including punctuation) string, e.g.
 
  * **client_id:** efKXmqp2D0EBlMBkZaGC2lPf
- * **client_secret:** F$M)_+fQ2AFFB2YBDfF9fpHF^qSWJdmmN%L4Fxf5Gur3
+ * **client_secret:** F$M+fQ2AFFB2YBDfF9fpHF^qSWJdmmN%L4Fxf5Gur3
 
 .. _get_request_token:
 
