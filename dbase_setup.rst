@@ -374,7 +374,11 @@ Any value set here can be overridden in a
   
 * password  
 
-  * Password for access to isolates database, default 'remote'. 
+  * Password for access to isolates database, default 'remote'.  
+  
+* PhyloViz  
+
+  * Enable Third party tool PhyloViz pluging: either 'yes' or 'no', default 'no'.
    
 * port   
 
