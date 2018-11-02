@@ -374,7 +374,15 @@ Any value set here can be overridden in a
   
 * password  
 
-  * Password for access to isolates database, default 'remote'. 
+  * Password for access to isolates database, default 'remote'.  
+  
+* PhyloViz  
+
+  * Enable third party PhyloViz plugin (isolate databases only): either 'yes' 
+    or 'no'. If no value is set then the plugin will not be available unless 
+    the all_plugins attribute is set to 'yes'. If the all_plugins attribute is 
+    set to 'yes', the PhyloViz plugin can be disabled by setting this attribute
+    to 'no'.
    
 * port   
 
