@@ -171,11 +171,32 @@ Any value set here can be overridden in a
     'AL157959|Z2491;AM421808|FAM18;NC_002946|FA 1090;NC_011035|NCCP11945;NC_014752|020-06'.
     Currently used only by Genome Comparator plugin.
     
+* BLAST  
+
+  * Enable Blast plugin: either 'yes' or 'no'. If no value is set then the 
+    plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the Blast plugin can 
+    be disabled by setting this attribute to 'no'.
+    
+* BURST  
+
+  * Enable BURST plugin: either 'yes' or 'no'. If no value is set then the 
+    plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the BURST plugin can 
+    be disabled by setting this attribute to 'no'.
+    
 * cache_schemes
 
   * Enable automatic refreshing of scheme field caches when batch adding new
     isolates: either 'yes' or 'no', default 'no'.
   * See :ref:`scheme caching<scheme_caching>`.
+  
+* CodonUsage  
+
+  * Enable Codon Usage plugin: either 'yes' or 'no'. If no value is set then 
+    the plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the Codon Usage plugin
+    can be disabled by setting this attribute to 'no'.
     
 * codon_usage_limit
 
@@ -184,6 +205,13 @@ Any value set here can be overridden in a
 * contig_analysis_limit
 
   * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
+  
+* ContigExport  
+
+  * Enable contig export plugin: either 'yes' or 'no'. If no value is set then 
+    the plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the contig export 
+    plugin can be disabled by setting this attribute to 'no'.
     
 * curate_config
 
@@ -289,6 +317,13 @@ Any value set here can be overridden in a
     of the group followed by a colon (:) followed by a comma-separated list of
     fields to group, e.g. identifiers:id,strain,other_name.
     
+* GenomeComparator  
+
+  * Enable Genome Comparator plugin: either 'yes' or 'no'. If no value is set 
+    then the plugin will not be available unless the all_plugins attribute is 
+    set to 'yes'. If the all_plugins attribute is set to 'yes', the Genome
+    Comparator plugin can be disabled by setting this attribute to 'no'.
+    
 * genome_comparator_limit
 
   * Overrides the isolate number limit for the Genome Comparator plugin.
@@ -357,6 +392,15 @@ Any value set here can be overridden in a
   * Default setting for whether isolates aliases are displayed in main results
     tables: either 'yes' or 'no', default 'no'. This setting can be overridden
     by individual user preferences. 
+    
+* Microreact  
+
+  * Enable Microreact plugin: either 'yes' or 'no'. If no value is set 
+    then the plugin will not be available unless the all_plugins attribute is 
+    set to 'yes'. If the all_plugins attribute is set to 'yes', the Microreact
+    plugin can be disabled by setting this attribute to 'no'. Note that for the
+    plugin to be active, a country field containing a defined list of allowed
+    values and an integer year field must be defined in the isolates table.
 
 * noshow 
 
@@ -378,11 +422,10 @@ Any value set here can be overridden in a
   
 * PhyloViz  
 
-  * Enable third party PhyloViz plugin (isolate databases only): either 'yes' 
-    or 'no'. If no value is set then the plugin will not be available unless 
-    the all_plugins attribute is set to 'yes'. If the all_plugins attribute is 
-    set to 'yes', the PhyloViz plugin can be disabled by setting this attribute
-    to 'no'.
+  * Enable third party PhyloViz plugin: either 'yes' or 'no'. If no value is 
+    set then the plugin will not be available unless the all_plugins attribute 
+    is set to 'yes'. If the all_plugins attribute is set to 'yes', the 
+    PhyloViz plugin can be disabled by setting this attribute to 'no'.
    
 * port   
 
@@ -424,11 +467,31 @@ Any value set here can be overridden in a
 
   * Optionally allow the use of remote contigs. These are stored in a remote
     BIGSdb database, accessible via the RESTful API. Set to 'yes' to enable.
+    
+* rMLSTSpecies  
+
+  * Enable rMLST Species identifier plugin: either 'yes' or 'no'. If no value 
+    is set then the plugin will not be available unless the all_plugins 
+    attribute is set to 'yes'. If the all_plugins attribute is set to 'yes', 
+    the plugin can be disabled by setting this attribute to 'no'. Note that for
+    the plugin to be active, a country field containing a defined list of 
+    allowed values and an integer year field must be defined in the isolates 
+    table.
 
 * script_path_includes  
 
   * Partial path of the bigsdb.pl script used to access the database.
     See :ref:`user authentication <user_authentication>`.
+    
+* SeqbinBreakdown  
+
+  * Enable Sequence bin breakdown plugin: either 'yes' or 'no'. If no value 
+    is set then the plugin will not be available unless the all_plugins 
+    attribute is set to 'yes'. If the all_plugins attribute is set to 'yes', 
+    the plugin can be disabled by setting this attribute to 'no'. Note that for
+    the plugin to be active, a country field containing a defined list of 
+    allowed values and an integer year field must be defined in the isolates 
+    table.
     
 * seqbin_size_threshold
 
@@ -469,6 +532,15 @@ Any value set here can be overridden in a
 
   * Overrides the default number of days before closed submissions are deleted
     from the system. Default: '90'. 
+    
+* TagStatus  
+
+  * Enable Tag status plugin: either 'yes' or 'no'. If no value is set then the
+    plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the plugin can be 
+    disabled by setting this attribute to 'no'. Note that for the plugin to be
+    active, a country field containing a defined list of allowed values and an
+    integer year field must be defined in the isolates table.
     
 * tblastx_tagging 
 
@@ -679,6 +751,13 @@ Any value set here can be overridden in a
 * allele_flags
 
   * Enable flags to be set for alleles: either 'yes' or 'no', default 'no'.
+  
+* BURST  
+
+  * Enable BURST plugin: either 'yes' or 'no'. If no value is set then the 
+    plugin will not be available unless the all_plugins attribute is set to 
+    'yes'. If the all_plugins attribute is set to 'yes', the BURST plugin can 
+    be disabled by setting this attribute to 'no'.
   
 * curate_config
 
