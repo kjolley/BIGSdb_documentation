@@ -27,31 +27,31 @@ Perl modules
 ============
 These are included with most Linux distributions.
 
-* `Archive::Zip <http://search.cpan.org/~phred/Archive-Zip/>`_ - [required by PhyloTree plugin] - Used to upload to iTOL
-* `Bio::Biblio <http://search.cpan.org/~cdraug/Bio-Biblio/lib/Bio/Biblio.pm>`_ - This used to be part of BioPerl but will need to be installed separately if using BioPerl 1.6.920 or later.
-* `CGI <http://search.cpan.org/dist/CGI/>`_ - Common Gateway Interface requests and responses (used to be a core module but recently removed).
-* `Config::Tiny <http://search.cpan.org/~rsavage/Config-Tiny/lib/Config/Tiny.pm>`_ - Configuration file handling.
-* `Crypt::Eksblowfish::Bcrypt <http://search.cpan.org/~zefram/Crypt-Eksblowfish/lib/Crypt/Eksblowfish/Bcrypt.pm>`_ - Used for password hashing.
+* `Archive::Zip <https://metacpan.org/pod/Archive::Zip>`_ - Used to upload to iTOL.
+* `Bio::Biblio <https://metacpan.org/pod/Bio::Biblio>`_ - This used to be part of BioPerl but will need to be installed separately if using BioPerl 1.6.920 or later.
+* `CGI <https://metacpan.org/pod/CGI>`_ - Common Gateway Interface requests and responses (used to be a core module but recently removed).
+* `Config::Tiny <https://metacpan.org/pod/Config::Tiny>`_ - Configuration file handling.
+* `Crypt::Eksblowfish::Bcrypt <https://metacpan.org/pod/Crypt::Eksblowfish::Bcrypt>`_ - Used for password hashing.
 * `Data::Random <https://metacpan.org/pod/Data::Random>`_
-* `Data::UUID <http://search.cpan.org/~rjbs/Data-UUID/UUID.pm>`_ - Globally unique identifer handling for preference storage.
-* `DBD-Pg <http://search.cpan.org/~turnstep/DBD-Pg/Pg.pm>`_ - PostgreSQL database driver for DBI.
-* `DBI <http://search.cpan.org/~timb/DBI/DBI.pm>`_ - Database independent interface - module used to interact with databases.
-* `Email::MIME <http://search.cpan.org/~rjbs/Email-MIME/lib/Email/MIME.pm>`_ - Used to format E-mail messages.
-* `Email::Sender <http://search.cpan.org/~rjbs/Email-Sender/lib/Email/Sender.pm>`_ - Used to send E-mail messages by submission system.
-* `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - Used to validate E-mails sent by job manager.
-* `Excel::Writer::XLSX <http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm>`_ - Used to export data in Excel format.
+* `Data::UUID <https://metacpan.org/pod/Data::UUID>`_ - Globally unique identifer handling for preference storage.
+* `DBD::Pg <https://metacpan.org/pod/DBD::Pg>`_ - PostgreSQL database driver for DBI.
+* `DBI <https://metacpan.org/pod/DBI>`_ - Database independent interface - module used to interact with databases.
+* `Email::MIME <https://metacpan.org/pod/Email::MIME>`_ - Used to format E-mail messages.
+* `Email::Sender <https://metacpan.org/pod/Email::Sender>`_ - Used to send E-mail messages by submission system.
+* `Email::Valid <https://metacpan.org/pod/Email::Valid>`_ - Used to validate E-mails sent by job manager.
+* `Excel::Writer::XLSX <https://metacpan.org/pod/Excel::Writer::XLSX>`_ - Used to export data in Excel format.
 * `Exception::Class <https://metacpan.org/pod/Exception::Class>`_ - Exception handing.
-* `IO::String <http://search.cpan.org/~gaas/IO-String/String.pm>`_
-* `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - Used to manipulate JSON data.
-* `List::MoreUtils <http://search.cpan.org/~adamk/List-MoreUtils/lib/List/MoreUtils.pm>`_ (version 0.28+).
-* `Log::Dispatch::File <http://search.cpan.org/~drolsky/Log-Dispatch/lib/Log/Dispatch/File.pm>`_ - Object for logging to file.
-* `Log::Log4perl <http://search.cpan.org/~mschilli/Log-Log4perl/lib/Log/Log4perl.pm>`_ - Configurable status and error logging.
-* `LWP::UserAgent <http://search.cpan.org/~ether/libwww-perl/>`_ - [required by PhyloViz and PhyloTree plugins] - Used to upload via API
-* `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
-* `Parallel::ForkManager <http://search.cpan.org/~yanick/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading tools and plugins.
-* `Time::Duration <http://search.cpan.org/~avif/Time-Duration/Duration.pm>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units.
+* `IO::String <https://metacpan.org/pod/IO::String>`_
+* `JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data.
+* `List::MoreUtils <https://metacpan.org/pod/List::MoreUtils>`_ (version 0.28+).
+* `Log::Dispatch::File <https://metacpan.org/pod/Log::Dispatch::File>`_ - Object for logging to file.
+* `Log::Log4perl <https://metacpan.org/pod/Log::Log4perl>`_ - Configurable status and error logging.
+* `LWP::UserAgent <https://metacpan.org/pod/LWP::UserAgent>`_ - Used to upload via API
+* `Net::Oauth <https://metacpan.org/pod/Net::OAuth>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
+* `Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_ - Required for multi-threading tools and plugins.
+* `Time::Duration <https://metacpan.org/pod/Time::Duration>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units.
 * `Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_
-* `XML::Parser::perlSAX <http://search.cpan.org/~kmacleod/libxml-perl/lib/XML/Parser/PerlSAX.pm>`_ - part of libxml-perl - Used to parse XML configuration files.
+* `XML::Parser::PerlSAX <https://metacpan.org/pod/XML::Parser::PerlSAX>`_ - part of libxml-perl - Used to parse XML configuration files.
 
 Optional packages
 =================
