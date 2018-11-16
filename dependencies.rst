@@ -39,8 +39,8 @@ These are included with most Linux distributions.
 * `Email::MIME <http://search.cpan.org/~rjbs/Email-MIME/lib/Email/MIME.pm>`_ - Used to format E-mail messages.
 * `Email::Sender <http://search.cpan.org/~rjbs/Email-Sender/lib/Email/Sender.pm>`_ - Used to send E-mail messages by submission system.
 * `Email::Valid <http://search.cpan.org/~rjbs/Email-Valid/lib/Email/Valid.pm>`_ - Used to validate E-mails sent by job manager.
-* `Error <http://search.cpan.org/~shlomif/Error/lib/Error.pm>`_ - Exception handling.
 * `Excel::Writer::XLSX <http://search.cpan.org/~jmcnamara/Excel-Writer-XLSX/lib/Excel/Writer/XLSX.pm>`_ - Used to export data in Excel format.
+* `Exception::Class <https://metacpan.org/pod/Exception::Class>`_ - Exception handing.
 * `IO::String <http://search.cpan.org/~gaas/IO-String/String.pm>`_
 * `JSON <http://search.cpan.org/~makamaka/JSON/>`_ - Used to manipulate JSON data.
 * `List::MoreUtils <http://search.cpan.org/~adamk/List-MoreUtils/lib/List/MoreUtils.pm>`_ (version 0.28+).
@@ -50,6 +50,7 @@ These are included with most Linux distributions.
 * `Net::Oauth <http://search.cpan.org/dist/Net-OAuth/lib/Net/OAuth.pm>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
 * `Parallel::ForkManager <http://search.cpan.org/~yanick/Parallel-ForkManager/lib/Parallel/ForkManager.pm>`_ - Required for multi-threading tools and plugins.
 * `Time::Duration <http://search.cpan.org/~avif/Time-Duration/Duration.pm>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units.
+* `Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_
 * `XML::Parser::perlSAX <http://search.cpan.org/~kmacleod/libxml-perl/lib/XML/Parser/PerlSAX.pm>`_ - part of libxml-perl - Used to parse XML configuration files.
 
 Optional packages
