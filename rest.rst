@@ -70,6 +70,8 @@ Resources
   - Query sequence to identify allele
 * :ref:`POST /db/{database}/sequence<db_sequence>` 
   - Query sequence to identify allele without specifying locus
+* :ref:`GET /db/{database}/sequences<db_sequences>`
+  - Get summary of defined sequences
 * :ref:`GET /db/{database}/schemes<db_schemes>` - List schemes
 * :ref:`GET /db/{database}/schemes/{scheme_id}<db_schemes_scheme_id>`
   - Retrieve scheme information
@@ -412,7 +414,11 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * return_all [integer] - Set to non-zero value to disable paging. 
 * added_after [date] - Include only alleles added after specified date 
   (ISO 8601 format).
+* added_on [date] - Include only alleles added on specified date 
+  (ISO 8601 format).
 * updated_after [date] - Include only alleles last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Include only alleles last modified on specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
@@ -452,8 +458,12 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 
 * added_after [date] - Include only alleles added after specified date 
   (ISO 8601 format).
+* added_on date] - Include only alleles added on specified date 
+  (ISO 8601 format).
 * updated_after [date] - Include only alleles last modified after specified 
   date (ISO 8601 format).
+ * updated_on [date] - Include only alleles last modified on specified 
+  date (ISO 8601 format). 
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
 
@@ -589,6 +599,37 @@ POST /db/{database}/sequence - Query sequence to identify allele without specify
    for a specific locus, use the 
    :ref:`locus-specific call<db_loci_locus_sequence>` to identify the closest
    match.
+   
+.. _db_sequences:
+
+.. index::
+   single: API resources; GET /db/{database}/sequences
+   single: API resources; get summary of defined sequences
+   
+GET /db/{database}/sequences - Get summary of defined sequences
+===============================================================
+**Required route parameter:** database [string] - Database configuration name
+
+**Optional parameters:**
+
+* added_after [date] - Count only alleles added after specified date 
+  (ISO 8601 format).
+* added_on [date] - Count only alleles added on specified date 
+  (ISO 8601 format).
+* updated_after [date] - Count only alleles last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Count only allele updated on specified date 
+  (ISO 8601 format).
+
+**Example request URI:** 
+http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/sequences
+
+**Response:** Object containing a subset of the following key/value pairs:
+
+* :ref:`loci<db_loci>` [string] - URI to list of loci
+* records [int] - Number of alleles defined
+* last_updated [date] - Latest allele addition/modification date 
+  (ISO 8601 format).
 
 .. _db_schemes:
 
@@ -626,7 +667,16 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 * database [string] - Database configuration name
 * scheme_id [integer] - Scheme id number
 
-**Optional parameters:** None
+**Optional parameters:**
+
+* added_after [date] - Count only profiles added after specified date 
+  (ISO 8601 format).
+* added_on [date] - Count only profiles added on specified date 
+  (ISO 8601 format).
+* updated_after [date] - Count only profiles last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Count only profiles updated on specified date 
+  (ISO 8601 format).
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1
 
@@ -645,6 +695,11 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
 * curators [array] (seqdef databases) - list of 
   :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
+* records [int] - Number of profiles
+* last_added [date] - Latest profile addition/modification date 
+  (ISO 8601 format). 
+* last_updated [date] - Latest profile addition/modification date 
+  (ISO 8601 format). 
   
 .. _db_schemes_scheme_id_loci:
 
@@ -719,7 +774,11 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
 * return_all [integer] - Set to non-zero value to disable paging. 
 * added_after [date] - Include only profiles added after specified date 
   (ISO 8601 format).
+* added_on [date] - Include only profiles added on specified date 
+  (ISO 8601 format).
 * updated_after [date] - Include only profiles last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Include only profiles last modified on specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
@@ -764,7 +823,11 @@ GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles 
 
 * added_after [date] - Include only profiles added after specified date 
   (ISO 8601 format).
+* added_on [date] - Include only profiles added on specified date 
+  (ISO 8601 format).
 * updated_after [date] - Include only profiles last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Include only profiles last modified on specified 
   date (ISO 8601 format).
 
 **Example request URI:** 
@@ -875,8 +938,12 @@ GET /db/{database}/isolates - Retrieve list of isolate records
 * return_all [integer] - Set to non-zero value to disable paging. 
 * added_after [date] - Include only isolates added after specified date 
   (ISO 8601 format).
+* added_on [date] - Include only isolates added on specified date 
+  (ISO 8601 format).
 * updated_after [date] - Include only isolates last modified after specified 
   date (ISO 8601 format).
+* updated_on [date] - Include only isolates updated on specified date 
+  (ISO 8601 format).
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
 
