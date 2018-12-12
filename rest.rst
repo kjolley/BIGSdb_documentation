@@ -462,7 +462,7 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
   (ISO 8601 format).
 * updated_after [date] - Include only alleles last modified after specified 
   date (ISO 8601 format).
- * updated_on [date] - Include only alleles last modified on specified 
+* updated_on [date] - Include only alleles last modified on specified 
   date (ISO 8601 format). 
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
