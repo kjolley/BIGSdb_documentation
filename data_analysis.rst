@@ -944,12 +944,6 @@ start the analysis.
 
 .. image:: /images/data_analysis/grapetree3.png
 
-.. note::
-   This analysis currently depends on allele designations having been defined 
-   within the database. It is not able to scan genomes itself (unlike Genome 
-   Comparator), so make sure that genomes have been tagged at the loci you 
-   wish to include before using GrapeTree.
-
 The job will be sent to the job queue. When it has finished, click the button
 marked 'Launch GrapeTree'.
 
@@ -980,11 +974,12 @@ Full details can be found in
 the `GrapeTree manual <https://bitbucket.org/enterobase/enterobase-web/wiki/GrapeTree>`_.
 
 .. note::
-   GrapeTree has been described in the following preprint:
+   GrapeTree has been described in the following publication:
    
    Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA Carrico,
-   M Achtman (2017) "GrapeTree: Visualization of core genomic relationships 
-   among 100,000 bacterial pathogens", bioRxiv 216788; 
-   doi: https://doi.org/10.1101/216788
+   M Achtman (2018) GrapeTree: Visualization of core genomic relationships 
+   among 100,000 bacterial pathogens. 
+   `Genome Res 28:1395-1404 <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_.
+   
 
 
