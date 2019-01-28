@@ -808,105 +808,94 @@ description of this can be found in the
 
 .. image:: /images/data_analysis/polymorphisms3.png
 
-****************
-Presence/absence
-****************
-This plugin displays the status of loci for isolate records.  It will shown 
-whether a locus has been designated with an allele name, has a sequence tag, 
-or both.
-
-The function can be selected by clicking the 'Presence/absence status of loci' 
-link in the 'Analysis' section of the main contents page.
-
-.. image:: /images/data_analysis/presence.png
-
-Alternatively, it can be accessed following a query by clicking the 
-‘Presence/Absence’ button in the Analysis list at the bottom of the results 
-table. Please note that the list of functions here may vary depending on the 
-setup of the database.
-
-.. image:: /images/data_analysis/presence2.png
-
-Enter the ids of the isolate records to analyse - these will be already entered
-if you accessed the plugin following a query. Select the loci you would like to
-analyse, either from the dropdown loci list, and/or by selecting one or more 
-schemes.
-
-.. image:: /images/data_analysis/presence3.png
-
-Click submit. The job will be submitted to the queue and will start running 
-shortly. Click the link to follow the job progress and view the output.
-
-.. image:: /images/data_analysis/presence4.png
-
-When complete, a single text file will have been generated.
-
-.. image:: /images/data_analysis/presence5.png
-
-This is a tab-delimited text file that uses 'O' to represent presence and 'X' 
-to represent a missing locus designation or tag. ::
-
-  id	pgm	adk	abcZ	pdhC	gdh	fumC	aroE
-  1	O	O	O	O	O	O	O
-  2	O	O	O	O	O	O	O
-  3	O	O	O	O	O	O	O
-  4	O	O	O	O	O	O	O
-  5	O	O	O	O	O	O	O
-  6	O	O	O	O	O	O	O
-  7	O	O	O	O	O	O	O
-  8	O	O	O	O	O	O	O
-  9	O	O	O	O	O	O	O
-  10	O	O	O	O	O	O	O
-
-Options
-=======
-There are a number of options that can be selected to modify the output.
-
-.. image:: /images/data_analysis/presence6.png
-
-With these you can change the symbols used and whether designations, or tags,
-or both are counted.
-
-You can also choose to generate a distance matrix based on presence/absence.
-
 .. index::
-   single: sequence tag; status
+   single: gene presence; 
+   
+.. _gene_presence:
 
-**********
-Tag status
-**********
-The tag status plugin displays a graphical representation of the status of loci
-designations or tags for isolate data.  It is accessed following a query by 
-clicking the 'Tag status' button in the Breakdown section at the bottom of the 
-results table.
+*************
+Gene Presence
+*************
+The Gene Presence analysis tool will determine whether loci are present
+or absent, incomplete, have alleles designated, or sequence regions tagged for
+selected isolates and loci. If a genome is present and a locus designation not
+set in the database, then the presence and completion status are determined by 
+scanning the genomes. The results can be displayed as interactive pivot tables
+or a heatmap. The analysis is limited to 500,000 data points (locus x 
+isolates).
 
-.. image:: /images/data_analysis/tag_status.png
+The Gene Presence tool can be accessed from the contents page by clicking the
+'Gene Presence' link.
 
-Select the loci you would like to analyse.
+.. image:: /images/data_analysis/gene_presence1.png
 
-.. image:: /images/data_analysis/tag_status2.png
+Alternatively, it can be accessed following a query by clicking the 'Gene 
+Presence' button at the bottom of the results table. Isolates returned from 
+the query will be automatically selected within the plugin interface.
 
-You should see a series of bars representing loci.  The colour of these bars 
-designates whether they have an allele designation only, a sequence tag only, 
-both designations or tags, or whether they have flags set.
+.. image:: /images/data_analysis/gene_presence2.png
 
-.. image:: /images/data_analysis/tag_status3.png
+Select the isolates to include. Analysis can be performed on any selection of
+loci, or more conveniently, you can select a scheme in the scheme selector to 
+include all loci belonging to that scheme.
 
-Hovering the mouse over the bars will indicate the scheme represented.
+The parameters of the BLAST query used to determine presence or absence can be
+modified, but in most cases the default options should work well. Click 
+'Submit' to start the analysis.
 
-.. note::
-   Loci will be represented more than once if they are members of multiple 
-   selected schemes.
+.. image:: /images/data_analysis/gene_presence3.png
 
-Clicking any of the isolate id hyperlinks navigates to a page that breaks down 
-the exact status for all loci of that isolate.
+The job will be sent to the job queue. When it has finished, you will have two
+options to display the output: 'Pivot Table' or 'Heatmap'.
 
-.. image:: /images/data_analysis/tag_status4.png
+.. image:: /images/data_analysis/gene_presence4.png
 
-There is a column each for allele designations and sequence tags.  If an 
-allele designation is defined, the allele identifier is displayed.  Cells 
-shaded in blue show that the designation or tag is present, whereas red 
-indicates thet they are absent.
+Pivot Table
+===========
+Clicking the 'Pivot Table' button will display an interactive pivot table. 
+The default display shows the number of isolates for which each locus is 
+present or absent.
+
+.. image:: /images/data_analysis/gene_presence5.png
+
+You can break down any combination of fields by dragging them from the field
+area at the top of the table to either of the axes. For example, to show how
+many isolates have alleles designated and sequence regions tagged for each 
+locus, drag the 'designated' and 'tagged' fields to the x-axis selector.
+
+.. image:: /images/data_analysis/gene_presence6.png
+
+The table will be re-drawn including these fields.
+
+.. image:: /images/data_analysis/gene_presence7.png
+
+.. note:: 
+
+   If your dataset has more than 100,000 data points (locus x isolates),
+   then be aware that combining both id (or isolate) and locus within the table
+   will result in sluggish performace. Any other combination of fields should
+   be fine.
+   
+Heatmap
+=======
+Clicking the 'Heatmap' button will display an interactive heatmap. By default
+the display shows the presence or absence of a locus for each isolate.
+
+Hovering the mouse cursor or touching a region will identify the isolate and
+locus in a tooltip.
+
+.. image:: /images/data_analysis/gene_presence8.png
+
+Change the attribute that is displayed by changing the selection in the 
+attribute dropdown box:
+
+.. image:: /images/data_analysis/gene_presence9.png
+
+The heatmap does scale to the number of records required to be displayed. If
+you find individual points to be too small, then choose a smaller subset of 
+data to display:
+
+.. image:: /images/data_analysis/gene_presence10.png
 
 .. index::
    pair: GrapeTree; minimum-spanning trees
@@ -935,7 +924,7 @@ will be automatically selected within the GrapeTree interface.
 
 Select the isolates to include. The tree can be generated from allelic profiles
 of any selection of loci, or more conveniently, you can select a scheme in the
-Scheme selector to include all loci belonging to that scheme.
+scheme selector to include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
 colouring nodes - select any fields you wish to include. Multiple selections
