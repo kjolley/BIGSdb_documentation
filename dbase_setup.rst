@@ -296,6 +296,10 @@ Any value set here can be overridden in a
   * Isolate databases only: URL of BIGSdb script running the seqdef database
     (default: '/cgi-bin/bigsdb/bigsdb.pl').
     
+* eav_fields
+
+  * Name to call sparesely-populated fields. Default: 'phenotypic fields'.
+
 * export_limit
 
   * Overrides the default allowed number of data points (isolates x columns) to
