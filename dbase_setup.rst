@@ -578,7 +578,8 @@ Any value set here can be overridden in a
 * views   
 
   * Comma-separated list of views of the isolate table defined in the database.
-    This is used to set a view for a set.   
+    This is used to set a view for a set, or to restrict loci or schemes to a 
+    subset of isolate data.   
  
 * webroot	
 

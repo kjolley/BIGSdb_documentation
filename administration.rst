@@ -953,6 +953,12 @@ exclamation mark (!) next to them:
   included in the Excel submission template.
   
   * Allowed: true/false (default: false)
+  
+* view - Restrict this scheme to only isolates contained in the specified
+  database view. This option will only appear if the views attribute is set
+  in the system tag. The view needs to have been defined in the database as
+  a subset of the isolate table (usually filtered by the value of one or more
+  of its fields). 
 
 .. index::
    single: locus; adding; copying existing record
@@ -1272,6 +1278,12 @@ exclamation mark (!) next to them:
 * dbase_id - Id of scheme in the sequence definition database. 
 
   * Allowed: any integer.
+  
+* view - Restrict this scheme to only isolates contained in the specified
+  database view. This option will only appear if the views attribute is set
+  in the system tag. The view needs to have been defined in the database as
+  a subset of the isolate table (usually filtered by the value of one or more
+  of its fields).  
 
 * display_order - Integer reflecting the display position for this scheme 
   within the interface (optional).
