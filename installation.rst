@@ -429,7 +429,7 @@ purged with a daily cron job, e.g. set the following in /etc/crontab (the
 script will run at 5am every day). ::
 
  #Purge jobs older than 7 days from the jobs database.
- 00   5  *  *  *  postgres psql -c "DELETE FROM jobs where (stop_time IS NOT NULL AND stop_time < now()-interval '7 days') OR (status LIKE 'rejected%' AND submit_time < now()-interval '7 days')" bigsdb_jobs > /dev/null 2>&1
+ 00   5  *  *  *  postgres psql -c "DELETE FROM jobs where (stop_time IS NOT NULL AND stop_time < now()-interval '7 days') OR (status LIKE 'rejected%' AND submit_time < now()-interval '7 days') OR (status IN ('failed','cancelled','terminated') AND stop_time IS NULL AND submit_time <now()-interval '7 days')" bigsdb_jobs > /dev/null 2>&1
 
 *****************
 Log file rotation
