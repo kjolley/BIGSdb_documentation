@@ -19,7 +19,8 @@ vary depending on the setup of the database.
 
 .. image:: /images/data_export/isolate_export2.png
 
-Select the isolate fields and schemes to include.
+Select the isolate ids (if they have not been pre-selected from your query), 
+isolate fields and schemes to include.
 
 .. image:: /images/data_export/isolate_export3.png
 
