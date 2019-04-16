@@ -618,9 +618,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     
 * curate_only
 
-  * Set to 'yes' to hide field on an isolate information page in the standard
-    interface.  The field will be visible if the page is accessed via the 
-    curator's interface (version 1.10.0+).
+  * Set to 'yes' to hide field unless logged-in user is a curator or admin. 
     
 * default
 
