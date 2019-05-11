@@ -865,9 +865,6 @@ This tab allows the following options to be modified:
   position of the sequence if tagged within the sequence bin.
 * Allele flags - Displays information about whether alleles have flags defined
   in sequence definition databases.
-* Display full information about sample records - Used when the database is 
-  used as part of a basic laboratory information management system (LIMS). This
-  option will display records of samples available for the displayed isolate.
 
 .. index::
    pair: options; provenance fields

@@ -124,13 +124,13 @@ is used to describe databases.
 
 Isolate database XML attributes
 ===============================
-Please note that database structure described by the field and sample elements
-must match the physical structure of the database isolate and sample tables
-respectively.  Required attributes are in **bold**::
+Please note that database structure described by the field elements must match 
+the physical structure of the database isolate table.  Required attributes are
+in **bold**::
  
     <db>
 
-Top level element. Contains child elements: system, field and sample.::
+Top level element. Contains child elements: system and field.::
  
     <system>
     
@@ -690,18 +690,6 @@ The following special variables can be used in place of an actual value:
 * CURRENT_DATE: current date in yyyy-mm-dd format
 * CURRENT_YEAR: the 4 digit value of the current year
 
-::
-
- <sample>
-
-Element content: Sample field name + optional list <optlist> of allowed values.
-Attributes are essentially the same as isolate field attributes, but refer to
-the samples table rather than the isolates table.
-
-The sample table, if defined, must include isolate_id and sample_id fields,
-which must also be described in the XML file. These must be set as integer
-fields.
-
 .. _seqdef_xml:
 
 Sequence definition database XML attributes
@@ -713,7 +701,7 @@ Required attributes are in **bold**.
 
  <db>
 
-Top level element. Contains child elements: system, field and sample.
+Top level element. Contains child element: system.
 
 ::
 
