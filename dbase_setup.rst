@@ -95,6 +95,10 @@ database):
   submission interface prior to allele submission finalization. This can be
   used to add specific instructions such as the requirement to attach Sanger
   trace files.
+* registration_success.txt - Text file containing message content to be used
+  in an automated E-mail when granting access to a user who has requested
+  access to the database using the site-wide account system (where 
+  auto-registration is not enabled).
   
 The header and footer files can alternatively be placed in the root directory 
 of the web site for site-wide use.
