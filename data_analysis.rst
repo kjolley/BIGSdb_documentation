@@ -768,16 +768,11 @@ antigens.
 
 .. image:: /images/data_analysis/unique_combinations3.png
 
-Click submit.  When the analysis has completed you will see a table showing the
-unique combinations of the selected fields along with the frequency and 
-percentage of the combination.
+Click submit.  The job will be submitted to the job queue. Once analysis has
+completed, you will be able to download the results in tab-delimited text or 
+Excel formats.
 
 .. image:: /images/data_analysis/unique_combinations4.png
-
-The table can be downloaded in tab-delimited text or Excel formats by clicking
-the links at the bottom of the page.
-
-.. image:: /images/data_analysis/unique_combinations5.png
 
 .. index::
    single: polymorphisms
