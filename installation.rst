@@ -367,7 +367,7 @@ script without any additional attributes.
         on other databases on the site.
         
 5.  HTML header files can be defined for use when bigsdb.pl or bigscurate.pl 
-    are called withouth a database configuration, such as when a user is 
+    are called without a database configuration, such as when a user is 
     registering or modifying their user details. These files, site_header.html,
     site_footer.html, site_curate_header.html and site_curate_footer.html 
     should be placed in the root directory of the web site. 

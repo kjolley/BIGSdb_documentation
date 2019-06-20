@@ -302,7 +302,7 @@ Any value set here can be overridden in a
     
 * eav_fields
 
-  * Name to call sparesely-populated fields. Default: 'phenotypic fields'.
+  * Name to call sparsely-populated fields. Default: 'phenotypic fields'.
 
 * export_limit
 
