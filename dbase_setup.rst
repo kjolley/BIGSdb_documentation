@@ -303,6 +303,11 @@ Any value set here can be overridden in a
 * eav_fields
 
   * Name to call sparsely-populated fields. Default: 'phenotypic fields'.
+  
+* eav_field_icon
+
+  * Icon from FontAwesome to use on isolate info page for EAV fields. Default
+    'fa-microscope'.
 
 * export_limit
 
