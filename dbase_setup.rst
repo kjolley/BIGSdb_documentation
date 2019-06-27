@@ -964,7 +964,7 @@ tag like other attributes:
 Over-riding values set in config.xml
 ************************************
 Any attribute used in the system tag of the database config.xml file can be
-over-ridden using a file called system.overrides, placed in the same directory
+over-ridden using a file called **system.overrides**, placed in the same directory
 as config.xml. This is very useful as it allows you to set up multiple configs
 for a database, with the config.xml files symlinked so that any changes to one
 will be seen in each database configuration. An example of why you may wish to
@@ -975,6 +975,12 @@ key value pairs separated by = with the values quoted, e.g. ::
    view="private"
    read_access="authenticated_users"
    description="Private view of database"
+   
+It is also possible to override the required or maindisplay attribute of a 
+particular field using a file called **field.overrides**. The field.overrides 
+file uses the format 'field:attribute="value"' on each line, e.g. ::
+
+   date_received:required="yes"
   
 .. _user_authentication:
 
