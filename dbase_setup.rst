@@ -981,6 +981,75 @@ particular field using a file called **field.overrides**. The field.overrides
 file uses the format 'field:attribute="value"' on each line, e.g. ::
 
    date_received:required="yes"
+   
+.. _field_validation_rules:
+
+******************************
+Setting field validation rules
+******************************
+Sometimes it may be necessary to restrict the allowed values in one field
+depending on the values submitted for another field. It is possible to do this
+using field validation rules. These combine one or more conditions which all
+have to match for validation to fail and an isolate record upload to be 
+rejected. 
+
+An example of this may be if you have an age_year and an age_month field but
+you only want age_month to be populated if the subject is less than one year
+old. You can do this as follows. 
+
+As an admin, on the curator interface, click the 'Field' toggle to show the
+validation table links. Then click 'Add' on the 'Validation conditions'
+setting:
+
+.. image:: /images/dbase_setup/validation1.png
+
+Add the following conditions separately:
+
+  * age_year > 0
+  * age_month NOT null
+  
+.. image:: /images/dbase_setup/validation2.png
+ 
+Now add a new 'Validation rule', by clicking 'Add' on the 'Validation rules'
+setting:
+ 
+.. image:: /images/dbase_setup/validation3.png
+
+Here you just enter the message that will be returned when the validation 
+fails:
+
+.. image:: /images/dbase_setup/validation4.png
+
+Finally add the conditions to the rule by clicking 'Add' on the 'Rule 
+conditions' setting:
+
+.. image:: /images/dbase_setup/validation5.png
+
+Select the rule message and the condition from the dropdown boxes:
+
+.. image:: /images/dbase_setup/validation6.png
+
+Make sure you do this for each of the conditions that have to match.
+
+Validation checks are performed when adding or updating an isolate
+record, or when a user submits via the automated submission interface. 
+Currently these checks are not enforced when doing a batch update.
+
+Special condition values
+========================
+Use the value **null** to indicate that the field is empty, e.g.
+
+  * age_month NOT null
+  
+Use a field name in square brackets to compare the value in that field, e.g.
+suppose you have two date fields, 'date_sampled' and 'date_received', and you
+want to ensure that 'date_received' is not before 'date_sampled'. You can do
+this with the following condition:
+
+  * date_received < [date_sampled]
+  
+The two fields have to be of the same data type in order to be compared (you 
+cannot compare a text field to an integer field for example).
   
 .. _user_authentication:
 
