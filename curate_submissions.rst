@@ -1,6 +1,6 @@
-#######################
-Curating submitted data
-#######################
+###########################################################
+Curating data submitted via the automated submission system
+###########################################################
 Data may be submitted by users using the automated submission system if it has
 been enabled for a specific database.  As a curator, you will be notified of
 pending submissions when you log in to the curator's interface or if you access

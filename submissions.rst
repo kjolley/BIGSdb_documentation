@@ -121,7 +121,7 @@ additional information to your submission.
 Add message to curator
 ======================
 If you wish to enter a message to the curator, enter this in the messages
-box and click 'Append'.  
+box and click 'Append'. This is not normally necessary for routine submissions.
 
 .. image:: /images/submissions/submission9.png
 
@@ -137,16 +137,13 @@ depend on the policies of the individual databases.  Sequences determined by
 Sanger sequencing should normally have forward and reverse trace files 
 attached.
 
-Files can be added to the submission by clicking the 'Browse' button in the
-'Supporting files' section.
+Files can be added to the submission by dragging and dropping in to the large
+dotted area in the 'Supporting files' section. Alternatively, you can click 
+this area and select files from the local file system.
 
 .. image:: /images/submissions/submission11.png
 
-Select the file in the selection box, then click 'Upload files'.
-
-.. image:: /images/submissions/submission12.png
-
-The file will be uploaded and shown in a table.
+The files will be uploaded and shown in a table.
 
 .. image:: /images/submissions/submission13.png
 
@@ -209,7 +206,10 @@ submission cannot proceed if the checks fail.
 .. image:: /images/submissions/submission19.png
 
 Provided the checks pass, you will then be able to add additional information
-to your submission
+to your submission. New profile submissions usually don't require supporting
+files directly in the submission. You generally will need to make a 
+corresponding :ref:`submission to the isolate database<isolate_submissions>` 
+though.
 
 Add message to curator
 ======================
@@ -222,14 +222,6 @@ The message will be attached.  A curator may respond to the message and attach
 their own, with the full conversation becoming part of the submission record.
 
 .. image:: /images/submissions/submission21.png
-
-Add supporting files
-====================
-Some submissions may require the attachment of supporting files.  These files 
-can be added to the submission by clicking the 'Browse' button in the 
-'Supporting files' section.
-
-Select the file in the selection box, then click 'Upload files'.
 
 Finalize submission
 ===================
@@ -310,27 +302,17 @@ their own, with the full conversation becoming part of the submission record.
 
 Add supporting files
 ====================
-You can add any files required to support the submission.  You may, for 
-example, wish to include a genome sequence for an isolate record (contigs in
-FASTA format).  If you are doing this, make sure that the filename can be 
-unambiguously linked to the appropriate isolate record and 
-:ref:`add a message<isolate_submission_message>`.
+You can add any files required to support the submission, although this is not
+normally needed for an isolate submission (if you wish to submit genome 
+assemblies then you need to make a :ref:`genome submission<genome_submission>`,
+rather than an isolate submission.
 
-Files can be added to the submission by clicking the 'Browse' button in the
-'Supporting files' section.
+Files can be added to the submission
+by dragging and dropping in to the large dotted area in the ‘Supporting files’
+section. Alternatively, you can click this area and select files from the local
+file system.
 
 .. image:: /images/submissions/submission30.png
-
-Select the file in the selection box, then click 'Upload files'.
-
-.. image:: /images/submissions/submission31.png
-
-The file will be uploaded and shown in a table.
-
-.. image:: /images/submissions/submission32.png
-
-Files can be removed from the submission by checking the appropriate 'Delete'
-box and clicking 'Delete selected files'.
 
 Finalize submission
 ===================
@@ -346,6 +328,8 @@ Your submission will then be listed under 'Pending submissions' on your
 submission page.
 
 .. image:: /images/submissions/submission34.png
+
+.. _genome_submission:
 
 *****************
 Genome submission
