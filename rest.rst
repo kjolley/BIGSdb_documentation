@@ -1927,6 +1927,12 @@ access authenticated resources. The overall three-legged flow works as follows:
 It is recommended that application developers use an OAuth library to generate
 and sign requests.
 
+.. note::
+
+   There are Python and Perl example scripts available at 
+   https://github.com/kjolley/BIGSdb/tree/develop/scripts/rest_examples to
+   demonstrate and test OAuth authentication. 
+
 .. _get_consumer_key:
 
 .. index::
