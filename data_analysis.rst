@@ -283,8 +283,9 @@ scheme of core loci where a good assembly would be expected to include all
 member loci.  To determine the total of all loci designated or tagged, click 
 'All loci' in the scheme tree.  
 
-There is also an option to determine the mean G+C content of the sequence bin
-of each isolate.
+There is also an option to determine the mean G+C content and various assembly
+stats of the sequence bin of each isolate. Note that selecting these will make
+the analysis run much slower since each contig needs to be examined.
 
 Click submit.
 
