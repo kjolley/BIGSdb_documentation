@@ -89,6 +89,8 @@ Resources
   - Query sequence to extract allele designations/fields for a scheme
 * :ref:`GET /db/{database}/isolates<db_isolates>` 
   - Retrieve list of isolate records
+* :ref:`GET /db/{database}/genomes<db_genomes>` 
+  - Retrieve list of isolate records that have genome assemblies
 * :ref:`POST /db/{database}/isolates/search<db_isolates_search>`
   - Search isolate database
 * :ref:`GET /db/{database}/isolates/{isolate_id}<db_isolates_isolate_id>`
@@ -193,6 +195,7 @@ definition database.
 
 * :ref:`fields<db_fields>` [string] - URI to isolate provenance field information
 * :ref:`isolates<db_isolates>` [string] - URI to isolate records
+* :ref:`genomes<db_genomes>` [string] - URI to genome records
 * :ref:`schemes<db_schemes>` [string] - URI to list of schemes
 * :ref:`loci<db_loci>` [string] - URI to list of loci
 * :ref:`projects<db_projects>` [string] - URI to list of projects
@@ -1297,6 +1300,48 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history
   * curator [string] - :ref:`URI to user details<db_users_user_id>` of curator
   * timestamp [string] - Time of update
   * actions [array] - List of update descriptions [strings]
+  
+.. _db_genomes:
+  
+.. index::
+   single: API resources; GET /db/{database}/genomes
+   single: API resources; retrieve list of isolate records that have genome assemblies
+
+GET /db/{database}/genomes - Retrieve list of isolate records that have genome assemblies
+=========================================================================================
+**Required route parameter:** database [string] - Database configuration name
+
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging. 
+* added_after [date] - Include only isolates added after specified date 
+  (ISO 8601 format).
+* added_on [date] - Include only isolates added on specified date 
+  (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after specified 
+  date (ISO 8601 format).
+* updated_on [date] - Include only isolates updated on specified date 
+  (ISO 8601 format).
+* genome_size [integer] - Filter to only include records with a sequence bin 
+  of at least the specified size (default is 500,000bp).
+
+**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/genomes
+
+**Response:** Object containing:
+
+* records [int] - Number of isolates
+* isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* paging [object] - Some or all of the following:
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
 
 .. _db_isolates_search:
 
