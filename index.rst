@@ -10,7 +10,7 @@ BIGSdb extends the principle of MLST to genomic data, where large numbers of loc
 The software has been released under the GNU General Public Licence version 3.  The latest version of this documentation can be found at http://bigsdb.readthedocs.org/.
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2 
 
    concepts	      
    dependencies
