@@ -55,7 +55,7 @@ Enter details of sequencing method
 There are a number of fields that must be filled in so that the curator knows
 how the sequence was obtained:
 
-* technology - the sequncing platform used, allowed values are:
+* technology - the sequencing platform used, allowed values are:
    
   * 454
   * Illumina
