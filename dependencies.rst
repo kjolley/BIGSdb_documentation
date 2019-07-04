@@ -49,7 +49,7 @@ These are included with most Linux distributions.
 * `LWP::UserAgent <https://metacpan.org/pod/LWP::UserAgent>`_ - Used to upload via API
 * `Net::Oauth <https://metacpan.org/pod/Net::OAuth>`_ - Required for REST authentication (this needs to be installed even if you are not using REST).
 * `Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_ - Required for multi-threading tools and plugins.
-* `Time::Duration <https://metacpan.org/pod/Time::Duration>`_ [optional] - Used by Job Viewer to display elapsed time in rounded units.
+* `Time::Duration <https://metacpan.org/pod/Time::Duration>`_ - Used by Job Viewer to display elapsed time in rounded units.
 * `Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_
 * `XML::Parser::PerlSAX <https://metacpan.org/pod/XML::Parser::PerlSAX>`_ - part of libxml-perl - Used to parse XML configuration files.
 
