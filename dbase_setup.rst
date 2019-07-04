@@ -1094,41 +1094,41 @@ Fill in the form and click 'Submit'.
 
 Field options are:
 
-* field [required]
+* **field**
 
   * name of field
   
-* value_format [required]
+* **value_format**
   
   * date type - either integer, float, text, date or boolean.
   
-* no_curate [required] 
+* **no_curate**
 
   * Set to true to prevent user updates of fieldThis setting could be used if 
     the value is calculated by an external script rather than entered by a 
     curator.
     
-* no_submissions [required] 
+* **no_submissions**
   
   * Set to true to prevent the field being listed in the submissions template.
   
-* description [optional]
+* description
 
   * Tooltip text that will appear on curator forms.
   
-* length [optional]
+* length
 
   * Restrict allowed length of value.
   
-* option_list [optional]
+* option_list
 
   * Semi-colon separated list of allowed values.
   
-* value_regex [optional]
+* value_regex
 
   * Regular expression that can constrain allowed values.
   
-* conditional_formatting [optional]
+* conditional_formatting
 
   * Semi-colon separated list of values - 
     each consisting of the value, followed by a pipe character (|) and HTML to 
@@ -1136,27 +1136,27 @@ Field options are:
     HTML, use two semi-colons (;;) otherwise it will be treated as the list 
     separator.'
     
-* html_link_text [optional]
+* html_link_text
 
   * This defines the text that will appear on an information link that will 
     trigger a slide-in message (if defined int the next field). Default is 
     'info'.
     
-* html_message [optional]
+* html_message
 
   * This message will slide-in on the isolate information page when the field 
     value is populated and the information link is clicked. Full HTML 
     formatting is supported.
 
-* min_value [optional]
+* min_value
 
   * Valid for number fields only.
 
-* max_value [optional]
+* max_value
 
   * Valid for number fields only.
 
-* field_order [optional]
+* field_order
 
   * Integer indicating the order that fields should be displayed. If this is
     not set they will appear alphabetically.
