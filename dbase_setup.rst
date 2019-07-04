@@ -306,8 +306,14 @@ Any value set here can be overridden in a
   
 * eav_field_icon
 
-  * Icon from FontAwesome to use on isolate info page for EAV fields. Default
-    'fa-microscope'.
+  * Icon from FontAwesome to use on isolate info page for sparsely-populated 
+    fields. Default 'fa-microscope'.
+    
+* eav_groups
+
+  * Comma-separated list of category names that sparsely-populated fields can 
+    be grouped in to. If this value is set, a category drop-down list will 
+    appear when adding or updating sparsely-populated fields.
 
 * export_limit
 
@@ -981,17 +987,17 @@ particular field using a file called **field.overrides**. The field.overrides
 file uses the format 'field:attribute="value"' on each line, e.g. ::
 
    date_received:required="yes"
-   
+
 .. _field_validation_rules:
 
 ******************************
 Setting field validation rules
 ******************************
-Sometimes it may be necessary to restrict the allowed values in one field
-depending on the values submitted for another field. It is possible to do this
-using field validation rules. These combine one or more conditions which all
-have to match for validation to fail and an isolate record upload to be 
-rejected. 
+Sometimes it may be necessary to restrict the allowed values in one isolate 
+field depending on the values submitted for another field. It is possible to 
+do this using field validation rules. These combine one or more conditions 
+which all have to match for validation to fail and an isolate record upload 
+to be rejected. 
 
 An example of this may be if you have an age_year and an age_month field but
 you only want age_month to be populated if the subject is less than one year
@@ -1050,6 +1056,110 @@ this with the following condition:
   
 The two fields have to be of the same data type in order to be compared (you 
 cannot compare a text field to an integer field for example).
+
+.. index::
+   single: sparsely-populated fields
+
+.. _sparsely_populated_fields:
+
+*************************
+Sparsely-populated fields
+*************************
+Commonly used isolate fields should be described in the config.xml file and
+included as columns within the isolates table. Sometimes, however, you may 
+have a need to record information that is only likely to be found in a 
+minority of records. This can be done more efficiently with the use of 
+sparsely-populated fields. These are stored differently in the database (using
+an `entity-attribute-value [EAV] model
+<https://en.wikipedia.org/wiki/Entity-attribute-value_model>`_) but
+can still be searched and exported in a similar way to normal fields. There
+is no limit to the number of such fields that can be defined.
+
+The default name for these fields is 'phenotypic fields' and this is how they
+will be grouped in the interface. You can change this by setting the 
+'eav_fields' attribute in the :ref:`system tag of config.xml<isolate_xml>`. 
+It is also possible to group these fields in to categories - these can be 
+defined with a comma-separated list in the 'eav_groups' attribute in the 
+:ref:`system tag of config.xml<isolate_xml>`.
+
+You will need to be an admin to define sparely-populated fields. Make sure 
+that the 'Fields' toggle is selected on the curators' page. Click the add (+) 
+button on the 'Sparse fields' function.
+
+.. image:: /images/dbase_setup/eav_fields1.png
+
+Fill in the form and click 'Submit'.
+
+.. image:: /images/dbase_setup/eav_fields2.png
+
+Field options are:
+
+* field [required]
+
+  * name of field
+  
+* value_format [required]
+  
+  * date type - either integer, float, text, date or boolean.
+  
+* no_curate [required] 
+
+  * Set to true to prevent user updates of fieldThis setting could be used if 
+    the value is calculated by an external script rather than entered by a 
+    curator.
+    
+* no_submissions [required] 
+  
+  * Set to true to prevent the field being listed in the submissions template.
+  
+* description [optional]
+
+  * Tooltip text that will appear on curator forms.
+  
+* length [optional]
+
+  * Restrict allowed length of value.
+  
+* option_list [optional]
+
+  * Semi-colon separated list of allowed values.
+  
+* value_regex [optional]
+
+  * Regular expression that can constrain allowed values.
+  
+* conditional_formatting [optional]
+
+  * Semi-colon separated list of values - 
+    each consisting of the value, followed by a pipe character (|) and HTML to 
+    display instead of the value. If you need to include a semi-colon within the 
+    HTML, use two semi-colons (;;) otherwise it will be treated as the list 
+    separator.'
+    
+* html_link_text [optional]
+
+  * This defines the text that will appear on an information link that will 
+    trigger a slide-in message (if defined int the next field). Default is 
+    'info'.
+    
+* html_message [optional]
+
+  * This message will slide-in on the isolate information page when the field 
+    value is populated and the information link is clicked. Full HTML 
+    formatting is supported.
+
+* min_value [optional]
+
+  * Valid for number fields only.
+
+* max_value [optional]
+
+  * Valid for number fields only.
+
+* field_order [optional]
+
+  * Integer indicating the order that fields should be displayed. If this is
+    not set they will appear alphabetically.
   
 .. _user_authentication:
 
@@ -1101,7 +1211,8 @@ this is combined with the session variable and hashed again. This hash is
 passed to the server. The server compares this hash with its own calculated
 hash of the stored encrypted password and session variable that it originally
 sent to the browser. Implementation is based on
-`perl-md5-login <http://perl-md5-login.sourceforge.net/>`_.
+`perl-md5-login <http://perl-md5-login.sourceforge.net/>`_. Stored passwords 
+are salted and hashed using bcrypt. 
 
 To use built-in authentication you need to set the authentication attribute in
 the system tag of the database XML configuration to 'builtin'.
