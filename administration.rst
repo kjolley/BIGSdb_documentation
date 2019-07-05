@@ -2448,4 +2448,35 @@ A full list of options can be found by typing: ::
        
    --scheme SCHEME_ID
        Refresh or create cache for specified scheme.
-   
+
+.. _config_specific_downloads:
+
+.. index::
+   pair: downloads; config-specific
+
+******************************
+Config-specific file downloads
+******************************
+You can make files available on a static website but restrict their 
+access only to users who can authenticate for access to the current database
+configuration.
+
+This can be done by adding a file called download_files.conf to the database
+configuration directory within /etc/bigsdb/dbases. This file consists of three
+columns in tab-delimited format:
+
+ * The full path of the file in the file system
+ * Label which will be used to hyperlink to the file
+ * A description of the file
+ * The file type (docx, html, gif,jpg, pdf, png, tar, tar, xlsx currently supported)
+ 
+The files can be downloaded directly from a BIGSdb URL:
+/cgi-bin/bigsdb.pl?db=CONFIG&page=downloadFiles&file=LABEL (where CONFIG is the
+database config name and LABEL is the label used in the download_files.conf 
+file. These URLs can be used as standard links within a web page.
+
+You can also list all available files with the URL:
+/cgi-bin/bigsdb.pl?db=CONFIG&page=downloadFiles
+
+Navigating to these links will prompt the user to log-in if they are not 
+already (if the database config requires this).
