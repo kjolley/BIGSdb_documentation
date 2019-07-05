@@ -673,15 +673,14 @@ within it.  Common filters are:
   * started - At least one locus has an allele designated.  The scheme mat be
     complete or partial.
   * not started - The scheme has no loci with alleles designated.
-
-.. _seqbin_filter:
-
-* Sequence bin - Specify whether any sequence data has been associated with a 
-  record.  Specific threshold values may be selected if these have been 
-  :ref:`set up for the database <isolate_xml>`.
-* Provenance fields - Dropdown list boxes of values for specific provenance 
-  fields may be present if set for the database.  Users can choose to 
-  :ref:`add additional filters <modify_query_filters>`.
+  * Sequence bin - Specify whether any sequence data has been associated with a 
+    record.  Specific threshold values may be selected if these have been 
+    :ref:`set up for the database <isolate_xml>`.
+  * Provenance fields - Dropdown list boxes of values for specific provenance 
+    fields may be present if set for the database.  Users can choose to 
+    :ref:`add additional filters <modify_query_filters>`.
+  * Old record versions - Checkbox which, if selected, will include all record
+    versions in a query.
 
 ***************************
 Querying by allelic profile
