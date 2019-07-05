@@ -2350,7 +2350,7 @@ provided to the application developer.
 
 There is a script to do this in the scripts/maintenance directory of the 
 download archive.  The script is called create_client_credentials and should
-be run by the postgres user.  A full list of options can be found by typing: ::
+be run by the postgres user. A full list of options can be found by typing: ::
 
    create_client_credentials.pl --help
    
@@ -2385,3 +2385,67 @@ be run by the postgres user.  A full list of options can be found by typing: ::
    -v, --version VERSION  
        Version of application (optional).
     
+.. _blast_caches:
+
+.. index::
+   pair: refreshing; BLAST caches
+
+************
+BLAST caches
+************
+Sequence definition databases cache any BLAST databases that they create in 
+order to perform sequence queries. These caches can be found in subdirectories
+named with the database name in the temp directory defined by the 
+secure_tmp_dir attribute in bigsdb.conf, e.g. 
+/var/tmp/pubmlst_bigsdb_neisseria_seqdef.
+
+These BLAST databases will be marked stale if new alleles are added to the 
+BIGSdb database for any locus covered by the cache. A cache marked stale will
+be recreated the next time a matching sequence query needs to use it. BLAST
+databases will also be marked stale if they are older than the cache_days 
+setting in bigsdb.conf (default = 7 days).
+
+It is possible to also manually create and refresh these caches using the 
+update_blast_caches.pl script found in the scripts/maintenance directory.
+
+A full list of options can be found by typing: ::
+
+   update_blast_caches.pl --help
+   
+   NAME
+       update_cached_blast_dbs.pl - Refresh BLAST database caches
+   
+   SYNOPSIS
+       update_cached_blast_dbs.pl --database DB_CONFIG [options]
+   
+   OPTIONS
+   --all_loci
+       Refresh or create cache for all loci.
+   
+   --database DATABASE CONFIG
+       Database configuration name.
+       
+   --delete_all
+       Remove all cache files.
+       
+   --delete_old
+       Remove cache files older than the cache_days setting in bigsdb.conf or 
+       that have been marked stale.
+       
+   --delete_single_locus
+       Remove caches containing only one locus. There can be many of these and
+       they can clutter the cache directory. They are generally quick to recreate
+       when needed.
+       
+   --help
+       This help page.
+       
+   --quiet
+       Only show errors.  
+       
+   --refresh
+       Refresh existing caches.
+       
+   --scheme SCHEME_ID
+       Refresh or create cache for specified scheme.
+   
