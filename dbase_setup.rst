@@ -381,6 +381,45 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
+* kiosk
+
+  * Set to a page name to restrict configuration to always start on this page, 
+    rather than an index page. This faciliates running in a cut-down 
+    :ref:`kiosk mode<kiosk_mode>` that doesn't allow access to all features. 
+    *Currently only 'sequenceQuery' is supported*.
+
+* kiosk_allowed_pages
+
+  * Comma-separated list of pages that the configuration is allowed to show,
+    apart from the page set in the 'kiosk' attribute. Example for a sequence
+    query configuration would be 'sequenceTranslate' to allow access to the
+    translated sequence page following a query.
+
+* kiosk_locus
+
+  * Restrict sequence query to a specific locus or scheme. Use either the locus
+    primary name or 'SCHEME_X' where X is the scheme number.
+
+* kiosk_no_genbank
+
+  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
+
+* kiosk_no_upload
+
+  * Set to "yes" to hide the sequence file upload in kiosk mode.
+
+* kiosk_simple
+
+  * Remove most explanatory text from kiosk page.
+
+* kiosk_text
+
+  * Alternative text to show on kiosk page.
+
+* kiosk_title
+
+  * Title text to use when running in kiosk mode.
+   
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
@@ -487,6 +526,13 @@ Any value set here can be overridden in a
   * Optionally allow the use of remote contigs. These are stored in a remote
     BIGSdb database, accessible via the RESTful API. Set to 'yes' to enable.
     
+* rest_kiosk
+
+  * If 'kiosk' attribute is set, then the REST interface will be disabled for
+    the configuration unless a value is set here. The only supported value
+    currently is 'sequenceQuery' which will enable API routes for querying
+    sequences.
+    
 * rMLSTSpecies  
 
   * Enable rMLST Species identifier plugin: either 'yes' or 'no'. If no value 
@@ -515,7 +561,7 @@ Any value set here can be overridden in a
 * seqbin_size_threshold
 
   * Sets the size values in Mbp to enable for the 
-    :ref:`seqbin filter <seqbin_filter>`.
+    :ref:`seqbin filter <query_filters>`.
   * Example: seqbin_size_threshold="0.5,1,2,4".
   
 * seq_export_limit
@@ -1160,6 +1206,43 @@ Field options are:
 
   * Integer indicating the order that fields should be displayed. If this is
     not set they will appear alphabetically.
+    
+.. index::
+   single: kiosk mode    
+
+.. _kiosk_mode:
+    
+**********
+Kiosk mode
+**********
+Kiosk mode allows you to run a cut-down interface that offers a single main
+functionality. Currently, only a sequence query page is supported. The 
+interface is locked down so that only specified functionality is supported
+and data cannot be exported.
+
+See the :ref:`kiosk_* attributes<isolate_xml>` in config.xml.
+
+As an example, the following settings are used for the rMLST 'Identify species'
+tool at https://pubmlst.org/rmlst/. The database usually requires a user to log
+in, but this tool offers a restricted functionality without logging in. ::
+
+   kiosk="sequenceQuery"
+   kiosk_allowed_pages="sequenceTranslate"
+   kiosk_title="Identify species"
+   kiosk_locus="SCHEME_1"
+   kiosk_simple="yes"
+   kiosk_no_upload="no"
+   kiosk_no_genbank="no"
+   rest_kiosk="sequenceQuery"
+   
+When you go to this `example kiosk page
+<https://pubmlst.org/bigsdb?db=pubmlst_rmlst_seqdef_kiosk>`_ you see only the 
+sequence query page and trying to access any other functionality is prevented.
+
+The rest_kiosk attribute enables queries to also be performed using the
+:ref:`RESTful API<api>` which will be similarly locked down.
+
+.. image:: /images/dbase_setup/kiosk.png
   
 .. _user_authentication:
 
