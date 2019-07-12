@@ -6,4 +6,4 @@ Data analysis plugins
    :maxdepth: 3
    :glob:
    
-   data_analysis/*   
+   data_analysis/*
