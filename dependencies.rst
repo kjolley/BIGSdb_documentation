@@ -10,7 +10,7 @@ BIGSdb requires a number of software components to be installed:
 Linux packages
 ==============
 * Apache2 web server with mod_perl2
-* PostgreSQL database
+* PostgreSQL database 9.5+
 * Perl 5.10+
 * BioPerl
 * BLAST+
