@@ -19,7 +19,9 @@ depending on the setup of the database.
 
 .. image:: /images/data_analysis/field_breakdown2.png
 
-A chart will be displayed for the first field.
+A chart will be displayed for the first field. Depending on the field type,
+this may be either a world map (for country or continent fields), pie chart,
+or bar chart.
 
 .. image:: /images/data_analysis/field_breakdown3.png
 
@@ -34,6 +36,32 @@ This will re-populate the dropdown list.
 
 The charts are dynamic and you can manipulate some aspects of them using
 controls shown on the screen.
+
+Maps
+====
+World maps are shown for country and continent fields (provided standardized
+country names are used in the database). The maps can be modified in a number
+of ways.
+
+The colour theme can be changed by clicked the appropriate coloured square.
+Additional themes are available by clicking the '>' link.
+
+.. image:: /images/data_analysis/field_breakdown5a.png
+
+The range that is used to decide the colour boundaries can be changed by using
+the range slider.
+
+.. image:: /images/data_analysis/field_breakdown5b.png
+
+Finally the map projection can be changed. The default 'Natural Earth' provides
+a reasonable display for most latitudes but you may prefer others such as 
+'Mercator'.
+
+.. image:: /images/data_analysis/field_breakdown5c.png
+
+To see the same data as a pie chart, click the 'Pie' or 'Donut' icons.
+
+.. image:: /images/data_analysis/field_breakdown5d.png
 
 Pie charts
 ==========
