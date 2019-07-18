@@ -2078,8 +2078,8 @@ Getting an access token
 * **Supported method:** GET
  
 The application uses the request token, verifier code and its consumer key to 
-obtain an access token.  The access token does not expire but can be revoked
-by both the end user or the site admininstrator.  The request needs to contain
+obtain an access token. The access token does not expire but can be revoked
+by either the end user or the site administrator. The request needs to contain
 the following parameters and to be signed using the consumer secret and request
 token secret:
  
@@ -2153,8 +2153,6 @@ following parameters:
  
 Accessing protected resources
 =============================
-* **Supported method:** GET
-
 The application uses the session token and its consumer key to access a 
 protected resource.  The request needs to contain the following parameters and
 to be signed using the consumer secret and session token secret:
