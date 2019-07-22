@@ -218,7 +218,7 @@ GET /db/{database}/classification_schemes - List classification schemes
 
 **Response:** Object containing:
 
-* records [int] - Number of classification schemes.
+* records [integer] - Number of classification schemes.
 * classification_schemes [array] - List of :ref:`URIs to classificaton schemes<db_classification_schemes_id>`.
 
 .. _db_classification_schemes_id:
@@ -431,7 +431,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 
 **Response:** Object containing:
 
-* records [int] - Number of alleles.
+* records [integer] - Number of alleles.
 * last_updated [date] - Latest allele addition/modification date 
   (ISO 8601 format). 
 * alleles [array] - List of :ref:`URIs to defined allele records
@@ -632,7 +632,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/sequences
 **Response:** Object containing a subset of the following key/value pairs:
 
 * :ref:`loci<db_loci>` [string] - URI to list of loci
-* records [int] - Number of alleles defined
+* records [integer] - Number of alleles defined
 * last_updated [date] - Latest allele addition/modification date 
   (ISO 8601 format).
 
@@ -700,7 +700,7 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
 * curators [array] (seqdef databases) - list of 
   :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
-* records [int] - Number of profiles
+* records [integer] - Number of profiles
 * last_added [date] - Latest profile addition/modification date 
   (ISO 8601 format). 
 * last_updated [date] - Latest profile addition/modification date 
@@ -791,7 +791,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 
 **Response:** Object containing:
 
-* records [int] - Number of profiles
+* records [integer] - Number of profiles
 * last_updated [date] - Latest profile addition/modification date 
   (ISO 8601 format). 
 * profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. 
@@ -954,7 +954,7 @@ GET /db/{database}/isolates - Retrieve list of isolate records
 
 **Response:** Object containing:
 
-* records [int] - Number of isolates
+* records [integer] - Number of isolates
 * isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -1077,7 +1077,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designat
 
 **Response:** Object containing:
 
-* records [int] - Number of allele designations
+* records [integer] - Number of allele designations
 * allele_designations [array] - List of :ref:`URIs to allele designation records
   <db_isolates_isolate_id_allele_designations_locus>`.
   Pages are 100 records by default.  Page size can be modified using the 
@@ -1145,7 +1145,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
 
 **Response:** Object containing:
 
-* records [int] - Number of allele id objects
+* records [integer] - Number of allele id objects
 * allele_ids [array] - List of allele id objects, each consisting of a 
   key/value pair where the key is the locus name.  
   Pages are 100 records by default.  Page size can be modified using the 
@@ -1180,7 +1180,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allel
 
 **Response:** 
 
-* records [int] - Number of allele designation objects
+* records [integer] - Number of allele designation objects
 * allele_designations [array] - List of
   :ref:`allele designation objects<db_isolates_isolate_id_allele_designations_locus>` 
   for each locus in the specified scheme that has been designated.
@@ -1206,7 +1206,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allel
 
 **Response:** 
 
-* records [int] - Number of allele id objects
+* records [integer] - Number of allele id objects
 * allele_ids [array] - List containing allele id objects for each locus in the 
   specified scheme that has been designated.  Each allele_id object contains a 
   key which is the name of the locus with a value that may be either a string, 
@@ -1238,7 +1238,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
 
 **Response:** Object containing:
 
-* records [int] - Number of contigs
+* records [integer] - Number of contigs
 * contigs [array] - List of :ref:`URIs to contig records
   <db_contigs_contig_id>`
   Pages are 100 records by default.  Page size can be modified using the 
@@ -1295,7 +1295,7 @@ http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history
 
 **Response:** Object containing:
 
-* records [int] - Number of updayes
+* records [integer] - Number of updayes
 * contigs [array] - List of update objects each consisting of the following 
   key/value pairs:
   
@@ -1333,7 +1333,7 @@ GET /db/{database}/genomes - Retrieve list of isolate records that have genome a
 
 **Response:** Object containing:
 
-* records [int] - Number of isolates
+* records [integer] - Number of isolates
 * isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -1394,7 +1394,7 @@ The following searches for *Neisseria* ST-11 isolates from Europe in 2015
   
 **Response**: Object containing:
 
-* records [int] - Number of isolates
+* records [integer] - Number of isolates
 * isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -1499,7 +1499,7 @@ GET /db/{database}/fields/{field} - Retrieve values set for a provenance field
 
 **Response:** Object containing:
 
-* records [int] - Number of values
+* records [integer] - Number of values
 * values [array] - List of values used in isolate records.  
   Pages are 100 records by default. Page size can be modified using the 
   page_size parameter.
@@ -1606,7 +1606,7 @@ GET /db/{database}/projects/{project_id}/isolates - Retrieve list of isolates be
 
 **Response:** Object containing:
 
-* records [int] - Number of isolates in the project
+* records [integer] - Number of isolates in the project
 * isolates [array] - List of URIs to isolate records.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
@@ -1640,7 +1640,7 @@ GET /db/{database}/submissions - retrieve list of submissions
 
 **Response:** Object containing:
 
-* records [int] - Number of submissions
+* records [integer] - Number of submissions
 * submissions [array] - List of :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>`
 * paging [object] - Some or all of the following:
 
@@ -1689,7 +1689,7 @@ POST /db/{database}/submissions - create new submission
      
  **Profile submissions**
   
-* scheme_id [int] - scheme id number
+* scheme_id [integer] - scheme id number
 * profiles [string] - tab-delimited profile data - this should include a header
   line containing the name of each locus
   
@@ -1712,7 +1712,7 @@ POST /db/{database}/submissions - create new submission
 **Optional parameters:**
 
 * message [string] - correspondence to the curator
-* email [int] - set to 1 to enable E-mail updates (E-mails will be sent to the
+* email [integer] - set to 1 to enable E-mail updates (E-mails will be sent to the
   registered user account address).
   
 **Response:** Object containing: 
