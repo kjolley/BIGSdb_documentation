@@ -1367,7 +1367,7 @@ POST /db/{database}/isolates/search - Search isolate database
 
 You must include at least one query parameter.
 
-Flattened parameter names in the following forms are supported: 
+Parameter names in the following forms are supported: 
 
 * field.{field} - key/value pairs for provenance fields. Supported field names
   can be found by calling the :ref:`/fields route<db_fields>`. The fields will 
@@ -1380,9 +1380,6 @@ Flattened parameter names in the following forms are supported:
 * scheme.{scheme_id}.{scheme_field} - key/value pairs of scheme fields and 
   their values. Supported field names can be determined by following routes
   from the :ref:`/schemes route<db_schemes>`.
-  
-Parameters have to be flattened rather than using nested attributes to support
-passing via OAuth.
   
 **Example method call using curl:**
 The following searches for *Neisseria* ST-11 isolates from Europe in 2015 
