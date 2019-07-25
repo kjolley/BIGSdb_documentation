@@ -29,7 +29,7 @@ These are included with most Linux distributions.
 
 * `Archive::Zip <https://metacpan.org/pod/Archive::Zip>`_ - Used to upload to iTOL.
 * `Bio::Biblio <https://metacpan.org/pod/Bio::Biblio>`_ - This used to be part of BioPerl but will need to be installed separately if using BioPerl 1.6.920 or later.
-* `CGI <https://metacpan.org/pod/CGI>`_ - (version 4.04+) Common Gateway Interface requests and responses (used to be a core module but recently removed).
+* `CGI <https://metacpan.org/pod/CGI>`_ (version 4.04+) - Common Gateway Interface requests and responses (used to be a core module but recently removed).
 * `Config::Tiny <https://metacpan.org/pod/Config::Tiny>`_ - Configuration file handling.
 * `Crypt::Eksblowfish::Bcrypt <https://metacpan.org/pod/Crypt::Eksblowfish::Bcrypt>`_ - Used for password hashing.
 * `Data::Random <https://metacpan.org/pod/Data::Random>`_
