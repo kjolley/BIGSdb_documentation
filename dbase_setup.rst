@@ -1322,9 +1322,9 @@ have located your bigscurate.pl script).
 
 .. _updating_citations:
 
-*************************
-Updating PubMed citations
-*************************
+*************************************
+Retrieving PubMed citations from NCBI
+*************************************
 Publications listed in PubMed can be associated with individual isolate
 records, profiles, loci and sequences.  Full citations for these are stored
 within a local reference database, enabling these to be displayed within
@@ -1340,8 +1340,8 @@ needs to search for PubMed ids.  These are listed in a configuration file
 name of the database, the second is a comma-separated list of tables to search,
 e.g. ::
 
-  pubmlst_bigsdb_neisseria_isolates          refs
-  pubmlst_bigsdb_neisseria_seqdef            profile_refs,sequence_refs,locus_refs
+  pubmlst_bigsdb_neisseria_isolates          refs,scheme_refs
+  pubmlst_bigsdb_neisseria_seqdef            profile_refs,sequence_refs,locus_refs,scheme_refs
 
 The script can be called as follows: ::
 
