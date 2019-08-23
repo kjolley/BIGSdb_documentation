@@ -1333,22 +1333,11 @@ is populated by a script that looks in BIGSdb databases for PubMed records not
 locally stored and then requests the full citation record from the PubMed
 database.
 
-The script is called get_refs.pl and can be found in the scripts/maintenance
-directory.  This script needs to know which BIGSdb databases and tables it
-needs to search for PubMed ids.  These are listed in a configuration file
-(usually called getrefs.conf) which contains two columns - the first is the
-name of the database, the second is a comma-separated list of tables to search,
-e.g. ::
-
-  pubmlst_bigsdb_neisseria_isolates          refs,scheme_refs
-  pubmlst_bigsdb_neisseria_seqdef            profile_refs,sequence_refs,locus_refs,scheme_refs
-
-The script can be called as follows: ::
-
- get_refs.pl getrefs.conf
+The script is called retrieve_pubmed_records.pl and can be found in the 
+scripts/maintenance directory.  
  
-Run either as the 'postgres' user or an account that is allowed to connect as
-the postgres user.
+Simply run the script either as the 'postgres' user or an account that is 
+allowed to connect as the postgres user.
 
 This should be run periodically from a CRON job, e.g. every hour.
 
