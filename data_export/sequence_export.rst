@@ -5,7 +5,8 @@ You can export the sequences for any set of loci designated in isolate records,
 or belonging to scheme profiles in the sequence definition database.
 
 The sequence export function can be accessed by clicking the 'Sequences' link 
-in the Export section of the contents page.
+in the Export section of the contents page of isolate databases, or the 
+'Profile sequences' link of sequence definition databases.
 
 .. image:: /images/data_export/sequence_export.png
 
