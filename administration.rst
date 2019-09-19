@@ -60,6 +60,8 @@ Curator permissions
 Individual permissions can be set for each curator:
 
 * disable_access - if set to true, this user is completely barred from access.
+* query_users - allowed to query and view users registered to the database. 
+  This is automatically allowed if permission is set to modify users.
 * modify_users - allowed to add or modify user records. They can change the
   status of users, but can not revoke admin privileges from an account. They
   can also not raise the status of a user to admin level.
