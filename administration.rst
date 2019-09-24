@@ -454,8 +454,7 @@ Sets
 ====
 Sets provide a means to partition the database in to manageable units that can 
 appear as smaller databases to an end user.  Sets can include constrained 
-groups of isolates, loci, and schemes from the complete database and also 
-include additional metadata fields only applicable to that set.
+groups of isolates, loci, and schemes from the complete database.
 
 .. seealso::
 
@@ -505,51 +504,6 @@ where the value is the name of the set.
    different configuration, i.e. an alternative config.xml with the set_id 
    attribute not set, or temporarily remove the set_id directive from the 
    current config.xml while making configuration changes.
-
-Set metadata
-============
-Additional metadata fields can be set within the XML configuration file. They 
-are specified as belonging to a metaset by prefixing the field name with 
-'meta_NAME:' where NAME is the name of the metaset, e.g. ::
-
- <field type="text" required="no" length="30" maindisplay="no" 
-     optlist="yes">meta_1:clinical_outcome
-   <optlist>
-     <option>no sequeleae</option>
-     <option>hearing loss</option>
-     <option>amputation</option>
-     <option>death</option>
-   </optlist>
- </field>
-
-Metaset fields can be defined just like any other 
-:ref:`provenance field <isolate_xml>` and their position in the output is 
-determined by their position in the XML file.
-
-Metaset fields can then be added to a set using the 'Add set metadata' link 
-on the curator's page.
-
-.. image:: /images/administration/dataset_partitioning3.png
-
-A new database table needs to be added for each metaset. This should contain 
-all the fields defined for a metaset. The table should also contain an 
-isolate_id field to act as the foreign key linking to the isolate table, e.g. 
-the SQL would look something like the following: ::
-
- CREATE TABLE meta_1 (
- isolate_id integer NOT NULL,
- town text,
- clinical_outcome text,
- PRIMARY KEY (isolate_id),
- CONSTRAINT m1_isolate_id FOREIGN KEY (isolate_id) REFERENCES isolates
- ON DELETE CASCADE
- ON UPDATE CASCADE
- );
-
- GRANT SELECT,UPDATE,INSERT,DELETE ON meta_1 TO apache;
-
-The above creates the database table for a metaset called '1', defining new 
-text fields for 'town' and 'clinical_outcome'.
 
 Set views
 =========
