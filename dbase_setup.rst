@@ -719,6 +719,11 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     from being manually modified. This is useful for fields that are populated
     by automated scripts or database triggers. Can be 'yes' or 'no', default
     'no'.
+    
+* no_submissions
+
+  * Setting this will hide the field in the submission template. The field is
+    still available if it is added back to the template manually.
   
 * optlist   
 
