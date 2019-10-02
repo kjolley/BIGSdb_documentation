@@ -713,6 +713,13 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
   * Minimum value for integer and date types.
   
+* multiple
+
+  * Sets if field allows multiple values to be set for it, 'yes' or 'no',
+    default 'no'. This is only supported for fields with option lists. If set
+    to 'yes', then the underlying field in the database must be an ARRAY type, 
+    e.g. text ARRAY.
+  
 * no_curate
 
   * Setting this will hide the field in the curator interface and prevent it
