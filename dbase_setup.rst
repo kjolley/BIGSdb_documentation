@@ -300,6 +300,15 @@ Any value set here can be overridden in a
   * Isolate databases only: URL of BIGSdb script running the seqdef database
     (default: '/cgi-bin/bigsdb/bigsdb.pl').
     
+* disable_updates
+
+  * Set to 'yes' to prevent updates. This is useful when moving databases or
+    temporarily running on a backup server.
+    
+* disable_update_message
+
+  * Message shown when updates are disabled.
+    
 * eav_fields
 
   * Name to call sparsely-populated fields. Default: 'phenotypic fields'.
