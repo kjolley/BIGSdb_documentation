@@ -192,27 +192,34 @@ To run plugins that require a long time to complete their analyses, an offline j
     jobs_db=bigsdb_jobs
     max_load=8
 
-   The jobs script will not process a job if the server's load average (over the last minute) is higher than the max_load parameter. This should be set higher than the number of processor cores or you may find that jobs never run on a busy server. Setting it to double the number of cores is probably a good starting point.
+   The jobs script will not process a job if the server's load average (over 
+   the last minute) is higher than the max_load parameter. This should be 
+   set higher than the number of processor cores or you may find that jobs 
+   never run on a busy server. Setting it to double the number of cores is 
+   probably a good starting point.
 
 4. Copy the job_logging.conf file to the /etc/bigsdb directory.
 
-5. Set the script to run frequently (preferably every minute) from CRON. Note that CRON does not like '.' in executable filenames, so either rename the script to 'bigsjobs' or create a symlink and call that from CRON, e.g.::
+5. Set the script to run frequently (preferably every minute) from CRON. ::
 
     copy bigsjobs.pl to /usr/local/bin
-    sudo ln -s /usr/local/bin/bigsjobs.pl /usr/local/bin/bigsjobs
-
-   You should install xvfb, which is a virtual X server that may be required for third party applications called from plugins. This is required, for example, for calling splitstree4 from the Genome Comparator plugin.
+ 
+   You should install xvfb, which is a virtual X server that may be required 
+   for third party applications called from plugins. This is required, for 
+   example, for calling splitstree4 from the Genome Comparator plugin.
 
    Add the following to /etc/crontab:::
 
-     * * * * * bigsdb xvfb-run -a /usr/local/bin/bigsjobs
+     * * * * * bigsdb xvfb-run -a /usr/local/bin/bigsjobs.pl
 
    (set to run every minute from the 'bigsdb' user account).
 
-   If you'd like to run this more frequently, e.g. every 30 seconds, multiple entries can be added to CRON with an appropriate sleep prior to running, e.g.::
+   If you'd like to run this more frequently, e.g. every 30 seconds, multiple 
+   entries can be added to CRON with an appropriate sleep prior to running, 
+   e.g.::
 
-     * * * * * bigsdb  xvfb-run -a /usr/local/bin/bigsjobs 
-     * * * * * bigsdb  sleep 30;xvfb-run -a /usr/local/bin/bigsjobs 
+     * * * * * bigsdb  xvfb-run -a /usr/local/bin/bigsjobs.pl
+     * * * * * bigsdb  sleep 30;xvfb-run -a /usr/local/bin/bigsjobs.pl 
 
 6. Create a log file, bigsdb_jobs.log, in /var/log owned by 'bigsdb', e.g.::
 
