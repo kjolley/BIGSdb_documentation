@@ -200,9 +200,9 @@ To run plugins that require a long time to complete their analyses, an offline j
 
 4. Copy the job_logging.conf file to the /etc/bigsdb directory.
 
-5. Set the script to run frequently (preferably every minute) from CRON. ::
+5. Set the script to run frequently (preferably every minute) from CRON.
 
-    copy bigsjobs.pl to /usr/local/bin
+   Copy bigsjobs.pl to /usr/local/bin
  
    You should install xvfb, which is a virtual X server that may be required 
    for third party applications called from plugins. This is required, for 
