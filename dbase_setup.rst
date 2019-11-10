@@ -478,7 +478,12 @@ Any value set here can be overridden in a
   
 * password  
 
-  * Password for access to isolates database, default 'remote'.  
+  * Password for access to isolates database, default 'remote'.
+  
+* pcr_limit
+
+  * Overrides the isolate number limit for the in silico PCR plugin.
+    Default: '10000'.
   
 * PhyloViz  
 
