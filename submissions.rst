@@ -300,20 +300,6 @@ their own, with the full conversation becoming part of the submission record.
 
 .. image:: /images/submissions/submission29.png
 
-Add supporting files
-====================
-You can add any files required to support the submission, although this is not
-normally needed for an isolate submission (if you wish to submit genome 
-assemblies then you need to make a :ref:`genome submission<genome_submission>`,
-rather than an isolate submission.
-
-Files can be added to the submission
-by dragging and dropping in to the large dotted area in the ‘Supporting files’
-section. Alternatively, you can click this area and select files from the local
-file system.
-
-.. image:: /images/submissions/submission30.png
-
 Finalize submission
 ===================
 Make sure the 'E-mail submission updates' box is checked if you wish to receive
