@@ -859,6 +859,11 @@ exclamation mark (!) next to them:
   filtering using in silico hybdridization.
 
   * Allowed: true/false.
+  
+* introns - Set to true if locus may contain introns. This setting will only
+  be available if BLAT is configured in bigsdb.conf.
+  
+  * Allowed: true/false.
 
 * dbase_name - Name of database (system name).
 
