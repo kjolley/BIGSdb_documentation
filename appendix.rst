@@ -56,6 +56,10 @@ Sequence tag flags
 ******************
 Sequences tagged in the sequence bin can have features indicated by specific flags.  The presence of these flags can be queried.  These are a superset of :ref:`flags available for allele sequences <allele_sequence_flags>`. Available flags are:
 
+* alternative start codon
+
+  * A start codon other than ATG, GTG, or TTG is used. This can be the case with some yeasts.
+
 * ambiguous read
 
   * Genome sequence contains ambiguous nucleotides in coding sequence.
@@ -114,6 +118,10 @@ Sequences tagged in the sequence bin can have features indicated by specific fla
 Allele sequence flags
 *********************
 Sequences can be flagged with specific attributes - these are searchable when doing a sequence attribute query.  These are a subset of :ref:`flags available for tagged sequences <sequence_tag_flags>`. These are mainly for use with whole genome MLST type data.  Multiple flags can be selected by Ctrl-clicking the list.  Available flags are:
+
+* alternative start codon
+
+  * A start codon other than ATG, GTG, or TTG is used. This can be the case with some yeasts.
 
 * atypical
 
