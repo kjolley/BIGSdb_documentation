@@ -915,7 +915,7 @@ exclamation mark (!) next to them:
   
   * Allowed: true/false (default: false)
   
-* view - Restrict this scheme to only isolates contained in the specified
+* view - Restrict this locus to only isolates contained in the specified
   database view. This option will only appear if the views attribute is set
   in the system tag. The view needs to have been defined in the database as
   a subset of the isolate table (usually filtered by the value of one or more
