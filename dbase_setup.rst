@@ -730,9 +730,8 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * multiple
 
   * Sets if field allows multiple values to be set for it, 'yes' or 'no',
-    default 'no'. This is only supported for fields with option lists. If set
-    to 'yes', then the underlying field in the database must be an ARRAY type, 
-    e.g. text ARRAY.
+    default 'no'. If set to 'yes', then the underlying field in the database 
+    must be an ARRAY type, e.g. text[].
   
 * no_curate
 
