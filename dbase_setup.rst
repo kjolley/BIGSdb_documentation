@@ -300,6 +300,12 @@ Any value set here can be overridden in a
   * Isolate databases only: URL of BIGSdb script running the seqdef database
     (default: '/cgi-bin/bigsdb/bigsdb.pl').
     
+* delete_retire_only
+
+  * Set to 'yes' to retire the id of any isolate that is deleted. This prevents
+    re-use of ids. This setting will override the global setting in 
+    bigsdb.conf.
+    
 * disable_updates
 
   * Set to 'yes' to prevent updates. This is useful when moving databases or
@@ -879,6 +885,12 @@ Any value set here can be overridden in a
   * Overrides the limit on number of submissions that can be made to the 
     database via the RESTful interface. This is useful to prevent flooding of
     the submission system by aberrant scripts. Default: '100'. 
+    
+* delete_retire_only
+
+  * Set to 'yes' to retire the id of any allele or profile that is deleted. 
+    This prevents re-use of ids. This setting will override the global setting
+    in bigsdb.conf.
     
 * diploid
 
