@@ -351,6 +351,16 @@ Any value set here can be overridden in a
     of the group followed by a colon (:) followed by a comma-separated list of
     fields to group, e.g. identifiers:id,strain,other_name.
     
+* genepresence_record_limit
+
+  * Overrides the record number limit (isolates x loci) for the Gene Presence 
+    plugin. Default: 500000 (this can also be set globally in bigsdb.conf).
+    
+* genepresence_taxa_limit
+
+  * Overrides the isolate limit for the Gene Presence plugin. 
+    Default: 10000 (this can also be set globally in bigsdb.conf).
+    
 * GenomeComparator  
 
   * Enable Genome Comparator plugin: either 'yes' or 'no'. If no value is set 
@@ -361,12 +371,12 @@ Any value set here can be overridden in a
 * genome_comparator_limit
 
   * Overrides the isolate number limit for the Genome Comparator plugin.
-    Default: '1000'.
+    Default: 1000 (this can also be set globally in bigsdb.conf).
     
 * genome_comparator_max_ref_loci
 
   * Overrides the limit on number of loci allowed in a reference genome.
-    Default: '10000'.
+    Default: 10000.
       
 * genome_comparator_threads
 
@@ -386,6 +396,17 @@ Any value set here can be overridden in a
 
   * Host name/IP address of machine hosting isolate database, default
     'localhost'. 
+    
+* itol_record_limit
+
+  * Overrides the maximum number of records that can be included in an ITOL 
+    job. Default: 2000 (this can also be set globally in bigsdb.conf).
+    
+* itol_seq_limit
+
+  * Overrides the maximum number of sequeneces (records x loci) that can be 
+    included in an ITOL job. Default: 100,000 (this can also be set globally
+    in bigsdb.conf).
     
 * job_priority 
 
@@ -467,6 +488,18 @@ Any value set here can be overridden in a
     plugin can be disabled by setting this attribute to 'no'. Note that for the
     plugin to be active, a country field containing a defined list of allowed
     values and an integer year field must be defined in the isolates table.
+    
+* microreact_record_limit
+
+  * Overrides the maximum number of records that can be included in a 
+    Microreact job. Default: 2000 (this can also be set globally in 
+    bigsdb.conf).
+    
+* microreact_seq_limit
+
+  * Overrides the maximum number of sequences (records x loci) that can be 
+    included in an Microreact job. Default: 100,000 (this can also be set 
+    globally in bigsdb.conf).
 
 * noshow 
 
