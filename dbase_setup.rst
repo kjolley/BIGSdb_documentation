@@ -500,6 +500,11 @@ Any value set here can be overridden in a
   * Overrides the maximum number of sequences (records x loci) that can be 
     included in an Microreact job. Default: 100,000 (this can also be set 
     globally in bigsdb.conf).
+    
+* new_version
+
+  * Set to 'no' to prevent copying field value when creating a new version of
+    the isolate record.
 
 * noshow 
 
