@@ -388,7 +388,7 @@ Querying isolate data
 The 'Search or browse database' page of an isolate database allows you to also
 search by combinations of provenance criteria, scheme and locus data, and more. 
 
-.. image:: /images/data_query/query_isolates.png
+.. image:: /images/data_query/browse_isolates.png
 
 To start with, only one provenance field search box is displayed but more can 
 be added by clicking the '+' button (highlighted). These can be linked together
