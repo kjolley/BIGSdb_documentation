@@ -754,7 +754,13 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   
 * length 
 
-  * Length of field, default 12.  
+  * Length of field, default 12.
+  
+* log_delete
+
+  * Sets if the field value will be recorded in the log table if the isolate
+    is deleted. Set to 'yes' or 'no', default is 'no'. The id and isolate name
+    are always recorded if deletion is logged. 
   
 * maindisplay  
 
