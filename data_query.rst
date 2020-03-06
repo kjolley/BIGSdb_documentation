@@ -689,7 +689,7 @@ within it.  Common filters are:
     
 Bookmarking an isolate query
 ============================
-Once you have made an isolate database query, you can bookmark the it so
+Once you have made an isolate database query, you can bookmark it so
 that it can be repeated in the future. You need to have an account and be 
 logged in to the database to be able to bookmark.
 
