@@ -646,7 +646,11 @@ GET /db/{database}/schemes - List schemes
 =========================================
 **Required route parameter:** database [string] - Database configuration name
 
-**Optional parameters:** None
+**Optional parameters:**
+
+* with_pk [integer] - Set to non-zero value to only show indexed schemes, i.e.
+  those with a primary key field that defines each unique combination of 
+  alleles, e.g. MLST. 
 
 **Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes
 
