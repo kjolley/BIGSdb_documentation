@@ -61,6 +61,12 @@ and alter the isolate table: ::
 Remember that any fields added to the table need to be described in the 
 config.xml file for this database.
 
+The xml directory of the software archive contains example XML files for 
+sequence definition and isolate databases (rename these to config.xml). 
+The isolates_config.xml file contains the minimum required isolate table 
+fields and matches the isolate table that will be generated using the 
+isolatedb.sql SQL script.
+
 *******************************
 Database-specific configuration
 *******************************
