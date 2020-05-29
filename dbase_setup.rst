@@ -327,8 +327,8 @@ Any value set here can be overridden in a
   
 * eav_field_icon
 
-  * Icon from FontAwesome to use on isolate info page for sparsely-populated 
-    fields. Default 'fa-microscope'.
+  * Icon class from FontAwesome to use on isolate info page for sparsely-
+    populated fields. Default 'fas fa-microscope'.
     
 * eav_groups
 
