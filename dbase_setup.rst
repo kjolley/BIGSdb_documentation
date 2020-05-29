@@ -323,7 +323,7 @@ Any value set here can be overridden in a
     
 * eav_fields
 
-  * Name to call sparsely-populated fields. Default: 'phenotypic fields'.
+  * Name to call sparsely-populated fields. Default: 'secondary metadata'.
   
 * eav_field_icon
 
@@ -334,7 +334,10 @@ Any value set here can be overridden in a
 
   * Comma-separated list of category names that sparsely-populated fields can 
     be grouped in to. If this value is set, a category drop-down list will 
-    appear when adding or updating sparsely-populated fields.
+    appear when adding or updating sparsely-populated fields. You can add an
+    icon to appear by following the name with a pipe symbol (|) and an icon 
+    class from the FontAwesome library, e.g. 
+    'Vaccine reactivity|fas fa-syringe,Risk factors|fas fa-smoking'.
 
 * export_limit
 
@@ -1208,7 +1211,7 @@ an `entity-attribute-value [EAV] model
 can still be searched and exported in a similar way to normal fields. There
 is no limit to the number of such fields that can be defined.
 
-The default name for these fields is 'phenotypic fields' and this is how they
+The default name for these fields is 'secondary metadata' and this is how they
 will be grouped in the interface. You can change this by setting the 
 'eav_fields' attribute in the :ref:`system tag of config.xml<isolate_xml>`. 
 It is also possible to group these fields in to categories - these can be 
