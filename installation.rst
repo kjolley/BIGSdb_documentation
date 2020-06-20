@@ -160,13 +160,16 @@ Site-specific configuration files are located in /etc/bigsdb by default.
 * :download:`logging.conf <conf/logging.conf>` - error logging settings. 
   See log4perl project website for advanced configuration details.
 
-The dropdown menu can be customized by modifying the menu_header.html file 
-located in /etc/bigsdb. Any HTML in this file will be inserted at the top of
-the menu. The included file displays the BIGSdb logo hyperlinked
-to the root of the web site. This file can be edited as you wish, or 
-alternatively menu_header.html can be placed in the root directory of the
-web site - this will be used in preference to the version in /etc/bigsdb.
-
+Breadcrumb navigation links can be configured with a file called 
+breadcrumbs.conf, placed either in the database configuration directory, 
+the root directory of the website, or in /etc/bigsdb/conf. The file describes
+links that are higher in the hierarchy than the database index page. The file
+consists of lines that contain link text separated by a pipe symbol (|) 
+followed by a URL for that link, e.g. ::
+ 
+    Home|/
+    Organisms|/databases/
+   
 **********************************
 Setting up the offline job manager
 **********************************

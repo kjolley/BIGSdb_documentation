@@ -721,6 +721,10 @@ Any value set here can be overridden in a
 
   * URL of web root, which can be relative or absolute. This is used to provide
     a hyperlinked item in the dropdown menu. Default '/'.
+    
+* webroot_label
+
+  * Label text for the breadcrumb link defined by the webroot value.
 
 .. _isolate_xml_field:
 
