@@ -248,12 +248,7 @@ Any value set here can be overridden in a
   * This is only needed if automated submissions are enabled. If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
-    
-* curator_home
-
-  * URL of curator's index page, which can be relative or absolute. This will
-    be used to add a link in the dropdown menu.
-    
+       
 * curators_only
 
   * Set to 'yes' to prevent ordinary authenticated users having access to
@@ -926,11 +921,6 @@ Any value set here can be overridden in a
   * This is only needed if automated submissions are enabled.  If bigscurate.pl
     is in a different directory from bigsdb.pl, you need to include the whole 
     web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl.
-    
-* curator_home
-
-  * URL of curator's index page, which can be relative or absolute. This will
-    be used to add a link in the dropdown menu.
     
 * curators_only
 
