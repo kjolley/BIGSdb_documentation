@@ -163,7 +163,7 @@ Any value set here can be overridden in a
 * **description**	
 
   * Description of database used throughout interface (see also 
-    'formatted_db_description').
+    'formatted_description').
   
 * align_limit
 
@@ -356,7 +356,7 @@ Any value set here can be overridden in a
     of the group followed by a colon (:) followed by a comma-separated list of
     fields to group, e.g. identifiers:id,strain,other_name.
     
-* formatted_db_description
+* formatted_description
 
   * Markdown formatted description of database. If set, this will be used
     throughout the HTML interface wherever formatting can be applied (main body
