@@ -964,6 +964,13 @@ Any value set here can be overridden in a
     significantly. :ref:`Exemplar alleles<defining_exemplars>` *MUST* be 
     defined otherwise sequence queries will fail. 'yes' or 'no', default 'no'.
     
+* formatted_description
+
+  * Markdown formatted description of database. If set, this will be used
+    throughout the HTML interface wherever formatting can be applied (main body
+    of text) and overrides the value set in 'db_description'. Currently only 
+    supports *\*italics\** and **\*\*bold\*\***.
+    
 * isolate_database
 
   * The config name of the isolate database. This is used to provide a link to
