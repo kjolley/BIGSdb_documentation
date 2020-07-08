@@ -429,45 +429,6 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
-* kiosk
-
-  * Set to a page name to restrict configuration to always start on this page, 
-    rather than an index page. This faciliates running in a cut-down 
-    :ref:`kiosk mode<kiosk_mode>` that doesn't allow access to all features. 
-    *Currently only 'sequenceQuery' is supported*.
-
-* kiosk_allowed_pages
-
-  * Comma-separated list of pages that the configuration is allowed to show,
-    apart from the page set in the 'kiosk' attribute. Example for a sequence
-    query configuration would be 'sequenceTranslate' to allow access to the
-    translated sequence page following a query.
-
-* kiosk_locus
-
-  * Restrict sequence query to a specific locus or scheme. Use either the locus
-    primary name or 'SCHEME_X' where X is the scheme number.
-
-* kiosk_no_genbank
-
-  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
-
-* kiosk_no_upload
-
-  * Set to "yes" to hide the sequence file upload in kiosk mode.
-
-* kiosk_simple
-
-  * Remove most explanatory text from kiosk page.
-
-* kiosk_text
-
-  * Alternative text to show on kiosk page.
-
-* kiosk_title
-
-  * Title text to use when running in kiosk mode.
-   
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
@@ -989,6 +950,49 @@ Any value set here can be overridden in a
 
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
+    
+* kiosk
+
+  * Set to a page name to restrict configuration to always start on this page, 
+    rather than an index page. This faciliates running in a cut-down 
+    :ref:`kiosk mode<kiosk_mode>` that doesn't allow access to all features. 
+    *Currently only 'sequenceQuery' is supported*.
+
+* kiosk_allowed_pages
+
+  * Comma-separated list of pages that the configuration is allowed to show,
+    apart from the page set in the 'kiosk' attribute. Example for a sequence
+    query configuration would be 'sequenceTranslate' to allow access to the
+    translated sequence page following a query.
+    
+* kiosk_help
+
+  * URL to context-sensitive help page.
+
+* kiosk_locus
+
+  * Restrict sequence query to a specific locus or scheme. Use either the locus
+    primary name or 'SCHEME_X' where X is the scheme number.
+
+* kiosk_no_genbank
+
+  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
+
+* kiosk_no_upload
+
+  * Set to "yes" to hide the sequence file upload in kiosk mode.
+
+* kiosk_simple
+
+  * Remove most explanatory text from kiosk page.
+
+* kiosk_text
+
+  * Alternative text to show on kiosk page.
+
+* kiosk_title
+
+  * Title text to use when running in kiosk mode.
     
 * profile_submissions
 
