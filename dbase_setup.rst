@@ -1486,7 +1486,7 @@ you.
 
 From the curators' page, click the oauth credentials add link in the 
 administrator settings. This function is normally hidden, so you may need to 
-click the 'Show all' toggle to display it.
+click the 'Misc' toggle to display it.
 
 .. image:: /images/dbase_setup/oauth.png
 
