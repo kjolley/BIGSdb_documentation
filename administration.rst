@@ -469,7 +469,7 @@ the database. Add the following attribute to the system tag: ::
 
 With this attribute, the curation interface now has options to add sets, and 
 then add loci or schemes to these sets. These functions are normally hidden,
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Sets' toggle to display it.
 
 .. image:: /images/administration/dataset_partitioning.png
 
@@ -550,7 +550,7 @@ using the same credentials.
 Once a :ref:`site-wide user database has been set up<site-wide-db>`, this can
 be defined within each client database as follows. From the curators' contents
 page, click the add (+) user databases link. This function is normally hidden,
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Misc' toggle to display it.
 
 .. image:: /images/administration/add_users_database1.png
 
@@ -582,7 +582,7 @@ Sequence definition databases
 Single locus
 ------------
 Click the add (+) loci link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef.png
@@ -711,7 +711,7 @@ exclamation mark (!) next to them:
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef2.png
@@ -739,7 +739,7 @@ Single locus
    pair: locus; adding
 
 Click the add (+) loci link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_loci_isolates.png
@@ -946,6 +946,12 @@ usually the dbase_id2_value, description_url and url fields:
 
 Complete the form and click 'Submit'.
 
+.. note::
+
+   You can also pre-populate the dbase_name, dbase_url and url fields with 
+   boilerplate values by setting the default_seqdef_config and 
+   default_seqdef_dbase values in the system attribute of the config.xml file.
+
 .. index::
    pair: locus; adding
 
@@ -954,7 +960,7 @@ Complete the form and click 'Submit'.
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/add_new_loci_isolates2.png
@@ -984,7 +990,7 @@ mutations, or cross-referencing of alternative nomenclatures.
 
 To add extended attributes for a locus, click add (+) locus extended attributes
 in the sequence definition database curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Fields' toggle 
 to display it.
 
 .. image:: /images/administration/locus_extended_attributes.png
@@ -1076,7 +1082,7 @@ As with all configuration, tables can be populated using the batch interface
 (++) or one at a time (+). Details for the latter are described below:
 
 Click the add (+) scheme link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Schemes' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef.png
@@ -1091,7 +1097,7 @@ display of schemes in the interface - this can be left blank if you wish.
 
 To add loci to the scheme, click the add (+) scheme members link on the 
 curator's interface contents page. This function is normally hidden, so you 
-may need to click the 'Show all' toggle to display it.
+may need to click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef3.png
 
@@ -1164,7 +1170,7 @@ As with all configuration, tables can be populated using the batch interface
 (++) or one at a time (+). Details for the latter are described below:
 
 Click the add (+) scheme link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Schemes' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_scheme_isolates.png
@@ -1272,7 +1278,7 @@ for example the :ref:`allele download <download_alleles>` page.
 Scheme groups can be added in both the sequence definition and isolate 
 databases.  To add a new group, click the add (+) scheme group link on the 
 curator's contents page. This function is normally hidden, so you may need to 
-click the 'Show all' toggle to display it.
+click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/scheme_groups2.png
 
@@ -1324,7 +1330,7 @@ Multiple client databases can be queried simultaneously.
 
 To register a client isolate database for a sequence definition database, click
 the add (+) client database link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Clients' toggle 
 to display it.
 
 .. image:: /images/administration/add_client_databases.png
@@ -1574,7 +1580,7 @@ Defining classification scheme in sequence definition database
 ==============================================================
 Once a scheme has been defined, add a classification scheme by clicking the 
 add classification schemes (+) link on the curator's interface contents page.
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Schemes' 
 toggle to display it.
 
 .. image:: /images/administration/classification_schemes.png
@@ -1614,7 +1620,7 @@ Defining classification scheme in isolate database
 ==================================================
 Duplicate the scheme definition from the sequence definition database. Click
 the add classification schemes (+) link on the curator's interface contents 
-page. This function is normally hidden, so you may need to click the 'Show all' 
+page. This function is normally hidden, so you may need to click the 'Schemes' 
 toggle to display it.
 
 .. image:: /images/administration/classification_schemes3.png
@@ -1700,7 +1706,7 @@ directly in to the batch locus add form of the
 :ref:`isolate <batch_adding_loci_isolates>` databases.
   
 Click 'Database scan' within the 'Loci' group on the curator's contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/database_scan.png
@@ -1720,8 +1726,6 @@ basis for upload files for the sequence definition and isolate databases.
 Batch sequence files, in text and Excel formats, are also created for defining 
 the first allele once the locus has been set up in the sequence definition 
 database.
-
-.. image:: /images/administration/database_scan4.png
 
 .. index::
    single: genome filtering
@@ -1755,7 +1759,7 @@ structure and primers can be any length.
 
 To define a PCR reaction that can be linked to a locus definition, click the 
 add (+) PCR reaction link on the curator's main page. This function is normally
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Loci' toggle to display it.
 
 .. image:: /images/administration/in_silico_pcr2.png
 
@@ -1888,7 +1892,7 @@ Perform your search and click the hyperlinked id number of the record.
 
 .. image:: /images/administration/genome_positions2.png
 
-In the isolate record, click the sequence bin 'Display' button to bring up 
+In the isolate record, click the 'Show sequence bin' button to bring up 
 details of the isolate contigs.
 
 .. image:: /images/administration/genome_positions3.png
