@@ -1930,7 +1930,7 @@ a regular expression from 'ST-4 complex/subgroup IV' to 'cc4'.
 
 Composite fields can be added to the database by clicking the add (+) 
 composite fields link on the curator's main page. This function is normally 
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/composite_fields.png
 
@@ -1989,7 +1989,7 @@ limited to those from Europe.
 
 To set up such an extended attribute, click the add (+) isolate field extended 
 attributes link on the curator's main page. This function is normally hidden, 
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/extended_attributes.png
 
@@ -2087,7 +2087,7 @@ uploading new contig data.  The attributes are also searchable.
 
 To set up new attributes, click the add (+) 'sequence attributes' link on the 
 isolate database curator's index page. This function is normally hidden, 
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/sequence_attributes.png
 
@@ -2134,7 +2134,7 @@ or to export a configuration for troubleshooting.  Data from most of the tables
 can be exported in tab-delimited text format suitable for batch uploading. For
 example, to export scheme configuration data, click the query link (Update or
 delete) next to schemes in the curator's interface. This function is normally 
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/config_export.png
 
