@@ -5,7 +5,8 @@ Curator's guide
 Please note that links displayed within the curation interface will vary 
 depending on database contents and the permissions of the curator. Some  
 infrequently used links are usually hidden by default. These can be enabled
-by clicking the 'Show all' toggle switch.
+by clicking the 'Show all' toggle switch. The admin section has feature-
+specific toggles as well as a 'Show all' toggle.
 
 .. image:: /images/curation/show_all.png 
 
@@ -245,11 +246,12 @@ ALL'. This allows you to quickly delete all alleles returned from a search.
 .. image:: /images/curation/update_alleles3.png
 
 If you choose to delete, you will be presented with a final confirmation 
-screen. To go ahead, click 'Delete!'. Deletion will not be possible if the 
+screen. To go ahead, click 'Delete'. Deletion will not be possible if the 
 allele is part of a scheme profile - if it is you will need to delete any 
 profiles that it is a member of first. You can also choose to delete and
 retire the allele identifier. If you do this, the allele identifier will not
-be re-used.
+be re-used. It is possible to set the configuration so that you only have
+the option to delete and retire.
 
 .. image:: /images/curation/delete_allele.png
 
@@ -451,7 +453,8 @@ records retrieved from the search.
 For deletion of a single record, the full record will be displayed. Confirm 
 deletion by clicking 'Delete'. You can also choose to delete and
 retire the profile identifier. If you do this, the profile identifier will not
-be re-used.
+be re-used. The database configuration can be set so that you can only delete
+and retire.
 
 .. image:: /images/curation/delete_scheme_profile.png
 
