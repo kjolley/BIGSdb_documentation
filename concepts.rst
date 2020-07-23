@@ -157,8 +157,3 @@ fragments of the same genes they may have to be named something like
 set for 'Streptococcus pneumoniae' we can then choose to only include 
 S. pneumoniae loci and therefore shorten their names, e.g. to 'aroE'.
 
-Additional metadata fields can also be associated with each set so it is 
-possible to have a database containing genomes from multiple species and a 
-generic set of metadata, then have additional specific metadata fields for 
-particular species or genera. These additional fields only become visible and 
-searchable when the specific set that they belong to has been selected.
