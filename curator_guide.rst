@@ -570,7 +570,10 @@ record.
 
 .. image:: /images/curation/delete_isolate.png
 
-Pressing 'Delete' from this record page confirms the deletion. 
+Pressing 'Delete' from this record page confirms the deletion. You can also 
+choose to delete and retire the isolate. If you do this, the isolate id number
+will not be re-used. It is possible to set the configuration so that you only 
+have the option to delete and retire.
 
 Clicking the 'Update' link for an isolate takes you to an update form. Make the
 required changes and click 'Update'.
@@ -581,8 +584,6 @@ Allele designations can also be updated by clicking within the scheme tree and
 selecting the 'Add' or 'Update' link next to a displayed locus.
 
 .. image:: /images/curation/update_isolate4.png
-
-.. image:: /images/curation/update_isolate5.png
 
 Schemes will only appear in the tree if data for at least one of the loci 
 within the scheme has been added.  You can additionally add or update allelic 
@@ -674,7 +675,9 @@ You will have a final chance to change your mind:
 
 .. image:: /images/curation/batch_delete_isolate3.png
 
-Click 'Confirm deletion!'.
+Click 'Delete'. You can also choose to delete and retire the isolate id. If 
+you do this, the id number will not be re-used. It is possible to set the 
+configuration so that you only have the option to delete and retire.
 
 ****************************
 Retiring isolate identifiers
@@ -735,7 +738,7 @@ A confirmation page will be displayed.
 
 .. image:: /images/curation/isolate_aliases3.png
 
-Click 'import data'.
+Click 'Import data'.
 
 .. index::
    single: publications
@@ -819,8 +822,9 @@ for isolate selection, however, the chosen isolate will be pre-selected.
 
 Upload options
 ==============
-On the upload form, you can select to filter out short sequences from your 
-contig list.
+On the upload form, you can select to filter out short sequences or those 
+containing only homopolymeric repeats (which can be artefactually produced
+by some assembler software versions) from your contig list.
 
 If your database has experiments defined (experiments are used for grouping 
 sequences and can be used to filter the sequences used in 
@@ -878,9 +882,10 @@ optionally the sequencing method from the dropdown lists. Then click
 
 .. image:: /images/curation/upload_contigs14.png
 
-You can also choose to filter out short contigs from the upload by selecting
-the checkbox and choosing the minimum length from the dropdown box in the 
-options settings.
+You can also choose to filter out short contigs selecting the checkbox and 
+choosing the minimum length from the dropdown box in the options settings.
+You can also choose to filter out sequences containing only homopolymeric runs
+which can be produced artefactually by some assembler versions.
 
 .. image:: /images/curation/upload_contigs15.png
 
@@ -961,7 +966,9 @@ Select 'scan' sequence tags on the curator's index page.
 
 Next, select the isolates whose sequences you wish to scan against. Multiple 
 isolates can be selected by holding down the Ctrl key. All isolates can be 
-selected by clicking the 'All' button under the isolate selection list.
+selected by clicking the 'All' button under the isolate selection list. On 
+database with a large number of isolates, you will need to enter a list of 
+isolate ids rather than pick from a list.
 
 Select either individual loci or schemes (collections of loci) to scan against.
 Again, multiple selections can be made.
