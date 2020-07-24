@@ -259,13 +259,9 @@ update to the submitter so that they can respond.
 Closing the submission
 ======================
 You can add a message to the submitter by entering it in the message box and 
-clicking ‘Append’.  Change the record status to either 'accepted' or
-'rejected' depending on whether you have accepted the submission.  Click 
-'Update'.
-
-.. image:: /images/curate_submissions/curate_submissions34.png
+clicking ‘Append’.  
 
 The 'Close submission' button will now appear.  Click this to close the 
 submission.  The submitter will be notified of their submission status.
 
-.. image:: /images/curate_submissions/curate_submissions35.png
+.. image:: /images/curate_submissions/curate_submissions34.png
