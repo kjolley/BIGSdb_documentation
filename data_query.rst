@@ -15,9 +15,10 @@ Sequence queries are performed in the sequence definition database.   Click
 
 .. image:: /images/data_query/sequence_query.png 
 
-Paste your sequence in to the box - there is no need to trim. Normally, you can
+Paste your sequence in to the box - there is no need to trim. Often, you can
 leave the locus setting on 'All loci' - the software should identify the 
-correct locus based on your sequence.  Sometimes, it may be quicker, however, 
+correct locus based on your sequence. Sometimes, especially in databases with
+a large number of defined loci, it may be quicker, however, 
 to select the specific locus or scheme (e.g. MLST) that a locus belongs to. 
 
 .. note::
@@ -108,7 +109,7 @@ Designations can be queried using :ref:`standard operators <query_operators>`.
 
 .. image:: /images/data_query/sequence_attributes2.png
 
-Click submit.
+Click 'Search'.
 
 .. image:: /images/data_query/sequence_attributes3.png
 
@@ -169,14 +170,13 @@ Browsing scheme profile definitions
 ***********************************
 If a sequence definition database has schemes defined that include a primary 
 key field, i.e. collections of loci that together create profiles, e.g. for 
-MLST, these can be browsed by clicking the link to 'Search, browse or enter
-list of profiles'. 
+MLST, these can be browsed by clicking the link to 'Allelic profile query'. 
 
 .. image:: /images/data_query/browse_profiles.png
 
 Leave query form fields blank (the display of these may vary depending on 
 modification options set by the user).  Choose the field to order the results 
-by, the number of results per page to display, and click 'Submit'.
+by, the number of results per page to display, and click 'Search'.
 
 .. image:: /images/data_query/browse_profiles2.png
 
@@ -191,9 +191,9 @@ profile.
 ***********************************
 Querying scheme profile definitions
 ***********************************
-Click the link to 'Search, browse of enter list of profiles'.
+Click the link to 'Allelic profile query'.
 
-.. image:: /images/data_query/query_profiles.png
+.. image:: /images/data_query/browse_profiles.png
 
 Enter the search criteria you wish to search on. You can add search criteria 
 by clicking the '+' button in the 'Locus/scheme fields' section.  These can 
@@ -323,7 +323,8 @@ Investigating allele differences
 Sequence similarity
 ===================
 To find sequences most similar to a selected allele within a sequence 
-definition database, click 'Sequence similarity' on the contents page.
+definition database, expand the 'Analysis' menu item and click 
+'Sequence similarity' on the contents page.
 
 .. image:: /images/data_query/sequence_similarity.png
 
@@ -344,8 +345,8 @@ differences and/or a sequence alignment.
 
 Sequence comparison
 ===================
-To directly compare two sequences click 'Sequence comparison' from the contents
-page of a sequence definition database.
+To directly compare two sequences, expand the 'Analysis' section and click 
+'Sequence comparison' on the contents page of a sequence definition database.
 
 .. image:: /images/data_query/sequence_comparison.png
 
@@ -366,26 +367,25 @@ A list of nucleotide differences and/or an alignment will be displayed.
 *********************
 Browsing isolate data
 *********************
-Isolate records can be browsed by clicking the link to 'Search or browse 
-database'. 
+Isolate records can be browsed by clicking the link to 'Search database'. 
 
 .. image:: /images/data_query/browse_isolates.png
 
 Leave query form fields blank (the display of these may vary depending on 
 modification options set by the user).  Choose the field to order the results 
-by, the number of results per page to display, and click 'Submit'.
+by, the number of results per page to display, and click 'Search'.
 
 .. image:: /images/data_query/browse_isolates2.png
 
-Clicking the hyperlink for any record will display full information about the 
-profile.
+Clicking the hyperlink for any record will display 
+:ref:`full information <isolate_records>` about the profile.
 
 .. image:: /images/data_query/browse_isolates3.png
 
 *********************
 Querying isolate data
 *********************
-The 'Search or browse database' page of an isolate database allows you to also
+The 'Search database' page of an isolate database allows you to also
 search by combinations of provenance criteria, scheme and locus data, and more. 
 
 .. image:: /images/data_query/browse_isolates.png
@@ -403,7 +403,7 @@ After the search has been submitted, the results will be displayed in a table.
 Each field can be queried using :ref:`standard operators <query_operators>`.
 
 More search features are available by clicking the 'Modify form options' tab on
-the right-hand side of the screen.
+the top of the screen.
 
 .. image:: /images/data_query/query_isolates4.png
 
@@ -699,7 +699,7 @@ date will be shown) and click 'Add bookmark'.
 
 .. image:: /images/data_query/bookmarks.png
 
-A new side tab will appear when you have saved bookmarks. You can click on
+A new top-right tab will appear when you have saved bookmarks. You can click on
 this to easily access all saved bookmarks.
 
 .. image:: /images/data_query/bookmarks2.png
@@ -770,16 +770,24 @@ scheme.
 
 .. image:: /images/data_query/profile_combinations5.png
 
-Click 'Submit'.
+Click 'Search'.
 
 .. image:: /images/data_query/profile_combinations6.png
 
 *****************************************
 Retrieving isolates by linked publication
 *****************************************
-Click 'Publications' in the Breakdown section of the contents page.
+Click 'Analysis' on the contents page.
 
 .. image:: /images/data_query/publications.png
+
+Click 'Publication breakdown'
+
+.. image:: /images/data_query/publications1.png
+
+Then click 'Launch Publication Breakdown'.
+
+.. image:: /images/data_query/publications1a.png
 
 A list of publications linked by isolates within the database will be 
 displayed.
@@ -813,7 +821,7 @@ database, that you haven't logged in to, the options are associated with a
 browser cookie so they will be remembered if you connect from the same computer
 (using the same browser).
 
-Most options are set by clicking the 'Set general options' link on the database
+Most options are set by clicking the 'Customise' link on the database
 contents page.  Most of the available options are visible for isolate 
 databases, whereas sequence definition databases have fewer available.
 
@@ -971,7 +979,8 @@ user, and these selections will be remembered between sessions.
 The procedure to modify these attributes is the same for locus, schemes or 
 scheme fields, so the steps for loci will be demonstrated only.
 
-Click the appropriate link on the isolate contents page.
+Click the appropriate link in the 'Customise' section on the isolate contents 
+page.
 
 .. image:: /images/data_query/locus_options.png
 
