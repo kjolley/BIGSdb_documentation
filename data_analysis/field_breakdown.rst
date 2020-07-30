@@ -7,6 +7,14 @@ Field breakdown
 The field breakdown plugin for isolate databases displays the frequency of each
 value for fields, alleles and schemes.
 
+The function can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+In the 'Breakdown' category, follow the link to 'Field Breakdown', then click 
+'Launch Field Breakdown'.
+
 The breakdown function can be selected for the whole database by clicking the 
 'Single field' link in the Breakdown section of the main contents page.
 
@@ -130,6 +138,11 @@ Alternatively, it can be exported as a tab-delimited text file by clicking the
 text file icon.
 
 .. image:: /images/data_analysis/field_breakdown15.png
+
+The chart image can also be saved as a SVG file, suitable for manipulation in
+a graphics program.
+
+.. image:: /images/data_analysis/field_breakdown17.png
 
 Exporting allele sequences
 ==========================
