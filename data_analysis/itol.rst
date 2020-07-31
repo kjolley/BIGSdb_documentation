@@ -10,6 +10,14 @@ loci belonging to a particular scheme). Currently, only Neighbour-joining
 trees are supported. Datasets can include metadata which allows nodes in the 
 resultant tree to be coloured.
 
+ITOL can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Third party' category, follow the link to iTOL, then click 
+'Launch iTOL'.
+
 ITOL can be accessed from the contents page by clicking the 'iTOL' link.
 
 .. image:: /images/data_analysis/itol1.png
@@ -22,7 +30,8 @@ will be automatically selected within the iTOL interface.
 
 Select the isolates to include. The tree can be generated from concatenated
 sequences of any selection of loci, or more conveniently, you can select a 
-scheme in the scheme selector to include all loci belonging to that scheme.
+scheme in the scheme selector, or in the list of recommended schemes if these
+have been set up, to include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
 colouring nodes - select any fields you wish to include in the 'iTOL datasets'
