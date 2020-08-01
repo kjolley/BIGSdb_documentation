@@ -3,8 +3,8 @@
 *********************
 Isolate record export
 *********************
-You can export the entire isolate recordset by clicking the 'Export dataset' 
-link in the Export section of the main contents page.
+You can export the entire isolate recordset by expanding the Export section
+on the main contents page and clicking the 'Export dataset' link.
 
 .. image:: /images/data_export/isolate_export.png
 
@@ -25,6 +25,8 @@ Click Submit.
 You can then download the data in tab-delimited text or Excel formats.
 
 .. image:: /images/data_export/isolate_export4.png
+
+Export jobs for larger datasets will be sent to the job queue.
 
 Advanced options
 ================
