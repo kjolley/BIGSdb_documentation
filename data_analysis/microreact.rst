@@ -19,8 +19,13 @@ country and year field values to the `Microreact website
  While Microreact itself is able to display isolates using GPS coordinates, the
  BIGSdb plugin is currently limited to the level of country.
  
-Microreact can be accessed from the contents page by clicking the 'Microreact'
-link.
+Microreact can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Third party' category, follow the link to BLAST, then click 
+'Launch Microreact'.
 
 .. image:: /images/data_analysis/microreact1.png 
 
@@ -33,7 +38,8 @@ interface.
 
 Select the isolates to include. The tree can be generated from allelic profiles
 of any selection of loci, or more conveniently, you can select a scheme in the
-scheme selector to include all loci belonging to that scheme.
+scheme selector, or from a list of recommended schemes if these have been set,
+to include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
 colouring nodes - select any fields you wish to include. Multiple selections

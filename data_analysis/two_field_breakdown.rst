@@ -7,6 +7,14 @@ Two field breakdown
 The two field breakdown plugin displays a table breaking down one field against
 another, e.g. breakdown of serogroup by year.
 
+The analysis can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Breakdown' category, follow the link to Two Field Breakdown, then click 
+'Launch Two Field Breakdown'.
+
 The analysis can be selected for the whole database by clicking the 'Two field
 breakdown' link on the main contents page.
 

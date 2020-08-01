@@ -8,6 +8,14 @@ The sequence bin breakdown plugin calculates statistics based on the number
 and length of contigs in the sequence bin as well as the number of loci tagged
 for an isolate record.
 
+The function can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Breakdown' category, follow the link to Sequence Bin Breakdown, then click 
+'Launch Sequence Bin Breakdown'.
+
 The function can be selected by clicking the ‘Sequence bin’ link on the 
 Breakdown section of the main contents page.
 

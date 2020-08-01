@@ -8,6 +8,14 @@ The Unique Combinations plugin calculates the frequencies of unique file
 combinations within an isolate dataset.  Provenance fields, composite fields, 
 allele designations and scheme fields can be combined.
 
+The function can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Breakdown' category, follow the link to Unique Combinations, then 
+click 'Launch Unique Combinations'.
+
 The function can be selected by clicking the 'Unique combinations' link in the
 Breakdown section of the main contents page.  This will run the analysis on the
 entire database.
