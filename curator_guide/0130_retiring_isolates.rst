@@ -26,3 +26,35 @@ create a new isolate record using that identifier.
 
 You can also retire an isolate identifier when you 
 :ref:`delete an isolate record<update_delete_isolate>`. 
+
+.. index::
+   pair: un-retiring; isolates
+
+*******************************
+Un-retiring isolate identifiers
+*******************************
+If an isolate identifier has been retired, it is possible to un-retire
+it so that it can be re-assigned. To do this, you need to remove the identifier
+from the retired_isolates table.
+
+First, find the isolate identifier in the retired_isolates table by clicking the 
+'Update/delete' retired isolates link on the isolate database curators' page. 
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
+
+.. image:: /images/curation/unretire_isolates.png
+
+Search by any criteria to find the isolate identifier.
+
+.. image:: /images/curation/unretire_isolates2.png
+
+Click the delete link on the identifer to be un-retired.
+
+.. image:: /images/curation/unretire_isolates3.png
+
+A confirmation page will be displayed. Click 'Delete' to remove the identifier
+from the retired isolates table.
+
+.. image:: /images/curation/unretire_isolates4.png
+
+The identifier can now be re-assigned when adding a new isolate record.
