@@ -27,3 +27,35 @@ new allele with that name.
 
 You can also retire an allele identifier when you 
 :ref:`delete an allele<update_delete_allele>`. 
+
+.. index::
+   pair: un-retiring; alleles
+
+******************************
+Un-retiring allele identifiers
+******************************
+If an allele identifier has been retired, it is possible to un-retire it so
+that it can be re-assigned. To do this, you need to remove the identifier from
+the retired_alleles table.
+
+First, find the allele identifier in the retired_alleles table by clicking the 
+'Update/delete' retired alleles link on the sequence database curators' page. 
+This function is normally hidden, so you may need to click the 'Show all' 
+toggle to display it.
+
+.. image:: /images/curation/unretire_alleles.png
+
+Search by any criteria to find the allele identifier.
+
+.. image:: /images/curation/unretire_alleles2.png
+
+Click the delete link on the identifer to be un-retired.
+
+.. image:: /images/curation/unretire_alleles3.png
+
+A confirmation page will be displayed. Click 'Delete' to remove the identifier
+from the retired alleles table.
+
+.. image:: /images/curation/unretire_alleles4.png
+
+The identifier can now be re-assigned when adding a new allele.
