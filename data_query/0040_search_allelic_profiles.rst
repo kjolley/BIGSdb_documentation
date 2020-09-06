@@ -9,8 +9,8 @@ Identifying allelic profile definitions
 For schemes such as MLST you can query allelic combinations to identify 
 the sequence type (or more generically, the primary key of the profile).
 
-Click the 'Search by combinations of alleles' link from the sequence definition
-contents page.
+Click the 'By allelic profile' link in the 'Search for allelic profiles'
+section on a the sequence definition contents page.
 
 .. image:: /images/data_query/allelic_profile1.png
 
@@ -50,7 +50,8 @@ at least 4 alleles with the query.
 Batch profile queries
 *********************
 To lookup scheme definitions, e.g. the sequence type for multiple profiles, 
-click 'Batch profile query' from the sequence definition contents page.
+click 'In a batch' from the 'Search for allelic profiles' section of the
+sequence definition contents page.
 
 .. image:: /images/data_query/batch_profile1.png
 

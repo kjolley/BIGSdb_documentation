@@ -7,7 +7,7 @@
 Querying sequences to determine allele identity
 ***********************************************
 Sequence queries are performed in the sequence definition database.   Click 
-'Sequence query' from the contents page.
+'Single sequence' query from the contents page.
 
 .. image:: /images/data_query/sequence_query.png 
 
@@ -65,7 +65,7 @@ identify the MLST sequence type of a genome in one step.
 Querying multiple sequences to identify allele identities
 *********************************************************
 You can also query mutiple sequences together. These should be in FASTA format.
-Click 'Batch sequence query' from the contents page.
+Click 'Batch sequences' from the contents page.
 
 .. image:: /images/data_query/batch_seq_query1.png 
 

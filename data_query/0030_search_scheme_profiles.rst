@@ -6,7 +6,8 @@ Browsing scheme profile definitions
 ***********************************
 If a sequence definition database has schemes defined that include a primary 
 key field, i.e. collections of loci that together create profiles, e.g. for 
-MLST, these can be browsed by clicking the link to 'Allelic profile query'. 
+MLST, these can be browsed by clicking the link 'By specific criteria' in
+the 'Search for allelic profiles' section. 
 
 .. image:: /images/data_query/browse_profiles.png
 
@@ -27,7 +28,8 @@ profile.
 ***********************************
 Querying scheme profile definitions
 ***********************************
-Click the link to 'Allelic profile query'.
+Click the link to 'By specific criteria' link in the 'Search for allelic
+profiles' section.
 
 .. image:: /images/data_query/browse_profiles.png
 

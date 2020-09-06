@@ -12,8 +12,8 @@ analysis.
 
 General (all loci) sequence attribute search
 ============================================
-To retrieve specific allele designations, click 'Sequence attribute search' on
-a sequence definition database contents page.
+To retrieve specific allele designations, click 'By specific criteria' in 
+the 'Find alleles' section on a sequence definition database contents page.
 
 .. image:: /images/data_query/sequence_attributes.png
 
@@ -42,7 +42,7 @@ the filter heading to display these.
 Locus-specific sequence attribute search
 ========================================
 Some loci have :ref:`extended attribute fields <locus_extended_attributes>`.  
-To query these, click 'Locus-specific sequence attribute search' on a sequence
+To query these, click 'By locus' in the 'Find alleles' section on a sequence
 definition database contents page.
 
 .. image:: /images/data_query/sequence_attributes7.png
