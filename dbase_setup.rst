@@ -680,7 +680,9 @@ Any value set here can be overridden in a
     
 * webroot_label
 
-  * Label text for the breadcrumb link defined by the webroot value.
+  * Label text for the breadcrumb link defined by the webroot value. This can 
+    be formatted using Markdown.  Currently only supports *\*italics\** and 
+    **\*\*bold\*\***.
 
 .. _isolate_xml_field:
 
@@ -1077,6 +1079,12 @@ Any value set here can be overridden in a
 
   * URL of web root, which can be relative or absolute. This is used to provide
     a hyperlinked item in the dropdown menu. Default '/'.
+    
+* webroot_label
+
+  * Label text for the breadcrumb link defined by the webroot value. This can 
+    be formatted using Markdown. Currently only supports *\*italics\** and 
+    **\*\*bold\*\***.
 
 **********************************************
 Over-riding global defaults set in bigsdb.conf
