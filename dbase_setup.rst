@@ -107,12 +107,14 @@ database):
   auto-registration is not enabled).
   
 The header and footer files can alternatively be placed in the root directory 
-of the web site for site-wide use.
+of the web site, or in /etc/bigsdb, for site-wide use. If files exist in 
+multiple locations, they are used in the following order of preference: 
+database config directory > web root directory > /etc/bigsdb.
 
 There are four additional files, site_header.html, site_footer.html, 
 curate_site_header.html and curate_site_footer.html which are used when either
 bigsdb.pl or bigscurate.pl are called without a database configuration. These
-should be placed in the root directory of the web site.
+should be placed in the root directory of the web site or in /etc/bigsdb.
 
 You can also add HTML meta attributes (such as a favicon) by including a file
 called meta.html in the database configuration directory. For example to set
