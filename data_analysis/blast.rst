@@ -7,8 +7,13 @@ BLAST
 The BLAST plugin enables you to BLAST a sequence against any of the genomes in 
 the database, displaying a table of matches and extracting matching sequences.
 
-The function can be accessed by selecting the 'BLAST' link on the Analysis 
-section of the main contents page.
+The function can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Analysis' category, follow the link to BLAST, then click 
+'Launch BLAST'.
 
 .. image:: /images/data_analysis/blast.png
 
@@ -19,22 +24,26 @@ database.
 
 .. image:: /images/data_analysis/blast2.png
 
-Select the isolate records to analyse - these will be pre-selected if you 
-accessed the plugin following a query.  Paste in a sequence to query - this 
-be either a DNA or peptide sequence.
+Select the isolate records to analyse (on large databases you will need to 
+enter a list of ids). These will be pre-selected if you accessed the plugin 
+following a query. Paste in a sequence to query - this be either a DNA or 
+peptide sequence.
 
 .. image:: /images/data_analysis/blast3.png
 
-Click submit.
+Click submit. If you are querying against 10 or fewer genomes then the results
+are run immediately, otherwise the job is sent to the job queue.
 
 A table of BLAST results will be displayed.
 
 .. image:: /images/data_analysis/blast4.png
 
-Clicking any of the 'extract' buttons will display the matched sequence along 
-with a translated sequence and flanking sequences. 
+Clicking any of the 'extract' buttons to display the matched sequence.
 
 .. image:: /images/data_analysis/blast5.png 
+
+The extracted sequence is shown along with a translated sequence and flanking 
+sequences. 
 
 .. image:: /images/data_analysis/blast6.png
 

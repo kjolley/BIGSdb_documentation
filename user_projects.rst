@@ -17,8 +17,8 @@ project does not make the record itself private.
    'user_projects="yes"' in the :ref:`config.xml<isolate_xml>` file for the
    database.
 
-To create a new project, go to the isolate database contents page and click
-'Your projects'.
+To create a new project, go to the isolate database contents page and expand 
+the 'Projects' section. Click 'Your projects'.
 
 .. image:: /images/user_projects/user_projects1.png
 

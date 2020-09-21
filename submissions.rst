@@ -332,13 +332,27 @@ there are a couple of extra required fields in the submission table:
 * sequence_method - the sequencing technology used to generate the sequences. 
   The allowed values are listed on the submission page.
   
+Locus fields are not usually included in a genome submission as these can be 
+readily extracted from the genome.
+  
 To start the submission, click the 'genomes' link under submission type on the
 submission management page.
 
 .. image:: /images/submissions/submission36.png
 
 Then follow the steps for :ref:`isolate submission<isolate_submissions>`, 
-uploading the contigs files as supporting files.
+uploading the contig files as supporting files.
+
+.. note::
+ 
+   When including the filename for your FASTA file containing the genome 
+   assembly, please note that Windows will, by default, hide the file 
+   extension, e.g. .fas or .fasta. Even if it is hidden in the Windows 
+   interface, the file extension is part of the filename and must be included
+   so that the uploaded file has exactly the same name as entered in the 
+   submission template. See 
+   https://www.techadvisor.co.uk/how-to/windows/windows-10-file-extensions-3697651
+   to see how to display hidden file extensions in Windows 10.
 
 ************************************************
 Removing submissions from your notification list

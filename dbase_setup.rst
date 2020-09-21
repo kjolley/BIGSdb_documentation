@@ -107,12 +107,14 @@ database):
   auto-registration is not enabled).
   
 The header and footer files can alternatively be placed in the root directory 
-of the web site for site-wide use.
+of the web site, or in /etc/bigsdb, for site-wide use. If files exist in 
+multiple locations, they are used in the following order of preference: 
+database config directory > web root directory > /etc/bigsdb.
 
 There are four additional files, site_header.html, site_footer.html, 
 curate_site_header.html and curate_site_footer.html which are used when either
 bigsdb.pl or bigscurate.pl are called without a database configuration. These
-should be placed in the root directory of the web site.
+should be placed in the root directory of the web site or in /etc/bigsdb.
 
 You can also add HTML meta attributes (such as a favicon) by including a file
 called meta.html in the database configuration directory. For example to set
@@ -429,45 +431,6 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
-* kiosk
-
-  * Set to a page name to restrict configuration to always start on this page, 
-    rather than an index page. This faciliates running in a cut-down 
-    :ref:`kiosk mode<kiosk_mode>` that doesn't allow access to all features. 
-    *Currently only 'sequenceQuery' is supported*.
-
-* kiosk_allowed_pages
-
-  * Comma-separated list of pages that the configuration is allowed to show,
-    apart from the page set in the 'kiosk' attribute. Example for a sequence
-    query configuration would be 'sequenceTranslate' to allow access to the
-    translated sequence page following a query.
-
-* kiosk_locus
-
-  * Restrict sequence query to a specific locus or scheme. Use either the locus
-    primary name or 'SCHEME_X' where X is the scheme number.
-
-* kiosk_no_genbank
-
-  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
-
-* kiosk_no_upload
-
-  * Set to "yes" to hide the sequence file upload in kiosk mode.
-
-* kiosk_simple
-
-  * Remove most explanatory text from kiosk page.
-
-* kiosk_text
-
-  * Alternative text to show on kiosk page.
-
-* kiosk_title
-
-  * Title text to use when running in kiosk mode.
-   
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
@@ -719,7 +682,9 @@ Any value set here can be overridden in a
     
 * webroot_label
 
-  * Label text for the breadcrumb link defined by the webroot value.
+  * Label text for the breadcrumb link defined by the webroot value. This can 
+    be formatted using Markdown.  Currently only supports *\*italics\** and 
+    **\*\*bold\*\***.
 
 .. _isolate_xml_field:
 
@@ -964,6 +929,13 @@ Any value set here can be overridden in a
     significantly. :ref:`Exemplar alleles<defining_exemplars>` *MUST* be 
     defined otherwise sequence queries will fail. 'yes' or 'no', default 'no'.
     
+* formatted_description
+
+  * Markdown formatted description of database. If set, this will be used
+    throughout the HTML interface wherever formatting can be applied (main body
+    of text) and overrides the value set in 'db_description'. Currently only 
+    supports *\*italics\** and **\*\*bold\*\***.
+    
 * isolate_database
 
   * The config name of the isolate database. This is used to provide a link to
@@ -982,6 +954,49 @@ Any value set here can be overridden in a
 
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
+    
+* kiosk
+
+  * Set to a page name to restrict configuration to always start on this page, 
+    rather than an index page. This faciliates running in a cut-down 
+    :ref:`kiosk mode<kiosk_mode>` that doesn't allow access to all features. 
+    *Currently only 'sequenceQuery' is supported*.
+
+* kiosk_allowed_pages
+
+  * Comma-separated list of pages that the configuration is allowed to show,
+    apart from the page set in the 'kiosk' attribute. Example for a sequence
+    query configuration would be 'sequenceTranslate' to allow access to the
+    translated sequence page following a query.
+    
+* kiosk_help
+
+  * URL to context-sensitive help page.
+
+* kiosk_locus
+
+  * Restrict sequence query to a specific locus or scheme. Use either the locus
+    primary name or 'SCHEME_X' where X is the scheme number.
+
+* kiosk_no_genbank
+
+  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
+
+* kiosk_no_upload
+
+  * Set to "yes" to hide the sequence file upload in kiosk mode.
+
+* kiosk_simple
+
+  * Remove most explanatory text from kiosk page.
+
+* kiosk_text
+
+  * Alternative text to show on kiosk page.
+
+* kiosk_title
+
+  * Title text to use when running in kiosk mode.
     
 * profile_submissions
 
@@ -1066,6 +1081,12 @@ Any value set here can be overridden in a
 
   * URL of web root, which can be relative or absolute. This is used to provide
     a hyperlinked item in the dropdown menu. Default '/'.
+    
+* webroot_label
+
+  * Label text for the breadcrumb link defined by the webroot value. This can 
+    be formatted using Markdown. Currently only supports *\*italics\** and 
+    **\*\*bold\*\***.
 
 **********************************************
 Over-riding global defaults set in bigsdb.conf
@@ -1475,7 +1496,7 @@ you.
 
 From the curators' page, click the oauth credentials add link in the 
 administrator settings. This function is normally hidden, so you may need to 
-click the 'Show all' toggle to display it.
+click the 'Misc' toggle to display it.
 
 .. image:: /images/dbase_setup/oauth.png
 

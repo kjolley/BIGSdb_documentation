@@ -1,8 +1,8 @@
 *************
 Contig export
 *************
-The contig export plugin can be accessed by clicking the ‘Contigs’ link in the 
-Export section of the contents page of isolate databases.
+The contig export plugin can be accessed by expanding the 'Export' section 
+and clicking the ‘Contigs’ link in the contents page of isolate databases.
 
 .. image:: /images/data_export/contig_export.png
 
@@ -11,9 +11,10 @@ button in the Export section at the bottom of the results table.
 
 .. image:: /images/data_export/contig_export2.png
 
-Select the isolates for which you wish to export contig data for. If the 
-export function was accessed following a query, isolates returned in the query 
-will be pre-selected.
+Select the isolates for which you wish to export contig data for. In databases
+with a large number of isolates you will need to enter the id numbers rather 
+than select from a list. If the export function was accessed following a query, 
+isolates returned in the query will be pre-selected.
 
 .. image:: /images/data_export/contig_export3.png
 

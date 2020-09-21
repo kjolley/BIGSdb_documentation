@@ -8,8 +8,13 @@ PhyloViz Online is a tool for generating and visualising minimum-spanning
 trees. Datasets can include metadata which allows nodes in the resultant tree
 to be coloured interactively.
 
-PhyloViz can be accessed from the contents page by clicking the 'PhyloViz' 
-link.
+PhyloViz can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Third party' category, follow the link to PhyloViz, then click 
+'Launch PhyloViz'.
 
 .. image:: /images/data_analysis/phyloviz1.png
 

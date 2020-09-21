@@ -10,8 +10,13 @@ plugin uses the `exonerate ipcress
 <https://www.ebi.ac.uk/about/vertebrate-genomics/software/ipcress-manual>`_ 
 program to perform its simulation.
 
-The tool can be accessed from the contents page of an isolates database by 
-clicking the 'In silico PCR' link.
+The tool can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Analysis' category, follow the link to BLAST, then click 
+'Launch PCR'.
 
 .. image:: /images/data_analysis/pcr1.png
 

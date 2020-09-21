@@ -469,7 +469,7 @@ the database. Add the following attribute to the system tag: ::
 
 With this attribute, the curation interface now has options to add sets, and 
 then add loci or schemes to these sets. These functions are normally hidden,
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Sets' toggle to display it.
 
 .. image:: /images/administration/dataset_partitioning.png
 
@@ -550,7 +550,7 @@ using the same credentials.
 Once a :ref:`site-wide user database has been set up<site-wide-db>`, this can
 be defined within each client database as follows. From the curators' contents
 page, click the add (+) user databases link. This function is normally hidden,
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Misc' toggle to display it.
 
 .. image:: /images/administration/add_users_database1.png
 
@@ -582,7 +582,7 @@ Sequence definition databases
 Single locus
 ------------
 Click the add (+) loci link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef.png
@@ -711,7 +711,7 @@ exclamation mark (!) next to them:
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/add_new_loci_seqdef2.png
@@ -739,7 +739,7 @@ Single locus
    pair: locus; adding
 
 Click the add (+) loci link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_loci_isolates.png
@@ -946,6 +946,12 @@ usually the dbase_id2_value, description_url and url fields:
 
 Complete the form and click 'Submit'.
 
+.. note::
+
+   You can also pre-populate the dbase_name, dbase_url and url fields with 
+   boilerplate values by setting the default_seqdef_config and 
+   default_seqdef_dbase values in the system attribute of the config.xml file.
+
 .. index::
    pair: locus; adding
 
@@ -954,7 +960,7 @@ Complete the form and click 'Submit'.
 Batch adding
 ------------
 Click the batch add (++) loci link on the curator's interface contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/add_new_loci_isolates2.png
@@ -984,7 +990,7 @@ mutations, or cross-referencing of alternative nomenclatures.
 
 To add extended attributes for a locus, click add (+) locus extended attributes
 in the sequence definition database curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Fields' toggle 
 to display it.
 
 .. image:: /images/administration/locus_extended_attributes.png
@@ -1076,7 +1082,7 @@ As with all configuration, tables can be populated using the batch interface
 (++) or one at a time (+). Details for the latter are described below:
 
 Click the add (+) scheme link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Schemes' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef.png
@@ -1091,7 +1097,7 @@ display of schemes in the interface - this can be left blank if you wish.
 
 To add loci to the scheme, click the add (+) scheme members link on the 
 curator's interface contents page. This function is normally hidden, so you 
-may need to click the 'Show all' toggle to display it.
+may need to click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/add_new_scheme_seqdef3.png
 
@@ -1164,7 +1170,7 @@ As with all configuration, tables can be populated using the batch interface
 (++) or one at a time (+). Details for the latter are described below:
 
 Click the add (+) scheme link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Schemes' toggle 
 to display it.
 
 .. image:: /images/administration/add_new_scheme_isolates.png
@@ -1272,7 +1278,7 @@ for example the :ref:`allele download <download_alleles>` page.
 Scheme groups can be added in both the sequence definition and isolate 
 databases.  To add a new group, click the add (+) scheme group link on the 
 curator's contents page. This function is normally hidden, so you may need to 
-click the 'Show all' toggle to display it.
+click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/scheme_groups2.png
 
@@ -1324,7 +1330,7 @@ Multiple client databases can be queried simultaneously.
 
 To register a client isolate database for a sequence definition database, click
 the add (+) client database link on the curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Show all' toggle 
+function is normally hidden, so you may need to click the 'Clients' toggle 
 to display it.
 
 .. image:: /images/administration/add_client_databases.png
@@ -1436,131 +1442,6 @@ allele, all values for the chosen field from isolates with the corresponding
 allele are shown.
 
 .. image:: /images/administration/add_client_databases9.png
-
-
-.. index::
-   single: rule-based queries
-
-***************************
-Rule-based sequence queries
-***************************
-The RuleQuery plugin has been designed to extract information from a pasted-in 
-genome sequence, look up scheme fields and client database fields, and then 
-format the output in a specified manner.
-
-Rules are written in Perl, allowing the full power of this scripting language 
-to be utilised. Helper functions that perform specific actions are available 
-to the script (see example).
-
-Please note that direct access to the database is prevented as are system calls.
-
-Example rule code
-=================
-An example can be found on the 
-`Neisseria sequence database <http://pubmlst.org/perl/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=plugin&name=RuleQuery&ruleset=Clinical_identification>`_ 
-that takes a genome sequence and determines a fine type and antibiotic 
-resistance.
-
-The code for this rule is as follows: ::
-
-  #Clinical identification rule
-
-  #Update job viewer status
-  update_status({stage=>'Scanning MLST loci'});
-
-  #Scan genome against all scheme 1 (MLST) loci
-  scan_scheme(1);
-
-  #Update job viewer status
-  update_status({percent_complete=>30, stage=>'Scanning PorA and FetA VRs'});
-
-  #Scan genome against the PorA VR and FetA VR loci
-  scan_locus($_) foreach qw(PorA_VR1 PorA_VR2 FetA_VR);
-
-  Add text to main output
-  append_html("<h1>Strain type</h1>");
-
-  #Set variables for the scanned results.  These can be found in the
-  #$results->{'locus'} hashref
-  my %alleles;
-  $alleles{$_} = $results->{'locus'}->{$_} // 'ND' foreach qw(PorA_VR1 PorA_VR2);
-  $alleles{'FetA_VR'} = $results->{'locus'}->{'FetA_VR'} // 'F-ND';
-
-  #Scheme field values are automatically determined if a complete
-  #profile is available.  These are stored in the $results->{'scheme'} hashref
-  my $st = $results->{'scheme'}->{1}->{'ST'} // 'ND';
-  append_html("<ul><li>P1.$alleles{'PorA_VR1'}, $alleles{'PorA_VR2'}; $alleles{'FetA_VR'}; ST-$st ");
-
-  #Reformat clonal complex using a regular expression, e.g.
-  #'ST-11 clonal complex/ET-37 complex' gets rewritten to 'cc11'
-  my $cc =  $results->{'scheme'}->{1}->{'clonal_complex'} // '-';
-  $cc =~ s/ST-(\S+) complex.*/cc$1/;
-
-  append_html("($cc)</li></ul>");
-  if ($st eq 'ND'){
-    append_html("<p>ST not defined.  If individual MLST loci have been found "
-    . "they will be displayed below:</p>");
-
-    #The get_scheme_html function automatically formats output for a scheme.
-    #Select whether to display in a table rather than a list, list all loci, and/or list fields.
-    append_html(get_scheme_html(1, {table=>1, loci=>1, fields=>0}));
-  }
-
-  #Antibiotic resistance
-  update_status({percent_complete=>80, stage=>'Scanning penA and rpoB'});
-  scan_locus($_) foreach qw(penA rpoB);
-  if (defined $results->{'locus'}->{'penA'} || defined $results->{'locus'}->{'rpoB'} ){
-    append_html("<h1>Antibiotic resistance</h1><ul>");
-    if (defined $results->{'locus'}->{'penA'}){
-      append_html("<li><i>penA</i> allele: $results->{'locus'}->{'penA'}");
-
-      #If a client isolate database has been defined and values have been defined in
-      #the client_dbase_loci_fields table, the values for a field in the isolate database can be
-      #retrieved based on isolates that have a particular allele designated.
-      #The min_percentage attribute states that only values that are represented by at least that 
-      #proportion of all isolates that had a value set are returned (null values are ignored).
-      my $range = get_client_field(1,'penA','penicillin_range',{min_percentage => 75});
-      append_html(" (penicillin MIC: $range->[0]->{'penicillin_range'})") if @$range;
-      append_html("</li>");
-    }  
-    if (defined $results->{'locus'}->{'rpoB'}){
-      append_html("<li><i>rpoB</i> allele: $results->{'locus'}->{'rpoB'}");
-      my $range = get_client_field(1,'rpoB','rifampicin_range',{min_percentage => 75});
-      append_html(" (rifampicin MIC: $range->[0]->{'rifampicin_range'})") if @$range;
-      append_html("</li>");
-    }      
-    append_html("</ul>");
-  }
-
-Rule files
-----------
-The rule file is placed in a rules directory within the database configuration 
-directory, e.g. /etc/bigsdb/dbase/pubmlst_neisseri_seqdef/rules. Rule files 
-are suffixed with '.rule' and their name should be descriptive since it is 
-used within the interface, i.e. the above rule file is named 
-Clinical_identification.rule (underscores are converted to spaces in the web 
-interface).
-
-Linking to the rule query
--------------------------
-Links to the rule query are not automatically placed within the web interface. 
-The above rule query can be called using the following URL:
-
-`<http://pubmlst.org/perl/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=plugin&name=RuleQuery&ruleset=Clinical_identification>`_
-
-To place a link to this within the database contents page an HTML file called 
-job_query.html can be placed in a contents directory within the database 
-configuration directory, e.g. in 
-/etc/bigsdb/dbases/pubmlst_neisseria_seqdef/contents/job_query.html. This file 
-should contain a list entry (i.e. surrounded with <li> and </li> tags) that 
-will appear in the 'Query database' section of the contents page.
-
-Adding descriptive text
------------------------
-Descriptive text for the rule, which will appear on the rule query page, can be
-placed in a file called description.html in a directory with the same name as 
-the rule within the rule directory, e.g. in 
-/etc/bigsdb/dbases/pubmlst_neisseria_seqdef/rules/Clinical_identification/description.html.
 
 .. _mlst_workflow:
 
@@ -1699,7 +1580,7 @@ Defining classification scheme in sequence definition database
 ==============================================================
 Once a scheme has been defined, add a classification scheme by clicking the 
 add classification schemes (+) link on the curator's interface contents page.
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Schemes' 
 toggle to display it.
 
 .. image:: /images/administration/classification_schemes.png
@@ -1739,7 +1620,7 @@ Defining classification scheme in isolate database
 ==================================================
 Duplicate the scheme definition from the sequence definition database. Click
 the add classification schemes (+) link on the curator's interface contents 
-page. This function is normally hidden, so you may need to click the 'Show all' 
+page. This function is normally hidden, so you may need to click the 'Schemes' 
 toggle to display it.
 
 .. image:: /images/administration/classification_schemes3.png
@@ -1825,7 +1706,7 @@ directly in to the batch locus add form of the
 :ref:`isolate <batch_adding_loci_isolates>` databases.
   
 Click 'Database scan' within the 'Loci' group on the curator's contents page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+This function is normally hidden, so you may need to click the 'Loci' 
 toggle to display it.
 
 .. image:: /images/administration/database_scan.png
@@ -1845,8 +1726,6 @@ basis for upload files for the sequence definition and isolate databases.
 Batch sequence files, in text and Excel formats, are also created for defining 
 the first allele once the locus has been set up in the sequence definition 
 database.
-
-.. image:: /images/administration/database_scan4.png
 
 .. index::
    single: genome filtering
@@ -1880,7 +1759,7 @@ structure and primers can be any length.
 
 To define a PCR reaction that can be linked to a locus definition, click the 
 add (+) PCR reaction link on the curator's main page. This function is normally
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Loci' toggle to display it.
 
 .. image:: /images/administration/in_silico_pcr2.png
 
@@ -2013,7 +1892,7 @@ Perform your search and click the hyperlinked id number of the record.
 
 .. image:: /images/administration/genome_positions2.png
 
-In the isolate record, click the sequence bin 'Display' button to bring up 
+In the isolate record, click the 'Show sequence bin' button to bring up 
 details of the isolate contigs.
 
 .. image:: /images/administration/genome_positions3.png
@@ -2051,7 +1930,7 @@ a regular expression from 'ST-4 complex/subgroup IV' to 'cc4'.
 
 Composite fields can be added to the database by clicking the add (+) 
 composite fields link on the curator's main page. This function is normally 
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/composite_fields.png
 
@@ -2110,7 +1989,7 @@ limited to those from Europe.
 
 To set up such an extended attribute, click the add (+) isolate field extended 
 attributes link on the curator's main page. This function is normally hidden, 
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/extended_attributes.png
 
@@ -2208,7 +2087,7 @@ uploading new contig data.  The attributes are also searchable.
 
 To set up new attributes, click the add (+) 'sequence attributes' link on the 
 isolate database curator's index page. This function is normally hidden, 
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/sequence_attributes.png
 
@@ -2255,7 +2134,7 @@ or to export a configuration for troubleshooting.  Data from most of the tables
 can be exported in tab-delimited text format suitable for batch uploading. For
 example, to export scheme configuration data, click the query link (Update or
 delete) next to schemes in the curator's interface. This function is normally 
-hidden, so you may need to click the 'Show all' toggle to display it.
+hidden, so you may need to click the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/config_export.png
 

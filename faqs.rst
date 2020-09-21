@@ -6,9 +6,7 @@ General
 =======
 1. **What is the minimum specification of hardware required to run BIGSdb?**
 
- The software will run on fairly modest hardware - a number of PubMLST mirrors
- have been set up on virtual machines with 1 processor core and 4 GB RAM.
- This should be considered an absolute minimum specification though.  For an 
+ The software will run on fairly modest hardware. For an 
  installation with only local users, the following minimum is recommended:
  
   * 4 processor cores
@@ -33,7 +31,7 @@ General
  on the database server. These have the following specification:
  
   * web server: 40 cores, 128GB RAM
-  * database server: 64 cores, 1TB RAM, 3TB RAID 10 local storage
+  * database server: 80 cores, 1TB RAM, 7TB ZFS RAID-Z2 NVMe local storage
   
 2. **Why might icons be missing when using Internet Explorer?**
 
@@ -123,4 +121,5 @@ Administration
 
 See also 
 :ref:`Restricting particular configurations to 
-specific user accounts <default_access>`.
+specific user accounts <default_access>` and 
+:ref:`private records <private_records>`.

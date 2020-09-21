@@ -4,8 +4,8 @@ Profile export
 You can export the allelic profiles for any indexed scheme (those containing a 
 primary key field) defined in the sequence definition database.
 
-The profile export function can be accessed by clicking the 'Profiles' link 
-in the Export section of the contents page.
+The profile export function can be accessed by expanding the 'Export' section
+and clicking the 'Profiles' link on the contents page.
 
 .. image:: /images/data_export/profile_export.png
 
@@ -18,7 +18,8 @@ list of functions here may vary depending on the setup of the database.
 This will take you to a form with a list box in which the identifiers of the
 profile definitions you wish to include can be entered. Following a query,
 these values will be pre-entered. If the box is left empty then all profiles
-will be included.
+will be included. You can optionally include provenance information (sender, 
+curator and datestamps) by selecting the appropriate checkboxes.
 
 .. image:: /images/data_export/profile_export3.png
 

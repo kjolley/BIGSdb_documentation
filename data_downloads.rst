@@ -9,11 +9,14 @@ identifier to a sequence.  It also defines scheme, e.g. MLST, profiles.
 ***************************
 Allele sequence definitions
 ***************************
-Click the 'Allele sequences' link in the 'Downloads' section.  Depending on 
-the database, you may see either a hierarchical scheme tree or a table of 
-loci. You can choose to display links either by scheme using the scheme tree, 
-as an alphabetical list or a page of all schemes, by selecting the 
-approrpiate link at the top of the page.
+Click the 'Allele sequences' link in the 'Downloads' section. 
+
+.. image:: /images/data_downloads/download_alleles.png
+
+Depending on the database, you may see either a hierarchical scheme tree or 
+a table of loci. You can choose to display links either by scheme using the 
+scheme tree, as an alphabetical list or a page of all schemes, by selecting 
+the approrpiate link at the top of the page.
 
 Scheme tree
 ===========
@@ -93,7 +96,9 @@ appropriate link on the contents page.
 
 .. image:: /images/data_downloads/profiles.png
 
-If multiple schemes are available, you will need to select the scheme in the dropdown box and click 'Download profiles'
+If there is only one scheme available, the link will directly download the 
+profiles. If multiple schemes are available, the link will take you to an 
+intermediate page from where you can select the scheme to download.
 
 .. image:: /images/data_downloads/profiles2.png
 

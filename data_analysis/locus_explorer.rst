@@ -10,7 +10,8 @@ The locus explorer is a sequence definition database plugin.  It can create
 schematics showing the polymorphic sites within a locus, calculate the GC 
 content and generate aligned translated sequences.
 
-Click 'Locus Explorer' from the sequence definition database contents page. 
+Expand the 'Analysis' section on the main contents page of a sequence definition
+database and click 'Locus Explorer'. 
 
 .. image:: /images/data_analysis/locus_explorer.png 
 
@@ -44,7 +45,11 @@ The first part of the page shows the schematic.
 Clicking any of the sequence bases will calculate the exact frequencies of the
 different nucleotides at that position.
 
-.. image:: /images/data_analysis/locus_explorer5.png 
+.. image:: /images/data_analysis/locus_explorer5.png
+
+Along with the nucleotide frequencies, it will also show the percentage of
+allelic profiles containing each nucleotide at that position if the locus is
+part of a scheme such as MLST.
 
 .. image:: /images/data_analysis/locus_explorer6.png 
 

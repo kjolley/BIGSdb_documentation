@@ -14,8 +14,13 @@ scanning the genomes. The results can be displayed as interactive pivot tables
 or a heatmap. The analysis is limited to 500,000 data points (locus x 
 isolates).
 
-The Gene Presence tool can be accessed from the contents page by clicking the
-'Gene Presence' link.
+The function can be accessed by selecting the 'Analysis' section on the main 
+contents page.
+
+.. image:: /images/data_analysis/analysis.png
+
+Jump to the 'Analysis' category, follow the link to 'Gene Presence', then click 
+'Launch Gene Presence'.
 
 .. image:: /images/data_analysis/gene_presence1.png
 
@@ -27,7 +32,8 @@ the query will be automatically selected within the plugin interface.
 
 Select the isolates to include. Analysis can be performed on any selection of
 loci, or more conveniently, you can select a scheme in the scheme selector to 
-include all loci belonging to that scheme.
+include all loci belonging to that scheme. You can also select a recommended 
+scheme if these have been defined. 
 
 The parameters of the BLAST query used to determine presence or absence can be
 modified, but in most cases the default options should work well. Click 
