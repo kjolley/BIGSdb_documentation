@@ -20,7 +20,7 @@ arguments to the query URL by adding a '?' followed by the first argument and
 its value (separated by a '=').  Additional parameters are separated by a '&', 
 e.g.
 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=100
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates?page=2&page_size=100
 
 Methods called with POST require their arguments to be sent as JSON within the
 post body.
@@ -40,7 +40,7 @@ headers are supported:
 
 e.g. ::
 
-  curl -i -H "X-PER-PAGE:10" -H "X-OFFSET:0" http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
+  curl -i -H "X-PER-PAGE:10" -H "X-OFFSET:0" https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
   
 If either of these headers are used, the paging object is no longer returned
 as part of the JSON response. The response will include the following headers:
@@ -121,6 +121,8 @@ Resources
   - Retrieve values set for a provenance field
 * :ref:`GET /db/{database}/users/{user_id}<db_users_user_id>`
   - Retrieve user information
+* :ref:`GET /db/{database}/curators<db_curators>`
+  - Retrieve list of curators of the database
 * :ref:`GET /db/{database}/projects<db_projects>`
   - Retrieve list of projects
 * :ref:`GET /db/{database}/projects/{project_id}<db_projects_project_id>`
@@ -161,7 +163,7 @@ GET / or /db - List site resources
 
 **Optional query parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/
+**Example request URI:** https://rest.pubmlst.org/
 
 **Response:** List of resource groupings (ordered by name).  Groups may consist
 of paired databases for sequence definitions and isolate data, or any set of
@@ -191,7 +193,7 @@ definition database.
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates
 
 **Response:** Object containing a subset of the following key/value pairs:
 
@@ -214,7 +216,7 @@ GET /db/{database}/classification_schemes - List classification schemes
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes
 
 **Response:** Object containing:
 
@@ -238,7 +240,7 @@ Sequence definition databases only.
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes/1
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes/1
 
 **Response:** Object containing some or all of:
 
@@ -275,7 +277,7 @@ Isolate databases only.
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/classification_schemes/4/groups/65
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/classification_schemes/4/groups/65
 
 **Response:** Object containing of:
 
@@ -313,7 +315,7 @@ GET /db/{database}/loci - List loci
   after specified date (ISO 8601 format). Only recognized in sequence 
   definition databases.
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
 
 **Response:** Object containing:
 
@@ -352,7 +354,7 @@ seqdef databases).
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ
 
 **Response:** Object containing a subset of the following key/value pairs:
 
@@ -427,7 +429,7 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
   date (ISO 8601 format).
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
+https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 
 **Response:** Object containing:
 
@@ -470,7 +472,7 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 * updated_on [date] - Include only alleles last modified on specified 
   date (ISO 8601 format). 
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles_fasta
 
 **Response:** FASTA format file of allele sequences 
    
@@ -490,7 +492,7 @@ GET /db/{database}/loci/{locus}/alleles/{allele_id} - Retrieve full allele infor
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles/5
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles/5
 
 **Response:** Object containing the following key/value pairs:   
 
@@ -627,7 +629,7 @@ GET /db/{database}/sequences - Get summary of defined sequences
   (ISO 8601 format).
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/sequences
+https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/sequences
 
 **Response:** Object containing a subset of the following key/value pairs:
 
@@ -652,7 +654,7 @@ GET /db/{database}/schemes - List schemes
   those with a primary key field that defines each unique combination of 
   alleles, e.g. MLST. 
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes
 
 **Response:** 
 
@@ -687,7 +689,7 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 * updated_on [date] - Count only profiles updated on specified date 
   (ISO 8601 format).
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1
 
 **Response:** Object containing a subset of the following key/value pairs:
 
@@ -732,7 +734,7 @@ GET /db/{database}/schemes/{scheme_id}/loci - Retrieve scheme loci
   after specified date (ISO 8601 format). Only recognized in sequence 
   definition databases.
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/loci
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/loci
 
 **Response:** Object containing:
 
@@ -755,7 +757,7 @@ GET /db/{database}/schemes/{scheme_id}/fields/{field} - Retrieve information abo
  
 **Optional parameters:** None
  
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/fields/ST
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/fields/ST
  
 **Response:** Object containing the following key/value pairs:
  
@@ -791,7 +793,7 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
   date (ISO 8601 format).
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
+https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 
 **Response:** Object containing:
 
@@ -840,7 +842,7 @@ GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles 
   date (ISO 8601 format).
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
+https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv
 
 **Response:**  Tab-delimited text file of allelic profiles
 
@@ -861,7 +863,7 @@ GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id} - Retrieve allelic 
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
+https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
 
 **Response:** Object containing the following key/value pairs:   
 
@@ -922,7 +924,7 @@ Example curl call to upload a FASTA file 'contigs.fasta' and extract MLST
 results from Neisseria database: ::
    
     (echo -n '{"base64":true,"sequence": "'; base64 contigs.fasta; echo '"}') | 
-    curl -s -H "Content-Type: application/json" -X POST "http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/sequence" -d @-
+    curl -s -H "Content-Type: application/json" -X POST "https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/sequence" -d @-
   
 .. note::
    This method only supports exact matches. If no match is indicated 
@@ -954,7 +956,7 @@ GET /db/{database}/isolates - Retrieve list of isolate records
 * updated_on [date] - Include only isolates updated on specified date 
   (ISO 8601 format).
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates
 
 **Response:** Object containing:
 
@@ -988,7 +990,7 @@ GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
 * provenance_only [integer] - Set to non-zero value to only return provenance
   metadata
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1
 
 **Response:** Object containing some or all of the following key/value pairs:
 
@@ -1077,7 +1079,7 @@ GET /db/{database}/isolates/{isolate_id}/allele_designations - Retrieve list of 
 * return_all [integer] - Set to non-zero value to disable paging. 
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations
 
 **Response:** Object containing:
 
@@ -1111,7 +1113,7 @@ GET /db/{database}/isolates/{isolate_id}/allele_designations/{locus} - Retrieve 
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations/BACT000065
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations/BACT000065
 
 **Response:** List of allele_designation objects (there may be multiple 
 designations for the same locus), each containing:
@@ -1145,7 +1147,7 @@ GET /db/{database}/isolates/{isolate_id}/allele_ids - Retrieve allele identifier
 * return_all [integer] - Set to non-zero value to disable paging. 
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids
 
 **Response:** Object containing:
 
@@ -1180,7 +1182,7 @@ GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_designations
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_designations
 
 **Response:** 
 
@@ -1206,7 +1208,7 @@ GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids - Retrie
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_ids
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_ids
 
 **Response:** 
 
@@ -1238,7 +1240,7 @@ GET /db/{database}/isolates/{isolate_id}/contigs - Retrieve list of contigs
 * return_all [integer] - Set to non-zero value to disable paging. 
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs
 
 **Response:** Object containing:
 
@@ -1275,7 +1277,7 @@ GET /db/{database}/isolates/{isolate_id}/contigs_fasta - Download contigs in FAS
   the originally uploaded FASTA headers or the sequence bin id numbers.
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?header=original_designation
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?header=original_designation
 
 **Response:** FASTA format file of isolate contig sequences
 
@@ -1295,7 +1297,7 @@ GET /db/{database}/isolates/{isolate_id}/history - Retrieve isolate update histo
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history
 
 **Response:** Object containing:
 
@@ -1333,7 +1335,7 @@ GET /db/{database}/genomes - Retrieve list of isolate records that have genome a
 * genome_size [integer] - Filter to only include records with a sequence bin 
   of at least the specified size (default is 500,000bp).
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/genomes
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/genomes
 
 **Response:** Object containing:
 
@@ -1390,7 +1392,7 @@ The following searches for *Neisseria* ST-11 isolates from Europe in 2015
 (MLST is scheme#1 in this database). ::
 
   curl -s -H "Content-Type: application/json" -X POST \
-  "http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/search" \
+  "https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/search" \
   -d '{"field.continent":"europe","field.year":2015,"scheme.1.ST":11}'
   
 **Response**: Object containing:
@@ -1423,7 +1425,7 @@ GET /db/{database}/contigs/{contig_id} - Retrieve contig record
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062
 
 **Response:** Contig object consisting of the following key/value pairs:
 
@@ -1460,7 +1462,7 @@ GET /db/{database}/fields - Retrieve list of isolate provenance field descriptio
 **Optional parameters:** None
 
 **Example request URI:** 
-http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields
 
 **Response:** Array of field objects, each consisting of some or all of the
 following key/value pairs:
@@ -1496,7 +1498,7 @@ GET /db/{database}/fields/{field} - Retrieve values set for a provenance field
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging.
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields/country
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields/country
 
 **Response:** Object containing:
 
@@ -1529,7 +1531,7 @@ Users may be data submitters or curators.
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/users/2
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/users/2
 
 **Response:** Object containing the following key/value pairs:
 
@@ -1537,7 +1539,29 @@ Users may be data submitters or curators.
 * first_name [string]
 * surname [string]
 * affiliation [string] - institutional affiliation
-* email [string] - E-mail address
+* email [string] - E-mail address (may be hidden depending on server configuration)
+
+.. _db_curators:
+
+.. index::
+   single: API resources; GET /db/{database}/curators 
+   single: API resources; retrieve list of curators
+
+GET /db/{database}/curators - Retrieve list of curators
+=======================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+
+**Optional parameters:** None
+
+**Example request URI:** 
+https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/curators
+
+**Response:** Object containing:
+
+* records [integer] - Number of curators
+* curators [array] - List of :ref:`URIs to user records<db_users_user_id>`.  
 
 .. _db_projects:
 
@@ -1551,7 +1575,7 @@ GET /db/{database}/projects - Retrieve list of projects
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects
 
 **Response:** 
 
@@ -1576,7 +1600,7 @@ GET /db/{database}/projects/{project_id} - Retrieve project information
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3
 
 **Response:** Object containing a subset of the following key/value pairs:
 
@@ -1603,7 +1627,7 @@ GET /db/{database}/projects/{project_id}/isolates - Retrieve list of isolates be
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3/isolates
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3/isolates
 
 **Response:** Object containing:
 
@@ -1637,7 +1661,7 @@ GET /db/{database}/submissions - retrieve list of submissions
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_isolates/submissions
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/submissions
 
 **Response:** Object containing:
 
@@ -1744,7 +1768,7 @@ GET /db/{database}/submissions/{submission_id} - Retrieve submission record
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
 
 **Response:** Object containing some of the following:
 
@@ -1819,7 +1843,7 @@ You must be the owner and the record must be closed.
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740
 
 **Response:** message [string] - 'Submission deleted.'
 
@@ -1838,7 +1862,7 @@ GET /db/{database}/submissions/{submission_id}/messages - Retrieve submission co
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/messages
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/messages
 
 **Response:** Array of correspondence objects in time order. Each contains:
   
@@ -1882,7 +1906,7 @@ GET /db/{database}/submissions/{submission_id}/files - Retrieve list of supporti
 
 **Optional parameters:** None
 
-**Example request URI:** http://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/files
+**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/files
 
 **Response:** Array of URIs to files
 
