@@ -101,6 +101,19 @@ database):
   submission interface prior to allele submission finalization. This can be
   used to add specific instructions such as the requirement to attach Sanger
   trace files.
+* isolate_submit.html - HTML markup for text that is inserted in to the 
+  submission interface prior to isolate submission finalization. This can be 
+  used to add specific instructions such as the request to also make a new
+  profile submission if the isolate has a new profile.
+* profile_curate.html - HTML markup for text that is inserted on submission
+  curation page if profile submissions are pending. This can be used to add
+  specific information to curators.
+* allele_curate.html - HTML markup for text that is inserted on submission
+  curation page if allele submissions are pending. This can be used to add
+  specific information to curators.
+* isolate_curate.html - HTML markup for text that is inserted on submission
+  curation page if isolate submissions are pending. This can be used to add
+  specific information to curators.
 * registration_success.txt - Text file containing message content to be used
   in an automated E-mail when granting access to a user who has requested
   access to the database using the site-wide account system (where 
