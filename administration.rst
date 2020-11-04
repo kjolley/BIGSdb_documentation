@@ -1559,6 +1559,10 @@ A full list of options can be found by typing: ::
     
    --scheme SCHEME_ID
        Scheme id number.
+       
+   --view VIEW
+       Limit isolates searched to specified view.
+   
    
 .. index::
    pair: classification groups; adding
