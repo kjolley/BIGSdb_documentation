@@ -951,6 +951,8 @@ GET /db/{database}/isolates - Retrieve list of isolate records
   (ISO 8601 format).
 * added_on [date] - Include only isolates added on specified date 
   (ISO 8601 format).
+* include_old_versions [integer] - Set to 1 to include old record versions
+  (the default is to only include new versions)
 * updated_after [date] - Include only isolates last modified after specified 
   date (ISO 8601 format).
 * updated_on [date] - Include only isolates updated on specified date 
@@ -1328,6 +1330,8 @@ GET /db/{database}/genomes - Retrieve list of isolate records that have genome a
   (ISO 8601 format).
 * added_on [date] - Include only isolates added on specified date 
   (ISO 8601 format).
+* include_old_versions [integer] - Set to 1 to include old record versions
+  (the default is to only include new versions)
 * updated_after [date] - Include only isolates last modified after specified 
   date (ISO 8601 format).
 * updated_on [date] - Include only isolates updated on specified date 
