@@ -35,8 +35,14 @@ the isolate has a genome assembly associated with it.
 
 .. image:: /images/data_analysis/rmlst3.png
 
-The tool interface is simply a list of isolate ids to check. This will be pre-
-populated if accessed following a query or directly from an isolate record. 
+The tool interface consists of a list of isolate ids to check. This will be
+pre-populated if accessed following a query or directly from an isolate record. 
+If the rMLST scheme is defined on the system, you will have a choice as to 
+whether to BLAST the genome sequences to identify the rMLST alleles, or just
+use the designations that are tagged in the database. The latter is much 
+quicker but relies on the record having been scanned and annotated with the
+rMLST loci.
+
 Click 'Submit'.
 
 .. image:: /images/data_analysis/rmlst4.png
