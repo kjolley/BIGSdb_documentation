@@ -89,6 +89,8 @@ Resources
   - Retrieve allelic profile record
 * :ref:`POST /db/{database}/schemes/{scheme_id}/sequence<db_schemes_scheme_id_sequence>`
   - Query sequence to extract allele designations/fields for a scheme
+* :ref:`POST /db/{database}/schemes/{scheme_id}/designations<db_schemes_scheme_id_designations>`
+  - Query allelic profile to extract fields for a scheme
 * :ref:`GET /db/{database}/isolates<db_isolates>` 
   - Retrieve list of isolate records
 * :ref:`GET /db/{database}/genomes<db_genomes>` 
@@ -931,6 +933,44 @@ results from Neisseria database: ::
    for a specific locus, use the 
    :ref:`locus-specific call<db_loci_locus_sequence>` to identify the closest
    match.
+
+.. _db_schemes_scheme_id_designations:
+
+.. index::
+   single: API resources; POST /db/{database}/schemes/{scheme_id}/designations 
+   single: API resources; query scheme designations   
+   
+POST /db/{database}/schemes/{scheme_id}/designations - Query allelic profile to extract fields for a scheme
+===========================================================================================================
+**Required route parameters:** 
+
+* database [string] - Database configuration name
+* scheme_id [integer] - Scheme id
+
+**Required additional parameters (JSON-encoded in POST body):**
+
+* designations [object] - consisting of
+
+  * locus objects each containing an array of alleles (see example)
+
+**Response:** Object containing the following key/value pairs: 
+
+* exact_matches [object] - consisting of locus values, each consisting of an
+  array of allele values:
+
+  * allele_id [string]
+  
+  If the locus is linked to field data in client isolate databases, there may 
+  also be an object called 'linked_data' containing values and frequencies of
+  the field for the returned allele.
+  
+* fields [object] - consisting of key/value pairs of scheme fields (if 
+  defined)
+  
+Example curl call to query an allelic profile and extract MLST results from
+Neisseria database: ::
+   
+    curl -s -H "Content-Type: application/json" -X POST "https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/designations" -d '{"designations":{"abcZ":[{"allele":"2"}],"adk":[{"allele":"3"}],"aroE":[{"allele":"4"}],"fumC":[{"allele":"3"}],"gdh":[{"allele":"8"}],"pdhC":[{"allele":"4"}],"pgm":[{"allele":"6"}]}}'  
   
 .. _db_isolates:
 
