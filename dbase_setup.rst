@@ -604,12 +604,6 @@ Any value set here can be overridden in a
     allowed values and an integer year field must be defined in the isolates 
     table.
     
-* seqbin_size_threshold
-
-  * Sets the size values in Mbp to enable for the 
-    :ref:`seqbin filter <query_filters>`.
-  * Example: seqbin_size_threshold="0.5,1,2,4".
-  
 * seq_export_limit
 
   * Overrides the sequence export limit (records x loci) in the Sequence
