@@ -489,6 +489,14 @@ Any value set here can be overridden in a
     included in an Microreact job. Default: 100,000 (this can also be set 
     globally in bigsdb.conf).
     
+* min_genome_size
+
+  * Size in bp that is the minimum size of the sequence bin considered to
+    represent a whole genome. This is used in the REST interface to 
+    differentiate records with genomes. You can also pass a 'genomes=1'
+    attribute to the an isolate query form and this will populate the
+    appropriate search to return genome records. 
+    
 * new_version
 
   * Set to 'no' to prevent copying field value when creating a new version of
