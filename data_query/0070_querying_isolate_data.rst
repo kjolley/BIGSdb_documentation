@@ -155,6 +155,24 @@ pink background.  Any scheme field designations that depend on the allele in
 question, e.g. a MLST ST, will also be marked as provisional.
 
 .. index::
+   single: sequence bin; query
+
+Query by sequence bin size and number of contigs
+================================================
+Isolates can be queried based on the total length of sequences within the
+sequence bin and/or the number of contigs.
+
+Make sure that the sequence bin fieldset is displayed by selecting it in the 
+‘Modify form options’ tab.
+
+.. image:: /images/data_query/query_isolates20.png
+
+Additional search terms can be combined using the '+' button. Sequence bin 
+queries will be combined with terms entered in other sections.
+
+.. image:: /images/data_query/query_isolates21.png
+
+.. index::
    pair: sequence tags; count
    
 Query by sequence tag count
