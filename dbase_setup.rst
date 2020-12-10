@@ -1161,9 +1161,10 @@ key value pairs separated by = with the values quoted, e.g. ::
    read_access="authenticated_users"
    description="Private view of database"
    
-It is also possible to override the required or maindisplay attribute of a 
-particular field using a file called **field.overrides**. The field.overrides 
-file uses the format 'field:attribute="value"' on each line, e.g. ::
+It is also possible to override the required, maindisplay or curate_only 
+attributes of a particular field using a file called **field.overrides**. The 
+field.overrides file uses the format 'field:attribute="value"' on each line, 
+e.g. ::
 
    date_received:required="yes"
 
