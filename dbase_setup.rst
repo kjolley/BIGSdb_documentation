@@ -725,15 +725,25 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
   * Data type: int, text, float, bool, or date.
   
+* allow_submissions
+
+  * Show in submission template and allow data to be submitted even if field 
+    is set as 'curate_only'. This has no affect on fields that do not have 
+    the 'curate_only' attribute as these fields are included in submissions by
+    default. This attribute will be overridden if the field has the 
+    'no_submissions' attribute set.
+
 * comments  
-  * optional
 
   * Comments about the field.  These will be displayed in the field description
     plugin and as tooltips within the curation interface.
     
 * curate_only
 
-  * Set to 'yes' to hide field unless logged-in user is a curator or admin. 
+  * Set to 'yes' to hide field unless logged-in user is a curator or admin. Set
+    the 'allow_submissions' attribute to still include the field in the 
+    submission template so that it can be included in submissions of new 
+    records by standard users. 
     
 * default
 
