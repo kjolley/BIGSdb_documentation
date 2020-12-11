@@ -728,7 +728,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * allow_submissions
 
   * Show in submission template and allow data to be submitted even if field 
-    is set as 'curate_only'. This has no affect on fields that do not have 
+    is set as 'curate_only'. This has no effect on fields that do not have 
     the 'curate_only' attribute as these fields are included in submissions by
     default. This attribute will be overridden if the field has the 
     'no_submissions' attribute set.
