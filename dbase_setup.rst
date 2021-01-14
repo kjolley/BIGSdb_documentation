@@ -560,13 +560,6 @@ Any value set here can be overridden in a
     'authenticated_users' for anybody who has been able to log in. 
     Default 'public'.  
     
-* recommended_schemes
-
-  * Comma-separated list of recommended schemes to suggest to Genome Comparator
-    users. If lots of schemes are defined, a user may be tempted to click 'All
-    loci' and this may not be the best option. Populating this attribute, 
-    results in an additional list of preferred schemes that can be chosen.
-
 * related_databases
 
   * Semi-colon separated list of links to related BIGSdb databases on the

@@ -1215,6 +1215,19 @@ exclamation mark (!) next to them:
   functions by default - this can be overridden by user preference.
   
   * Allowed: true/false.
+  
+* recommended - Sets whether the scheme will appear in a list of recommended
+  schemes for use in some analysis plugins. Selecting this option makes the
+  scheme easier to select when there are a lot of schemes defined. It should 
+  be used sparingly.
+  
+* quality_metric - Sets whether the scheme can be used to help assess the 
+  quality of a genome assembly. For a well annotated genome it would be 
+  expected for all loci in the scheme to have an allele designated. The
+  annotation status can be searched in an isolate query. This can be used in
+  conjunction with the quality_metric_good and quality_metric_bad attributes
+  that can be used to set the thresholds for what constitutes a good or bad
+  annotation.
 
 * dbase_name - Name of seqdef database (system name) containing scheme 
   profiles (optional).
@@ -1245,6 +1258,15 @@ exclamation mark (!) next to them:
 * dbase_id - Id of scheme in the sequence definition database. 
 
   * Allowed: any integer.
+  
+* quality_metric_good - threshold number of loci that must have allele 
+  designations for a genome annotation to be considered good for this scheme.
+  If this isn't set then the number of loci in the scheme is used.
+  
+* quality_metric_bad - threshold number of loci that must have allele
+  designations below which a genome annotation is to be considered bad for this
+  scheme. If this isn't set then the value used for quality_metric_good is 
+  used (or the number of scheme loci if this also is not set).
   
 * view - Restrict this scheme to only isolates contained in the specified
   database view. This option will only appear if the views attribute is set
