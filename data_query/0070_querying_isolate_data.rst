@@ -155,6 +155,28 @@ pink background.  Any scheme field designations that depend on the allele in
 question, e.g. a MLST ST, will also be marked as provisional.
 
 .. index::
+   single: annotation status; query
+   
+Query by annotation status
+==========================
+Isolates can be queried by the annotation status of particular schemes if these
+have been set up. The idea is that for a well-annotated record the isolate 
+would be expected to have allele designations for all loci in the scheme.
+Alternatively, different thresholds for number of loci with allele designations
+can be set up by the scheme administrator to indicate good or bad quality
+thresholds. 
+
+Make sure that the annotation status fieldset is displayed by selecting it in
+the 'Modify form options' tab.
+
+.. image:: /images/data_query/query_isolates22.png
+
+Additional search terms can be combined using the '+' button. Annotation status
+queries will be combined with terms entered in other sections.
+
+.. image:: /images/data_query/query_isolates23.png
+
+.. index::
    single: sequence bin; query
 
 Query by sequence bin size and number of contigs
