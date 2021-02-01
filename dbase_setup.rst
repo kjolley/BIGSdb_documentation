@@ -413,6 +413,13 @@ Any value set here can be overridden in a
     to the way isolates are queued.
     Default: '2'.
     
+* genome_submissions
+
+  * Disable genome submissions (automated submission system): either 'yes' 
+    or 'no', default 'yes'.
+  * To enable, you will also need to set submissions="yes". By default, 
+    genome submissions are enabled. 
+    
 * hide_unused_schemes   
 
   * Sets whether a scheme is shown in a main results table if none of the
