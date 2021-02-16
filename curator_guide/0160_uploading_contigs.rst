@@ -54,12 +54,6 @@ On the upload form, you can select to filter out short sequences or those
 containing only homopolymeric repeats (which can be artefactually produced
 by some assembler software versions) from your contig list.
 
-If your database has experiments defined (experiments are used for grouping 
-sequences and can be used to filter the sequences used in 
-:ref:`tag scanning <tag_scanning>`), you can also choose to upload your contigs
-as part of an experiment. To do this, select the experiment from the dropdown 
-list box.
-
 .. image:: /images/curation/upload_contigs9.png
 
 .. _upload_contigs_batch:

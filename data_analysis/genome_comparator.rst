@@ -211,9 +211,6 @@ Available options are:
   contigs were uploaded.
 * Project - Only include isolates belonging to the chosen project.  This 
   enables you to select all isolates and filter to a project.
-* Experiment - Contig files can belong to an experiment.  How this is used can
-  vary between databases, but this enables you to only include contigs from a 
-  particular experiment.
 
 Understanding the output
 ========================

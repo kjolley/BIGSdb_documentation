@@ -76,8 +76,6 @@ Individual permissions can be set for each curator:
 * modify_schemes - allowed to add or modify schemes.
 * modify_sequences - allowed to add sequences to the sequence bin (for isolate
   databases) or new allele definitions (for sequence definition databases).
-* modify_experiments - define new experiments that can be used to group contigs
-  uploaded to the sequence bin.
 * modify_isolates - allowed to add or modify isolate records.
 * modify_projects - allowed to create projects, modify their descriptions and
   add or remove isolate records to these.
