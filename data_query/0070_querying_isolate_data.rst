@@ -182,7 +182,7 @@ queries will be combined with terms entered in other sections.
 Query by sequence bin size and number of contigs
 ================================================
 Isolates can be queried based on the total length of sequences within the
-sequence bin and/or the number of contigs.
+sequence bin, the number of contigs, the N50 and/or the L50 values.
 
 Make sure that the sequence bin fieldset is displayed by selecting it in the 
 ‘Modify form options’ tab.
