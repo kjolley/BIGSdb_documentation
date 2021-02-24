@@ -688,7 +688,29 @@ Any value set here can be overridden in a
 
   * Comma-separated list of views of the isolate table defined in the database.
     This is used to set a view for a set, or to restrict loci or schemes to a 
-    subset of isolate data.   
+    subset of isolate data.
+    
+* warn_max_contigs
+
+  * Set a threshold for the number of contigs in a submitted genome assembly to
+    trigger a warning in the submission interface. This value overrides the 
+    value set in bigsdb.conf.
+
+* warn_max_total_length
+
+  * Set an upper threshold for the total size of a submitted genome assembly to
+    trigger a warning in the submission interface.
+
+* warn_min_n50
+
+  * Set a threshold for the minimum N50 value in a submitted genome assembly to
+    trigger a warning in the submission interface. This value overrides the 
+    value set in bigsdb.conf.
+
+* warn_min_total_length
+
+  * Set a lower threshold for the total size of a submitted genome assembly to
+    trigger a warning in the submission interface.
  
 * webroot	
 
