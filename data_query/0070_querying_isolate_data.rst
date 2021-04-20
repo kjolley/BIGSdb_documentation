@@ -178,6 +178,8 @@ queries will be combined with terms entered in other sections.
 
 .. index::
    single: sequence bin; query
+   
+.. _query_by_seqbin:   
 
 Query by sequence bin size and number of contigs
 ================================================

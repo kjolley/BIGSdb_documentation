@@ -373,6 +373,114 @@ A full list of options can be found by typing: ::
 
  -y, --max ID
      Maximum isolate id.
+     
+.. _assembly_stats:
+
+.. index::
+   single: assembly stats
+
+**************************
+Calculating assembly stats
+**************************
+Basic assembly statistics are calculated automatically by the database engine
+as contigs are added to the sequence bin. These include the number of contigs,
+total length and the N50 value. Some calculations, such as %GC, number of Ns,
+and the number of gaps however, require offline analysis since these involve
+inspecting the nucleotide content of each contig. These can be calculated by 
+running the update_assembly_stats.pl script. You can choose to run this against
+all databases on the system or against a specific database. 
+
+Only one copy of the script can run at a time, but it will stop gracefully if 
+it detects another copy running, so it is recommended that the script is run 
+regularly using a CRON job and the --quiet option. This ensures that records
+are updated shortly after they have been uploaded.
+
+Once calculated, all assembly statistics can then be 
+:ref:`used in isolate queries<query_by_seqbin>`. 
+
+A full list of options can be found by typing: ::
+
+ update_assembly_stats.pl --help
+ 
+ NAME
+     update_assembly_stats.pl - Perform/update calculation of 
+     assembly GC, N and gap stats.
+
+ SYNOPSIS
+     update_assembly_stats.pl [options]
+
+ OPTIONS
+
+ --database DATABASE CONFIG
+     Database configuration name. If not included then all isolate databases
+     defined on the system will be checked.
+    
+ --exclude CONFIG NAMES 
+     Comma-separated list of config names to exclude.
+    
+ --help
+     This help page.
+      
+ --quiet
+     Only show errors.
+    
+ --refresh_days DAYS
+     Refresh records last analysed longer that the number of days set. By 
+     default, only records that have not been analysed will be checked. 
+     
+.. _rmlst_analysis:
+
+.. index::
+   pair: rMLST;storing analysis results
+
+******************************************
+Predicting species based on rMLST analysis
+******************************************
+The :ref:`rMLST plugin<rmlst>` predicts species based on matches to rMLST
+alleles exclusively found in a particular species. It uses the PubMLST API
+to query either a genome sequence or rMLST allele designations to identify
+the species. When the analysis is run using the plugin, the results are also
+stored with the isolate record and can then be displayed within the isolate
+information page. This analysis can also be run offline using the 
+update_rmlst_species.pl script.
+
+Only one copy of the script can run at a time, but it will stop gracefully if 
+it detects another copy running, so it is recommended that the script is run 
+regularly using a CRON job and the --quiet option. This ensures that records
+are updated shortly after they have been uploaded.
+
+A full list of options can be found by typing: ::
+
+ update_rmlst_species.pl --help
+ 
+ NAME
+     update_rmlst_species.pl - Perform/update species id check
+
+ SYNOPSIS
+     update_rmlst_species.pl [options]
+
+ OPTIONS
+
+ --database DATABASE CONFIG
+     Database configuration name. If not included then all isolate databases
+     defined on the system will be checked.
+    
+ --exclude CONFIG NAMES 
+     Comma-separated list of config names to exclude.
+    
+ --help
+     This help page.
+    
+ --last_run_days DAYS
+     Only run for a particular isolate when the analysis was last performed
+     at least the specified number of days ago.
+    
+ --quiet
+     Only show errors.
+    
+ --refresh_days DAYS
+     Refresh records last analysed longer that the number of days set. By 
+     default, only records that have not been analysed will be checked.  
 
 .. index::
    pair: autotagger; stop

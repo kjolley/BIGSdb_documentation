@@ -1,5 +1,7 @@
 .. index::
    pair: rMLST; species identification
+   
+.. _rmlst:
 
 **********************
 Species identification
