@@ -35,7 +35,7 @@ the upload process.
 *************************
 Modifying private records
 *************************
-Click the 'Upload/manage records' link on the contents page.
+Click the 'Private data' link on the contents page.
 
 .. image:: /images/private_records/upload1.png
 
