@@ -169,6 +169,11 @@ followed by a URL for that link, e.g. ::
  
     Home|/
     Organisms|/databases/
+    
+Global announcments can be made in a banner that appears on each database
+contents page. This is useful for service announcements such as for planned
+maintenance. Place a HTML file called announcement.html in /etc/bigsdb 
+including the text that you wish to appear.
    
 **********************************
 Setting up the offline job manager
