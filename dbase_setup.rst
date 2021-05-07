@@ -364,6 +364,13 @@ Any value set here can be overridden in a
     to appear. :ref:`Allele exemplars<defining_exemplars>` should be defined 
     if you enable this option. Set to 'yes' to enable.
     Default: 'no'.
+    
+* field_groups
+
+  * Comma-separated list of category names that standard isolate fields can 
+    be grouped in to in the isolate information page. You can add an icon to 
+    appear by following the name with a pipe symbol (|) and an icon class from 
+    the FontAwesome library, e.g. 'Antimicrobial resistance|fas fa-capsules'.
   
 * fieldgroup1 - fieldgroup10  
 
