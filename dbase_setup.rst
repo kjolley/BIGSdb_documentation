@@ -786,6 +786,13 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     otherwise all values defined in the database will be included: 'yes' or
     'no', default 'no'. This setting can be overridden by individual user
     preferences. 
+    
+* group
+
+  * Fields can be grouped in the isolate information page by specifying the 
+    group attribute. The group name must be defined in the field_groups system 
+    attribute, otherwise the field will not be shown at all. If undefined, 
+    the field will be in the default provenance/primary metadata group.
   
 * length 
 
