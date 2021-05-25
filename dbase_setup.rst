@@ -863,7 +863,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     batch adding an isolate record or using the submission system, but a null 
     value can be explicitly set using the value 'null'. The use of this is to
     encourage submitters to include a value for this field if it is available,
-    while still allowing empty values if it is not.	
+    while still allowing empty values if it is not.
+    
+* separator
+
+  * Optional string to place between field prefix value and field value if the
+    prefixes attribute is defined.	
   
 * userfield
 
