@@ -842,6 +842,15 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * Sets if this field has a list of allowed values, default 'no'. Surround
     each option with an <option> tag. 
     
+* prefixes
+
+  * Sets the name of a field that this field should be used as a prefix for.
+    That field must be defined. An example of where this would be useful is
+    for defining AMR fields, where one field is a modifier (>,<,=) for a MIC
+    value field. A field with this attribute defined will not be shown as a
+    separate field within the isolate record, but will be displayed as a prefix
+    to the value of the set field.
+    
 * regex  
 
   * Regular expression used to constrain field values, e.g. regex="^[A-Z].*$"
