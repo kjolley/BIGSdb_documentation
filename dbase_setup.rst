@@ -849,7 +849,9 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     for defining AMR fields, where one field is a modifier (>,<,=) for a MIC
     value field. A field with this attribute defined will not be shown as a
     separate field within the isolate record, but will be displayed as a prefix
-    to the value of the set field.
+    to the value of the set field. The prefix field will also not be labelled
+    in the curation interface isolate add/update form, but will appear
+    immediately before and inline with the prefixed field. 
     
 * regex  
 
