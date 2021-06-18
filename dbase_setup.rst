@@ -870,7 +870,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * separator
 
   * Optional string to place between field prefix value and field value if the
-    prefixes attribute is defined.	
+    prefixes attribute is defined.
+    
+* suffix
+
+  * Optional string that is displayed after value in isolate information page
+    and curation interface. Useful for adding units for numerical values.
   
 * userfield
 
