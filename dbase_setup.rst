@@ -118,6 +118,9 @@ database):
   in an automated E-mail when granting access to a user who has requested
   access to the database using the site-wide account system (where 
   auto-registration is not enabled).
+* registration.html - optional file containing text that will appear on login
+  page for the current database. Appear right before "Log in" button.
+  HTML markup can be used within this text.
   
 The header and footer files can alternatively be placed in the root directory 
 of the web site, or in /etc/bigsdb, for site-wide use. If files exist in 
