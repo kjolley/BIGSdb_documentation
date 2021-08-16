@@ -423,7 +423,7 @@ Any value set here can be overridden in a
     
 * genome_submissions
 
-  * Disable genome submissions (automated submission system): either 'yes' 
+  * Enable genome submissions (automated submission system): either 'yes' 
     or 'no', default 'yes'.
   * To enable, you will also need to set submissions="yes". By default, 
     genome submissions are enabled. 
@@ -1023,6 +1023,12 @@ Any value set here can be overridden in a
     throughout the HTML interface wherever formatting can be applied (main body
     of text) and overrides the value set in 'db_description'. Currently only 
     supports *\*italics\** and **\*\*bold\*\***.
+    
+* genome_submissions
+
+  * Enable link to genome submissions (automated submission system): either 
+    'yes' or 'no', default 'yes'.
+  * To enable, you will also need to set isolate_submissions="yes".
     
 * isolate_database
 
