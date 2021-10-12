@@ -58,8 +58,10 @@ Resources
   - List classification schemes
 * :ref:`GET /db/{database}/classification_schemes/{classification_scheme_id}<db_classification_schemes_id>`
   - Retrieve classification scheme information and groups
+* :ref:`GET /db/{database}/classification_schemes/{classification_scheme_id}/groups<db_classification_schemes_id_groups>`
+  - List groups defined for a classification scheme
 * :ref:`GET /db/{database}/classification_schemes/{classification_scheme_id}/groups/{group_id}<db_classification_schemes_id_groups_group_id>`
-  - List isolates belonging to a classification scheme group
+  - List isolates or profiles belonging to a classification scheme group
 * :ref:`GET /db/{database}/loci<db_loci>` - List loci
 * :ref:`GET /db/{database}/loci/{locus}<db_loci_locus>` - Retrieve locus record
 * :ref:`GET /db/{database}/loci/{locus}/alleles<db_loci_locus_alleles>`
@@ -233,7 +235,6 @@ GET /db/{database}/classification_schemes - List classification schemes
 
 GET /db/{database}/classification_schemes/{classification_scheme_id} - Retrieve classification scheme information and groups
 ============================================================================================================================
-Sequence definition databases only.
 
 **Required route parameters:**
 
@@ -251,21 +252,55 @@ Sequence definition databases only.
 * description [text] - Description of classification scheme
 * relative_threshold [boolean] - True if a :ref:`relative thresold<seqdef_classification_schemes>` is used
 * inclusion_threshold [integer] - The threshold for number of loci difference used to group
-* groups [array] (sequence definition databases only) - list of group objects consisting of:
+* groups [string] (sequence definition databases only) - URI to list of groups
 
   * id [integer] - group id
   * profiles [array] - list of :ref:`URIs to profiles<db_schemes_scheme_id_profiles_profile_id>` 
     belonging to the group
     
+.. _db_classification_schemes_id_groups:
+
+.. index::
+   single: API resources; GET /db/{database}/classification_schemes/{classification_scheme_id}/groups
+   single: API resources; retrieve list of groups for a classification scheme
+   
+GET /db/{database}/classification_schemes/{classification_scheme_id}/groups - List groups defined for a classification scheme
+=============================================================================================================================
+Sequence definition databases only.
+
+**Required route parameters:**
+
+* database [string] - Database configuration name
+* classification_scheme_id [integer] - Classification scheme id number
+
+**Optional parameters:** 
+
+* page [integer]
+* page_size [integer]
+* return_all [integer] - Set to non-zero value to disable paging. 
+
+ **Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/classification_schemes/1/groups
+ 
+ **Response:** Object containing of:
+
+* records [integer] - Number of groups
+* groups [array] - List of :ref:`URIs to classification group records<db_classification_schemes_id_groups_group_id>`.  
+* paging [object] - Some or all of the following:
+
+  * previous - URI to previous page of results
+  * next - URI to next page of results
+  * first - URI to first page of results
+  * last - URI to last page of results
+  * return_all - URI to page containing all results (paging disabled)
+      
 .. _db_classification_schemes_id_groups_group_id:
 
 .. index::
    single: API resources; GET /db/{database}/classification_schemes/{classification_scheme_id}/groups/{group_id}
    single: API resources; retrieve classification scheme information and groups    
     
-GET /db/{database}/classification_schemes/{classification_scheme_id}/groups/{group_id} - List isolates belonging to a classification scheme group
-=================================================================================================================================================
-Isolate databases only.
+GET /db/{database}/classification_schemes/{classification_scheme_id}/groups/{group_id} - List isolates or profiles belonging to a classification scheme group
+=============================================================================================================================================================
 
 **Required route parameters:**
 
@@ -281,10 +316,13 @@ Isolate databases only.
 
 **Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/classification_schemes/4/groups/65
 
-**Response:** Object containing of:
+**Response:** Object containing some of:
 
-* records [integer] - Number of isolates
-* isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
+* records [integer] - Number of isolates or profiles
+* isolates (isolate database only) [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`.  
+  Pages are 100 records by default.  Page size can be modified using the 
+  page_size parameter.
+* profiles (sequence definition databases only) [array] - List of :ref:`URIs to profile records<db_schemes_scheme_id_profiles>`.  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
