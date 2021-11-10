@@ -1998,6 +1998,8 @@ You can also define text to be used for when the field value is missing, e.g.
 
 .. index::
    pair: extended attributes; provenance fields
+   
+.. _extended_attributes:
 
 **********************************************
 Extended provenance attributes (lookup tables)

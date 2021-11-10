@@ -1654,6 +1654,333 @@ are shown below: ::
        
    --quiet
        Only display errors.
+       
+ .. _setup_dashboard:      
 
+*******************************
+Setting up front-end dashboards
+*******************************
+Dashboards can be used as an alternative front-end to isolate databases. In
+order to enable dashboards for a particular database, they have to be enabled 
+either globally or specifically for the database configuration. If enabled,
+users will have the option to toggle between the dashboard and the standard 
+index page.
 
+To enable globally and use the dashboard by default, set the following in 
+bigsdb.conf: ::
+
+  enable_dashboard=1
+  default_dashboard_view=1
+  
+Each of these values can be overridden for a particular database by setting the
+same attribute in the database config.xml file, with either 'yes' or 'no', i.e.
+dashboards can be enabled globally but disabled for a particular database
+configuration, or disabled globally but enabled for a particular database
+configuration.
+
+Defining a default dashboard
+============================
+A default global dashboard can be set up by placing a dashboard.toml file in
+/etc/bigsdb. This can be overridden for individual database configurations by
+adding a TOML file (dashboard.toml), in the same format, to the database 
+configuration directory. An example of the format can be seen below. ::
+
+   #Configuration for default front-end dashboard for isolate databases. This
+   #defines the visual elements that will be included. If field-specific elements
+   #are defined and that field does not exist in a particular database then it
+   #will be ignored. 
+   
+   #The default configuration can be overridden for a particular database by 
+   #including a dashboard.toml file, using the same format, in the database 
+   #configuration directory.
+   
+   #Width can be 1, 2, 3, or 4.
+   #Height can be 1, 2, or 3.
+   
+   #Field names have prefixes indicating the field type:
+   #f_ are standard provenance/primary fields
+   #e_ are extended attributes with the main field and the attribute separated 
+   #   by ||, e.g. e_country||continent.
+   
+   elements = [
+      {   #Isolate count.
+         display           = 'record_count',
+         name              = 'Isolate count',
+         width             = 2,
+         background_colour = '#79cafb',
+         main_text_colour  = '#404040',
+         watermark         = 'fas fa-bacteria',
+         change_duration   = 'month',
+         url_text          = 'Browse isolates',
+         hide_mobile       = 0
+      },
+      {  #Genome count (will only display if there are genomes in the database). 
+         display           = 'record_count',
+         name              = 'Genome count',
+         genomes           = 1,
+         width             = 2,
+         background_colour = '#7ecc66',
+         main_text_colour  = '#404040',
+         watermark         = 'fas fa-dna',
+         change_duration   = 'month',
+         url_text          = 'Browse genomes',
+         post_data         = { genomes = 1 },
+         hide_mobile       = 0
+      },
+      {
+         display           = 'field',
+         name              = 'Country',
+         field             = 'f_country',
+         breakdown_display = 'map',
+         width             = 3,
+         height            = 2,
+         hide_mobile       = 1
+      },
+      {
+         #Top 5 list of continents (Geocoding should be set up with default country
+          #list linked to continent - see 'Geocoding setup' on admin curator page.  
+         display           = 'field',
+         name              = 'Continent',
+         field             = 'e_country||continent',
+         breakdown_display = 'top',
+         top_values        = 5,
+         width             = 2,
+         hide_mobile       = 1
+      },
+      {
+         name              = 'Sequence size',
+         display           = 'seqbin_size',
+         genomes           = 1,
+         hide_mobile       = 1,
+         width             = 2,
+         height            = 1
+      },
+      {   #Doughnut chart of species.
+         display           = 'field',
+         name              = 'Species',
+         field             = 'f_species',
+         breakdown_display = 'doughnut',
+         height            = 2,
+         width             = 2,
+         hide_mobile       = 1
+      },
+      {   #Treemap of disease.
+         display           = 'field',
+         name              = 'Disease',
+         field             = 'f_disease',
+         breakdown_display = 'treemap',
+         height            = 2,
+         width             = 2,
+         hide_mobile       = 1
+      },
+      {
+         #Bar chart of submission years. 
+         display           = 'field',
+         name              = 'Year',
+         field             = 'f_year',
+         breakdown_display = 'bar',
+         width             = 3,
+         bar_colour_type   = 'continuous',
+         chart_colour      = '#126716',
+         hide_mobile       = 1
+      }, 
+      {
+         #Cumulative chart of submissions by date.
+         display           = 'field',
+         name              = 'Date entered',
+         field             = 'f_date_entered',
+         width             = 2,
+         breakdown_display = 'cumulative',
+         hide_mobile       = 1
+      }
+   ]
+
+Attributes
+----------
+The allowed attributes are listed below.
+
+* background_colour
+
+  * RGB hex code for the background colour, e.g. '#79cafb'. This is used only
+    for 'big number' fields, e.g. isolate count.
+  
+* bar_colour_type
+
+  * categorical - use contrasting colours for bars.
+  
+  * continuous - use the same colour for all bars (set colour use 
+    'chart_colour' attibute).
+  
+* breakdown_display - type of visualisation. Allowed values are:
+  
+  * bar
  
+    * bar chart - particularly useful for continuous data such as year.
+   
+  * cumulative
+ 
+    * cumulative line chart - used for date_entered or datestamp fields.
+   
+  * doughnut
+ 
+    * doughut chart
+   
+  * pie
+ 
+    * pie chart
+   
+  * top
+ 
+    * top values list. You can choose the number of values to display by also
+      setting the top_values attributes to either 3, 5, or 10.
+     
+  * treemap
+ 
+    * treemap chart
+   
+  * word
+ 
+    * word cloud. This can only be used for fields that have a defined list of
+      allowed values.
+     
+  * map
+ 
+    * global map. This can only be used for 'country' fields with a defined list
+      allowed values or 'continent' fields which are an extended attribute of 
+      country. 
+     
+* change_duration
+
+  * Show the rate of change, e.g. the number of new records in past month. Used
+    for 'big number' fields, e.g. isolate count or specific value count. 
+    Allowed values are 'week', 'month', or 'year'.
+    
+* chart_colour
+
+  * RGB hex code for bar or cumulative line charts, e.g. '#126716'.
+  
+* display
+
+  * Element type. Allowed values are:
+  
+    * field - This is used for most elements.
+    
+    * record_count - Used for isolate count fields.
+    
+    * seqbin_size - Used to display a histogram of genome sizes.
+  
+* field
+
+  * The name of the field to display. Different types of field have different
+    prefixes as follows:
+    
+    * Primary isolate field - prefix with 'f\_', e.g. 'f_country'.
+    
+    * :ref:`Secondary metadata fields<sparsely_populated_fields>` - prefix
+      with 'eav\_'.
+      
+    * :ref:`Extended attributes<extended_attributes>` - prefix with 'e\_', 
+      followed by the primary field name, followed by '||' and then the extended
+      attribute name, e.g. for continent linked to country you would use 
+      'e_country||continent'.
+      
+    * Scheme fields - e.g. clonal complex - prefix with 's\_' followed by the
+      scheme id number, then '_', followed by the scheme field name, e.g. for a
+      field called 'clonal_complex' defined for scheme 1, you would use
+      's_1_clonal_complex'.
+    
+* gauge_background_colour
+  
+  * RGB hex code, e.g. '#79cafb#, for the background colour on a gauge chart.
+  
+* gauge_foreground_colour
+
+  * RGB hex code, e.g. '#79cafb#, for the foreground colour on a gauge chart.
+  
+* header_background_colour
+
+  * RGB hex code, e.g. '#79cafb#, for the header background for a top values 
+    list.
+  
+* header_text_colour
+
+  * RGB hex code, e.g. '#79cafb#, for the header text colour for a top values 
+    list.
+    
+* height
+
+  * Height of element - either 1, 2, or 3.
+  
+* hide_mobile
+
+  * Set to 1 to hide element on small mobile devices (width <= 480 pixels).
+  
+* main_text_colour
+
+  * RGB hex code, e.g. '#79cafb#, for the colour of the text used in big number
+    elements.
+    
+* name
+
+  * The name used for the title of the element.
+  
+* palette
+
+  * ColorBrewer palette used for map displays. Allowed values are:
+  
+      * blue 
+      * green 
+      * purple 
+      * orange
+      * red 
+      * blue/green
+      * blue/purple
+      * green/blue
+      * orange/red
+      * purple/blue
+      * purple/blue/green
+      * purple/red
+      * red/purple
+      * yellow/green
+      * yellow/green/blue
+      * yellow/orange/brown
+      * yellow/orange/red
+  
+* post_data
+
+  * Used to pass data attributes for linked queries. Currently only 'genomes'
+    is used to specify that isolates should be filtered to those with genome
+    assemblies, e.g. '{genomes = 1}'.
+    
+* specific_value_display
+
+  * Type of display to use for specific values. Allowed values are:
+  
+    * gauge - gauge chart
+    * number - big number value
+    
+* specific_values
+
+  * list of field values to include in count shown in gauge chart or big number
+    display, e.g. '['Neisseria meningitidis']'.
+    
+* url_text
+
+  * link text to display when hovering over link leading to data query. Only
+    available for isolate count or specific value charts.
+
+* visualisation_type
+  
+  * Either 'breakdown' (default) or 'specific values'. You need to then set
+    the visualisation using either the breakdown_display or 
+    specific_value_display attribute.
+    
+* watermark
+
+  * FontAwesome icon class used for background watermark on big number charts, 
+    e.g. 'fas fa-bacteria'. See https://fontawesome.com/icons?m=free.
+    
+* width
+  
+  * Width of element - either 1, 2, 3, or 4.
+  
