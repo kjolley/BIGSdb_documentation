@@ -652,6 +652,12 @@ exclamation mark (!) next to them:
 * max_length - Maximum length of locus (optional).
 
   * Allowed: any integer (larger than the minimum length).
+  
+* complete_cds - Whether locus represents a complete coding sequence (optional)
+
+* start_codons - Semi-colon separated list of alternative start codons to allow
+
+  * Note that these are in addition to the built-in defaults of ATG, GTG, TTG.
 
 * orf - Open reading frame of locus (optional). 
 
@@ -825,6 +831,12 @@ exclamation mark (!) next to them:
   false).
 
   * Allowed: any integer.
+  
+* complete_cds - Whether locus represents a complete coding sequence (optional)
+
+* start_codons - Semi-colon separated list of alternative start codons to allow
+
+  * Note that these are in addition to the built-in defaults of ATG, GTG, TTG.
 
 * orf - Open reading frame of locus (optional). 1-3 are the forward reading 
   frame, 4-6 are the reverse reading frames.

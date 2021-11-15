@@ -634,6 +634,13 @@ Any value set here can be overridden in a
   * Force the use of a specific set when accessing database via this XML
     configuration: Value is the name of the set. 
     
+* start_codons
+
+  * Semi-colon separated list of start codons to allow. Note that this list
+    will replace the built-in defaults of ATG, GTG, and TTG, and is used for
+    all functions that require recognising complete coding sequences, such as
+    automated allele definition.
+    
 * start_id
 
   * Defines the minimum record id to be used when uploading new isolate 
@@ -1146,6 +1153,12 @@ Any value set here can be overridden in a
 
   * Force the use of a specific set when accessing database via this XML
     configuration: Value is the name of the set.
+    
+* start_codons
+
+  * Semi-colon separated list of start codons to allow. Note that this list
+    will replace the built-in defaults of ATG, GTG, and TTG, and is used for
+    all functions that require recognising complete coding sequences.
     
 * submissions
 
