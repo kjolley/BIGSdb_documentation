@@ -492,6 +492,10 @@ Any value set here can be overridden in a
     plugin to be active, a country field containing a defined list of allowed
     values and an integer year field must be defined in the isolates table.
     
+* microreact_country_field
+
+  * Overrides the field in which country is stored. Default: 'country'
+    
 * microreact_record_limit
 
   * Overrides the maximum number of records that can be included in a 
@@ -503,6 +507,10 @@ Any value set here can be overridden in a
   * Overrides the maximum number of sequences (records x loci) that can be 
     included in an Microreact job. Default: 100,000 (this can also be set 
     globally in bigsdb.conf).
+    
+* microreact_year_field
+
+  * Overrides the field in which year is stored. Default: 'year'
     
 * min_genome_size
 
