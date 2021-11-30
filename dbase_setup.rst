@@ -490,7 +490,8 @@ Any value set here can be overridden in a
     set to 'yes'. If the all_plugins attribute is set to 'yes', the Microreact
     plugin can be disabled by setting this attribute to 'no'. Note that for the
     plugin to be active, a country field containing a defined list of allowed
-    values and an integer year field must be defined in the isolates table.
+    values and an integer year field must be defined in the isolates table. The
+    plugin also requires microreact_token to be provided.
     
 * microreact_country_field
 
@@ -507,6 +508,10 @@ Any value set here can be overridden in a
   * Overrides the maximum number of sequences (records x loci) that can be 
     included in an Microreact job. Default: 100,000 (this can also be set 
     globally in bigsdb.conf).
+    
+* microreact_token
+
+  * Define the account token. Required to enable the plugin.
     
 * microreact_year_field
 
