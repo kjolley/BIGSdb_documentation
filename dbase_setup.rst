@@ -589,8 +589,8 @@ Any value set here can be overridden in a
   * Semi-colon separated list of links to related BIGSdb databases on the
     system. This should be in the form of database configuration name followed
     by a '|' and the description, e.g. 
-    'pubmlst_neisseria_seqdef|Sequence and profile definitions'.
-    This is used to populate the dropdown menu.
+    'pubmlst_neisseria_seqdef|Typing'.
+    This is used to populate the menu items.
     
 * remote_contigs
 
@@ -1142,7 +1142,7 @@ Any value set here can be overridden in a
     system. This should be in the form of database configuration name followed
     by a '|' and the description, e.g. 
     'pubmlst_neisseria_isolates|Isolates'.
-    This is used to populate the dropdown menu.
+    This is used to populate the menu items.
  
 * script_path_includes  
 
