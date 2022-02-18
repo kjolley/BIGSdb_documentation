@@ -349,10 +349,16 @@ GET /db/{database}/loci - List loci
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
 * alleles_added_after [date] - Include only loci with alleles added after 
-  specified date (ISO 8601 format). Only recognized in sequence definition 
-  databases.
+  (but not on) specified date (ISO 8601 format). Only recognized in sequence 
+  definition databases.
 * alleles_updated_after [date] - Include only loci with alleles last modified 
-  after specified date (ISO 8601 format). Only recognized in sequence 
+  after (but not on) specified date (ISO 8601 format). Only recognized in 
+  sequence definition databases.
+* alleles_added_reldate [integer] - Include only loci with alleles added within
+  the number of days specified. Only recognized in sequence definition 
+  databases.
+* alleles_updated_reldate [integer] - Include only loci with alleles last 
+  modified within the number of days specified. Only recognized in sequence 
   definition databases.
 
 **Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci
@@ -459,12 +465,16 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only alleles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only alleles added after (but not on) specified
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only alleles added within the specified
+  number of days.
 * added_on [date] - Include only alleles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only alleles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only alleles last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only alleles updated within the specified
+  number of days.
 * updated_on [date] - Include only alleles last modified on specified 
   date (ISO 8601 format).
 
@@ -503,12 +513,16 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
 
 **Optional parameters:** 
 
-* added_after [date] - Include only alleles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only alleles added after (but not on) specified
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only alleles added within the specified 
+  number of days.
 * added_on date] - Include only alleles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only alleles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only alleles last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only alleles last modified within the
+  specified number of days.
 * updated_on [date] - Include only alleles last modified on specified 
   date (ISO 8601 format). 
 
@@ -659,12 +673,16 @@ GET /db/{database}/sequences - Get summary of defined sequences
 
 **Optional parameters:**
 
-* added_after [date] - Count only alleles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Count only alleles added after (but not on) specified 
+  date (ISO 8601 format).
+* added_reldate [integer] - Count only alleles added within the specified
+  number of days.
 * added_on [date] - Count only alleles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Count only alleles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Count only alleles last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Count only alleles last modified within the
+  specified number of days.
 * updated_on [date] - Count only allele updated on specified date 
   (ISO 8601 format).
 
@@ -720,12 +738,16 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
 
 **Optional parameters:**
 
-* added_after [date] - Count only profiles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Count only profiles added after (but not on) specified 
+  date (ISO 8601 format).
+* added_reldate [integer] - Count only profiles added within the specified
+  number of days.
 * added_on [date] - Count only profiles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Count only profiles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Count only profiles last modified after (but not on) 
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Count only profiles last modified within the
+  specified number of days.
 * updated_on [date] - Count only profiles updated on specified date 
   (ISO 8601 format).
 
@@ -768,10 +790,15 @@ GET /db/{database}/schemes/{scheme_id}/loci - Retrieve scheme loci
 **Optional parameters:**
 
 * alleles_added_after [date] - Include only loci with alleles added after 
-  specified date (ISO 8601 format). Only recognized in sequence definition 
-  databases.
+  (but not on) specified date (ISO 8601 format). Only recognized in sequence 
+  definition databases.
+* alleles_added_reldate [integer] - Include only loci with alleles added within
+  the specified number of days. Only recognized in sequence definition databases.
 * alleles_updated_after [date] - Include only loci with alleles last modified 
   after specified date (ISO 8601 format). Only recognized in sequence 
+  definition databases.
+* alleles_updated_reldate [integer] - Include only loci with alleles last 
+  modified within the specified number of days. Only recognized in sequence 
   definition databases.
 
 **Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/loci
@@ -823,12 +850,16 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only profiles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only profiles added after (but not on) specified 
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only profiles added within the specified
+  number of days.
 * added_on [date] - Include only profiles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only profiles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only profiles last modified after (but not on) 
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only profiles last modified within the
+  specified number of days.
 * updated_on [date] - Include only profiles last modified on specified 
   date (ISO 8601 format).
 
@@ -872,12 +903,16 @@ GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles 
 
 **Optional parameters:** 
 
-* added_after [date] - Include only profiles added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only profiles added after (but not on) specified
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only profiles added within the specified
+  number of days.
 * added_on [date] - Include only profiles added on specified date 
   (ISO 8601 format).
-* updated_after [date] - Include only profiles last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only profiles last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only profiles last modified within the
+  specified number of days.
 * updated_on [date] - Include only profiles last modified on specified 
   date (ISO 8601 format).
 
@@ -1025,14 +1060,18 @@ GET /db/{database}/isolates - Retrieve list of isolate records
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only isolates added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only isolates added after (but not on) specified 
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only isolates added within the specified
+  number of days.
 * added_on [date] - Include only isolates added on specified date 
   (ISO 8601 format).
 * include_old_versions [integer] - Set to 1 to include old record versions
   (the default is to only include new versions)
-* updated_after [date] - Include only isolates last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only isolates last modified within the
+  specified number of days.
 * updated_on [date] - Include only isolates updated on specified date 
   (ISO 8601 format).
 
@@ -1404,14 +1443,18 @@ GET /db/{database}/genomes - Retrieve list of isolate records that have genome a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* added_after [date] - Include only isolates added after specified date 
-  (ISO 8601 format).
+* added_after [date] - Include only isolates added after (but not on) specified
+  date (ISO 8601 format).
+* added_reldate [integer] - Include only isolates added within the specified
+  number of days.
 * added_on [date] - Include only isolates added on specified date 
   (ISO 8601 format).
 * include_old_versions [integer] - Set to 1 to include old record versions
   (the default is to only include new versions)
-* updated_after [date] - Include only isolates last modified after specified 
-  date (ISO 8601 format).
+* updated_after [date] - Include only isolates last modified after (but not on)
+  specified date (ISO 8601 format).
+* updated_reldate [integer] - Include only isolates last modified within the
+  specified number of days.
 * updated_on [date] - Include only isolates updated on specified date 
   (ISO 8601 format).
 * genome_size [integer] - Filter to only include records with a sequence bin 
