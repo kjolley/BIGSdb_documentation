@@ -1764,6 +1764,109 @@ the first allele once the locus has been set up in the sequence definition
 database.
 
 .. index::
+   single: LINcode schemes
+   
+.. _setting_up_lincodes:
+
+*************************************************
+Setting up LINcode definitions for cgMLST schemes
+*************************************************
+.. note::
+
+   The idea behind LINcodes is described in 
+   `Hennert et al. 2021 bioRxiv 2021.07.26.453808 <https://doi.org/10.1101/2021.07.26.453808>`_.
+   
+LINcode schemes can be defined by administrators by clicking the add LINcode 
+scheme button within the 'Schemes' group on the curator index page of both the 
+sequence definition and isolate databases. This function is normally hidden, 
+so you may need to click the 'Schemes' toggle to display it. An indexed scheme,
+e.g. MLST or cgMLST whereby a field defines each unique combination of alleles,
+needs to be defined before the link will be enabled.
+
+.. image:: /images/administration/add_lincode_scheme1.png
+
+Select the indexed scheme from the dropdown list and enter your locus 
+thresholds in descending order as a semi-colon separated list, e.g. 
+500;250;100;50;25;10;5;2;1;0. Also enter the number of missing alleles that
+are allowed within a profile for a LINcode to be assigned. Click 'Submit'.
+
+.. image:: /images/administration/add_lincode_scheme2.png
+
+If LINcodes have been previously defined, the existing assignments can be
+uploaded by clicking the batch add LINcodes button (sequence definition 
+database). This allows you to copy and paste assignments from a spreadsheet
+template. The template consists of the index field (e.g. cgST), and separate
+columns for each threshold level.
+
+.. image:: /images/administration/add_lincode_scheme3.png
+
+LINcodes can then be assigned automatically using the lincodes.pl script found
+within the scripts/maintenance directory. A full list of arguments can be found
+by typing: ::
+
+ lincodes.pl --help
+ NAME
+     lincodes.pl - Define LINcodes from cgMLST profiles.
+    
+ SYNOPSIS
+     lincodes.pl --database DB_CONFIG --scheme SCHEME_ID [options]
+
+ OPTIONS
+    
+ --batch_size NUMBER
+     Sets a maximum number of profiles to use to initiate assignment order. 
+     The order of assignment is optimally determined using Prim's algorithm, 
+     but can take a long time if there are thousands of profiles. Up to the 
+     number of profiles set here will be ordered and assigned first before
+     further batches are ordered and assigned. The default value is 10,000 
+     but it is recommended that you allow ordering to be determined from all 
+     defined profiles if LINcodes have not been previously determined, i.e.
+     set this value to greater than the number of assigned profiles.
+
+ --database DATABASE CONFIG
+     Database configuration name. This must be a sequence definition database.
+    
+ --missing NUMBER
+     Set the maximum number of loci that are allowed to be missing in a profile
+     for LINcodes to be assigned. If not set, the value defined in the LINcode
+     schemes table will be used.
+     
+ --mmap
+     Write distance matrix to disk rather than memory. Use this if calculating a
+     very large distance matrix on a machine with limited memory. This may run
+     slower.
+    
+ --quiet
+     Only output errors.
+   
+ --scheme SCHEME ID
+     Scheme id number for which a LINcode scheme has been defined.
+
+It is also possible to provide nomenclature for specific LINcode prefixes. 
+These can be used to define lineages or sublineages. LINcode fields are first
+defined by clicking the add lincode field button.
+
+.. image:: /images/administration/add_lincode_scheme4.png
+
+Enter the name of the field you wish to define, e.g. 'lineage' and the data
+type for any values (either text or integer).
+
+.. image:: /images/administration/add_lincode_scheme5.png
+
+A new menu item called 'LINcode prefix nomenclature' will appear in the
+curator part of the index page. It is hidden by default so you may need to
+click the 'Show all' button. Click the add button.
+
+.. image:: /images/administration/add_lincode_scheme6.png
+
+Enter a LINcode prefix (left-hand part of LINcode) and assign a name to it.
+Make sure you do the same in both the sequence definition and isolate 
+databaase. You will then be able to search isolates based on these field values
+and they will appear in isolate records.
+
+.. image:: /images/administration/add_lincode_scheme7.png
+
+.. index::
    single: genome filtering
 
 .. _genome_filtering:
