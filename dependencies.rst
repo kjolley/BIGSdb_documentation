@@ -41,6 +41,7 @@ These are included with most Linux distributions.
 * `Email::Valid <https://metacpan.org/pod/Email::Valid>`_ - Used to validate E-mails sent by job manager.
 * `Excel::Writer::XLSX <https://metacpan.org/pod/Excel::Writer::XLSX>`_ - Used to export data in Excel format.
 * `Exception::Class <https://metacpan.org/pod/Exception::Class>`_ - Exception handing.
+* `File::Map <https://metacpan.org/pod/File::Map>`_
 * `File::Type <https://metacpan.org/pod/File::Type>`_ - Used to determine what type of file has been uploaded.
 * `IO::String <https://metacpan.org/pod/IO::String>`_
 * `JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data.
