@@ -1774,7 +1774,7 @@ Setting up LINcode definitions for cgMLST schemes
 .. note::
 
    The idea behind LINcodes is described in 
-   `Hennert et al. 2021 bioRxiv 2021.07.26.453808 <https://doi.org/10.1101/2021.07.26.453808>`_.
+   `Hennart et al. 2021 bioRxiv 2021.07.26.453808 <https://doi.org/10.1101/2021.07.26.453808>`_.
    
 LINcode schemes can be defined by administrators by clicking the add LINcode 
 scheme button within the 'Schemes' group on the curator index page of both the 
