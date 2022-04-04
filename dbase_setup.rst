@@ -189,7 +189,13 @@ Any value set here can be overridden in a
 * all_plugins  
 
   * Enable all appropriate plugins for database: either 'yes' or 'no', default
-    'no'.   
+    'no'. 
+    
+* alternative_codon_tables
+
+  * Enable alternative codon tables: either 'yes' or 'no'. Set to 'yes' to 
+    allow individual isolates to use a different codon table than the default 
+    (defined by the 'codon_table' attribute), default is 'no'.  
   
 * annotation   
 
@@ -224,6 +230,13 @@ Any value set here can be overridden in a
     the plugin will not be available unless the all_plugins attribute is set to 
     'yes'. If the all_plugins attribute is set to 'yes', the Codon Usage plugin
     can be disabled by setting this attribute to 'no'.
+    
+* codon_table
+
+  * Set the id of the global codon table to use. See 
+    https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for a list with
+    the of ids and their description. This can be overridden on a per-isolate
+    basis if alternative_start_codons is set to 'yes'. Default value is "11".
     
 * codon_usage_limit
 
@@ -969,7 +982,13 @@ Any value set here can be overridden in a
   * Enable BURST plugin: either 'yes' or 'no'. If no value is set then the 
     plugin will not be available unless the all_plugins attribute is set to 
     'yes'. If the all_plugins attribute is set to 'yes', the BURST plugin can 
-    be disabled by setting this attribute to 'no'.
+    be disabled by setting this attribute to 'no'.   
+    
+* codon_table
+
+  * Set the id of the global codon table to use. See 
+    https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for a list with
+    the of ids and their description.
   
 * curate_config
 
