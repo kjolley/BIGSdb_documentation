@@ -977,6 +977,13 @@ Any value set here can be overridden in a
 
   * Enable flags to be set for alleles: either 'yes' or 'no', default 'no'.
   
+* alternative_codon_tables
+
+  * Enable alternative codon tables: either 'yes' or 'no', default is 'no'. 
+    Set to 'yes' to allow different codon tables to be selected when viewing 
+    translated sequences or filtering by CDS when uploading new allele 
+    definitions.
+  
 * BURST  
 
   * Enable BURST plugin: either 'yes' or 'no'. If no value is set then the 
