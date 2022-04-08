@@ -246,7 +246,7 @@ created. This can be created if it doesn't already exist with the following: ::
   sudo touch /var/log/bigsdb_scripts.log
   sudo chown bigsdb /var/log/bigsdb_scripts.log
 
-The autotag.pl script should be installed in /usr/local/bin. It is run as 
+The scannew.pl script should be installed in /usr/local/bin. It is run as 
 follows: ::
 
   scannew.pl --database <database configuration>
