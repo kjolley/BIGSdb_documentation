@@ -57,6 +57,20 @@ and alter the isolate table: ::
 
  ALTER TABLE isolates ADD country text;
  ALTER TABLE isolates ADD year int;
+ 
+If you want to use the geography_point field type, used for storing and mapping
+GPS coordinates, then you will need to install the PostGIS module for 
+PostgreSQL and enable this within the database as follows: ::
+
+ CREATE EXTENSION postgis;
+ 
+To create a geography_point field for location alter the isolate table as 
+below: ::
+
+ ALTER TABLE isolates ADD location geography(POINT,4326);
+ 
+[SRID 4326 represents spatial data using longitude and latitude coordinates on 
+the Earth's surface.] 
 
 Remember that any fields added to the table need to be described in the 
 config.xml file for this database.
@@ -782,7 +796,7 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 
 * **type**	
 
-  * Data type: int, text, float, bool, or date.
+  * Data type: int, text, float, bool, date, or geography_point.
   
 * allow_submissions
 
