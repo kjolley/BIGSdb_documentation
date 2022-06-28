@@ -65,4 +65,4 @@ Installing these packages will enable extra functionality, but they are not requ
 * MAFFT 6.8+ - sequence alignment used by some plugins.
 * Muscle - sequence alignment used by some plugins.
 * Splitstree4 - used by GenomeComparator plugin.
-
+* PostGIS - needed for geographical mapping.

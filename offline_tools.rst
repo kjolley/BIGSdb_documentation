@@ -571,3 +571,64 @@ A full list of options can be found by typing: ::
  -s, --sender ID  
      Sender id number.        
      
+.. _gp_town_lookups:
+
+.. index::
+   pair: geographic point lookup values;populating
+
+*****************************************
+Populating geographic point lookup values
+*****************************************
+If a field has the geographic_point_lookup attribute set to 'yes' in the
+:ref:`config.xml file<isolate_xml_field>`, field values can be mapped to GPS 
+coordinates to facilitate mapping.
+
+These lookup values can be populated using the gp_town_lookups.pl script found
+in the scripts/maintenance directory. This script uses the Geonames dataset
+that contains GPS coordinates for towns and cities with populations of at least
+1000 people. The dataset is included in the datasets/Geonames directory.
+
+A full list of options can be found by typing: ::
+
+ gp_town_lookups.pl --help   
+ 
+ NAME
+     geography_point_lookups.pl - Populate geography_point_lookup table 
+     to set city/town GPS coordinates for mapping.
+ 
+ SYNOPSIS
+     geography_point_lookups.pl --database NAME --field FIELD --geodataset DIR
+    
+     Run this to populate any unassigned values in the geography_point_lookup
+     table.
+
+ OPTIONS
+
+ --database NAME
+     Database configuration name.
+    
+ --feature_code CODE
+     Geonames feature code. See http://www.geonames.org/export/codes.html.
+     Default is 'P' (towns/cities).
+    
+ --field FIELD
+     Name of field. This should have the geography_point_lookup attribute set to
+     'yes' in config.xml.
+    
+ --geodataset DIR
+     Directory containing the Geonames dataset.
+    
+ --help
+     This help page.
+    
+ --min_population POPULATION
+     Set the minimum population for town to assign. Note that all entries in the
+     Geonames database has population, so setting this attribute may result in 
+     some values not being assigned, but can ensure that only high-confidence 
+     values are used.
+    
+ --quiet
+     Only show error messages.
+    
+ --tmp_dir DIR
+     Location for temporary files. Defaults to /var/tmp/.

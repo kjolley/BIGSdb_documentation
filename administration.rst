@@ -99,6 +99,8 @@ Individual permissions can be set for each curator:
 * modify_site_users - allowed to modify site user details (you may not want to
   this! The user account can be used by multiple databases on the site and any
   changes to user details will be seen throughout the site).
+* modify_geopoints - allowed to modify the geography point GPS coordinate 
+  lookup table used for mapping.
 
 Permissions can be set by clicking the Update/delete button in the Permissions
 box in the admin functions area of the curator's interface: 

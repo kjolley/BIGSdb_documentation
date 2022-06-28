@@ -47,16 +47,17 @@ Create an isolate database the same way: ::
  psql -f isolatedb.sql bigsdb_test_isolates
 
 The standard fields in the isolate table are limited to essential fields
-required by the system.  To add new fields, you need to log in to the database
-and alter this table.  For example, to add fields for country and year, first
-log in to the newly created isolate database as the postgres user: ::
+required by the system as well as country and year. To add new fields, you 
+need to log in to the database and alter this table. For example, to add 
+fields for age and sex, first log in to the newly created isolate database 
+as the postgres user: ::
 
  psql bigsdb_test_isolates
 
 and alter the isolate table: ::
 
- ALTER TABLE isolates ADD country text;
- ALTER TABLE isolates ADD year int;
+ ALTER TABLE isolates ADD age int;
+ ALTER TABLE isolates ADD sex text;
  
 If you want to use the geography_point field type, used for storing and mapping
 GPS coordinates, then you will need to install the PostGIS module for 
@@ -72,8 +73,15 @@ below: ::
 [SRID 4326 represents spatial data using longitude and latitude coordinates on 
 the Earth's surface.] 
 
-Remember that any fields added to the table need to be described in the 
-config.xml file for this database.
+Fields can also be linked to a GPS lookup table and can then be mapped. If this
+is enabled then you need to ensure that PostGIS is installed and create 
+the lookup table by running the isolatedb_geocoding.sql script against the 
+isolate database with the following: ::
+ 
+ psql -f isolatedb_geocoding.sql bigsdb_test_isolates
+
+Remember that any fields added to the table need to be :ref:`described in the 
+config.xml file<isolate_xml_field>` for this database.
 
 The xml directory of the software archive contains example XML files for 
 sequence definition and isolate databases (rename these to config.xml). 
@@ -266,6 +274,11 @@ Any value set here can be overridden in a
     the plugin will not be available unless the all_plugins attribute is set to 
     'yes'. If the all_plugins attribute is set to 'yes', the contig export 
     plugin can be disabled by setting this attribute to 'no'.
+    
+* country_field
+
+  * Sets the field in which country is stored. Default: 'country'. This is 
+    needed for mapping.
     
 * curate_config
 
@@ -830,6 +843,15 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     otherwise all values defined in the database will be included: 'yes' or
     'no', default 'no'. This setting can be overridden by individual user
     preferences. 
+    
+* geography_point_lookup
+
+  * Set to 'yes' if this field should be linked to a lookup table of GPS
+    coordinates in order to facilitate mapping within the isolate information
+    page and the Field Breakdown plugin. If any fields have this value set,
+    you need to install the lookup tables by running the 
+    isolatedb_geocoding.sql script against the isolate database. This also
+    requires that the PostgreSQL PostGIS module is installed.
     
 * group
 
