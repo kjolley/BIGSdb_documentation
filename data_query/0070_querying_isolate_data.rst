@@ -338,10 +338,10 @@ within it.  Common filters are:
   * not started - The scheme has no loci with alleles designated.
 
 * Provenance fields - Dropdown list boxes of values for specific provenance 
-    fields may be present if set for the database.  Users can choose to 
-    :ref:`add additional filters <modify_query_filters>`.
-* Old record versions - Checkbox which, if selected, will include all record
-    versions in a query.
+  fields may be present if set for the database.  Users can choose to 
+  :ref:`add additional filters <modify_query_filters>`.
+* Old record versions - Checkbox which, if selected, will include all record 
+  versions in a query.
     
 .. index::
    pair: isolates; allelic profiles    
