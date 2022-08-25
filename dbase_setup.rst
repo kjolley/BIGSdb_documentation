@@ -1741,17 +1741,17 @@ are shown below: ::
        
  .. _setup_dashboard:      
 
-*******************************
-Setting up front-end dashboards
-*******************************
-Dashboards can be used as an alternative front-end to isolate databases. In
-order to enable dashboards for a particular database, they have to be enabled 
-either globally or specifically for the database configuration. If enabled,
-users will have the option to toggle between the dashboard and the standard 
-index page.
+*****************************************
+Setting up front-end and query dashboards
+*****************************************
+Dashboards can be used as an alternative front-end to isolate databases. They
+can also be used to summarise the results of a query. In order to enable 
+dashboards for a particular database, they have to be enabled either globally 
+or specifically for the database configuration. If enabled, users will have 
+the option to toggle between the dashboard and the standard index page.
 
-To enable globally and use the dashboard by default, set the following in 
-bigsdb.conf: ::
+To enable globally and use the front-end dashboard by default, set the 
+following in bigsdb.conf: ::
 
   enable_dashboard=1
   default_dashboard_view=1
@@ -1762,12 +1762,28 @@ dashboards can be enabled globally but disabled for a particular database
 configuration, or disabled globally but enabled for a particular database
 configuration.
 
-Defining a default dashboard
-============================
-A default global dashboard can be set up by placing a dashboard.toml file in
-/etc/bigsdb. This can be overridden for individual database configurations by
-adding a TOML file (dashboard.toml), in the same format, to the database 
-configuration directory. An example of the format can be seen below. ::
+To enable query dashboards, set the following in bigsdb.conf: ::
+
+  query_dashboard=1
+  
+Again, this value can be overridden for a particular database by setting the
+attribute in the database config.xml file, as above. Note that 
+'enable_dashboard' also needs to be enabled.
+
+Defining default dashboards
+===========================
+A default global front-end dashboard can be set up by placing a 
+dashboard_primary.toml file in /etc/bigsdb. This can be overridden for 
+individual database configurations by adding a TOML file 
+(dashboard_primary.toml), in the same format, to the database configuration 
+directory. Any field defined in the TOML file that does not appear within a
+particular database is ignored.
+
+A default global query dashboard can be similarly set up with a file called
+dashboard_query.toml. As this dashboard appears above isolate results tables
+it is preferred that smaller elements are defined, usually with a height of 1.
+
+An example of the format can be seen below. ::
 
    #Configuration for default front-end dashboard for isolate databases. This
    #defines the visual elements that will be included. If field-specific elements
