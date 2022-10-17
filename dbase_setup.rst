@@ -649,10 +649,7 @@ Any value set here can be overridden in a
   * Enable rMLST Species identifier plugin: either 'yes' or 'no'. If no value 
     is set then the plugin will not be available unless the all_plugins 
     attribute is set to 'yes'. If the all_plugins attribute is set to 'yes', 
-    the plugin can be disabled by setting this attribute to 'no'. Note that for
-    the plugin to be active, a country field containing a defined list of 
-    allowed values and an integer year field must be defined in the isolates 
-    table.
+    the plugin can be disabled by setting this attribute to 'no'.
 
 * script_path_includes  
 
