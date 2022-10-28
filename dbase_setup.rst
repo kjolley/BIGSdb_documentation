@@ -656,6 +656,15 @@ Any value set here can be overridden in a
   * Partial path of the bigsdb.pl script used to access the database.
     See :ref:`user authentication <user_authentication>`.
     
+* separate_dataset
+
+  * Treat database configuration as though it was a separate database for the
+    purposes of handling submissions and curators: either 'yes' or 'no', 
+    default 'no'. Submissions will be tagged with the configuration name and 
+    will only be visible within that configuration. Curators can be limited to
+    specific configurations by populating the curator_configs table. This also
+    affects whether they are notified of submissions.
+    
 * SeqbinBreakdown  
 
   * Enable Sequence bin breakdown plugin: either 'yes' or 'no'. If no value 
@@ -856,6 +865,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     group attribute. The group name must be defined in the field_groups system 
     attribute, otherwise the field will not be shown at all. If undefined, 
     the field will be in the default provenance/primary metadata group.
+    
+* hide
+
+  * Completely ignore field. This is useful if you access a database using
+    different configuration files and a field is not relevant to a particular
+    instance. See also :ref:`Over-riding values<system_overrides>`.
   
 * length 
 
@@ -1208,6 +1223,15 @@ Any value set here can be overridden in a
   * Partial path of the bigsdb.pl script used to access the database. See
     :ref:`user authentication <user_authentication>`.
     
+* separate_dataset
+
+  * Treat database configuration as though it was a separate database for the
+    purposes of handling submissions and curators: either 'yes' or 'no', 
+    default 'no'. Submissions will be tagged with the configuration name and 
+    will only be visible within that configuration. Curators can be limited to
+    specific configurations by populating the curator_configs table. This also
+    affects whether they are notified of submissions.
+    
 * seq_export_limit
 
   * Overrides the sequence export limit (records x loci) in the Sequence
@@ -1316,10 +1340,10 @@ key value pairs separated by = with the values quoted, e.g. ::
    read_access="authenticated_users"
    description="Private view of database"
    
-It is also possible to override the required, maindisplay or curate_only 
-attributes of a particular field using a file called **field.overrides**. The 
-field.overrides file uses the format 'field:attribute="value"' on each line, 
-e.g. ::
+It is also possible to override the allow_submissions, required, maindisplay, 
+default, hide, or curate_only attributes of a particular field using a file 
+called **field.overrides**. The field.overrides file uses the format 
+'field:attribute="value"' on each line, e.g. ::
 
    date_received:required="yes"
 
