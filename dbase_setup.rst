@@ -871,6 +871,10 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * Completely ignore field. This is useful if you access a database using
     different configuration files and a field is not relevant to a particular
     instance. See also :ref:`Over-riding values<system_overrides>`.
+    
+* isolate_display
+
+  * Set to 'no' to not show field on the isolate information page.
   
 * length 
 
@@ -930,6 +934,10 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     to the value of the set field. The prefix field will also not be labelled
     in the curation interface isolate add/update form, but will appear
     immediately before and inline with the prefixed field. 
+    
+* query
+
+  * Set to 'no' to exclude field from query drop-down lists.
     
 * regex  
 
