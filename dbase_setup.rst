@@ -1956,7 +1956,7 @@ The allowed attributes are listed below.
     
   * gps_map
   
-    * GPS map. This can only be used for geography_point fields are fields
+    * GPS map. This can only be used for geography_point fields or fields
       that are linked to a lookup table of GPS coordinates.
    
   * pie
@@ -2025,11 +2025,11 @@ The allowed attributes are listed below.
     
 * gauge_background_colour
   
-  * RGB hex code, e.g. '#79cafb#, for the background colour on a gauge chart.
+  * RGB hex code, e.g. '#79cafb, for the background colour on a gauge chart.
   
 * gauge_foreground_colour
 
-  * RGB hex code, e.g. '#79cafb#, for the foreground colour on a gauge chart.
+  * RGB hex code, e.g. '#79cafb, for the foreground colour on a gauge chart.
   
 * geography_view
 
