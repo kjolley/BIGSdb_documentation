@@ -335,6 +335,9 @@ A full list of options can be found by typing: ::
 
  -P, --exclude_projects LIST
      Comma-separated list of projects whose isolates will be excluded.
+     
+ -q, --quiet
+     Only error messages displayed.
            
  -r, --random
      Shuffle order of isolate ids to scan.
