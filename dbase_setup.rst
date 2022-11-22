@@ -1953,6 +1953,11 @@ The allowed attributes are listed below.
   * doughnut
  
     * doughut chart
+    
+  * gps_map
+  
+    * GPS map. This can only be used for geography_point fields are fields
+      that are linked to a lookup table of GPS coordinates.
    
   * pie
  
@@ -2026,6 +2031,11 @@ The allowed attributes are listed below.
 
   * RGB hex code, e.g. '#79cafb#, for the foreground colour on a gauge chart.
   
+* geography_view
+
+  * Choice of view for GPS maps, either 'Aerial' or 'Map'. Note that Aerial
+    views can only be used if you have a Bing Maps key set in bigsdb.conf.
+  
 * header_background_colour
 
   * RGB hex code, e.g. '#79cafb#, for the header background for a top values 
@@ -2048,6 +2058,15 @@ The allowed attributes are listed below.
 
   * RGB hex code, e.g. '#79cafb#, for the colour of the text used in big number
     elements.
+    
+* marker_colour
+
+  * RGB hex code, e.g. '#79cafb#, or HTML colour value, for the colour of the 
+    markers on GPS maps.
+    
+* marker_size
+
+  * Size of marker on GPS maps. Allowed values are 0-9. 
     
 * name
 
