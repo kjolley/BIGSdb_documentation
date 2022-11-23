@@ -4,7 +4,7 @@
 *******************
 Unique combinations
 *******************
-The Unique Combinations plugin calculates the frequencies of unique file 
+The Unique Combinations plugin calculates the frequencies of unique field 
 combinations within an isolate dataset.  Provenance fields, composite fields, 
 allele designations and scheme fields can be combined.
 
