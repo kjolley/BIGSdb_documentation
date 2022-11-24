@@ -2067,6 +2067,21 @@ The allowed attributes are listed below.
 * marker_size
 
   * Size of marker on GPS maps. Allowed values are 0-9. 
+  
+* max_contigs
+
+  * Number of contigs above which a genome will be rejected in the submission 
+    interface.
+    
+* min_n50
+
+  * N50 value below which a genome will be rejected in the submission 
+    interface.
+    
+* min_total_length
+
+  * Minimum length in base pairs below which a genome will be rejected in the
+    submission interface.
     
 * name
 
@@ -2122,6 +2137,21 @@ The allowed attributes are listed below.
   * Either 'breakdown' (default) or 'specific values'. You need to then set
     the visualisation using either the breakdown_display or 
     specific_value_display attribute.
+    
+* warn_max_contigs
+
+  * Number of contigs above which a genome will have a warning message shown in
+    the submission interface.
+
+* warn_min_n50
+
+  * N50 value below which a genome will have a warning message shown in the 
+    submission interface.
+
+* warn_min_total_length
+
+  * Minimum length in base pairs below which a genome will have a warning shown
+    in the submission interface.
     
 * watermark
 
