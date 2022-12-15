@@ -341,7 +341,8 @@ submission management page.
 .. image:: /images/submissions/submission36.png
 
 Then follow the steps for :ref:`isolate submission<isolate_submissions>`, 
-uploading the contig files as supporting files.
+uploading the contig files as supporting files. You will be able to finalize
+the submission only after all the assembly files have been uploaded.
 
 .. note::
  
@@ -353,6 +354,60 @@ uploading the contig files as supporting files.
    submission template. See 
    https://www.techadvisor.co.uk/how-to/windows/windows-10-file-extensions-3697651
    to see how to display hidden file extensions in Windows 10.
+   
+*******************
+Assembly submission
+*******************
+Genome assemblies can be submitted to add to existing isolate records. These
+are often old records that have been submitted with just MLST results but whole
+genome sequencing has been performed later. 
+
+Start
+=====
+Click the 'assemblies' link under submission type on the submission management
+page.
+
+.. image:: /images/submissions/submission37.png
+
+Link assembly files to isolate records
+======================================
+You need to tell the system which isolate record should be linked to each 
+assembly that is being uploaded. In order to do this you should prepare a
+spreadsheet consisting of four columns that you then copy and paste into the
+web form. The columns are:
+
+ * database id number
+ * isolate name
+ * sequence method
+ * assembly filename
+ 
+Both the database id and isolate name are used so that they can be 
+cross-checked to ensure that the correct isolate record has been selected.
+
+.. image:: /images/submissions/submission38.png
+
+Click 'Submit' and the system will check that the id and isolate names 
+correspond tp isolate records that do not currently have assemblies. Provided
+these match, you will then be prompted to drag-and-drop your genome assemblies
+on to the web form. A check will also be performed to see if you are the 
+original submitter of the isolate. If you are not, you can still make the 
+submission but should add a message to the curator to confirm why you are 
+adding assemblies for these records.
+
+.. image:: /images/submissions/submission39.png
+
+Files are uploaded as you drag-and-drop them. Basic checks wil be performed for
+sequence length, number of contigs, and N50 values. If values are outside the
+preferred range you will see a warning for a specific value shown with a pink 
+background. If values are outside the allowed range than the validation will
+fail and you will need to abort the submission. In the image below, the N50 
+values have a warning but have not failed the validation.
+
+.. image:: /images/submissions/submission40.png
+
+Once the files have been uploaded and passed validation, add any message to the
+curator if necessary, e.g. if the original isolate submissions were made by 
+someone else. Click 'Finalize submission'.
 
 ************************************************
 Removing submissions from your notification list
