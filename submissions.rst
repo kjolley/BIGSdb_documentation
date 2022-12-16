@@ -387,7 +387,7 @@ cross-checked to ensure that the correct isolate record has been selected.
 .. image:: /images/submissions/submission38.png
 
 Click 'Submit' and the system will check that the id and isolate names 
-correspond tp isolate records that do not currently have assemblies. Provided
+correspond to isolate records that do not currently have assemblies. Provided
 these match, you will then be prompted to drag-and-drop your genome assemblies
 on to the web form. A check will also be performed to see if you are the 
 original submitter of the isolate. If you are not, you can still make the 
