@@ -61,7 +61,6 @@ Optional packages
 =================
 Installing these packages will enable extra functionality, but they are not required by the core BIGSdb package.
 
-* ImageMagick - mogrify used by some plugins.
 * MAFFT 6.8+ - sequence alignment used by some plugins.
 * Muscle - sequence alignment used by some plugins.
 * Splitstree4 - used by GenomeComparator plugin.

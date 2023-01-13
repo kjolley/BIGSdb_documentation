@@ -255,7 +255,6 @@ For example, the get_attributes function of the BURST plugin looks like: ::
 		order       => 10,
 		system_flag => 'BURST',
 		input       => 'query',
-		requires    => 'mogrify',
 		min         => 2,
 		max         => 1000
 	);
