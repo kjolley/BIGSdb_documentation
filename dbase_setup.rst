@@ -1830,6 +1830,7 @@ An example of the format can be seen below. ::
    #f_ are standard provenance/primary fields
    #e_ are extended attributes with the main field and the attribute separated 
    #   by ||, e.g. e_country||continent.
+   #eav_ are sparse fields
    
    elements = [
       {   #Isolate count.
@@ -2161,4 +2162,44 @@ The allowed attributes are listed below.
 * width
   
   * Width of element - either 1, 2, 3, or 4.
-  
+
+Defining default colours
+======================== 
+Sometimes you may wish to maintain consistent colours for specific field 
+values. You can define colours for values by field using an additional 
+configuration file called dashboard_colours.toml that can be placed either
+in /etc/bigsdb (for global use) or within a database configuration directory.
+The format is as follows: ::
+
+ 'eav_Bexsero_reactivity' = {
+      'exact match'       = '#2ca02c',
+      'cross-reactive'    = '#ff7f0e',
+      'none'              = '#d62728',
+      'insufficient data' = '#888888',
+      'No value'          = '#aaaaaa'
+ }
+ 'eav_Trumenba_reactivity' = {
+      'exact match'       = '#2ca02c',
+      'cross-reactive'    = '#ff7f0e',
+      'none'              = '#d62728',
+      'insufficient data' = '#888888',
+      'No value'          = '#aaaaaa'
+ }
+ 's_1_clonal_complex' = {
+      'ST-11 complex'      = 'yellow',
+      'ST-41/44 complex'   = 'green'
+ }
+ 
+Field names are prefixed as follows:
+
+ * f\_  Standard provenance fields, e.g. f_country
+ 
+ * e\_  Extended attribute fields, e.g. e_country||continent (continent attribute linked to country)
+ 
+ * eav\_ :ref:`Sparely-populated fields<sparsely_populated_fields>`, e.g. eav_Bexsero_reactivity
+ 
+ * s\_  Scheme fields, e.g. s_1_clonal_complex (clonal complex field in scheme 1)
+ 
+This works for pie, doughnut, bar, and pie charts. Note that if you define any values for a field
+then any value not defined will be shown as light grey in the visualisation.
+

@@ -56,6 +56,10 @@ A full list of options can be found by typing: ::
  OPTIONS
  -0, --missing
      Marks missing loci as provisional allele 0. Sets default word size to 15.
+     
+ --curator CURATOR ID
+     Curator id to use for updates. By default -1 is used - there should be an
+     autotagger account set with this id number.
            
  -d, --database NAME
      Database configuration name.
@@ -297,6 +301,10 @@ A full list of options can be found by typing: ::
 
  -c, --coding_sequences
      Only return complete coding sequences.
+     
+ --curator CURATOR ID
+     Curator id to use for updates. By default -1 is used - there should be an
+     autodefiner account set with this id number.
 
  -d, --database NAME
      Database configuration name.
