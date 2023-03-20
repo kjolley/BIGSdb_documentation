@@ -1292,6 +1292,8 @@ exclamation mark (!) next to them:
 
 * allow_missing_loci - Allow profile definitions to contain '0' (locus 
   missing) or 'N' (any allele).
+  
+* allow_presence - Allow profile definitions to contain 'P' (locus present).
 
 .. index::
    pair: groups; scheme
