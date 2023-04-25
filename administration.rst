@@ -243,7 +243,7 @@ For example, the get_attributes function of the BURST plugin looks like: ::
 		name        => 'BURST',
 		author      => 'Keith Jolley',
 		affiliation => 'University of Oxford, UK',
-		email       => 'keith.jolley@zoo.ox.ac.uk',
+		email       => 'keith.jolley@biology.ox.ac.uk',
 		description => 'Perform BURST cluster analysis on query results query results',
 		category    => 'Cluster',
 		buttontext  => 'BURST',
@@ -1001,7 +1001,7 @@ mutations, or cross-referencing of alternative nomenclatures.
 
 To add extended attributes for a locus, click add (+) locus extended attributes
 in the sequence definition database curator's interface contents page. This 
-function is normally hidden, so you may need to click the 'Fields' toggle 
+function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
 
 .. image:: /images/administration/locus_extended_attributes.png
@@ -1065,6 +1065,85 @@ using a :ref:`locus-specific sequence query <locus_specific_query>`, and they
 will appear within query results and allele information pages.
 
 .. index::
+   pair: SNPs; locus
+.. index::
+   pair: amino acid variants; locus
+
+.. _locus_mutations:
+
+*********************************************************************
+Defining locus amino acid variants or single-nucleotide polymorphisms
+*********************************************************************
+It is possible to annotate allele sequences with specific single amino acid
+variants (SAAV) or single nuleotide polymorphisms (SNPs). The values are 
+searchable when using a :ref:`locus-specific sequence query <locus_specific_query>`, 
+and they will appear within query results and allele information pages.
+
+You can add SAAVs to both DNA and protein loci. If adding to a DNA locus the
+alleles are translated so that the positions refer to the amino acid sequence.
+
+To add a SAAV for a locus, click add (+) single AA variations in the sequence 
+definition database curator's interface contents page. This function is 
+normally hidden, so you may need to click the 'Loci' toggle to display it.
+
+.. image:: /images/administration/saav.png
+ 
+Fill in the web form with appropriate values. Required fields have an 
+exclamation mark (!) next to them:
+
+.. image:: /images/administration/saav2.png
+
+* id - Index number of variant - the next available number will be entered 
+  automatically.  
+  
+  * Allowed: any positive integer.
+  
+* locus - Select locus from dropdown box.
+
+  * Allowed: existing locus name.
+  
+* locus_position
+
+  * Position in locus wild-type sequence. Position refers to the translated
+    sequence if using a DNA locus.
+    
+* reported_position
+
+  * Position to use in the output. This will be the same as the locus_position
+    above if the locus includes the complete coding sequence, but will likely
+    be different if the locus is an internal fragment.
+    
+* wild_type_aa
+
+  * Semi-colon (;) separated list of possible wild type amino acids (single
+    letter codes).
+    
+* variant_aa
+
+  * Semi-colon (;) separated list of possible variant amino acids (single
+    letter codes).
+    
+* flanking_length
+
+  * Length of sequence either side of the variant position used to define
+    search motifs. A default value will be provided automatically, but this can
+    be modified if the search is failing.
+    
+* wild_type_allele_id
+
+  * The identifier of a standard length wild-type allele. This can be 
+    optionally provided to help define search motifs. If not provided then the
+    search script will attempt to identify a wild-type allele automatically.
+    
+Once defined SAAVs can be annotated by running the :code:`scan_mutations.pl` script
+found in the scripts/automation directory.  
+
+SNPs can be defined in the same way by adding values to the 'Single nucleotide
+polymorphims' table. This has slight differences in the field names 
+(wild_type_nuc and variant_nuc) but the process is otherwise identical. Note 
+that SNPs can only be defined for DNA loci.
+
+.. index::
    pair: schemes; adding
    
 ****************
@@ -1101,10 +1180,37 @@ to display it.
 Fill in the scheme description in the web form. The next available scheme id 
 number will be filled in already.
 
-The display_order field accepts an integer that can be used to order the 
-display of schemes in the interface - this can be left blank if you wish.
-
 .. image:: /images/administration/add_new_scheme_seqdef2.png
+
+* id - Index number of scheme - the next available number will be entered 
+  automatically.  
+  
+  * Allowed: any positive integer.
+
+* name - Name of scheme.
+
+  * Allowed: any text.
+  
+* description - More detailed description of scheme.
+
+  * Allowed: any text.
+
+* display_order - Integer reflecting the display position for this scheme 
+  within the interface (optional).
+
+  * Allowed: any integer.
+
+* allow_missing_loci - Allow profile definitions to contain '0' (locus 
+  missing) or 'N' (any allele).
+  
+* allow_presence - Allow profile definitions to contain 'P' (locus present).
+
+* disable - Disable the scheme so that it is hidden by default. Users can
+  specifically override this to enable the scheme, so it not actually private.
+  
+* no_submissions - Do not include scheme in the submission interface for 
+  submission of new profiles (only relevant for schemes with primary key 
+  fields).
 
 To add loci to the scheme, click the add (+) scheme members link on the 
 curator's interface contents page. This function is normally hidden, so you 
@@ -1195,9 +1301,12 @@ exclamation mark (!) next to them:
   automatically.	
   
   * Allowed: any positive integer.
+  
+* name - Name of scheme.
 
-* description - Short description - this is used in tables so make sure it's
-  not too long.
+  * Allowed: any text.
+
+* description - More detailed description of scheme.
 
   * Allowed: any text.
 

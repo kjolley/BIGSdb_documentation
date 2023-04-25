@@ -334,7 +334,7 @@ script without any additional attributes.
       psql pubmlst_bigsdb_users
       INSERT INTO USERS (user_name,surname,first_name,email,affiliation,
         date_entered,datestamp,status) VALUES ('kjolley','Jolley','Keith',
-        'keith.jolley@zoo.ox.ac.uk','University of Oxford, UK','now','now',
+        'keith.jolley@biology.ox.ac.uk','University of Oxford, UK','now','now',
         'validated');
         
     Set the password for this user using the add_user.pl script (change 
@@ -638,7 +638,7 @@ virtual host directive in apache with the following configuration file: ::
    <VirtualHost *>
      ServerName rest.pubmlst.org
      DocumentRoot /var/rest
-     ServerAdmin keith.jolley@zoo.ox.ac.uk
+     ServerAdmin keith.jolley@biology.ox.ac.uk
       <Directory /var/rest>
        AllowOverride None
        Require all granted

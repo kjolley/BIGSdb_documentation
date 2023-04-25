@@ -1631,7 +1631,7 @@ database. Connect to the database using psql and add the following (changing
 details to suit the user).::
 
  INSERT INTO users (id, user_name, surname, first_name, email, affiliation, status, date_entered,
- datestamp, curator) VALUES (1, 'keith', 'Jolley', 'Keith', 'keith.jolley@zoo.ox.ac.uk', 
+ datestamp, curator) VALUES (1, 'keith', 'Jolley', 'Keith', 'keith.jolley@biology.ox.ac.uk', 
  'University of Oxford, UK', 'admin', 'now', 'now', 1);
 
 If you are using built-in authentication, set the password for this user using
