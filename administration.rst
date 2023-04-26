@@ -1075,7 +1075,7 @@ will appear within query results and allele information pages.
 Defining locus amino acid variants or single-nucleotide polymorphisms
 *********************************************************************
 It is possible to annotate allele sequences with specific single amino acid
-variants (SAAV) or single nuleotide polymorphisms (SNPs). The values are 
+variants (SAAV) or single nucleotide polymorphisms (SNPs). The values are 
 searchable when using a :ref:`locus-specific sequence query <locus_specific_query>`, 
 and they will appear within query results and allele information pages.
 
