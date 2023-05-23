@@ -365,7 +365,7 @@ To do this use the update_scheme_caches.pl script found in the
 scripts/maintenance directory, e.g. to cache all schemes in the 
 pubmlst_bigsdb_neisseria_isolates database ::
 
- update_scheme_caches.pl --database pubmlst_bigsdb_neisseria_isolates
+ update_scheme_caches.pl --database pubmlst_neisseria_isolates
 
 This script creates indexed tables within the isolate database called 
 temp_scheme_X and temp_isolates_scheme_fields_1 (where X is the scheme_id). 

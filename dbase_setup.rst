@@ -824,6 +824,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
     the 'curate_only' attribute as these fields are included in submissions by
     default. This attribute will be overridden if the field has the 
     'no_submissions' attribute set.
+    
+* annotation_metric
+
+  * Use field for provenance annotation status metrics. The field should be
+    expected to have a value for records with complete provenance data. Set
+    to 'yes' to include.  
 
 * comments  
 
