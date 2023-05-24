@@ -656,6 +656,15 @@ Any value set here can be overridden in a
   * Partial path of the bigsdb.pl script used to access the database.
     See :ref:`user authentication <user_authentication>`.
     
+* search_sequence_variation
+
+  * If loci are defined that have sequence variants (single amino acid or 
+    single nucleotide polymorphisms) defined in their respective typing 
+    databases, setting this attribute to 'yes' will enable the isolate
+    database to be searched by whether alleles found in isolates have these
+    variants or not. This is not enabled by default as there is a small, but
+    unnecessary, performance hit in databases that don't have any such loci.
+    
 * separate_dataset
 
   * Treat database configuration as though it was a separate database for the
