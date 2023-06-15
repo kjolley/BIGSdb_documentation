@@ -517,7 +517,7 @@ GET /db/{database}/loci/{locus}/alleles_fasta - Download alleles in FASTA format
   date (ISO 8601 format).
 * added_reldate [integer] - Include only alleles added within the specified 
   number of days.
-* added_on date] - Include only alleles added on specified date 
+* added_on date [date] - Include only alleles added on specified date 
   (ISO 8601 format).
 * updated_after [date] - Include only alleles last modified after (but not on)
   specified date (ISO 8601 format).
