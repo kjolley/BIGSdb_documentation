@@ -465,6 +465,12 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
+* include_records [1/0] - Include array of allele records rather than links.
+* extended [1/0] - Include extended attributes if defined (only if 
+  include_records is selected).
+* variation [1/0] - Include defined single amino-acid variant (SAV) and/or
+  single nucleotide variant (SNP) information if defined for the locus (only
+  if include_records is selected). 
 * added_after [date] - Include only alleles added after (but not on) specified
   date (ISO 8601 format).
 * added_reldate [integer] - Include only alleles added within the specified
@@ -486,8 +492,11 @@ https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles
 * records [integer] - Number of alleles.
 * last_updated [date] - Latest allele addition/modification date 
   (ISO 8601 format). 
-* alleles [array] - List of :ref:`URIs to defined allele records
-  <db_loci_locus_alleles_allele_id>`.  
+* alleles [array] - If include_records = 0 this is a list of 
+  :ref:`URIs to defined allele records
+  <db_loci_locus_alleles_allele_id>`. If include_records = 1 then this is
+  a list of allele objects (with values as used in 
+  :ref:`single allele records<db_loci_locus_alleles_allele_id>`).  
   Pages are 100 records by default.  Page size can be modified using the 
   page_size parameter.
 * paging [object] - Some or all of the following:
