@@ -465,12 +465,13 @@ GET /db/{database}/loci/{locus}/alleles - Retrieve list of alleles defined for a
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
-* include_records [1/0] - Include array of allele records rather than links.
-* extended [1/0] - Include extended attributes if defined (only if 
-  include_records is selected).
-* variation [1/0] - Include defined single amino-acid variant (SAV) and/or
-  single nucleotide variant (SNP) information if defined for the locus (only
-  if include_records is selected). 
+* include_records [integer] - Set to non-zero value to include array of allele
+  records rather than links.
+* extended [integer] - Set to non-zero value to include extended attributes if
+  defined (only if include_records is selected).
+* variation [integer] - Set to non-zero value to include defined single 
+  amino-acid variant (SAV) and/or single nucleotide variant (SNP) information 
+  if defined for the locus (only if include_records is selected). 
 * added_after [date] - Include only alleles added after (but not on) specified
   date (ISO 8601 format).
 * added_reldate [integer] - Include only alleles added within the specified
