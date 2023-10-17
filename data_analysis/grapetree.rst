@@ -1,3 +1,5 @@
+.. _grapetree:
+
 .. index::
    pair: GrapeTree; minimum-spanning trees
 
