@@ -32,15 +32,21 @@ select a scheme in the scheme selector, or choose from recommended schemes if
 these have been set, to include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
-colouring nodes - select any fields you wish to include. 
-Multiple selections can be made by holding down shift or ctrl while selecting. 
-Click 'Submit' to start the analysis.
+colouring nodes and for inclusion in the partition summary - select any fields 
+you wish to include. Multiple selections can be made by holding down shift or 
+ctrl while selecting. 
+
+You can also select any date field which will be used in cluster definitions to
+indicate the first and last dates of the cluster as well as its total duration.
+This should ideally represent the date of sampling.
 
 Finally, you can choose to use GrapeTree and HC methods for clustering and a
 comma-separated list of partitions defined by locus differences, e.g. '4,7,15'.
 Alternatively, you can choose to calculate and display 'stability regions' 
 which will include the first partition of each stability region (threshold 
 ranges in which cluster composition is similar).
+
+Click 'Submit' to start the analysis.
 
 .. image:: /images/data_analysis/reportree3.png
 
