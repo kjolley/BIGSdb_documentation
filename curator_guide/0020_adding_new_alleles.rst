@@ -115,7 +115,7 @@ sender from the dropdown box.
 
 Additionally, there are a number of options available.  Some of these will 
 ignore sequences if they don't match certain criteria - this is useful when 
-sequence data has been extracted from genomes automatically.  Available options
+sequence data has been extracted from genomes automatically. Available options
 are:
 
 * Ignore existing or duplicate sequences.
@@ -123,7 +123,10 @@ are:
 * Silently reject all sequences that are not complete reading frames - these 
   must have a start and in-frame stop codon at the ends and no internal stop 
   codons. Existing sequences are also ignored.
+* Silently reject sequences that fail similarity check.
 * Override sequence similarity check.
+* Silently reject sequences that fail length check.
+* Override sequence length check.
 
 .. image:: /images/curation/add_alleles5.png
 
