@@ -1133,6 +1133,7 @@ GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record
   * date_entered [string] - record creation date (ISO 8601 format)
   * datestamp [string] - last updated date (ISO 8601 format) 
    
+* aliases [array] - list of alternative names for isolate
 * publications [array] (seqdef databases) - list of PubMed id numbers of papers
   that refer to the isolate
 * sequence_bin [object] - consists of the following key/value pairs:
