@@ -984,6 +984,8 @@ POST /db/{database}/schemes/{scheme_id}/sequence - Query sequence to extract all
 **Optional parameters (JSON-encoded in POST body):**
 
 * details [true/false] - Return detailed exact match parameters
+* partial_matches [true/false] - Return details of partial matches if exact 
+  match is not found
 * base64 [true/false] - Sequence is a base64-encoded FASTA file
 
 **Response:** Object containing the following key/value pairs: 
