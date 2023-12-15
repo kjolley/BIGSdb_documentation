@@ -65,3 +65,4 @@ Installing these packages will enable extra functionality, but they are not requ
 * Muscle - sequence alignment used by some plugins.
 * Splitstree4 - used by GenomeComparator plugin.
 * PostGIS - needed for geographical mapping.
+* WeasyPrint - needed to generate PDF files in the Genome Reports plugin.
