@@ -432,6 +432,9 @@ any database in the past 6 months (the script will run at 6pm every Sunday). ::
  #Prevent prefs database getting too large
  00   18 *  *  0  postgres    psql -c "DELETE FROM guid WHERE last_accessed < NOW() - INTERVAL '6 months'" bigsdb_prefs
  
+.. index::
+   pair: log files; rotation  
+ 
 *****************
 Log file rotation
 *****************
@@ -658,3 +661,37 @@ virtual host directive in apache with the following configuration file: ::
    </VirtualHost>
 
 You should also set 'rest_behind_proxy=1' in bigsdb.conf. 
+
+.. index::
+   pair: database; logging 
+
+.. _database_logging:
+
+***********************************************
+Enabling database logging of web and API access
+***********************************************
+User access to both the web interface and API can be logged within the 
+bigsdb_auth and bigsdb_rest databases respectively. Each of these contains a 
+table called ``log`` in which the IP address, username, and page called are 
+recorded with a timestamp. To enable logging, you need to set the following in
+bigsdb.conf: ::
+
+ web_log_to_db=1
+ rest_log_to_db=1
+ 
+Logging requires writing to the database on each page access so there is a very
+small performance penalty to enabling this. The tables are however unlogged 
+(i.e. data are not written to the PosgreSQL write-ahead log) which makes them
+considerably faster than ordinary tables but data in them will be lost in the
+event of a database crash or unclean shutdown.
+
+As every page access is recorded the log tables will grow in size over time. It
+is recommended that they are pruned regularly to remove records older than a
+specified period of time - this may also be required by GDPR! The easiest way
+to do this is to set up a scheduled CRON job by adding the following to
+/etc/crontab: :: 
+
+ 0  *  *  *  *  postgres psql -c "DELETE FROM log WHERE timestamp < NOW() - INTERVAL '7 days'" bigsdb_rest > /dev/null
+ 10 *  *  *  *  postgres psql -c "DELETE FROM log WHERE timestamp < NOW() - INTERVAL '7 days'" bigsdb_auth > /dev/null
+
+ 
