@@ -11,7 +11,7 @@ Linux packages
 ==============
 * Apache2 web server with mod_perl2
 * PostgreSQL database 9.5+
-* Perl 5.10+
+* Perl 5.22+
 * BioPerl
 * BLAST+
 * EMBOSS
