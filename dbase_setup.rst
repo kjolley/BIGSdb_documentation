@@ -523,6 +523,16 @@ Any value set here can be overridden in a
     tables: either 'yes' or 'no', default 'no'. This setting can be overridden
     by individual user preferences. 
     
+* max_contigs
+
+  * Number of contigs above which genome submissions will be rejected. 
+    Default: 1000
+  
+* max_total_length
+
+  * Total length (bp) above which genome submissions will be rejected.
+    Default: 15000000
+    
 * Microreact  
 
   * Enable Microreact plugin: either 'yes' or 'no'. If no value is set 
@@ -553,6 +563,16 @@ Any value set here can be overridden in a
 
   * Overrides the field in which year is stored. Default: 'year'
     
+* min_n50
+
+  * Minimum N50 for genome submissions below which the submission will be
+     rejected. Default: 10000
+     
+* min_total_length
+
+  * Minimum total length (bp) for genome submissions below which the submission
+    will be rejected. Default: 1000000.
+
 * min_genome_size
 
   * Size in bp that is the minimum size of the sequence bin considered to
@@ -697,6 +717,11 @@ Any value set here can be overridden in a
 
   * Force the use of a specific set when accessing database via this XML
     configuration: Value is the name of the set. 
+    
+* show_classification_schemes
+
+  * Show similar isolates determined by classification schemes (if defined) on
+    an isolate record page. Set to either 'yes' or 'no', default 'yes'.
     
 * start_codons
 
