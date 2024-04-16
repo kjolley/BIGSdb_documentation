@@ -566,7 +566,7 @@ Any value set here can be overridden in a
 * min_n50
 
   * Minimum N50 for genome submissions below which the submission will be
-     rejected. Default: 10000
+    rejected. Default: 10000
      
 * min_total_length
 
@@ -721,6 +721,11 @@ Any value set here can be overridden in a
 * show_classification_schemes
 
   * Show similar isolates determined by classification schemes (if defined) on
+    an isolate record page. Set to either 'yes' or 'no', default 'yes'.
+    
+* show_lincode_matches
+
+  * Show similar isolates determined by LIN code prefixes (if defined) on
     an isolate record page. Set to either 'yes' or 'no', default 'yes'.
     
 * start_codons
