@@ -45,127 +45,141 @@ manager').
 
 A full list of options can be found by typing: ::
   
- autotag.pl --help
+   autotag.pl --help
 
- NAME
-     autotag.pl - BIGSdb automated allele tagger
-
- SYNOPSIS
-     autotag.pl --database NAME [options]
-
- OPTIONS
- -0, --missing
-     Marks missing loci as provisional allele 0. Sets default word size to 15.
-     
- --curator CURATOR ID
-     Curator id to use for updates. By default -1 is used - there should be an
-     autotagger account set with this id number.
-           
- -d, --database NAME
-     Database configuration name.
+   NAME
+       autotag.pl - BIGSdb automated allele tagger
+   
+   SYNOPSIS
+       autotag.pl --database NAME [options]
+   
+   OPTIONS   
+   --already_tagged, -T
+       Scan even when sequence tagged (no designation).
+       
+   --curator CURATOR ID
+       Curator id to use for updates. By default -1 is used - there should be an
+       autotagger account set with this id number.
+              
+   --database, -d NAME
+       Database configuration name.
+       
+   --exclude_isolates, -I LIST
+       Comma-separated list of isolate ids to ignore.
+       
+   --exclude_loci, -L LIST
+       Comma-separated list of loci to exclude
+       
+   --exclude_projects, -P LIST
+       Comma-separated list of projects whose isolates will be excluded.
+       
+   --exemplar, -e
+       Only use alleles with the 'exemplar' flag set in BLAST searches to identify
+       locus within genome. Specific allele is then identified using a database 
+       lookup. This may be quicker than using all alleles for the BLAST search, 
+       but will be at the expense of sensitivity. If no exemplar alleles are set 
+       for a locus then all alleles will be used. Sets default word size to 15.
+       
+   --fast, -f
+       Perform single BLAST query against all selected loci together. This will
+       take longer to return any results but the overall scan should finish 
+       quicker. This method will also use more memory - this can be used with
+       --exemplar to mitigate against this.
+   
+   --help, -h
+       This help page.
+   
+   --isolates, -i LIST  
+       Comma-separated list of isolate ids to scan (ignored if -p used).
+       
+   --isolate_list_file FILE  
+       File containing list of isolate ids (ignored if -i or -p used).
+              
+   --loci, -l LIST
+       Comma-separated list of loci to scan (ignored if -s used).
+       
+   --locus_regex -R REGEX
+       Regex for locus names.
     
- -e, --exemplar
-     Only use alleles with the 'exemplar' flag set in BLAST searches to identify
-     locus within genome. Specific allele is then identified using a database 
-     lookup. This may be quicker than using all alleles for the BLAST search, 
-     but will be at the expense of sensitivity. If no exemplar alleles are set 
-     for a locus then all alleles will be used. Sets default word size to 15.
+   --max, -y ID
+       Maximum isolate id.   
+   
+   --min, -x ID
+       Minimum isolate id.
+   
+   --min_size, -m SIZE
+       Minimum size of seqbin (bp) - limit search to isolates with at least this
+       much sequence.
+       
+   --missing, -0
+       Marks missing loci as provisional allele 0. Sets default word size to 15.
+       
+   --missing_alignment PERCENTAGE
+       Minimum alignment threshold to use when tagging missing loci (default 30)
+       
+   --missing_identity PERCENTAGE
+       Minimum identity threshold to use when tagging missing loci (default 50)  
+       
+   --new_max_alleles ALLELES
+       Set the maximum number of alleles that can be designated or sequences
+       tagged before an isolate is not considered new when using the --new_only
+       option.   
+              
+   --new_only, -n
+       New (previously untagged) isolates only.  Combine with --new_max_alleles
+       if required.  
+       
+   --only_already_tagged
+       Only check loci that already have a tag present (but no allele designation).
+       This must be combined with the --already_tagged option or no loci will
+       match. This option is used to perform a catch-up scan where a curator has
+       previously tagged sequence regions prior to alleles being defined, without
+       the need to scan all missing loci.
+       
+   --order, -o
+       Order so that isolates last tagged the longest time ago get scanned first.
+              
+   --projects, -p LIST
+       Comma-separated list of project isolates to scan.
+          
+   --quiet, -q
+       Only error messages displayed.
+       
+   --reuse_blast
+       Reuse the BLAST database for every isolate (when running --fast option). 
+       All loci will be scanned rather than just those missing from an isolate. 
+       Consequently, this may be slower if isolates have already been scanned, 
+       and for the first isolate scanned by a thread. On larger schemes, such as 
+       wgMLST, or when isolates have not been previously scanned, setting up the
+       BLAST database can take a significant amount of time, so this may be 
+       quicker. This option is always selected if --new_only is used.
+   
+   --schemes, -s LIST
+       Comma-separated list of scheme loci to scan.
+       
+   --seqbin_reldate DAYS
+       Filter to only include isolates for which the sequence bin was last
+       modified within the specified number of days (set 1 for today).
+       
+   --threads THREADS
+       Maximum number of threads to use.
+   
+   --time, -t MINS
+       Stop after t minutes.
+       
+   --type_alleles
+       Only use alleles with the 'type_allele' flag set to identify locus.
+       Note that this is only used when combined with the --missing (-0) flag.
+       You must have at least one allele defined as a type allele for a locus
+       if you use this option otherwise you will not find any matches!
+       
+   --view, -v VIEW
+       Isolate database view (overrides value set in config.xml).
+   
+   --word_size, -w SIZE
+       BLASTN word size.
+   
 
- -f --fast
-     Perform single BLAST query against all selected loci together. This will
-     take longer to return any results but the overall scan should finish 
-     quicker. This method will also use more memory - this can be used with
-     --exemplar to mitigate against this.
-
- -h, --help
-     This help page.
-
- -i, --isolates LIST  
-     Comma-separated list of isolate ids to scan (ignored if -p used).
-    
- --isolate_list_file FILE  
-     File containing list of isolate ids (ignored if -i or -p used).
-           
- -I, --exclude_isolates LIST
-     Comma-separated list of isolate ids to ignore.
-
- -l, --loci LIST
-     Comma-separated list of loci to scan (ignored if -s used).
-
- -L, --exclude_loci LIST
-     Comma-separated list of loci to exclude
-
- -m, --min_size SIZE
-     Minimum size of seqbin (bp) - limit search to isolates with at least this
-     much sequence.
-           
- -n, --new_only
-     New (previously untagged) isolates only.  Combine with --new_max_alleles
-     if required.
-    
- --new_max_alleles ALLELES
-     Set the maximum number of alleles that can be designated or sequences
-     tagged before an isolate is not considered new when using the --new_only
-     option.    
-
- -o, --order
-     Order so that isolates last tagged the longest time ago get scanned first
-     (ignored if -r used).
-    
- --only_already_tagged
-     Only check loci that already have a tag present (but no allele designation).
-     This must be combined with the --already_tagged option or no loci will
-     match. This option is used to perform a catch-up scan where a curator has
-     previously tagged sequence regions prior to alleles being defined, without
-     the need to scan all missing loci.
-           
- -p, --projects LIST
-     Comma-separated list of project isolates to scan.
-
- -P, --exclude_projects LIST
-     Comma-separated list of projects whose isolates will be excluded.
-        
- -q, --quiet
-     Only error messages displayed.
-
- -r, --random
-     Shuffle order of isolate ids to scan.
-     
- --reuse_blast
-     Reuse the BLAST database for every isolate (when running --fast option). 
-     All loci will be scanned rather than just those missing from an isolate. 
-     Consequently, this may be slower if isolates have already been scanned, 
-     and for the first isolate scanned by a thread. On larger schemes, such as 
-     wgMLST, or when isolates have not been previously scanned, setting up the
-     BLAST database can take a significant amount of time, so this may be 
-     quicker. This option is always selected if --new_only is used.
-
- -R, --locus_regex REGEX
-     Regex for locus names.
-
- -s, --schemes LIST
-     Comma-separated list of scheme loci to scan.
-
- -t, --time MINS
-     Stop after t minutes.
-
- --threads THREADS
-     Maximum number of threads to use.
-
- -T, --already_tagged
-     Scan even when sequence tagged (no designation).
-    
- -v, --view VIEW
-     Isolate database view (overrides value set in config.xml).
-
- -w, --word_size SIZE
-     BLASTN word size.
-
- -x, --min ID
-     Minimum isolate id.
-
- -y, --max ID
-     Maximum isolate id.
 
 .. _defining_exemplars:
 
@@ -268,123 +282,156 @@ manager').
 
 A full list of options can be found by typing: ::
 
- scannew.pl --help
+   scannew.pl --help
 
- NAME
-   scannew.pl - BIGSdb automated allele definer
-
- SYNOPSIS
-   scannew.pl --database NAME [options]
-
- OPTIONS
- -a, --assign
-     Assign new alleles in definitions database.
+   NAME
+       scannew.pl - BIGSdb automated allele definer
+   
+   SYNOPSIS
+       scannew.pl --database NAME [options]
+   
+   OPTIONS
+   --alignment, -A INT
+       Percentage alignment (default: 100).
+   
+   --allow_frameshift
+       Allow sequences to contain a frameshift so that the length is not a 
+       multiple of 3, or an internal stop codon. To be used with 
+       --coding_sequences option to allow automated curation of pseudogenes.
+       New alleles assigned will be flagged either 'frameshift' or 'internal stop
+       codon' if appropriate.  Essentially, combining these two options only 
+       checks that the sequence starts with a start codon and ends with a stop
+       codon.  
+   
+   --allow_subsequences
+       Allow definition of sub- or super-sequences. By default these will not
+       be assigned.  
       
- --allow_frameshift
-     Allow sequences to contain a frameshift so that the length is not a 
-     multiple of 3, or an internal stop codon. To be used with 
-     --coding_sequences option to allow automated curation of pseudogenes.
-     New alleles assigned will be flagged either 'frameshift' or 'internal stop
-     codon' if appropriate.  Essentially, combining these two options only 
-     checks that the sequence starts with a start codon and ends with a stop
-     codon. 
-     
- --allow_subsequences
-     Allow definition of sub- or super-sequences. By default these will not
-     be assigned. 
-
- -A, --alignment INT
-     Percentage alignment (default: 100).
-
- -B, --identity INT
-     Percentage identity (default: 99).
-
- -c, --coding_sequences
-     Only return complete coding sequences.
-     
- --curator CURATOR ID
-     Curator id to use for updates. By default -1 is used - there should be an
-     autodefiner account set with this id number.
-
- -d, --database NAME
-     Database configuration name.
-
- -h, --help
-     This help page.
-
- -i, --isolates LIST
-     Comma-separated list of isolate ids to scan (ignored if -p used).
-     
- --isolate_list_file FILE  
-     File containing list of isolate ids (ignored if -i or -p used).
-           
- -I, --exclude_isolates LIST
-     Comma-separated list of isolate ids to ignore.
-
- -l, --loci LIST
-     Comma-separated list of loci to scan (ignored if -s used).
-
- -L, --exclude_loci LIST
-     Comma-separated list of loci to exclude.
-
- -m, --min_size SIZE
-     Minimum size of seqbin (bp) - limit search to isolates with at least this
-     much sequence.
-           
- -n, --new_only
-     New (previously untagged) isolates only.
-
- -o, --order
-     Order so that isolates last tagged the longest time ago get scanned first
-     (ignored if -r used).
-           
- -p, --projects LIST
-     Comma-separated list of project isolates to scan.
-
- -P, --exclude_projects LIST
-     Comma-separated list of projects whose isolates will be excluded.
-     
- -q, --quiet
-     Only error messages displayed.
-           
- -r, --random
-     Shuffle order of isolate ids to scan.
-
- -R, --locus_regex REGEX
-     Regex for locus names.
-
- -s, --schemes LIST
-     Comma-separated list of scheme loci to scan.
-
- -t, --time MINS
-     Stop after t minutes.
-
- --threads THREADS
-     Maximum number of threads to use.
-     
- --type_alleles
-     Only use alleles with the 'type_allele' flag set to identify locus.
-     If a partial match is found then a full database lookup will be performed
-     to identify any known alleles. Using this option will constrain the search
-     space so that allele definitions don't become more variable over time. Note
-     that you must have at least one allele defined as a type allele for a locus
-     if you use this option otherwise you will not find any matches!
-
- -T, --already_tagged
-     Scan even when sequence tagged (no designation).
-     
- -v, --view VIEW
-     Isolate database view (overrides value set in config.xml).     
-
- -w, --word_size SIZE
-     BLASTN word size.
-
- -x, --min ID
-     Minimum isolate id.
-
- -y, --max ID
-     Maximum isolate id.
-     
+   --already_tagged, -T
+       Scan even when sequence tagged (no designation).    
+       
+   --assembly_checks
+       Only run against isolates that have passed all assembly checks.
+       
+   --assign, -a
+       Assign new alleles in definitions database.
+   
+   --coding_sequences, -c
+       Only return complete coding sequences.
+       
+   --curator CURATOR ID
+       Curator id to use for updates. By default -1 is used - there should be an
+       autodefiner account set with this id number.
+   
+   --database, -d NAME
+       Database configuration name.
+       
+   --exclude_isolates, -I LIST
+       Comma-separated list of isolate ids to ignore.
+       
+   --exclude_loci, -L LIST
+       Comma-separated list of loci to exclude.
+       
+   --exclude_projects, -P LIST
+       Comma-separated list of projects whose isolates will be excluded.
+       
+   --exemplar, -e
+       Only use alleles with the 'exemplar' flag set in BLAST searches to identify
+       locus within genome. Specific allele is then identified using a database 
+       lookup. This may be quicker than using all alleles for the BLAST search, 
+       but will be at the expense of sensitivity. If no exemplar alleles are set 
+       for a locus then all alleles will be used. Sets default word size to 15.
+   
+   --fast, -f
+       Perform single BLAST query against all selected loci together. This will
+       take longer to return any results but the overall scan should finish 
+       quicker. This method will also use more memory - this can be used with
+       --exemplar to mitigate against this.
+   
+   --help, -h
+       This help page.
+       
+   --identity, -B INT
+       Percentage identity (default: 99).
+      
+   --isolate_list_file FILE  
+       File containing list of isolate ids (ignored if -i or -p used).
+       
+   --isolates, -i LIST
+       Comma-separated list of isolate ids to scan (ignored if -p used).
+              
+   --loci, -l LIST
+       Comma-separated list of loci to scan (ignored if -s used).
+       
+   --locus_regex, -R REGEX
+       Regex for locus names.
+       
+   --max, -y ID
+       Maximum isolate id.
+       
+   --min, -x ID
+       Minimum isolate id.
+   
+   --min_size, -m SIZE
+       Minimum size of seqbin (bp) - limit search to isolates with at least this
+       much sequence.
+              
+   --new_only, -n
+       New (previously untagged) isolates only.
+       
+   --new_max_alleles ALLELES
+       Set the maximum number of alleles that can be designated or sequences
+       tagged before an isolate is not considered new when using the --new_only
+       option.
+       
+   --no_private
+       Do not include private isolate records in scan.
+   
+   --order, -o
+       Order so that isolates last tagged the longest time ago get scanned first.
+              
+   --projects, -p LIST
+       Comma-separated list of project isolates to scan.
+      
+   --quiet, -q
+       Only error messages displayed.
+                 
+   --reuse_blast
+       Reuse the BLAST database for every isolate (when running --fast option). 
+       All loci will be scanned rather than just those missing from an isolate. 
+       Consequently, this may be slower if isolates have already been scanned, 
+       and for the first isolate scanned by a thread. On larger schemes, such as 
+       wgMLST, or when isolates have not been previously scanned, setting up the
+       BLAST database can take a significant amount of time, so this may be 
+       quicker.
+   
+   --schemes, -s LIST
+       Comma-separated list of scheme loci to scan.
+       
+   --seqbin_reldate DAYS
+       Filter to only include isolates for which the sequence bin was last
+       modified within the specified number of days (set 1 for today).
+   
+   --time, -t MINS
+       Stop after t minutes.
+   
+   --threads THREADS
+       Maximum number of threads to use.
+       
+   --type_alleles
+       Only use alleles with the 'type_allele' flag set to identify locus.
+       If a partial match is found then a full database lookup will be performed
+       to identify any known alleles. Using this option will constrain the search
+       space so that allele definitions don't become more variable over time. Note
+       that you must have at least one allele defined as a type allele for a locus
+       if you use this option otherwise you will not find any matches!
+       
+   --view, -v VIEW
+       Isolate database view (overrides value set in config.xml).
+   
+   --word_size, -w SIZE
+       BLASTN word size.
+    
 .. _assembly_stats:
 
 .. index::
