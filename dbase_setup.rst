@@ -372,6 +372,24 @@ Any value set here can be overridden in a
 * disable_update_message
 
   * Message shown when updates are disabled.
+  
+* display_assembly_checks
+
+  * Add a column to the isolate table results to display the results of 
+    assembly checks (if set up). This can be overridden by user preferences.
+    Set 'yes' or 'no', default is 'no'.
+    
+* display_contig_count
+
+  * Add a column to the isolate table results to display the number of contigs
+    in the record's assembly. This can be overridden by user preferences.
+    Set 'yes' or 'no', default is 'no'.
+    
+* display_seqbin_size
+
+  * Add a column to the isolate table results to display the total length
+    of a record's assembly. This can be overridden by user preferences.
+    Set 'yes' or 'no', default is 'no'.
     
 * eav_fields
 

@@ -78,6 +78,8 @@ This tab allows the following options to be modified:
   with each isolate record.
 * Contig count - Displays the number of contigs associated with each isolate
   record.
+* Assembly checks - Displays whether assembly checks have passed for a genome
+  record.
 * Publications - Displays citations with links to PubMed for each record.
 
 .. index::
