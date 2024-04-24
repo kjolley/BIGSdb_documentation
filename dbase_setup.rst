@@ -517,6 +517,11 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
+* jobs_require_login
+
+  * Force users to log in to run offline jobs: either 'yes' or 'no'. This 
+    value overrides the value set in bigsdb.conf.
+    
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
@@ -1093,6 +1098,11 @@ Any value set here can be overridden in a
   * This is not enabled by default to discourage the practice of adding isolate
     information to allele definitions (this sort of information belongs in an
     isolate database).
+    
+* allele_downloads_require_login
+
+  * Force users to log in to download alleles via web interface: either 'yes'
+    or 'no'. This value overrides the value set in bigsdb.conf.
   
 * allele_flags
 
@@ -1212,6 +1222,11 @@ Any value set here can be overridden in a
   * Integer with number of offline jobs that can be queued or currently running
     for this database.
     
+* jobs_require_login
+
+  * Force users to log in to run offline jobs: either 'yes' or 'no'. This 
+    value overrides the value set in bigsdb.conf.
+    
 * kiosk
 
   * Set to a page name to restrict configuration to always start on this page, 
@@ -1254,6 +1269,11 @@ Any value set here can be overridden in a
 * kiosk_title
 
   * Title text to use when running in kiosk mode.
+  
+* profile_downloads_require_login
+
+  * Force users to log in to download profiles via web interface: either 'yes'
+    or 'no'. This value overrides the value set in bigsdb.conf.
     
 * profile_submissions
 
