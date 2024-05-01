@@ -1183,6 +1183,11 @@ Any value set here can be overridden in a
   * Prevent users or curators from downloading all alleles for a locus (admins
     always can). 'yes' or 'no', default 'no'.
     
+* disable_profile_downloads
+   
+  * Prevent users or curators from downloading all profiles for a scheme 
+    (admins always can). 'yes' or 'no', default 'no'.
+    
 * exemplars
 
   * Use exemplar sequences in the BLAST caches used for the sequence query
