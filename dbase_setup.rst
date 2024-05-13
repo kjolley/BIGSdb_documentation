@@ -266,14 +266,14 @@ Any value set here can be overridden in a
   
 * contig_analysis_limit
 
-  * Overrides the isolate number limit for the Contig Export plugin.  Default: '1000'.
+  * Overrides the isolate number limit for the Contig Export plugin. 
+    Default: '1000'.
   
 * ContigExport  
 
-  * Enable contig export plugin: either 'yes' or 'no'. If no value is set then 
-    the plugin will not be available unless the all_plugins attribute is set to 
-    'yes'. If the all_plugins attribute is set to 'yes', the contig export 
-    plugin can be disabled by setting this attribute to 'no'.
+  * Enable contig export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the contig export plugin can be disabled by 
+    setting this attribute to 'no'.
     
 * country_field
 
@@ -323,6 +323,12 @@ Any value set here can be overridden in a
   * Overrides the limit on number of submissions that can be made to the 
     database via the RESTful interface. This is useful to prevent flooding of
     the submission system by aberrant scripts. Default: '100'. 
+    
+* DatasetExport  
+
+  * Enable Export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'.     
     
 * default_access  
 
@@ -538,7 +544,13 @@ Any value set here can be overridden in a
   * Superscript the first letter of a locus name if it is immediately following
     by an underscore, e.g. f_abcZ would be displayed as fabcZ within the
     interface: must be either 'yes' or 'no', default 'no'. This can be used to
-    designate gene fragments (or any other meaning you like). 
+    designate gene fragments (or any other meaning you like).
+    
+* login_to_show_after_date
+
+  * Set a date (in yyyy-mm-dd format) that is the cut-off date for display or 
+    export of data if not logged in. If set, isolate display or export will 
+    only be available for records that were added on or before this date.
   
 * maindisplay_aliases   
 
@@ -726,6 +738,12 @@ Any value set here can be overridden in a
     the plugin to be active, a country field containing a defined list of 
     allowed values and an integer year field must be defined in the isolates 
     table.
+    
+* SequenceExport  
+
+  * Enable sequence export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the sequence export plugin can be disabled by 
+    setting this attribute to 'no'.
     
 * seq_export_limit
 
@@ -1195,6 +1213,12 @@ Any value set here can be overridden in a
     significantly. :ref:`Exemplar alleles<defining_exemplars>` *MUST* be 
     defined otherwise sequence queries will fail. 'yes' or 'no', default 'no'.
     
+* FastaExport  
+
+  * Enable Fasta Export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. 
+    
 * formatted_description
 
   * Markdown formatted description of database. If set, this will be used
@@ -1275,10 +1299,23 @@ Any value set here can be overridden in a
 
   * Title text to use when running in kiosk mode.
   
+* login_to_show_after_date
+
+  * Set a date (in yyyy-mm-dd format) that is the cut-off date for display or 
+    export of data if not logged in. If set, allele or profile display or 
+    export will only be available for records that were added on or before this
+    date.
+  
 * profile_downloads_require_login
 
   * Force users to log in to download profiles via web interface: either 'yes'
     or 'no'. This value overrides the value set in bigsdb.conf.
+    
+* ProfileExport  
+
+  * Enable Profile Export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. 
     
 * profile_submissions
 
@@ -1334,6 +1371,12 @@ Any value set here can be overridden in a
 
   * Overrides the sequence export limit (records x loci) in the Sequence
     Export plugin.  Default: '1000000'.
+    
+* SequenceExport  
+
+  * Enable sequence export plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the sequence export plugin can be disabled by 
+    setting this attribute to 'no'.
     
 * sets
 
