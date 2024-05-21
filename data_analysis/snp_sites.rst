@@ -40,7 +40,9 @@ schemes.
 Click submit.  The job will be submitted to the queue and will start running 
 shortly.
 
-Output consists of zip files containing FASTA alignments and VCF files for 
-each locus.
+Output consists of a summary file showing the number of sequences found in the
+dataset, the number of unique alleles, and the number of SNPs for each locus.
+An interactive chart is also displayed showing these values. Zip files are also
+produced that contain FASTA alignments and VCF files for each locus.
 
 .. image:: /images/data_analysis/snp_sites3.png
