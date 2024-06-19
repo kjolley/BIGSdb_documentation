@@ -42,7 +42,7 @@ shortly.
 
 Output consists of a summary file showing the number of sequences found in the
 dataset, the number of unique alleles, and the number of SNPs for each locus.
-An interactive chart is also displayed showing these values. Zip files are also
-produced that contain FASTA alignments and VCF files for each locus.
+An interactive chart is also displayed showing these values. Finally, Zip files
+are produced that contain FASTA alignments and VCF files for each locus.
 
 .. image:: /images/data_analysis/snp_sites3.png
