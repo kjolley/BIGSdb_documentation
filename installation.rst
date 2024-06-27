@@ -694,4 +694,37 @@ to do this is to set up a scheduled CRON job by adding the following to
  0  *  *  *  *  postgres psql -c "DELETE FROM log WHERE timestamp < NOW() - INTERVAL '7 days'" bigsdb_rest > /dev/null
  10 *  *  *  *  postgres psql -c "DELETE FROM log WHERE timestamp < NOW() - INTERVAL '7 days'" bigsdb_auth > /dev/null
 
+
+**************************
+Enabling isolate embargoes
+**************************
+You can enable isolate embargoes by setting the appropriate attributes in bigsdb.conf e.g. ::
+  
+ ###ISOLATE EMBARGOES########
+ #Set to enable isolate embargoes and limit the time allowed. These can be 
+ #overridden in individual isolate database config files.
+ #Values are in months.
+ embargo_enabled=1
+ default_embargo=12
+ max_initial_embargo=24
+ max_embargo=48
  
+Note that these values can be overridden for individual databases in the 
+database config.xml file, e.g. ::
+
+ embargo_enabled="yes"
+ default_embargo="6"
+ max_initial_embargo="12"
+ max_embargo="48"
+
+Users will then be offered the option of embargoing their isolate submissions
+for a selectable period up to the value set in max_initial_embargo. Isolates 
+will automatically be made private on upload - they will be visible to them 
+and to curators, and can be shared by adding them to a shared user project.
+
+The check_embargoes.pl script (found in scripts/maintenance) should be run
+once a day to automatically publish any isolate that reaches its embargo date.
+Add it to /etc/crontab, e.g. ::
+
+ 00 1  *  *  *  bigsdb   /usr/local/bin/check_embargoes.pl
+

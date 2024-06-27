@@ -340,6 +340,12 @@ Any value set here can be overridden in a
     in the configuration directory.  See
     :ref:`default access <default_access>`.
     
+* default_embargo
+
+  * Overrides the value set in bigsdb.conf. This is the default embargo period
+    that can be requested when submitting new isolate records. Values are in 
+    months and should be positive integers.
+    
 * default_private_records
 
   * The default number of private isolate records that a user can upload. The
@@ -414,6 +420,10 @@ Any value set here can be overridden in a
     icon to appear by following the name with a pipe symbol (|) and an icon 
     class from the FontAwesome library, e.g. 
     'Vaccine reactivity|fas fa-syringe,Risk factors|fas fa-smoking'.
+    
+* embargo_enabled
+
+  * Overrides the value set in bigsdb.conf. Set to either 'yes' or 'no'.
 
 * export_limit
 
@@ -562,6 +572,18 @@ Any value set here can be overridden in a
 
   * Number of contigs above which genome submissions will be rejected. 
     Default: 1000
+    
+* max_embargo
+
+  * Overrides the value set in bigsdb.conf. This is the maximum embargo period
+    that can be set by a curator on existing isolate records. Values are in 
+    months and should be positive integers.
+    
+* max_initital_embargo
+
+  * Overrides the value set in bigsdb.conf. This is the maximum embargo period
+    that can be requested when submitting new isolate records. Values are in 
+    months and should be positive integers.
   
 * max_total_length
 
