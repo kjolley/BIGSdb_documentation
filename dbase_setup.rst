@@ -1081,7 +1081,21 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * web	
 
   * URL that will be used to hyperlink field values. If [?] is included in the
-    URL, this will be substituted for the actual field value.	
+    URL, this will be substituted for the actual field value. If web_regex 
+    attribute is set then this will be used in preference, but will fall back
+    to this as the default value if the regex does not match.
+    
+* web_regex
+
+  * List of regular expressions each linked to a URL so that links can vary
+    depending on the value of the field. If [?] is included in the
+    URL, this will be substituted for the actual field value. The format is
+    a semi-colon (;) separated list that consists of the regular expression 
+    followed by a | and then the URL. If the value does not match any of the
+    regular expressions, it will fall back to using the web attribute if set,
+    e.g. ::
+    
+      web_regex="^SAM|https://www.ebi.ac.uk/ena/browser/view/[?]?dataType=BIOSAMPLE;^[EDS]RS|https://www.ebi.ac.uk/ena/browser/view/[?]?dataType=SAMPLE" web="https://www.ebi.ac.uk/ena/browser/view/[?]"
  
 Special values
 --------------
