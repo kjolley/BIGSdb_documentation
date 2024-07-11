@@ -751,6 +751,12 @@ Any value set here can be overridden in a
     specific configurations by populating the curator_configs table. This also
     affects whether they are notified of submissions.
     
+* seqbin_downloads_require_login
+
+  * Force users to log in to download sequence bin FASTA and EMBL files via web
+    interface: either 'yes' or 'no'. This value overrides the value set in 
+    bigsdb.conf.
+    
 * SeqbinBreakdown  
 
   * Enable Sequence bin breakdown plugin: either 'yes' or 'no'. If no value 
