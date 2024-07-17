@@ -1074,6 +1074,11 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
   * Optional string to place between field prefix value and field value if the
     prefixes attribute is defined.
     
+* sort
+
+  * Sets if optlist should be sorted. Allowed values are 'yes' and 'no'.
+    Default is 'no'.
+    
 * suffix
 
   * Optional string that is displayed after value in isolate information page
