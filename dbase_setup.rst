@@ -1036,7 +1036,12 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * optlist   
 
   * Sets if this field has a list of allowed values, default 'no'. Surround
-    each option with an <option> tag. 
+    each option with an <option> tag.
+    
+* placeholder
+
+  * Placeholder text that will appear in search form when empty. This can be 
+    used to provide an example value. 
     
 * prefixes
 
