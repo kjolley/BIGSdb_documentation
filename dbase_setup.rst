@@ -1539,6 +1539,10 @@ called **field.overrides**. The field.overrides file uses the format
 'field:attribute="value"' on each line, e.g. ::
 
    date_received:required="yes"
+   
+You can also override optlist values by provides a '|' separated list, e.g. ::
+
+   species:optlist_values="Staphylococcus aureus|Staphylococcus argenteus"
 
 .. _field_validation_rules:
 
