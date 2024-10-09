@@ -1439,6 +1439,16 @@ Any value set here can be overridden in a
   * Force the use of a specific set when accessing database via this XML
     configuration: Value is the name of the set.
     
+* show_classification_schemes
+
+  * Show similar isolates determined by classification schemes (if defined) on
+    a sequence query page. Set to either 'yes' or 'no', default 'yes'.
+    
+* show_lincode_matches
+
+  * Show similar isolates determined by LIN code prefixes (if defined) on
+    a sequence query page. Set to either 'yes' or 'no', default 'yes'.
+    
 * start_codons
 
   * Semi-colon separated list of start codons to allow. Note that this list
