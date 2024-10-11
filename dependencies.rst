@@ -53,6 +53,7 @@ These are included with most Linux distributions.
 * `Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_ - Required for multi-threading tools and plugins.
 * `PDL <https://metacpan.org/pod/PDL>`_ - Required for LINcode calculations.
 * `Template <https://metacpan.org/release/ABW/Template-Toolkit-2.00-beta4>`_ - Required for formatting analysis results.
+* `Text::CSV <https://metacpan.org/pod/Text::CSV>`_ - Used for parsing of TSV files.
 * `Time::Duration <https://metacpan.org/pod/Time::Duration>`_ - Used by Job Viewer to display elapsed time in rounded units.
 * `TOML <https://metacpan.org/pod/TOML>`_ - Used to define dashboard layouts.
 * `Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_
