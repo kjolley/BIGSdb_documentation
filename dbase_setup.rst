@@ -1331,10 +1331,6 @@ Any value set here can be overridden in a
   * Restrict sequence query to a specific locus or scheme. Use either the locus
     primary name or 'SCHEME_X' where X is the scheme number.
 
-* kiosk_no_genbank
-
-  * Set to "yes" to hide the Genbank accesssion form element in kiosk mode.
-
 * kiosk_no_upload
 
   * Set to "yes" to hide the sequence file upload in kiosk mode.
