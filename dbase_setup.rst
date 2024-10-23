@@ -1438,12 +1438,14 @@ Any value set here can be overridden in a
 * show_classification_schemes
 
   * Show similar isolates determined by classification schemes (if defined) on
-    a sequence query page. Set to either 'yes' or 'no', default 'yes'.
+    a sequence query or profile info page. Set to either 'yes' or 'no', default
+    'yes'.
     
 * show_lincode_matches
 
   * Show similar isolates determined by LIN code prefixes (if defined) on
-    a sequence query page. Set to either 'yes' or 'no', default 'yes'.
+    a sequence query or profile info page. Set to either 'yes' or 'no', default
+    'yes'.
     
 * start_codons
 
