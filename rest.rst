@@ -2142,6 +2142,10 @@ and sign requests.
    There are Python and Perl example scripts available at 
    https://github.com/kjolley/BIGSdb/tree/develop/scripts/rest_examples to
    demonstrate and test OAuth authentication. 
+   
+   There is also the BIGSdb Downloader script at 
+   https://github.com/kjolley/BIGSdb_downloader which can be used in place of
+   wget or curl to seamlessly handle the OAuth authentication.
 
 .. _get_consumer_key:
 
