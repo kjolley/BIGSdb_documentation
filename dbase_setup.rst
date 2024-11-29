@@ -1726,6 +1726,55 @@ Field options are:
     not set they will appear alphabetically.
     
 .. index::
+   single: analysis fields
+
+.. _analysis_fields:
+
+***************
+Analysis fields
+***************
+BIGSdb can store the results of arbitrary analyses as JSON within the
+analysis_results table without requiring any understanding of what the data
+represent. Information from this can be extracted and formatted within an 
+isolate information page using template files stored in /etc/bigsdb/templates
+or in /etc/bigsdb/dbases/{dbase_config}/templates. This is used by the 
+:ref:`rMLST species id <rmlst>`  and :ref:`Kleborate <kleborate>` plugins to store
+their results and make them available to everyone once these analyses have been
+run by anyone, or by an offline script.
+
+It also possible to register specific fields from this output and make them 
+available for searching, analysis (currently only in 
+:ref:`GrapeTree <grapetree>`), and export. To do this, you need to be able to
+describe the location of the field in question within the JSON field. This can
+be done using `JSONPath <https://en.wikipedia.org/wiki/JSONPath>`_, e.g. a
+field called 'predicted_serotype' at the top-level within the JSON hierarchy
+can be described with a JSONPath of '$.predicted_serotype'.
+
+Admins can add fields by expanding the 'Fields' selection in the admin 
+interface and clicking the 'Add' link for 'Analysis fields':
+
+.. image:: /images/dbase_setup/analysis_fields1.png
+
+Enter the analysis tool name, which  must match the value used within the 
+analysis_results table, the name of the field, and its JSONPath. You also
+need to indicate the data type (intger, text, float, or date). Optionally
+you can set the analysis_display_name to change how it is listed within the
+query and analysis interfaces.
+
+.. image:: /images/dbase_setup/analysis_fields2.png
+
+This will now be searchable within the isolate query interface. First you will
+need to select the 'Analysis results' form elements from the 'Modify form' tab.
+
+.. image:: /images/dbase_setup/analysis_fields3.png
+
+Then select the field and the value to search on.
+
+.. image:: /images/dbase_setup/analysis_fields4.png
+
+
+    
+.. index::
    single: kiosk mode    
 
 .. _kiosk_mode:
@@ -1750,8 +1799,7 @@ in, but this tool offers a restricted functionality without logging in. ::
    kiosk_locus="SCHEME_1"
    kiosk_simple="yes"
    kiosk_no_upload="no"
-   kiosk_no_genbank="no"
-   rest_kiosk="sequenceQuery"
+    rest_kiosk="sequenceQuery"
    
 When you go to this `example kiosk page
 <https://pubmlst.org/bigsdb?db=pubmlst_rmlst_seqdef_kiosk>`_ you see only the 
