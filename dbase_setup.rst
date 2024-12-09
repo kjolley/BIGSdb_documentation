@@ -1757,7 +1757,7 @@ interface and clicking the 'Add' link for 'Analysis fields':
 
 Enter the analysis tool name, which  must match the value used within the 
 analysis_results table, the name of the field, and its JSONPath. You also
-need to indicate the data type (intger, text, float, or date). Optionally
+need to indicate the data type (integer, text, float, or date). Optionally
 you can set the analysis_display_name to change how it is listed within the
 query and analysis interfaces.
 
