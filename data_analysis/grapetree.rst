@@ -39,9 +39,16 @@ scheme selector, or choose from recommended schemes if these have been set, to
 include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
-colouring nodes - select any fields you wish to include. Multiple selections
-can be made by holding down shift or ctrl while selecting. Click 'Submit' to 
-start the analysis.
+colouring nodes - select any fields you wish to include. Finally you can choose
+the analysis method from the following:
+
+ * MSTreeV2 - Improved minimum-spanning tree that better handles missing data
+   (default)
+ * MSTree - Classical minimum-spanning tree similar to PhyloViz
+ * NJ - FastME V2 Neighbour-joining tree
+ * RapidNJ - RapidNJ Neighbour-joining tree for very large datasets
+
+Click 'Submit' to start the analysis.
 
 .. image:: /images/data_analysis/grapetree3.png
 
