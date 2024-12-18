@@ -1541,6 +1541,27 @@ key value pairs separated by = with the values quoted, e.g. ::
    read_access="authenticated_users"
    description="Private view of database"
    
+You can also override these values for specific users or usergroups. This is 
+useful if you wish to set different limits for plugins for different groups
+of users. To do this, create a section in square brackets containing either 
+`user:<username>` or `usergroup:<group name>`, e.g. :: 
+
+   view="private"
+   read_access="authenticated_users"
+   description="Private view of database"
+   
+   [user:keith]
+   genome_comparator_limit=3000
+   
+   [usergroup:Power users]
+   grapetree_limit=20000
+   
+.. note:: 
+
+   A few attributes in the config.xml file, specifically database connection 
+   details, are used before a user authenticates. These attributes cannot be 
+   overridden on a per user basis.
+   
 It is also possible to override the allow_submissions, required, maindisplay, 
 default, hide, or curate_only attributes of a particular field using a file 
 called **field.overrides**. The field.overrides file uses the format 
