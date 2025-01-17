@@ -2155,10 +2155,12 @@ and sign requests.
 Developer sign up to get a consumer key
 =======================================
 Application developers should apply to the site administrator of the site 
-running BIGSdb.  The administrator can 
+running BIGSdb. The administrator can 
 :ref:`generate a key and secret<create_client_credentials>` using a script - 
 both of these will need to be used by the application to sign
-requests.
+requests. Note that end users can also now request a personal key/secret 
+directly from the user profile page if this is enabled on the site and 
+site-wide accounts are in use, e.g. https://pubmlst.org/bigsdb for PubMLST.org.
 
 The client id is usually a 24 character alphanumeric string.  The secret is
 usually a 42 character alphanumeric (including punctuation) string, e.g.
