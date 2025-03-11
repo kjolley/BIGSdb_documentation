@@ -538,6 +538,19 @@ Any value set here can be overridden in a
   * Force users to log in to run offline jobs: either 'yes' or 'no'. This 
     value overrides the value set in bigsdb.conf.
     
+* Kleborate
+
+  * Enable Kleborate plugin: either 'yes' or 'no'. If no value is set 
+    then the plugin will not be available even if the all_plugins attribute is 
+    set to 'yes'. Make sure that kleborate_path is set in bigsdb.conf.
+    
+* kleborate_preset
+
+  * Select the preset modules to use (if Kleborate v3 is used). Available 
+    options are kpsc (for Klebsiella pneumoniae species complex), kosc 
+    (for Klebsiella oxytoca species complex), and escherichia (for Escherichia
+    coli). Default is kpsc.
+    
 * labelfield   
 
   * Field that is used to describe record in isolate info page, default
