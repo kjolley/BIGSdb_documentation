@@ -7,7 +7,7 @@ In silico PCR
 This is a tool that can be used to simulate PCR reactions run against genomes
 stored in the database. This is useful for designing and testing primers. The
 plugin uses the `exonerate ipcress
-<https://www.ebi.ac.uk/about/vertebrate-genomics/software/ipcress-manual>`_ 
+<https://www.animalgenome.org/bioinfo/resources/manuals/exonerate/>`_ 
 program to perform its simulation.
 
 The tool can be accessed by selecting the 'Analysis' section on the main 
