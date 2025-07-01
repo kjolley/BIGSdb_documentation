@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../dependencies.rst:3
+msgid "BIGSdb dependencies"
+msgstr ""
+
+#: ../dependencies.rst:7
+msgid "Required packages"
+msgstr ""
+
+#: ../dependencies.rst:8
+msgid "BIGSdb requires a number of software components to be installed:"
+msgstr ""
+
+#: ../dependencies.rst:11
+msgid "Linux packages"
+msgstr ""
+
+#: ../dependencies.rst:12
+msgid "Apache2 web server with mod_perl2"
+msgstr ""
+
+#: ../dependencies.rst:13
+msgid "PostgreSQL database 9.5+"
+msgstr ""
+
+#: ../dependencies.rst:14
+msgid "Perl 5.10+"
+msgstr ""
+
+#: ../dependencies.rst:15
+msgid "BioPerl"
+msgstr ""
+
+#: ../dependencies.rst:16
+msgid "BLAST+"
+msgstr ""
+
+#: ../dependencies.rst:17
+msgid "EMBOSS"
+msgstr ""
+
+#: ../dependencies.rst:19
+msgid "infoalign - use to extract alignment stats in Genome Comparator."
+msgstr ""
+
+#: ../dependencies.rst:20
+msgid "sixpack - used to translate sequences in multiple reading frames."
+msgstr ""
+
+#: ../dependencies.rst:21
+msgid "stretcher - used for sequence alignment in allele query."
+msgstr ""
+
+#: ../dependencies.rst:23
+msgid ""
+"Ipcress - part of exonerate package - used to simulate PCR reactions "
+"which can be used to filter the genome to predicted amplification "
+"products."
+msgstr ""
+
+#: ../dependencies.rst:24
+msgid ""
+"Xvfb - X virtual framebuffer - needed to support SplitsTree in command "
+"line mode as used in Genome Comparator."
+msgstr ""
+
+#: ../dependencies.rst:27
+msgid "Perl modules"
+msgstr ""
+
+#: ../dependencies.rst:28
+msgid "These are included with most Linux distributions."
+msgstr ""
+
+#: ../dependencies.rst:30
+msgid ""
+"`Archive::Zip <https://metacpan.org/pod/Archive::Zip>`_ - Used to upload "
+"to iTOL."
+msgstr ""
+
+#: ../dependencies.rst:31
+msgid ""
+"`Bio::Biblio <https://metacpan.org/pod/Bio::Biblio>`_ - This used to be "
+"part of BioPerl but will need to be installed separately if using BioPerl"
+" 1.6.920 or later."
+msgstr ""
+
+#: ../dependencies.rst:32
+msgid ""
+"`CGI <https://metacpan.org/pod/CGI>`_ (version 4.04+) - Common Gateway "
+"Interface requests and responses (used to be a core module but recently "
+"removed)."
+msgstr ""
+
+#: ../dependencies.rst:33
+msgid ""
+"`Config::Tiny <https://metacpan.org/pod/Config::Tiny>`_ - Configuration "
+"file handling."
+msgstr ""
+
+#: ../dependencies.rst:34
+msgid ""
+"`Crypt::Eksblowfish::Bcrypt "
+"<https://metacpan.org/pod/Crypt::Eksblowfish::Bcrypt>`_ - Used for "
+"password hashing."
+msgstr ""
+
+#: ../dependencies.rst:35
+msgid "`Data::Random <https://metacpan.org/pod/Data::Random>`_"
+msgstr ""
+
+#: ../dependencies.rst:36
+msgid ""
+"`Data::UUID <https://metacpan.org/pod/Data::UUID>`_ - Globally unique "
+"identifer handling for preference storage."
+msgstr ""
+
+#: ../dependencies.rst:37
+msgid ""
+"`DBD::Pg <https://metacpan.org/pod/DBD::Pg>`_ - PostgreSQL database "
+"driver for DBI."
+msgstr ""
+
+#: ../dependencies.rst:38
+msgid ""
+"`DBI <https://metacpan.org/pod/DBI>`_ - Database independent interface - "
+"module used to interact with databases."
+msgstr ""
+
+#: ../dependencies.rst:39
+msgid ""
+"`Email::MIME <https://metacpan.org/pod/Email::MIME>`_ - Used to format "
+"E-mail messages."
+msgstr ""
+
+#: ../dependencies.rst:40
+msgid ""
+"`Email::Sender <https://metacpan.org/pod/Email::Sender>`_ - Used to send "
+"E-mail messages by submission system."
+msgstr ""
+
+#: ../dependencies.rst:41
+msgid ""
+"`Email::Valid <https://metacpan.org/pod/Email::Valid>`_ - Used to "
+"validate E-mails sent by job manager."
+msgstr ""
+
+#: ../dependencies.rst:42
+msgid ""
+"`Excel::Writer::XLSX <https://metacpan.org/pod/Excel::Writer::XLSX>`_ - "
+"Used to export data in Excel format."
+msgstr ""
+
+#: ../dependencies.rst:43
+msgid ""
+"`Exception::Class <https://metacpan.org/pod/Exception::Class>`_ - "
+"Exception handing."
+msgstr ""
+
+#: ../dependencies.rst:44
+msgid "`File::Map <https://metacpan.org/pod/File::Map>`_"
+msgstr ""
+
+#: ../dependencies.rst:45
+msgid ""
+"`File::Type <https://metacpan.org/pod/File::Type>`_ - Used to determine "
+"what type of file has been uploaded."
+msgstr ""
+
+#: ../dependencies.rst:46
+msgid "`IO::String <https://metacpan.org/pod/IO::String>`_"
+msgstr ""
+
+#: ../dependencies.rst:47
+msgid "`JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data."
+msgstr ""
+
+#: ../dependencies.rst:48
+msgid ""
+"`List::MoreUtils <https://metacpan.org/pod/List::MoreUtils>`_ (version "
+"0.28+)."
+msgstr ""
+
+#: ../dependencies.rst:49
+msgid ""
+"`Log::Dispatch::File <https://metacpan.org/pod/Log::Dispatch::File>`_ - "
+"Object for logging to file."
+msgstr ""
+
+#: ../dependencies.rst:50
+msgid ""
+"`Log::Log4perl <https://metacpan.org/pod/Log::Log4perl>`_ - Configurable "
+"status and error logging."
+msgstr ""
+
+#: ../dependencies.rst:51
+msgid ""
+"`LWP::UserAgent <https://metacpan.org/pod/LWP::UserAgent>`_ - Used to "
+"upload via API"
+msgstr ""
+
+#: ../dependencies.rst:52
+msgid ""
+"`Net::Oauth <https://metacpan.org/pod/Net::OAuth>`_ - Required for REST "
+"authentication (this needs to be installed even if you are not using "
+"REST)."
+msgstr ""
+
+#: ../dependencies.rst:53
+msgid ""
+"`Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_"
+" - Required for multi-threading tools and plugins."
+msgstr ""
+
+#: ../dependencies.rst:54
+msgid "`PDL <https://metacpan.org/pod/PDL>`_ - Required for LINcode calculations."
+msgstr ""
+
+#: ../dependencies.rst:55
+msgid ""
+"`Template <https://metacpan.org/release/ABW/Template-"
+"Toolkit-2.00-beta4>`_ - Required for formatting analysis results."
+msgstr ""
+
+#: ../dependencies.rst:56
+msgid ""
+"`Text::CSV <https://metacpan.org/pod/Text::CSV>`_ - Used for parsing of "
+"TSV files."
+msgstr ""
+
+#: ../dependencies.rst:57
+msgid ""
+"`Time::Duration <https://metacpan.org/pod/Time::Duration>`_ - Used by Job"
+" Viewer to display elapsed time in rounded units."
+msgstr ""
+
+#: ../dependencies.rst:58
+msgid ""
+"`TOML <https://metacpan.org/pod/TOML>`_ - Used to define dashboard "
+"layouts."
+msgstr ""
+
+#: ../dependencies.rst:59
+msgid "`Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_"
+msgstr ""
+
+#: ../dependencies.rst:60
+msgid ""
+"`XML::Parser::PerlSAX <https://metacpan.org/pod/XML::Parser::PerlSAX>`_ -"
+" part of libxml-perl - Used to parse XML configuration files."
+msgstr ""
+
+#: ../dependencies.rst:63
+msgid "Optional packages"
+msgstr ""
+
+#: ../dependencies.rst:64
+msgid ""
+"Installing these packages will enable extra functionality, but they are "
+"not required by the core BIGSdb package."
+msgstr ""
+
+#: ../dependencies.rst:66
+msgid "MAFFT 6.8+ - sequence alignment used by some plugins."
+msgstr ""
+
+#: ../dependencies.rst:67
+msgid "Muscle - sequence alignment used by some plugins."
+msgstr ""
+
+#: ../dependencies.rst:68
+msgid "Splitstree4 - used by GenomeComparator plugin."
+msgstr ""
+
+#: ../dependencies.rst:69
+msgid "PostGIS - needed for geographical mapping."
+msgstr ""
+
+#: ../dependencies.rst:70
+msgid "WeasyPrint - needed to generate PDF files in the Genome Reports plugin."
+msgstr ""
+

@@ -1,0 +1,2135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis.rst:3
+msgid "Data analysis plugins"
+msgstr ""
+
+#: ../data_analysis/blast.rst:6
+msgid "BLAST"
+msgstr ""
+
+#: ../data_analysis/blast.rst:7
+msgid ""
+"The BLAST plugin enables you to BLAST a sequence against any of the "
+"genomes in the database, displaying a table of matches and extracting "
+"matching sequences."
+msgstr ""
+
+#: ../data_analysis/blast.rst:10 ../data_analysis/codon_usage.rst:12
+#: ../data_analysis/field_breakdown.rst:10
+#: ../data_analysis/gene_presence.rst:17 ../data_analysis/kleborate.rst:32
+#: ../data_analysis/seqbin_breakdown.rst:11 ../data_analysis/snp_sites.rst:18
+#: ../data_analysis/unique_combinations.rst:11
+msgid ""
+"The function can be accessed by selecting the 'Analysis' section on the "
+"main contents page."
+msgstr ""
+
+#: ../data_analysis/blast.rst:15
+msgid ""
+"Jump to the 'Analysis' category, follow the link to BLAST, then click "
+"'Launch BLAST'."
+msgstr ""
+
+#: ../data_analysis/blast.rst:20
+msgid ""
+"Alternatively,it can be accessed following a query by clicking the "
+"'BLAST' button in the Analysis list at the bottom of the results table.  "
+"Please note that the list of functions here may vary depending on the "
+"setup of the database."
+msgstr ""
+
+#: ../data_analysis/blast.rst:27
+msgid ""
+"Select the isolate records to analyse (on large databases you will need "
+"to enter a list of ids). These will be pre-selected if you accessed the "
+"plugin following a query. Paste in a sequence to query - this be either a"
+" DNA or peptide sequence."
+msgstr ""
+
+#: ../data_analysis/blast.rst:34
+msgid ""
+"Click submit. If you are querying against 10 or fewer genomes then the "
+"results are run immediately, otherwise the job is sent to the job queue."
+msgstr ""
+
+#: ../data_analysis/blast.rst:37
+msgid "A table of BLAST results will be displayed."
+msgstr ""
+
+#: ../data_analysis/blast.rst:41
+msgid "Clicking any of the 'extract' buttons to display the matched sequence."
+msgstr ""
+
+#: ../data_analysis/blast.rst:45
+msgid ""
+"The extracted sequence is shown along with a translated sequence and "
+"flanking sequences."
+msgstr ""
+
+#: ../data_analysis/blast.rst:50
+msgid ""
+"At the bottom of the results table are links to export the matching "
+"sequences in FASTA format, (optionall) including flanking sequnces.  You "
+"can also export the table in tab-delimited text or Excel formats."
+msgstr ""
+
+#: ../data_analysis/blast.rst:57
+msgid "Include in results table fieldset"
+msgstr ""
+
+#: ../data_analysis/blast.rst:58
+msgid ""
+"This selection box allows you to choose which isolate provenance fields "
+"will be included in the results table."
+msgstr ""
+
+#: ../data_analysis/blast.rst:63 ../data_analysis/genome_comparator.rst:85
+msgid "Multiple values can be selected by clicking while holding down Ctrl."
+msgstr ""
+
+#: ../data_analysis/blast.rst:66
+msgid "Parameters fieldset"
+msgstr ""
+
+#: ../data_analysis/blast.rst:67 ../data_analysis/genome_comparator.rst:108
+msgid ""
+"This section allows you to modify BLAST parameters.  This affects "
+"sensitivity and speed."
+msgstr ""
+
+#: ../data_analysis/blast.rst:72
+msgid ""
+"BLASTN word size - This is the length of the initial identical match that"
+" BLAST requires before extending a match (default: 11). Increasing this "
+"value improves speed at the expense of sensitivity."
+msgstr ""
+
+#: ../data_analysis/blast.rst:75
+msgid ""
+"BLASTN scoring - This is a dropdown box of combinations of identical base"
+" rewards; mismatch penalties; and gap open and extension penalties.  "
+"BLASTN has a constrained list of allowed values which reflects the "
+"available options in the list."
+msgstr ""
+
+#: ../data_analysis/blast.rst:79
+msgid ""
+"Hits per isolate - By default, only the best match is shown.  Increase "
+"this value to the number of hits you'd like to see per isolate."
+msgstr ""
+
+#: ../data_analysis/blast.rst:81
+msgid ""
+"Flanking length - Set the size of the upstream and downstream flanking "
+"sequences that you'd like to include."
+msgstr ""
+
+#: ../data_analysis/blast.rst:83
+msgid ""
+"Use TBLASTX - This compares the six-frame translation of your nucleotide "
+"query sequence against the six-frame translation of the contig sequences."
+" This is significantly slower than using BLASTN."
+msgstr ""
+
+#: ../data_analysis/blast.rst:88
+msgid "No matches"
+msgstr ""
+
+#: ../data_analysis/blast.rst:92
+msgid ""
+"Click this option to create a row in the table indicating that a match "
+"was not found.  This can be useful when screening a large number of "
+"isolates."
+msgstr ""
+
+#: ../data_analysis/blast.rst:96 ../data_analysis/genome_comparator.rst:201
+msgid "Filter fieldset"
+msgstr ""
+
+#: ../data_analysis/blast.rst:97
+msgid ""
+"This section allows you to further filter your collection of isolates and"
+" the contig sequences to include."
+msgstr ""
+
+#: ../data_analysis/blast.rst:102 ../data_analysis/genome_comparator.rst:167
+#: ../data_analysis/genome_comparator.rst:207
+msgid "Available options are:"
+msgstr ""
+
+#: ../data_analysis/blast.rst:104
+msgid ""
+"Sequence method - Choose to only analyse contigs that have been generated"
+" using a particular method. This depends on the method being set when the"
+" contigs were uploaded."
+msgstr ""
+
+#: ../data_analysis/blast.rst:107
+msgid ""
+"Project - Only include isolates belonging to the chosen project. This "
+"enables you to select all isolates and filter to a project."
+msgstr ""
+
+#: ../data_analysis/burst.rst:6
+msgid "BURST"
+msgstr ""
+
+#: ../data_analysis/burst.rst:7
+msgid ""
+"BURST is an algorithm used to group MLST-type data based on a count of "
+"the number of profiles that match each other at specified numbers of "
+"loci.  The analysis is available for both sequence definition database "
+"and isolate database schemes that have primary key fields set.  The "
+"algorithm has to be :ref:`specifically enabled <enabling_plugins>` by an "
+"administrator.  Analysis is limited to 1000 or fewer records."
+msgstr ""
+
+#: ../data_analysis/burst.rst:14
+msgid ""
+"The plugin can be accessed following a query by clicking the 'BURST' "
+"button in the Analysis list at the bottom of the results table. Please "
+"note that the list of functions here may vary depending on the setup of "
+"the database."
+msgstr ""
+
+#: ../data_analysis/burst.rst:20
+msgid ""
+"If there multiple schemes that can be analysed, these can then be "
+"selected along with the group definition."
+msgstr ""
+
+#: ../data_analysis/burst.rst:25
+msgid ""
+"Modifying the  group definition affects the size of groups and how they "
+"link together.  By default, the definition is n-2 (where n is the number "
+"of loci), so for example on a 7 locus MLST scheme groups contain STs that"
+" match at 5 or more loci to any other member of the group."
+msgstr ""
+
+#: ../data_analysis/burst.rst:30
+msgid "Click Submit."
+msgstr ""
+
+#: ../data_analysis/burst.rst:32
+msgid ""
+"A series of tables will be displayed indicating the groups of profiles.  "
+"Where one profile can be identified as a central genotype, i.e. the "
+"profile that has the greatest number of other profiles that are single "
+"locus variants (SLV), double locus variants (DLV) and so on, a graphical "
+"representation will be displayed.  The central profile is indicated with "
+"an asterisk."
+msgstr ""
+
+#: ../data_analysis/burst.rst:40
+msgid ""
+"SLV profiles that match the central profile are shown within a red circle"
+" surrounding the central profile.  Most distant profiles (triple locus "
+"variants) may be linked with a line.  Larger groups may additionally have"
+" DLV profiles. These are shown in a blue circle."
+msgstr ""
+
+#: ../data_analysis/burst.rst:47
+msgid ""
+"Groups can get very large, where linked profiles form sub-groups and an "
+"attempt is made to depict these."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:8 ../data_analysis/locus_explorer.rst:70
+msgid "Codon usage"
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:9
+msgid ""
+"The codon usage plugin for isolate databases calculates the absolute and "
+"relative synonymous codon usage by isolate and by locus."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:17
+msgid ""
+"Jump to the 'Analysis' category, follow the link to 'Codon Usage', then "
+"click 'Launch Codon Usage'."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:20
+msgid ""
+"The function can be selected by clicking the 'Codon usage' link in the "
+"Analysis section of the main contents page."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:25
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'Codons' button in the Analysis list at the bottom of the results table."
+"  Please note that the list of functions here may vary depending on the "
+"setup of the database."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:32 ../data_analysis/snp_sites.rst:33
+msgid ""
+"Enter the ids of the isolate records to analyse - these will be already "
+"entered if you accessed the plugin following a query.  Select the loci "
+"you would like to analyse, either from the dropdown loci list, and/or by "
+"selecting one or more schemes."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:39 ../data_analysis/snp_sites.rst:40
+msgid ""
+"Click submit.  The job will be submitted to the queue and will start "
+"running shortly."
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:42
+msgid ""
+"Output files will be created in both tab-delimited text and Excel formats"
+" for the following:"
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:45
+msgid "Absolute frequency of codon usage by isolate"
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:46
+msgid "Absolute frequency of codon usage by locus"
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:47
+msgid "Relative synonymous codon usage by isolate"
+msgstr ""
+
+#: ../data_analysis/codon_usage.rst:48
+msgid "Relative synonymous codon usage by locus"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:6
+msgid "Field breakdown"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:7
+msgid ""
+"The field breakdown plugin for isolate databases displays the frequency "
+"of each value for fields, alleles and schemes."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:15
+msgid ""
+"In the 'Breakdown' category, follow the link to 'Field Breakdown', then "
+"click 'Launch Field Breakdown'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:18
+msgid ""
+"The breakdown function can be selected for the whole database by clicking"
+" the 'Single field' link in the Breakdown section of the main contents "
+"page."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:23
+msgid ""
+"Alternatively, a breakdown can be displayed of the dataset returned from "
+"a query by clicking the 'Fields' button in the Breakdown list at the "
+"bottom of the results table. Please note that the list of functions here "
+"may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:30
+msgid ""
+"A chart will be displayed for the first field. Depending on the field "
+"type, this may be either a world map (for country or continent fields), "
+"pie chart, or bar chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:36
+msgid "Other fields can be chosen by selecting them in the dropdown list box."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:40
+msgid ""
+"You can also breakdown loci and schemes by clicking the appropriate "
+"button. This will re-populate the dropdown list."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:45
+msgid ""
+"The charts are dynamic and you can manipulate some aspects of them using "
+"controls shown on the screen."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:49
+msgid "Maps"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:50
+msgid ""
+"World maps are shown for country and continent fields (provided "
+"standardized country names are used in the database). The maps can be "
+"modified in a number of ways."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:54
+msgid ""
+"The colour theme can be changed by clicked the appropriate coloured "
+"square. Additional themes are available by clicking the '>' link."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:59
+msgid ""
+"The range that is used to decide the colour boundaries can be changed by "
+"using the range slider."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:64
+msgid ""
+"Finally the map projection can be changed. The default 'Natural Earth' "
+"provides a reasonable display for most latitudes but you may prefer "
+"others such as 'Mercator'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:70
+msgid "To see the same data as a pie chart, click the 'Pie' or 'Donut' icons."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:75
+msgid "Pie charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:76
+msgid ""
+"The maximum number of segments shown can be modified by sliding the 'Max "
+"segments' control. Low frequency values will be grouped in to a segment "
+"called 'Others'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:82
+msgid ""
+"The chart can be transformed in to a donut chart by clicking the donut "
+"icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:86
+msgid ""
+"The icon changes to a pie chart image (clicking this will return to the "
+"pie chart)."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:92
+msgid ""
+"Values can also be removed from the analysis by clicking their label in "
+"the legend below the chart. The percentages of the other values will be "
+"recalculated. Clicking the label again will re-add the value."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:97
+msgid "Bar charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:98
+msgid "Integer fields will be displayed as a bar chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:102
+msgid ""
+"You can modify the height and the orientation of the chart using the "
+"controls."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:105
+msgid "Line charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:106
+msgid ""
+"Date fields will be displayed as a line chart. By default this shows the "
+"cumulative values."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:111
+msgid ""
+"The chart can be converted in to a bar chart showing discrete values by "
+"clicking the bar chart icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:116
+msgid ""
+"The icon changes to a line chart image (clicking this will return to the "
+"line chart)."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:122
+msgid "Summary tables"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:123
+msgid ""
+"The field breakdown can be displayed as a summary table containing values"
+" and percentages of all values. This can be selected by clicking the "
+"table icon below the displayed chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:129
+msgid "The table can be re-ordered by clicking any of the headings."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:133
+msgid ""
+"The same table can be exported as an Excel file by clicking the Excel "
+"icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:137
+msgid ""
+"Alternatively, it can be exported as a tab-delimited text file by "
+"clicking the text file icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:142
+msgid ""
+"The chart image can also be saved as a SVG file, suitable for "
+"manipulation in a graphics program."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:148
+msgid "Exporting allele sequences"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:149
+msgid ""
+"If a locus breakdown is being display, you can choose to export the "
+"allele sequences in FASTA format by clicking the FASTA file icon."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:8
+msgid "Gene Presence"
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:9
+msgid ""
+"The Gene Presence analysis tool will determine whether loci are present "
+"or absent, incomplete, have alleles designated, or sequence regions "
+"tagged for selected isolates and loci. If a genome is present and a locus"
+" designation not set in the database, then the presence and completion "
+"status are determined by scanning the genomes. The results can be "
+"displayed as interactive pivot tables or a heatmap. The analysis is "
+"limited to 500,000 data points (locus x isolates)."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:22
+msgid ""
+"Jump to the 'Analysis' category, follow the link to 'Gene Presence', then"
+" click 'Launch Gene Presence'."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:27
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the 'Gene"
+" Presence' button at the bottom of the results table. Isolates returned "
+"from the query will be automatically selected within the plugin "
+"interface."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:33
+msgid ""
+"Select the isolates to include. Analysis can be performed on any "
+"selection of loci, or more conveniently, you can select a scheme in the "
+"scheme selector to include all loci belonging to that scheme. You can "
+"also select a recommended scheme if these have been defined."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:38
+msgid ""
+"The parameters of the BLAST query used to determine presence or absence "
+"can be modified, but in most cases the default options should work well. "
+"Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:44
+msgid ""
+"The job will be sent to the job queue. When it has finished, you will "
+"have two options to display the output: 'Pivot Table' or 'Heatmap'."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:50
+msgid "Pivot Table"
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:51
+msgid ""
+"Clicking the 'Pivot Table' button will display an interactive pivot "
+"table. The default display shows the number of isolates for which each "
+"locus is present or absent."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:57
+msgid ""
+"You can break down any combination of fields by dragging them from the "
+"field area at the top of the table to either of the axes. For example, to"
+" show how many isolates have alleles designated and sequence regions "
+"tagged for each locus, drag the 'designated' and 'tagged' fields to the "
+"x-axis selector."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:64
+msgid "The table will be re-drawn including these fields."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:70
+msgid ""
+"If your dataset has more than 100,000 data points (locus x isolates), "
+"then be aware that combining both id (or isolate) and locus within the "
+"table will result in sluggish performace. Any other combination of fields"
+" should be fine."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:76
+msgid "Heatmap"
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:77
+msgid ""
+"Clicking the 'Heatmap' button will display an interactive heatmap. By "
+"default the display shows the presence or absence of a locus for each "
+"isolate."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:80
+msgid ""
+"Hovering the mouse cursor or touching a region will identify the isolate "
+"and locus in a tooltip."
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:85
+msgid ""
+"Change the attribute that is displayed by changing the selection in the "
+"attribute dropdown box:"
+msgstr ""
+
+#: ../data_analysis/gene_presence.rst:90
+msgid ""
+"The heatmap does scale to the number of records required to be displayed."
+" If you find individual points to be too small, then choose a smaller "
+"subset of data to display:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:8
+msgid "Genome comparator"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:9
+msgid ""
+"Genome Comparator is an optional plugin that can be enabled for specific "
+"databases. It is used to compare whole genome data of isolates within the"
+" database using either the database defined loci or the coding sequences "
+"of an annotated genome as the comparator."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:14
+msgid ""
+"Output is equivalent to a whole genome MLST profile, a distance matrix "
+"calculated based on allelic differences and a NeighborNet graph generated"
+" from this distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:18
+msgid ""
+"Genome Comparator can be accessed by selecting the 'Analysis' section on "
+"the main contents page."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:23
+msgid ""
+"Jump to the 'Analysis' category, follow the link to 'Genome Comparator', "
+"then click 'Launch Genome Comparator'."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:28
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'Genome Comparator' button at the bottom of the results table.  Isolates "
+"with sequence data returned in the query will be automatically selected "
+"within the Genome Comparator interface."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:36
+msgid "Analysis using defined loci"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:37
+msgid ""
+"Select the isolate genomes that you wish to analyse. These will either be"
+" in a dropdown list or, if there are too many in the database, a text "
+"input where a list can be entered. You can also upload your own genomes "
+"for analysis - these should be either a single file in FASTA format (if "
+"you have just one genome), or a zip file containing multiple FASTA files."
+" Select either the loci from the list or a set of schemes (either from "
+"the schemes box or from a list of recommended schemes if these have been "
+"set up).  Press submit."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:47
+msgid "The job will be submitted to the job queue and will start running shortly."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:49
+msgid ""
+"There will be a series of tables displaying variable loci, colour-coded "
+"to indicate allelic differences. Finally, there will be links to a "
+"distance matrix which can be loaded in to SplitsTree for further analysis"
+" and to a NeighborNet chart showing relatedness of isolates. Due to "
+"processing constraints on the web server, this NeighborNet is only "
+"calculated if 200 or fewer genomes are selected for analysis, but this "
+"can be generated in the stand-alone version of SplitsTree using the "
+"distance matrix if required."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:60
+msgid "Analysis using annotated reference genome"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:61
+msgid ""
+"Select the isolate genomes that you wish to analyse and then either enter"
+" a Genbank accession number for the reference genome, or select from the "
+"list of reference genomes (this list will only be present if the "
+"administrator has :ref:`set it up <isolate_xml>`). Selecting reference "
+"genomes will hide the locus and scheme selection forms."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:69
+msgid ""
+"Output is similar to when comparing against defined loci, but this time "
+"every coding sequence in the annotated reference will be BLASTed against "
+"the selected genomes. Because allele designations are not defined, the "
+"allele found in the reference genome is designated allele 1, the next "
+"different sequence is allele 2 etc."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:78
+msgid "Include in identifiers fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:79
+msgid ""
+"This selection box allows you to choose which isolate provenance fields "
+"will be included in the results table.  This does not affect the output "
+"of the alignments as taxa names are limited in length by the alignment "
+"programs."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:88
+msgid "Reference genome fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:89
+msgid ""
+"This section allows you to choose a reference genome to use as the source"
+" of comparator sequences."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:94
+msgid "There are three possibilities here:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:96
+msgid ""
+"Enter accession number - Enter a Genbank accession number of an annotated"
+" reference and Genome Comparator will automatically retrieve this from "
+"Genbank."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:99
+msgid ""
+"Select from list - The administrator may have selected some genomes to "
+"offer for comparison.  If these are present, simply select from the list."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:101
+msgid ""
+"Upload genome - Click 'Browse' and upload your own reference.  This can "
+"either be in Genbank, EMBL or FASTA format.  Ensure that the filename "
+"ends in the appropriate file extension (.gb, .embl, .fas) so that it is "
+"recognized."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:107
+msgid "Parameters/options fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:113
+#, python-format
+msgid ""
+"Min % identity - This sets the threshold identity that a matching "
+"sequence has to be in order to be considered (default: 70%).  Only the "
+"best match is used."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:116
+msgid ""
+"Min % alignment - This sets the percentage of the length of reference "
+"allele sequence that the alignment has to cover in order to be considered"
+" (default: 50%)."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:119
+msgid ""
+"BLASTN word size - This is the length of the initial identical match that"
+" BLAST requires before extending a match (default: 20).  Increasing this "
+"value improves speed at the expense of sensitivity.  The default value "
+"gives good results in most cases.  The default setting used to be 15 but "
+"the new default of 20 is almost as good (there was 1 difference among "
+"2000 loci in a test run) but the analysis runs twice as fast."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:127
+msgid "Distance matrix calculation fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:128
+msgid ""
+"This section provides options for the treatment of incomplete and "
+"paralogous loci when generating the distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:133
+msgid ""
+"For incomplete loci, i.e. those that continue beyond the end of a contig "
+"so are incomplete you can:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:136
+msgid ""
+"Completely exclude from analysis - Any locus that is incomplete in at "
+"least one isolate will be removed from the analysis completely.  Using "
+"this option means that if there is one bad genome with a lot of "
+"incomplete sequences in your analysis, a large proportion of the loci may"
+" not be used to calculate distances."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:142
+msgid ""
+"Treat as a distinct allele - This treats all incomplete sequences as a "
+"specific allele 'I'.  This varies from any other allele, but all "
+"incomplete sequences will be treated as though they were identical."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:146
+msgid ""
+"Ignore in pairwise comparison (default) - This is probably the best "
+"option. In this case, incomplete alleles are only excluded from the "
+"analysis when comparing the particular isolate that has it.  Other "
+"isolates with different alleles will be properly included.  The effect of"
+" this option will be to shorten the distances of isolates with poorly "
+"sequenced genomes with the others."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:153
+msgid ""
+"Paralogous loci, i.e. those with multiple good matches, can be excluded "
+"from the analysis (default).  This is the safest option since there is no"
+" guarantee that differences seen between isolates at paralogous loci are "
+"real if the alternative matches are equally good.  NB: Loci are also only"
+" classed as paralogous when the alternative matches identify different "
+"sequences, otherwise multiple contigs of the same sequence region would "
+"result in false positives."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:161
+msgid "Alignments fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:162
+msgid ""
+"This section enables you to choose to produce alignments of the sequences"
+" identified."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:169
+msgid ""
+"Produce alignments - Selecting this will produce the alignment files, as "
+"well as XMFA and FASTA outputs of aligned sequences.  This will result in"
+" the analysis taking longer to run."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:172
+msgid ""
+"Include ref sequences in alignment - When doing analysis using an "
+"annotated reference, selecting this will include the reference sequence "
+"in the alignment files."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:175
+msgid ""
+"Align all loci - By default, only loci that vary among the isolates are "
+"aligned.  You may however wish to align all if you would like the "
+"resultant XMFA and FASTA files to include all coding sequences."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:178
+msgid ""
+"Aligner - There are currently two choices of alignment algorithm "
+"(provided they have both been installed)"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:181
+msgid ""
+"MAFFT (default) - This is the preferred option as it is significantly "
+"quicker than MUSCLE, uses less memory, and produces comparable results."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:183
+msgid ""
+"MUSCLE - This was originally the only choice. It is still included to "
+"enable previous analyses to be re-run and compared but it is recommended "
+"that MAFFT is used otherwise."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:188
+msgid "Core genome analysis fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:189
+msgid ""
+"This section enables you to modify the inclusion threshold used to "
+"calculate whether or not a locus is part of the core genome (of the "
+"dataset)."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:194
+#, python-format
+msgid ""
+"The default setting of 90% means that a locus is counted as core if it "
+"appears within 90% or more of the genomes in the dataset."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:197
+msgid ""
+"There is also an option to calculate the mean distance among sequences of"
+" the loci.  Selecting this will also select the option to produce "
+"alignments."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:202
+msgid ""
+"This section allows you to further filter your collection of isolates and"
+" the contigs to include."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:209
+msgid ""
+"Sequence method - Choose to only analyse contigs that have been generated"
+" using a particular method.  This depends on the method being set when "
+"the contigs were uploaded."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:212
+msgid ""
+"Project - Only include isolates belonging to the chosen project.  This "
+"enables you to select all isolates and filter to a project."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:216
+msgid "Understanding the output"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:219
+msgid "Distance matrix"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:220
+msgid ""
+"The distance matrix is simply a count of the number of loci that differ "
+"between each pair of isolates.  It is generated in NEXUS format which can"
+" be used as the input file for `SplitsTree <http://www.splitstree.org>`_."
+"  This can be used to generate NeighborNet, Split decomposition graphs "
+"and trees offline.  If 200 isolates or fewer are included in the "
+"analysis, a Neighbor network is automatically generated from this "
+"distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:228
+msgid "Unique strains"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:229
+msgid ""
+"The table of unique strains is a list of isolates that are identical at "
+"every locus.  Every isolate is likely to be classed as unique if a whole "
+"genome analysis is performed, but with a constrained set of loci, such as"
+" those for MLST, this will group isolates that are indistinguishable at "
+"that level of resolution. nce matrix calculated based on allelic "
+"differences and a NeighborNet graph generated from this distance matrix."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:8
+msgid "GrapeTree"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:9
+msgid ""
+"GrapeTree is a tool for generating and visualising minimum spanning "
+"trees. It has been developed to handle large datasets (in the region of "
+"1000s of genomes) and works with 1000s of loci as used in cgMLST. It uses"
+" an improved minimum spanning algorithm that is better able to handle "
+"missing data than alternative algorithms and is able to produce "
+"publication quality outputs. Datasets can include metadata which allows "
+"nodes in the resultant tree to be coloured interactively."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:17
+msgid ""
+"GrapeTree can be accessed by selecting the 'Analysis' section on the main"
+" contents page."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:22
+msgid ""
+"Jump to the 'Third party' category, follow the link to GrapeTree, then "
+"click 'Launch GrapeTree'."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:25
+msgid ""
+"GrapeTree can be accessed from the contents page by clicking the "
+"'GrapeTree' link."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:30
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'GrapeTree' button at the bottom of the results table.  Isolates returned"
+" from the query will be automatically selected within the GrapeTree "
+"interface."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:36
+msgid ""
+"Select the isolates to include. The tree can be generated from allelic "
+"profiles of any selection of loci, or more conveniently, you can select a"
+" scheme in the scheme selector, or choose from recommended schemes if "
+"these have been set, to include all loci belonging to that scheme."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:41
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes - select any fields you wish to include. Finally you can "
+"choose the analysis method from the following:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:45
+msgid ""
+"MSTreeV2 - Improved minimum-spanning tree that better handles missing "
+"data (default)"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:47
+msgid "MSTree - Classical minimum-spanning tree similar to PhyloViz"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:48
+msgid "NJ - FastME V2 Neighbour-joining tree"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:49
+msgid "RapidNJ - RapidNJ Neighbour-joining tree for very large datasets"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:51 ../data_analysis/itol.rst:42
+#: ../data_analysis/reportree.rst:49
+msgid "Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:55
+msgid ""
+"The job will be sent to the job queue. When it has finished, click the "
+"button marked 'Launch GrapeTree'."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:60
+msgid "The generated tree will be rendered in the GrapeTree application page."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:64
+msgid ""
+"The image can be manipulated in various ways. These include modifying the"
+" tree layout, customising node labels and size, modifying branch lengths "
+"and collapsing branches. The image can be saved in SVG format which can "
+"be further edited in image publishing software such as Inkscape."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:69
+msgid ""
+"As an example, the default cgMLST tree (above) has been modified (below) "
+"as follows:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:72
+msgid "Nodes coloured by clonal complex"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:73
+msgid "Labels removed"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:74
+msgid "Branches collapsed where <=100 loci different"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:75
+msgid "Node size set to 200%"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:76
+msgid "Kurtosis (node size relative to number of isolates) set to 75%"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:77
+msgid "Dynamic rendering allowed to run to fan out nodes"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:81
+msgid ""
+"Full details can be found in the `GrapeTree manual "
+"<https://bitbucket.org/enterobase/enterobase-web/wiki/GrapeTree>`_."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:85
+msgid "GrapeTree has been described in the following publication:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:87
+msgid ""
+"Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA "
+"Carrico, M Achtman (2018) GrapeTree: Visualization of core genomic "
+"relationships among 100,000 bacterial pathogens. `Genome Res 28:1395-1404"
+" <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:6
+msgid "In silico PCR"
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:7
+msgid ""
+"This is a tool that can be used to simulate PCR reactions run against "
+"genomes stored in the database. This is useful for designing and testing "
+"primers. The plugin uses the `exonerate ipcress "
+"<https://www.animalgenome.org/bioinfo/resources/manuals/exonerate/>`_ "
+"program to perform its simulation."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:13 ../data_analysis/rMLST.rst:15
+msgid ""
+"The tool can be accessed by selecting the 'Analysis' section on the main "
+"contents page."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:18
+msgid ""
+"Jump to the 'Analysis' category, follow the link to BLAST, then click "
+"'Launch PCR'."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:23
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the 'PCR'"
+" button at the bottom of the results table. Isolates returned from the "
+"query will be automatically selected within the analysis interface."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:29
+msgid ""
+"Select the isolates to include. These will be pre-populated if you arrive"
+" here following a search."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:32
+msgid ""
+"Enter your forward and reverse primer sequences in the appropriate boxes."
+" These may contain wobble bases if necessary. You can also specify how "
+"many mismatches are allowed for each primer. Finally, you can restrict "
+"the reported length to only those products that fall between a minimum "
+"and maximum length range."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:39
+msgid ""
+"Click 'Submit'. The job will be sent to the job queue. The output will be"
+" a table of predicted products, showing the number of products and their "
+"positions within a contig. A summary of this table is also availabe to "
+"download in tab- delimited text of Excel formats."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:46
+msgid ""
+"It is also possible to export the predicted product sequence. You can do "
+"this by selecting the 'Export sequences' checkbox on the options form."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:53
+msgid ""
+"The exported sequences will include the primer regions. It is important "
+"to note that, unlike a real PCR reaction, these sequences represent the "
+"sequence within this region in the genome. In a real PCR reaction, the "
+"primers are themseleves incorporated in to the product, so even if there "
+"was a mismatch in the primer region, the product sequence would include "
+"the primer sequence."
+msgstr ""
+
+#: ../data_analysis/itol.rst:6
+msgid "Interactive Tree of Life (iTOL)"
+msgstr ""
+
+#: ../data_analysis/itol.rst:7
+msgid ""
+"The ITOL plugin allows you to generate and visualise phylogenetic trees "
+"calculated from concatenated sequence alignments of selected loci (or the"
+" loci belonging to a particular scheme). Currently, only Neighbour-"
+"joining trees are supported. Datasets can include metadata which allows "
+"nodes in the resultant tree to be coloured."
+msgstr ""
+
+#: ../data_analysis/itol.rst:13
+msgid ""
+"ITOL can be accessed by selecting the 'Analysis' section on the main "
+"contents page."
+msgstr ""
+
+#: ../data_analysis/itol.rst:18
+msgid ""
+"Jump to the 'Third party' category, follow the link to iTOL, then click "
+"'Launch iTOL'."
+msgstr ""
+
+#: ../data_analysis/itol.rst:21
+msgid "ITOL can be accessed from the contents page by clicking the 'iTOL' link."
+msgstr ""
+
+#: ../data_analysis/itol.rst:25
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'iTOL' button at the bottom of the results table.  Isolates returned from"
+" the query will be automatically selected within the iTOL interface."
+msgstr ""
+
+#: ../data_analysis/itol.rst:31
+msgid ""
+"Select the isolates to include. The tree can be generated from "
+"concatenated sequences of any selection of loci, or more conveniently, "
+"you can select a scheme in the scheme selector, or in the list of "
+"recommended schemes if these have been set up, to include all loci "
+"belonging to that scheme."
+msgstr ""
+
+#: ../data_analysis/itol.rst:36
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes - select any fields you wish to include in the 'iTOL "
+"datasets' list. Multiple selections can be made by holding down Shift or "
+"Ctrl while selecting. You can also choose how nodes are labeled by "
+"metadata - either by colouring the labels or using coloured strips."
+msgstr ""
+
+#: ../data_analysis/itol.rst:46
+msgid ""
+"The job will be sent to the job queue. When it has finished, the "
+"generated tree and associated metadata will be uploaded to the "
+"Interactive Tree of Life website (https://itol.embl.de/). Click the "
+"button marked 'Launch iTOL'."
+msgstr ""
+
+#: ../data_analysis/itol.rst:52
+msgid "Your browser will open the iTOL website with your tree."
+msgstr ""
+
+#: ../data_analysis/itol.rst:56
+msgid ""
+"You can manipulate the tree in the browser, and display metadata by "
+"selecting the appropriate toggle."
+msgstr ""
+
+#: ../data_analysis/itol.rst:61
+msgid ""
+"The tree layout can be changed by clicking the 'Basic tab' and, for "
+"example, selecting a circular display mode."
+msgstr ""
+
+#: ../data_analysis/itol.rst:66
+msgid ""
+"See the `detailed documentation on the iTOL website "
+"<https://itol.embl.de/help.cgi>`_ for more information about manipulating"
+" and exporting trees."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:8
+msgid "Kleborate"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:9
+msgid ""
+"Kleborate is a tool that can be used to screen assemblies of *Klebsiella*"
+" *pneumoniae* and the *Klebsiella pneumoniae* species complex (KpSC) for:"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:12
+msgid "MLST sequence type"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:13
+msgid "species (e.g. *K. pneumoniae*, *K. quasipneumoniae*, *K. variicola*, etc.)"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:14
+msgid ""
+"ICE *Kp* associated virulence loci: yersiniabactin (*ybt*), colibactin "
+"(*clb*), salmochelin (*iro*), hypermucoidy (*rmpA*)"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:16
+msgid ""
+"virulence plasmid associated loci: salmochelin (*iro*), aerobactin "
+"(*iuc*), hypermucoidy (*rmpA*, *rmpA2*)"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:18
+msgid ""
+"antimicrobial resistance determinants: acquired genes, SNPs, gene "
+"truncations and intrinsic β-lactamases"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:20
+msgid ""
+"K (capsule) and O antigen (LPS) serotype prediction, via *wzi* alleles "
+"and Kaptive."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:23
+msgid ""
+"Kleborate and Kaptive are described in Lam *et al.* 2021 *Nat Commun* "
+"**12:** 4188 (`PubMed: 34234121 "
+"<https://pubmed.ncbi.nlm.nih.gov/34234121/>`_) and Lam *et al.* 2022 "
+"*Microb Genom* **8:** 000800 (`PubMed: 35311639 "
+"<https://pubmed.ncbi.nlm.nih.gov/35311639/>`_) respectively."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:29
+msgid ""
+"Kleborate will usually only be available on databases hosting suitable "
+"data i.e. *Klebsiella* isolates."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:37
+msgid ""
+"Jump to the ‘Third party’ category, follow the link to Kleborate, then "
+"click ‘Launch Kleborate’."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:42
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"‘Kleborate’ button in the 'Third party' list at the bottom of the results"
+" table. Please note that the list of functions here may vary depending on"
+" the setup of the database."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:49
+msgid ""
+"Select the isolate records to analyse - these will be pre-selected if you"
+" accessed the plugin following a query. You can then choose the analysis "
+"to run:"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:52
+msgid "Basic screening for species, MLST and virulence loci"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:53
+msgid "As above and turn on screening for resistance genes (--resistance)"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:54
+msgid "As above and turn on screening for K & O antigen loci (--all)"
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:56 ../data_analysis/seqbin_breakdown.rst:43
+msgid "Click submit."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:60
+msgid "The analysis will be submitted to the job queue."
+msgstr ""
+
+#: ../data_analysis/kleborate.rst:62
+msgid ""
+"When the job has completed you will see a table of results that is also "
+"available for download in tab-delimited text and Excel formats."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:8
+msgid "Locus explorer"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:9
+msgid ""
+"The locus explorer is a sequence definition database plugin.  It can "
+"create schematics showing the polymorphic sites within a locus, calculate"
+" the GC content and generate aligned translated sequences."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:13
+msgid ""
+"Expand the 'Analysis' section on the main contents page of a sequence "
+"definition database and click 'Locus Explorer'."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:24
+msgid "Polymorphic site analysis"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:25
+msgid ""
+"Select the locus you would like to analyse in the Locus dropdown box.  "
+"The page will reload."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:30
+msgid ""
+"Select the alleles that you would like to include in the analysis.  "
+"Variable length loci are limited to 2000 sequences or fewer since these "
+"need to be aligned.  Select 'Polymorphic Sites' in the Analysis selection"
+" and click 'Submit'."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:37
+msgid ""
+"If an alignment is necessary, the job will be submitted to the job queue "
+"and the analysis performed.  If no alignment is necessary, then the "
+"analysis is shown immediately."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:41
+msgid "The first part of the page shows the schematic."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:45
+msgid ""
+"Clicking any of the sequence bases will calculate the exact frequencies "
+"of the different nucleotides at that position."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:50
+msgid ""
+"Along with the nucleotide frequencies, it will also show the percentage "
+"of allelic profiles containing each nucleotide at that position if the "
+"locus is part of a scheme such as MLST."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:56
+msgid ""
+"The second part of the page shows a table listing nucleotide frequencies "
+"at each of the variable positions."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:63
+msgid ":ref:`Investigating allele differences <allele_differences>`."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:64
+msgid ":ref:`Polymorphism analysis following isolate query <polymorphisms>`."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:71
+msgid ""
+"Select the alleles that you would like to include in the analysis. Again,"
+" variable length loci are limited to 200 sequences or fewer since these "
+"need to be aligned. Click ‘Codon’."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:77
+msgid ""
+"The GC content of the alleles will be determined and a table of the codon"
+" frequencies displayed."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:86
+msgid "Aligned translations"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:87
+msgid ""
+"If a DNA coding sequence locus is selected, an aligned translation can be"
+" produced."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:90
+msgid ""
+"Select the alleles that you would like to include in the analysis. Again,"
+" variable length loci are limited to 200 sequences or fewer since these "
+"need to be aligned. Click ‘Translate’."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:96
+msgid "An aligned amino acid sequence will be displayed."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:100
+msgid ""
+"If there appear to be a lot of stop codons in the translation, it is "
+"possible that the orf value in the :ref:`locus definition <add_new_loci>`"
+" is not set correctly."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:6
+msgid "Microreact"
+msgstr ""
+
+#: ../data_analysis/microreact.rst:7
+msgid ""
+"Microreact is a tool for visualising genomic epidemiology and "
+"phylogeography. Individual nodes on a displayed tree are linked to nodes "
+"on a geographical map and/or timeline, making any spatial and temporal "
+"relationships between isolates apparent."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:12
+msgid ""
+"The Microreact plugin generates Neighbour-joining trees from concatenated"
+" sequences for any selection of loci or schemes and uploads these, "
+"together with country and year field values to the `Microreact website "
+"<https://microreact.org>`_ for display."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:19
+msgid ""
+"While Microreact itself is able to display isolates using GPS "
+"coordinates, the BIGSdb plugin is currently limited to the level of "
+"country."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:22
+msgid ""
+"Microreact can be accessed by selecting the 'Analysis' section on the "
+"main contents page."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:27
+msgid ""
+"Jump to the 'Third party' category, follow the link to BLAST, then click "
+"'Launch Microreact'."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:32
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'Microreact' button at the bottom of the results table.  Isolates "
+"returned from the query will be automatically selected within the "
+"Microreact plugin interface."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:39
+msgid ""
+"Select the isolates to include. The tree can be generated from allelic "
+"profiles of any selection of loci, or more conveniently, you can select a"
+" scheme in the scheme selector, or from a list of recommended schemes if "
+"these have been set, to include all loci belonging to that scheme."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:44
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes - select any fields you wish to include. Multiple "
+"selections can be made by holding down shift or ctrl while selecting. "
+"Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:51
+msgid ""
+"The job will be sent to the job queue. When it has finished, click the "
+"button marked 'Launch Microreact'."
+msgstr ""
+
+#: ../data_analysis/microreact.rst:56
+msgid ""
+"The generated tree will be uploaded to the Microreact website and "
+"displayed. Clicking any node will show its position(s) within the tree, "
+"map and timeline. A node on the map may correspond to multiple nodes in "
+"the tree or timeline."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:6
+msgid "PhyloViz"
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:7
+msgid ""
+"PhyloViz Online is a tool for generating and visualising minimum-spanning"
+" trees. Datasets can include metadata which allows nodes in the resultant"
+" tree to be coloured interactively."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:11
+msgid ""
+"PhyloViz can be accessed by selecting the 'Analysis' section on the main "
+"contents page."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:16
+msgid ""
+"Jump to the 'Third party' category, follow the link to PhyloViz, then "
+"click 'Launch PhyloViz'."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:21
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'PhyloViz' button at the bottom of the results table. Isolates returned "
+"from the query will be automatically selected within the PhyloViz "
+"interface."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:27
+msgid ""
+"Select the isolates to include. The tree can be generated from allelic "
+"profiles of any selection of loci, or more conveniently, you can select a"
+" scheme in the scheme selector to include all loci belong to that scheme."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:31
+msgid ""
+"Provenance fields can be selected to be included as metadata for use in "
+"colouring nodes - select any fields you wish to include. Multiple "
+"selections can be made by holding down Shift or Ctrl while selecting. "
+"Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:38
+msgid ""
+"The necessary files will be generated immediately. When this has "
+"finished, click the button launch 'Launch PhyloViz'."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:43
+msgid "The tree will be sent to and rendered within the PhyloViz website."
+msgstr ""
+
+#: ../data_analysis/phyloviz.rst:47
+msgid ""
+"See more information about manipulating the tree on the `PhyloViz website"
+" <http://online.phyloviz.net/>`_."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:8
+msgid "Polymorphisms"
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:9
+msgid ""
+"The Polymorphisms plugin generates a :ref:`Locus Explorer "
+"<locus_explorer>` polymorphic site analysis on the alleles designated in "
+"an isolate dataset following a query."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:13
+#: ../data_analysis/two_field_breakdown.rst:10
+msgid ""
+"The analysis can be accessed by selecting the 'Analysis' section on the "
+"main contents page."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:18
+msgid ""
+"Jump to the 'Breakdown' category, follow the link to Polymorphisms, then "
+"click 'Launch Polymorphisms'."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:23
+msgid ""
+"The analysis is accessed by clicking the 'Polymorphic sites' button in "
+"the Breakdown list at the bottom of a results table following a query."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:28
+msgid "Select the locus that you would like to analyse from the list."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:32
+msgid "Click 'Analyse'."
+msgstr ""
+
+#: ../data_analysis/polymorphisms.rst:34
+msgid ""
+"A schematic of the locus is generated showing the polymorphic sites.  A "
+"full description of this can be found in the :ref:`Locus Explorer "
+"polymorphic site analysis <locus_explorer_snp>` section."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:8
+msgid "Species identification"
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:9
+msgid ""
+"The species identification tool extracts ribosomal MLST alleles from "
+"genomes and determines the species based on the count of alleles that are"
+" uniquely found within a single species (or higher taxonomic rank if "
+"alleles unique to a species are not found). This is done by making a "
+"query to the rMLST genome database."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:20
+msgid ""
+"Jump to the 'Analysis' category, follow the link to rMLST species "
+"identity, then click 'Launch rMLST species identity'."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:23
+msgid "The tool can be accessed from the front page of an isolate database."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:27
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'rMLST species id' button at the bottom of the results table.  Isolates "
+"returned from the query will be automatically selected within the species"
+" id interface (note that only isolates with a genome assembly will be "
+"able to be checked)."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:35
+msgid ""
+"Finally, the analysis is also possible directly from an isolate record, "
+"if the isolate has a genome assembly associated with it."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:40
+msgid ""
+"The tool interface consists of a list of isolate ids to check. This will "
+"be pre-populated if accessed following a query or directly from an "
+"isolate record. If the rMLST scheme is defined on the system, you will "
+"have a choice as to whether to BLAST the genome sequences to identify the"
+" rMLST alleles, or just use the designations that are tagged in the "
+"database. The latter is much quicker but relies on the record having been"
+" scanned and annotated with the rMLST loci."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:48
+msgid "Click 'Submit'."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:52
+msgid "The job will be sent to the job queue."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:54
+msgid ""
+"Results will be displayed in a table as they are generated. The table "
+"will display the highest taxonomic rank that can be reliably identified, "
+"e.g. species, the taxon and its full taxonomy. An indication of the "
+"confidence for the result will also be displayed - this is based on the "
+"proportion of alleles found that are unique to a taxon."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:62
+msgid ""
+"Clicking the '+' icon on any row will display further details about the "
+"matches."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:69
+msgid ""
+"Ribosomal MLST was first described in `Jolley et al. 2012. "
+"<https://www.ncbi.nlm.nih.gov/pubmed/22282518>`_ Ribosomal multilocus "
+"sequence typing: universal characterization of bacteria from domain to "
+"strain. *Microbiology* 158:1005-15"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:6
+msgid "ReporTree"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:7
+msgid ""
+"ReporTree is a pan-pathogen tool for automated and reproducible "
+"identification and characterization of genetic clusters."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:10
+msgid ""
+"ReporTree can be accessed by selecting the 'Analysis' section on the main"
+" contents page."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:15
+msgid ""
+"Jump to the 'Third party' category, follow the link to ReporTree, then "
+"click 'Launch ReporTree'."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:18
+msgid ""
+"ReporTree can be accessed from the contents page by clicking the "
+"'ReporTree' link."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:23
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'ReporTree' button at the bottom of the results table.  Isolates returned"
+" from the query will be automatically selected within the GrapeTree "
+"interface."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:29
+msgid ""
+"Select the isolates to include. Trees and clusters can be generated from "
+"allelic profiles of any selection of loci, or more conveniently, you can "
+"select a scheme in the scheme selector, or choose from recommended "
+"schemes if these have been set, to include all loci belonging to that "
+"scheme."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:34
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes and for inclusion in the partition summary - select any "
+"fields you wish to include. Multiple selections can be made by holding "
+"down shift or ctrl while selecting."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:39
+msgid ""
+"You can also select any date field which will be used in cluster "
+"definitions to indicate the first and last dates of the cluster as well "
+"as its total duration. This should ideally represent the date of "
+"sampling."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:43
+msgid ""
+"Finally, you can choose to use GrapeTree and HC methods for clustering "
+"and a comma-separated list of partitions defined by locus differences, "
+"e.g. '4,7,15'. Alternatively, you can choose to calculate and display "
+"'stability regions' which will include the first partition of each "
+"stability region (threshold ranges in which cluster composition is "
+"similar)."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:53
+msgid ""
+"The job will be sent to the job queue. When it has finished, you should "
+"see a link to load the resultant tree in GrapeTree and a list of output "
+"files."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:58
+msgid ":ref:`See further information about using GrapeTree. <grapetree>`"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:61
+msgid "ReporTree has been described in the following publication:"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:64
+msgid ""
+"V Mixão, M Pinto, D Sobral, A Di Pasquale, J Gomes, V Borges (2023) "
+"ReporTree: a surveillance-oriented tool to strengthen the linkage between"
+" pathogen genetic clusters and epidemiological data `Genome Med 15:43 "
+"<https://www.ncbi.nlm.nih.gov/pubmed/37322495>`_."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:69
+msgid "It also makes use of the following tools which should also be cited:"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:71
+msgid ""
+"cgmlst-dists: https://github.com/tseemann/cgmlst-dists for original code "
+"and https://github.com/genpat-it/cgmlst-dists for improvements regarding "
+"memory efficiency."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:75
+msgid "If you requested a GrapeTree analysis:"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:77
+msgid ""
+"Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA "
+"Carriço, M Achtman (2018) GrapeTree: Visualization of core genomic "
+"relationships among 100,000 bacterial pathogens. `Genome Res 28:1395-1404"
+" <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:82
+msgid "If you requested 'stability regions':"
+msgstr ""
+
+#: ../data_analysis/reportree.rst:84
+msgid ""
+"JA Carriço, C Silva-Costa, J Melo-Cristino, FR Pinto, H de Lencastre, JS"
+" Almeida, M Ramirez (2006) Illustration of a common framework for "
+"relating multiple typing methods by application to macrolide-resistant "
+"*Streptococcus pyogenes*. `J Clin Microbiol 44:2524-32 "
+"<https://www.ncbi.nlm.nih.gov/pubmed/16825375>`_."
+msgstr ""
+
+#: ../data_analysis/reportree.rst:90
+msgid ""
+"DOR Barker, JA Carriço, P Kruczkiewicz, F Palma, M Rossi, EN Taboada "
+"(2018) Rapid identification of stable clusters in bacterial populations "
+"using the Adjusted Wallace Coefficient. BioRxiv DOI: "
+"https://doi.org/10.1101/299347."
+msgstr ""
+
+#: ../data_analysis/reports.rst:6
+msgid "Reports"
+msgstr ""
+
+#: ../data_analysis/reports.rst:7
+msgid ""
+"The Reports plugin is a tool for generating formatted reports for "
+"specific audiences, e.g. clinical/microbiology use, public health, or "
+"genomic specialists. It uses template files that can be modified as "
+"required."
+msgstr ""
+
+#: ../data_analysis/reports.rst:13
+msgid ""
+"See https://github.com/kjolley/Klebsiella_reports for examples of how to "
+"configure report templates."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:6
+msgid "Sequence bin breakdown"
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:7
+msgid ""
+"The sequence bin breakdown plugin calculates statistics based on the "
+"number and length of contigs in the sequence bin as well as the number of"
+" loci tagged for an isolate record."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:16
+msgid ""
+"Jump to the 'Breakdown' category, follow the link to Sequence Bin "
+"Breakdown, then click 'Launch Sequence Bin Breakdown'."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:19
+msgid ""
+"The function can be selected by clicking the ‘Sequence bin’ link on the "
+"Breakdown section of the main contents page."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:24
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"‘Sequence bin’ button in the Breakdown list at the bottom of the results "
+"table. Please note that the list of functions here may vary depending on "
+"the setup of the database."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:31
+msgid ""
+"Select the isolate records to analyse - these will be pre-selected if you"
+" accessed the plugin following a query.  You can also select loci and/or "
+"schemes which will be used to calculate the totals and percentages of "
+"loci designated and tagged.  This may be useful as a guide to assembly "
+"quality if you use a scheme of core loci where a good assembly would be "
+"expected to include all member loci.  To determine the total of all loci "
+"designated or tagged, click 'All loci' in the scheme tree."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:39
+msgid ""
+"There is also an option to determine the mean G+C content and various "
+"assembly stats of the sequence bin of each isolate. Note that selecting "
+"these will make the analysis run much slower since each contig needs to "
+"be examined."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:47
+msgid ""
+"If there are fewer than 100 isolates selected, the table will be "
+"generated immediately.  Otherwise it will be submitted to the job queue."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:50
+msgid "A table of sequence bin stats will be generated."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:54
+msgid ""
+"You can choose to export the data in tab-delimited text or Excel formats "
+"by clicking the appropriate link at the bottom of the table."
+msgstr ""
+
+#: ../data_analysis/seqbin_breakdown.rst:59
+msgid ""
+":ref:`Sequence bin records <sequence_bin_records>` can also be accessed "
+"by clicking the 'Display' button for each row of the table."
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:8
+msgid "SNPsites"
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:9
+msgid ""
+"The SNPsites plugin for isolate databases will create alignments for each"
+" selected locus for the set of isolates chosen. These alignments are then"
+" passed to the `snp-sites tool <https://github.com/sanger-pathogens/snp-"
+"sites>`_. which will generate VCF files for each locus. A summary table "
+"will be created showing the number of alleles and polymorphisms found for"
+" each locus."
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:15
+msgid ""
+"The snp-sites algorithm and program are described in `Page et al. 2016. "
+"Microb Gen 2:e000056 <https://pubmed.ncbi.nlm.nih.gov/28348851/>`_."
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:23
+msgid ""
+"Jump to the 'Analysis' category, follow the link to 'SNPSites', then "
+"click 'Launch SNPsites'."
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:26
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'SNPSites' button in the Analysis list at the bottom of the results "
+"table.  Please note that the list of functions here may vary depending on"
+" the setup of the database."
+msgstr ""
+
+#: ../data_analysis/snp_sites.rst:43
+msgid ""
+"Output consists of a summary file showing the number of sequences found "
+"in the dataset, the number of unique alleles, and the number of SNPs for "
+"each locus. An interactive chart is also displayed showing these values. "
+"Finally, Zip files are produced that contain FASTA alignments and VCF "
+"files for each locus."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:6
+msgid "Two field breakdown"
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:7
+msgid ""
+"The two field breakdown plugin displays a table breaking down one field "
+"against another, e.g. breakdown of serogroup by year."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:15
+msgid ""
+"Jump to the 'Breakdown' category, follow the link to Two Field Breakdown,"
+" then click 'Launch Two Field Breakdown'."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:18
+msgid ""
+"The analysis can be selected for the whole database by clicking the 'Two "
+"field breakdown' link on the main contents page."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:23
+msgid ""
+"Alternatively, a two field breakdown can be displayed of the dataset "
+"returned from a query by clicking the 'Two field' button in the Breakdown"
+" list at the bottom of the results table. Please note that the list of "
+"functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:30
+msgid ""
+"Select the two fields you wish to breakdown and how you would like the "
+"values displayed (percentage/absolute values and totaling options)."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:35
+msgid ""
+"Click submit. The breakdown will be displayed as a table. Bar charts will"
+" also be displayed provided the number of returned values for both fields"
+" are fewer than 30."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:41
+msgid ""
+"The table values can be exported in a format suitable for copying in to a"
+" spreadsheet by clicking 'Download as tab-delimited text' underneath the "
+"table."
+msgstr ""
+
+#: ../data_analysis/two_field_breakdown.rst:46
+msgid ""
+"The job will be submitted to the offline job queue if the query returns "
+"10,000 or more isolates. In this case, the buttons to reverse the axes or"
+" to change whether values or percentages are shown will not be available."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:6
+msgid "Unique combinations"
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:7
+msgid ""
+"The Unique Combinations plugin calculates the frequencies of unique field"
+" combinations within an isolate dataset.  Provenance fields, composite "
+"fields, allele designations and scheme fields can be combined."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:16
+msgid ""
+"Jump to the 'Breakdown' category, follow the link to Unique Combinations,"
+" then click 'Launch Unique Combinations'."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:19
+msgid ""
+"The function can be selected by clicking the 'Unique combinations' link "
+"in the Breakdown section of the main contents page.  This will run the "
+"analysis on the entire database."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:25
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'Combinations' button in the Breakdown list at the bottom of the results "
+"table. This will run the analysis on the dataset returned from the query."
+"  Please note that the list of functions here may vary depending on the "
+"setup of the database."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:33
+msgid ""
+"Select the combination of fields to analyse, e.g. serogroup and "
+"finetyping antigens."
+msgstr ""
+
+#: ../data_analysis/unique_combinations.rst:38
+msgid ""
+"Click submit.  The job will be submitted to the job queue. Once analysis "
+"has completed, you will be able to download the results in tab-delimited "
+"text or Excel formats."
+msgstr ""
+

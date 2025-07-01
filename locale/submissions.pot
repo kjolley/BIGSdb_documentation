@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../submissions.rst:3
+msgid "Submitting data using the submission system"
+msgstr ""
+
+#: ../submissions.rst:4
+msgid "The automated submission system allows users to submit data (new alleles, profiles, or isolates) to the database curators for assignment and upload to the database. The submission system is enabled on a per-database basis so will not always be available."
+msgstr ""
+
+#: ../submissions.rst:9
+msgid "If the system is enabled, new submissions can be made by clicking the 'Manage submissions' link on the database front page."
+msgstr ""
+
+#: ../submissions.rst:16
+msgid "Registering a user account"
+msgstr ""
+
+#: ../submissions.rst:17
+msgid "You must have an account for the appropriate database in order to use the submission system.  On systems utilizing site-wide databases, such as PubMLST, this can be done automatically via the web. Other sites may require you to contact a curator to set this up."
+msgstr ""
+
+#: ../submissions.rst:24
+msgid "Allele submission"
+msgstr ""
+
+#: ../submissions.rst:25
+msgid "New allele data can only be submitted from within the appropriate sequence definition database.  Submissions consist of one or more new allele sequences for a single locus.  You will need to create separate submissions for each locus - this is because different loci may be handled by different curators."
+msgstr ""
+
+#: ../submissions.rst:31
+#: ../submissions.rst:173
+#: ../submissions.rst:252
+#: ../submissions.rst:366
+msgid "Start"
+msgstr ""
+
+#: ../submissions.rst:32
+msgid "Click the 'alleles' link under submission type on the submission management page."
+msgstr ""
+
+#: ../submissions.rst:38
+msgid "Select the submission locus"
+msgstr ""
+
+#: ../submissions.rst:39
+msgid "Select the locus from the locus list box:"
+msgstr ""
+
+#: ../submissions.rst:43
+msgid "The locus list may be very long in some databases.  It may be possible to filter these to those belonging to specific schemes.  If the scheme tree is shown, select the appropriate scheme, e.g. 'MLST' and click 'Filter'."
+msgstr ""
+
+#: ../submissions.rst:49
+msgid "The locus list is now constrained making selection easier."
+msgstr ""
+
+#: ../submissions.rst:54
+msgid "Enter details of sequencing method"
+msgstr ""
+
+#: ../submissions.rst:55
+msgid "There are a number of fields that must be filled in so that the curator knows how the sequence was obtained:"
+msgstr ""
+
+#: ../submissions.rst:58
+msgid "technology - the sequencing platform used, allowed values are:"
+msgstr ""
+
+#: ../submissions.rst:60
+msgid "454"
+msgstr ""
+
+#: ../submissions.rst:61
+msgid "Illumina"
+msgstr ""
+
+#: ../submissions.rst:62
+msgid "Ion Torrent"
+msgstr ""
+
+#: ../submissions.rst:63
+msgid "PacBio"
+msgstr ""
+
+#: ../submissions.rst:64
+msgid "Oxford Nanopore"
+msgstr ""
+
+#: ../submissions.rst:65
+msgid "Sanger"
+msgstr ""
+
+#: ../submissions.rst:66
+msgid "Solexa"
+msgstr ""
+
+#: ../submissions.rst:67
+msgid "SOLiD"
+msgstr ""
+
+#: ../submissions.rst:68
+msgid "other"
+msgstr ""
+
+#: ../submissions.rst:69
+msgid "unknown"
+msgstr ""
+
+#: ../submissions.rst:71
+msgid "read length - this is the length of sequencing reads. This is a required field for Illumina data, and not relevant to Sanger sequencing. Allowed values are:"
+msgstr ""
+
+#: ../submissions.rst:75
+msgid "<100"
+msgstr ""
+
+#: ../submissions.rst:76
+msgid "100-199"
+msgstr ""
+
+#: ../submissions.rst:77
+msgid "200-299"
+msgstr ""
+
+#: ../submissions.rst:78
+msgid "300-499"
+msgstr ""
+
+#: ../submissions.rst:79
+msgid ">500"
+msgstr ""
+
+#: ../submissions.rst:81
+msgid "coverage - the mean number of reads covering each nucleotide position of the sequence.  This is not relevant to Sanger sequencing,  Allowed values are:"
+msgstr ""
+
+#: ../submissions.rst:85
+msgid "<20x"
+msgstr ""
+
+#: ../submissions.rst:86
+msgid "20-49x"
+msgstr ""
+
+#: ../submissions.rst:87
+msgid "50-99x"
+msgstr ""
+
+#: ../submissions.rst:88
+msgid ">100x"
+msgstr ""
+
+#: ../submissions.rst:90
+msgid "assembly - the means of generating the submitted sequence from the sequencing reads.  Allowed values are:"
+msgstr ""
+
+#: ../submissions.rst:93
+msgid "de novo"
+msgstr ""
+
+#: ../submissions.rst:94
+msgid "mapped"
+msgstr ""
+
+#: ../submissions.rst:96
+msgid "assembly software - this is a free text field where you should enter the name of the software used to generate the submitted sequence."
+msgstr ""
+
+#: ../submissions.rst:100
+msgid "Paste in sequence(s)"
+msgstr ""
+
+#: ../submissions.rst:101
+msgid "Paste in the new variant sequences to the box.  This can either be a stand- alone sequence or multiple sequences in FASTA format.  The sequences must be trimmed to the start and end points of the loci - check existing allele definitions if in doubt.  The submission is likely to be rejected if sequences are not trimmed.  Click submit."
+msgstr ""
+
+#: ../submissions.rst:109
+msgid "The system will perform some basic checks on the submitted sequences.  If any of the sequences have been defined previously they must be removed from the submission before you can proceed.  Curators do not want to waste their time dealing with previously defined sequences."
+msgstr ""
+
+#: ../submissions.rst:116
+msgid "Assuming the preliminary checks have passed you will then be able to add additional information to your submission."
+msgstr ""
+
+#: ../submissions.rst:122
+#: ../submissions.rst:215
+#: ../submissions.rst:292
+msgid "Add message to curator"
+msgstr ""
+
+#: ../submissions.rst:123
+msgid "If you wish to enter a message to the curator, enter this in the messages box and click 'Append'. This is not normally necessary for routine submissions."
+msgstr ""
+
+#: ../submissions.rst:128
+#: ../submissions.rst:221
+#: ../submissions.rst:298
+msgid "The message will be attached.  A curator may respond to the message and attach their own, with the full conversation becoming part of the submission record."
+msgstr ""
+
+#: ../submissions.rst:134
+msgid "Add supporting files"
+msgstr ""
+
+#: ../submissions.rst:135
+msgid "Some submissions will require the attachment of supporting files.  This will depend on the policies of the individual databases.  Sequences determined by Sanger sequencing should normally have forward and reverse trace files attached."
+msgstr ""
+
+#: ../submissions.rst:140
+msgid "Files can be added to the submission by dragging and dropping in to the large dotted area in the 'Supporting files' section. Alternatively, you can click this area and select files from the local file system."
+msgstr ""
+
+#: ../submissions.rst:146
+msgid "The files will be uploaded and shown in a table."
+msgstr ""
+
+#: ../submissions.rst:150
+msgid "Files can be removed from the submission by checking the appropriate 'Delete' box and clicking 'Delete selected files'."
+msgstr ""
+
+#: ../submissions.rst:154
+#: ../submissions.rst:227
+#: ../submissions.rst:304
+msgid "Finalize submission"
+msgstr ""
+
+#: ../submissions.rst:155
+msgid "Make sure the 'E-mail submission updates' box is checked if you wish to receive E-mail notification of the result of your submission.  This setting is remembered between submissions."
+msgstr ""
+
+#: ../submissions.rst:159
+#: ../submissions.rst:232
+#: ../submissions.rst:309
+msgid "Click 'Finalize submission!'."
+msgstr ""
+
+#: ../submissions.rst:163
+#: ../submissions.rst:236
+#: ../submissions.rst:313
+msgid "Your submission will then be listed under 'Pending submissions' on your submission page."
+msgstr ""
+
+#: ../submissions.rst:170
+msgid "Profile submission"
+msgstr ""
+
+#: ../submissions.rst:176
+msgid "Most MLST databases on PubMLST.org require you to submit an isolate record for each new ST that you wish to be defined. In these cases, you should add the isolate name to the id field of your profile submission and make a corresponding :ref:`isolate submission<isolate_submissions>` containing the allelic profile."
+msgstr ""
+
+#: ../submissions.rst:182
+msgid "Click the appropriate profiles link under submission type on the submission management page."
+msgstr ""
+
+#: ../submissions.rst:187
+#: ../submissions.rst:258
+msgid "Download the Excel submission template."
+msgstr ""
+
+#: ../submissions.rst:192
+msgid "Paste in profile(s)"
+msgstr ""
+
+#: ../submissions.rst:193
+msgid "Fill in the template.  The first column 'id' can be used to enter an identifier that is meaningful to you - it is used to report back the results but is not uploaded to the database.  It can be left blank, or the entire column can be removed - in which case individual profiles will be identified by row number."
+msgstr ""
+
+#: ../submissions.rst:198
+#: ../submissions.rst:276
+msgid "Copy and paste the entire contents of the submission worksheet. Click submit."
+msgstr ""
+
+#: ../submissions.rst:202
+msgid "Some basic checks will be performed.  These include whether the profile has already been assigned and whether each allele identifier exists.  The submission cannot proceed if the checks fail."
+msgstr ""
+
+#: ../submissions.rst:208
+msgid "Provided the checks pass, you will then be able to add additional information to your submission. New profile submissions usually don't require supporting files directly in the submission. You generally will need to make a corresponding :ref:`submission to the isolate database<isolate_submissions>` though."
+msgstr ""
+
+#: ../submissions.rst:216
+#: ../submissions.rst:293
+msgid "If you wish to enter a message to the curator, enter this in the messages box and click 'Append'."
+msgstr ""
+
+#: ../submissions.rst:228
+#: ../submissions.rst:305
+msgid "Make sure the 'E-mail submission updates' box is checked if you wish to receive E-mail notification of the result of your submission.  This setting is remembered between sessions."
+msgstr ""
+
+#: ../submissions.rst:245
+msgid "Isolate submission"
+msgstr ""
+
+#: ../submissions.rst:246
+msgid "New isolate data can only be submitted from within the appropriate isolate database.  You may be required to submit isolate data if you would like to get a new MLST sequence type defined, but this depends on individual database policy."
+msgstr ""
+
+#: ../submissions.rst:253
+msgid "Click the 'isolates' link under submission type on the submission management page."
+msgstr ""
+
+#: ../submissions.rst:263
+msgid "Paste in isolate data"
+msgstr ""
+
+#: ../submissions.rst:264
+msgid "Fill in the template.  Some fields are required and cannot be left blank. Check the 'Description of database fields' link on the database contents page to see a description of the fields and allowed values where these have been defined.  Where allowed values have been set, the template will have dropdown boxes (although these require newer versions of Excel to work)."
+msgstr ""
+
+#: ../submissions.rst:270
+msgid "Some databases may have hundreds of loci defined, and most will not have a column in the template. You can add new columns for any loci that have been defined and for which you would like to include allelic information for. These locus names must be the primary locus identifier.  A list of loci can be found in the 'allowed_loci' tab of the Excel submission template."
+msgstr ""
+
+#: ../submissions.rst:280
+msgid "Some basic checks will be performed.  These include checking all field values conform to allowed lists or data types.  The submission cannot proceed if any checks fail."
+msgstr ""
+
+#: ../submissions.rst:286
+msgid "Provided the checks pass, you will then be able to add additional information to your submission."
+msgstr ""
+
+#: ../submissions.rst:322
+msgid "Genome submission"
+msgstr ""
+
+#: ../submissions.rst:323
+msgid "Submitting genomes uses the same process as standard :ref:`isolate submission<isolate_submissions>`. The only difference is that there are a couple of extra required fields in the submission table:"
+msgstr ""
+
+#: ../submissions.rst:327
+msgid "assembly_filename - this is the name of the FASTA file containing the assembly contigs. This must be uploaded as a supporting file - you will not be able to finalize the submission until every isolate record has a matching contig file."
+msgstr ""
+
+#: ../submissions.rst:332
+msgid "sequence_method - the sequencing technology used to generate the sequences. The allowed values are listed on the submission page."
+msgstr ""
+
+#: ../submissions.rst:335
+msgid "Locus fields are not usually included in a genome submission as these can be readily extracted from the genome."
+msgstr ""
+
+#: ../submissions.rst:338
+msgid "To start the submission, click the 'genomes' link under submission type on the submission management page."
+msgstr ""
+
+#: ../submissions.rst:343
+msgid "Then follow the steps for :ref:`isolate submission<isolate_submissions>`, uploading the contig files as supporting files. You will be able to finalize the submission only after all the assembly files have been uploaded."
+msgstr ""
+
+#: ../submissions.rst:349
+msgid "When including the filename for your FASTA file containing the genome assembly, please note that Windows will, by default, hide the file extension, e.g. .fas or .fasta. Even if it is hidden in the Windows interface, the file extension is part of the filename and must be included so that the uploaded file has exactly the same name as entered in the submission template. See https://www.techadvisor.co.uk/how-to/windows/windows-10-file-extensions-3697651 to see how to display hidden file extensions in Windows 10."
+msgstr ""
+
+#: ../submissions.rst:360
+msgid "Assembly submission"
+msgstr ""
+
+#: ../submissions.rst:361
+msgid "Genome assemblies can be submitted to add to existing isolate records. These are often old records that have been submitted with just MLST results but whole genome sequencing has been performed later."
+msgstr ""
+
+#: ../submissions.rst:367
+msgid "Click the 'assemblies' link under submission type on the submission management page."
+msgstr ""
+
+#: ../submissions.rst:373
+msgid "Link assembly files to isolate records"
+msgstr ""
+
+#: ../submissions.rst:374
+msgid "You need to tell the system which isolate record should be linked to each assembly that is being uploaded. In order to do this you should prepare a spreadsheet consisting of four columns that you then copy and paste into the web form. The columns are:"
+msgstr ""
+
+#: ../submissions.rst:379
+msgid "database id number"
+msgstr ""
+
+#: ../submissions.rst:380
+msgid "isolate name"
+msgstr ""
+
+#: ../submissions.rst:381
+msgid "sequence method"
+msgstr ""
+
+#: ../submissions.rst:382
+msgid "assembly filename"
+msgstr ""
+
+#: ../submissions.rst:384
+msgid "Both the database id and isolate name are used so that they can be cross-checked to ensure that the correct isolate record has been selected."
+msgstr ""
+
+#: ../submissions.rst:389
+msgid "Click 'Submit' and the system will check that the id and isolate names correspond to isolate records that do not currently have assemblies. Provided these match, you will then be prompted to drag-and-drop your genome assemblies on to the web form. A check will also be performed to see if you are the original submitter of the isolate. If you are not, you can still make the submission but should add a message to the curator to confirm why you are adding assemblies for these records."
+msgstr ""
+
+#: ../submissions.rst:399
+msgid "Files are uploaded as you drag-and-drop them. Basic checks wil be performed for sequence length, number of contigs, and N50 values. If values are outside the preferred range you will see a warning for a specific value shown with a pink background. If values are outside the allowed range than the validation will fail and you will need to abort the submission. In the image below, the N50 values have a warning but have not failed the validation."
+msgstr ""
+
+#: ../submissions.rst:408
+msgid "Once the files have been uploaded and passed validation, add any message to the curator if necessary, e.g. if the original isolate submissions were made by someone else. Click 'Finalize submission'."
+msgstr ""
+
+#: ../submissions.rst:414
+msgid "Removing submissions from your notification list"
+msgstr ""
+
+#: ../submissions.rst:415
+msgid "Once a submission has been closed by a curator, the results will be displayed in your 'Manage submissions' area.  You can remove submissions once you have noted the result by clicking the 'Remove' link."
+msgstr ""
+
+#: ../submissions.rst:421
+msgid "Alternatively, submissions will be removed automatically a specified period of time after closure.  By default, this time is 90 days, but this can vary depending on the site configuration."
+msgstr ""

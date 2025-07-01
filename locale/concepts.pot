@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../concepts.rst:3
+msgid "Concepts and terms"
+msgstr ""
+
+#: ../concepts.rst:7
+msgid "BIGSdb"
+msgstr ""
+
+#: ../concepts.rst:8
+msgid "BIGSdb is the software platform - not a specific database.  There are many instances of BIGSdb databases, so referring to 'the BIGSdb' is meaningless."
+msgstr ""
+
+#: ../concepts.rst:18
+msgid "Loci"
+msgstr ""
+
+#: ../concepts.rst:19
+msgid "Loci are regions of the genome that are identified by similarity to a known sequence.  They can be defined by DNA or peptide sequence.  They are often complete coding sequences (genes), but may represent gene fragments (such as used in MLST), antigenic peptide loops, or indeed any sequence feature."
+msgstr ""
+
+#: ../concepts.rst:24
+msgid "In versions of BIGSdb prior to 1.8.0, an isolate record could only have one live :ref:`allele <alleles>` designation for a locus (inactive/pending designations could be stored within the database but were unavailable for querying or analysis purposes).  Since biology is rarely so clean, and some genomes may contain more than one copy of a gene, later versions of the software allow multiple allele designations for a locus, all of which can be queried and analysed."
+msgstr ""
+
+#: ../concepts.rst:32
+msgid "Paralogous loci can be difficult to differentiate by sequence similarity alone. Because of this, loci can be further defined by context, where in silico PCR or hybridization reactions can be performed to :ref:`filter the genome <genome_filtering>` to specific regions based on sequence external to the locus."
+msgstr ""
+
+#: ../concepts.rst:45
+msgid "Alleles"
+msgstr ""
+
+#: ../concepts.rst:46
+msgid "Alleles are instances of loci.  Every unique sequence, either DNA or peptide depending on the locus, is defined as a new allele and these are defined in a sequence definition database, where they are given an allele identifier. These identifiers are usually integers, but can be text strings.  Allele identifiers in text format can be constrained by length and formatting."
+msgstr ""
+
+#: ../concepts.rst:52
+msgid "When a specific allele of a locus is identified within the sequence data of an isolate record, the allele designation, i.e. identifier, is associated with the isolate record.  This efficiently stores the sequence variation found within an isolate.  Two isolates with the same allele designation for a locus have identical sequences at that locus.  Once the sequence variation within a genome has been reduced to a series of allele designations, genomes can be efficiently compared by identifying which loci vary between them."
+msgstr ""
+
+#: ../concepts.rst:60
+msgid "It is important to note that allele identifiers are usually arbitrary and are allocated sequentially in the order of discovery.  Alleles with adjacent identifiers may vary by a single nucleotide or by many."
+msgstr ""
+
+#: ../concepts.rst:72
+msgid "Schemes"
+msgstr ""
+
+#: ../concepts.rst:73
+msgid "Schemes are collections of loci that may be associated with additional field values.  At their simplest they just group loci together.  Example uses of simple schemes include:"
+msgstr ""
+
+#: ../concepts.rst:77
+msgid "Antibiotic resistance genes"
+msgstr ""
+
+#: ../concepts.rst:78
+msgid "Genes involved in specific biochemical pathways"
+msgstr ""
+
+#: ../concepts.rst:79
+msgid "Antigens"
+msgstr ""
+
+#: ../concepts.rst:80
+msgid "Vaccine components"
+msgstr ""
+
+#: ../concepts.rst:81
+msgid "Whole genome MLST (wgMLST)"
+msgstr ""
+
+#: ../concepts.rst:83
+msgid "When schemes are associated with additional fields, one of these fields must be the primary key, i.e. its value uniquely defines a particular combination of alleles at its member loci.  The pre-eminent example of this is MLST - where a sequence type (ST) is the primary key that uniquely defines combinations of alleles that make up the MLST profiles.  Additional fields can also then be included.  The values for these need not be unique.  In the MLST example, a field for clonal complex can be included, and the same value for this can be set for multiple STs."
+msgstr ""
+
+#: ../concepts.rst:99
+msgid "Profiles"
+msgstr ""
+
+#: ../concepts.rst:100
+msgid "Profiles are instances of :ref:`schemes <schemes>`.  A profile consists of a set of :ref:`allele identifiers <alleles>` for the :ref:`loci <loci>` that comprise the scheme.  If the scheme has a primary key field, e.g. sequence type (ST) in MLST schemes, then the unique combination of alleles in a complete profile can be defined by the value of this field."
+msgstr ""
+
+#: ../concepts.rst:113
+msgid "Classification groups"
+msgstr ""
+
+#: ../concepts.rst:114
+msgid "Classification groups are a way to cluster scheme profiles using a specified threshold of pairwise allelic mismatches. Currently, single-linkage clustering is supported whereby each member of a group must have no more than the specified number of allelic differences with at least one other member of the group."
+msgstr ""
+
+#: ../concepts.rst:127
+msgid "Sequence tags"
+msgstr ""
+
+#: ../concepts.rst:128
+msgid "Sequence tags record locus position within an isolate record's sequence bin. The process of creating these tags, is known as :ref:`tag-scanning <tag_scanning>`.  A sequence tag consists of:"
+msgstr ""
+
+#: ../concepts.rst:132
+msgid "sequence bin id - this identifies a particular contig"
+msgstr ""
+
+#: ../concepts.rst:133
+msgid "locus name"
+msgstr ""
+
+#: ../concepts.rst:134
+msgid "start position"
+msgstr ""
+
+#: ../concepts.rst:135
+msgid "end position"
+msgstr ""
+
+#: ../concepts.rst:136
+msgid "flag to indicate if sequence is reversed"
+msgstr ""
+
+#: ../concepts.rst:137
+msgid "flag to indicate if sequence is complete and does not continue off the end of the contig"
+msgstr ""
+
+#: ../concepts.rst:147
+msgid "Sets"
+msgstr ""
+
+#: ../concepts.rst:148
+msgid "Sets provide a means to take a large database with multiple loci and/or schemes and present a subset of these as though it was a complete database. The loci and schemes chosen to belong to a set can be renamed when used with this set. The rationale for this is that in a database with disparate isolates and a large number of loci, the naming of these loci may have to be long to specify a species name. For example, you may have a database that contains multiple MLST schemes for different species, but since these schemes may use different fragments of the same genes they may have to be named something like 'Streptococcus_pneumoniae_MLST_aroE' to uniquely specify them. If we define a set for 'Streptococcus pneumoniae' we can then choose to only include S. pneumoniae loci and therefore shorten their names, e.g. to 'aroE'."
+msgstr ""

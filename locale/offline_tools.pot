@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../offline_tools.rst:3
+msgid "Offline curation tools"
+msgstr ""
+
+#: ../offline_tools.rst:13
+msgid "Automated offline sequence tagging"
+msgstr ""
+
+#: ../offline_tools.rst:14
+msgid "Sequence tagging is the process of identifying alleles by scanning the sequence bin linked to an isolate record. Loci need to be defined in an external sequence definition database that contains the sequences for known alleles. The tagging function uses BLAST to identify sequences and will tag the specific sequence region with locus information and an allele designation if a matching allele is identified by reference to an external database."
+msgstr ""
+
+#: ../offline_tools.rst:21
+msgid "There is a script called 'autotag.pl' in the BIGSdb package. This can be used to tag genome sequences from the command line."
+msgstr ""
+
+#: ../offline_tools.rst:24
+msgid "Before autotag.pl can be run for the first time, a log file needs to be created. This can be created if it doesn't already exist with the following: ::"
+msgstr ""
+
+#: ../offline_tools.rst:30
+msgid "The autotag.pl script should be installed in /usr/local/bin. It is run as follows: ::"
+msgstr ""
+
+#: ../offline_tools.rst:35
+#: ../offline_tools.rst:272
+msgid "where <database configuration> is the name used for the argument 'db' when using the BIGSdb application."
+msgstr ""
+
+#: ../offline_tools.rst:38
+msgid "If you have multiple processor cores available, use the --threads option to set the number of jobs to run in parallel.  Isolates for scanning will be split among the threads."
+msgstr ""
+
+#: ../offline_tools.rst:42
+#: ../offline_tools.rst:279
+msgid "The script must be run by a user that can both write to the log file and access the databases, e.g. the 'bigsdb' user (see 'Setting up the offline job manager')."
+msgstr ""
+
+#: ../offline_tools.rst:46
+#: ../offline_tools.rst:207
+#: ../offline_tools.rst:283
+#: ../offline_tools.rst:459
+#: ../offline_tools.rst:510
+#: ../offline_tools.rst:593
+#: ../offline_tools.rst:649
+msgid "A full list of options can be found by typing: ::"
+msgstr ""
+
+#: ../offline_tools.rst:191
+msgid "Defining exemplar alleles"
+msgstr ""
+
+#: ../offline_tools.rst:192
+msgid "Exemplar alleles are a subset of the total number of alleles defined for a locus that encompass the known diversity within a specified identity threshold. They can be used to speed up :ref:`autotagging<autotagger>` as the BLAST queries are performed against exemplars to identify the locus region in the genome followed by a direct database lookup of the sequence found to identify the exact allele found. This is usually combined with the autotagger --fast option."
+msgstr ""
+
+#: ../offline_tools.rst:200
+msgid "Once exemplars have been defined you may also wish to set the fast_scan=\"yes\" option in the config.xml file. This enables their use for scanning within the web curators' interface."
+msgstr ""
+
+#: ../offline_tools.rst:204
+msgid "There is a script called 'find_exemplars.pl' in the BIGSdb scripts/maintenance directory."
+msgstr ""
+
+#: ../offline_tools.rst:256
+msgid "Automated offline allele definition"
+msgstr ""
+
+#: ../offline_tools.rst:257
+msgid "There is a script called 'scannew.pl' in the BIGSdb scripts/automation directory. This can be used to identify new alleles from the command line. This can (optionally) upload these to a sequence definition database."
+msgstr ""
+
+#: ../offline_tools.rst:261
+msgid "Before scannew.pl can be run for the first time, a log file needs to be created. This can be created if it doesn't already exist with the following: ::"
+msgstr ""
+
+#: ../offline_tools.rst:267
+msgid "The scannew.pl script should be installed in /usr/local/bin. It is run as follows: ::"
+msgstr ""
+
+#: ../offline_tools.rst:275
+msgid "If you have multiple processor cores available, use the --threads option to set the number of jobs to run in parallel.  Loci for scanning will be split among the threads."
+msgstr ""
+
+#: ../offline_tools.rst:442
+msgid "Calculating assembly stats"
+msgstr ""
+
+#: ../offline_tools.rst:443
+msgid "Basic assembly statistics are calculated automatically by the database engine as contigs are added to the sequence bin. These include the number of contigs, total length and the N50 value. Some calculations, such as %GC, number of Ns, and the number of gaps however, require offline analysis since these involve inspecting the nucleotide content of each contig. These can be calculated by running the update_assembly_stats.pl script. You can choose to run this against all databases on the system or against a specific database."
+msgstr ""
+
+#: ../offline_tools.rst:451
+#: ../offline_tools.rst:505
+msgid "Only one copy of the script can run at a time, but it will stop gracefully if it detects another copy running, so it is recommended that the script is run regularly using a CRON job and the --quiet option. This ensures that records are updated shortly after they have been uploaded."
+msgstr ""
+
+#: ../offline_tools.rst:456
+msgid "Once calculated, all assembly statistics can then be :ref:`used in isolate queries<query_by_seqbin>`."
+msgstr ""
+
+#: ../offline_tools.rst:496
+msgid "Predicting species based on rMLST analysis"
+msgstr ""
+
+#: ../offline_tools.rst:497
+msgid "The :ref:`rMLST plugin<rmlst>` predicts species based on matches to rMLST alleles exclusively found in a particular species. It uses the PubMLST API to query either a genome sequence or rMLST allele designations to identify the species. When the analysis is run using the plugin, the results are also stored with the isolate record and can then be displayed within the isolate information page. This analysis can also be run offline using the update_rmlst_species.pl script."
+msgstr ""
+
+#: ../offline_tools.rst:549
+msgid "Cleanly interrupting offline curation"
+msgstr ""
+
+#: ../offline_tools.rst:550
+msgid "Sometimes you may wish to stop running autotagger or allele autodefiner jobs as they can be run for a long time and as CRON jobs.  If these are running in single threaded mode, the easiest way is to simply send a kill signal to the process, i.e. identify the process id using 'top', e.g. 23232 and then ::"
+msgstr ""
+
+#: ../offline_tools.rst:557
+msgid "The scripts should respond to this signal within a couple of seconds, clean up all their temporary files and write the history log (where appropriate).  Do not use 'kill -9' as this will terminate the processes immediately and not allow them to clean up."
+msgstr ""
+
+#: ../offline_tools.rst:562
+msgid "If these scripts are running using multiple threads, then you need to cleanly kill each of these.  The simplest way to terminate all autotagger jobs is to type ::"
+msgstr ""
+
+#: ../offline_tools.rst:568
+msgid "The parent process will wait for all forked processes to cleanly terminate and then exit itself."
+msgstr ""
+
+#: ../offline_tools.rst:571
+msgid "Similarly, to terminate all allele autodefiner jobs, type ::"
+msgstr ""
+
+#: ../offline_tools.rst:577
+msgid "Uploading contigs from the command line"
+msgstr ""
+
+#: ../offline_tools.rst:578
+msgid "There is a script called upload_contigs.pl in the BIGSdb scripts/maintenance directory.  This can be used to upload contigs from a local FASTA file for a specified isolate record."
+msgstr ""
+
+#: ../offline_tools.rst:582
+msgid "The upload_contigs.pl script should be installed in /usr/local/bin.  It is run as follows: ::"
+msgstr ""
+
+#: ../offline_tools.rst:588
+msgid "The script must be run by a user who has the appropriate database permissions and the local configuration settings should be modified to match the database user account to be used. The default setting uses the 'apache' user which is used by the BIGSdb web interface."
+msgstr ""
+
+#: ../offline_tools.rst:639
+msgid "Populating geographic point lookup values"
+msgstr ""
+
+#: ../offline_tools.rst:640
+msgid "If a field has the geographic_point_lookup attribute set to 'yes' in the :ref:`config.xml file<isolate_xml_field>`, field values can be mapped to GPS coordinates to facilitate mapping."
+msgstr ""
+
+#: ../offline_tools.rst:644
+msgid "These lookup values can be populated using the gp_town_lookups.pl script found in the scripts/maintenance directory. This script uses the Geonames dataset that contains GPS coordinates for towns and cities with populations of at least 1000 people. The dataset is included in the datasets/Geonames directory."
+msgstr ""

@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_records.rst:3
+msgid "Data records"
+msgstr ""
+
+#: ../data_records.rst:4
+msgid ""
+"Record pages for different types of data can be accessed following a "
+"query by clicking appropriate hyperlinks."
+msgstr ""
+
+#: ../data_records.rst:14
+msgid "Isolate records"
+msgstr ""
+
+#: ../data_records.rst:15
+msgid "An Isolate record page displays everything known about an isolate."
+msgstr ""
+
+#: ../data_records.rst:19
+msgid "Each record will have some or all of the following sections:"
+msgstr ""
+
+#: ../data_records.rst:22
+msgid "Projects"
+msgstr ""
+
+#: ../data_records.rst:26
+msgid ""
+"This displays a list of projects that the isolate is a member of. Only "
+"projects that have a full description and the 'isolate_display' flag in "
+"their settings will be displayed."
+msgstr ""
+
+#: ../data_records.rst:31
+msgid "Provenance metadata"
+msgstr ""
+
+#: ../data_records.rst:35
+msgid "This section includes:"
+msgstr ""
+
+#: ../data_records.rst:37
+msgid "provenance fields"
+msgstr ""
+
+#: ../data_records.rst:38
+msgid "housekeeping data"
+msgstr ""
+
+#: ../data_records.rst:40
+msgid "who sent the isolate"
+msgstr ""
+
+#: ../data_records.rst:41
+msgid "who last curated"
+msgstr ""
+
+#: ../data_records.rst:42
+msgid "record creation times"
+msgstr ""
+
+#: ../data_records.rst:43
+msgid "last update times"
+msgstr ""
+
+#: ../data_records.rst:44
+msgid "links to update history"
+msgstr ""
+
+#: ../data_records.rst:46
+msgid ""
+"The update link displays page with exact times of who and when updated "
+"the record."
+msgstr ""
+
+#: ../data_records.rst:52
+msgid "Publications"
+msgstr ""
+
+#: ../data_records.rst:56
+msgid ""
+"This section includes full citation for papers linked to the isolate "
+"record. Each citation has a button that will return a dataset of all "
+"isolates linked to the paper."
+msgstr ""
+
+#: ../data_records.rst:60
+msgid ""
+"If there are five or more references they will be hidden by default to "
+"avoid cluttering the page too much.  Click the 'Show/hide' button to "
+"display them in this case."
+msgstr ""
+
+#: ../data_records.rst:65
+msgid "Sequence bin summary"
+msgstr ""
+
+#: ../data_records.rst:69
+msgid ""
+"This section contains basic statistics describing the sequence bin. "
+"Clicking the 'Show sequence bin' button navigates to the :ref:`sequence "
+"bin record <sequence_bin_records>`."
+msgstr ""
+
+#: ../data_records.rst:74
+msgid "Scheme and locus data"
+msgstr ""
+
+#: ../data_records.rst:75
+msgid ""
+"A hierarchical tree displays available schemes.  Click within internal "
+"nodes to expand them."
+msgstr ""
+
+#: ../data_records.rst:80
+msgid ""
+"Clicking any terminal node will display data available for a scheme or "
+"group of schemes."
+msgstr ""
+
+#: ../data_records.rst:85
+msgid ""
+"Click an allele number within the scheme profile, will display the "
+"appropriate :ref:`allele definition record <allele_definition_records>`. "
+"Clicking the green 'S' link will display the appropriate :ref:`sequence "
+"tag record <sequence_tag_records>`."
+msgstr ""
+
+#: ../data_records.rst:97
+msgid "Allele definition records"
+msgstr ""
+
+#: ../data_records.rst:98
+msgid ""
+"An allele definition record displays information about a defined allele "
+"in a sequence definition database."
+msgstr ""
+
+#: ../data_records.rst:103
+msgid ""
+"If the allele is a member of a scheme profile, e.g. MLST, this will be "
+"listed. In this case, there will be a button to display all profiles of "
+"that scheme that contain the allele."
+msgstr ""
+
+#: ../data_records.rst:107
+msgid ""
+"Similarly, if a :ref:`client database <client_databases>` has been setup "
+"for the database and the allele has been identified in an isolate, there "
+"will be a button to display all isolates that have that allele."
+msgstr ""
+
+#: ../data_records.rst:118
+msgid "Sequence tag records"
+msgstr ""
+
+#: ../data_records.rst:122
+msgid ""
+"A sequence tag record displays information about the location within a "
+"contig of a region associated with a locus.  The nucleotide sequence will"
+" be displayed along with upstream and downstream flanking sequence.  The "
+"length of these flanking sequences can be modified within the "
+":ref:`general options <general_options>`."
+msgstr ""
+
+#: ../data_records.rst:128
+msgid ""
+"If the tag is for a DNA locus and it is marked as a coding sequence, the "
+"three-frame translation will also be displayed."
+msgstr ""
+
+#: ../data_records.rst:138
+msgid "Profile records"
+msgstr ""
+
+#: ../data_records.rst:142
+msgid ""
+"A profile record displays information about a scheme, e.g. MLST, profile."
+" Each allele number within the profile will be hyperlinked.  Clicking "
+"these will take you to the appropriate :ref:`allele definition record "
+"<allele_definition_records>`."
+msgstr ""
+
+#: ../data_records.rst:147
+msgid ""
+"If a :ref:`client database <client_databases>` has been setup for the "
+"database and an isolate has the profile, there will be a button to "
+"display all isolates that have the profile."
+msgstr ""
+
+#: ../data_records.rst:158
+msgid "Sequence bin records"
+msgstr ""
+
+#: ../data_records.rst:162
+msgid ""
+"A sequence bin record contains information about the contigs associated "
+"with an isolate record.  This includes:"
+msgstr ""
+
+#: ../data_records.rst:165
+msgid "Number of contigs"
+msgstr ""
+
+#: ../data_records.rst:166
+msgid "Total length"
+msgstr ""
+
+#: ../data_records.rst:167
+msgid "Minimum length"
+msgstr ""
+
+#: ../data_records.rst:168
+msgid "Maximum length"
+msgstr ""
+
+#: ../data_records.rst:169
+msgid "N50, N90 and N95 values"
+msgstr ""
+
+#: ../data_records.rst:170
+msgid "Size distribution charts"
+msgstr ""
+
+#: ../data_records.rst:172
+msgid ""
+"Charts show the distribution of contig sizes and the cumulative contig "
+"length against contig number giving a breakdown indication of contig "
+"size."
+msgstr ""
+
+#: ../data_records.rst:175
+msgid ""
+"The record includes an embedded genome browser showing the positions of "
+"any loci that have been tagged."
+msgstr ""
+
+#: ../data_records.rst:178
+msgid ""
+"There are also links to download the contigs in FASTA, Genbank or EMBL "
+"format, along with annotation in GFF3 format."
+msgstr ""
+
+#: ../data_records.rst:181
+msgid ""
+"Finally there is a table that shows the loci that are tagged on each "
+"contig. Individual contigs can also be downloaded in EMBL or Genbank "
+"format."
+msgstr ""
+

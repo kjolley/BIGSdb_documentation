@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../faqs.rst:3
+msgid "Frequently asked questions (FAQs)"
+msgstr ""
+
+#: ../faqs.rst:6
+msgid "General"
+msgstr ""
+
+#: ../faqs.rst:7
+msgid "**What is the minimum specification of hardware required to run BIGSdb?**"
+msgstr ""
+
+#: ../faqs.rst:9
+msgid "The software will run on fairly modest hardware. For an installation with only local users, the following minimum is recommended:"
+msgstr ""
+
+#: ../faqs.rst:12
+msgid "4 processor cores"
+msgstr ""
+
+#: ../faqs.rst:13
+msgid "16 GB RAM"
+msgstr ""
+
+#: ../faqs.rst:14
+msgid "50 GB partition for temporary files"
+msgstr ""
+
+#: ../faqs.rst:15
+msgid "100 GB partition for databases"
+msgstr ""
+
+#: ../faqs.rst:17
+msgid "As usual, the more RAM that is available the better.  Ideally you would want enough RAM that the whole database(s) can reside in memory (an approximation is roughly twice the total size of your contigs), although this is not absolutely required."
+msgstr ""
+
+#: ../faqs.rst:22
+msgid "Offline jobs, such as :ref:`Genome Comparator <genome_comparator>` will use multiple cores (depending on the settings in bigsdb.conf), so if you want to run multiple jobs in parallel then you may want more cores (and memory). Tagging of new genomes using the offline :ref:`autotagger <autotagger>` is usually run in multi-threaded mode so the more cores available the faster this will be."
+msgstr ""
+
+#: ../faqs.rst:29
+msgid "As a comparison, the PubMLST site is run on two machines - separate web and database servers. All offline jobs and tagging of genomes is performed on the database server. These have the following specification:"
+msgstr ""
+
+#: ../faqs.rst:33
+msgid "web server: 40 cores, 128GB RAM"
+msgstr ""
+
+#: ../faqs.rst:34
+msgid "database server: 80 cores, 1TB RAM, 7TB ZFS RAID-Z2 NVMe local storage"
+msgstr ""
+
+#: ../faqs.rst:36
+msgid "**Why might icons be missing when using Internet Explorer?**"
+msgstr ""
+
+#: ../faqs.rst:38
+msgid "This can occur if you have Compatibility Mode enabled. BIGSdb generates valid HTML5 and Compatibility Mode should not be used. Please ensure this is not enabled in the Internet Explorer tools section."
+msgstr ""
+
+#: ../faqs.rst:43
+msgid "Installation"
+msgstr ""
+
+#: ../faqs.rst:45
+msgid "**BIGSdb is accumulating files in various temp directories - is this normal and how do I clean them out?**"
+msgstr ""
+
+#: ../faqs.rst:48
+msgid "See: :ref:`Periodically delete temporary files <delete-temp-files>`."
+msgstr ""
+
+#: ../faqs.rst:50
+msgid "**BIGSdb is complaining of an invalid script path - what does this mean?**"
+msgstr ""
+
+#: ../faqs.rst:52
+msgid "In your database config.xml file system tag are two attributes - script_path_includes and curate_path_includes. These contain regexes that the web url to your script (bigsdb.pl and bigscurate.pl respectively) must match. This prevents somebody from accessing a private database using an instance of bigsdb.pl that is not in a protected directory if you’re using apache authentication."
+msgstr ""
+
+#: ../faqs.rst:59
+msgid "So, if you access the script from http://localhost/cgi-bin/bigsdb/bigsdb.pl then you can set script_path_includes to something like “/bigsdb/” (which is the default), or “/cgi-bin/” or just “/” if you don’t care about this check."
+msgstr ""
+
+#: ../faqs.rst:64
+msgid "Administration"
+msgstr ""
+
+#: ../faqs.rst:66
+msgid "**How can I make some isolates public but not others?**"
+msgstr ""
+
+#: ../faqs.rst:68
+msgid "The easiest way to do this is to set up two or more separate configuration directories that refer to the database. The URLs to access these will differ by the value of the 'db' attribute, which refers to the name of the configuration directory (in /etc/bigsdb/dbases/). The database view accessed by each of these configurations can be different as can the access restrictions."
+msgstr ""
+
+#: ../faqs.rst:75
+msgid "*Example:*"
+msgstr ""
+
+#: ../faqs.rst:77
+msgid "We have a database 'bigsdb_test' that contains data, only some of which we wish to make publicly available. The isolates to make public are all members of a project. First we can make a view of the isolates table that contains only isolates within this project."
+msgstr ""
+
+#: ../faqs.rst:82
+msgid "For isolates in project id 3, create a database view by logging in to psql as the postgresql user. We will name this view 'public'.::"
+msgstr ""
+
+#: ../faqs.rst:92
+msgid "Create a private configuration that can access everything in the database in /etc/bigsdb/dbases/test_private. This will be accessible from http://IP_ADDRESS/cgi-bin/bigsdb/bigsdb.pl?db=test_private."
+msgstr ""
+
+#: ../faqs.rst:96
+msgid "The important attributes to set in the system tag of the config.xml file in this directory are:::"
+msgstr ""
+
+#: ../faqs.rst:102
+msgid "This means that anyone with an account can log in and view all the isolates (because the view is set to the isolates table)."
+msgstr ""
+
+#: ../faqs.rst:105
+msgid "Now create a public configuration in /etc/bigsdb/dbases/test_public. This will be accessible from http://IP_ADDRESS/cgi-bin/bigsdb/bigsdb.pl?db=test_public. It is better to create a symlink to the private config.xml and then override the attributes that are different. So create a symlink to the private config file: ::"
+msgstr ""
+
+#: ../faqs.rst:115
+msgid "You can now override the view and access settings. Within /etc/bigsdb/dbases/test_public, create a file called system.overrides and add the following: ::"
+msgstr ""
+
+#: ../faqs.rst:122
+msgid "See also :ref:`Restricting particular configurations to specific user accounts <default_access>` and :ref:`private records <private_records>`."
+msgstr ""

@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_export.rst:3
+msgid "Data export plugins"
+msgstr ""
+
+#: ../data_export/contig_export.rst:3
+msgid "Contig export"
+msgstr ""
+
+#: ../data_export/contig_export.rst:4
+msgid "The contig export plugin can be accessed by expanding the 'Export' section and clicking the ‘Contigs’ link in the contents page of isolate databases."
+msgstr ""
+
+#: ../data_export/contig_export.rst:9
+msgid "Alternatively, it can be accessed following a query by clicking the ‘Contigs’ button in the Export section at the bottom of the results table."
+msgstr ""
+
+#: ../data_export/contig_export.rst:14
+msgid "Select the isolates for which you wish to export contig data for. In databases with a large number of isolates you will need to enter the id numbers rather than select from a list. If the export function was accessed following a query, isolates returned in the query will be pre-selected."
+msgstr ""
+
+#: ../data_export/contig_export.rst:21
+msgid "Press submit."
+msgstr ""
+
+#: ../data_export/contig_export.rst:23
+msgid "A table will be produced with download links.  Clicking these will produce the contigs in FASTA format."
+msgstr ""
+
+#: ../data_export/contig_export.rst:28
+msgid "You can also download all the data in a tar.gz file by clicking the 'Batch download' link."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:5
+msgid "Isolate record export"
+msgstr ""
+
+#: ../data_export/isolate_export.rst:6
+msgid "You can export the entire isolate recordset by expanding the Export section on the main contents page and clicking the 'Export dataset' link."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:11
+msgid "Alternatively, you can export the recordsets of isolates returned from a database query by clicking the ‘Dataset’ button in the Export list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:18
+msgid "Select the isolate ids (if they have not been pre-selected from your query), isolate fields and schemes to include."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:23
+msgid "Click Submit."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:25
+msgid "You can then download the data in tab-delimited text or Excel formats."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:29
+msgid "Export jobs for larger datasets will be sent to the job queue."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:32
+msgid "Advanced options"
+msgstr ""
+
+#: ../data_export/isolate_export.rst:36
+msgid "The options fieldset has the following options."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:38
+msgid "Include locus common names - any common name for the locus is displayed in parentheses following the primary name."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:40
+msgid "Export allele numbers - the allele designation is included for any locus included."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:42
+msgid "Use one row per field - this is an alternative output format where instead of each locus and field having a separate column, each field is export on a separate row."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:45
+msgid "Include isolate field in row - the name of the isolate is included as a separate column when exporting in 'one row per field' fomrmat."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:47
+msgid "Export full allele designation record - export sender, curator and datestamp information as separate rows when exporting allele designation data."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:51
+msgid "Molecular weight calculation"
+msgstr ""
+
+#: ../data_export/isolate_export.rst:52
+msgid "The plugin can also calculate the predicted molecular weight of the gene product of any allele designated in the dataset."
+msgstr ""
+
+#: ../data_export/isolate_export.rst:57
+msgid "Click the 'Export protein molecular weight' checkbox.  Additional columns (or rows depending on the output format) will be created to include the molecular weight data."
+msgstr ""
+
+#: ../data_export/profile_export.rst:3
+msgid "Profile export"
+msgstr ""
+
+#: ../data_export/profile_export.rst:4
+msgid "You can export the allelic profiles for any indexed scheme (those containing a primary key field) defined in the sequence definition database."
+msgstr ""
+
+#: ../data_export/profile_export.rst:7
+msgid "The profile export function can be accessed by expanding the 'Export' section and clicking the 'Profiles' link on the contents page."
+msgstr ""
+
+#: ../data_export/profile_export.rst:12
+msgid "Alternatively, you can access this function by clicking the ‘Profiles’ button in the Export list at the bottom of a results table. Please note that the list of functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_export/profile_export.rst:18
+msgid "This will take you to a form with a list box in which the identifiers of the profile definitions you wish to include can be entered. Following a query, these values will be pre-entered. If the box is left empty then all profiles will be included. You can optionally include provenance information (sender, curator and datestamps) by selecting the appropriate checkboxes."
+msgstr ""
+
+#: ../data_export/profile_export.rst:26
+msgid "Click submit."
+msgstr ""
+
+#: ../data_export/profile_export.rst:28
+msgid "The export job will be submitted to the job queue."
+msgstr ""
+
+#: ../data_export/profile_export.rst:32
+msgid "The profiles will be exported in tab-delimited text and Excel formats."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:3
+msgid "Sequence export"
+msgstr ""
+
+#: ../data_export/sequence_export.rst:4
+msgid "You can export the sequences for any set of loci designated in isolate records, or belonging to scheme profiles in the sequence definition database."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:7
+msgid "The sequence export function can be accessed by expanding the 'Export' section and clicking the 'Sequences' link on the contents page of isolate databases, or the 'Profile sequences' link on the contents page of sequence definition databases."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:13
+msgid "Alternatively, you can access this function by clicking the ‘Sequences’ button in the Export list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:19
+msgid "Select the isolate or profile records to analyse - these will be pre-selected if you accessed the plugin following a query. Select the loci to include either directly within the loci list and/or using the schemes tree."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:25
+msgid "Click submit. The job will be submitted to the job queue."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:27
+msgid "Sequences will be export in XMFA and FASTA file formats."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:32
+msgid "Aligning sequences"
+msgstr ""
+
+#: ../data_export/sequence_export.rst:33
+msgid "By default, sequences will be exported unaligned - this is very quick since no processing is required.  You can choose to align the sequences by checking the 'Align sequences' checkbox."
+msgstr ""
+
+#: ../data_export/sequence_export.rst:39
+msgid "You can also choose to use MUSCLE or MAFFT as the aligner.  MAFFT is the default choice and is usually much quicker than MUSCLE.  Both produce comparable results."
+msgstr ""

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../private_records.rst:5
+msgid "Private records"
+msgstr ""
+
+#: ../private_records.rst:6
+msgid "Users with a status of 'submitter', 'curator', or 'admin' can upload private isolate records that will be hidden from public view. A quota needs to be set for the user by an admin before they are able to do this."
+msgstr ""
+
+#: ../private_records.rst:12
+msgid "Uploading private records"
+msgstr ""
+
+#: ../private_records.rst:13
+msgid "In order to upload private records, you need to make sure that you are logged in. If your account has a quota, there will be a menu item called 'Private data'. Click the 'Upload/manage records' link."
+msgstr ""
+
+#: ../private_records.rst:19
+msgid "You will see an overview of your quota and links to upload and edit your records. Click the 'Upload private isolate records' link (assuming you have quota available)."
+msgstr ""
+
+#: ../private_records.rst:25
+msgid "You will then be taken to a curator page that allows you to upload data copy and pasted from a spreadsheet. There is a link to an Excel template that you will need to use to prepare your data - this is the same template used if you were to submit your data to a curator."
+msgstr ""
+
+#: ../private_records.rst:32
+msgid "See :ref:`batch adding isolate records<batch_isolate_upload>` for details of the upload process."
+msgstr ""
+
+#: ../private_records.rst:37
+msgid "Modifying private records"
+msgstr ""
+
+#: ../private_records.rst:38
+msgid "Click the 'Private data' link on the contents page."
+msgstr ""
+
+#: ../private_records.rst:42
+msgid "Now click the 'Update private records' link. You will be taken to the :ref:`curators' interface<update_delete_isolate>`, where you will be able to use the standard curator tools."
+msgstr ""
+
+#: ../private_records.rst:48
+msgid "Use the :ref:`curators' interface<update_delete_isolate>` to make any changes to your isolate records, including :ref:`uploading genome data<upload_contigs>`."
+msgstr ""
+
+#: ../private_records.rst:54
+msgid "Sharing access to private records"
+msgstr ""
+
+#: ../private_records.rst:55
+msgid "If :ref:`user projects<user_projects>` are enabled on the database, you can share access to your private isolates by adding them in to a user project and then sharing this."
+msgstr ""
+
+#: ../private_records.rst:59
+msgid "See :ref:`user projects<user_projects>` for more details."
+msgstr ""
