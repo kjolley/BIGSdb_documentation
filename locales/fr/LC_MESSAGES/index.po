@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../index.rst:4
 msgid "*Gene-by-gene population annotation and analysis*"
-msgstr "Annotation et analyse populationnelle gène par gène"
+msgstr "*Annotation et analyse populationnelle gène par gène*"
 
 #: ../index.rst:6
 msgid ""
