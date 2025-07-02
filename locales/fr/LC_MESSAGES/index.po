@@ -52,7 +52,7 @@ msgstr "BIGSdb étend le principe du MLST aux données génomiques, où un grand
 "référence à des bases de données de définition de séquences (qui peuvent "
 "également être configurées avec BIGSdb). Les loci peuvent aussi être "
 "regroupés en schémas afin que des types puissent être définis par des "
-combinaisons de profils allélique, un concept analogue au MLST."
+"combinaisons de profils allélique, un concept analogue au MLST."
 
 #: ../index.rst:18
 msgid ""
