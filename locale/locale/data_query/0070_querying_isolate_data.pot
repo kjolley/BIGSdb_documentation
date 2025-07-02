@@ -1,0 +1,465 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../data_query/0070_querying_isolate_data.rst:8
+msgid "Querying isolate data"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:9
+msgid "The 'Search database' page of an isolate database allows you to also search by combinations of provenance criteria, scheme and locus data, and more."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:14
+msgid "To start with, only one provenance field search box is displayed but more can be added by clicking the '+' button (highlighted). These can be linked together by 'and' or 'or'."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:20
+msgid "After the search has been submitted, the results will be displayed in a table."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:24
+msgid "Each field can be queried using :ref:`standard operators <query_operators>`."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:26
+msgid "More search features are available by clicking the 'Modify form options' tab on the top of the screen."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:31
+msgid "A tab will be displayed.  Different options will be available here depending on the database.  Queries will be combined from the values entered in all form sections.  Possible options are:"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:35
+msgid "Provenance fields"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:37
+msgid "Search by combination of provenance field values, e.g. country, year, sender."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:40
+msgid "Allele designations/scheme field values"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:42
+msgid "Search by combination of allele designations and/or scheme fields e.g. ST, clonal complex information."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:45
+msgid "Allele designation status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:47
+msgid "Search by whether allele designation status is confirmed or provisional."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:49
+msgid "Tagged sequence status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:51
+msgid "Search by whether tagged sequence data is available for a locus.  You can also search by sequence flags."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:54
+msgid "Attribute values list"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:56
+msgid "Enter a list of values for any provenance field, locus, or scheme field."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:58
+msgid "Filters"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:60
+msgid "Various filters may be available, including"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:62
+msgid "Publications"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:63
+msgid "Projects"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:64
+msgid "MLST profile completion status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:65
+msgid "Clonal complex"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:66
+msgid "Sequence bin size"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:67
+msgid "Inclusion/exclusion of :ref:`old versions <versioning>`"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:71
+msgid "If the interface is modified, a button to save options becomes available within the tab.  If this is clicked, the modified form will be displayed the next time you go to the query page."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:79
+msgid "Query by allele designation/scheme field"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:80
+msgid "Queries can be combined with allele designation/scheme field values."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:82
+msgid "Make sure that the allele designation/scheme field values fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:87
+msgid "Designations can be queried using :ref:`standard operators <query_operators>`."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:89
+msgid "Additional search terms can be combined using the '+' button."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:91
+msgid "Add your search terms and click 'Submit'.  Allele designation/scheme field queries will be combined with terms entered in other sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:100
+msgid "Query by allele designation count"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:101
+msgid "Queries can be combined with counts of the total number of designations or for individual loci."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:104
+msgid "Make sure that the allele designation counts fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:109
+msgid "For example, to find all isolates that have designations at >1000 loci, select 'total designations > 1000', then click 'Submit'."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:114
+msgid "You can also search for isolates where any isolate has a particular number of designations. Use the term 'any locus' to do this."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:117
+msgid "Finally, you can search for isolates with a specific number of designations at a specific locus."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:122
+msgid "Additional search terms can be combined using the '+' button. Designation count queries will be combined with terms entered in other sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:127
+msgid "Searches for 'all loci' with counts that include zero, e.g. 'count of any locus = 0' or with a '<' operator are not supported. This is because such searches have to identify every isolate for which one or more loci are missing. In databases with thousands of loci this can be a very expensive database query."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:137
+msgid "Query by allele designation status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:138
+msgid "Allele designations can be queried based on their status, i.e. whether they are confirmed or provisional. Queries will be combined from the values entered in all form sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:142
+msgid "Make sure that the allele designation staus fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:147
+msgid "Select a locus from the dropdown box and either 'provisional' or 'confirmed'. Additional query fields can be displayed by clicking the '+' button. Click 'Submit'."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:153
+msgid "Provisional allele designations are marked within the results tables with a pink background.  Any scheme field designations that depend on the allele in question, e.g. a MLST ST, will also be marked as provisional."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:161
+msgid "Query by annotation status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:162
+msgid "Isolates can be queried by the annotation status of particular schemes if these have been set up. The idea is that for a well-annotated record the isolate would be expected to have allele designations for all loci in the scheme. Alternatively, different thresholds for number of loci with allele designations can be set up by the scheme administrator to indicate good or bad quality thresholds."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:169
+msgid "Make sure that the annotation status fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:174
+msgid "Additional search terms can be combined using the '+' button. Annotation status queries will be combined with terms entered in other sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:185
+msgid "Query by sequence bin size and number of contigs"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:186
+msgid "Isolates can be queried based on the total length of sequences within the sequence bin, the number of contigs, the N50 and/or the L50 values."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:189
+msgid "Make sure that the sequence bin fieldset is displayed by selecting it in the ‘Modify form options’ tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:194
+msgid "Additional search terms can be combined using the '+' button. Sequence bin queries will be combined with terms entered in other sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:203
+msgid "Query by sequence tag count"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:204
+msgid "Queries can be combined with counts of the total number of tags or for individual loci."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:207
+msgid "Make sure that the tagged sequence counts fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:212
+msgid "For example, to find all isolates that have sequence tags at >1000 loci, select 'total tags > 1000', then click 'Submit'."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:217
+msgid "You can also search for isolates where any isolate has a particular number of sequence tags. Use the term 'any locus' to do this."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:220
+msgid "Finally, you can search for isolates with a specific number of tags at a specific locus."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:225
+msgid "Additional search terms can be combined using the '+' button. Sequence tag count queries will be combined with terms entered in other sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:230
+msgid "Searches for 'all loci' with counts that include zero, e.g. 'count of any locus = 0' or with a '<' operator are not supported. This is because such searches have to identify every isolate for which one or more loci are not tagged. In databases with thousands of loci this can be a very expensive database query."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:240
+msgid "Query by tagged sequence status"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:241
+msgid "Sequence tags identify the region of a contig within an isolate's sequence bin entries that correspond to a particular locus.  The presence or absence of these tags can be queried as can whether or not the sequence has an a flag associated with.  These flags designate specific characteristics of the sequences. Queries will be combined from the values entered in all form sections."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:248
+msgid "Make sure that the tagged sequences status fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:253
+msgid "Select a specific locus in the dropdown box (or alternatively 'any locus') and a status.  Available status values are:"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:256
+msgid "untagged"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:258
+msgid "The locus has not been tagged within the sequence bin."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:260
+msgid "tagged"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:262
+msgid "The locus has been tagged within the sequence bin."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:264
+msgid "complete"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:266
+msgid "The locus sequence is complete."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:268
+msgid "incomplete"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:270
+msgid "The locus sequence is incomplete - normally because it continues beyond the end of a contig."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:273
+msgid "flagged: any"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:275
+msgid "The sequence for the  locus has a flag set."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:277
+msgid "flagged: none"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:279
+msgid "The sequence for the locus does not have a flag set."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:281
+msgid "flagged: <specific flag>"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:283
+msgid "The sequence for the locus has the specific flag chosen."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:289
+msgid ":ref:`Sequence tag flags <sequence_tag_flags>`"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:292
+msgid "Query by list of attributes"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:293
+msgid "The query form can be modified with a list box in to which a list of values for a chosen attribute can be entered - this could be a list of ids, isolate names, alleles or scheme fields.  This list will be combined with any other criteria or filter used on the page."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:298
+msgid "If the list box is not shown, add it by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:303
+msgid "Select the attribute to query and enter a list of values."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:313
+msgid "Query filters"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:314
+msgid "There are various filters that can additionally be applied to queries, or the filters can be applied solely on their own so that they filter the entire database."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:318
+msgid "Make sure that the filters fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:323
+msgid "The filters displayed will depend on the database and what has been defined within it.  Common filters are:"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:326
+msgid "Publication - Select one or more publication that has been linked to isolate records."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:328
+msgid "Project - Select one or more project that isolates belong to."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:329
+msgid "Profile completion - This is commonly displayed for MLST schemes.  Available options are:"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:332
+msgid "complete - All loci of the scheme have alleles designated."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:333
+msgid "incomplete - One or more loci have not yet been designated."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:334
+msgid "partial - The scheme is incomplete, but at least one locus has an allele designated."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:336
+msgid "started - At least one locus has an allele designated.  The scheme mat be complete or partial."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:338
+msgid "not started - The scheme has no loci with alleles designated."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:340
+msgid "Provenance fields - Dropdown list boxes of values for specific provenance fields may be present if set for the database.  Users can choose to :ref:`add additional filters <modify_query_filters>`."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:343
+msgid "Old record versions - Checkbox which, if selected, will include all record versions in a query."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:350
+msgid "Querying by allelic profile"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:351
+msgid "If a scheme, such as MLST, has been defined for an isolate database it is possible to query the database against complete or partial allelic profiles. Even if no scheme is defined, queries can be made against all loci."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:355
+msgid "On the index page, click 'Search by combinations of loci (profiles)' for any defined scheme. Enter either a partial (any combination of loci) or complete profile."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:361
+msgid "If multiple schemes are defined, you may have to select the scheme you wish to query in the 'Schemes' dropdown box and click 'Select'."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:366
+msgid "Enter the combination of alleles that you want to query for.  Fields can be left blank."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:371
+msgid "Alternatively, for scheme profiles, you can enter a primary key value (e.g. ST) and select 'Autofill' to automatically fill in the associated profile."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:376
+msgid "Select the number of loci that you'd like to match in the options dropdown box. Available options are:"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:379
+msgid "Exact or nearest match"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:380
+msgid "Exact match only"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:381
+msgid "x or more matches"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:382
+msgid "y or more matches"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:383
+msgid "z or more matches"
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:385
+msgid "Where x,y, and z will range from n-1 to 1 where n is the number of loci in the scheme."
+msgstr ""
+
+#: ../../data_query/0070_querying_isolate_data.rst:390
+msgid "Click 'Search'."
+msgstr ""

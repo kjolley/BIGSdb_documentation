@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../data_export/sequence_export.rst:3
+msgid "Sequence export"
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:4
+msgid "You can export the sequences for any set of loci designated in isolate records, or belonging to scheme profiles in the sequence definition database."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:7
+msgid "The sequence export function can be accessed by expanding the 'Export' section and clicking the 'Sequences' link on the contents page of isolate databases, or the 'Profile sequences' link on the contents page of sequence definition databases."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:13
+msgid "Alternatively, you can access this function by clicking the ‘Sequences’ button in the Export list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:19
+msgid "Select the isolate or profile records to analyse - these will be pre-selected if you accessed the plugin following a query. Select the loci to include either directly within the loci list and/or using the schemes tree."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:25
+msgid "Click submit. The job will be submitted to the job queue."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:27
+msgid "Sequences will be export in XMFA and FASTA file formats."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:32
+msgid "Aligning sequences"
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:33
+msgid "By default, sequences will be exported unaligned - this is very quick since no processing is required.  You can choose to align the sequences by checking the 'Align sequences' checkbox."
+msgstr ""
+
+#: ../../data_export/sequence_export.rst:39
+msgid "You can also choose to use MUSCLE or MAFFT as the aligner.  MAFFT is the default choice and is usually much quicker than MUSCLE.  Both produce comparable results."
+msgstr ""

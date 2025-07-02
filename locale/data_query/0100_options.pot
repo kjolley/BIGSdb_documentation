@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_query/0100_options.rst:6
+msgid "User-configurable options"
+msgstr ""
+
+#: ../data_query/0100_options.rst:7
+msgid "The BIGSdb user interface is configurable in a number of ways. Choices made are remembered between sessions.  If the database requires you to log on, the options are associated with your user account, whereas if it is a public database, that you haven't logged in to, the options are associated with a browser cookie so they will be remembered if you connect from the same computer (using the same browser)."
+msgstr ""
+
+#: ../data_query/0100_options.rst:14
+msgid "Most options are set by clicking the 'Customise' link on the database contents page.  Most of the available options are visible for isolate databases, whereas sequence definition databases have fewer available."
+msgstr ""
+
+#: ../data_query/0100_options.rst:23
+msgid "General options"
+msgstr ""
+
+#: ../data_query/0100_options.rst:24
+msgid "The general options tab is displayed by default.  If another tab is being shown, click the 'General options' header."
+msgstr ""
+
+#: ../data_query/0100_options.rst:29
+msgid "The general tab allows the following options to be modified:"
+msgstr ""
+
+#: ../data_query/0100_options.rst:31
+msgid "Records per page"
+msgstr ""
+
+#: ../data_query/0100_options.rst:32
+msgid "Page bar position"
+msgstr ""
+
+#: ../data_query/0100_options.rst:33
+msgid "Nucleotides per line - Some analyses display sequence alignments. This option allows you to set the width of these alignments so suit your display."
+msgstr ""
+
+#: ../data_query/0100_options.rst:35
+msgid "Flanking sequence length - This sets the length of flanking sequence upstream and downstream of a particular locus that is included whenever a sequence is displayed. Flanking sequences are displayed fainter that the locus sequence."
+msgstr ""
+
+#: ../data_query/0100_options.rst:38
+msgid "Locus aliases - Loci can have multiple names (aliases). Setting this option will display all alternative names in results tables."
+msgstr ""
+
+#: ../data_query/0100_options.rst:40
+msgid "Tooltips (beginner's mode) - Most query forms have help available in the form of information tooltips.  These can be switched on/off here.  They can also be toggled off by clicking the Toggle: 'i' button at the top-right of the display of some pages."
+msgstr ""
+
+#: ../data_query/0100_options.rst:45
+msgid "Click 'Set options' to remember any changes you make."
+msgstr ""
+
+#: ../data_query/0100_options.rst:52
+msgid "Main results table"
+msgstr ""
+
+#: ../data_query/0100_options.rst:53
+msgid "The 'main results table' tab contains options for the display of paged results following a query."
+msgstr ""
+
+#: ../data_query/0100_options.rst:56
+msgid "Click the 'Main results table' header to display the tab."
+msgstr ""
+
+#: ../data_query/0100_options.rst:60
+msgid "The 'main results table' tab will scroll up."
+msgstr ""
+
+#: ../data_query/0100_options.rst:64
+#: ../data_query/0100_options.rst:101
+msgid "This tab allows the following options to be modified:"
+msgstr ""
+
+#: ../data_query/0100_options.rst:66
+msgid "Hyperlink allele designations - Hyperlinks point to an information page about the particular allele definition. Depending on the locus, these may exist on a different website."
+msgstr ""
+
+#: ../data_query/0100_options.rst:69
+#: ../data_query/0100_options.rst:103
+msgid "Differentiate provisional allele designations - Allele designations can be set as confirmed or provisional, usually depending on the method of assignment. Selecting this option will display provisional designations in a different colour to confirmed designations."
+msgstr ""
+
+#: ../data_query/0100_options.rst:73
+msgid "Information about sequence bin records - Creates a tooltip that displays details about sequence tags corresponding to a locus."
+msgstr ""
+
+#: ../data_query/0100_options.rst:75
+msgid "Sequence bin records - Displays a tooltip linking to the sequence tag if available."
+msgstr ""
+
+#: ../data_query/0100_options.rst:77
+msgid "Sequence bin size - Displays the size of the sum of all contigs associated with each isolate record."
+msgstr ""
+
+#: ../data_query/0100_options.rst:79
+msgid "Contig count - Displays the number of contigs associated with each isolate record."
+msgstr ""
+
+#: ../data_query/0100_options.rst:81
+msgid "Assembly checks - Displays whether assembly checks have passed for a genome record."
+msgstr ""
+
+#: ../data_query/0100_options.rst:83
+msgid "Publications - Displays citations with links to PubMed for each record."
+msgstr ""
+
+#: ../data_query/0100_options.rst:89
+msgid "Isolate record display"
+msgstr ""
+
+#: ../data_query/0100_options.rst:90
+msgid "The 'isolate record display' tab contains options for the display of a full isolate record."
+msgstr ""
+
+#: ../data_query/0100_options.rst:93
+msgid "Click the 'Isolate record display' tab to display the tab."
+msgstr ""
+
+#: ../data_query/0100_options.rst:97
+msgid "The 'Isolate record display' tab will scroll up."
+msgstr ""
+
+#: ../data_query/0100_options.rst:107
+msgid "Display sender, curator and last updated records - Displays a tooltip containing sender information next to each allele designation."
+msgstr ""
+
+#: ../data_query/0100_options.rst:109
+msgid "Sequence bin information - Displays a tooltip with information about the position of the sequence if tagged within the sequence bin."
+msgstr ""
+
+#: ../data_query/0100_options.rst:111
+msgid "Allele flags - Displays information about whether alleles have flags defined in sequence definition databases."
+msgstr ""
+
+#: ../data_query/0100_options.rst:118
+msgid "Provenance field display"
+msgstr ""
+
+#: ../data_query/0100_options.rst:119
+msgid "The 'provenance field display' tab contains checkboxes for fields to display in the main results table."
+msgstr ""
+
+#: ../data_query/0100_options.rst:122
+msgid "Click the 'Provenance field display' tab to display the tab."
+msgstr ""
+
+#: ../data_query/0100_options.rst:126
+msgid "The 'Provenance field display' tab will scroll up."
+msgstr ""
+
+#: ../data_query/0100_options.rst:130
+msgid "Some fields will be checked by default - these are defined during :ref:`database setup <isolate_xml_field>` (maindisplay option)."
+msgstr ""
+
+#: ../data_query/0100_options.rst:133
+msgid "Check any fields that you wish to be displayed and then click 'Set options'. You can return to the default selection by clicking 'Default' followed by 'Set options'."
+msgstr ""
+
+#: ../data_query/0100_options.rst:143
+msgid "Query filters"
+msgstr ""
+
+#: ../data_query/0100_options.rst:144
+msgid "The 'query filters' tab contains checkboxes for provenance fields and scheme completion status.  Checking these results in drop-down list box filters appearing in the query page :ref:`filters fieldset <query_filters>`."
+msgstr ""
+
+#: ../data_query/0100_options.rst:148
+msgid "Click the 'Query filters' tab to display the tab."
+msgstr ""
+
+#: ../data_query/0100_options.rst:152
+msgid "The 'Query filters' tab will scroll up."
+msgstr ""
+
+#: ../data_query/0100_options.rst:156
+msgid "A list of possible filters appears.  Click any checkbox for a filter you would like to make available.  Click 'Set options' when done.  You can return to the default selection by clicking 'Default' followed by 'Set options'."
+msgstr ""
+
+#: ../data_query/0100_options.rst:165
+msgid "Modifying locus and scheme display options"
+msgstr ""
+
+#: ../data_query/0100_options.rst:166
+msgid "Whether or not loci, schemes or scheme fields are displayed in result tables, isolate records, or within query dropdown boxes can all be set with default options when first defined.  These attributes can, however, be overridden by a user, and these selections will be remembered between sessions."
+msgstr ""
+
+#: ../data_query/0100_options.rst:171
+msgid "The procedure to modify these attributes is the same for locus, schemes or scheme fields, so the steps for loci will be demonstrated only."
+msgstr ""
+
+#: ../data_query/0100_options.rst:174
+msgid "Click the appropriate link in the 'Customise' section on the isolate contents page."
+msgstr ""
+
+#: ../data_query/0100_options.rst:179
+msgid "Either select the locus id by querying for it directly."
+msgstr ""
+
+#: ../data_query/0100_options.rst:183
+msgid "Designations can be queried using :ref:`standard operators <query_operators>`."
+msgstr ""
+
+#: ../data_query/0100_options.rst:185
+msgid "Alternatively, you can search by filtering loci by schemes.  Click the 'Filter query by' header and select the scheme in the dropdown box."
+msgstr ""
+
+#: ../data_query/0100_options.rst:190
+msgid "Once loci have been selected, click Customize 'locus options'."
+msgstr ""
+
+#: ../data_query/0100_options.rst:194
+msgid "You can then choose to add or remove individual loci from the selection by clicking the appropriate checkboxes.  At the bottom of the page are a number of attributes that you can change - clicking 'Change' will affect all selected loci."
+msgstr ""
+
+#: ../data_query/0100_options.rst:199
+msgid "Possible options for loci are:"
+msgstr ""
+
+#: ../data_query/0100_options.rst:201
+msgid "isolate_display - Sets how the locus is displayed within an isolate record:"
+msgstr ""
+
+#: ../data_query/0100_options.rst:203
+msgid "allele only - display only identifier"
+msgstr ""
+
+#: ../data_query/0100_options.rst:204
+msgid "sequence - display the full sequence"
+msgstr ""
+
+#: ../data_query/0100_options.rst:205
+msgid "hide - don't show at all"
+msgstr ""
+
+#: ../data_query/0100_options.rst:207
+msgid "main_display - Sets whether the locus is displayed in the main results table following a query."
+msgstr ""
+
+#: ../data_query/0100_options.rst:210
+msgid "query_field - Sets whether the locus appears in dropdown list boxes to be used within queries."
+msgstr ""
+
+#: ../data_query/0100_options.rst:213
+msgid "analysis - Sets whether the locus can be used in data analysis functions."
+msgstr ""
+
+#: ../data_query/0100_options.rst:217
+msgid "Settings for loci can be overridden by those set for schemes that they are members of.  For example, if you set a locus to be displayed within a main results table, but that locus is a member of a scheme and you set that scheme not to be displayed, then the locus will not be shown.  Conversely, if you set a scheme to be displayed, but set its member locus not to be shown, then that locus will not be displayed (but other loci and scheme fields may be, depending on their independent settings)."
+msgstr ""

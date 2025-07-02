@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/grapetree.rst:8
+msgid "GrapeTree"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:9
+msgid ""
+"GrapeTree is a tool for generating and visualising minimum spanning "
+"trees. It has been developed to handle large datasets (in the region of "
+"1000s of genomes) and works with 1000s of loci as used in cgMLST. It uses"
+" an improved minimum spanning algorithm that is better able to handle "
+"missing data than alternative algorithms and is able to produce "
+"publication quality outputs. Datasets can include metadata which allows "
+"nodes in the resultant tree to be coloured interactively."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:17
+msgid ""
+"GrapeTree can be accessed by selecting the 'Analysis' section on the main"
+" contents page."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:22
+msgid ""
+"Jump to the 'Third party' category, follow the link to GrapeTree, then "
+"click 'Launch GrapeTree'."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:25
+msgid ""
+"GrapeTree can be accessed from the contents page by clicking the "
+"'GrapeTree' link."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:30
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'GrapeTree' button at the bottom of the results table.  Isolates returned"
+" from the query will be automatically selected within the GrapeTree "
+"interface."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:36
+msgid ""
+"Select the isolates to include. The tree can be generated from allelic "
+"profiles of any selection of loci, or more conveniently, you can select a"
+" scheme in the scheme selector, or choose from recommended schemes if "
+"these have been set, to include all loci belonging to that scheme."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:41
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes - select any fields you wish to include. Finally you can "
+"choose the analysis method from the following:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:45
+msgid ""
+"MSTreeV2 - Improved minimum-spanning tree that better handles missing "
+"data (default)"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:47
+msgid "MSTree - Classical minimum-spanning tree similar to PhyloViz"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:48
+msgid "NJ - FastME V2 Neighbour-joining tree"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:49
+msgid "RapidNJ - RapidNJ Neighbour-joining tree for very large datasets"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:51
+msgid "Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:55
+msgid ""
+"The job will be sent to the job queue. When it has finished, click the "
+"button marked 'Launch GrapeTree'."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:60
+msgid "The generated tree will be rendered in the GrapeTree application page."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:64
+msgid ""
+"The image can be manipulated in various ways. These include modifying the"
+" tree layout, customising node labels and size, modifying branch lengths "
+"and collapsing branches. The image can be saved in SVG format which can "
+"be further edited in image publishing software such as Inkscape."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:69
+msgid ""
+"As an example, the default cgMLST tree (above) has been modified (below) "
+"as follows:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:72
+msgid "Nodes coloured by clonal complex"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:73
+msgid "Labels removed"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:74
+msgid "Branches collapsed where <=100 loci different"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:75
+msgid "Node size set to 200%"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:76
+msgid "Kurtosis (node size relative to number of isolates) set to 75%"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:77
+msgid "Dynamic rendering allowed to run to fan out nodes"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:81
+msgid ""
+"Full details can be found in the `GrapeTree manual "
+"<https://bitbucket.org/enterobase/enterobase-web/wiki/GrapeTree>`_."
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:85
+msgid "GrapeTree has been described in the following publication:"
+msgstr ""
+
+#: ../data_analysis/grapetree.rst:87
+msgid ""
+"Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA "
+"Carrico, M Achtman (2018) GrapeTree: Visualization of core genomic "
+"relationships among 100,000 bacterial pathogens. `Genome Res 28:1395-1404"
+" <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
+msgstr ""
+

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:8
+msgid "Updating and deleting single isolate records"
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:9
+msgid "First you need to locate the isolate record. You can either browse or use a search or list query."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:14
+msgid "The query interface is the same as the :ref:`public query interface <isolate_query>`. Following a query, a results table of isolates will be displayed. There will be delete and update links for each record."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:24
+msgid "Clicking the 'Delete' link takes you to a page displaying the full isolate record."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:29
+msgid "Pressing 'Delete' from this record page confirms the deletion. You can also choose to delete and retire the isolate. If you do this, the isolate id number will not be re-used. It is possible to set the configuration so that you only have the option to delete and retire."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:34
+msgid "Clicking the 'Update' link for an isolate takes you to an update form. Make the required changes and click 'Update'."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:39
+msgid "Allele designations can also be updated by clicking within the scheme tree and selecting the 'Add' or 'Update' link next to a displayed locus."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:44
+msgid "Schemes will only appear in the tree if data for at least one of the loci within the scheme has been added.  You can additionally add or update allelic designations for a locus by choosing a locus in the drop-down list box and clicking 'Add/update'."
+msgstr ""
+
+#: ../../curator_guide/0100_updating_and_deleting_isolates.rst:51
+msgid "The allele designation update page allows you to modify an existing designation, or alternatively add additional designations. The sender, status (confirmed/provisional) and method (manual/automatic) needs to be set for each designation (all pending designations have a provisional status). The method is used to differentiate designations that have been determined manually from those determined by an automated algorithm."
+msgstr ""

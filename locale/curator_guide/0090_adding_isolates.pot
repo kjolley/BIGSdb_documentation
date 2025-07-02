@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../curator_guide/0090_adding_isolates.rst:8
+msgid "Adding isolate records"
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:9
+msgid "To add a single record, click the add (+) isolates link on the curator's index page."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:14
+msgid "The next available id will be filled in automatically but you are free to change this. Fill in the individual fields. Required fields are listed first and are marked with an exclamation mark (!). Some fields may have drop-down list boxes of allowed values. You can also enter allele designations for any loci that have been defined."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:22
+msgid "Press submit when finished."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:26
+msgid "More usually, isolate records are added in batch mode, even when only a single record is added, since the submission can be prepared in a spreadsheet and copied and pasted."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:30
+msgid "Select batch add (++) isolates link on the curator's index page."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:34
+msgid "Download a submission template in Excel format from the link."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:38
+msgid "Prepare your data in the spreadsheet - the column headings must match the database fields.  In databases with large numbers of loci, there won't be columns for each of these.  You can, however, manually add locus columns."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:42
+msgid "Pick a sender from the drop-down list box and paste the data from your spreadsheet in to the web form. The next available isolate id number will be used automatically (this can be overridden if you manually add an id column)."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:48
+msgid "Press submit. Data are checked for consistency and if there are no problems you can then confirm the submission."
+msgstr ""
+
+#: ../curator_guide/0090_adding_isolates.rst:53
+msgid "Any problems with the data will be listed and highlighted within the table. Fix the data and resubmit if this happens."
+msgstr ""

@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../index.rst:3
+msgid "Bacterial Isolate Genome Sequence Database (BIGSdb)"
+msgstr ""
+
+#: ../../index.rst:4
+msgid "*Gene-by-gene population annotation and analysis*"
+msgstr ""
+
+#: ../../index.rst:6
+msgid ""
+"BIGSdb is software designed to store and analyse sequence data for "
+"bacterial isolates. Any number of sequences can be linked to isolate "
+"records - these can be small contigs assembled from dideoxy sequencing "
+"through to whole genomes (complete or multiple contigs generated from "
+"parallel sequencing technologies such as Illumina or Oxford Nanopore)."
+msgstr ""
+
+#: ../../index.rst:12
+msgid ""
+"BIGSdb extends the principle of MLST to genomic data, where large numbers"
+" of loci can be defined, with alleles assigned by reference to sequence "
+"definition databases (which can also be set up with BIGSdb). Loci can "
+"also be grouped into schemes so that types can be defined by combinations"
+" of allelic profiles, a concept analagous to MLST."
+msgstr ""
+
+#: ../../index.rst:18
+msgid ""
+"The software has been released under the GNU General Public Licence "
+"version 3. The latest version of this documentation can be found at "
+"https://bigsdb.readthedocs.org/."
+msgstr ""
+

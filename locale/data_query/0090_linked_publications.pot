@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_query/0090_linked_publications.rst:6
+msgid "Retrieving isolates by linked publication"
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:7
+msgid "Click 'Analysis' on the contents page."
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:11
+msgid "Click 'Publication breakdown'"
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:15
+msgid "Then click 'Launch Publication Breakdown'."
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:19
+msgid "A list of publications linked by isolates within the database will be displayed."
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:24
+msgid "These can be filtered by author and/or year, and the sort order changed."
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:28
+msgid "To display the isolate records for any of the displayed publications, click the  button to the right of the citation."
+msgstr ""
+
+#: ../data_query/0090_linked_publications.rst:33
+msgid "The abstract of the paper will be displayed (if available), along with all isolates linked to it."
+msgstr ""

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:8
+msgid "Populating geographic coordinate lookup values"
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:9
+msgid ""
+"If a field has the geographic_point_lookup attribute set to 'yes' in the "
+":ref:`config.xml file<isolate_xml_field>`, field values can be mapped to "
+"GPS coordinates to facilitate mapping."
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:13
+msgid ""
+"If the user has curator privileges with the 'modify_geopoints' permission"
+" set, or is an admin, a curator link to modify 'Geopoint field lookup' "
+"will be available in the curator interface. This link is normally hidden "
+"but can be shown by selecting the 'Show all' toggle."
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:18
+msgid "To add a value, click the 'Add' link:"
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:22
+msgid ""
+"Select the 2 letter ISO country code and the linked field from the "
+"dropdown lists. Enter the town or city in the value field, and the GPS "
+"coordinates in LATITUDE, LONGITUDE format."
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:28
+msgid ""
+"Now, whenever that specified field value is used, a map will appear in "
+"the isolate information page showing the location. In addition, these "
+"values will be used in mapping in the Field Breakdown and Microreact "
+"plugins."
+msgstr ""
+
+#: ../../curator_guide/0210_populating_geographic_coordinate_lookup_values.rst:32
+msgid "GPS coordinates can be mapped in bulk using the gp_town_lookups.pl script."
+msgstr ""
+

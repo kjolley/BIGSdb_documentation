@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_query/0040_search_allelic_profiles.rst:8
+msgid "Identifying allelic profile definitions"
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:9
+msgid "For schemes such as MLST you can query allelic combinations to identify the sequence type (or more generically, the primary key of the profile)."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:12
+msgid "Click the 'By allelic profile' link in the 'Search for allelic profiles' section on a the sequence definition contents page."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:17
+#: ../data_query/0040_search_allelic_profiles.rst:58
+msgid "If multiple schemes are defined in the database you should select the scheme you wish to check."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:22
+msgid "Enter a combination of allelic values (you can enter a partial profile if you wish)."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:27
+msgid "Alternatively, you can automatically populate a profile by entering a value for the scheme primary key field (e.g. ST) and clicking 'Autofill'."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:32
+msgid "To find the closest or exact match, leave the search box on 'Exact or nearest match' and click 'Submit'. The best match will be displayed."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:37
+msgid "Alternatively, if you wish to find all profiles that match the query profile by at least a set number of loci, select the appropriate value in the search dropdown box, e.g. '4 or more matches' will show related profiles that share at least 4 alleles with the query."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:51
+msgid "Batch profile queries"
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:52
+msgid "To lookup scheme definitions, e.g. the sequence type for multiple profiles, click 'In a batch' from the 'Search for allelic profiles' section of the sequence definition contents page."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:63
+msgid "Copy and paste data from a spreadsheet. The first column is the record identifier, and the remaining columns are the alleles for each locus in the standard locus order defined for the scheme. There are links to the column order which can be used as a header line for your spreadsheet and to example data."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:69
+msgid "Click submit after pasting in the data."
+msgstr ""
+
+#: ../data_query/0040_search_allelic_profiles.rst:73
+msgid "A results table will be displayed."
+msgstr ""

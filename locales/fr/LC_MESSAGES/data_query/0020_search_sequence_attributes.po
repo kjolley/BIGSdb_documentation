@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_query/0020_search_sequence_attributes.rst:5
+msgid "Searching for specific allele definitions"
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:6
+msgid ""
+"There are two query pages available that allow searching for specific "
+"allele definitions.  The first allows querying of all loci together by "
+"criteria that are common to all.  The second is a locus-specific "
+"attribute query that can search on any extended attributes that may be "
+"defined for a locus.  This locus- specific query also allows you to paste"
+" in lists of alleles for download or analysis."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:14
+msgid "General (all loci) sequence attribute search"
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:15
+msgid ""
+"To retrieve specific allele designations, click 'By specific criteria' in"
+" the 'Find alleles' section on a sequence definition database contents "
+"page."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:20
+msgid ""
+"Enter your query using the dropdown search box - additional terms can be "
+"added by clicking the '+' button."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:23
+msgid ""
+"Designations can be queried using :ref:`standard operators "
+"<query_operators>`."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:27
+msgid "Click 'Search'."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:31
+msgid "Click the hyperlinked results to display allele records."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:37
+msgid ""
+"Various search criteria can also be selected by combining with filters.  "
+"Click the filter heading to display these."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:43
+msgid "Locus-specific sequence attribute search"
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:44
+msgid ""
+"Some loci have :ref:`extended attribute fields "
+"<locus_extended_attributes>`. To query these, click 'By locus' in the "
+"'Find alleles' section on a sequence definition database contents page."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:50
+msgid "Pick the required locus from the dropdown box."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:54
+msgid ""
+"The fields specific for that locus will be added to the dropdown query "
+"boxes."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:58
+msgid "The query form can be modified by clicking the 'Modify form options' tab:"
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:65
+msgid ""
+"A list box can be added by clicking the 'Show' button for 'Allele id list"
+" box'."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:69
+msgid ""
+"Close the form modification tab and you can now enter a list of allele "
+"ids for retrieval."
+msgstr ""
+
+#: ../data_query/0020_search_sequence_attributes.rst:74
+msgid ""
+"Various analysis and export options will be available for use on the "
+"retrieved sequences.  These include FASTA output and :ref:`Locus "
+"Explorer<locus_explorer>` analysis."
+msgstr ""
+

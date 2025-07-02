@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../data_export/isolate_export.rst:5
+msgid "Isolate record export"
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:6
+msgid "You can export the entire isolate recordset by expanding the Export section on the main contents page and clicking the 'Export dataset' link."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:11
+msgid "Alternatively, you can export the recordsets of isolates returned from a database query by clicking the ‘Dataset’ button in the Export list at the bottom of the results table. Please note that the list of functions here may vary depending on the setup of the database."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:18
+msgid "Select the isolate ids (if they have not been pre-selected from your query), isolate fields and schemes to include."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:23
+msgid "Click Submit."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:25
+msgid "You can then download the data in tab-delimited text or Excel formats."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:29
+msgid "Export jobs for larger datasets will be sent to the job queue."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:32
+msgid "Advanced options"
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:36
+msgid "The options fieldset has the following options."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:38
+msgid "Include locus common names - any common name for the locus is displayed in parentheses following the primary name."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:40
+msgid "Export allele numbers - the allele designation is included for any locus included."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:42
+msgid "Use one row per field - this is an alternative output format where instead of each locus and field having a separate column, each field is export on a separate row."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:45
+msgid "Include isolate field in row - the name of the isolate is included as a separate column when exporting in 'one row per field' fomrmat."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:47
+msgid "Export full allele designation record - export sender, curator and datestamp information as separate rows when exporting allele designation data."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:51
+msgid "Molecular weight calculation"
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:52
+msgid "The plugin can also calculate the predicted molecular weight of the gene product of any allele designated in the dataset."
+msgstr ""
+
+#: ../../data_export/isolate_export.rst:57
+msgid "Click the 'Export protein molecular weight' checkbox.  Additional columns (or rows depending on the output format) will be created to include the molecular weight data."
+msgstr ""

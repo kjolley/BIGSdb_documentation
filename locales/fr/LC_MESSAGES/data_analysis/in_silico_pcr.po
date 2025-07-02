@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/in_silico_pcr.rst:6
+msgid "In silico PCR"
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:7
+msgid ""
+"This is a tool that can be used to simulate PCR reactions run against "
+"genomes stored in the database. This is useful for designing and testing "
+"primers. The plugin uses the `exonerate ipcress "
+"<https://www.animalgenome.org/bioinfo/resources/manuals/exonerate/>`_ "
+"program to perform its simulation."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:13
+msgid ""
+"The tool can be accessed by selecting the 'Analysis' section on the main "
+"contents page."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:18
+msgid ""
+"Jump to the 'Analysis' category, follow the link to BLAST, then click "
+"'Launch PCR'."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:23
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the 'PCR'"
+" button at the bottom of the results table. Isolates returned from the "
+"query will be automatically selected within the analysis interface."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:29
+msgid ""
+"Select the isolates to include. These will be pre-populated if you arrive"
+" here following a search."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:32
+msgid ""
+"Enter your forward and reverse primer sequences in the appropriate boxes."
+" These may contain wobble bases if necessary. You can also specify how "
+"many mismatches are allowed for each primer. Finally, you can restrict "
+"the reported length to only those products that fall between a minimum "
+"and maximum length range."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:39
+msgid ""
+"Click 'Submit'. The job will be sent to the job queue. The output will be"
+" a table of predicted products, showing the number of products and their "
+"positions within a contig. A summary of this table is also availabe to "
+"download in tab- delimited text of Excel formats."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:46
+msgid ""
+"It is also possible to export the predicted product sequence. You can do "
+"this by selecting the 'Export sequences' checkbox on the options form."
+msgstr ""
+
+#: ../data_analysis/in_silico_pcr.rst:53
+msgid ""
+"The exported sequences will include the primer regions. It is important "
+"to note that, unlike a real PCR reaction, these sequences represent the "
+"sequence within this region in the genome. In a real PCR reaction, the "
+"primers are themseleves incorporated in to the product, so even if there "
+"was a mismatch in the primer region, the product sequence would include "
+"the primer sequence."
+msgstr ""
+

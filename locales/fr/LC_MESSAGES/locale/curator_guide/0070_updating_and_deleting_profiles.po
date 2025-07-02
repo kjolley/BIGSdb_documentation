@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:8
+msgid "Updating and deleting scheme profile definitions"
+msgstr ""
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:9
+msgid ""
+"In order to update or delete a scheme profile, first you must select it. "
+"Click the update/delete profiles link in the scheme profiles box named "
+"after the scheme (e.g. MLST):"
+msgstr ""
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:15
+msgid ""
+"Search for your profile by entering search criteria (alternatively you "
+"can use the browse or list query functions)."
+msgstr ""
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:23
+msgid ""
+"To delete the profile, click the 'Delete' link next to the profile. "
+"Alternatively, if your account has permission, you may be able to 'Delete"
+" ALL' records retrieved from the search."
+msgstr ""
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:27
+msgid ""
+"For deletion of a single record, the full record will be displayed. "
+"Confirm deletion by clicking 'Delete'. You can also choose to delete and "
+"retire the profile identifier. If you do this, the profile identifier "
+"will not be re-used. The database configuration can be set so that you "
+"can only delete and retire."
+msgstr ""
+
+#: ../../curator_guide/0070_updating_and_deleting_profiles.rst:35
+msgid ""
+"To modify the profile, click the 'Update' link next to the profile "
+"following the query. A form will be displayed - make any changes and then"
+" click 'Update'."
+msgstr ""
+

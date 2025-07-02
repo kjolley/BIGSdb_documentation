@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/rMLST.rst:8
+msgid "Species identification"
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:9
+msgid ""
+"The species identification tool extracts ribosomal MLST alleles from "
+"genomes and determines the species based on the count of alleles that are"
+" uniquely found within a single species (or higher taxonomic rank if "
+"alleles unique to a species are not found). This is done by making a "
+"query to the rMLST genome database."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:15
+msgid ""
+"The tool can be accessed by selecting the 'Analysis' section on the main "
+"contents page."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:20
+msgid ""
+"Jump to the 'Analysis' category, follow the link to rMLST species "
+"identity, then click 'Launch rMLST species identity'."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:23
+msgid "The tool can be accessed from the front page of an isolate database."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:27
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'rMLST species id' button at the bottom of the results table.  Isolates "
+"returned from the query will be automatically selected within the species"
+" id interface (note that only isolates with a genome assembly will be "
+"able to be checked)."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:35
+msgid ""
+"Finally, the analysis is also possible directly from an isolate record, "
+"if the isolate has a genome assembly associated with it."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:40
+msgid ""
+"The tool interface consists of a list of isolate ids to check. This will "
+"be pre-populated if accessed following a query or directly from an "
+"isolate record. If the rMLST scheme is defined on the system, you will "
+"have a choice as to whether to BLAST the genome sequences to identify the"
+" rMLST alleles, or just use the designations that are tagged in the "
+"database. The latter is much quicker but relies on the record having been"
+" scanned and annotated with the rMLST loci."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:48
+msgid "Click 'Submit'."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:52
+msgid "The job will be sent to the job queue."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:54
+msgid ""
+"Results will be displayed in a table as they are generated. The table "
+"will display the highest taxonomic rank that can be reliably identified, "
+"e.g. species, the taxon and its full taxonomy. An indication of the "
+"confidence for the result will also be displayed - this is based on the "
+"proportion of alleles found that are unique to a taxon."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:62
+msgid ""
+"Clicking the '+' icon on any row will display further details about the "
+"matches."
+msgstr ""
+
+#: ../data_analysis/rMLST.rst:69
+msgid ""
+"Ribosomal MLST was first described in `Jolley et al. 2012. "
+"<https://www.ncbi.nlm.nih.gov/pubmed/22282518>`_ Ribosomal multilocus "
+"sequence typing: universal characterization of bacteria from domain to "
+"strain. *Microbiology* 158:1005-15"
+msgstr ""
+

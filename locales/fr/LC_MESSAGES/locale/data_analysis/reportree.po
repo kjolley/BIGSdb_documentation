@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../data_analysis/reportree.rst:6
+msgid "ReporTree"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:7
+msgid ""
+"ReporTree is a pan-pathogen tool for automated and reproducible "
+"identification and characterization of genetic clusters."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:10
+msgid ""
+"ReporTree can be accessed by selecting the 'Analysis' section on the main"
+" contents page."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:15
+msgid ""
+"Jump to the 'Third party' category, follow the link to ReporTree, then "
+"click 'Launch ReporTree'."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:18
+msgid ""
+"ReporTree can be accessed from the contents page by clicking the "
+"'ReporTree' link."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:23
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'ReporTree' button at the bottom of the results table.  Isolates returned"
+" from the query will be automatically selected within the GrapeTree "
+"interface."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:29
+msgid ""
+"Select the isolates to include. Trees and clusters can be generated from "
+"allelic profiles of any selection of loci, or more conveniently, you can "
+"select a scheme in the scheme selector, or choose from recommended "
+"schemes if these have been set, to include all loci belonging to that "
+"scheme."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:34
+msgid ""
+"Additional fields can be selected to be included as metadata for use in "
+"colouring nodes and for inclusion in the partition summary - select any "
+"fields you wish to include. Multiple selections can be made by holding "
+"down shift or ctrl while selecting."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:39
+msgid ""
+"You can also select any date field which will be used in cluster "
+"definitions to indicate the first and last dates of the cluster as well "
+"as its total duration. This should ideally represent the date of "
+"sampling."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:43
+msgid ""
+"Finally, you can choose to use GrapeTree and HC methods for clustering "
+"and a comma-separated list of partitions defined by locus differences, "
+"e.g. '4,7,15'. Alternatively, you can choose to calculate and display "
+"'stability regions' which will include the first partition of each "
+"stability region (threshold ranges in which cluster composition is "
+"similar)."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:49
+msgid "Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:53
+msgid ""
+"The job will be sent to the job queue. When it has finished, you should "
+"see a link to load the resultant tree in GrapeTree and a list of output "
+"files."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:58
+msgid ":ref:`See further information about using GrapeTree. <grapetree>`"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:61
+msgid "ReporTree has been described in the following publication:"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:64
+msgid ""
+"V Mixão, M Pinto, D Sobral, A Di Pasquale, J Gomes, V Borges (2023) "
+"ReporTree: a surveillance-oriented tool to strengthen the linkage between"
+" pathogen genetic clusters and epidemiological data `Genome Med 15:43 "
+"<https://www.ncbi.nlm.nih.gov/pubmed/37322495>`_."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:69
+msgid "It also makes use of the following tools which should also be cited:"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:71
+msgid ""
+"cgmlst-dists: https://github.com/tseemann/cgmlst-dists for original code "
+"and https://github.com/genpat-it/cgmlst-dists for improvements regarding "
+"memory efficiency."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:75
+msgid "If you requested a GrapeTree analysis:"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:77
+msgid ""
+"Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA "
+"Carriço, M Achtman (2018) GrapeTree: Visualization of core genomic "
+"relationships among 100,000 bacterial pathogens. `Genome Res 28:1395-1404"
+" <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:82
+msgid "If you requested 'stability regions':"
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:84
+msgid ""
+"JA Carriço, C Silva-Costa, J Melo-Cristino, FR Pinto, H de Lencastre, JS"
+" Almeida, M Ramirez (2006) Illustration of a common framework for "
+"relating multiple typing methods by application to macrolide-resistant "
+"*Streptococcus pyogenes*. `J Clin Microbiol 44:2524-32 "
+"<https://www.ncbi.nlm.nih.gov/pubmed/16825375>`_."
+msgstr ""
+
+#: ../../data_analysis/reportree.rst:90
+msgid ""
+"DOR Barker, JA Carriço, P Kruczkiewicz, F Palma, M Rossi, EN Taboada "
+"(2018) Rapid identification of stable clusters in bacterial populations "
+"using the Adjusted Wallace Coefficient. BioRxiv DOI: "
+"https://doi.org/10.1101/299347."
+msgstr ""
+

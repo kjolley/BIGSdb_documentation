@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../curator_guide/0200_isolate_versioning.rst:5
+msgid "Isolate record versioning"
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:6
+msgid ""
+"Versioning enables multiple versions of genomes to be uploaded to the "
+"database and be analysed separately.  When a new version is created, a "
+"copy of the provenance metadata, and publication links are created in a "
+"new isolate record. The sequence bin and allele designations are not "
+"copied."
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:11
+msgid ""
+"By default, old versions of the record are not returned from queries.  "
+"Most query pages have a checkbox to 'Include old record versions' to "
+"override this."
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:14
+msgid "Links to different versions are displayed within an isolate record:"
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:18
+msgid ""
+"The different versions will also be listed in analysis plugins, with old "
+"versions identified with an [old version] designation after their name."
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:21
+msgid ""
+"To create a new version of an isolate record, query or browse for the "
+"isolate:"
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:25
+msgid "Click the 'create' new version link next to the isolate record:"
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:29
+msgid ""
+"The isolate record will be displayed.  The suggested id number for the "
+"new record will be displayed - you can change this.  By default, the new "
+"record will also be added to any projects that the old record is a member"
+" of. Uncheck the 'Add new version to projects' checkbox to prevent this."
+msgstr ""
+
+#: ../curator_guide/0200_isolate_versioning.rst:34
+msgid "Click the 'Create' button."
+msgstr ""
+

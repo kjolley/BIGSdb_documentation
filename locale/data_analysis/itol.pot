@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_analysis/itol.rst:6
+msgid "Interactive Tree of Life (iTOL)"
+msgstr ""
+
+#: ../data_analysis/itol.rst:7
+msgid "The ITOL plugin allows you to generate and visualise phylogenetic trees calculated from concatenated sequence alignments of selected loci (or the loci belonging to a particular scheme). Currently, only Neighbour-joining trees are supported. Datasets can include metadata which allows nodes in the resultant tree to be coloured."
+msgstr ""
+
+#: ../data_analysis/itol.rst:13
+msgid "ITOL can be accessed by selecting the 'Analysis' section on the main contents page."
+msgstr ""
+
+#: ../data_analysis/itol.rst:18
+msgid "Jump to the 'Third party' category, follow the link to iTOL, then click 'Launch iTOL'."
+msgstr ""
+
+#: ../data_analysis/itol.rst:21
+msgid "ITOL can be accessed from the contents page by clicking the 'iTOL' link."
+msgstr ""
+
+#: ../data_analysis/itol.rst:25
+msgid "Alternatively, it can be accessed following a query by clicking the 'iTOL' button at the bottom of the results table.  Isolates returned from the query will be automatically selected within the iTOL interface."
+msgstr ""
+
+#: ../data_analysis/itol.rst:31
+msgid "Select the isolates to include. The tree can be generated from concatenated sequences of any selection of loci, or more conveniently, you can select a scheme in the scheme selector, or in the list of recommended schemes if these have been set up, to include all loci belonging to that scheme."
+msgstr ""
+
+#: ../data_analysis/itol.rst:36
+msgid "Additional fields can be selected to be included as metadata for use in colouring nodes - select any fields you wish to include in the 'iTOL datasets' list. Multiple selections can be made by holding down Shift or Ctrl while selecting. You can also choose how nodes are labeled by metadata - either by colouring the labels or using coloured strips."
+msgstr ""
+
+#: ../data_analysis/itol.rst:42
+msgid "Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/itol.rst:46
+msgid "The job will be sent to the job queue. When it has finished, the generated tree and associated metadata will be uploaded to the Interactive Tree of Life website (https://itol.embl.de/). Click the button marked 'Launch iTOL'."
+msgstr ""
+
+#: ../data_analysis/itol.rst:52
+msgid "Your browser will open the iTOL website with your tree."
+msgstr ""
+
+#: ../data_analysis/itol.rst:56
+msgid "You can manipulate the tree in the browser, and display metadata by selecting the appropriate toggle."
+msgstr ""
+
+#: ../data_analysis/itol.rst:61
+msgid "The tree layout can be changed by clicking the 'Basic tab' and, for example, selecting a circular display mode."
+msgstr ""
+
+#: ../data_analysis/itol.rst:66
+msgid "See the `detailed documentation on the iTOL website <https://itol.embl.de/help.cgi>`_ for more information about manipulating and exporting trees."
+msgstr ""

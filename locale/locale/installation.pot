@@ -1,0 +1,621 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../installation.rst:3
+msgid "Installation and configuration of BIGSdb"
+msgstr ""
+
+#: ../../installation.rst:7
+msgid "Software installation"
+msgstr ""
+
+#: ../../installation.rst:8
+msgid "BIGSdb consists of two main Perl scripts, bigsdb.pl and bigscurate.pl, that run the query and curator's interfaces respectively. These need to be located somewhere within the web cgi-bin directories. In addition, there are a large number of library files, used by both these scripts, that are installed by default in /usr/local/lib/BIGSdb. Plugin scripts are stored within a 'Plugins' sub-directory of this library directory."
+msgstr ""
+
+#: ../../installation.rst:15
+msgid "All databases on a system can use the same instance of the scripts, or alternatively any database can specify a particular path for each script, enabling these script directories to be protected by apache htaccess directives."
+msgstr ""
+
+#: ../../installation.rst:20
+msgid ":doc:`Software requirements <dependencies>`"
+msgstr ""
+
+#: ../../installation.rst:21
+msgid "Download from `SourceForge.net <http://sourceforge.net/projects/bigsdb/>`_ or `GitHub <https://github.com/kjolley/BIGSdb>`_."
+msgstr ""
+
+#: ../../installation.rst:24
+msgid "Unpack the distribution package in a temporary directory: ::"
+msgstr ""
+
+#: ../../installation.rst:29
+msgid "Copy the bigsdb.pl and bigscurate.pl scripts to a subdirectory of your web server's cgi-bin directory. Make sure these are readable and executable by the web server daemon."
+msgstr ""
+
+#: ../../installation.rst:32
+msgid "Copy the contents of the lib directory to /usr/local/lib/BIGSdb/. Make sure you include the Plugins and Offline directories which are subdirectories of the main lib directory."
+msgstr ""
+
+#: ../../installation.rst:35
+msgid "Copy the javascript directory to the root directory of your website, i.e. accessible from http://your_website/javascript/."
+msgstr ""
+
+#: ../../installation.rst:37
+msgid "Copy the css directory to root directory of your website, i.e. accessible from http://your_website/css/."
+msgstr ""
+
+#: ../../installation.rst:39
+msgid "Copy the webfonts directory to the root directory of your website, i.e. accessible from http://your_website/webfonts/."
+msgstr ""
+
+#: ../../installation.rst:41
+msgid "Copy the images directory to the root directory of your website, i.e. accessible from http://your_website/images/."
+msgstr ""
+
+#: ../../installation.rst:43
+msgid "Copy the contents of the conf directory to /etc/bigsdb/. Check the paths of helper applications and database names in the bigsdb.conf file and modify for your system."
+msgstr ""
+
+#: ../../installation.rst:46
+msgid "Create a PostgreSQL database user called apache - this should not have any special priveleges. First you will need to log in as the postgres user: ::"
+msgstr ""
+
+#: ../../installation.rst:51
+msgid "Then use the createuser command to do this, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:55
+msgid "From the psql command line, set the apache user password: ::"
+msgstr ""
+
+#: ../../installation.rst:60
+msgid "Create PostgreSQL databases called bigsdb_auth, bigsdb_prefs and bigsdb_refs using the scripts in the sql directory. Create the database using the createdb command and set up the tables using the psql command. ::"
+msgstr ""
+
+#: ../../installation.rst:71
+msgid "Create a writable temporary directory in the root of the web site called tmp, i.e. accessible from http://your_website/tmp."
+msgstr ""
+
+#: ../../installation.rst:73
+msgid "Create a log file, bigsdb.log, in /var/log owned by the web server daemon, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:79
+msgid "(substitute www-data for the web daemon user)."
+msgstr ""
+
+#: ../../installation.rst:83
+msgid "Configuring PostgreSQL"
+msgstr ""
+
+#: ../../installation.rst:84
+msgid "PostgreSQL can be configured in many ways and how you do this will depend on your site requirements."
+msgstr ""
+
+#: ../../installation.rst:86
+msgid "The following security settings will allow the appropriate users 'apache' and 'bigsdb' to access databases without allowing all logged in users full access. Only the UNIX users 'postgres' and 'webmaster' can log in to the databases as the Postgres user 'postgres'."
+msgstr ""
+
+#: ../../installation.rst:91
+msgid "You will need to edit the pg_hba.conf and pg_ident.conf files.  These are found somewhere like /etc/postgresql/9.1/main/"
+msgstr ""
+
+#: ../../installation.rst:95
+msgid "pg_hba.conf"
+msgstr ""
+
+#: ../../installation.rst:111
+msgid "pg_ident.conf"
+msgstr ""
+
+#: ../../installation.rst:122
+msgid "You may also need to change some settings in the postgresql.conf file.  As an example, a configuration for a machine with 16GB RAM, allowing connections from a separate web server may have the following configuration changes made: ::"
+msgstr ""
+
+#: ../../installation.rst:131
+msgid "Setting stats_temp_directory to /dev/shm makes use of a ramdisk usually available on Debian or Ubuntu systems for frequently updated working files.  This reduces a lot of unneccessary disk access."
+msgstr ""
+
+#: ../../installation.rst:133
+msgid "See `Tuning Your PostgreSQL Server <https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server>`_ for more details."
+msgstr ""
+
+#: ../../installation.rst:135
+msgid "Restart PostgreSQL after any changes, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:141
+msgid "Setting global connection parameters"
+msgstr ""
+
+#: ../../installation.rst:142
+msgid "Global database connection parameters can be entered in /etc/bigsdb/db.conf. This allows you to set default values for the host, port, user and password. Default values are as follows:"
+msgstr ""
+
+#: ../../installation.rst:146
+msgid "dbhost: localhost"
+msgstr ""
+
+#: ../../installation.rst:147
+msgid "dbport: 5432"
+msgstr ""
+
+#: ../../installation.rst:148
+msgid "dbuser: apache"
+msgstr ""
+
+#: ../../installation.rst:149
+msgid "dbpassword: remote"
+msgstr ""
+
+#: ../../installation.rst:151
+msgid "These can all be over-ridden in individual :ref:`database configuration config.xml files<xml>` using the terms host, port, user, and password."
+msgstr ""
+
+#: ../../installation.rst:156
+msgid "Site-specific configuration"
+msgstr ""
+
+#: ../../installation.rst:157
+msgid "Site-specific configuration files are located in /etc/bigsdb by default."
+msgstr ""
+
+#: ../../installation.rst:159
+msgid ":download:`bigsdb.conf <conf/bigsdb.conf>` - main configuration file"
+msgstr ""
+
+#: ../../installation.rst:160
+msgid ":download:`logging.conf <conf/logging.conf>` - error logging settings. See log4perl project website for advanced configuration details."
+msgstr ""
+
+#: ../../installation.rst:163
+msgid "Breadcrumb navigation links can be configured with a file called breadcrumbs.conf, placed either in the database configuration directory, the root directory of the website, or in /etc/bigsdb/conf. The file describes links that are higher in the hierarchy than the database index page. The file consists of lines that contain link text separated by a pipe symbol (|) followed by a URL for that link, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:173
+msgid "Global announcements can be made in a banner that appears on each database contents page. This is useful for service announcements such as for planned maintenance. Place a HTML file called announcement.html in /etc/bigsdb including the text that you wish to appear."
+msgstr ""
+
+#: ../../installation.rst:180
+msgid "Setting up the offline job manager"
+msgstr ""
+
+#: ../../installation.rst:181
+msgid "To run plugins that require a long time to complete their analyses, an offline job manager has been developed. The plugin will save the parameters of a job to a job database and then provide a link to the job status page. An offline script, run frequently from CRON, will then process the job queue and update status and outputs via the job status page."
+msgstr ""
+
+#: ../../installation.rst:183
+msgid "Create a 'bigsdb' UNIX user, e.g.::"
+msgstr ""
+
+#: ../../installation.rst:187
+msgid "As the postgres user, create a 'bigsdb' user and create a bigsdb_jobs database using the jobs.sql SQL file, e.g.::"
+msgstr ""
+
+#: ../../installation.rst:193
+msgid "From the psql command line, set the bigsdb user password:::"
+msgstr ""
+
+#: ../../installation.rst:198
+msgid "Set up the jobs parameters in the /etc/bigsdb/bigsdb.conf file, e.g.::"
+msgstr ""
+
+#: ../../installation.rst:203
+msgid "The jobs script will not process a job if the server's load average (over the last minute) is higher than the max_load parameter. This should be set higher than the number of processor cores or you may find that jobs never run on a busy server. Setting it to double the number of cores is probably a good starting point."
+msgstr ""
+
+#: ../../installation.rst:209
+msgid "Copy the job_logging.conf file to the /etc/bigsdb directory."
+msgstr ""
+
+#: ../../installation.rst:211
+msgid "Set the script to run frequently (preferably every minute) from CRON."
+msgstr ""
+
+#: ../../installation.rst:213
+msgid "Copy bigsjobs.pl to /usr/local/bin"
+msgstr ""
+
+#: ../../installation.rst:215
+msgid "You should install xvfb, which is a virtual X server that may be required for third party applications called from plugins. This is required, for example, for calling splitstree4 from the Genome Comparator plugin."
+msgstr ""
+
+#: ../../installation.rst:219
+msgid "Add the following to /etc/crontab:::"
+msgstr ""
+
+#: ../../installation.rst:223
+msgid "(set to run every minute from the 'bigsdb' user account)."
+msgstr ""
+
+#: ../../installation.rst:225
+msgid "If you'd like to run this more frequently, e.g. every 30 seconds, multiple entries can be added to CRON with an appropriate sleep prior to running, e.g.::"
+msgstr ""
+
+#: ../../installation.rst:232
+msgid "Create a log file, bigsdb_jobs.log, in /var/log owned by 'bigsdb', e.g.::"
+msgstr ""
+
+#: ../../installation.rst:239
+msgid "Setting up the submission system"
+msgstr ""
+
+#: ../../installation.rst:240
+msgid "The submission system allows users to submit new data to the database for curation.  Submissions are placed in a queue for a curator to upload. All communication between submitters and curators can occur via the submission system."
+msgstr ""
+
+#: ../../installation.rst:245
+msgid "Create a writable submissions directory in the root of the web site called submissions, i.e. accessible from http://your_website/submissions.  This is used for file uploads.  The directory should be writable by the Apache web daemon (user 'www-data' on Debian/Ubuntu systems). If you are running the :ref:`RESTful interface<restful_api>` the directory should also be writable by the bigsdb user. To ensure this, make the directory group-writable and add the bigsdb user to the apache group ('www-data' on Debian/Ubuntu systems). If you will be allowing submissions via the RESTful interface, you should also add the apache user ('www-data' on Debian/Ubuntu systems) to the bigsdb group, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:259
+msgid "The actual directory can be outside of the web root and made accessible using a symlink provided your Apache configuration allows this, e.g. the default location is /var/submissions symlinked to /var/www/submissions (assuming your web site is located in /var/www), e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:270
+msgid "Set the submission_dir location in bigsdb.conf."
+msgstr ""
+
+#: ../../installation.rst:272
+msgid "Set the smtp_server in bigsdb.conf to the IP or DNS name of your organisation's SMTP relay.  Depending on how your E-mail system is configured, you may be able to use the localhost address (127.0.0.1)."
+msgstr ""
+
+#: ../../installation.rst:276
+msgid "Make sure the curate_script and query_script values are set in bigsdb.conf. These point to the web-accessible location of the web scripts and are required to allow curators to be directed between the web interfaces as needed."
+msgstr ""
+
+#: ../../installation.rst:281
+msgid "Set submissions=\"yes\" in the system tag of the :ref:`database config.xml file<xml>` of each database for which submissions should be enabled."
+msgstr ""
+
+#: ../../installation.rst:289
+msgid "Setting up a site-wide user database"
+msgstr ""
+
+#: ../../installation.rst:290
+msgid "A site-wide user database allows users to register themselves for accounts and associate these with specific databases. It means that a single set of log-in credentials can be used across databases, rather than each database maintaining its own."
+msgstr ""
+
+#: ../../installation.rst:295
+msgid "Users can access/update their account details by calling the bigsdb.pl script without any additional attributes, e.g. http://website/cgi-bin/bigsdb.pl."
+msgstr ""
+
+#: ../../installation.rst:298
+msgid "Site admins can access administration features by calling the bigscurate.pl script without any additional attributes."
+msgstr ""
+
+#: ../../installation.rst:301
+msgid "Create a user database, e.g. pubmlst_bigsdb_users::"
+msgstr ""
+
+#: ../../installation.rst:306
+msgid "Set up sync_user_dbase_users.pl to run every hour as a CRON JOB, e.g. in /etc/crontab, add the following to run this at 5 minutes past each hour ::"
+msgstr ""
+
+#: ../../installation.rst:311
+msgid "Add the user database details to each database that you want to allow to use it."
+msgstr ""
+
+#: ../../installation.rst:314
+msgid "You need to :ref:`add the users database details<setting_site_users_db>` to each client database that will use it."
+msgstr ""
+
+#: ../../installation.rst:317
+msgid "If you want to allow users to register themselves you need to modify bigsdb.conf."
+msgstr ""
+
+#: ../../installation.rst:320
+msgid "You can define multiple user databases (as a comma-separated list) but usually you would have just one. Define this using the site_user_dbs attribute. Use a short domain (site) name separated by a pipe (|) and the name of the database, e.g. add the following to /etc/bigsdb.conf::"
+msgstr ""
+
+#: ../../installation.rst:327
+msgid "Make sure default database connection parameters are set in /etc/bigsdb/db.conf."
+msgstr ""
+
+#: ../../installation.rst:330
+msgid "Set up site admin user in new user database. This has to be done manually - other users will either be able to register themselves or be created by curators from other databases.::"
+msgstr ""
+
+#: ../../installation.rst:340
+msgid "Set the password for this user using the add_user.pl script (change XXXXXXXX to the password value)::"
+msgstr ""
+
+#: ../../installation.rst:345
+msgid "Add specific permissions that this admin user can have by directly adding the following terms to the permissions table:"
+msgstr ""
+
+#: ../../installation.rst:348
+msgid "set_site_user_passwords:"
+msgstr ""
+
+#: ../../installation.rst:350
+msgid "Allow admin to set user passwords."
+msgstr ""
+
+#: ../../installation.rst:352
+msgid "import_dbase_configs:"
+msgstr ""
+
+#: ../../installation.rst:354
+msgid "Allow admin to define which database configurations are made available for registration."
+msgstr ""
+
+#: ../../installation.rst:357
+msgid "merge_users"
+msgstr ""
+
+#: ../../installation.rst:359
+msgid "Allow admin to merge user accounts."
+msgstr ""
+
+#: ../../installation.rst:361
+msgid "modify_users"
+msgstr ""
+
+#: ../../installation.rst:363
+msgid "Allow admin to edit user details."
+msgstr ""
+
+#: ../../installation.rst:365
+msgid "e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:371
+msgid "Specific :ref:`permissions can be set for curators<curator_permissions>` in individual databases:"
+msgstr ""
+
+#: ../../installation.rst:374
+msgid "import_site_users"
+msgstr ""
+
+#: ../../installation.rst:376
+msgid "This allows the curator to import site users in to the database."
+msgstr ""
+
+#: ../../installation.rst:378
+msgid "modify_site_users"
+msgstr ""
+
+#: ../../installation.rst:380
+msgid "You may not wish to do this! - It allows the curator of any database with this permission to change the details of a user that may be used on other databases on the site."
+msgstr ""
+
+#: ../../installation.rst:384
+msgid "HTML header files can be defined for use when bigsdb.pl or bigscurate.pl are called without a database configuration, such as when a user is registering or modifying their user details. These files, site_header.html, site_footer.html, site_curate_header.html and site_curate_footer.html should be placed in the root directory of the web site."
+msgstr ""
+
+#: ../../installation.rst:394
+msgid "Periodically delete temporary files"
+msgstr ""
+
+#: ../../installation.rst:395
+msgid "There are two temporary directories (one public, one private) which may accumulate temporary files over time. Some of these are deleted automatically when no longer required but some cannot be cleaned automatically since they are used to display results after clicking a link or to pass the database query between pages of results."
+msgstr ""
+
+#: ../../installation.rst:401
+msgid "The easiest way to clean the temp directories is to run a cleaning script periodically, e.g. create a root-executable script in /etc/cron.hourly containing the following:::"
+msgstr ""
+
+#: ../../installation.rst:417
+msgid "Prevent preference database getting too large"
+msgstr ""
+
+#: ../../installation.rst:418
+msgid "The preferences database stores user preferences for BIGSdb databases running on the site.  Every user will have a globally unique identifier (guid) stored in this database along with a datestamp indicating the last access time. On public databases that do not require logging in, this guid is stored as a cookie on the user's computer.  Databases that require logging in use a combination of database and username as the identifier.  Over time, the preferences database can get quite large since every unique user will result in an entry in the database.  Since many of these entries represent casual users, or even web indexing bots, they can be periodically cleaned out based on their last access time.  A weekly CRON job can be set up to remove any entries older than a defined period.  For example, the following line entered in /etc/crontab will remove the preferences for any user that has not accessed any database in the past 6 months (the script will run at 6pm every Sunday). ::"
+msgstr ""
+
+#: ../../installation.rst:440
+msgid "Log file rotation"
+msgstr ""
+
+#: ../../installation.rst:441
+msgid "Set the log file to auto rotate by adding a file called 'bigsdb' with the following contents to /etc/logrotate.d: ::"
+msgstr ""
+
+#: ../../installation.rst:466
+msgid "Upgrading BIGSdb"
+msgstr ""
+
+#: ../../installation.rst:467
+msgid "Major version changes, e.g. 1.7 -> 1.8, indicate that there has been a change to the underlying database structure for one or more of the database types. Scripts to upgrade the database are provided in sql/upgrade and are named by the database type and version number.  For example, to upgrade an isolate database (bigsdb_isolates) from version 1.7 to 1.8, log in as the postgres user and type: ::"
+msgstr ""
+
+#: ../../installation.rst:476
+msgid "Upgrades are sequential, so to upgrade from a version earlier than the last major version you would need to upgrade to the intermediate version first, e.g. to go from 1.6 -> 1.8, requires upgrading to 1.7 first."
+msgstr ""
+
+#: ../../installation.rst:480
+msgid "Minor version changes, e.g. 1.8.0 -> 1.8.1, have no modifications to the database structures.  There will be changes to the Perl library modules and possibly to the contents of the Javascript directory, images directory and CSS files."
+msgstr ""
+
+#: ../../installation.rst:489
+msgid "Running the BIGSdb RESTful interface"
+msgstr ""
+
+#: ../../installation.rst:490
+msgid "BIGSdb has an Application Programming Interface (API) that allows third-party applications to access the data within the databases.  The script that runs this is called bigsrest.pl.  This is a Dancer2 application that can be run using a wide range of options, e.g. as a stand-alone script, using Perl webservers with plackup, or from apache.  Full documentation for `deploying Dancer2 applications <http://search.cpan.org/~xsawyerx/Dancer2-0.200002/lib/Dancer2/Manual/Deployment.pod>`_ can be found online."
+msgstr ""
+
+#: ../../installation.rst:498
+msgid "The script requires a new database that describes the resources to make available.  This is specified in the bigsdb.conf file as the value of the 'rest_db' attribute.  By default, the database is named bigsdb_rest."
+msgstr ""
+
+#: ../../installation.rst:502
+msgid "A SQL file to create this database can be found in the sql directory of the download archive.  It is called rest.sql.  To create the database, as the postgres user, navigate to the sql directory and type ::"
+msgstr ""
+
+#: ../../installation.rst:509
+msgid "This database will need to be populated using psql or any tool that can be used to edit PostgreSQL databases.  The database contains three tables that together describe and group the databases resources that will be made available through the API. The tables are:"
+msgstr ""
+
+#: ../../installation.rst:519
+msgid "resources"
+msgstr ""
+
+#: ../../installation.rst:519
+msgid "this contains two fields (both compulsory):"
+msgstr ""
+
+#: ../../installation.rst:516
+msgid "**dbase_config** - the name of the database configuration used with the database.  This is the same as the name of the directory that contains the config.xml file in the /etc/bigsdb/dbases directory."
+msgstr ""
+
+#: ../../installation.rst:519
+msgid "**description** - short description of the database."
+msgstr ""
+
+#: ../../installation.rst:526
+msgid "groups (used to group related resources together)"
+msgstr ""
+
+#: ../../installation.rst:526
+msgid "this contains two fields (compulsory fields shown in bold):"
+msgstr ""
+
+#: ../../installation.rst:523
+msgid "**name** - short name of group.  This is usually a single word and is also the key that links resources to groups."
+msgstr ""
+
+#: ../../installation.rst:525
+msgid "**description** - short description of group."
+msgstr ""
+
+#: ../../installation.rst:526
+msgid "long_description - fuller description of group."
+msgstr ""
+
+#: ../../installation.rst:533
+msgid "group_resources (used to add resources to groups)"
+msgstr ""
+
+#: ../../installation.rst:533
+msgid "this contains two fields (both compulsory)"
+msgstr ""
+
+#: ../../installation.rst:530
+msgid "**group_name** - name of group.  This must already exist in the groups table."
+msgstr ""
+
+#: ../../installation.rst:532
+msgid "**dbase_config** - the name of database resource.  This must already exist in the resources table."
+msgstr ""
+
+#: ../../installation.rst:535
+msgid "For example, to describe the PubMLST resources for Neisseria, connect to the bigsdb_rest database using psql, ::"
+msgstr ""
+
+#: ../../installation.rst:540
+msgid "Then enter the following SQL commands.  First add the database resources: ::"
+msgstr ""
+
+#: ../../installation.rst:547
+msgid "Then create a 'neisseria' group that will contain these resources: ::"
+msgstr ""
+
+#: ../../installation.rst:552
+msgid "Finally, add the database resources to the group: ::"
+msgstr ""
+
+#: ../../installation.rst:559
+msgid "The REST API will need to run on its own network port.  By default this is port 3000.  To run as a stand-alone script, from the script directory, as the bigsdb user, simply type: ::"
+msgstr ""
+
+#: ../../installation.rst:565
+msgid "This will start the API on port 3000.  You will be able to check that this is running using a web browser by navigating to http://localhost:3000 on the local machine, or using the server IP address from a remote machine. You may need to modify your server firewall rules to allow connection to this port."
+msgstr ""
+
+#: ../../installation.rst:571
+msgid "Running as a stand-alone script is useful for testing, but you can achieve much better performance using a Perl webserver with plackup.  There are various options to choose.  PubMLST uses `Starman <http://search.cpan.org/dist/Starman/>`_."
+msgstr ""
+
+#: ../../installation.rst:576
+msgid "To run the API using Starman, type the following as the bigsdb user: ::"
+msgstr ""
+
+#: ../../installation.rst:580
+msgid "where the value of -a refers to the location of the bigsrest.pl script. Starman defaults to using port 5000."
+msgstr ""
+
+#: ../../installation.rst:583
+msgid "Different Linux distributions use different means to control services/daemons. To start the REST interface on system boot on systems using upstart, create a file called bigsdb-rest.conf in /etc/init.  The contents of this file should be something like (modify file paths as appropriate): ::"
+msgstr ""
+
+#: ../../installation.rst:603
+msgid "The service will then start automatically on boot or can be manually started by calling: ::"
+msgstr ""
+
+#: ../../installation.rst:608
+msgid "For systems using systemd, create a file in /etc/systemd/system called bigsdb-rest.service with the following contents (again, modify file paths as appropriate): ::"
+msgstr ""
+
+#: ../../installation.rst:624
+msgid "To start the service automatically on boot you need to enable it: ::"
+msgstr ""
+
+#: ../../installation.rst:628
+msgid "It can also be manually started by calling: ::"
+msgstr ""
+
+#: ../../installation.rst:634
+msgid "Proxying the API to use a standard web port"
+msgstr ""
+
+#: ../../installation.rst:635
+msgid "Usually you will want your API to be available on the standard web port 80. To do this you will need to set up a virtual host using a different domain name from your web site to proxy the API port.  For example, PubMLST has a separate domain 'http://rest.pubmlst.org' for its API.  This is set up as a virtual host directive in apache with the following configuration file: ::"
+msgstr ""
+
+#: ../../installation.rst:663
+msgid "You should also set 'rest_behind_proxy=1' in bigsdb.conf."
+msgstr ""
+
+#: ../../installation.rst:672
+msgid "Enabling database logging of web and API access"
+msgstr ""
+
+#: ../../installation.rst:673
+msgid "User access to both the web interface and API can be logged within the bigsdb_auth and bigsdb_rest databases respectively. Each of these contains a table called ``log`` in which the IP address, username, and page called are recorded with a timestamp. To enable logging, you need to set the following in bigsdb.conf: ::"
+msgstr ""
+
+#: ../../installation.rst:682
+msgid "Logging requires writing to the database on each page access so there is a very small performance penalty to enabling this. The tables are however unlogged (i.e. data are not written to the PosgreSQL write-ahead log) which makes them considerably faster than ordinary tables but data in them will be lost in the event of a database crash or unclean shutdown."
+msgstr ""
+
+#: ../../installation.rst:688
+msgid "As every page access is recorded the log tables will grow in size over time. It is recommended that they are pruned regularly to remove records older than a specified period of time - this may also be required by GDPR! The easiest way to do this is to set up a scheduled CRON job by adding the following to /etc/crontab: ::"
+msgstr ""
+
+#: ../../installation.rst:700
+msgid "Enabling isolate embargoes"
+msgstr ""
+
+#: ../../installation.rst:701
+msgid "You can enable isolate embargoes by setting the appropriate attributes in bigsdb.conf e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:712
+msgid "Note that these values can be overridden for individual databases in the database config.xml file, e.g. ::"
+msgstr ""
+
+#: ../../installation.rst:720
+msgid "Users will then be offered the option of embargoing their isolate submissions for a selectable period up to the value set in max_initial_embargo. Isolates will automatically be made private on upload - they will be visible to them and to curators, and can be shared by adding them to a shared user project."
+msgstr ""
+
+#: ../../installation.rst:725
+msgid "The check_embargoes.pl script (found in scripts/maintenance) should be run once a day to automatically publish any isolate that reaches its embargo date. Add it to /etc/crontab, e.g. ::"
+msgstr ""

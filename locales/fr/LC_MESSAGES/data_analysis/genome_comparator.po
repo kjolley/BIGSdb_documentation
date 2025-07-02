@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/genome_comparator.rst:8
+msgid "Genome comparator"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:9
+msgid ""
+"Genome Comparator is an optional plugin that can be enabled for specific "
+"databases. It is used to compare whole genome data of isolates within the"
+" database using either the database defined loci or the coding sequences "
+"of an annotated genome as the comparator."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:14
+msgid ""
+"Output is equivalent to a whole genome MLST profile, a distance matrix "
+"calculated based on allelic differences and a NeighborNet graph generated"
+" from this distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:18
+msgid ""
+"Genome Comparator can be accessed by selecting the 'Analysis' section on "
+"the main contents page."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:23
+msgid ""
+"Jump to the 'Analysis' category, follow the link to 'Genome Comparator', "
+"then click 'Launch Genome Comparator'."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:28
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"'Genome Comparator' button at the bottom of the results table.  Isolates "
+"with sequence data returned in the query will be automatically selected "
+"within the Genome Comparator interface."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:36
+msgid "Analysis using defined loci"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:37
+msgid ""
+"Select the isolate genomes that you wish to analyse. These will either be"
+" in a dropdown list or, if there are too many in the database, a text "
+"input where a list can be entered. You can also upload your own genomes "
+"for analysis - these should be either a single file in FASTA format (if "
+"you have just one genome), or a zip file containing multiple FASTA files."
+" Select either the loci from the list or a set of schemes (either from "
+"the schemes box or from a list of recommended schemes if these have been "
+"set up).  Press submit."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:47
+msgid "The job will be submitted to the job queue and will start running shortly."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:49
+msgid ""
+"There will be a series of tables displaying variable loci, colour-coded "
+"to indicate allelic differences. Finally, there will be links to a "
+"distance matrix which can be loaded in to SplitsTree for further analysis"
+" and to a NeighborNet chart showing relatedness of isolates. Due to "
+"processing constraints on the web server, this NeighborNet is only "
+"calculated if 200 or fewer genomes are selected for analysis, but this "
+"can be generated in the stand-alone version of SplitsTree using the "
+"distance matrix if required."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:60
+msgid "Analysis using annotated reference genome"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:61
+msgid ""
+"Select the isolate genomes that you wish to analyse and then either enter"
+" a Genbank accession number for the reference genome, or select from the "
+"list of reference genomes (this list will only be present if the "
+"administrator has :ref:`set it up <isolate_xml>`). Selecting reference "
+"genomes will hide the locus and scheme selection forms."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:69
+msgid ""
+"Output is similar to when comparing against defined loci, but this time "
+"every coding sequence in the annotated reference will be BLASTed against "
+"the selected genomes. Because allele designations are not defined, the "
+"allele found in the reference genome is designated allele 1, the next "
+"different sequence is allele 2 etc."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:78
+msgid "Include in identifiers fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:79
+msgid ""
+"This selection box allows you to choose which isolate provenance fields "
+"will be included in the results table.  This does not affect the output "
+"of the alignments as taxa names are limited in length by the alignment "
+"programs."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:85
+msgid "Multiple values can be selected by clicking while holding down Ctrl."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:88
+msgid "Reference genome fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:89
+msgid ""
+"This section allows you to choose a reference genome to use as the source"
+" of comparator sequences."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:94
+msgid "There are three possibilities here:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:96
+msgid ""
+"Enter accession number - Enter a Genbank accession number of an annotated"
+" reference and Genome Comparator will automatically retrieve this from "
+"Genbank."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:99
+msgid ""
+"Select from list - The administrator may have selected some genomes to "
+"offer for comparison.  If these are present, simply select from the list."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:101
+msgid ""
+"Upload genome - Click 'Browse' and upload your own reference.  This can "
+"either be in Genbank, EMBL or FASTA format.  Ensure that the filename "
+"ends in the appropriate file extension (.gb, .embl, .fas) so that it is "
+"recognized."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:107
+msgid "Parameters/options fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:108
+msgid ""
+"This section allows you to modify BLAST parameters.  This affects "
+"sensitivity and speed."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:113
+#, python-format
+msgid ""
+"Min % identity - This sets the threshold identity that a matching "
+"sequence has to be in order to be considered (default: 70%).  Only the "
+"best match is used."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:116
+msgid ""
+"Min % alignment - This sets the percentage of the length of reference "
+"allele sequence that the alignment has to cover in order to be considered"
+" (default: 50%)."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:119
+msgid ""
+"BLASTN word size - This is the length of the initial identical match that"
+" BLAST requires before extending a match (default: 20).  Increasing this "
+"value improves speed at the expense of sensitivity.  The default value "
+"gives good results in most cases.  The default setting used to be 15 but "
+"the new default of 20 is almost as good (there was 1 difference among "
+"2000 loci in a test run) but the analysis runs twice as fast."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:127
+msgid "Distance matrix calculation fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:128
+msgid ""
+"This section provides options for the treatment of incomplete and "
+"paralogous loci when generating the distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:133
+msgid ""
+"For incomplete loci, i.e. those that continue beyond the end of a contig "
+"so are incomplete you can:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:136
+msgid ""
+"Completely exclude from analysis - Any locus that is incomplete in at "
+"least one isolate will be removed from the analysis completely.  Using "
+"this option means that if there is one bad genome with a lot of "
+"incomplete sequences in your analysis, a large proportion of the loci may"
+" not be used to calculate distances."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:142
+msgid ""
+"Treat as a distinct allele - This treats all incomplete sequences as a "
+"specific allele 'I'.  This varies from any other allele, but all "
+"incomplete sequences will be treated as though they were identical."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:146
+msgid ""
+"Ignore in pairwise comparison (default) - This is probably the best "
+"option. In this case, incomplete alleles are only excluded from the "
+"analysis when comparing the particular isolate that has it.  Other "
+"isolates with different alleles will be properly included.  The effect of"
+" this option will be to shorten the distances of isolates with poorly "
+"sequenced genomes with the others."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:153
+msgid ""
+"Paralogous loci, i.e. those with multiple good matches, can be excluded "
+"from the analysis (default).  This is the safest option since there is no"
+" guarantee that differences seen between isolates at paralogous loci are "
+"real if the alternative matches are equally good.  NB: Loci are also only"
+" classed as paralogous when the alternative matches identify different "
+"sequences, otherwise multiple contigs of the same sequence region would "
+"result in false positives."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:161
+msgid "Alignments fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:162
+msgid ""
+"This section enables you to choose to produce alignments of the sequences"
+" identified."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:167
+#: ../data_analysis/genome_comparator.rst:207
+msgid "Available options are:"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:169
+msgid ""
+"Produce alignments - Selecting this will produce the alignment files, as "
+"well as XMFA and FASTA outputs of aligned sequences.  This will result in"
+" the analysis taking longer to run."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:172
+msgid ""
+"Include ref sequences in alignment - When doing analysis using an "
+"annotated reference, selecting this will include the reference sequence "
+"in the alignment files."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:175
+msgid ""
+"Align all loci - By default, only loci that vary among the isolates are "
+"aligned.  You may however wish to align all if you would like the "
+"resultant XMFA and FASTA files to include all coding sequences."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:178
+msgid ""
+"Aligner - There are currently two choices of alignment algorithm "
+"(provided they have both been installed)"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:181
+msgid ""
+"MAFFT (default) - This is the preferred option as it is significantly "
+"quicker than MUSCLE, uses less memory, and produces comparable results."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:183
+msgid ""
+"MUSCLE - This was originally the only choice. It is still included to "
+"enable previous analyses to be re-run and compared but it is recommended "
+"that MAFFT is used otherwise."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:188
+msgid "Core genome analysis fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:189
+msgid ""
+"This section enables you to modify the inclusion threshold used to "
+"calculate whether or not a locus is part of the core genome (of the "
+"dataset)."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:194
+#, python-format
+msgid ""
+"The default setting of 90% means that a locus is counted as core if it "
+"appears within 90% or more of the genomes in the dataset."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:197
+msgid ""
+"There is also an option to calculate the mean distance among sequences of"
+" the loci.  Selecting this will also select the option to produce "
+"alignments."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:201
+msgid "Filter fieldset"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:202
+msgid ""
+"This section allows you to further filter your collection of isolates and"
+" the contigs to include."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:209
+msgid ""
+"Sequence method - Choose to only analyse contigs that have been generated"
+" using a particular method.  This depends on the method being set when "
+"the contigs were uploaded."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:212
+msgid ""
+"Project - Only include isolates belonging to the chosen project.  This "
+"enables you to select all isolates and filter to a project."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:216
+msgid "Understanding the output"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:219
+msgid "Distance matrix"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:220
+msgid ""
+"The distance matrix is simply a count of the number of loci that differ "
+"between each pair of isolates.  It is generated in NEXUS format which can"
+" be used as the input file for `SplitsTree <http://www.splitstree.org>`_."
+"  This can be used to generate NeighborNet, Split decomposition graphs "
+"and trees offline.  If 200 isolates or fewer are included in the "
+"analysis, a Neighbor network is automatically generated from this "
+"distance matrix."
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:228
+msgid "Unique strains"
+msgstr ""
+
+#: ../data_analysis/genome_comparator.rst:229
+msgid ""
+"The table of unique strains is a list of isolates that are identical at "
+"every locus.  Every isolate is likely to be classed as unique if a whole "
+"genome analysis is performed, but with a constrained set of loci, such as"
+" those for MLST, this will group isolates that are indistinguishable at "
+"that level of resolution. nce matrix calculated based on allelic "
+"differences and a NeighborNet graph generated from this distance matrix."
+msgstr ""
+

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../data_analysis/burst.rst:6
+msgid "BURST"
+msgstr ""
+
+#: ../../data_analysis/burst.rst:7
+msgid ""
+"BURST is an algorithm used to group MLST-type data based on a count of "
+"the number of profiles that match each other at specified numbers of "
+"loci.  The analysis is available for both sequence definition database "
+"and isolate database schemes that have primary key fields set.  The "
+"algorithm has to be :ref:`specifically enabled <enabling_plugins>` by an "
+"administrator.  Analysis is limited to 1000 or fewer records."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:14
+msgid ""
+"The plugin can be accessed following a query by clicking the 'BURST' "
+"button in the Analysis list at the bottom of the results table. Please "
+"note that the list of functions here may vary depending on the setup of "
+"the database."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:20
+msgid ""
+"If there multiple schemes that can be analysed, these can then be "
+"selected along with the group definition."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:25
+msgid ""
+"Modifying the  group definition affects the size of groups and how they "
+"link together.  By default, the definition is n-2 (where n is the number "
+"of loci), so for example on a 7 locus MLST scheme groups contain STs that"
+" match at 5 or more loci to any other member of the group."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:30
+msgid "Click Submit."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:32
+msgid ""
+"A series of tables will be displayed indicating the groups of profiles.  "
+"Where one profile can be identified as a central genotype, i.e. the "
+"profile that has the greatest number of other profiles that are single "
+"locus variants (SLV), double locus variants (DLV) and so on, a graphical "
+"representation will be displayed.  The central profile is indicated with "
+"an asterisk."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:40
+msgid ""
+"SLV profiles that match the central profile are shown within a red circle"
+" surrounding the central profile.  Most distant profiles (triple locus "
+"variants) may be linked with a line.  Larger groups may additionally have"
+" DLV profiles. These are shown in a blue circle."
+msgstr ""
+
+#: ../../data_analysis/burst.rst:47
+msgid ""
+"Groups can get very large, where linked profiles form sub-groups and an "
+"attempt is made to depict these."
+msgstr ""
+

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../curator_guide/0160_uploading_contigs.rst:8
+msgid "Uploading sequence contigs linked to an isolate record"
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:11
+msgid "Select isolate from drop-down list"
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:12
+msgid "To upload sequence data, click the sequences add (+) sequence bin link on the curator's main page."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:17
+msgid "Select the isolate that you wish to link the sequence to from the dropdown list box (or if the database is large and there are too many isolates to list, enter the id in the text box). You also need to enter the person who sent the data. Optionally, you can add the sequencing method used."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:22
+msgid "Paste sequence contigs in FASTA format in to the form."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:26
+msgid "Click 'Submit'. A summary of the number of isolates and their lengths will be displayed. To confirm upload, click 'Upload'."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:32
+msgid "Select from isolate query"
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:33
+msgid "As an alternative to selecting the isolate from a dropdown list (or entering the id on large databases), it is also possible to upload sequence data following an isolate query."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:37
+msgid "Click the isolate update/delete link from the curator's main page."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:41
+msgid "Enter your search criteria. From the list of isolates displayed, click the 'Upload' link in the sequence bin column of the appropriate isolate record."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:46
+msgid "The same upload form as detailed above is shown. Instead of a dropdown list for isolate selection, however, the chosen isolate will be pre-selected."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:52
+msgid "Upload options"
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:53
+msgid "On the upload form, you can select to filter out short sequences or those containing only homopolymeric repeats (which can be artefactually produced by some assembler software versions) from your contig list."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:66
+msgid "Batch uploading sequence contigs linked to multiple isolate records"
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:67
+msgid "To upload contigs for multiple isolates, click the batch add (++) sequence bin link on the curator's main page."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:72
+msgid "The first step is to upload the name of the contig file that will be linked to each isolate record. This can be done by pasting two columns in tab-delimited text format (e.g. from a spreadsheet) - the first column contains the isolate identifier, the second contains the filename of the contigs file, which should be in FASTA format."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:78
+msgid "You can choose which field to use for identifying the isolates, e.g. id (database id) or isolate (name of isolate). The value provided for this field needs to uniquely identify the isolate in the database - please note that only id is guaranteed to be unique."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:85
+msgid "Click Submit. The system will check to make sure that the isolate records are uniquely identified (if not, you will see an error message informing you of this and you will need to use the database id as the identifier). You will then see a file upload form."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:92
+msgid "Drag and drop your FASTA format contig files in to the dotted drop area. Provided the filenames exactly match the filename you stated, these will be uploaded to a staging area."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:96
+msgid "Click 'Validate' to check that these files are valid FASTA format."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:100
+msgid "The files will be checked and a table will be displayed showing the total sequence size and number of contigs found. Select the data sender and, optionally the sequencing method from the dropdown lists. Then click 'Upload validated contigs'."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:107
+msgid "You can also choose to filter out short contigs selecting the checkbox and choosing the minimum length from the dropdown box in the options settings. You can also choose to filter out sequences containing only homopolymeric runs which can be produced artefactually by some assembler versions."
+msgstr ""
+
+#: ../curator_guide/0160_uploading_contigs.rst:114
+msgid "A confirmation message will be displayed after clicking the Upload button."
+msgstr ""

@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:6
+msgid "Linking isolate records to publications"
+msgstr ""
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:7
+msgid "Isolates can be associated with publications by adding PubMed id(s) to the record. This can be done when :ref:`adding the isolate <adding_isolates>`, where lists of PubMed ids can be entered in to the web form."
+msgstr ""
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:11
+msgid "They can also be associated in batch after the upload of isolate records. Click the PubMed batch add (++) link on the curator's main page. This function is normally hidden, so you may need to click the 'Show all' toggle to display it."
+msgstr ""
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:17
+msgid "Open the Excel template by clicking the link."
+msgstr ""
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:21
+msgid "The Excel template has two columns, isolate_id and pubmed_id. Simply fill this in with a line for each record and then paste the entire spreadsheet in to the web form and press submit."
+msgstr ""
+
+#: ../../curator_guide/0150_linking_isolates_to_publications.rst:27
+msgid "To ensure that publication information is stored locally and available for searching, the references database needs to be :ref:`updated regularly <updating_citations>`."
+msgstr ""

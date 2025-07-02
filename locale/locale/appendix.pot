@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appendix.rst:3
+msgid "Appendix"
+msgstr ""
+
+#: ../../appendix.rst:9
+msgid "Query operators"
+msgstr ""
+
+#: ../../appendix.rst:10
+msgid "Various query forms have operators for use with field values.  Available operators are:"
+msgstr ""
+
+#: ../../appendix.rst:12
+msgid "="
+msgstr ""
+
+#: ../../appendix.rst:14
+msgid "Exact match (case-insensitive)."
+msgstr ""
+
+#: ../../appendix.rst:16
+msgid "contains"
+msgstr ""
+
+#: ../../appendix.rst:18
+msgid "Match to a partial string (case-insensitive), e.g. searching for clonal complex 'contains' st-11 would return all STs belonging to the ST-11 complex."
+msgstr ""
+
+#: ../../appendix.rst:20
+msgid "starts with"
+msgstr ""
+
+#: ../../appendix.rst:22
+msgid "Match to values that start with the search term (case-insensitive)."
+msgstr ""
+
+#: ../../appendix.rst:24
+msgid "ends with"
+msgstr ""
+
+#: ../../appendix.rst:26
+msgid "Match to values that end with the search term (case-sensitive)."
+msgstr ""
+
+#: ../../appendix.rst:28
+msgid ">"
+msgstr ""
+
+#: ../../appendix.rst:30
+msgid "Greater than the search term."
+msgstr ""
+
+#: ../../appendix.rst:32
+msgid ">="
+msgstr ""
+
+#: ../../appendix.rst:34
+msgid "Greater than or equal the search term."
+msgstr ""
+
+#: ../../appendix.rst:36
+msgid "<"
+msgstr ""
+
+#: ../../appendix.rst:38
+msgid "Less than the search term."
+msgstr ""
+
+#: ../../appendix.rst:40
+msgid "<="
+msgstr ""
+
+#: ../../appendix.rst:42
+msgid "Less than or equal the search term."
+msgstr ""
+
+#: ../../appendix.rst:44
+msgid "NOT"
+msgstr ""
+
+#: ../../appendix.rst:46
+msgid "Match to values that do not equal the search term (case-insensitive)."
+msgstr ""
+
+#: ../../appendix.rst:48
+msgid "NOT contain"
+msgstr ""
+
+#: ../../appendix.rst:50
+msgid "Match to values that do not contain the search term (case-insensitive)."
+msgstr ""
+
+#: ../../appendix.rst:56
+msgid "Sequence tag flags"
+msgstr ""
+
+#: ../../appendix.rst:57
+msgid "Sequences tagged in the sequence bin can have features indicated by specific flags.  The presence of these flags can be queried.  These are a superset of :ref:`flags available for allele sequences <allele_sequence_flags>`. Available flags are:"
+msgstr ""
+
+#: ../../appendix.rst:59
+#: ../../appendix.rst:122
+msgid "alternative start codon"
+msgstr ""
+
+#: ../../appendix.rst:61
+#: ../../appendix.rst:124
+msgid "A start codon other than ATG, GTG, or TTG is used. This can be the case with some yeasts."
+msgstr ""
+
+#: ../../appendix.rst:63
+msgid "ambiguous read"
+msgstr ""
+
+#: ../../appendix.rst:65
+msgid "Genome sequence contains ambiguous nucleotides in coding sequence."
+msgstr ""
+
+#: ../../appendix.rst:67
+msgid "apparent misassembly"
+msgstr ""
+
+#: ../../appendix.rst:69
+msgid "Sequence has a region of very high identity to existing allele in one region but looks completely different in another."
+msgstr ""
+
+#: ../../appendix.rst:71
+#: ../../appendix.rst:126
+msgid "atypical"
+msgstr ""
+
+#: ../../appendix.rst:73
+#: ../../appendix.rst:128
+msgid "Catch-all term for a sequence that is unusual compared to other alleles of locus."
+msgstr ""
+
+#: ../../appendix.rst:75
+#: ../../appendix.rst:130
+msgid "contains IS element"
+msgstr ""
+
+#: ../../appendix.rst:77
+#: ../../appendix.rst:132
+msgid "Coding sequence is interrupted by insertion sequence."
+msgstr ""
+
+#: ../../appendix.rst:79
+#: ../../appendix.rst:134
+msgid "downstream fusion"
+msgstr ""
+
+#: ../../appendix.rst:81
+#: ../../appendix.rst:136
+msgid "No stop codon present resulting in translation continuing."
+msgstr ""
+
+#: ../../appendix.rst:83
+#: ../../appendix.rst:138
+msgid "frameshift"
+msgstr ""
+
+#: ../../appendix.rst:85
+#: ../../appendix.rst:140
+msgid "Frameshift in sequence relative to other alleles, not resulting in internal stop codon."
+msgstr ""
+
+#: ../../appendix.rst:87
+#: ../../appendix.rst:142
+msgid "indel"
+msgstr ""
+
+#: ../../appendix.rst:89
+#: ../../appendix.rst:144
+msgid "Insertion/deletion in sequence that is uncommon compared to other alleles."
+msgstr ""
+
+#: ../../appendix.rst:91
+#: ../../appendix.rst:146
+msgid "internal stop codon"
+msgstr ""
+
+#: ../../appendix.rst:93
+#: ../../appendix.rst:148
+msgid "Frameshift in sequence relative to other alleles, resulting in internal stop codon."
+msgstr ""
+
+#: ../../appendix.rst:95
+#: ../../appendix.rst:150
+msgid "no start codon"
+msgstr ""
+
+#: ../../appendix.rst:97
+#: ../../appendix.rst:152
+msgid "No apparent start codon in immediate vicinity of usual start."
+msgstr ""
+
+#: ../../appendix.rst:99
+#: ../../appendix.rst:154
+msgid "no stop codon"
+msgstr ""
+
+#: ../../appendix.rst:101
+#: ../../appendix.rst:156
+msgid "No stop codon in immediate vicinity of usual stop."
+msgstr ""
+
+#: ../../appendix.rst:103
+#: ../../appendix.rst:158
+msgid "phase variable: off"
+msgstr ""
+
+#: ../../appendix.rst:105
+#: ../../appendix.rst:160
+msgid "Coding sequence has a homopolymeric run with a frameshift resulting in a stop codon preventing complete translation."
+msgstr ""
+
+#: ../../appendix.rst:107
+#: ../../appendix.rst:162
+msgid "truncated"
+msgstr ""
+
+#: ../../appendix.rst:109
+#: ../../appendix.rst:164
+msgid "Coding sequence is unusually short resulting in a truncated protein (not the same as running off the end of a contig)."
+msgstr ""
+
+#: ../../appendix.rst:111
+#: ../../appendix.rst:166
+msgid "upstream fusion"
+msgstr ""
+
+#: ../../appendix.rst:113
+#: ../../appendix.rst:168
+msgid "No apparent start codon in immediate vicinity of usual start, likely due to a gene fusion (sequence is transcribed together with upstream coding sequence)."
+msgstr ""
+
+#: ../../appendix.rst:119
+msgid "Allele sequence flags"
+msgstr ""
+
+#: ../../appendix.rst:120
+msgid "Sequences can be flagged with specific attributes - these are searchable when doing a sequence attribute query.  These are a subset of :ref:`flags available for tagged sequences <sequence_tag_flags>`. These are mainly for use with whole genome MLST type data.  Multiple flags can be selected by Ctrl-clicking the list.  Available flags are:"
+msgstr ""

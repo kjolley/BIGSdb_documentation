@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../curator_guide/0010_adding_new_users.rst:6
+msgid "Adding new sender details"
+msgstr ""
+
+#: ../curator_guide/0010_adding_new_users.rst:7
+msgid "All records within the databases are associated with a sender.  Whenever somebody new submits data, they should be added to the users table so that their name appears in the dropdown lists on the data upload forms."
+msgstr ""
+
+#: ../curator_guide/0010_adding_new_users.rst:11
+msgid "To add a user, click the add users (+) link on the curator's contents page."
+msgstr ""
+
+#: ../curator_guide/0010_adding_new_users.rst:15
+msgid "Enter the user's details in to the form."
+msgstr ""
+
+#: ../curator_guide/0010_adding_new_users.rst:19
+msgid "Normally the status should be set as 'user'.  Only admins and curators with special permissions can create users with a status of curator or admin."
+msgstr ""
+
+#: ../curator_guide/0010_adding_new_users.rst:22
+msgid "If the submission system is in operation there will be an option at the bottom called 'submission_emails'.  This is to enable users with a status of 'curator' or 'admin' to receive E-mails on receipt of new submissions.  It is not relevant for users with a status of 'user' or 'submitter'."
+msgstr ""

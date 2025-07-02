@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:6
+msgid "Batch updating multiple isolate records"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:7
+msgid "Select 'batch update' isolates link on the curator's index page."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:11
+msgid "Prepare your update data in 3 columns in a spreadsheet:"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:13
+msgid "Unique identifier field"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:14
+msgid "Field to be updated"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:15
+msgid "New value for field"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:17
+msgid "You should also include a header line at the top - this isn't used so can contain anything but it should be present."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:20
+msgid "Columns must be tab-delimited which they will be if you copy and paste directly from the spreadsheet."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:23
+msgid "So, to update isolate id-100 and id-101 to serogroup B you would prepare the following: ::"
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:30
+msgid "Select the field you are using as a unique identifier, in this case id, from the drop-down list box, and paste in the data. If the fields already have values set, you should also check the 'Update existing values' checkbox. Press 'submit'."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:37
+msgid "A confirmation page will be displayed if there are no problems. If there are problems, these will be listed.  Press 'Upload' to upload the changes."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:42
+msgid "You can also use a secondary selection field such that a combination of two fields uniquely defines the isolate, for example using country and isolate name."
+msgstr ""
+
+#: ../../curator_guide/0110_batch_updating_isolates.rst:46
+msgid "So, for example, to update the serogroups of isolates CN100 and CN103, both from the UK, select the appropriate primary and secondary fields and prepare the data as follows: ::"
+msgstr ""

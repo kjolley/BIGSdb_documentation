@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/field_breakdown.rst:6
+msgid "Field breakdown"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:7
+msgid ""
+"The field breakdown plugin for isolate databases displays the frequency "
+"of each value for fields, alleles and schemes."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:10
+msgid ""
+"The function can be accessed by selecting the 'Analysis' section on the "
+"main contents page."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:15
+msgid ""
+"In the 'Breakdown' category, follow the link to 'Field Breakdown', then "
+"click 'Launch Field Breakdown'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:18
+msgid ""
+"The breakdown function can be selected for the whole database by clicking"
+" the 'Single field' link in the Breakdown section of the main contents "
+"page."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:23
+msgid ""
+"Alternatively, a breakdown can be displayed of the dataset returned from "
+"a query by clicking the 'Fields' button in the Breakdown list at the "
+"bottom of the results table. Please note that the list of functions here "
+"may vary depending on the setup of the database."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:30
+msgid ""
+"A chart will be displayed for the first field. Depending on the field "
+"type, this may be either a world map (for country or continent fields), "
+"pie chart, or bar chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:36
+msgid "Other fields can be chosen by selecting them in the dropdown list box."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:40
+msgid ""
+"You can also breakdown loci and schemes by clicking the appropriate "
+"button. This will re-populate the dropdown list."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:45
+msgid ""
+"The charts are dynamic and you can manipulate some aspects of them using "
+"controls shown on the screen."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:49
+msgid "Maps"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:50
+msgid ""
+"World maps are shown for country and continent fields (provided "
+"standardized country names are used in the database). The maps can be "
+"modified in a number of ways."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:54
+msgid ""
+"The colour theme can be changed by clicked the appropriate coloured "
+"square. Additional themes are available by clicking the '>' link."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:59
+msgid ""
+"The range that is used to decide the colour boundaries can be changed by "
+"using the range slider."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:64
+msgid ""
+"Finally the map projection can be changed. The default 'Natural Earth' "
+"provides a reasonable display for most latitudes but you may prefer "
+"others such as 'Mercator'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:70
+msgid "To see the same data as a pie chart, click the 'Pie' or 'Donut' icons."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:75
+msgid "Pie charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:76
+msgid ""
+"The maximum number of segments shown can be modified by sliding the 'Max "
+"segments' control. Low frequency values will be grouped in to a segment "
+"called 'Others'."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:82
+msgid ""
+"The chart can be transformed in to a donut chart by clicking the donut "
+"icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:86
+msgid ""
+"The icon changes to a pie chart image (clicking this will return to the "
+"pie chart)."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:92
+msgid ""
+"Values can also be removed from the analysis by clicking their label in "
+"the legend below the chart. The percentages of the other values will be "
+"recalculated. Clicking the label again will re-add the value."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:97
+msgid "Bar charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:98
+msgid "Integer fields will be displayed as a bar chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:102
+msgid ""
+"You can modify the height and the orientation of the chart using the "
+"controls."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:105
+msgid "Line charts"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:106
+msgid ""
+"Date fields will be displayed as a line chart. By default this shows the "
+"cumulative values."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:111
+msgid ""
+"The chart can be converted in to a bar chart showing discrete values by "
+"clicking the bar chart icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:116
+msgid ""
+"The icon changes to a line chart image (clicking this will return to the "
+"line chart)."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:122
+msgid "Summary tables"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:123
+msgid ""
+"The field breakdown can be displayed as a summary table containing values"
+" and percentages of all values. This can be selected by clicking the "
+"table icon below the displayed chart."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:129
+msgid "The table can be re-ordered by clicking any of the headings."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:133
+msgid ""
+"The same table can be exported as an Excel file by clicking the Excel "
+"icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:137
+msgid ""
+"Alternatively, it can be exported as a tab-delimited text file by "
+"clicking the text file icon."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:142
+msgid ""
+"The chart image can also be saved as a SVG file, suitable for "
+"manipulation in a graphics program."
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:148
+msgid "Exporting allele sequences"
+msgstr ""
+
+#: ../data_analysis/field_breakdown.rst:149
+msgid ""
+"If a locus breakdown is being display, you can choose to export the "
+"allele sequences in FASTA format by clicking the FASTA file icon."
+msgstr ""
+

@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_query/0050_investigating_allele_differences.rst:5
+msgid "Investigating allele differences"
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:11
+msgid "Sequence similarity"
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:12
+msgid ""
+"To find sequences most similar to a selected allele within a sequence "
+"definition database, expand the 'Analysis' menu item and click 'Sequence "
+"similarity' on the contents page."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:18
+msgid ""
+"Enter the locus and allele identifer of the sequence to investigate and "
+"the number of nearest matches you'd like to see, then press submit."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:23
+msgid ""
+"A list of nearest alleles will be displayed, along with the percentage "
+"identity and number of gaps between the sequences."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:28
+msgid ""
+"Click the appropriate 'Compare' button to display a list of nucleotide "
+"differences and/or a sequence alignment."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:34
+msgid "Sequence comparison"
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:35
+msgid ""
+"To directly compare two sequences, expand the 'Analysis' section and "
+"click 'Sequence comparison' on the contents page of a sequence definition"
+" database."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:40
+msgid "Enter the locus and two allele identifiers to compare.  Press submit."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:44
+msgid "A list of nucleotide differences and/or an alignment will be displayed."
+msgstr ""
+
+#: ../data_query/0050_investigating_allele_differences.rst:50
+msgid ":ref:`Locus explorer plugin <locus_explorer>`."
+msgstr ""
+

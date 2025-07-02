@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../curate_submissions.rst:3
+msgid "Curating data submitted via the automated submission system"
+msgstr ""
+
+#: ../../curate_submissions.rst:4
+msgid "Data may be submitted by users using the automated submission system if it has been enabled for a specific database.  As a curator, you will be notified of pending submissions when you log in to the curator's interface or if you access the 'Manage submissions' links from the standard contents page.  Additionally, if your user account has the 'submission_emails' flag set in the users' table you will also receive E-mail notification of new submissions for which you have sufficient privileges to curate."
+msgstr ""
+
+#: ../../curate_submissions.rst:14
+msgid "Any submissions for which you have sufficient privileges to curate will be shown."
+msgstr ""
+
+#: ../../curate_submissions.rst:21
+msgid "Alleles"
+msgstr ""
+
+#: ../../curate_submissions.rst:22
+msgid "Click the link to the appropriate submission on the 'Manage submissions' page."
+msgstr ""
+
+#: ../../curate_submissions.rst:26
+msgid "You will see a summary section that describes details about how the sequences were obtained.  There should also be link here to download all the sequences in FASTA format."
+msgstr ""
+
+#: ../../curate_submissions.rst:32
+msgid "There will also be a table summarizing the sequences in the submission and their current submission status."
+msgstr ""
+
+#: ../../curate_submissions.rst:38
+msgid "Individual allele curation"
+msgstr ""
+
+#: ../../curate_submissions.rst:39
+msgid "Individual sequences can be curated singly by clicking the 'Curate' links next to the sequence in the table.  If you have supporting data attached to the submission, e.g. Sanger trace files then you may need to assess the submission based on the policy of the database."
+msgstr ""
+
+#: ../../curate_submissions.rst:46
+msgid "Clicking this link takes you to the curation interface :ref:`single sequence upload page<single_allele_upload>`.  The upload form will be filled with details from the submission.  You may wish to manually change the status from the dropdown list of values."
+msgstr ""
+
+#: ../../curate_submissions.rst:53
+msgid "Clicking 'Submit' from this form will define the new allele and add it to the database.  A link on the confirmation page will take you back to the submission management page."
+msgstr ""
+
+#: ../../curate_submissions.rst:59
+msgid "You will find that the status of the newly assigned sequence has changed in the summary table.  The assigned value and status are determined on display and should always reflect the live database values."
+msgstr ""
+
+#: ../../curate_submissions.rst:66
+msgid "Batch allele curation"
+msgstr ""
+
+#: ../../curate_submissions.rst:67
+msgid "Often, you will want to batch upload submitted sequences.  This can be done by clicking the 'Batch curate' button."
+msgstr ""
+
+#: ../../curate_submissions.rst:72
+msgid "Batch curation is only available for loci that do not have extended attributes defined. Entries for these loci require additional values set for these additional fields and so need to be handled individually."
+msgstr ""
+
+#: ../../curate_submissions.rst:78
+msgid "This takes you to the :ref:`batch FASTA upload page<batch_allele_fasta_upload>` in the curators' interface."
+msgstr ""
+
+#: ../../curate_submissions.rst:82
+msgid "The upload form will be filled with details from the submission.  You may wish to manually change the status from the dropdown list of values."
+msgstr ""
+
+#: ../../curate_submissions.rst:87
+msgid "Click 'Check' on this form will perform some standard checks before allowing you to upload the sequences."
+msgstr ""
+
+#: ../../curate_submissions.rst:92
+msgid "A link on the confirmation page will take you back to the submission management page."
+msgstr ""
+
+#: ../../curate_submissions.rst:97
+msgid "The status of the sequences should reflect their newly assigned status."
+msgstr ""
+
+#: ../../curate_submissions.rst:102
+msgid "Rejecting sequences"
+msgstr ""
+
+#: ../../curate_submissions.rst:103
+msgid "Sometimes you may need to reject all, or some of, the sequences in a submission. You can do this by changing the value in the status dropdown box next to each sequence.  Click 'Update' to make the change."
+msgstr ""
+
+#: ../../curate_submissions.rst:110
+#: ../../curate_submissions.rst:196
+#: ../../curate_submissions.rst:254
+msgid "Requesting additonal information"
+msgstr ""
+
+#: ../../curate_submissions.rst:111
+#: ../../curate_submissions.rst:197
+#: ../../curate_submissions.rst:255
+msgid "You can send a message to the submitter by entering it in the Messages box and clicking 'Send now'.  This will append a message to the submission and send an update to the submitter so that they can respond."
+msgstr ""
+
+#: ../../curate_submissions.rst:116
+#: ../../curate_submissions.rst:202
+#: ../../curate_submissions.rst:260
+msgid "Closing the submission"
+msgstr ""
+
+#: ../../curate_submissions.rst:117
+msgid "You can add a message to the submitter by entering it in the message box and clicking 'Append'. Once sequences have all been either assigned or rejected, the 'Close submission' button will be displayed.  Click this to close the submission.  The submitter will be notified of their submission status."
+msgstr ""
+
+#: ../../curate_submissions.rst:126
+msgid "Profiles"
+msgstr ""
+
+#: ../../curate_submissions.rst:127
+msgid "Click the appropriate submission on the 'Manage submissions' page."
+msgstr ""
+
+#: ../../curate_submissions.rst:131
+msgid "You will see a table summarizing the profiles in the submission and their current status."
+msgstr ""
+
+#: ../../curate_submissions.rst:137
+msgid "Individual profile curation"
+msgstr ""
+
+#: ../../curate_submissions.rst:138
+msgid "Individual profiles can be curated singly by clicking the 'Curate' links next to the profile in the table."
+msgstr ""
+
+#: ../../curate_submissions.rst:143
+msgid "Clicking this link takes you to the curation interface :ref:`single profile upload page<single_profile_upload>`. The upload form will be filled with details from the submission."
+msgstr ""
+
+#: ../../curate_submissions.rst:149
+msgid "Clicking 'Submit' from this form will define the new profile and add it to the database.  A link on the confirmation page will take you back to the submission management page."
+msgstr ""
+
+#: ../../curate_submissions.rst:155
+msgid "You will find that the status of the newly assigned profile has changed in the summary table.  The assigned value and status are determined on display and should always reflect the live database values."
+msgstr ""
+
+#: ../../curate_submissions.rst:162
+msgid "Batch profile curation"
+msgstr ""
+
+#: ../../curate_submissions.rst:163
+msgid "Often, you will want to batch upload submitted profiles.  This can be done by clicking the 'Batch curate' button."
+msgstr ""
+
+#: ../../curate_submissions.rst:168
+msgid "This takes you to the :ref:`batch profile upload page<batch_profile_upload>` in the curators' interface."
+msgstr ""
+
+#: ../../curate_submissions.rst:172
+#: ../../curate_submissions.rst:230
+msgid "The upload form will be filled with details from the submission."
+msgstr ""
+
+#: ../../curate_submissions.rst:176
+#: ../../curate_submissions.rst:236
+msgid "After upload, a link on the confirmation page leads back to the submission management page."
+msgstr ""
+
+#: ../../curate_submissions.rst:181
+msgid "The status of the profiles should reflect their newly assigned status."
+msgstr ""
+
+#: ../../curate_submissions.rst:186
+msgid "Rejecting profiles"
+msgstr ""
+
+#: ../../curate_submissions.rst:187
+msgid "Sometimes you may need to reject all, or some of, the profiles in the submission.  This may be because isolate data had not been made available, against the policy of the database.  You can do this by changing the value in the status dropdown box next to each profile.  Click 'Update' to make the change."
+msgstr ""
+
+#: ../../curate_submissions.rst:203
+msgid "You can add a message to the submitter by entering it in the message box and clicking 'Append'.  Once profiles have all been either assigned or rejected, the 'Close submission' button will be displayed.  Click this to close the submission.  The submitter will be notified of their submission status."
+msgstr ""
+
+#: ../../curate_submissions.rst:213
+msgid "Isolates"
+msgstr ""
+
+#: ../../curate_submissions.rst:214
+msgid "Clicking the appropriate submission on the 'Manage submissions' page."
+msgstr ""
+
+#: ../../curate_submissions.rst:218
+msgid "You will see a table summarizing the submission."
+msgstr ""
+
+#: ../../curate_submissions.rst:222
+msgid "Click the 'Batch curate' button."
+msgstr ""
+
+#: ../../curate_submissions.rst:226
+msgid "This will take you to the :ref:`batch isolate upload page<batch_isolate_upload>` in the curators' interface."
+msgstr ""
+
+#: ../../curate_submissions.rst:234
+msgid "Click submit to check and then import if there are no errors."
+msgstr ""
+
+#: ../../curate_submissions.rst:243
+msgid "Depending on the database policy, definitions of new scheme profiles, e.g. for MLST, may require submission of representative isolate records. Where this is the case, the curator will need to extract the new profile from the submitted record.  The tab-delimited isolate text file can be downloaded from the archive of supporting files linked to the submission and used directly for :ref:`batch adding new profiles<batch_profile_upload>`. Alternatively, the curator could use the :ref:`Export functionality<isolate_export>` of the database to generate the file required for batch profile definition after upload of the isolate data."
+msgstr ""
+
+#: ../../curate_submissions.rst:261
+msgid "You can add a message to the submitter by entering it in the message box and clicking ‘Append’."
+msgstr ""
+
+#: ../../curate_submissions.rst:264
+msgid "The 'Close submission' button will now appear.  Click this to close the submission.  The submitter will be notified of their submission status."
+msgstr ""

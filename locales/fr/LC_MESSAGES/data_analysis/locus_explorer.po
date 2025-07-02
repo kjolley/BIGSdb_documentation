@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/locus_explorer.rst:8
+msgid "Locus explorer"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:9
+msgid ""
+"The locus explorer is a sequence definition database plugin.  It can "
+"create schematics showing the polymorphic sites within a locus, calculate"
+" the GC content and generate aligned translated sequences."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:13
+msgid ""
+"Expand the 'Analysis' section on the main contents page of a sequence "
+"definition database and click 'Locus Explorer'."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:24
+msgid "Polymorphic site analysis"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:25
+msgid ""
+"Select the locus you would like to analyse in the Locus dropdown box.  "
+"The page will reload."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:30
+msgid ""
+"Select the alleles that you would like to include in the analysis.  "
+"Variable length loci are limited to 2000 sequences or fewer since these "
+"need to be aligned.  Select 'Polymorphic Sites' in the Analysis selection"
+" and click 'Submit'."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:37
+msgid ""
+"If an alignment is necessary, the job will be submitted to the job queue "
+"and the analysis performed.  If no alignment is necessary, then the "
+"analysis is shown immediately."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:41
+msgid "The first part of the page shows the schematic."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:45
+msgid ""
+"Clicking any of the sequence bases will calculate the exact frequencies "
+"of the different nucleotides at that position."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:50
+msgid ""
+"Along with the nucleotide frequencies, it will also show the percentage "
+"of allelic profiles containing each nucleotide at that position if the "
+"locus is part of a scheme such as MLST."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:56
+msgid ""
+"The second part of the page shows a table listing nucleotide frequencies "
+"at each of the variable positions."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:63
+msgid ":ref:`Investigating allele differences <allele_differences>`."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:64
+msgid ":ref:`Polymorphism analysis following isolate query <polymorphisms>`."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:70
+msgid "Codon usage"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:71
+msgid ""
+"Select the alleles that you would like to include in the analysis. Again,"
+" variable length loci are limited to 200 sequences or fewer since these "
+"need to be aligned. Click ‘Codon’."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:77
+msgid ""
+"The GC content of the alleles will be determined and a table of the codon"
+" frequencies displayed."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:86
+msgid "Aligned translations"
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:87
+msgid ""
+"If a DNA coding sequence locus is selected, an aligned translation can be"
+" produced."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:90
+msgid ""
+"Select the alleles that you would like to include in the analysis. Again,"
+" variable length loci are limited to 200 sequences or fewer since these "
+"need to be aligned. Click ‘Translate’."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:96
+msgid "An aligned amino acid sequence will be displayed."
+msgstr ""
+
+#: ../data_analysis/locus_explorer.rst:100
+msgid ""
+"If there appear to be a lot of stop codons in the translation, it is "
+"possible that the orf value in the :ref:`locus definition <add_new_loci>`"
+" is not set correctly."
+msgstr ""
+

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_export/contig_export.rst:3
+msgid "Contig export"
+msgstr ""
+
+#: ../data_export/contig_export.rst:4
+msgid "The contig export plugin can be accessed by expanding the 'Export' section and clicking the ‘Contigs’ link in the contents page of isolate databases."
+msgstr ""
+
+#: ../data_export/contig_export.rst:9
+msgid "Alternatively, it can be accessed following a query by clicking the ‘Contigs’ button in the Export section at the bottom of the results table."
+msgstr ""
+
+#: ../data_export/contig_export.rst:14
+msgid "Select the isolates for which you wish to export contig data for. In databases with a large number of isolates you will need to enter the id numbers rather than select from a list. If the export function was accessed following a query, isolates returned in the query will be pre-selected."
+msgstr ""
+
+#: ../data_export/contig_export.rst:21
+msgid "Press submit."
+msgstr ""
+
+#: ../data_export/contig_export.rst:23
+msgid "A table will be produced with download links.  Clicking these will produce the contigs in FASTA format."
+msgstr ""
+
+#: ../data_export/contig_export.rst:28
+msgid "You can also download all the data in a tar.gz file by clicking the 'Batch download' link."
+msgstr ""

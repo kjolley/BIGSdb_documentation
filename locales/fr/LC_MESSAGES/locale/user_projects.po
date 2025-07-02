@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2025, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.51.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 08:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../user_projects.rst:8
+msgid "User projects"
+msgstr ""
+
+#: ../../user_projects.rst:9
+msgid ""
+"If user projects are enabled, authenticated users are able to set up "
+"their own projects in order to group isolates for analysis. If private "
+"data and user quotas are enabled, these projects can include private "
+"records that can then be shared with other user accounts. Note, that "
+"simply adding a record to a user project does not make the record itself "
+"private."
+msgstr ""
+
+#: ../../user_projects.rst:16
+msgid ""
+"User projects can be enabled by an administrator by setting "
+"'user_projects=\"yes\"' in the :ref:`config.xml<isolate_xml>` file for "
+"the database."
+msgstr ""
+
+#: ../../user_projects.rst:20
+msgid ""
+"To create a new project, go to the isolate database contents page and "
+"expand the 'Projects' section. Click 'Your projects'."
+msgstr ""
+
+#: ../../user_projects.rst:25
+msgid ""
+"Enter the name of your project (this must be unique on the system - you "
+"will be told if the name is already used). You can optionally include a "
+"description - if you do this, this will appear within :ref:`isolate "
+"records<isolate_records>` when accessed from your account. Click "
+"'Create'."
+msgstr ""
+
+#: ../../user_projects.rst:32
+msgid ""
+"You can either add isolates to your project directly following a query or"
+" by manually editing a list of ids."
+msgstr ""
+
+#: ../../user_projects.rst:37
+msgid "Adding isolates to a user project following a query"
+msgstr ""
+
+#: ../../user_projects.rst:38
+msgid ""
+"Perform an isolate database query. If you have set up a project, there "
+"will be a link in the results header box. Select your project and click "
+"'Add these records'."
+msgstr ""
+
+#: ../../user_projects.rst:44
+msgid ""
+"The records will be added to the project. Please note that it doesn't "
+"matter whether any of the records have been previously added."
+msgstr ""
+
+#: ../../user_projects.rst:49
+msgid "Adding or removing isolates belonging to a user project by editing a list"
+msgstr ""
+
+#: ../../user_projects.rst:50
+msgid ""
+"From the user projects page, click the 'Add/remove records' link for the "
+"project that you wish to modify."
+msgstr ""
+
+#: ../../user_projects.rst:55
+msgid ""
+"Edit the list of ids of records belonging to the list. You can copy and "
+"paste this list if you wish to prepare it in a spreadsheet or text "
+"editor. Click 'Update' when finished."
+msgstr ""
+
+#: ../../user_projects.rst:63
+msgid "Accessing project isolates"
+msgstr ""
+
+#: ../../user_projects.rst:64
+msgid ""
+"To browse isolate records belonging to a project, go to the user projects"
+" page and click the 'Browse' link for the project."
+msgstr ""
+
+#: ../../user_projects.rst:69
+msgid ""
+"Alternatively, you can select the project from the :ref:`projects "
+"filter<query_filters>` on the isolate query page. This would enable you "
+"to combine the project with additional search criteria"
+msgstr ""
+
+#: ../../user_projects.rst:75
+msgid ""
+"Please note that you will only see your project in the filter list if you"
+" are logged in. As a private project, only you will see it."
+msgstr ""
+
+#: ../../user_projects.rst:80
+msgid "Allowing other users to share your project"
+msgstr ""
+
+#: ../../user_projects.rst:81
+msgid ""
+"You can share a project that you own with any other user. In order to do "
+"this, you must know the username that they use to log in with. They will "
+"see the project in their own list of private projects and in the query "
+"interface projects filter."
+msgstr ""
+
+#: ../../user_projects.rst:86
+msgid ""
+"From the user projects page, click the 'Modify users' link for the "
+"specified project:"
+msgstr ""
+
+#: ../../user_projects.rst:91
+msgid ""
+"Enter the username of the person you wish to share with and click 'Add "
+"user':"
+msgstr ""
+
+#: ../../user_projects.rst:95
+msgid ""
+"If user groups are in use, you can also share your project with all "
+"members of a user group from the same page."
+msgstr ""
+
+#: ../../user_projects.rst:98
+msgid ""
+"Once a user has been added, you can give them permission to administer "
+"(add other users, modify the description or delete) or add/remove records"
+" to the project:"
+msgstr ""
+
+#: ../../user_projects.rst:106
+msgid "Deleting a user project"
+msgstr ""
+
+#: ../../user_projects.rst:107
+msgid ""
+"You can delete a project from the user projects page by clicking the "
+"'Delete' link next to the project in question."
+msgstr ""
+
+#: ../../user_projects.rst:112
+msgid ""
+"If the project contains any isolates you will be asked for confirmation. "
+"Click the 'Delete project' button."
+msgstr ""
+
+#: ../../user_projects.rst:117
+msgid ""
+"If the project contains no isolates, the confirmation page is skipped and"
+" the project is removed immediately."
+msgstr ""
+
+#: ../../user_projects.rst:121
+msgid ""
+"Removing a project does not delete the isolate records belonging to it. A"
+" project is simply a means of grouping records."
+msgstr ""
+
