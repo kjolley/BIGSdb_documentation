@@ -43,6 +43,7 @@ These are included with most Linux distributions.
 * `Exception::Class <https://metacpan.org/pod/Exception::Class>`_ - Exception handing.
 * `File::Map <https://metacpan.org/pod/File::Map>`_
 * `File::Type <https://metacpan.org/pod/File::Type>`_ - Used to determine what type of file has been uploaded.
+* `Inline::C <https://metacpan.org/pod/Inline::C>`_ - Used to support embedded functions written in C.
 * `IO::String <https://metacpan.org/pod/IO::String>`_
 * `JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data.
 * `List::MoreUtils <https://metacpan.org/pod/List::MoreUtils>`_ (version 0.28+).
