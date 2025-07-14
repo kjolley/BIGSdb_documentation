@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: BIGSdb 1.51.0\n"
+"Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"POT-Creation-Date: 2025-07-14 10:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,89 +149,93 @@ msgid "`File::Type <https://metacpan.org/pod/File::Type>`_ - Used to determine w
 msgstr ""
 
 #: ../dependencies.rst:46
-msgid "`IO::String <https://metacpan.org/pod/IO::String>`_"
+msgid "`Inline::C <https://metacpan.org/pod/Inline::C>`_ - Used to support embedded functions written in C."
 msgstr ""
 
 #: ../dependencies.rst:47
-msgid "`JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data."
+msgid "`IO::String <https://metacpan.org/pod/IO::String>`_"
 msgstr ""
 
 #: ../dependencies.rst:48
-msgid "`List::MoreUtils <https://metacpan.org/pod/List::MoreUtils>`_ (version 0.28+)."
+msgid "`JSON <https://metacpan.org/pod/JSON>`_ - Used to manipulate JSON data."
 msgstr ""
 
 #: ../dependencies.rst:49
-msgid "`Log::Dispatch::File <https://metacpan.org/pod/Log::Dispatch::File>`_ - Object for logging to file."
+msgid "`List::MoreUtils <https://metacpan.org/pod/List::MoreUtils>`_ (version 0.28+)."
 msgstr ""
 
 #: ../dependencies.rst:50
-msgid "`Log::Log4perl <https://metacpan.org/pod/Log::Log4perl>`_ - Configurable status and error logging."
+msgid "`Log::Dispatch::File <https://metacpan.org/pod/Log::Dispatch::File>`_ - Object for logging to file."
 msgstr ""
 
 #: ../dependencies.rst:51
-msgid "`LWP::UserAgent <https://metacpan.org/pod/LWP::UserAgent>`_ - Used to upload via API"
+msgid "`Log::Log4perl <https://metacpan.org/pod/Log::Log4perl>`_ - Configurable status and error logging."
 msgstr ""
 
 #: ../dependencies.rst:52
-msgid "`Net::Oauth <https://metacpan.org/pod/Net::OAuth>`_ - Required for REST authentication (this needs to be installed even if you are not using REST)."
+msgid "`LWP::UserAgent <https://metacpan.org/pod/LWP::UserAgent>`_ - Used to upload via API"
 msgstr ""
 
 #: ../dependencies.rst:53
-msgid "`Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_ - Required for multi-threading tools and plugins."
+msgid "`Net::Oauth <https://metacpan.org/pod/Net::OAuth>`_ - Required for REST authentication (this needs to be installed even if you are not using REST)."
 msgstr ""
 
 #: ../dependencies.rst:54
-msgid "`PDL <https://metacpan.org/pod/PDL>`_ - Required for LINcode calculations."
+msgid "`Parallel::ForkManager <https://metacpan.org/pod/Parallel::ForkManager>`_ - Required for multi-threading tools and plugins."
 msgstr ""
 
 #: ../dependencies.rst:55
-msgid "`Template <https://metacpan.org/release/ABW/Template-Toolkit-2.00-beta4>`_ - Required for formatting analysis results."
+msgid "`PDL <https://metacpan.org/pod/PDL>`_ - Required for LINcode calculations."
 msgstr ""
 
 #: ../dependencies.rst:56
-msgid "`Text::CSV <https://metacpan.org/pod/Text::CSV>`_ - Used for parsing of TSV files."
+msgid "`Template <https://metacpan.org/release/ABW/Template-Toolkit-2.00-beta4>`_ - Required for formatting analysis results."
 msgstr ""
 
 #: ../dependencies.rst:57
-msgid "`Time::Duration <https://metacpan.org/pod/Time::Duration>`_ - Used by Job Viewer to display elapsed time in rounded units."
+msgid "`Text::CSV <https://metacpan.org/pod/Text::CSV>`_ - Used for parsing of TSV files."
 msgstr ""
 
 #: ../dependencies.rst:58
-msgid "`TOML <https://metacpan.org/pod/TOML>`_ - Used to define dashboard layouts."
+msgid "`Time::Duration <https://metacpan.org/pod/Time::Duration>`_ - Used by Job Viewer to display elapsed time in rounded units."
 msgstr ""
 
 #: ../dependencies.rst:59
-msgid "`Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_"
+msgid "`TOML <https://metacpan.org/pod/TOML>`_ - Used to define dashboard layouts."
 msgstr ""
 
 #: ../dependencies.rst:60
+msgid "`Try::Tiny <https://metacpan.org/pod/Try::Tiny>`_"
+msgstr ""
+
+#: ../dependencies.rst:61
 msgid "`XML::Parser::PerlSAX <https://metacpan.org/pod/XML::Parser::PerlSAX>`_ - part of libxml-perl - Used to parse XML configuration files."
 msgstr ""
 
-#: ../dependencies.rst:63
+#: ../dependencies.rst:64
 msgid "Optional packages"
 msgstr ""
 
-#: ../dependencies.rst:64
+#: ../dependencies.rst:65
 msgid "Installing these packages will enable extra functionality, but they are not required by the core BIGSdb package."
 msgstr ""
 
-#: ../dependencies.rst:66
+#: ../dependencies.rst:67
 msgid "MAFFT 6.8+ - sequence alignment used by some plugins."
 msgstr ""
 
-#: ../dependencies.rst:67
+#: ../dependencies.rst:68
 msgid "Muscle - sequence alignment used by some plugins."
 msgstr ""
 
-#: ../dependencies.rst:68
+#: ../dependencies.rst:69
 msgid "Splitstree4 - used by GenomeComparator plugin."
 msgstr ""
 
-#: ../dependencies.rst:69
+#: ../dependencies.rst:70
 msgid "PostGIS - needed for geographical mapping."
 msgstr ""
 
-#: ../dependencies.rst:70
+#: ../dependencies.rst:71
 msgid "WeasyPrint - needed to generate PDF files in the Genome Reports plugin."
 msgstr ""
