@@ -538,6 +538,34 @@ Any value set here can be overridden in a
   * Force users to log in to run offline jobs: either 'yes' or 'no'. This 
     value overrides the value set in bigsdb.conf.
     
+* Kaptive
+
+  * Enable Kaptive plugin: either 'yes' or 'no'. If no value is set 
+    then the plugin will not be available even if the all_plugins attribute is 
+    set to 'yes'. Make sure that kaptive_path is set in bigsdb.conf.
+    
+* kaptive_dbs
+
+  *  Comma-separated list of Kaptive databases to enable. Choice is kpsc_k 
+     (*Klebsiella* K locus), kpsc_o (*Klebsiella* O locus), ab_k 
+     (*Acinetobacter baumannii* K locus), and ab_o (*Acinentobacter baumannii* 
+     OC locus), e.g. 'kpsc_k,kpsc_0'.
+     
+* kaptive_view
+
+  * Running Kaptive may not be valid for all isolates in a database, e.g. the
+    *A. baumannii* databases may not be suitable for screening other 
+    *Acinetobacter* species. You can restrict which isolates in a database can
+    be analysed by defining a database view of the isolates table that only
+    contains valid isolates, e.g. by filtering on the species field. Set the
+    name of the view with this attribute, default is 'isolates'.
+    
+* kaptive_view_desc
+
+  * If kaptive_view is set, you can add a description which will be used in the
+    interface to explain why isolates may not be anaysed, e.g. 'Restricted to
+    A. baumannii isolates only.'.  
+    
 * Kleborate
 
   * Enable Kleborate plugin: either 'yes' or 'no'. If no value is set 
