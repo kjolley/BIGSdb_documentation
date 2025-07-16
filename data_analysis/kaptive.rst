@@ -24,6 +24,31 @@ If you use the results of Kaptive, you should cite the following:
   *in silico* Antigen Typing with Kaptive 3 [Internet]. bioRxiv; 2025 
   [cited 2025 Feb 27]. p. 2025.02.05.636613. 
   https://www.biorxiv.org/content/10.1101/2025.02.05.636613v1
+  
+If you use the *Klebsiella* K or O locus databases, you should also cite:
+
+* Wyres, K.L., Wick, R.R., Gorrie, C., Jenney, A., Follador, R., Thomson, N.R., 
+  Holt, K.E., 2016. Identification of *Klebsiella* capsule synthesis loci from 
+  whole genome data. Microbial Genomics 2, e000102. 
+  https://doi.org/10.1099/mgen.0.000102
+
+* Lam, M.M.C., Wick, R.R., Judd, L.M., Holt, K.E., Wyres, K.L., 2022. 
+  Kaptive 2.0: updated capsule and lipopolysaccharide locus typing for the 
+  *Klebsiella pneumoniae* species complex. Microbial Genomics 8. 
+  https://doi.org/10.1099/mgen.0.000800
+
+If you use the *A. baumannii* K or OC locus databases, please also cite:
+
+* Wyres, K.L., Cahill, S.M., Holt, K.E., Hall, R.M., Kenyon, J.J., 2020. 
+  Identification of Acinetobacter baumannii loci for capsular polysaccharide 
+  (KL) and lipooligosaccharide outer core (OCL) synthesis in genome assemblies
+  using curated reference databases compatible with Kaptive. Microbial 
+  Genomics 6. https://doi.org/10.1099/mgen.0.000339
+
+* Cahill, S.M., Hall, R.M., Kenyon, J.J., 2022. An update to the database for
+  Acinetobacter baumannii capsular polysaccharide locus typing extends the 
+  extensive and diverse repertoire of genes found at and outside the K locus.
+  Microbial Genomics 8. https://doi.org/10.1099/mgen.0.000878
       
 The function can be accessed by selecting the 'Analysis' section on the main 
 contents page.
