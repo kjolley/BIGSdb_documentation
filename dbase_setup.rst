@@ -549,7 +549,7 @@ Any value set here can be overridden in a
   *  Comma-separated list of Kaptive databases to enable. Choice is kpsc_k 
      (*Klebsiella* K locus), kpsc_o (*Klebsiella* O locus), ab_k 
      (*Acinetobacter baumannii* K locus), and ab_o (*Acinentobacter baumannii* 
-     OC locus), e.g. 'kpsc_k,kpsc_0'.
+     OC locus), e.g. 'kpsc_k,kpsc_o'.
      
 * kaptive_view
 
