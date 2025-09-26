@@ -34,6 +34,7 @@ These are included with most Linux distributions.
 * `Crypt::Eksblowfish::Bcrypt <https://metacpan.org/pod/Crypt::Eksblowfish::Bcrypt>`_ - Used for password hashing.
 * `Data::Random <https://metacpan.org/pod/Data::Random>`_
 * `Data::UUID <https://metacpan.org/pod/Data::UUID>`_ - Globally unique identifer handling for preference storage.
+* `DateTime <https://metacpan.org/pod/DateTime>`_ - Date calculations.
 * `DBD::Pg <https://metacpan.org/pod/DBD::Pg>`_ - PostgreSQL database driver for DBI.
 * `DBI <https://metacpan.org/pod/DBI>`_ - Database independent interface - module used to interact with databases.
 * `Email::MIME <https://metacpan.org/pod/Email::MIME>`_ - Used to format E-mail messages.
