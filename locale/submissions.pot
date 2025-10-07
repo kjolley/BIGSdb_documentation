@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-14 10:02+0100\n"
+"POT-Creation-Date: 2025-10-07 07:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -414,7 +414,7 @@ msgid "Click 'Submit' and the system will check that the id and isolate names co
 msgstr ""
 
 #: ../submissions.rst:399
-msgid "Files are uploaded as you drag-and-drop them. Basic checks wil be performed for sequence length, number of contigs, and N50 values. If values are outside the preferred range you will see a warning for a specific value shown with a pink background. If values are outside the allowed range than the validation will fail and you will need to abort the submission. In the image below, the N50 values have a warning but have not failed the validation."
+msgid "Files are uploaded as you drag-and-drop them. Basic checks will be performed for sequence length, number of contigs, and N50 values. If values are outside the preferred range you will see a warning for a specific value shown with a pink background. If values are outside the allowed range then the validation will fail and you will need to abort the submission. In the image below, the N50 values have a warning but have not failed the validation."
 msgstr ""
 
 #: ../submissions.rst:408
