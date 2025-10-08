@@ -730,7 +730,6 @@ msgstr ""
 " entrées."
 
 #: ../submissions.rst:399
-#, fuzzy
 msgid ""
 "Files are uploaded as you drag-and-drop them. Basic checks will be "
 "performed for sequence length, number of contigs, and N50 values. If "
