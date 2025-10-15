@@ -396,10 +396,10 @@ adding assemblies for these records.
 
 .. image:: /images/submissions/submission39.png
 
-Files are uploaded as you drag-and-drop them. Basic checks wil be performed for
+Files are uploaded as you drag-and-drop them. Basic checks will be performed for
 sequence length, number of contigs, and N50 values. If values are outside the
 preferred range you will see a warning for a specific value shown with a pink 
-background. If values are outside the allowed range than the validation will
+background. If values are outside the allowed range then the validation will
 fail and you will need to abort the submission. In the image below, the N50 
 values have a warning but have not failed the validation.
 
