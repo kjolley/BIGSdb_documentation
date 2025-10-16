@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-16 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../data_query/0100_options.rst:6
 msgid "User-configurable options"
-msgstr ""
+msgstr "Options configurables par l'utilisateur"
 
 #: ../data_query/0100_options.rst:7
 msgid ""
@@ -30,6 +30,13 @@ msgid ""
 "associated with a browser cookie so they will be remembered if you "
 "connect from the same computer (using the same browser)."
 msgstr ""
+"L'interface utilisateur BIGSdb est configurable de plusieurs façons. Les "
+"choix faits sont enregistrés entre les sessions. Si la base de données vous "
+"oblige à vous connecter, les options sont associées à votre compte "
+"utilisateur, alors que si c'est une base de données publique, à laquelle "
+"vous n'avez pas été connecté, les options sont associées à un cookie de "
+"navigateur, de sorte qu'elles seront rappelées si vous vous connectez à "
+"partir du même ordinateur (en utilisant le même navigateur)."
 
 #: ../data_query/0100_options.rst:14
 msgid ""
@@ -37,28 +44,34 @@ msgid ""
 "contents page.  Most of the available options are visible for isolate "
 "databases, whereas sequence definition databases have fewer available."
 msgstr ""
+"La plupart des options sont définies en cliquant sur le lien 'Customise' "
+"de la page de contenu de la base de données. La plupart des options "
+"disponibles sont visibles pour les bases de données isolats, tandis que les "
+"bases de données de définition des séquences ont moins d'options."
 
 #: ../data_query/0100_options.rst:23
 msgid "General options"
-msgstr ""
+msgstr "Options générales"
 
 #: ../data_query/0100_options.rst:24
 msgid ""
 "The general options tab is displayed by default.  If another tab is being"
 " shown, click the 'General options' header."
 msgstr ""
+"L'onglet Options générales (General options) s'affiche par défaut. Si un autre onglet est "
+"affiché, cliquez sur l'en-tête 'General options'."
 
 #: ../data_query/0100_options.rst:29
 msgid "The general tab allows the following options to be modified:"
-msgstr ""
+msgstr "L'onglet général permet de modifier les options suivantes :"
 
 #: ../data_query/0100_options.rst:31
 msgid "Records per page"
-msgstr ""
+msgstr "Enregistrements par page"
 
 #: ../data_query/0100_options.rst:32
 msgid "Page bar position"
-msgstr ""
+msgstr "Position de la barre de page"
 
 #: ../data_query/0100_options.rst:33
 msgid ""
@@ -66,6 +79,9 @@ msgid ""
 "option allows you to set the width of these alignments so suit your "
 "display."
 msgstr ""
+"Nucleotides par ligne - Certaines analyses affichent des alignements de "
+"séquences. Cette option vous permet de régler la largeur de ces alignements "
+"de façon à correspondre à votre affichage."
 
 #: ../data_query/0100_options.rst:35
 msgid ""
@@ -74,12 +90,18 @@ msgid ""
 " sequence is displayed. Flanking sequences are displayed fainter that the"
 " locus sequence."
 msgstr ""
+"Longueur de la séquence flanquante - Ce paramètre définit la longueur de "
+"la séquence flanquante en amont et en aval d'un locus particulier qui est "
+"inclus chaque fois qu'une séquence est affichée. Les séquences flanquantes "
+"sont plus grisées que la séquence du locus."
 
 #: ../data_query/0100_options.rst:38
 msgid ""
 "Locus aliases - Loci can have multiple names (aliases). Setting this "
 "option will display all alternative names in results tables."
 msgstr ""
+"Locus alias - Les loci peuvent avoir plusieurs noms (alias). Définir cette option "
+"affichera tous les noms alternatifs dans les tableaux de résultats."
 
 #: ../data_query/0100_options.rst:40
 msgid ""
@@ -88,32 +110,43 @@ msgid ""
 "can also be toggled off by clicking the Toggle: 'i' button at the top-"
 "right of the display of some pages."
 msgstr ""
+"Tooltips (mode de démarrage) - La plupart des formulaires de requête ont de "
+"l'aide disponible sous forme de tooltips d'information. Celles-ci peuvent "
+"être activées ou désactivées ici. Ils peuvent également être changés en "
+"cliquant sur le bouton Toggle: 'i' en haut à droite de l'affichage de "
+"certaines pages."
 
 #: ../data_query/0100_options.rst:45
 msgid "Click 'Set options' to remember any changes you make."
 msgstr ""
+"Cliquez sur 'Set options' pour enregistrer les modifications que vous "
+"apportez."
 
 #: ../data_query/0100_options.rst:52
 msgid "Main results table"
-msgstr ""
+msgstr "Tableau principal des résultats"
 
 #: ../data_query/0100_options.rst:53
 msgid ""
 "The 'main results table' tab contains options for the display of paged "
 "results following a query."
 msgstr ""
+"L'onglet 'Tableau principal des résultats' contient des options pour "
+"l'affichage des résultats page à page suite à une requête."
 
 #: ../data_query/0100_options.rst:56
 msgid "Click the 'Main results table' header to display the tab."
 msgstr ""
+"Cliquez sur l'en-tête 'Main results table' pour afficher "
+"l'onglet."
 
 #: ../data_query/0100_options.rst:60
 msgid "The 'main results table' tab will scroll up."
-msgstr ""
+msgstr "L'onglet 'Tableau principal des résultats' défilera."
 
 #: ../data_query/0100_options.rst:64 ../data_query/0100_options.rst:101
 msgid "This tab allows the following options to be modified:"
-msgstr ""
+msgstr "Cet onglet permet de modifier les options suivantes :"
 
 #: ../data_query/0100_options.rst:66
 msgid ""
@@ -121,6 +154,9 @@ msgid ""
 "about the particular allele definition. Depending on the locus, these may"
 " exist on a different website."
 msgstr ""
+"Hyperliens de désignations d'allèle - Hyperliens vers une page d'information "
+"sur la définition d'un allèle particulier. Selon le locus, ils peuvent pointer "
+"vers un site Web différent."
 
 #: ../data_query/0100_options.rst:69 ../data_query/0100_options.rst:103
 msgid ""
@@ -129,100 +165,134 @@ msgid ""
 "assignment. Selecting this option will display provisional designations "
 "in a different colour to confirmed designations."
 msgstr ""
+"Differentiate provisional allele designations - Les désignations "
+"d'allèles peuvent être définies comme confirmées ou provisoires, "
+"généralement selon la méthode d'attribution. Le choix de cette option "
+"affichera les désignations provisoires dans une couleur différente de celles"
+" confirmées."
 
 #: ../data_query/0100_options.rst:73
 msgid ""
 "Information about sequence bin records - Creates a tooltip that displays "
 "details about sequence tags corresponding to a locus."
 msgstr ""
+"Informations sur les enregistrements de la banque de séquences (sequence bin records) - Crée une "
+"infobulle qui affiche des détails sur les balises de séquence correspondant "
+"à un locus."
 
 #: ../data_query/0100_options.rst:75
 msgid ""
 "Sequence bin records - Displays a tooltip linking to the sequence tag if "
 "available."
 msgstr ""
+"Sequence bin records - Affiche un tooltip reliant à la balise de séquence si"
+" disponible."
 
 #: ../data_query/0100_options.rst:77
 msgid ""
 "Sequence bin size - Displays the size of the sum of all contigs "
 "associated with each isolate record."
 msgstr ""
+"Taille de la corbeille de séquence (Sequence bin) - Affiche la taille de la somme de tous les "
+"contigs associés à chaque entrée isolat."
 
 #: ../data_query/0100_options.rst:79
 msgid ""
 "Contig count - Displays the number of contigs associated with each "
 "isolate record."
 msgstr ""
+"Nombre de contigs - Affiche le nombre de contigs associés à chaque "
+"entrée d'isolat."
 
 #: ../data_query/0100_options.rst:81
 msgid ""
 "Assembly checks - Displays whether assembly checks have passed for a "
 "genome record."
 msgstr ""
+"Contrôles d'assemblage - Affiche si les contrôles d'assemblage ont été "
+"effectués avec succès pour un génome."
 
 #: ../data_query/0100_options.rst:83
 msgid "Publications - Displays citations with links to PubMed for each record."
 msgstr ""
+"Publications - Affiche les citations avec des liens vers PubMed pour chaque "
+"entrée."
 
 #: ../data_query/0100_options.rst:89
 msgid "Isolate record display"
-msgstr ""
+msgstr "Affichage des entrées isolats"
 
 #: ../data_query/0100_options.rst:90
 msgid ""
 "The 'isolate record display' tab contains options for the display of a "
 "full isolate record."
 msgstr ""
+"L'onglet 'affichage isolats' (isolate record display) contient des options pour l'affichage d'une "
+"entrée isolat complet."
 
 #: ../data_query/0100_options.rst:93
 msgid "Click the 'Isolate record display' tab to display the tab."
 msgstr ""
+"Cliquez sur l'onglet 'Isolate record display' pour afficher "
+"l'onglet."
 
 #: ../data_query/0100_options.rst:97
 msgid "The 'Isolate record display' tab will scroll up."
-msgstr ""
+msgstr "L'onglet 'Isolate record display' défilera."
 
 #: ../data_query/0100_options.rst:107
 msgid ""
 "Display sender, curator and last updated records - Displays a tooltip "
 "containing sender information next to each allele designation."
 msgstr ""
+"Affiche les enregistrements de l'expéditeur, du curateur et de la "
+"dernière mise à jour - Affiche une infobulle contenant les informations de "
+"l'expéditeur à côté de chaque désignation d'allèle."
 
 #: ../data_query/0100_options.rst:109
 msgid ""
 "Sequence bin information - Displays a tooltip with information about the "
 "position of the sequence if tagged within the sequence bin."
 msgstr ""
+"Informations sur la corbeille à séquence - Affiche une barre d'outils avec des "
+"informations sur la position de la séquence si elle est marquée dans la "
+"corbeille à séquence."
 
 #: ../data_query/0100_options.rst:111
 msgid ""
 "Allele flags - Displays information about whether alleles have flags "
 "defined in sequence definition databases."
 msgstr ""
+"Drapeaux d'allèles (flags) - Affiche les informations indiquant si les allèles ont "
+"des drapeaux définis dans les bases de données de définition de séquences."
 
 #: ../data_query/0100_options.rst:118
 msgid "Provenance field display"
-msgstr ""
+msgstr "Affichage du champ de provenance"
 
 #: ../data_query/0100_options.rst:119
 msgid ""
 "The 'provenance field display' tab contains checkboxes for fields to "
 "display in the main results table."
 msgstr ""
+"L'onglet 'provenance field display' contient des cases à cocher pour les "
+"champs à afficher dans le tableau de résultats principal."
 
 #: ../data_query/0100_options.rst:122
 msgid "Click the 'Provenance field display' tab to display the tab."
-msgstr ""
+msgstr "Cliquez sur l'onglet 'Provenance field display' pour afficher l'onglet."
 
 #: ../data_query/0100_options.rst:126
 msgid "The 'Provenance field display' tab will scroll up."
-msgstr ""
+msgstr "L'onglet 'Provenance field display' va défiler."
 
 #: ../data_query/0100_options.rst:130
 msgid ""
 "Some fields will be checked by default - these are defined during "
 ":ref:`database setup <isolate_xml_field>` (maindisplay option)."
 msgstr ""
+"Certains champs seront sélectionnés par défaut - ils sont définis pendant "
+":ref:`database setup <isolate_xml_field>` (option d'affichage principal)."
 
 #: ../data_query/0100_options.rst:133
 msgid ""
@@ -230,10 +300,13 @@ msgid ""
 "options'. You can return to the default selection by clicking 'Default' "
 "followed by 'Set options'."
 msgstr ""
+"Sélectionnez tous les champs que vous souhaitez afficher, puis cliquez sur 'Set "
+"options'. Vous pouvez revenir à la sélection par défaut en cliquant sur "
+"'Default' suivi de 'Set options'."
 
 #: ../data_query/0100_options.rst:143
 msgid "Query filters"
-msgstr ""
+msgstr "Query filters"
 
 #: ../data_query/0100_options.rst:144
 msgid ""
@@ -242,14 +315,18 @@ msgid ""
 "filters appearing in the query page :ref:`filters fieldset "
 "<query_filters>`."
 msgstr ""
+"L'onglet 'query filters' contient des cases à cocher pour les champs "
+"de provenance et l'état d'achèvement des schémas. Cochez ces résultats dans "
+"les filtres de la liste déroulante apparaissant dans la page de requête "
+":ref:`filters fieldset <query_filters>`."
 
 #: ../data_query/0100_options.rst:148
 msgid "Click the 'Query filters' tab to display the tab."
-msgstr ""
+msgstr "Cliquez sur l'onglet 'Query filters' (Filtres de requêtes) pour afficher l'onglet."
 
 #: ../data_query/0100_options.rst:152
 msgid "The 'Query filters' tab will scroll up."
-msgstr ""
+msgstr "L'onglet 'Filtres de requêtes' défilera."
 
 #: ../data_query/0100_options.rst:156
 msgid ""
@@ -258,10 +335,14 @@ msgid ""
 "return to the default selection by clicking 'Default' followed by 'Set "
 "options'."
 msgstr ""
+"Une liste de filtres possibles apparaît. Cliquez sur n'importe quelle case à"
+" cocher pour un filtre que vous souhaitez mettre à disposition. Cliquez sur "
+"'Set options' lorsque c'est fait. Vous pouvez revenir à la sélection par "
+"défaut en cliquant sur 'Default' suivi de 'Set options'."
 
 #: ../data_query/0100_options.rst:165
 msgid "Modifying locus and scheme display options"
-msgstr ""
+msgstr "Modifier les options d'affichage locus et schéma"
 
 #: ../data_query/0100_options.rst:166
 msgid ""
@@ -271,38 +352,54 @@ msgid ""
 "be overridden by a user, and these selections will be remembered between "
 "sessions."
 msgstr ""
+"Que les loci, les schémas ou les champs de schémas soient affichés ou non "
+"dans les tableaux de résultats, les entrées isolats ou dans les zones "
+"déroulantes des requêtes, peuvent tous être définis avec des options par "
+"défaut lors de la première définition. Ces attributs peuvent toutefois être "
+"écrasés par un utilisateur, et ces sélections seront mémorisées entre les "
+"sessions."
 
 #: ../data_query/0100_options.rst:171
 msgid ""
 "The procedure to modify these attributes is the same for locus, schemes "
 "or scheme fields, so the steps for loci will be demonstrated only."
 msgstr ""
+"La procédure de modification de ces attributs est la même pour le locus, les"
+" schémas ou les champs de schéma, de sorte que seulement les étapes pour les locus "
+"seront décrites."
 
 #: ../data_query/0100_options.rst:174
 msgid ""
 "Click the appropriate link in the 'Customise' section on the isolate "
 "contents page."
 msgstr ""
+"Cliquez sur le lien approprié dans la section 'Customise' de la page "
+"du contenu de l'isolat."
 
 #: ../data_query/0100_options.rst:179
 msgid "Either select the locus id by querying for it directly."
-msgstr ""
+msgstr "Sélectionnez l'identifiant de locus en le cherchant directement."
 
 #: ../data_query/0100_options.rst:183
 msgid ""
 "Designations can be queried using :ref:`standard operators "
 "<query_operators>`."
 msgstr ""
+"Les désignations peuvent être interrogées à l'aide de :ref:`standard operators "
+"<query_operators>`."
 
 #: ../data_query/0100_options.rst:185
 msgid ""
 "Alternatively, you can search by filtering loci by schemes.  Click the "
 "'Filter query by' header and select the scheme in the dropdown box."
 msgstr ""
+"Vous pouvez également rechercher un locus en filtrant les loci par schémas. "
+"Cliquez sur l'en-tête 'Filter query by' et sélectionnez le schéma dans la "
+"zone déroulante."
 
 #: ../data_query/0100_options.rst:190
 msgid "Once loci have been selected, click Customize 'locus options'."
-msgstr ""
+msgstr "Une fois les loci sélectionnés, cliquez sur 'Customize locus options'."
 
 #: ../data_query/0100_options.rst:194
 msgid ""
@@ -311,44 +408,56 @@ msgid ""
 "number of attributes that you can change - clicking 'Change' will affect "
 "all selected loci."
 msgstr ""
+"Vous pouvez ensuite choisir d'ajouter ou de supprimer des loci individuels "
+"de la sélection en cliquant sur les cases à cocher appropriées. Au bas de la"
+" page se trouvent un certain nombre d'attributs que vous pouvez modifier - "
+"cliquer sur 'Change' affectera tous les loci sélectionnés."
 
 #: ../data_query/0100_options.rst:199
 msgid "Possible options for loci are:"
-msgstr ""
+msgstr "Les options possibles pour les loci sont:"
 
 #: ../data_query/0100_options.rst:201
 msgid ""
 "isolate_display - Sets how the locus is displayed within an isolate "
 "record:"
 msgstr ""
+"isolate_display - Définit comment le locus est affiché dans un "
+"enregistrement isolat :"
 
 #: ../data_query/0100_options.rst:203
 msgid "allele only - display only identifier"
-msgstr ""
+msgstr "allele only - afficher uniquement l'identifiant"
 
 #: ../data_query/0100_options.rst:204
 msgid "sequence - display the full sequence"
-msgstr ""
+msgstr "sequence - afficher la séquence complète"
 
 #: ../data_query/0100_options.rst:205
 msgid "hide - don't show at all"
-msgstr ""
+msgstr "hide - ne montre pas du tout"
 
 #: ../data_query/0100_options.rst:207
 msgid ""
 "main_display - Sets whether the locus is displayed in the main results "
 "table following a query."
 msgstr ""
+"main_display - Définit si le locus est affiché dans le tableau de résultats "
+"principal à la suite d'une requête."
 
 #: ../data_query/0100_options.rst:210
 msgid ""
 "query_field - Sets whether the locus appears in dropdown list boxes to be"
 " used within queries."
 msgstr ""
+"query_field - Définit si le locus apparaît dans les zones déroulantes à "
+"utiliser dans les requêtes."
 
 #: ../data_query/0100_options.rst:213
 msgid "analysis - Sets whether the locus can be used in data analysis functions."
 msgstr ""
+"analysis - Définit si le locus peut être utilisé dans les fonctions d'analyse"
+" de données."
 
 #: ../data_query/0100_options.rst:217
 msgid ""
@@ -360,4 +469,11 @@ msgid ""
 " not to be shown, then that locus will not be displayed (but other loci "
 "and scheme fields may be, depending on their independent settings)."
 msgstr ""
-
+"Les paramètres de loci peuvent être écrasés par ceux définis pour les "
+"schémas dont ils sont membres. Par exemple, si vous définissez un locus à "
+"afficher dans une table de résultats principale, mais que ce locus est "
+"membre d'un schéma et que vous définissez ce schéma à ne pas afficher, le "
+"locus ne sera pas affiché. Inversement, si vous définissez un schéma à "
+"afficher, mais définissez son locus membre à ne pas afficher, alors ce locus"
+" ne sera pas affiché (mais d'autres locus et champs de schéma peuvent l'être, "
+"selon leurs paramètres indépendants)."

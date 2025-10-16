@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-16 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../data_query/0020_search_sequence_attributes.rst:5
 msgid "Searching for specific allele definitions"
-msgstr ""
+msgstr "Recherche de définitions d'allèles spécifiques"
 
 #: ../data_query/0020_search_sequence_attributes.rst:6
 msgid ""
@@ -30,10 +30,17 @@ msgid ""
 "defined for a locus.  This locus- specific query also allows you to paste"
 " in lists of alleles for download or analysis."
 msgstr ""
+"Il existe deux pages de requête qui permettent de rechercher des définitions"
+" d'allèles spécifiques. La première permet d'interroger tous les loci "
+"ensemble par des critères communs à tous. La seconde est une requête "
+"d'attribut spécifique à un locus qui peut rechercher sur tous les attributs "
+"étendus qui peuvent être définis pour un locus. Cette requête spécifique "
+"vous permet également de coller dans des listes d'allèles pour "
+"téléchargement ou analyse."
 
 #: ../data_query/0020_search_sequence_attributes.rst:14
 msgid "General (all loci) sequence attribute search"
-msgstr ""
+msgstr "Recherche d'attributs de séquence générale (tous loci)"
 
 #: ../data_query/0020_search_sequence_attributes.rst:15
 msgid ""
@@ -41,36 +48,48 @@ msgid ""
 " the 'Find alleles' section on a sequence definition database contents "
 "page."
 msgstr ""
+"Pour récupérer des désignations d'allèles spécifiques, cliquez sur 'By "
+"specific criteria' dans la section 'Find alleles' sur une page de "
+"contenu de la base de données de définition de séquences."
 
 #: ../data_query/0020_search_sequence_attributes.rst:20
 msgid ""
 "Enter your query using the dropdown search box - additional terms can be "
 "added by clicking the '+' button."
 msgstr ""
+"Entrez votre requête en utilisant la zone de recherche déroulante - des "
+"termes supplémentaires peuvent être ajoutés en cliquant sur le bouton '+'."
 
 #: ../data_query/0020_search_sequence_attributes.rst:23
 msgid ""
 "Designations can be queried using :ref:`standard operators "
 "<query_operators>`."
 msgstr ""
+"Les désignations peuvent être demandées en utilisant :ref:`standard "
+"operators <query_operators>`."
 
 #: ../data_query/0020_search_sequence_attributes.rst:27
 msgid "Click 'Search'."
-msgstr ""
+msgstr "Cliquez sur 'Search'."
 
 #: ../data_query/0020_search_sequence_attributes.rst:31
 msgid "Click the hyperlinked results to display allele records."
 msgstr ""
+"Cliquez sur les résultats hyperliens pour afficher les "
+"allèles."
 
 #: ../data_query/0020_search_sequence_attributes.rst:37
 msgid ""
 "Various search criteria can also be selected by combining with filters.  "
 "Click the filter heading to display these."
 msgstr ""
+"Divers critères de recherche peuvent également être sélectionnés en "
+"combinant avec des filtres. Cliquez sur l'en-tête du filtre pour les "
+"afficher."
 
 #: ../data_query/0020_search_sequence_attributes.rst:43
 msgid "Locus-specific sequence attribute search"
-msgstr ""
+msgstr "Recherche d'attributs de séquence spécifiques à un locus"
 
 #: ../data_query/0020_search_sequence_attributes.rst:44
 msgid ""
@@ -78,32 +97,45 @@ msgid ""
 "<locus_extended_attributes>`. To query these, click 'By locus' in the "
 "'Find alleles' section on a sequence definition database contents page."
 msgstr ""
+"Certains loci ont :ref:`extended attribute fields <locus_extended_attributes>`."
+" Pour les interroger, cliquez sur 'By locus' "
+"dans la section 'Find alleles' sur une page de contenu de la base de "
+"données de définition de séquences."
 
 #: ../data_query/0020_search_sequence_attributes.rst:50
 msgid "Pick the required locus from the dropdown box."
-msgstr ""
+msgstr "Choisissez le locus requis dans la boîte déroulante."
 
 #: ../data_query/0020_search_sequence_attributes.rst:54
 msgid ""
 "The fields specific for that locus will be added to the dropdown query "
 "boxes."
 msgstr ""
+"Les champs spécifiques pour ce locus seront ajoutés aux zones de requête "
+"déroulantes."
 
 #: ../data_query/0020_search_sequence_attributes.rst:58
 msgid "The query form can be modified by clicking the 'Modify form options' tab:"
 msgstr ""
+"Le formulaire de requête peut être modifié en cliquant sur l'onglet "
+"'Modify form options' :"
 
 #: ../data_query/0020_search_sequence_attributes.rst:65
 msgid ""
 "A list box can be added by clicking the 'Show' button for 'Allele id list"
 " box'."
 msgstr ""
+"Une boîte de liste peut être ajoutée en cliquant sur le bouton 'Show' pour "
+"'Allele id list box'."
+
 
 #: ../data_query/0020_search_sequence_attributes.rst:69
 msgid ""
 "Close the form modification tab and you can now enter a list of allele "
 "ids for retrieval."
 msgstr ""
+"Fermez l'onglet de modification de formulaire et vous pouvez maintenant "
+"entrer une liste d'identifiants allèles pour les récupérer."
 
 #: ../data_query/0020_search_sequence_attributes.rst:74
 msgid ""
@@ -111,4 +143,7 @@ msgid ""
 "retrieved sequences.  These include FASTA output and :ref:`Locus "
 "Explorer<locus_explorer>` analysis."
 msgstr ""
+"Diverses options d'analyse et d'exportation seront disponibles sur les "
+"séquences récupérées. Elles comprennent la sortie FASTA et l'analyse "
+":ref:`Locus Explorer<locus_explorer>`."
 
