@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-14 10:02+0100\n"
+"POT-Creation-Date: 2025-10-16 07:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgid "Allele designations can be queried based on their status, i.e. whether th
 msgstr ""
 
 #: ../data_query/0070_querying_isolate_data.rst:142
-msgid "Make sure that the allele designation staus fieldset is displayed by selecting it in the 'Modify form options' tab."
+msgid "Make sure that the allele designation status fieldset is displayed by selecting it in the 'Modify form options' tab."
 msgstr ""
 
 #: ../data_query/0070_querying_isolate_data.rst:147

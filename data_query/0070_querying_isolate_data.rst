@@ -139,7 +139,7 @@ Allele designations can be queried based on their status, i.e. whether they
 are confirmed or provisional. Queries will be combined from the values entered 
 in all form sections.
  
-Make sure that the allele designation staus fieldset is displayed by selecting 
+Make sure that the allele designation status fieldset is displayed by selecting 
 it in the 'Modify form options' tab.
 
 .. image:: /images/data_query/query_isolates8.png

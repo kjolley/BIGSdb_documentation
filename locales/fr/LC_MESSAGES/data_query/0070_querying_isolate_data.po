@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
+"POT-Creation-Date: 2025-10-16 07:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../data_query/0070_querying_isolate_data.rst:8
 msgid "Querying isolate data"
@@ -237,7 +237,7 @@ msgstr ""
 
 #: ../data_query/0070_querying_isolate_data.rst:142
 msgid ""
-"Make sure that the allele designation staus fieldset is displayed by "
+"Make sure that the allele designation status fieldset is displayed by "
 "selecting it in the 'Modify form options' tab."
 msgstr ""
 
@@ -611,4 +611,11 @@ msgstr ""
 #: ../data_query/0070_querying_isolate_data.rst:390
 msgid "Click 'Search'."
 msgstr ""
+
+#~ msgid ""
+#~ "Make sure that the allele designation"
+#~ " staus fieldset is displayed by "
+#~ "selecting it in the 'Modify form "
+#~ "options' tab."
+#~ msgstr ""
 
