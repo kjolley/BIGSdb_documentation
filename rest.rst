@@ -554,7 +554,9 @@ GET /db/{database}/loci/{locus}/alleles/{allele_id} - Retrieve full allele infor
 * locus [string] - Locus name
 * allele_id [string] - Allele identifier
 
-**Optional parameters:** None
+**Optional parameters:**
+
+* linked_data [integer] - Set to non-zero to include any data linked from client databases.
 
 **Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/loci/abcZ/alleles/5
 
