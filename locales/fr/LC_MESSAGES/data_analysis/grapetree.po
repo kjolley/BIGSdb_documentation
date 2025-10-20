@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-20 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../data_analysis/grapetree.rst:8
 msgid "GrapeTree"
-msgstr ""
+msgstr "GrapeTree"
 
 #: ../data_analysis/grapetree.rst:9
 msgid ""
@@ -31,24 +31,39 @@ msgid ""
 "publication quality outputs. Datasets can include metadata which allows "
 "nodes in the resultant tree to be coloured interactively."
 msgstr ""
+"GrapeTree est un outil pour générer et visualiser des minimum spanning trees (arbre couvrant minimum). "
+"Il a été développé pour traiter de grands jeux de données "
+"(milliers de génomes) et fonctionne avec des milliers de loci "
+"utilisés en cgMLST. Il utilise un algorithme amélioré"
+" qui est mieux en mesure de traiter les données manquantes que les "
+"algorithmes alternatifs et est capable de produire des images de qualité pour les"
+" publications. Les jeux de données peuvent comprendre des métadonnées "
+"qui permettent aux nœuds de l'arbre d'être colorés de façon "
+"interactive."
 
 #: ../data_analysis/grapetree.rst:17
 msgid ""
 "GrapeTree can be accessed by selecting the 'Analysis' section on the main"
 " contents page."
 msgstr ""
+"Vous pouvez accéder à GrapeTree en sélectionnant la section 'Analysis' de la page de "
+"contenu principale."
 
 #: ../data_analysis/grapetree.rst:22
 msgid ""
 "Jump to the 'Third party' category, follow the link to GrapeTree, then "
 "click 'Launch GrapeTree'."
 msgstr ""
+"Aller à la catégorie 'Third party', suivre le lien vers GrapeTree, puis cliquez "
+"sur 'Launch GrapeTree'."
 
 #: ../data_analysis/grapetree.rst:25
 msgid ""
 "GrapeTree can be accessed from the contents page by clicking the "
 "'GrapeTree' link."
 msgstr ""
+"Vous pouvez accéder à GrapeTree depuis la page de contenu en cliquant sur le"
+" lien 'GrapeTree'."
 
 #: ../data_analysis/grapetree.rst:30
 msgid ""
@@ -57,6 +72,10 @@ msgid ""
 " from the query will be automatically selected within the GrapeTree "
 "interface."
 msgstr ""
+"On peut également y accéder à la suite d'une requête en cliquant sur le "
+"bouton 'GrapeTree' en bas du tableau de résultats. Les isolats retournés à "
+"partir de la requête seront automatiquement sélectionnés dans l'interface "
+"GrapeTree."
 
 #: ../data_analysis/grapetree.rst:36
 msgid ""
@@ -65,6 +84,11 @@ msgid ""
 " scheme in the scheme selector, or choose from recommended schemes if "
 "these have been set, to include all loci belonging to that scheme."
 msgstr ""
+"Sélectionnez les isolats à inclure. L'arbre peut être généré à partir de "
+"profils alléliques de n'importe quelle sélection de loci, ou plus "
+"commodément, vous pouvez sélectionner un schéma dans le sélecteur de schéma,"
+" ou choisir parmi les schémas recommandés si ceux-ci ont été définis, pour "
+"inclure tous les loci appartenant à ce schéma."
 
 #: ../data_analysis/grapetree.rst:41
 msgid ""
@@ -72,38 +96,46 @@ msgid ""
 "colouring nodes - select any fields you wish to include. Finally you can "
 "choose the analysis method from the following:"
 msgstr ""
+"D'autres champs peuvent être sélectionnés pour être inclus comme métadonnées"
+" à utiliser pour colorer les nœuds - sélectionnez les champs que vous "
+"souhaitez inclure. Enfin, vous pouvez choisir la méthode d'analyse parmi les"
+" suivantes:"
 
 #: ../data_analysis/grapetree.rst:45
 msgid ""
 "MSTreeV2 - Improved minimum-spanning tree that better handles missing "
 "data (default)"
 msgstr ""
+"MSTreeV2 - Arbre couvrant minimum amélioré pour mieux gérer les données manquantes "
+"(par défaut)"
 
 #: ../data_analysis/grapetree.rst:47
 msgid "MSTree - Classical minimum-spanning tree similar to PhyloViz"
-msgstr ""
+msgstr "MSTree - Arbre couvrant minimum classique semblable à PhyloViz"
 
 #: ../data_analysis/grapetree.rst:48
 msgid "NJ - FastME V2 Neighbour-joining tree"
-msgstr ""
+msgstr "NJ - FastME V2 Neighbour-joining tree"
 
 #: ../data_analysis/grapetree.rst:49
 msgid "RapidNJ - RapidNJ Neighbour-joining tree for very large datasets"
-msgstr ""
+msgstr "RapidNJ - RapidNJ Neighbour-joining tree pour très gros ensembles de données"
 
 #: ../data_analysis/grapetree.rst:51
 msgid "Click 'Submit' to start the analysis."
-msgstr ""
+msgstr "Cliquez sur 'Submit' pour lancer l'analyse."
 
 #: ../data_analysis/grapetree.rst:55
 msgid ""
 "The job will be sent to the job queue. When it has finished, click the "
 "button marked 'Launch GrapeTree'."
 msgstr ""
+"Le job sera envoyé à la file d'attente. Une fois terminé, cliquez sur le"
+" bouton 'Launch GrapeTree'."
 
 #: ../data_analysis/grapetree.rst:60
 msgid "The generated tree will be rendered in the GrapeTree application page."
-msgstr ""
+msgstr "L'arbre généré sera rendu dans la page d'application GrapeTree."
 
 #: ../data_analysis/grapetree.rst:64
 msgid ""
@@ -112,46 +144,56 @@ msgid ""
 "and collapsing branches. The image can be saved in SVG format which can "
 "be further edited in image publishing software such as Inkscape."
 msgstr ""
+"L'image peut être modifiée de différentes façons. Il s'agit notamment de "
+"modifier la disposition de l'arbre, de personnaliser les étiquettes et la "
+"taille des nœuds, de modifier les longueurs des branches et de fusionner les "
+"branches. L'image peut être enregistrée au format SVG qui peut être éditée "
+"dans un logiciel d'édition d'images comme Inkscape."
 
 #: ../data_analysis/grapetree.rst:69
 msgid ""
 "As an example, the default cgMLST tree (above) has been modified (below) "
 "as follows:"
 msgstr ""
+"Par exemple, l'arborescence cgMLST par défaut (ci-dessus) a été modifiée "
+"(ci-dessous) comme suit :"
 
 #: ../data_analysis/grapetree.rst:72
 msgid "Nodes coloured by clonal complex"
-msgstr ""
+msgstr "Nœuds colorés par complexe clonal"
 
 #: ../data_analysis/grapetree.rst:73
 msgid "Labels removed"
-msgstr ""
+msgstr "Étiquettes (labels) retirées"
 
 #: ../data_analysis/grapetree.rst:74
 msgid "Branches collapsed where <=100 loci different"
-msgstr ""
+msgstr "Branches fusionnées si <=100 loci différents"
 
 #: ../data_analysis/grapetree.rst:75
 msgid "Node size set to 200%"
-msgstr ""
+msgstr "Taille du nœud fixée à 200%"
 
 #: ../data_analysis/grapetree.rst:76
 msgid "Kurtosis (node size relative to number of isolates) set to 75%"
-msgstr ""
+msgstr "Kurtosis (taille du noeud par rapport au nombre d'isolats) fixée à 75%"
 
 #: ../data_analysis/grapetree.rst:77
 msgid "Dynamic rendering allowed to run to fan out nodes"
-msgstr ""
+msgstr "Le rendu dynamique a été exécuté pour déployer les nœuds"
 
 #: ../data_analysis/grapetree.rst:81
 msgid ""
 "Full details can be found in the `GrapeTree manual "
 "<https://bitbucket.org/enterobase/enterobase-web/wiki/GrapeTree>`_."
 msgstr ""
+"On trouvera de plus amples renseignements dans le `GrapeTree manual "
+"<https://bitbucket.org/enterobase/enterobase-"
+"web/wiki/GrapeTree>`_."
 
 #: ../data_analysis/grapetree.rst:85
 msgid "GrapeTree has been described in the following publication:"
-msgstr ""
+msgstr "GrapeTree a été décrit dans la publication suivante:"
 
 #: ../data_analysis/grapetree.rst:87
 msgid ""
@@ -160,4 +202,8 @@ msgid ""
 "relationships among 100,000 bacterial pathogens. `Genome Res 28:1395-1404"
 " <https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
 msgstr ""
+"Z Zhou, NF Alikhan, MJ Sergeant, N Luhmann, C Vaz, AP Francisco, JA Carrico,"
+" M Achtman (2018) GrapeTree: Visualization of core genomic relationships "
+"among 100,000 bacterial pathogens. `Genome Res 28:1395-1404 "
+"<https://www.ncbi.nlm.nih.gov/pubmed/30049790>`_."
 

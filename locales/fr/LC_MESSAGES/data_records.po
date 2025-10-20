@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-01 11:43+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-10-20 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,29 +19,34 @@ msgstr ""
 
 #: ../data_records.rst:3
 msgid "Data records"
-msgstr ""
+msgstr "Types de données enregistrées (data records)"
 
 #: ../data_records.rst:4
 msgid ""
-"Record pages for different types of data can be accessed following a "
-"query by clicking appropriate hyperlinks."
+"Record pages for different types of data can be accessed following a query "
+"by clicking appropriate hyperlinks."
 msgstr ""
+"Les pages d'entrées pour différents types de données sont accessibles"
+" après une requête en cliquant sur les hyperliens appropriés."
 
 #: ../data_records.rst:14
 msgid "Isolate records"
-msgstr ""
+msgstr "Dossiers d'isolats"
 
 #: ../data_records.rst:15
 msgid "An Isolate record page displays everything known about an isolate."
 msgstr ""
+"Une page d'entrée isolat affiche tout ce qu'on sait sur un isolat."
 
 #: ../data_records.rst:19
 msgid "Each record will have some or all of the following sections:"
 msgstr ""
+"Chaque entrée comportera une partie ou la totalité des sections "
+"suivantes :"
 
 #: ../data_records.rst:22
 msgid "Projects"
-msgstr ""
+msgstr "Projets"
 
 #: ../data_records.rst:26
 msgid ""
@@ -49,221 +54,276 @@ msgid ""
 "projects that have a full description and the 'isolate_display' flag in "
 "their settings will be displayed."
 msgstr ""
+"Ceci affiche une liste de projets dont l'isolat est membre. Seuls les "
+"projets qui ont une description complète et le drapeau 'isolate_display' "
+"dans leurs paramètres seront affichés."
 
 #: ../data_records.rst:31
 msgid "Provenance metadata"
-msgstr ""
+msgstr "Métadonnées de provenance"
 
 #: ../data_records.rst:35
 msgid "This section includes:"
-msgstr ""
+msgstr "Cette section comprend:"
 
 #: ../data_records.rst:37
 msgid "provenance fields"
-msgstr ""
+msgstr "Champs de provenance"
 
 #: ../data_records.rst:38
 msgid "housekeeping data"
-msgstr ""
+msgstr "données internes"
 
 #: ../data_records.rst:40
 msgid "who sent the isolate"
-msgstr ""
+msgstr "qui a envoyé l'isolat"
 
 #: ../data_records.rst:41
 msgid "who last curated"
-msgstr ""
+msgstr "qui a curé en dernier"
 
 #: ../data_records.rst:42
 msgid "record creation times"
-msgstr ""
+msgstr "date de création"
 
 #: ../data_records.rst:43
 msgid "last update times"
-msgstr ""
+msgstr "dernières mises à jour"
 
 #: ../data_records.rst:44
 msgid "links to update history"
-msgstr ""
+msgstr "liens vers l'historique des mises à jour"
 
 #: ../data_records.rst:46
 msgid ""
-"The update link displays page with exact times of who and when updated "
-"the record."
+"The update link displays page with exact times of who and when updated the "
+"record."
 msgstr ""
+"Le lien de mise à jour affiche la page avec les momeents exacts de qui "
+"a mis à jour l'entrée et quand."
 
 #: ../data_records.rst:52
 msgid "Publications"
-msgstr ""
+msgstr "Publications"
 
 #: ../data_records.rst:56
 msgid ""
-"This section includes full citation for papers linked to the isolate "
-"record. Each citation has a button that will return a dataset of all "
-"isolates linked to the paper."
+"This section includes full citation for papers linked to the isolate record."
+" Each citation has a button that will return a dataset of all isolates "
+"linked to the paper."
 msgstr ""
+"Cette section comprend une citation complète pour les publications liés à l'entrée "
+"isolat. Chaque citation a un bouton qui retournera "
+" tous les isolats liés à la publication."
 
 #: ../data_records.rst:60
 msgid ""
-"If there are five or more references they will be hidden by default to "
-"avoid cluttering the page too much.  Click the 'Show/hide' button to "
-"display them in this case."
+"If there are five or more references they will be hidden by default to avoid"
+" cluttering the page too much.  Click the 'Show/hide' button to display them"
+" in this case."
 msgstr ""
+"S'il y a cinq références ou plus, elles seront cachées par défaut pour "
+"éviter d'encombrer trop la page. Cliquez sur le bouton 'Show/hide' "
+"pour les afficher dans ce cas."
 
 #: ../data_records.rst:65
 msgid "Sequence bin summary"
-msgstr ""
+msgstr "Résumé de la corbeille à séquence (sequence bin)"
 
 #: ../data_records.rst:69
 msgid ""
-"This section contains basic statistics describing the sequence bin. "
-"Clicking the 'Show sequence bin' button navigates to the :ref:`sequence "
-"bin record <sequence_bin_records>`."
+"This section contains basic statistics describing the sequence bin. Clicking"
+" the 'Show sequence bin' button navigates to the :ref:`sequence bin record "
+"<sequence_bin_records>`."
 msgstr ""
+"Cette section contient des statistiques de base décrivant la corbeille à "
+"séquence. En cliquant sur le bouton 'Show sequence bin', "
+"vous êtes dirigés vers l'enregistrement :ref:`sequence bin record "
+"<sequence_bin_records>`."
 
 #: ../data_records.rst:74
 msgid "Scheme and locus data"
-msgstr ""
+msgstr "Données relatives aux schémas et loci"
 
 #: ../data_records.rst:75
 msgid ""
-"A hierarchical tree displays available schemes.  Click within internal "
-"nodes to expand them."
+"A hierarchical tree displays available schemes.  Click within internal nodes"
+" to expand them."
 msgstr ""
+"Un arbre hiérarchique affiche les schémas disponibles. Cliquez sur les nœuds"
+" internes pour les agrandir."
 
 #: ../data_records.rst:80
 msgid ""
-"Clicking any terminal node will display data available for a scheme or "
-"group of schemes."
+"Clicking any terminal node will display data available for a scheme or group"
+" of schemes."
 msgstr ""
+"Cliquez sur n'importe quel nœud terminal affichera les données disponibles "
+"pour un schéma ou un groupe de schémas."
 
 #: ../data_records.rst:85
 msgid ""
 "Click an allele number within the scheme profile, will display the "
 "appropriate :ref:`allele definition record <allele_definition_records>`. "
-"Clicking the green 'S' link will display the appropriate :ref:`sequence "
-"tag record <sequence_tag_records>`."
+"Clicking the green 'S' link will display the appropriate :ref:`sequence tag "
+"record <sequence_tag_records>`."
 msgstr ""
+"Cliquer sur un numéro d'allèle dans le profil du schéma, affichera "
+"l'enregistrement de définition approprié :ref:`allele definition record <allele_definition_records>`. "
+" Cliquer sur le lien vert 'S' affichera "
+"l'enregistrement approprié :ref:`sequence tag record <sequence_tag_records>`."
 
 #: ../data_records.rst:97
 msgid "Allele definition records"
-msgstr ""
+msgstr "Enregistrements de définition d'allèle"
 
 #: ../data_records.rst:98
 msgid ""
-"An allele definition record displays information about a defined allele "
-"in a sequence definition database."
+"An allele definition record displays information about a defined allele in a"
+" sequence definition database."
 msgstr ""
+"Un enregistrement de définition d'allèle affiche des informations sur un "
+"allèle défini dans une base de données de définition de séquences (seqdef)."
 
 #: ../data_records.rst:103
 msgid ""
 "If the allele is a member of a scheme profile, e.g. MLST, this will be "
-"listed. In this case, there will be a button to display all profiles of "
-"that scheme that contain the allele."
+"listed. In this case, there will be a button to display all profiles of that"
+" scheme that contain the allele."
 msgstr ""
+"Si l'allèle est membre d'un profil de schéma, par exemple MLST, ceci sera "
+"listé. Dans ce cas, il y aura un bouton pour afficher tous les profils de ce"
+" schéma qui contiennent l'allèle."
 
 #: ../data_records.rst:107
 msgid ""
-"Similarly, if a :ref:`client database <client_databases>` has been setup "
-"for the database and the allele has been identified in an isolate, there "
-"will be a button to display all isolates that have that allele."
+"Similarly, if a :ref:`client database <client_databases>` has been setup for"
+" the database and the allele has been identified in an isolate, there will "
+"be a button to display all isolates that have that allele."
 msgstr ""
+"De même, si une base de données :ref:`client database <client_databases>` a été "
+"configurée pour la base de données et que l'allèle a été identifié dans un "
+"isolat, il y aura un bouton pour afficher tous les isolats qui ont cet "
+"allèle."
 
 #: ../data_records.rst:118
 msgid "Sequence tag records"
-msgstr ""
+msgstr "Enregistrements des étiquettes (tags) de séquence"
 
 #: ../data_records.rst:122
 msgid ""
 "A sequence tag record displays information about the location within a "
-"contig of a region associated with a locus.  The nucleotide sequence will"
-" be displayed along with upstream and downstream flanking sequence.  The "
-"length of these flanking sequences can be modified within the "
-":ref:`general options <general_options>`."
+"contig of a region associated with a locus.  The nucleotide sequence will be"
+" displayed along with upstream and downstream flanking sequence.  The length"
+" of these flanking sequences can be modified within the :ref:`general "
+"options <general_options>`."
 msgstr ""
+"Un enregistrement d'étiquette de séquence affiche des informations sur "
+"l'emplacement dans un contig d'une région associée à un locus. La séquence "
+"des nucléotides sera affichée en amont et en aval. La longueur de ces "
+"séquences flanquantes peut être modifiée à l'aide de :ref:`general "
+"options <general_options>`."
 
 #: ../data_records.rst:128
 msgid ""
 "If the tag is for a DNA locus and it is marked as a coding sequence, the "
 "three-frame translation will also be displayed."
 msgstr ""
+"Si le tag est pour un locus ADN  marqué comme une séquence"
+" codante, la traduction dans les trois phases sera également affichée."
 
 #: ../data_records.rst:138
 msgid "Profile records"
-msgstr ""
+msgstr "Enregistrements de profils"
 
 #: ../data_records.rst:142
 msgid ""
-"A profile record displays information about a scheme, e.g. MLST, profile."
-" Each allele number within the profile will be hyperlinked.  Clicking "
-"these will take you to the appropriate :ref:`allele definition record "
+"A profile record displays information about a scheme, e.g. MLST, profile. "
+"Each allele number within the profile will be hyperlinked.  Clicking these "
+"will take you to the appropriate :ref:`allele definition record "
 "<allele_definition_records>`."
 msgstr ""
+"Un enregistrement de profil affiche des informations sur un profil de schéma, par "
+"exemple MLST. Chaque numéro d'allèle dans le profil sera un hyperlien. "
+"En cliquant dessus, vous obtiendrez l'enregistrement approprié :ref:`allele "
+"definition record <allele_definition_records>`."
 
 #: ../data_records.rst:147
 msgid ""
 "If a :ref:`client database <client_databases>` has been setup for the "
-"database and an isolate has the profile, there will be a button to "
-"display all isolates that have the profile."
+"database and an isolate has the profile, there will be a button to display "
+"all isolates that have the profile."
 msgstr ""
+"Si une base de données :ref:`client database <client_databases>` a été configurée "
+"pour la base de données et qu'un isolat a le profil, il y aura un bouton "
+"pour afficher tous les isolats qui ont le profil."
 
 #: ../data_records.rst:158
 msgid "Sequence bin records"
-msgstr ""
+msgstr "Enregistrements des corbeilles à séquence"
 
 #: ../data_records.rst:162
 msgid ""
-"A sequence bin record contains information about the contigs associated "
-"with an isolate record.  This includes:"
+"A sequence bin record contains information about the contigs associated with"
+" an isolate record.  This includes:"
 msgstr ""
+"Un enregistrement de corbeilles à séquence contient des renseignements sur "
+"les contigs associés à une entrée isolat. Cela comprend:"
 
 #: ../data_records.rst:165
 msgid "Number of contigs"
-msgstr ""
+msgstr "Nombre de contigs"
 
 #: ../data_records.rst:166
 msgid "Total length"
-msgstr ""
+msgstr "Longueur totale"
 
 #: ../data_records.rst:167
 msgid "Minimum length"
-msgstr ""
+msgstr "Longueur minimale"
 
 #: ../data_records.rst:168
 msgid "Maximum length"
-msgstr ""
+msgstr "Longueur maximale"
 
 #: ../data_records.rst:169
 msgid "N50, N90 and N95 values"
-msgstr ""
+msgstr "Valeurs N50, N90 et N95"
 
 #: ../data_records.rst:170
 msgid "Size distribution charts"
-msgstr ""
+msgstr "Graphiques de distribution des tailles"
 
 #: ../data_records.rst:172
 msgid ""
 "Charts show the distribution of contig sizes and the cumulative contig "
-"length against contig number giving a breakdown indication of contig "
-"size."
+"length against contig number giving a breakdown indication of contig size."
 msgstr ""
+"Les graphiques montrent la répartition des tailles de contig et la longueur "
+"cumulée des contig par rapport au nombre de contigs, ce qui donne une "
+"indication de la taille des contigs."
 
 #: ../data_records.rst:175
 msgid ""
-"The record includes an embedded genome browser showing the positions of "
-"any loci that have been tagged."
+"The record includes an embedded genome browser showing the positions of any "
+"loci that have been tagged."
 msgstr ""
+"L'enregistrement comprend un navigateur de génome intégré montrant les "
+"positions de tout locus qui a été étiqueté."
 
 #: ../data_records.rst:178
 msgid ""
 "There are also links to download the contigs in FASTA, Genbank or EMBL "
 "format, along with annotation in GFF3 format."
 msgstr ""
+"Il y a aussi des liens pour télécharger les contigs au format FASTA, Genbank"
+" ou EMBL, ainsi qu'une annotation au format GFF3."
 
 #: ../data_records.rst:181
 msgid ""
-"Finally there is a table that shows the loci that are tagged on each "
-"contig. Individual contigs can also be downloaded in EMBL or Genbank "
-"format."
+"Finally there is a table that shows the loci that are tagged on each contig."
+" Individual contigs can also be downloaded in EMBL or Genbank format."
 msgstr ""
-
+"Enfin, il y a un tableau qui montre les loci qui sont marqués sur chaque "
+"contig. Les contigs individuels peuvent également être téléchargés au format"
+" EMBL ou Genbank."
