@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-20 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../data_analysis/phyloviz.rst:6
 msgid "PhyloViz"
-msgstr ""
+msgstr "PhyloViz"
 
 #: ../data_analysis/phyloviz.rst:7
 msgid ""
@@ -27,18 +27,26 @@ msgid ""
 " trees. Datasets can include metadata which allows nodes in the resultant"
 " tree to be coloured interactively."
 msgstr ""
+"Phylo Viz En ligne est un outil pour générer et visualiser des arbres à "
+"portée minimale. Les ensembles de données peuvent comprendre des métadonnées"
+" qui permettent aux nœuds de l'arbre résultant d'être colorés de façon "
+"interactive."
 
 #: ../data_analysis/phyloviz.rst:11
 msgid ""
 "PhyloViz can be accessed by selecting the 'Analysis' section on the main "
 "contents page."
 msgstr ""
+"On peut accéder à PhyloViz en sélectionnant la section « Analyse » sur la "
+"page de contenu principale."
 
 #: ../data_analysis/phyloviz.rst:16
 msgid ""
 "Jump to the 'Third party' category, follow the link to PhyloViz, then "
 "click 'Launch PhyloViz'."
 msgstr ""
+"Sautez dans la catégorie 'Tiers', suivez le lien vers PhyloViz, puis cliquez"
+" sur 'Launch PhyloViz'."
 
 #: ../data_analysis/phyloviz.rst:21
 msgid ""
@@ -47,6 +55,9 @@ msgid ""
 "from the query will be automatically selected within the PhyloViz "
 "interface."
 msgstr ""
+"On peut également y accéder à la suite d'une requête en cliquant sur le "
+"bouton 'PhyloViz' en bas du tableau de résultats. Les isolats retournés de "
+"la requête seront automatiquement sélectionnés dans l'interface PhyloViz."
 
 #: ../data_analysis/phyloviz.rst:27
 msgid ""
@@ -54,6 +65,10 @@ msgid ""
 "profiles of any selection of loci, or more conveniently, you can select a"
 " scheme in the scheme selector to include all loci belong to that scheme."
 msgstr ""
+"Sélectionnez les isolats à inclure. L'arbre peut être généré à partir de "
+"profils alléliques de n'importe quelle sélection de loci, ou plus "
+"commodément, vous pouvez sélectionner un schéma dans le sélecteur de schéma "
+"pour inclure tous les loci appartiennent à ce schéma."
 
 #: ../data_analysis/phyloviz.rst:31
 msgid ""
@@ -62,20 +77,28 @@ msgid ""
 "selections can be made by holding down Shift or Ctrl while selecting. "
 "Click 'Submit' to start the analysis."
 msgstr ""
+"Les champs Provenance peuvent être sélectionnés pour être inclus comme "
+"métadonnées à utiliser dans les nœuds de coloration - sélectionnez les "
+"champs que vous souhaitez inclure. Plusieurs sélections peuvent être faites "
+"en maintenant Shift ou Ctrl enfoncé pendant la sélection. Cliquez sur "
+"'Soumettre' pour démarrer l'analyse."
 
 #: ../data_analysis/phyloviz.rst:38
 msgid ""
 "The necessary files will be generated immediately. When this has "
 "finished, click the button launch 'Launch PhyloViz'."
 msgstr ""
+"Les fichiers nécessaires seront générés immédiatement. Une fois cela "
+"terminé, cliquez sur le bouton lancer 'Launch PhyloViz'."
 
 #: ../data_analysis/phyloviz.rst:43
 msgid "The tree will be sent to and rendered within the PhyloViz website."
-msgstr ""
+msgstr "L'arbre sera envoyé et rendu sur le site PhyloViz."
 
 #: ../data_analysis/phyloviz.rst:47
 msgid ""
 "See more information about manipulating the tree on the `PhyloViz website"
 " <http://online.phyloviz.net/>`_."
 msgstr ""
-
+"Voir plus d'informations sur la manipulation de l'arbre sur le site "
+"`PhyloViz <http://online.phyloviz.net/>`_."

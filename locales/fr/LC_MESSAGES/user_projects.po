@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-01 11:43+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-10-20 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,165 +19,229 @@ msgstr ""
 
 #: ../user_projects.rst:8
 msgid "User projects"
-msgstr ""
+msgstr "Projets utilisateurs"
 
 #: ../user_projects.rst:9
 msgid ""
-"If user projects are enabled, authenticated users are able to set up "
-"their own projects in order to group isolates for analysis. If private "
-"data and user quotas are enabled, these projects can include private "
-"records that can then be shared with other user accounts. Note, that "
-"simply adding a record to a user project does not make the record itself "
-"private."
+"If user projects are enabled, authenticated users are able to set up their "
+"own projects in order to group isolates for analysis. If private data and "
+"user quotas are enabled, these projects can include private records that can"
+" then be shared with other user accounts. Note, that simply adding a record "
+"to a user project does not make the record itself private."
 msgstr ""
+"Si les projets d'utilisateurs sont activés, les utilisateurs authentifiés "
+"peuvent mettre en place leurs propres projets afin de regrouper les isolats "
+"pour analyse. Si les quotas de données et d'utilisateurs privés sont "
+"activés, ces projets peuvent inclure des entrées privées qui peuvent "
+"ensuite être partagées avec d'autres comptes utilisateurs. Notez que l'ajout "
+"d'une entrée isolat à un projet d'utilisateur ne rend pas l'entrée elle-"
+"même privée."
 
 #: ../user_projects.rst:16
 msgid ""
 "User projects can be enabled by an administrator by setting "
-"'user_projects=\"yes\"' in the :ref:`config.xml<isolate_xml>` file for "
-"the database."
+"'user_projects=\"yes\"' in the :ref:`config.xml<isolate_xml>` file for the "
+"database."
 msgstr ""
+"Les projets utilisateurs peuvent être activés par un administrateur en "
+"définissant le fichier 'user_projects=yes' dans le fichier "
+":ref:`config.xml<isolate_xml>` pour la base de données."
 
 #: ../user_projects.rst:20
 msgid ""
-"To create a new project, go to the isolate database contents page and "
-"expand the 'Projects' section. Click 'Your projects'."
+"To create a new project, go to the isolate database contents page and expand"
+" the 'Projects' section. Click 'Your projects'."
 msgstr ""
+"Pour créer un nouveau projet, allez à la page de contenu de la base de "
+"données isolats et ouvrez la section 'Projects'. Cliquez sur 'Your projects'."
 
 #: ../user_projects.rst:25
 msgid ""
-"Enter the name of your project (this must be unique on the system - you "
-"will be told if the name is already used). You can optionally include a "
+"Enter the name of your project (this must be unique on the system - you will"
+" be told if the name is already used). You can optionally include a "
 "description - if you do this, this will appear within :ref:`isolate "
-"records<isolate_records>` when accessed from your account. Click "
-"'Create'."
+"records<isolate_records>` when accessed from your account. Click 'Create'."
 msgstr ""
+"Saisissez le nom de votre projet (cela doit être unique sur le système - "
+"vous serez informé si le nom est déjà utilisé). Vous pouvez éventuellement "
+"inclure une description - si vous le faites, cela apparaîtra dans "
+":ref:`isolate records<isolate_records>` lorsque vous y accédez. Cliquez sur "
+"'Create'."
 
 #: ../user_projects.rst:32
 msgid ""
-"You can either add isolates to your project directly following a query or"
-" by manually editing a list of ids."
+"You can either add isolates to your project directly following a query or by"
+" manually editing a list of ids."
 msgstr ""
+"Vous pouvez soit ajouter des isolats à votre projet directement après une "
+"requête, soit en éditant manuellement une liste d'ids."
 
 #: ../user_projects.rst:37
 msgid "Adding isolates to a user project following a query"
-msgstr ""
+msgstr "Ajout d'isolats à un projet utilisateur suite à une requête"
 
 #: ../user_projects.rst:38
 msgid ""
-"Perform an isolate database query. If you have set up a project, there "
-"will be a link in the results header box. Select your project and click "
-"'Add these records'."
+"Perform an isolate database query. If you have set up a project, there will "
+"be a link in the results header box. Select your project and click 'Add "
+"these records'."
 msgstr ""
+"Effectuer une requête de base de données isolats. Si vous avez configuré un "
+"projet, il y aura un lien dans l'en-tête des résultats. Sélectionnez votre "
+"projet et cliquez sur 'Add these records'."
 
 #: ../user_projects.rst:44
 msgid ""
-"The records will be added to the project. Please note that it doesn't "
-"matter whether any of the records have been previously added."
+"The records will be added to the project. Please note that it doesn't matter"
+" whether any of the records have been previously added."
 msgstr ""
+"Les entrées seront ajoutées au projet. Veuillez noter qu'il n'est pas "
+"important de savoir si l'une des entrées a déjà été ajoutée."
 
 #: ../user_projects.rst:49
-msgid "Adding or removing isolates belonging to a user project by editing a list"
+msgid ""
+"Adding or removing isolates belonging to a user project by editing a list"
 msgstr ""
+"Ajouter ou supprimer des isolats appartenant à un projet utilisateur en "
+"éditant une liste"
 
 #: ../user_projects.rst:50
 msgid ""
 "From the user projects page, click the 'Add/remove records' link for the "
 "project that you wish to modify."
 msgstr ""
+"À partir de la page des projets utilisateurs, cliquez sur le lien "
+"'Add/remove records' pour le projet que vous souhaitez "
+"modifier."
 
 #: ../user_projects.rst:55
 msgid ""
 "Edit the list of ids of records belonging to the list. You can copy and "
-"paste this list if you wish to prepare it in a spreadsheet or text "
-"editor. Click 'Update' when finished."
+"paste this list if you wish to prepare it in a spreadsheet or text editor. "
+"Click 'Update' when finished."
 msgstr ""
+"Modifier la liste des identifiants des entrées appartenant à la "
+"liste. Vous pouvez copier et coller cette liste si vous souhaitez la "
+"préparer dans un tableur ou un éditeur de texte. Cliquez sur 'Update' "
+"une fois terminé."
 
 #: ../user_projects.rst:63
 msgid "Accessing project isolates"
-msgstr ""
+msgstr "Accès aux isolats du projet"
 
 #: ../user_projects.rst:64
 msgid ""
-"To browse isolate records belonging to a project, go to the user projects"
-" page and click the 'Browse' link for the project."
+"To browse isolate records belonging to a project, go to the user projects "
+"page and click the 'Browse' link for the project."
 msgstr ""
+"Pour parcourir les entrées isolats appartenant à un projet, allez à "
+"la page des projets utilisateurs et cliquez sur le lien 'Browse' pour le"
+" projet."
 
 #: ../user_projects.rst:69
 msgid ""
 "Alternatively, you can select the project from the :ref:`projects "
-"filter<query_filters>` on the isolate query page. This would enable you "
-"to combine the project with additional search criteria"
+"filter<query_filters>` on the isolate query page. This would enable you to "
+"combine the project with additional search criteria"
 msgstr ""
+"Vous pouvez également sélectionner le projet à partir du filtre "
+":ref:`projects filter<query_filters>` sur la page de requête isolats. Cela "
+"vous permettrait de combiner le projet avec des critères de recherche "
+"supplémentaires"
 
 #: ../user_projects.rst:75
 msgid ""
-"Please note that you will only see your project in the filter list if you"
-" are logged in. As a private project, only you will see it."
+"Please note that you will only see your project in the filter list if you "
+"are logged in. As a private project, only you will see it."
 msgstr ""
+"Veuillez noter que vous ne verrez votre projet dans la liste des filtres que"
+" si vous êtes connecté. En tant que projet privé, vous seul le verrez."
 
 #: ../user_projects.rst:80
 msgid "Allowing other users to share your project"
-msgstr ""
+msgstr "Permettre aux autres utilisateurs de partager votre projet"
 
 #: ../user_projects.rst:81
 msgid ""
 "You can share a project that you own with any other user. In order to do "
-"this, you must know the username that they use to log in with. They will "
-"see the project in their own list of private projects and in the query "
+"this, you must know the username that they use to log in with. They will see"
+" the project in their own list of private projects and in the query "
 "interface projects filter."
 msgstr ""
+"Vous pouvez partager un projet que vous possédez avec n'importe quel autre "
+"utilisateur. Pour ce faire, vous devez connaître le nom d'utilisateur avec "
+"lequel il se connecte. Cet utilisateur verra le projet dans sa propre liste de "
+"projets privés et dans le filtre des projets d'interface de requête."
 
 #: ../user_projects.rst:86
 msgid ""
-"From the user projects page, click the 'Modify users' link for the "
-"specified project:"
+"From the user projects page, click the 'Modify users' link for the specified"
+" project:"
 msgstr ""
+"À partir de la page des projets utilisateurs, cliquez sur le lien 'Modify users' "
+"pour le projet spécifié:"
 
 #: ../user_projects.rst:91
 msgid ""
 "Enter the username of the person you wish to share with and click 'Add "
 "user':"
 msgstr ""
+"Entrez le nom d'utilisateur de la personne avec laquelle vous souhaitez "
+"partager et cliquez sur 'Add user' :"
 
 #: ../user_projects.rst:95
 msgid ""
-"If user groups are in use, you can also share your project with all "
-"members of a user group from the same page."
+"If user groups are in use, you can also share your project with all members "
+"of a user group from the same page."
 msgstr ""
+"Si des groupes d'utilisateurs sont utilisés, vous pouvez également partager "
+"votre projet avec tous les membres d'un groupe d'utilisateurs à partir de la même "
+"page."
 
 #: ../user_projects.rst:98
 msgid ""
-"Once a user has been added, you can give them permission to administer "
-"(add other users, modify the description or delete) or add/remove records"
-" to the project:"
+"Once a user has been added, you can give them permission to administer (add "
+"other users, modify the description or delete) or add/remove records to the "
+"project:"
 msgstr ""
+"Une fois qu'un utilisateur a été ajouté, vous pouvez lui donner la "
+"permission d'administrer (ajouter d'autres utilisateurs, modifier la "
+"description ou supprimer) ou ajouter/supprimer des entrées au "
+"projet:"
 
 #: ../user_projects.rst:106
 msgid "Deleting a user project"
-msgstr ""
+msgstr "Suppression d'un projet utilisateur"
 
 #: ../user_projects.rst:107
 msgid ""
 "You can delete a project from the user projects page by clicking the "
 "'Delete' link next to the project in question."
 msgstr ""
+"Vous pouvez supprimer un projet de la page des projets utilisateurs en "
+"cliquant sur le lien 'Delete' du projet en question."
 
 #: ../user_projects.rst:112
 msgid ""
 "If the project contains any isolates you will be asked for confirmation. "
 "Click the 'Delete project' button."
 msgstr ""
+"Si le projet contient des isolats, on vous demandera une confirmation. "
+"Cliquez sur le bouton 'Delete project'."
 
 #: ../user_projects.rst:117
 msgid ""
-"If the project contains no isolates, the confirmation page is skipped and"
-" the project is removed immediately."
+"If the project contains no isolates, the confirmation page is skipped and "
+"the project is removed immediately."
 msgstr ""
+"Si le projet ne contient aucun isolat, la page de confirmation est ignorée "
+"et le projet est immédiatement retiré."
 
 #: ../user_projects.rst:121
 msgid ""
-"Removing a project does not delete the isolate records belonging to it. A"
-" project is simply a means of grouping records."
+"Removing a project does not delete the isolate records belonging to it. A "
+"project is simply a means of grouping records."
 msgstr ""
-
+"L'élimination d'un projet ne supprime pas les entrées isolats qui "
+"lui appartiennent. Un projet est simplement un moyen de regrouper les "
+"entrées."
