@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-16 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,19 +19,24 @@ msgstr ""
 
 #: ../data_query/0040_search_allelic_profiles.rst:8
 msgid "Identifying allelic profile definitions"
-msgstr ""
+msgstr "Identification des définitions de profil allélique"
 
 #: ../data_query/0040_search_allelic_profiles.rst:9
 msgid ""
 "For schemes such as MLST you can query allelic combinations to identify "
 "the sequence type (or more generically, the primary key of the profile)."
 msgstr ""
+"Pour des schémas tels que MLST, vous pouvez interroger des combinaisons "
+"alléliques pour identifier le séquençotype (ou plus généralement, la clé"
+" primaire du profil)."
 
 #: ../data_query/0040_search_allelic_profiles.rst:12
 msgid ""
 "Click the 'By allelic profile' link in the 'Search for allelic profiles' "
 "section on a the sequence definition contents page."
 msgstr ""
+"Cliquez sur le lien 'By allelic profile' dans la section 'Search for allelic profiles' "
+"d'une page de définition de séquence."
 
 #: ../data_query/0040_search_allelic_profiles.rst:17
 #: ../data_query/0040_search_allelic_profiles.rst:58
@@ -39,24 +44,34 @@ msgid ""
 "If multiple schemes are defined in the database you should select the "
 "scheme you wish to check."
 msgstr ""
+"Si plusieurs schémas sont définis dans la base de données, vous devez "
+"sélectionner le schéma que vous souhaitez rechercher."
 
 #: ../data_query/0040_search_allelic_profiles.rst:22
 msgid ""
 "Enter a combination of allelic values (you can enter a partial profile if"
 " you wish)."
 msgstr ""
+"Saisissez une combinaison de valeurs alléliques (vous pouvez saisir un "
+"profil partiel si vous le souhaitez)."
 
 #: ../data_query/0040_search_allelic_profiles.rst:27
 msgid ""
 "Alternatively, you can automatically populate a profile by entering a "
 "value for the scheme primary key field (e.g. ST) and clicking 'Autofill'."
 msgstr ""
+"Alternativement, vous pouvez automatiquement remplir un profil en entrant "
+"une valeur pour le champ clé primaire du schéma (par exemple ST) et en "
+"cliquant sur 'Autofill'."
 
 #: ../data_query/0040_search_allelic_profiles.rst:32
 msgid ""
 "To find the closest or exact match, leave the search box on 'Exact or "
 "nearest match' and click 'Submit'. The best match will be displayed."
 msgstr ""
+"Pour trouver la correspondance la plus proche ou exacte, laissez la case de "
+"recherche sur 'Exact or nearest match' et cliquez sur "
+"'Submit'. Le meilleur résultat sera affiché."
 
 #: ../data_query/0040_search_allelic_profiles.rst:37
 msgid ""
@@ -65,10 +80,15 @@ msgid ""
 " the search dropdown box, e.g. '4 or more matches' will show related "
 "profiles that share at least 4 alleles with the query."
 msgstr ""
+"Alternativement, si vous souhaitez trouver tous les profils qui "
+"correspondent au profil de la requête par au moins un nombre défini de loci,"
+" sélectionnez la valeur appropriée dans la boîte déroulante de recherche, "
+"par exemple '4 or more matches' affichera les profils associés qui partagent"
+" au moins 4 allèles avec la requête."
 
 #: ../data_query/0040_search_allelic_profiles.rst:51
 msgid "Batch profile queries"
-msgstr ""
+msgstr "Recherche de profils par lots"
 
 #: ../data_query/0040_search_allelic_profiles.rst:52
 msgid ""
@@ -76,6 +96,10 @@ msgid ""
 "profiles, click 'In a batch' from the 'Search for allelic profiles' "
 "section of the sequence definition contents page."
 msgstr ""
+"Pour rechercher les définitions de schéma, par exemple le séquençotype "
+"pour plusieurs profils, cliquez sur 'In a batch' dans la section "
+"'Search for allelic profiles' de la page de contenu de définition de "
+"séquence."
 
 #: ../data_query/0040_search_allelic_profiles.rst:63
 msgid ""
@@ -85,12 +109,17 @@ msgid ""
 "column order which can be used as a header line for your spreadsheet and "
 "to example data."
 msgstr ""
+"Copier et coller les données d'un tableur. La première colonne est "
+"l'identifiant d'enregistrement, et les colonnes restantes sont les "
+"allèles pour chaque locus dans l'ordre standard défini pour le schéma."
+" Il y a des liens vers l'ordre des colonnes qui peut être utilisé comme "
+"ligne d'en-tête pour votre tableur et vers des exemples de données."
 
 #: ../data_query/0040_search_allelic_profiles.rst:69
 msgid "Click submit after pasting in the data."
-msgstr ""
+msgstr "Cliquez sur 'Submit' après avoir collé les données."
 
 #: ../data_query/0040_search_allelic_profiles.rst:73
 msgid "A results table will be displayed."
-msgstr ""
+msgstr "Un tableau de résultats sera affiché."
 

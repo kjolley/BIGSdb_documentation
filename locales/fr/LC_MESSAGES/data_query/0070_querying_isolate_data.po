@@ -1,25 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-16 07:43+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-16 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../data_query/0070_querying_isolate_data.rst:8
 msgid "Querying isolate data"
-msgstr ""
+msgstr "Interroger les données sur les isolats"
 
 #: ../data_query/0070_querying_isolate_data.rst:9
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "search by combinations of provenance criteria, scheme and locus data, and"
 " more."
 msgstr ""
+"La page 'Search database' d'une base de données isolats vous "
+"permet également de rechercher par combinaisons de critères de provenance, "
+"de données de schéma et de locus, et plus encore."
 
 #: ../data_query/0070_querying_isolate_data.rst:14
 msgid ""
@@ -34,24 +37,33 @@ msgid ""
 " can be added by clicking the '+' button (highlighted). These can be "
 "linked together by 'and' or 'or'."
 msgstr ""
+"Pour commencer, une seule boîte de recherche de champ de provenance est "
+"affichée, mais d'aitres peuvent être ajoutés en cliquant sur le bouton '+'. "
+"Ils peuvent être combinés logiquement par 'et' (AND) ou 'ou' (OR)."
 
 #: ../data_query/0070_querying_isolate_data.rst:20
 msgid ""
 "After the search has been submitted, the results will be displayed in a "
 "table."
 msgstr ""
+"Une fois la recherche soumise, les résultats seront affichés dans un "
+#~ "tableau."
 
 #: ../data_query/0070_querying_isolate_data.rst:24
 msgid ""
 "Each field can be queried using :ref:`standard operators "
 "<query_operators>`."
 msgstr ""
+"Chaque champ peut être interrogé à l'aide de :ref:`standard operators "
+"<query_operators>`."
 
 #: ../data_query/0070_querying_isolate_data.rst:26
 msgid ""
 "More search features are available by clicking the 'Modify form options' "
 "tab on the top of the screen."
 msgstr ""
+"D'autres fonctions de recherche sont disponibles en cliquant sur l'onglet "
+"'Modify form options' en haut de l'écran."
 
 #: ../data_query/0070_querying_isolate_data.rst:31
 msgid ""
@@ -59,84 +71,99 @@ msgid ""
 "depending on the database.  Queries will be combined from the values "
 "entered in all form sections.  Possible options are:"
 msgstr ""
+"Un menu sera affiché. Différentes options seront disponibles ici selon la "
+"base de données. Les requêtes seront combinées à partir des valeurs entrées "
+"dans toutes les sections du formulaire. Les options possibles sont les "
+"suivantes:"
 
 #: ../data_query/0070_querying_isolate_data.rst:35
 msgid "Provenance fields"
-msgstr ""
+msgstr "Champs de provenance"
 
 #: ../data_query/0070_querying_isolate_data.rst:37
 msgid ""
 "Search by combination of provenance field values, e.g. country, year, "
 "sender."
 msgstr ""
+"Recherche par combinaison de valeurs de champ de provenance, par exemple "
+"pays, année, expéditeur."
 
 #: ../data_query/0070_querying_isolate_data.rst:40
 msgid "Allele designations/scheme field values"
 msgstr ""
+"Désignations des allèles/valeurs des champs du schéma"
 
 #: ../data_query/0070_querying_isolate_data.rst:42
 msgid ""
 "Search by combination of allele designations and/or scheme fields e.g. "
 "ST, clonal complex information."
 msgstr ""
+"Recherche par combinaison de désignations d'allèles et/ou de champs de "
+"schéma, p. ex. ST, complexe clonal."
 
 #: ../data_query/0070_querying_isolate_data.rst:45
 msgid "Allele designation status"
-msgstr ""
+msgstr "Statut de désignation des allèles"
 
 #: ../data_query/0070_querying_isolate_data.rst:47
 msgid "Search by whether allele designation status is confirmed or provisional."
 msgstr ""
+"Rechercher si le statut de désignation de l'allèle est confirmé ou "
+"provisoire."
 
 #: ../data_query/0070_querying_isolate_data.rst:49
 msgid "Tagged sequence status"
-msgstr ""
+msgstr "État de la séquence"
 
 #: ../data_query/0070_querying_isolate_data.rst:51
 msgid ""
 "Search by whether tagged sequence data is available for a locus.  You can"
 " also search by sequence flags."
 msgstr ""
+"Rechercher si les données de séquence marquées sont disponibles pour un "
+"locus. Vous pouvez également rechercher par des drapeaux (flags) de séquence."
 
 #: ../data_query/0070_querying_isolate_data.rst:54
 msgid "Attribute values list"
-msgstr ""
+msgstr "Liste de valeurs des attributs"
 
 #: ../data_query/0070_querying_isolate_data.rst:56
 msgid "Enter a list of values for any provenance field, locus, or scheme field."
 msgstr ""
+"Saisissez une liste de valeurs pour tout champ de provenance, locus ou "
+"schéma."
 
 #: ../data_query/0070_querying_isolate_data.rst:58
 msgid "Filters"
-msgstr ""
+msgstr "Filtres"
 
 #: ../data_query/0070_querying_isolate_data.rst:60
 msgid "Various filters may be available, including"
-msgstr ""
+msgstr "Divers filtres peuvent être disponibles, notamment:"
 
 #: ../data_query/0070_querying_isolate_data.rst:62
 msgid "Publications"
-msgstr ""
+msgstr "Publications"
 
 #: ../data_query/0070_querying_isolate_data.rst:63
 msgid "Projects"
-msgstr ""
+msgstr "Projets"
 
 #: ../data_query/0070_querying_isolate_data.rst:64
 msgid "MLST profile completion status"
-msgstr ""
+msgstr "État d'achèvement du profil MLST"
 
 #: ../data_query/0070_querying_isolate_data.rst:65
 msgid "Clonal complex"
-msgstr ""
+msgstr "Complexe clonal"
 
 #: ../data_query/0070_querying_isolate_data.rst:66
 msgid "Sequence bin size"
-msgstr ""
+msgstr "Taille du bac (sequence bin, ou corbeille) de séquence"
 
 #: ../data_query/0070_querying_isolate_data.rst:67
 msgid "Inclusion/exclusion of :ref:`old versions <versioning>`"
-msgstr ""
+msgstr "Inclusion/exclusion de :ref:`old versions <versioning>`"
 
 #: ../data_query/0070_querying_isolate_data.rst:71
 msgid ""
@@ -144,76 +171,104 @@ msgid ""
 "within the tab.  If this is clicked, the modified form will be displayed "
 "the next time you go to the query page."
 msgstr ""
+"Si l'interface est modifiée, un bouton pour enregistrer les options devient "
+"disponible dans l'onglet. Si cela est cliqué, le formulaire modifié sera "
+"affiché la prochaine fois que vous allez sur la page de requête."
 
 #: ../data_query/0070_querying_isolate_data.rst:79
 msgid "Query by allele designation/scheme field"
-msgstr ""
+msgstr "Recherche par désignation allèle/champ de schéma"
 
 #: ../data_query/0070_querying_isolate_data.rst:80
 msgid "Queries can be combined with allele designation/scheme field values."
 msgstr ""
+"Les requêtes peuvent être combinées avec des valeurs de champ de "
+#~ "désignation d'allèle/schéma."
 
 #: ../data_query/0070_querying_isolate_data.rst:82
 msgid ""
 "Make sure that the allele designation/scheme field values fieldset is "
 "displayed by selecting it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le menu de l'ensemble des valeurs de champs de désignation d'allèle/schema "
+" est affiché en le sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:87
 msgid ""
 "Designations can be queried using :ref:`standard operators "
 "<query_operators>`."
 msgstr ""
+"Les désignations peuvent être interrogées à l'aide de "
+":ref:`standard operators <query_operators>`."
 
 #: ../data_query/0070_querying_isolate_data.rst:89
 msgid "Additional search terms can be combined using the '+' button."
 msgstr ""
+"D'autres termes de recherche peuvent être combinés en utilisant le bouton '+'."
 
 #: ../data_query/0070_querying_isolate_data.rst:91
 msgid ""
 "Add your search terms and click 'Submit'.  Allele designation/scheme "
 "field queries will be combined with terms entered in other sections."
 msgstr ""
+"Ajoutez vos termes de recherche et cliquez sur 'Soumettre'. Les requêtes de "
+"désignation d'allèle ou de schéma seront combinées avec les termes "
+"entrés dans d'autres sections."
 
 #: ../data_query/0070_querying_isolate_data.rst:100
 msgid "Query by allele designation count"
 msgstr ""
+"Recherches selon le nombre de désignations d'allèles"
 
 #: ../data_query/0070_querying_isolate_data.rst:101
 msgid ""
 "Queries can be combined with counts of the total number of designations "
 "or for individual loci."
 msgstr ""
+"Les requêtes peuvent être combinées avec le nombre total de désignations ou "
+"pour des loci individuels."
 
 #: ../data_query/0070_querying_isolate_data.rst:104
 msgid ""
 "Make sure that the allele designation counts fieldset is displayed by "
 "selecting it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le menu de désignation allèle est affiché en le "
+"sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:109
 msgid ""
 "For example, to find all isolates that have designations at >1000 loci, "
 "select 'total designations > 1000', then click 'Submit'."
 msgstr ""
+"Par exemple, pour trouver tous les isolats qui ont des désignations à plus de 1000 "
+"loci, sélectionnez 'total designations > 1000', puis cliquez 'Submit'."
 
 #: ../data_query/0070_querying_isolate_data.rst:114
 msgid ""
 "You can also search for isolates where any isolate has a particular "
 "number of designations. Use the term 'any locus' to do this."
 msgstr ""
+"Vous pouvez également rechercher des isolats où un isolat a un nombre "
+"particulier de désignations alléliques. Utilisez le terme 'any locus' pour"
+" le faire."
 
 #: ../data_query/0070_querying_isolate_data.rst:117
 msgid ""
 "Finally, you can search for isolates with a specific number of "
 "designations at a specific locus."
 msgstr ""
+"Enfin, vous pouvez rechercher des isolats avec un nombre précis de "
+"désignations alléliques à un locus spécifique."
 
 #: ../data_query/0070_querying_isolate_data.rst:122
 msgid ""
 "Additional search terms can be combined using the '+' button. Designation"
 " count queries will be combined with terms entered in other sections."
 msgstr ""
+"D'autres termes de recherche peuvent être combinés en utilisant le bouton '+'. "
+"Les requêtes relatives au nombre de désignations seront combinées "
+"avec les termes inscrits dans d'autres sections."
 
 #: ../data_query/0070_querying_isolate_data.rst:127
 msgid ""
@@ -223,10 +278,15 @@ msgid ""
 "are missing. In databases with thousands of loci this can be a very "
 "expensive database query."
 msgstr ""
+"Les recherches pour 'all loci' avec des nombres qui incluent zéro, "
+"par ex. 'count of any locus = 0' ou avec un opérateur '<' ne sont "
+"pas prises en charge. En effet, ces recherches doivent identifier chaque "
+"isolat pour lequel il manque un ou plusieurs loci. Dans les bases de données"
+" avec des milliers de loci, cela peut être une requête très coûteuse en temps de calcul."
 
 #: ../data_query/0070_querying_isolate_data.rst:137
 msgid "Query by allele designation status"
-msgstr ""
+msgstr "Recherche par statut de désignation d'allèle"
 
 #: ../data_query/0070_querying_isolate_data.rst:138
 msgid ""
@@ -234,12 +294,18 @@ msgid ""
 "they are confirmed or provisional. Queries will be combined from the "
 "values entered in all form sections."
 msgstr ""
+"Les désignations d'allèles peuvent être recherchées en fonction de leur statut, "
+"c'est-à-dire si elles sont confirmées ou provisoires. Les requêtes seront "
+"combinées à partir des valeurs saisies dans toutes les sections du "
+"formulaire."
 
 #: ../data_query/0070_querying_isolate_data.rst:142
 msgid ""
-"Make sure that the allele designation status fieldset is displayed by "
+"Make sure that the allele designation staus fieldset is displayed by "
 "selecting it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le menu de statut de désignation d'allèle est affichée en le "
+"sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:147
 msgid ""
@@ -247,6 +313,9 @@ msgid ""
 "'confirmed'. Additional query fields can be displayed by clicking the '+'"
 " button. Click 'Submit'."
 msgstr ""
+"Sélectionnez un locus dans la boîte déroulante et soit 'provisional' ou "
+"'confirmed'. Des champs de requête supplémentaires peuvent être affichés en "
+"cliquant sur le bouton '+'. Cliquez sur 'Submit'."
 
 #: ../data_query/0070_querying_isolate_data.rst:153
 msgid ""
@@ -254,10 +323,14 @@ msgid ""
 " a pink background.  Any scheme field designations that depend on the "
 "allele in question, e.g. a MLST ST, will also be marked as provisional."
 msgstr ""
+"Les désignations provisoires des allèles sont indiquées dans les tableaux de"
+" résultats avec un fond rose. Toute désignation de champ de schéma qui "
+"dépend de l'allèle en question, par exemple un MLST ST, sera également "
+"marquée comme provisoire."
 
 #: ../data_query/0070_querying_isolate_data.rst:161
 msgid "Query by annotation status"
-msgstr ""
+msgstr "Recherche par statut d'annotation"
 
 #: ../data_query/0070_querying_isolate_data.rst:162
 msgid ""
@@ -268,80 +341,113 @@ msgid ""
 "allele designations can be set up by the scheme administrator to indicate"
 " good or bad quality thresholds."
 msgstr ""
+"Les isolats peuvent être recherchés par le statut d'annotation de certains "
+"sschémas si ceux-ci ont été créés. L'idée est que pour une entrée bien"
+" annotée, l'isolat devrait avoir des désignations allèles pour tous les loci "
+"dans le schéma. L'administrateur du schéma peut également fixer différents "
+"seuils pour le nombre de locus avec désignation d'allèles pour indiquer des "
+"seuils de bonne ou de mauvaise qualité."
 
 #: ../data_query/0070_querying_isolate_data.rst:169
 msgid ""
 "Make sure that the annotation status fieldset is displayed by selecting "
 "it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le jeu de champs d'état d'annotation est affiché en le "
+"sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:174
 msgid ""
 "Additional search terms can be combined using the '+' button. Annotation "
 "status queries will be combined with terms entered in other sections."
 msgstr ""
+"D'autres termes de recherche peuvent être combinés en utilisant le bouton "
+"'+'. Les requêtes de statut d'annotation seront combinées avec les termes "
+"entrés dans d'autres sections."
 
 #: ../data_query/0070_querying_isolate_data.rst:185
 msgid "Query by sequence bin size and number of contigs"
-msgstr ""
+msgstr "Recherche par la taille de séquence et le nombre de contigs"
 
 #: ../data_query/0070_querying_isolate_data.rst:186
 msgid ""
 "Isolates can be queried based on the total length of sequences within the"
 " sequence bin, the number of contigs, the N50 and/or the L50 values."
 msgstr ""
+"Les isolats peuvent être recherchés en fonction de la longueur totale des "
+"séquences dans leur corbeille à séquence, du nombre de contigs, des valeurs N50 "
+"et/ou L50."
 
 #: ../data_query/0070_querying_isolate_data.rst:189
 msgid ""
 "Make sure that the sequence bin fieldset is displayed by selecting it in "
 "the ‘Modify form options’ tab."
 msgstr ""
+"Assurez-vous que le menu de champ de sequence bin est affiché en le "
+"sélectionnant dans l'onglet ‘Modify form options’."
 
 #: ../data_query/0070_querying_isolate_data.rst:194
 msgid ""
 "Additional search terms can be combined using the '+' button. Sequence "
 "bin queries will be combined with terms entered in other sections."
 msgstr ""
+"D'autres termes de recherche peuvent être combinés en utilisant le bouton "
+"'+'. Les requêtes sequence bin seront combinées avec les termes entrés "
+"dans d'autres sections."
 
 #: ../data_query/0070_querying_isolate_data.rst:203
 msgid "Query by sequence tag count"
-msgstr ""
+msgstr "Recherche par nombre de balises de séquence (sequence tags)"
 
 #: ../data_query/0070_querying_isolate_data.rst:204
 msgid ""
 "Queries can be combined with counts of the total number of tags or for "
 "individual loci."
 msgstr ""
+"Les requêtes peuvent être combinées avec le nombre total d'étiquettes (tag) ou "
+"pour les loci individuels."
 
 #: ../data_query/0070_querying_isolate_data.rst:207
 msgid ""
 "Make sure that the tagged sequence counts fieldset is displayed by "
 "selecting it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le menu de champs de comptage des séquences étiquetées est "
+"affiché en le sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:212
 msgid ""
 "For example, to find all isolates that have sequence tags at >1000 loci, "
 "select 'total tags > 1000', then click 'Submit'."
 msgstr ""
+"Par exemple, pour trouver tous les isolats qui ont des balises de séquence à"
+" plus de 1000 loci, sélectionnez 'total tags > 1000', puis cliquez sur Submit."
 
 #: ../data_query/0070_querying_isolate_data.rst:217
 msgid ""
 "You can also search for isolates where any isolate has a particular "
 "number of sequence tags. Use the term 'any locus' to do this."
 msgstr ""
+"Vous pouvez également rechercher des isolats ayant un nombre "
+"particulier d'étiquettes de séquence. Utilisez le terme 'any locus' "
+"pour le faire."
 
 #: ../data_query/0070_querying_isolate_data.rst:220
 msgid ""
 "Finally, you can search for isolates with a specific number of tags at a "
 "specific locus."
 msgstr ""
+"Enfin, vous pouvez rechercher des isolats avec un nombre spécifique de "
+"balises à un locus spécifique."
 
 #: ../data_query/0070_querying_isolate_data.rst:225
 msgid ""
 "Additional search terms can be combined using the '+' button. Sequence "
 "tag count queries will be combined with terms entered in other sections."
 msgstr ""
+"D'autres termes de recherche peuvent être combinés en utilisant le bouton "
+"'+'. Les requêtes de comptage des balises de séquence seront combinées "
+"avec les termes entrés dans d'autres sections."
 
 #: ../data_query/0070_querying_isolate_data.rst:230
 msgid ""
@@ -352,9 +458,15 @@ msgid ""
 "expensive database query."
 msgstr ""
 
+"Les recherches pour 'all loci' avec des nombres qui incluent zéro, "
+"par ex. 'count of any locus = 0' ou avec un opérateur '<' ne sont "
+"pas prises en charge. En effet, ces recherches doivent identifier chaque "
+"isolat pour lequel il manque un ou plusieurs loci. Dans les bases de données"
+" avec des milliers de loci, cela peut être une requête très coûteuse en temps de calcul."
+
 #: ../data_query/0070_querying_isolate_data.rst:240
 msgid "Query by tagged sequence status"
-msgstr ""
+msgstr "Recherche par l'état de la séquence"
 
 #: ../data_query/0070_querying_isolate_data.rst:241
 msgid ""
@@ -365,84 +477,98 @@ msgid ""
 "characteristics of the sequences. Queries will be combined from the "
 "values entered in all form sections."
 msgstr ""
+"Les balises de séquence identifient la région d'un contig à l'intérieur "
+"de la corbeille à séquences d'un isolat qui correspondent à un locus "
+"particulier. La présence ou l'absence de ces balises peut être interrogée"
+" ainsi que la présence d'un drapeau (flag) associé. Ces drapeaux "
+"désignent les caractéristiques spécifiques des séquences. Les requêtes "
+"seront combinées à partir des valeurs saisies dans toutes les sections du "
+"formulaire."
 
 #: ../data_query/0070_querying_isolate_data.rst:248
 msgid ""
 "Make sure that the tagged sequences status fieldset is displayed by "
 "selecting it in the 'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le menu de champs d'état des séquences étiquetés est affiché"
+" en le sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:253
 msgid ""
 "Select a specific locus in the dropdown box (or alternatively 'any "
 "locus') and a status.  Available status values are:"
 msgstr ""
+"Sélectionnez un locus spécifique dans la boîte déroulante (ou "
+"alternativement 'any locus') et un statut. Les valeurs de "
+"statut disponibles sont:"
 
 #: ../data_query/0070_querying_isolate_data.rst:256
 msgid "untagged"
-msgstr ""
+msgstr "untagged (non étiqueté)"
 
 #: ../data_query/0070_querying_isolate_data.rst:258
 msgid "The locus has not been tagged within the sequence bin."
-msgstr ""
+msgstr "The locus has been tagged within the sequence bin."
 
 #: ../data_query/0070_querying_isolate_data.rst:260
 msgid "tagged"
-msgstr ""
+msgstr "tagged"
 
 #: ../data_query/0070_querying_isolate_data.rst:262
 msgid "The locus has been tagged within the sequence bin."
-msgstr ""
+msgstr "The locus has been tagged within the sequence bin."
 
 #: ../data_query/0070_querying_isolate_data.rst:264
 msgid "complete"
-msgstr ""
+msgstr "complete"
 
 #: ../data_query/0070_querying_isolate_data.rst:266
 msgid "The locus sequence is complete."
-msgstr ""
+msgstr "The locus sequence is complete."
 
 #: ../data_query/0070_querying_isolate_data.rst:268
 msgid "incomplete"
-msgstr ""
+msgstr "incomplete"
 
 #: ../data_query/0070_querying_isolate_data.rst:270
 msgid ""
 "The locus sequence is incomplete - normally because it continues beyond "
 "the end of a contig."
 msgstr ""
+"The locus sequence is incomplete - normally because it continues beyond the "
+"end of a contig."
 
 #: ../data_query/0070_querying_isolate_data.rst:273
 msgid "flagged: any"
-msgstr ""
+msgstr "flagged: any"
 
 #: ../data_query/0070_querying_isolate_data.rst:275
 msgid "The sequence for the  locus has a flag set."
-msgstr ""
+msgstr "The sequence for the  locus has a flag set."
 
 #: ../data_query/0070_querying_isolate_data.rst:277
 msgid "flagged: none"
-msgstr ""
+msgstr "flagged: none"
 
 #: ../data_query/0070_querying_isolate_data.rst:279
 msgid "The sequence for the locus does not have a flag set."
-msgstr ""
+msgstr "The sequence for the locus does not have a flag set."
 
 #: ../data_query/0070_querying_isolate_data.rst:281
 msgid "flagged: <specific flag>"
-msgstr ""
+msgstr "flagged: <specific flag>"
 
 #: ../data_query/0070_querying_isolate_data.rst:283
 msgid "The sequence for the locus has the specific flag chosen."
-msgstr ""
+msgstr "The sequence for the locus has the specific flag chosen."
 
 #: ../data_query/0070_querying_isolate_data.rst:289
 msgid ":ref:`Sequence tag flags <sequence_tag_flags>`"
-msgstr ""
+msgstr ":ref:`Sequence tag flags <sequence_tag_flags>`"
 
 #: ../data_query/0070_querying_isolate_data.rst:292
 msgid "Query by list of attributes"
-msgstr ""
+msgstr "Recherche par liste d'attributs"
 
 #: ../data_query/0070_querying_isolate_data.rst:293
 msgid ""
@@ -451,20 +577,27 @@ msgid ""
 "ids, isolate names, alleles or scheme fields.  This list will be combined"
 " with any other criteria or filter used on the page."
 msgstr ""
+"Le formulaire de requête peut être modifié avec une boîte de liste dans "
+"laquelle une liste de valeurs pour un attribut choisi peut être saisie - il "
+"pourrait s'agir d'une liste d'ids, de noms d'isolats, d'allèles ou de champs"
+" de schéma. Cette liste sera combinée avec tout autre critère ou filtre "
+"utilisé sur la page."
 
 #: ../data_query/0070_querying_isolate_data.rst:298
 msgid ""
 "If the list box is not shown, add it by selecting it in the 'Modify form "
 "options' tab."
 msgstr ""
+"Si la boîte de liste n'est pas affichée, ajoutez-la en la sélectionnant dans"
+" l'onglet 'Modify form options."
 
 #: ../data_query/0070_querying_isolate_data.rst:303
 msgid "Select the attribute to query and enter a list of values."
-msgstr ""
+msgstr "Sélectionnez l'attribut à requêter et entrez une liste de valeurs."
 
 #: ../data_query/0070_querying_isolate_data.rst:313
 msgid "Query filters"
-msgstr ""
+msgstr "Filtres de requêtes"
 
 #: ../data_query/0070_querying_isolate_data.rst:314
 msgid ""
@@ -472,58 +605,78 @@ msgid ""
 " the filters can be applied solely on their own so that they filter the "
 "entire database."
 msgstr ""
+"Il existe différents filtres qui peuvent en outre être appliqués aux "
+"requêtes. Les filtres peuvent être appliqués seuls "
+"afin qu'ils filtrent toute la base de données."
 
 #: ../data_query/0070_querying_isolate_data.rst:318
 msgid ""
 "Make sure that the filters fieldset is displayed by selecting it in the "
 "'Modify form options' tab."
 msgstr ""
+"Assurez-vous que le jeu de filtres s'affiche en le sélectionnant dans "
+"l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:323
 msgid ""
 "The filters displayed will depend on the database and what has been "
 "defined within it.  Common filters are:"
 msgstr ""
+"Les filtres affichés dépendront de la base de données et de ce qui y a été "
+"défini. Les filtres courants sont:"
 
 #: ../data_query/0070_querying_isolate_data.rst:326
 msgid ""
 "Publication - Select one or more publication that has been linked to "
 "isolate records."
 msgstr ""
+"Publication - Sélectionnez une ou plusieurs publications qui ont été liées"
+" à des entrées isolat."
 
 #: ../data_query/0070_querying_isolate_data.rst:328
 msgid "Project - Select one or more project that isolates belong to."
 msgstr ""
+"Projet - Sélectionnez un ou plusieurs projets auxquels appartiennent les "
+"isolats."
 
 #: ../data_query/0070_querying_isolate_data.rst:329
 msgid ""
 "Profile completion - This is commonly displayed for MLST schemes.  "
 "Available options are:"
 msgstr ""
+"Achèvement du profil - Ceci est couramment affiché pour les schémas MLST. "
+"Les options disponibles sont:"
+
 
 #: ../data_query/0070_querying_isolate_data.rst:332
 msgid "complete - All loci of the scheme have alleles designated."
 msgstr ""
+"complete - All loci of the scheme have alleles designated."
 
 #: ../data_query/0070_querying_isolate_data.rst:333
 msgid "incomplete - One or more loci have not yet been designated."
 msgstr ""
+"incomplete - One or more loci have not yet been designated."
 
 #: ../data_query/0070_querying_isolate_data.rst:334
 msgid ""
 "partial - The scheme is incomplete, but at least one locus has an allele "
 "designated."
 msgstr ""
+"partial - The scheme is incomplete, but at least one locus has an allele "
+"designated."
 
 #: ../data_query/0070_querying_isolate_data.rst:336
 msgid ""
 "started - At least one locus has an allele designated.  The scheme mat be"
 " complete or partial."
 msgstr ""
+"started - At least one locus has an allele designated.  The scheme mat be "
+"complete or partial."
 
 #: ../data_query/0070_querying_isolate_data.rst:338
 msgid "not started - The scheme has no loci with alleles designated."
-msgstr ""
+msgstr "not started - The scheme has no loci with alleles designated."
 
 #: ../data_query/0070_querying_isolate_data.rst:340
 msgid ""
@@ -531,16 +684,22 @@ msgid ""
 " fields may be present if set for the database.  Users can choose to "
 ":ref:`add additional filters <modify_query_filters>`."
 msgstr ""
+"Champs de provenance - Des boîtes déroulantes de valeurs pour des champs de "
+"provenance spécifiques peuvent être présentes si elles sont définies pour la"
+" base de données. Les utilisateurs peuvent choisir de "
+":ref:`add additional filters <modify_query_filters>`."
 
 #: ../data_query/0070_querying_isolate_data.rst:343
 msgid ""
 "Old record versions - Checkbox which, if selected, will include all "
 "record versions in a query."
 msgstr ""
+"Old record versions - Case à cocher qui, si sélectionnée, "
+"inclura toutes les versions d'une entrée dans une requête."
 
 #: ../data_query/0070_querying_isolate_data.rst:350
 msgid "Querying by allelic profile"
-msgstr ""
+msgstr "Recherche par profil allélique"
 
 #: ../data_query/0070_querying_isolate_data.rst:351
 msgid ""
@@ -549,6 +708,10 @@ msgid ""
 "profiles. Even if no scheme is defined, queries can be made against all "
 "loci."
 msgstr ""
+"Si un schéma, tel que le MLST, a été défini pour une base de données isolats,"
+" il est possible de demander à la base de données des profils alléliques "
+"complets ou partiels. Même si aucun schéma n'est défini, des requêtes "
+"peuvent être faites sur tous les loci."
 
 #: ../data_query/0070_querying_isolate_data.rst:355
 msgid ""
@@ -556,18 +719,26 @@ msgid ""
 "any defined scheme. Enter either a partial (any combination of loci) or "
 "complete profile."
 msgstr ""
+"Sur la page d'index, cliquez sur 'Search by combinations of loci (profiles)' "
+"pour tout schéma défini. Entrez un profil partiel (any combination of loci) "
+"ou complet."
 
 #: ../data_query/0070_querying_isolate_data.rst:361
 msgid ""
 "If multiple schemes are defined, you may have to select the scheme you "
 "wish to query in the 'Schemes' dropdown box and click 'Select'."
 msgstr ""
+"Si plusieurs schémas sont définis, il se peut que vous deviez sélectionner "
+"le schéma que vous souhaitez interroger dans la boîte déroulante 'Schemes' "
+"et cliquer sur 'Select'."
 
 #: ../data_query/0070_querying_isolate_data.rst:366
 msgid ""
 "Enter the combination of alleles that you want to query for.  Fields can "
 "be left blank."
 msgstr ""
+"Saisissez la combinaison d'allèles que vous voulez rechercher. Les "
+#~ "champs peuvent être laissés en blanc."
 
 #: ../data_query/0070_querying_isolate_data.rst:371
 msgid ""
@@ -575,47 +746,45 @@ msgid ""
 "(e.g. ST) and select 'Autofill' to automatically fill in the associated "
 "profile."
 msgstr ""
+"Sinon, pour les profils de schéma, vous pouvez saisir une valeur clé "
+"primaire (par exemple ST) et sélectionner 'Autofill' pour remplir "
+"automatiquement le profil associé."
 
 #: ../data_query/0070_querying_isolate_data.rst:376
 msgid ""
 "Select the number of loci that you'd like to match in the options "
 "dropdown box. Available options are:"
 msgstr ""
+"Sélectionnez le nombre de loci que vous souhaitez dans la boîte"
+" déroulante des options. Les options disponibles sont:"
 
 #: ../data_query/0070_querying_isolate_data.rst:379
 msgid "Exact or nearest match"
-msgstr ""
+msgstr "Exact or nearest match"
 
 #: ../data_query/0070_querying_isolate_data.rst:380
 msgid "Exact match only"
-msgstr ""
+msgstr "Exact match only"
 
 #: ../data_query/0070_querying_isolate_data.rst:381
 msgid "x or more matches"
-msgstr ""
+msgstr "x or more matches"
 
 #: ../data_query/0070_querying_isolate_data.rst:382
 msgid "y or more matches"
-msgstr ""
+msgstr "y or more matches"
 
 #: ../data_query/0070_querying_isolate_data.rst:383
 msgid "z or more matches"
-msgstr ""
+msgstr "z or more matches"
 
 #: ../data_query/0070_querying_isolate_data.rst:385
 msgid ""
 "Where x,y, and z will range from n-1 to 1 where n is the number of loci "
 "in the scheme."
 msgstr ""
+"Où x,y et z vont de n-1 à 1 où n est le nombre de loci dans le schéma."
 
 #: ../data_query/0070_querying_isolate_data.rst:390
 msgid "Click 'Search'."
-msgstr ""
-
-#~ msgid ""
-#~ "Make sure that the allele designation"
-#~ " staus fieldset is displayed by "
-#~ "selecting it in the 'Modify form "
-#~ "options' tab."
-#~ msgstr ""
-
+msgstr "Cliquez 'Search'."

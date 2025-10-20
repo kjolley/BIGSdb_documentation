@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2014-2025, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Translation curated by Sylvain Brisse <SBRISSE@PASTEUR.FR>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-02 08:24+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-07-01 11:43+0100\n"
+"PO-Revision-Date: 2025-10-16 13:59+0200\n"
+"Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../data_query/0010_determine_allele_identity.rst:8
 msgid "Querying sequences to determine allele identity"
-msgstr ""
+msgstr "Recherche dans les séquences pour déterminer l'identité d'allèles"
 
 #: ../data_query/0010_determine_allele_identity.rst:9
 msgid ""
 "Sequence queries are performed in the sequence definition database.   "
 "Click 'Single sequence' query from the contents page."
 msgstr ""
+"Les requêtes de séquence sont effectuées dans la base de données de "
+"définition de séquence (seqdef). Cliquez sur la requête 'Single sequence' de la "
+"page de contenu."
 
 #: ../data_query/0010_determine_allele_identity.rst:14
 msgid ""
@@ -36,6 +39,12 @@ msgid ""
 "however, to select the specific locus or scheme (e.g. MLST) that a locus "
 "belongs to."
 msgstr ""
+"Coller votre séquence dans la boîte - il n'est pas nécessaire d'élaguer. "
+"Souvent, vous pouvez laisser le réglage du locus sur 'All loci' - le "
+"logiciel devrait identifier le locus correct en fonction de votre séquence. "
+"Toutefois, en particulier dans les bases de données comportant un grand nombre"
+" de locus définis, il peut être plus rapide de choisir le locus ou le schéma"
+" spécifique (par exemple MLST) auquel un locus appartient."
 
 #: ../data_query/0010_determine_allele_identity.rst:22
 msgid ""
@@ -45,16 +54,23 @@ msgid ""
 "box. Leaving the selection on 'All loci' will return a match to the "
 "longer sequence in preference to the shorter one."
 msgstr ""
+"Si le locus que vous interrogez est une version plus courte d'un autre, par "
+"exemple un fragment MLST d'un gène où le gène de pleine longueur est également "
+"défini, vous devrez sélectionner le locus spécifique ou le schéma dans la "
+"boîte déroulante. Laisser la sélection sur 'All loci' retournera une "
+"correspondance avec la séquence la plus longue de préférence à la plus courte."
 
 #: ../data_query/0010_determine_allele_identity.rst:28
 msgid "Click 'Submit'."
-msgstr ""
+msgstr "Cliquez sur 'Submit'."
 
 #: ../data_query/0010_determine_allele_identity.rst:32
 msgid ""
 "If an exact match is found, this will be indicated along with the start "
 "position of the locus within your sequence."
 msgstr ""
+"Si une correspondance exacte est trouvée, cela sera indiqué avec la position"
+" de début du locus dans votre séquence."
 
 #: ../data_query/0010_determine_allele_identity.rst:37
 msgid ""
@@ -64,6 +80,11 @@ msgid ""
 " sequence. The start position of the locus within your sequence is also "
 "indicated."
 msgstr ""
+"Si on ne trouve qu'une correspondance partielle, l'allèle le plus semblable "
+"est identifié avec la ou les différence(s) de nucléotides. Les différentes "
+"positions des nucléotides sont numérotées par rapport à la séquence collée "
+"et à la séquence de référence. La position de départ du locus dans votre "
+"séquence est également indiquée."
 
 #: ../data_query/0010_determine_allele_identity.rst:44
 msgid ""
@@ -71,10 +92,13 @@ msgid ""
 "choose to upload sequences in FASTA format by clicking the file browse "
 "button."
 msgstr ""
+"Comme alternative à coller une séquence dans la boîte, vous pouvez également"
+" choisir de téléverser des séquences au format FASTA en cliquant sur le "
+"bouton de recherche de fichier."
 
 #: ../data_query/0010_determine_allele_identity.rst:53
 msgid "Querying whole genome data"
-msgstr ""
+msgstr "Interroger les séquences de génome entier"
 
 #: ../data_query/0010_determine_allele_identity.rst:54
 msgid ""
@@ -87,26 +111,43 @@ msgid ""
 " for example, enables you to identify the MLST sequence type of a genome "
 "in one step."
 msgstr ""
+"La requête de séquence ne se limite pas aux gènes uniques. Vous pouvez "
+"également coller ou téléverser des génomes entiers - ceux-ci peuvent être "
+"dans plusieurs contigs. Si vous sélectionnez un schéma spécifique dans la "
+"zone déroulante, tous les loci appartenant à ce schéma seront vérifiés (bien"
+" que seules les correspondances exactes soient déclarées pour un locus si "
+"l'un des autres loci a une correspondance exacte). Si tous les loci sont "
+"trouvés avec un allèe existant, les champs de schéma seront également retournés si ces derniers "
+"sont définis. Cela vous permet, par exemple, d'identifier le séquençotype "
+"MLST d'un génome en une seule étape."
 
 #: ../data_query/0010_determine_allele_identity.rst:66
 msgid "Querying multiple sequences to identify allele identities"
 msgstr ""
+"Interroger plusieurs séquences pour identifier les identités des allèles"
 
 #: ../data_query/0010_determine_allele_identity.rst:67
 msgid ""
 "You can also query mutiple sequences together. These should be in FASTA "
 "format. Click 'Batch sequences' from the contents page."
 msgstr ""
+"Vous pouvez également interroger des séquences mutiples ensemble. Elles "
+"devraient être en format FASTA. Cliquez sur 'Batch sequences' à partir de "
+"la page de contenu."
 
 #: ../data_query/0010_determine_allele_identity.rst:72
 msgid ""
 "Paste your sequences (FASTA format) in to the box. Select a specific "
 "locus, scheme or 'All loci'."
 msgstr ""
+"Coller vos séquences (format FASTA) dans la boîte. Sélectionnez un locus, un"
+" schéma ou 'All loci'."
 
 #: ../data_query/0010_determine_allele_identity.rst:77
 msgid ""
 "The best match will be displayed for each sequence in your file. If this "
 "isn't an exact match, the differences will be listed."
 msgstr ""
-
+"La meilleure correspondance sera affichée pour chaque séquence de votre "
+"fichier. Si ce n'est pas une correspondance exacte, les différences seront "
+"listées."
