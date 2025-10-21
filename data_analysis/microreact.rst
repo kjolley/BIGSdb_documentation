@@ -24,7 +24,7 @@ contents page.
 
 .. image:: /images/data_analysis/analysis.png
 
-Jump to the 'Third party' category, follow the link to BLAST, then click 
+Jump to the 'Third party' category, follow the link to Microreact, then click 
 'Launch Microreact'.
 
 .. image:: /images/data_analysis/microreact1.png 
