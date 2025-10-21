@@ -24,7 +24,7 @@ msgstr "Rechercher des données d'isolats"
 #: ../data_query/0060_browsing_isolate_data.rst:9
 msgid "Isolate records can be browsed by clicking the link to 'Search database'."
 msgstr ""
-"Les notices d'isolement peuvent être consultées en cliquant sur le lien "
+"Les entrées isolats peuvent être consultées en cliquant sur le lien "
 "\"Rechercher la base de données\"."
 
 #: ../data_query/0060_browsing_isolate_data.rst:13
