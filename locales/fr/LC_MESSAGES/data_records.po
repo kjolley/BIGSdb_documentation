@@ -99,7 +99,7 @@ msgid ""
 "The update link displays page with exact times of who and when updated the "
 "record."
 msgstr ""
-"Le lien de mise à jour affiche la page avec les momeents exacts de qui "
+"Le lien de mise à jour affiche la page avec les moments exacts de qui "
 "a mis à jour l'entrée et quand."
 
 #: ../data_records.rst:52
