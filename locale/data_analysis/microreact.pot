@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-14 10:02+0100\n"
+"POT-Creation-Date: 2025-10-20 16:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Microreact can be accessed by selecting the 'Analysis' section on the mai
 msgstr ""
 
 #: ../data_analysis/microreact.rst:27
-msgid "Jump to the 'Third party' category, follow the link to BLAST, then click 'Launch Microreact'."
+msgid "Jump to the 'Third party' category, follow the link to Microreact, then click 'Launch Microreact'."
 msgstr ""
 
 #: ../data_analysis/microreact.rst:32

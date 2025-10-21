@@ -20,11 +20,10 @@ https://kaptive.readthedocs.io/en/latest/.
 
 If you use the results of Kaptive, you should cite the following:
 
-* Stanton TD, Hetland MAK, Löhr IH, Holt KE, Wyres KL. Fast and Accurate 
-  *in silico* Antigen Typing with Kaptive 3 [Internet]. bioRxiv; 2025 
-  [cited 2025 Feb 27]. p. 2025.02.05.636613. 
-  https://www.biorxiv.org/content/10.1101/2025.02.05.636613v1
-  
+* Stanton TD, Hetland MAK, Löhr IH, Holt KE, Wyres KL. Fast and Accurate
+  *in silico* Antigen Typing with Kaptive 3 Microb Genom. 2025 11(6):001428.
+  https://doi.org/10.1099/mgen.0.001428
+ 
 If you use the *Klebsiella* K or O locus databases, you should also cite:
 
 * Wyres, K.L., Wick, R.R., Gorrie, C., Jenney, A., Follador, R., Thomson, N.R., 
