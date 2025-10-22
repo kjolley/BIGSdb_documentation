@@ -38,8 +38,8 @@ msgid ""
 "linked together by 'and' or 'or'."
 msgstr ""
 "Pour commencer, une seule boîte de recherche de champ de provenance est "
-"affichée, mais d'aitres peuvent être ajoutés en cliquant sur le bouton "
-"'+'. Ils peuvent être combinés logiquement par 'et' (AND) ou 'ou' (OR)."
+"affichée, mais autres peuvent être ajoutés en cliquant sur le bouton '+'. "
+"Ils peuvent être combinés logiquement par 'et' (AND) ou 'ou' (OR)."
 
 #: ../data_query/0070_querying_isolate_data.rst:20
 msgid ""
@@ -191,9 +191,8 @@ msgid ""
 "Make sure that the allele designation/scheme field values fieldset is "
 "displayed by selecting it in the 'Modify form options' tab."
 msgstr ""
-"Assurez-vous que le menu de l'ensemble des valeurs de champs de "
-"désignation d'allèle/schema  est affiché en le sélectionnant dans "
-"l'onglet 'Modify form options'."
+"Assurez vous que le menu ‘allele designation’ status est affiché, "
+"en le sélectionnant dans l’onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:87
 msgid ""
@@ -346,19 +345,18 @@ msgid ""
 "allele designations can be set up by the scheme administrator to indicate"
 " good or bad quality thresholds."
 msgstr ""
-"Les isolats peuvent être recherchés par le statut d'annotation de "
-"certains sschémas si ceux-ci ont été créés. L'idée est que pour une "
-"entrée bien annotée, l'isolat devrait avoir des désignations allèles pour"
-" tous les loci dans le schéma. L'administrateur du schéma peut également "
-"fixer différents seuils pour le nombre de locus avec désignation "
-"d'allèles pour indiquer des seuils de bonne ou de mauvaise qualité."
+"Les isolats peuvent être recherchés par le statut d'annotation de certains "
+"schémas si ceux-ci ont été créés. L'idée est que pour une entrée bien"
+" annotée, l'isolat devrait avoir des désignations allèles pour tous les loci "
+"dans le schéma. L'administrateur du schéma peut également fixer différents "
+"seuils pour le nombre de locus avec désignation d'allèles pour indiquer des annotations de bonne ou de mauvaise qualité."
 
 #: ../data_query/0070_querying_isolate_data.rst:169
 msgid ""
 "Make sure that the annotation status fieldset is displayed by selecting "
 "it in the 'Modify form options' tab."
 msgstr ""
-"Assurez-vous que le jeu de champs d'état d'annotation est affiché en le "
+"Assurez-vous que le menu d’état d’annotation est affiché en le "
 "sélectionnant dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:174
@@ -513,7 +511,7 @@ msgstr "untagged (non étiqueté)"
 
 #: ../data_query/0070_querying_isolate_data.rst:258
 msgid "The locus has not been tagged within the sequence bin."
-msgstr "The locus has been tagged within the sequence bin."
+msgstr "The locus n’a pas été étiqueté (taggué) dans la corbeille à séquence"
 
 #: ../data_query/0070_querying_isolate_data.rst:260
 msgid "tagged"
@@ -521,7 +519,7 @@ msgstr "tagged"
 
 #: ../data_query/0070_querying_isolate_data.rst:262
 msgid "The locus has been tagged within the sequence bin."
-msgstr "The locus has been tagged within the sequence bin."
+msgstr "The locus a été étiqueté (taggué) dans la corbeille à séquence"
 
 #: ../data_query/0070_querying_isolate_data.rst:264
 msgid "complete"
@@ -529,7 +527,7 @@ msgstr "complete"
 
 #: ../data_query/0070_querying_isolate_data.rst:266
 msgid "The locus sequence is complete."
-msgstr "The locus sequence is complete."
+msgstr "La séquence du locus est complète."
 
 #: ../data_query/0070_querying_isolate_data.rst:268
 msgid "incomplete"
@@ -540,8 +538,7 @@ msgid ""
 "The locus sequence is incomplete - normally because it continues beyond "
 "the end of a contig."
 msgstr ""
-"The locus sequence is incomplete - normally because it continues beyond "
-"the end of a contig."
+"La séquence du locus est incomplète – généralement parce qu’elle continue au-delà d’une extrémité de contig."
 
 #: ../data_query/0070_querying_isolate_data.rst:273
 msgid "flagged: any"
@@ -549,7 +546,7 @@ msgstr "flagged: any"
 
 #: ../data_query/0070_querying_isolate_data.rst:275
 msgid "The sequence for the  locus has a flag set."
-msgstr "The sequence for the  locus has a flag set."
+msgstr "La séquence du locus a un drapeau (flag)."
 
 #: ../data_query/0070_querying_isolate_data.rst:277
 msgid "flagged: none"
@@ -557,7 +554,7 @@ msgstr "flagged: none"
 
 #: ../data_query/0070_querying_isolate_data.rst:279
 msgid "The sequence for the locus does not have a flag set."
-msgstr "The sequence for the locus does not have a flag set."
+msgstr "La séquence du locus n’a pas de drapeau (flag)."
 
 #: ../data_query/0070_querying_isolate_data.rst:281
 msgid "flagged: <specific flag>"
@@ -565,7 +562,7 @@ msgstr "flagged: <specific flag>"
 
 #: ../data_query/0070_querying_isolate_data.rst:283
 msgid "The sequence for the locus has the specific flag chosen."
-msgstr "The sequence for the locus has the specific flag chosen."
+msgstr "La séquence du locus a un drapeau (flag) spécifié tel que sélectionné."
 
 #: ../data_query/0070_querying_isolate_data.rst:289
 msgid ":ref:`Sequence tag flags <sequence_tag_flags>`"
@@ -593,8 +590,8 @@ msgid ""
 "If the list box is not shown, add it by selecting it in the 'Modify form "
 "options' tab."
 msgstr ""
-"Si la boîte de liste n'est pas affichée, ajoutez-la en la sélectionnant "
-"dans l'onglet 'Modify form options."
+"Si la boîte de liste n'est pas affichée, ajoutez-la en la sélectionnant dans"
+" l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:303
 msgid "Select the attribute to query and enter a list of values."
@@ -654,31 +651,31 @@ msgstr ""
 
 #: ../data_query/0070_querying_isolate_data.rst:332
 msgid "complete - All loci of the scheme have alleles designated."
-msgstr "complete - All loci of the scheme have alleles designated."
+msgstr ""
+"complete - Tous les loci du schéma sont désignés."
 
 #: ../data_query/0070_querying_isolate_data.rst:333
 msgid "incomplete - One or more loci have not yet been designated."
-msgstr "incomplete - One or more loci have not yet been designated."
+msgstr ""
+"incomplete - Un ou plusieurs loci n’ont pas encore été désignés."
 
 #: ../data_query/0070_querying_isolate_data.rst:334
 msgid ""
 "partial - The scheme is incomplete, but at least one locus has an allele "
 "designated."
 msgstr ""
-"partial - The scheme is incomplete, but at least one locus has an allele "
-"designated."
+"partial - Le schéma est incomplet, mais au moins un locus a un allèle désigné."
 
 #: ../data_query/0070_querying_isolate_data.rst:336
 msgid ""
 "started - At least one locus has an allele designated.  The scheme mat be"
 " complete or partial."
 msgstr ""
-"started - At least one locus has an allele designated.  The scheme mat be"
-" complete or partial."
+"started - Au moins un locus a un allèle désigné. Le schéma pourrait être complet ou partiel."
 
 #: ../data_query/0070_querying_isolate_data.rst:338
 msgid "not started - The scheme has no loci with alleles designated."
-msgstr "not started - The scheme has no loci with alleles designated."
+msgstr "not started - Le schéma n’a aucun locus avec un allèle désigné."
 
 #: ../data_query/0070_querying_isolate_data.rst:340
 msgid ""

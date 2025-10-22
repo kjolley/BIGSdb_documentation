@@ -117,7 +117,7 @@ msgstr ""
 "zone déroulante, tous les loci appartenant à ce schéma seront vérifiés (bien"
 " que seules les correspondances exactes soient déclarées pour un locus si "
 "l'un des autres loci a une correspondance exacte). Si tous les loci sont "
-"trouvés avec un allèe existant, les champs de schéma seront également retournés si ces derniers "
+"trouvés avec un allèle existant, les champs de schéma seront également retournés si ces derniers "
 "sont définis. Cela vous permet, par exemple, d'identifier le séquençotype "
 "MLST d'un génome en une seule étape."
 
