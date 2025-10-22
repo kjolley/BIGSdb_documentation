@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-16 07:43+0100\n"
+"POT-Creation-Date: 2025-10-22 07:25+0100\n"
 "PO-Revision-Date: 2025-10-16 13:59+0200\n"
 "Last-Translator: Sylvain Brisse sylvain.brisse@pasteur.fr\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,8 @@ msgid ""
 "linked together by 'and' or 'or'."
 msgstr ""
 "Pour commencer, une seule boîte de recherche de champ de provenance est "
-"affichée, mais autres peuvent être ajoutés en cliquant sur le bouton '+'. "
-"Ils peuvent être combinés logiquement par 'et' (AND) ou 'ou' (OR)."
+"affichée, mais autres peuvent être ajoutés en cliquant sur le bouton '+'."
+" Ils peuvent être combinés logiquement par 'et' (AND) ou 'ou' (OR)."
 
 #: ../data_query/0070_querying_isolate_data.rst:20
 msgid ""
@@ -191,8 +191,8 @@ msgid ""
 "Make sure that the allele designation/scheme field values fieldset is "
 "displayed by selecting it in the 'Modify form options' tab."
 msgstr ""
-"Assurez vous que le menu ‘allele designation’ status est affiché, "
-"en le sélectionnant dans l’onglet 'Modify form options'."
+"Assurez vous que le menu ‘allele designation’ status est affiché, en le "
+"sélectionnant dans l’onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:87
 msgid ""
@@ -345,11 +345,12 @@ msgid ""
 "allele designations can be set up by the scheme administrator to indicate"
 " good or bad quality thresholds."
 msgstr ""
-"Les isolats peuvent être recherchés par le statut d'annotation de certains "
-"schémas si ceux-ci ont été créés. L'idée est que pour une entrée bien"
-" annotée, l'isolat devrait avoir des désignations allèles pour tous les loci "
-"dans le schéma. L'administrateur du schéma peut également fixer différents "
-"seuils pour le nombre de locus avec désignation d'allèles pour indiquer des annotations de bonne ou de mauvaise qualité."
+"Les isolats peuvent être recherchés par le statut d'annotation de "
+"certains schémas si ceux-ci ont été créés. L'idée est que pour une entrée"
+" bien annotée, l'isolat devrait avoir des désignations allèles pour tous "
+"les loci dans le schéma. L'administrateur du schéma peut également fixer "
+"différents seuils pour le nombre de locus avec désignation d'allèles pour"
+" indiquer des annotations de bonne ou de mauvaise qualité."
 
 #: ../data_query/0070_querying_isolate_data.rst:169
 msgid ""
@@ -538,7 +539,8 @@ msgid ""
 "The locus sequence is incomplete - normally because it continues beyond "
 "the end of a contig."
 msgstr ""
-"La séquence du locus est incomplète – généralement parce qu’elle continue au-delà d’une extrémité de contig."
+"La séquence du locus est incomplète – généralement parce qu’elle continue"
+" au-delà d’une extrémité de contig."
 
 #: ../data_query/0070_querying_isolate_data.rst:273
 msgid "flagged: any"
@@ -590,8 +592,8 @@ msgid ""
 "If the list box is not shown, add it by selecting it in the 'Modify form "
 "options' tab."
 msgstr ""
-"Si la boîte de liste n'est pas affichée, ajoutez-la en la sélectionnant dans"
-" l'onglet 'Modify form options'."
+"Si la boîte de liste n'est pas affichée, ajoutez-la en la sélectionnant "
+"dans l'onglet 'Modify form options'."
 
 #: ../data_query/0070_querying_isolate_data.rst:303
 msgid "Select the attribute to query and enter a list of values."
@@ -651,27 +653,28 @@ msgstr ""
 
 #: ../data_query/0070_querying_isolate_data.rst:332
 msgid "complete - All loci of the scheme have alleles designated."
-msgstr ""
-"complete - Tous les loci du schéma sont désignés."
+msgstr "complete - Tous les loci du schéma sont désignés."
 
 #: ../data_query/0070_querying_isolate_data.rst:333
 msgid "incomplete - One or more loci have not yet been designated."
-msgstr ""
-"incomplete - Un ou plusieurs loci n’ont pas encore été désignés."
+msgstr "incomplete - Un ou plusieurs loci n’ont pas encore été désignés."
 
 #: ../data_query/0070_querying_isolate_data.rst:334
 msgid ""
 "partial - The scheme is incomplete, but at least one locus has an allele "
 "designated."
 msgstr ""
-"partial - Le schéma est incomplet, mais au moins un locus a un allèle désigné."
+"partial - Le schéma est incomplet, mais au moins un locus a un allèle "
+"désigné."
 
 #: ../data_query/0070_querying_isolate_data.rst:336
+#, fuzzy
 msgid ""
-"started - At least one locus has an allele designated.  The scheme mat be"
+"started - At least one locus has an allele designated.  The scheme may be"
 " complete or partial."
 msgstr ""
-"started - Au moins un locus a un allèle désigné. Le schéma pourrait être complet ou partiel."
+"started - Au moins un locus a un allèle désigné. Le schéma pourrait être "
+"complet ou partiel."
 
 #: ../data_query/0070_querying_isolate_data.rst:338
 msgid "not started - The scheme has no loci with alleles designated."
