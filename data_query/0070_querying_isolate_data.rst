@@ -333,7 +333,7 @@ within it.  Common filters are:
   * incomplete - One or more loci have not yet been designated.
   * partial - The scheme is incomplete, but at least one locus has an allele 
     designated.
-  * started - At least one locus has an allele designated.  The scheme mat be
+  * started - At least one locus has an allele designated.  The scheme may be
     complete or partial.
   * not started - The scheme has no loci with alleles designated.
 
