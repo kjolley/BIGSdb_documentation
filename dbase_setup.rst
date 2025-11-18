@@ -233,6 +233,12 @@ Any value set here can be overridden in a
     'yes'. If the all_plugins attribute is set to 'yes', the Blast plugin can 
     be disabled by setting this attribute to 'no'.
     
+* blast_record_limit
+
+  * Limit the number of records to analyse using blastn/blastp in BLAST plugin.
+    Default is 10,000. Note that there is a separate limit (tblastx_record_limit)
+    set for tblastx as this is much slower to run. The default for this is 500.
+    
 * BURST  
 
   * Enable BURST plugin: either 'yes' or 'no'. If no value is set then the 
@@ -874,6 +880,11 @@ Any value set here can be overridden in a
     active, a country field containing a defined list of allowed values and an
     integer year field must be defined in the isolates table.
     
+* tblastx_record_limit
+
+  * Limit the number of records to analyse using tblastx in BLAST plugin. The 
+    default for this is 500.
+
 * tblastx_tagging 
 
   * Sets whether tagging can be performed using TBLASTX: either 'yes' or 'no',
