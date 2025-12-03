@@ -889,9 +889,8 @@ https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 * last_updated [date] - Latest profile addition/modification date 
   (ISO 8601 format). 
 * profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. 
-  Alternatively, if allele_ids_only is set to a non-zero value, the array will contain objects consisting of
-  locus and allele_id keys for each allele. Pages are 100 records by default.  Page size can be modified 
-  using the page_size parameter.
+  Alternatively, if include_records is set to a non-zero value, the array will consist of full record objects. 
+  Pages are 100 records by default.  Page size can be modified using the page_size parameter.
 * paging [object] - Some or all of the following:
 
   * previous - URI to previous page of results
@@ -953,7 +952,11 @@ GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id} - Retrieve allelic 
 * scheme_id [integer] - Scheme id
 * profile_id [string/integer] - Profile id 
 
-**Optional parameters:** None
+**Optional parameters:** 
+
+* allele_ids_only [integer] - Set to non-zero value to use an object for each
+  allele consisting of locus and allele_id keys. This is instead of a URL that
+  links to the allele record.
 
 **Example request URI:** 
 https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
@@ -963,8 +966,9 @@ https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11
 * *primary_key_term* [string/integer] - The field name is the primary key, 
   e.g. ST.  The value is the primary key value (primary_id used as an 
   argument).
-* alleles [object] - :ref:`list of URIs to allele descriptions
-  <db_loci_locus_alleles_allele_id>`
+* alleles [array] - :ref:`list of URIs to allele descriptions
+  <db_loci_locus_alleles_allele_id>` or a list of objects containing locus and
+  allele_id keys if allele_ids_only is set to non-zero.
 * *other_scheme_fields* [string/integer] - Each scheme field will have its own
   value if defined.  The field name is the name of the field.
 * sender [string] - :ref:`URI to user details<db_users_user_id>` of sender
