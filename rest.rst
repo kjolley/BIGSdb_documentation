@@ -862,6 +862,11 @@ GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined 
 * page [integer]
 * page_size [integer]
 * return_all [integer] - Set to non-zero value to disable paging. 
+* include_records [integer] - Set to non-zero value to include array of profile 
+  records rather than links.
+* allele_ids_only [integer] - Set to non-zero value to use an object for each
+  allele consisting of locus and allele_id keys. This is instead of a URL that
+  links to the allele record.
 * added_after [date] - Include only profiles added after (but not on) specified 
   date (ISO 8601 format).
 * added_reldate [integer] - Include only profiles added within the specified
@@ -884,8 +889,9 @@ https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles
 * last_updated [date] - Latest profile addition/modification date 
   (ISO 8601 format). 
 * profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. 
-  Pages are 100 records by default.  Page size can be modified using the 
-  page_size parameter.
+  Alternatively, if allele_ids_only is set to a non-zero value, the array will contain objects consisting of
+  locus and allele_id keys for each allele. Pages are 100 records by default.  Page size can be modified 
+  using the page_size parameter.
 * paging [object] - Some or all of the following:
 
   * previous - URI to previous page of results
