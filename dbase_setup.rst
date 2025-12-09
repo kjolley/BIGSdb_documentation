@@ -1615,8 +1615,8 @@ of users. To do this, create a section in square brackets containing either
    overridden on a per user basis.
    
 It is also possible to override the allow_submissions, required, maindisplay, 
-default, hide, or curate_only attributes of a particular field using a file 
-called **field.overrides**. The field.overrides file uses the format 
+default, hide, no_curate or curate_only attributes of a particular field using 
+a file called **field.overrides**. The field.overrides file uses the format 
 'field:attribute="value"' on each line, e.g. ::
 
    date_received:required="yes"
