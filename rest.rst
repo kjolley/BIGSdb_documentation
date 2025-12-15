@@ -778,6 +778,11 @@ Includes links to allelic profiles (in seqdef databases, if appropriate).
   <db_schemes_scheme_id_fields_field>`
 * profiles [string] - URI to list of profile definitions (only seqdef databases)
 * profiles_csv [string] - URI to tab-delimited file of all scheme profiles
+* lincodes [object] containing - 
+
+  * thresholds [string] - semi-colon-separated list of allelic difference thresholds
+  * max_missing [integer] - maximum number of missing loci allowed for definition (seqdef db only)
+  * maindisplay [boolean] - show in main results table by default if scheme also enabled (isolate db only) 
 * curators [array] (seqdef databases) - list of 
   :ref:`URIs to user records<db_users_user_id>` of curators of the scheme
 * records [integer] - Number of profiles
