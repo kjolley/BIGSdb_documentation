@@ -35,9 +35,8 @@ have been set up, to include all loci belonging to that scheme.
 
 Additional fields can be selected to be included as metadata for use in 
 colouring nodes - select any fields you wish to include in the 'iTOL datasets'
-list. Multiple selections can be made by holding down Shift or Ctrl while 
-selecting. You can also choose how nodes are labeled by metadata - either by 
-colouring the labels or using coloured strips.
+list. Multiple selections can be made. You can also choose how nodes are 
+labeled by metadata - either by colouring the labels or using coloured strips.
 
 Click 'Submit' to start the analysis.
 
