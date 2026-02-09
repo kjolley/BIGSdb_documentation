@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2025, Keith Jolley
+# Copyright (C) 2014-2026, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-14 10:02+0100\n"
+"POT-Creation-Date: 2026-02-09 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,29 +45,29 @@ msgid "Select the isolates to include. The tree can be generated from concatenat
 msgstr ""
 
 #: ../data_analysis/itol.rst:36
-msgid "Additional fields can be selected to be included as metadata for use in colouring nodes - select any fields you wish to include in the 'iTOL datasets' list. Multiple selections can be made by holding down Shift or Ctrl while selecting. You can also choose how nodes are labeled by metadata - either by colouring the labels or using coloured strips."
+msgid "Additional fields can be selected to be included as metadata for use in colouring nodes - select any fields you wish to include in the 'iTOL datasets' list. Multiple selections can be made. You can also choose how nodes are labeled by metadata - either by colouring the labels or using coloured strips."
 msgstr ""
 
-#: ../data_analysis/itol.rst:42
+#: ../data_analysis/itol.rst:41
 msgid "Click 'Submit' to start the analysis."
 msgstr ""
 
-#: ../data_analysis/itol.rst:46
+#: ../data_analysis/itol.rst:45
 msgid "The job will be sent to the job queue. When it has finished, the generated tree and associated metadata will be uploaded to the Interactive Tree of Life website (https://itol.embl.de/). Click the button marked 'Launch iTOL'."
 msgstr ""
 
-#: ../data_analysis/itol.rst:52
+#: ../data_analysis/itol.rst:51
 msgid "Your browser will open the iTOL website with your tree."
 msgstr ""
 
-#: ../data_analysis/itol.rst:56
+#: ../data_analysis/itol.rst:55
 msgid "You can manipulate the tree in the browser, and display metadata by selecting the appropriate toggle."
 msgstr ""
 
-#: ../data_analysis/itol.rst:61
+#: ../data_analysis/itol.rst:60
 msgid "The tree layout can be changed by clicking the 'Basic tab' and, for example, selecting a circular display mode."
 msgstr ""
 
-#: ../data_analysis/itol.rst:66
+#: ../data_analysis/itol.rst:65
 msgid "See the `detailed documentation on the iTOL website <https://itol.embl.de/help.cgi>`_ for more information about manipulating and exporting trees."
 msgstr ""

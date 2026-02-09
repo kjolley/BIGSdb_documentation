@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.51.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-07 07:17+0100\n"
+"POT-Creation-Date: 2026-02-09 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: ../dbase_setup.rst:3
 msgid "Database setup"
@@ -317,39 +317,39 @@ msgstr ""
 msgid "Top level element. Contains child elements: system and field.::"
 msgstr ""
 
-#: ../dbase_setup.rst:185 ../dbase_setup.rst:1181
+#: ../dbase_setup.rst:185 ../dbase_setup.rst:1192
 msgid ""
 "Any value set here can be overridden in a :ref:`system.overrides "
 "file<system_overrides>`."
 msgstr ""
 
-#: ../dbase_setup.rst:188 ../dbase_setup.rst:1184
+#: ../dbase_setup.rst:188 ../dbase_setup.rst:1195
 msgid "**authentication**"
 msgstr ""
 
-#: ../dbase_setup.rst:190 ../dbase_setup.rst:1186
+#: ../dbase_setup.rst:190 ../dbase_setup.rst:1197
 msgid ""
 "Method of authentication: either 'builtin' or 'apache'. See :ref:`user "
 "authentication <user_authentication>`."
 msgstr ""
 
-#: ../dbase_setup.rst:193 ../dbase_setup.rst:1189
+#: ../dbase_setup.rst:193 ../dbase_setup.rst:1200
 msgid "**db**"
 msgstr ""
 
-#: ../dbase_setup.rst:195 ../dbase_setup.rst:1191
+#: ../dbase_setup.rst:195 ../dbase_setup.rst:1202
 msgid "Name of database on system."
 msgstr ""
 
-#: ../dbase_setup.rst:197 ../dbase_setup.rst:1193
+#: ../dbase_setup.rst:197 ../dbase_setup.rst:1204
 msgid "**dbtype**"
 msgstr ""
 
-#: ../dbase_setup.rst:199 ../dbase_setup.rst:1195
+#: ../dbase_setup.rst:199 ../dbase_setup.rst:1206
 msgid "Type of database: either 'isolates' or 'sequences'."
 msgstr ""
 
-#: ../dbase_setup.rst:201 ../dbase_setup.rst:1197
+#: ../dbase_setup.rst:201 ../dbase_setup.rst:1208
 msgid "**description**"
 msgstr ""
 
@@ -359,11 +359,11 @@ msgid ""
 "'formatted_description')."
 msgstr ""
 
-#: ../dbase_setup.rst:206 ../dbase_setup.rst:1201
+#: ../dbase_setup.rst:206 ../dbase_setup.rst:1212
 msgid "align_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:208 ../dbase_setup.rst:1203
+#: ../dbase_setup.rst:208 ../dbase_setup.rst:1214
 msgid ""
 "Overrides the sequence export record alignment limit in the Sequence "
 "Export plugin.  Default: '200'."
@@ -379,7 +379,7 @@ msgid ""
 "default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:216 ../dbase_setup.rst:1222
+#: ../dbase_setup.rst:216 ../dbase_setup.rst:1233
 msgid "alternative_codon_tables"
 msgstr ""
 
@@ -414,11 +414,23 @@ msgid ""
 " be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:236 ../dbase_setup.rst:1229
+#: ../dbase_setup.rst:236
+msgid "blast_record_limit"
+msgstr ""
+
+#: ../dbase_setup.rst:238
+msgid ""
+"Limit the number of records to analyse using blastn/blastp in BLAST "
+"plugin. Default is 10,000. Note that there is a separate limit "
+"(tblastx_record_limit) set for tblastx as this is much slower to run. The"
+" default for this is 500."
+msgstr ""
+
+#: ../dbase_setup.rst:242 ../dbase_setup.rst:1240
 msgid "BURST"
 msgstr ""
 
-#: ../dbase_setup.rst:238 ../dbase_setup.rst:1231
+#: ../dbase_setup.rst:244 ../dbase_setup.rst:1242
 msgid ""
 "Enable BURST plugin: either 'yes' or 'no'. If no value is set then the "
 "plugin will not be available unless the all_plugins attribute is set to "
@@ -426,25 +438,25 @@ msgid ""
 " be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:243
+#: ../dbase_setup.rst:249
 msgid "cache_schemes"
 msgstr ""
 
-#: ../dbase_setup.rst:245
+#: ../dbase_setup.rst:251
 msgid ""
 "Enable automatic refreshing of scheme field caches when batch adding new "
 "isolates: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:247
+#: ../dbase_setup.rst:253
 msgid "See :ref:`scheme caching<scheme_caching>`."
 msgstr ""
 
-#: ../dbase_setup.rst:249
+#: ../dbase_setup.rst:255
 msgid "CodonUsage"
 msgstr ""
 
-#: ../dbase_setup.rst:251
+#: ../dbase_setup.rst:257
 msgid ""
 "Enable Codon Usage plugin: either 'yes' or 'no'. If no value is set then "
 "the plugin will not be available unless the all_plugins attribute is set "
@@ -452,11 +464,11 @@ msgid ""
 "plugin can be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:256 ../dbase_setup.rst:1236
+#: ../dbase_setup.rst:262 ../dbase_setup.rst:1247
 msgid "codon_table"
 msgstr ""
 
-#: ../dbase_setup.rst:258
+#: ../dbase_setup.rst:264
 msgid ""
 "Set the id of the global codon table to use. See "
 "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for a list with "
@@ -465,50 +477,50 @@ msgid ""
 "\"11\"."
 msgstr ""
 
-#: ../dbase_setup.rst:263
+#: ../dbase_setup.rst:269
 msgid "codon_usage_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:265
+#: ../dbase_setup.rst:271
 msgid "Overrides the record limit for the Codon Usage plugin.  Default: '500'."
 msgstr ""
 
-#: ../dbase_setup.rst:267
+#: ../dbase_setup.rst:273
 msgid "contig_analysis_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:269
+#: ../dbase_setup.rst:275
 msgid ""
 "Overrides the isolate number limit for the Contig Export plugin. Default:"
 " '1000'."
 msgstr ""
 
-#: ../dbase_setup.rst:272
+#: ../dbase_setup.rst:278
 msgid "ContigExport"
 msgstr ""
 
-#: ../dbase_setup.rst:274
+#: ../dbase_setup.rst:280
 msgid ""
 "Enable contig export plugin: either 'yes' or 'no'. If the all_plugins "
 "attribute is set to 'yes', the contig export plugin can be disabled by "
 "setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:278
+#: ../dbase_setup.rst:284
 msgid "country_field"
 msgstr ""
 
-#: ../dbase_setup.rst:280
+#: ../dbase_setup.rst:286
 msgid ""
 "Sets the field in which country is stored. Default: 'country'. This is "
 "needed for mapping."
 msgstr ""
 
-#: ../dbase_setup.rst:283 ../dbase_setup.rst:1242
+#: ../dbase_setup.rst:289 ../dbase_setup.rst:1253
 msgid "curate_config"
 msgstr ""
 
-#: ../dbase_setup.rst:285 ../dbase_setup.rst:1244
+#: ../dbase_setup.rst:291 ../dbase_setup.rst:1255
 msgid ""
 "The database configuration that should be used for curation if different "
 "from the current configuration. This is used when the submission system "
@@ -516,48 +528,48 @@ msgid ""
 "for curators load the correct database configuration."
 msgstr ""
 
-#: ../dbase_setup.rst:290
+#: ../dbase_setup.rst:296
 msgid "curate_link"
 msgstr ""
 
-#: ../dbase_setup.rst:292
+#: ../dbase_setup.rst:298
 msgid ""
 "URL to curator's interface, which can be relative or absolute. This will "
 "be used to create a link in the public interface dropdown menu."
 msgstr ""
 
-#: ../dbase_setup.rst:295 ../dbase_setup.rst:1249
+#: ../dbase_setup.rst:301 ../dbase_setup.rst:1260
 msgid "curate_path_includes"
 msgstr ""
 
-#: ../dbase_setup.rst:297
+#: ../dbase_setup.rst:303
 msgid ""
 "Partial path of the bigscurate.pl script used to curate the database. See"
 " user authentication."
 msgstr ""
 
-#: ../dbase_setup.rst:300 ../dbase_setup.rst:1254 ../dbase_setup.rst:1543
+#: ../dbase_setup.rst:306 ../dbase_setup.rst:1265 ../dbase_setup.rst:1554
 msgid "curate_script"
 msgstr ""
 
-#: ../dbase_setup.rst:302
+#: ../dbase_setup.rst:308
 msgid ""
 "Relative web path to curation script. Default ‘bigscurate.pl’ (version "
 "1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:304
+#: ../dbase_setup.rst:310
 msgid ""
 "This is only needed if automated submissions are enabled. If "
 "bigscurate.pl is in a different directory from bigsdb.pl, you need to "
 "include the whole web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl."
 msgstr ""
 
-#: ../dbase_setup.rst:308 ../dbase_setup.rst:1262
+#: ../dbase_setup.rst:314 ../dbase_setup.rst:1273
 msgid "curators_only"
 msgstr ""
 
-#: ../dbase_setup.rst:310 ../dbase_setup.rst:1264
+#: ../dbase_setup.rst:316 ../dbase_setup.rst:1275
 msgid ""
 "Set to 'yes' to prevent ordinary authenticated users having access to "
 "database configuration. This is only effective if read_access is set to "
@@ -566,43 +578,43 @@ msgid ""
 "configuration used by standard users. Default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:316 ../dbase_setup.rst:1270
+#: ../dbase_setup.rst:322 ../dbase_setup.rst:1281
 msgid "daily_pending_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:318 ../dbase_setup.rst:1272
+#: ../dbase_setup.rst:324 ../dbase_setup.rst:1283
 msgid ""
 "Overrides the daily limit on pending submissions that a user can submit "
 "via the web submission system. Default: '15'."
 msgstr ""
 
-#: ../dbase_setup.rst:321 ../dbase_setup.rst:1275
+#: ../dbase_setup.rst:327 ../dbase_setup.rst:1286
 msgid "daily_rest_submissions_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:323 ../dbase_setup.rst:1277
+#: ../dbase_setup.rst:329 ../dbase_setup.rst:1288
 msgid ""
 "Overrides the limit on number of submissions that can be made to the "
 "database via the RESTful interface. This is useful to prevent flooding of"
 " the submission system by aberrant scripts. Default: '100'."
 msgstr ""
 
-#: ../dbase_setup.rst:327
+#: ../dbase_setup.rst:333
 msgid "DatasetExport"
 msgstr ""
 
-#: ../dbase_setup.rst:329
+#: ../dbase_setup.rst:335
 msgid ""
 "Enable Export plugin: either 'yes' or 'no'. If the all_plugins attribute "
 "is set to 'yes', the plugin can be disabled by setting this attribute to "
 "'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:333
+#: ../dbase_setup.rst:339
 msgid "default_access"
 msgstr ""
 
-#: ../dbase_setup.rst:335
+#: ../dbase_setup.rst:341
 msgid ""
 "The default access to the database configuration, either 'allow' or "
 "'deny'. If 'allow', then specific users can be denied access by creating "
@@ -613,22 +625,22 @@ msgid ""
 "<default_access>`."
 msgstr ""
 
-#: ../dbase_setup.rst:343
+#: ../dbase_setup.rst:349
 msgid "default_embargo"
 msgstr ""
 
-#: ../dbase_setup.rst:345
+#: ../dbase_setup.rst:351
 msgid ""
 "Overrides the value set in bigsdb.conf. This is the default embargo "
 "period that can be requested when submitting new isolate records. Values "
 "are in months and should be positive integers."
 msgstr ""
 
-#: ../dbase_setup.rst:349
+#: ../dbase_setup.rst:355
 msgid "default_private_records"
 msgstr ""
 
-#: ../dbase_setup.rst:351
+#: ../dbase_setup.rst:357
 msgid ""
 "The default number of private isolate records that a user can upload. The"
 " user account must have a status of either 'submitter', 'curator', or "
@@ -637,123 +649,123 @@ msgid ""
 "Changing it will not affect the quotas of existing users. Default: '0'."
 msgstr ""
 
-#: ../dbase_setup.rst:357
+#: ../dbase_setup.rst:363
 msgid "default_seqdef_config"
 msgstr ""
 
-#: ../dbase_setup.rst:359
+#: ../dbase_setup.rst:365
 msgid ""
 "Isolate databases only: Name of the default seqdef database configuration"
 " used with this database. Used to automatically fill in details when "
 "adding new loci."
 msgstr ""
 
-#: ../dbase_setup.rst:363
+#: ../dbase_setup.rst:369
 msgid "default_seqdef_dbase"
 msgstr ""
 
-#: ../dbase_setup.rst:365
+#: ../dbase_setup.rst:371
 msgid ""
 "Isolate databases only: Name of the default seqdef database used with "
 "this database. Used to automatically fill in details when adding new "
 "loci."
 msgstr ""
 
-#: ../dbase_setup.rst:368
+#: ../dbase_setup.rst:374
 msgid "default_seqdef_script"
 msgstr ""
 
-#: ../dbase_setup.rst:370
+#: ../dbase_setup.rst:376
 msgid ""
 "Isolate databases only: URL of BIGSdb script running the seqdef database "
 "(default: '/cgi-bin/bigsdb/bigsdb.pl')."
 msgstr ""
 
-#: ../dbase_setup.rst:373 ../dbase_setup.rst:1281
+#: ../dbase_setup.rst:379 ../dbase_setup.rst:1292
 msgid "delete_retire_only"
 msgstr ""
 
-#: ../dbase_setup.rst:375
+#: ../dbase_setup.rst:381
 msgid ""
 "Set to 'yes' to retire the id of any isolate that is deleted. This "
 "prevents re-use of ids. This setting will override the global setting in "
 "bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:379
+#: ../dbase_setup.rst:385
 msgid "disable_updates"
 msgstr ""
 
-#: ../dbase_setup.rst:381
+#: ../dbase_setup.rst:387
 msgid ""
 "Set to 'yes' to prevent updates. This is useful when moving databases or "
 "temporarily running on a backup server."
 msgstr ""
 
-#: ../dbase_setup.rst:384
+#: ../dbase_setup.rst:390
 msgid "disable_update_message"
 msgstr ""
 
-#: ../dbase_setup.rst:386
+#: ../dbase_setup.rst:392
 msgid "Message shown when updates are disabled."
 msgstr ""
 
-#: ../dbase_setup.rst:388
+#: ../dbase_setup.rst:394
 msgid "display_assembly_checks"
 msgstr ""
 
-#: ../dbase_setup.rst:390
+#: ../dbase_setup.rst:396
 msgid ""
 "Add a column to the isolate table results to display the results of "
 "assembly checks (if set up). This can be overridden by user preferences. "
 "Set 'yes' or 'no', default is 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:394
+#: ../dbase_setup.rst:400
 msgid "display_contig_count"
 msgstr ""
 
-#: ../dbase_setup.rst:396
+#: ../dbase_setup.rst:402
 msgid ""
 "Add a column to the isolate table results to display the number of "
 "contigs in the record's assembly. This can be overridden by user "
 "preferences. Set 'yes' or 'no', default is 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:400
+#: ../dbase_setup.rst:406
 msgid "display_seqbin_size"
 msgstr ""
 
-#: ../dbase_setup.rst:402
+#: ../dbase_setup.rst:408
 msgid ""
 "Add a column to the isolate table results to display the total length of "
 "a record's assembly. This can be overridden by user preferences. Set "
 "'yes' or 'no', default is 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:406
+#: ../dbase_setup.rst:412
 msgid "eav_fields"
 msgstr ""
 
-#: ../dbase_setup.rst:408
+#: ../dbase_setup.rst:414
 msgid "Name to call sparsely-populated fields. Default: 'secondary metadata'."
 msgstr ""
 
-#: ../dbase_setup.rst:410
+#: ../dbase_setup.rst:416
 msgid "eav_field_icon"
 msgstr ""
 
-#: ../dbase_setup.rst:412
+#: ../dbase_setup.rst:418
 msgid ""
 "Icon class from FontAwesome to use on isolate info page for sparsely- "
 "populated fields. Default 'fas fa-microscope'."
 msgstr ""
 
-#: ../dbase_setup.rst:415
+#: ../dbase_setup.rst:421
 msgid "eav_groups"
 msgstr ""
 
-#: ../dbase_setup.rst:417
+#: ../dbase_setup.rst:423
 msgid ""
 "Comma-separated list of category names that sparsely-populated fields can"
 " be grouped in to. If this value is set, a category drop-down list will "
@@ -763,29 +775,29 @@ msgid ""
 "syringe,Risk factors|fas fa-smoking'."
 msgstr ""
 
-#: ../dbase_setup.rst:424
+#: ../dbase_setup.rst:430
 msgid "embargo_enabled"
 msgstr ""
 
-#: ../dbase_setup.rst:426
+#: ../dbase_setup.rst:432
 msgid "Overrides the value set in bigsdb.conf. Set to either 'yes' or 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:428
+#: ../dbase_setup.rst:434
 msgid "export_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:430
+#: ../dbase_setup.rst:436
 msgid ""
 "Overrides the default allowed number of data points (isolates x columns) "
 "to export. Default: '25000000'."
 msgstr ""
 
-#: ../dbase_setup.rst:433
+#: ../dbase_setup.rst:439
 msgid "fast_scan"
 msgstr ""
 
-#: ../dbase_setup.rst:435
+#: ../dbase_setup.rst:441
 msgid ""
 "Sets whether fast mode scanning is enabled via the web interface. This "
 "will scan all loci together, using exemplar sequences. In cases where "
@@ -795,11 +807,11 @@ msgid ""
 "defined if you enable this option. Set to 'yes' to enable. Default: 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:443
+#: ../dbase_setup.rst:449
 msgid "field_groups"
 msgstr ""
 
-#: ../dbase_setup.rst:445
+#: ../dbase_setup.rst:451
 msgid ""
 "Comma-separated list of category names that standard isolate fields can "
 "be grouped in to in the isolate information page. You can add an icon to "
@@ -808,22 +820,22 @@ msgid ""
 "capsules'."
 msgstr ""
 
-#: ../dbase_setup.rst:450
+#: ../dbase_setup.rst:456
 msgid "fieldgroup1 - fieldgroup10"
 msgstr ""
 
-#: ../dbase_setup.rst:452
+#: ../dbase_setup.rst:458
 msgid ""
 "Allows multiple fields to be queried as a group. Value should be the name"
 " of the group followed by a colon (:) followed by a comma-separated list "
 "of fields to group, e.g. identifiers:id,strain,other_name."
 msgstr ""
 
-#: ../dbase_setup.rst:456 ../dbase_setup.rst:1315
+#: ../dbase_setup.rst:462 ../dbase_setup.rst:1326
 msgid "formatted_description"
 msgstr ""
 
-#: ../dbase_setup.rst:458 ../dbase_setup.rst:1317
+#: ../dbase_setup.rst:464 ../dbase_setup.rst:1328
 msgid ""
 "Markdown formatted description of database. If set, this will be used "
 "throughout the HTML interface wherever formatting can be applied (main "
@@ -831,31 +843,31 @@ msgid ""
 "only supports *\\*italics\\** and **\\*\\*bold\\*\\***."
 msgstr ""
 
-#: ../dbase_setup.rst:463
+#: ../dbase_setup.rst:469
 msgid "genepresence_record_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:465
+#: ../dbase_setup.rst:471
 msgid ""
 "Overrides the record number limit (isolates x loci) for the Gene Presence"
 " plugin. Default: 500000 (this can also be set globally in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:468
+#: ../dbase_setup.rst:474
 msgid "genepresence_taxa_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:470
+#: ../dbase_setup.rst:476
 msgid ""
 "Overrides the isolate limit for the Gene Presence plugin. Default: 10000 "
 "(this can also be set globally in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:473
+#: ../dbase_setup.rst:479
 msgid "GenomeComparator"
 msgstr ""
 
-#: ../dbase_setup.rst:475
+#: ../dbase_setup.rst:481
 msgid ""
 "Enable Genome Comparator plugin: either 'yes' or 'no'. If no value is set"
 " then the plugin will not be available unless the all_plugins attribute "
@@ -863,31 +875,31 @@ msgid ""
 " Comparator plugin can be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:480
+#: ../dbase_setup.rst:486
 msgid "genome_comparator_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:482
+#: ../dbase_setup.rst:488
 msgid ""
 "Overrides the isolate number limit for the Genome Comparator plugin. "
 "Default: 1000 (this can also be set globally in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:485
+#: ../dbase_setup.rst:491
 msgid "genome_comparator_max_ref_loci"
 msgstr ""
 
-#: ../dbase_setup.rst:487
+#: ../dbase_setup.rst:493
 msgid ""
 "Overrides the limit on number of loci allowed in a reference genome. "
 "Default: 10000."
 msgstr ""
 
-#: ../dbase_setup.rst:490
+#: ../dbase_setup.rst:496
 msgid "genome_comparator_threads"
 msgstr ""
 
-#: ../dbase_setup.rst:492
+#: ../dbase_setup.rst:498
 msgid ""
 "The number of threads to use for data gathering (BLAST, database queries)"
 " to populate data structure for Genome Comparator analysis. You should "
@@ -895,108 +907,108 @@ msgid ""
 "the way isolates are queued. Default: '2'."
 msgstr ""
 
-#: ../dbase_setup.rst:498 ../dbase_setup.rst:1322
+#: ../dbase_setup.rst:504 ../dbase_setup.rst:1333
 msgid "genome_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:500
+#: ../dbase_setup.rst:506
 msgid ""
 "Enable genome submissions (automated submission system): either 'yes' or "
 "'no', default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:502
+#: ../dbase_setup.rst:508
 msgid ""
 "To enable, you will also need to set submissions=\"yes\". By default, "
 "genome submissions are enabled."
 msgstr ""
 
-#: ../dbase_setup.rst:505
+#: ../dbase_setup.rst:511
 msgid "hide_unused_schemes"
 msgstr ""
 
-#: ../dbase_setup.rst:507
+#: ../dbase_setup.rst:513
 msgid ""
 "Sets whether a scheme is shown in a main results table if none of the "
 "isolates on that page have any data for the specific scheme: either 'yes'"
 " or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:511
+#: ../dbase_setup.rst:517
 msgid "host"
 msgstr ""
 
-#: ../dbase_setup.rst:513
+#: ../dbase_setup.rst:519
 msgid ""
 "Host name/IP address of machine hosting isolate database, default "
 "'localhost'."
 msgstr ""
 
-#: ../dbase_setup.rst:516
+#: ../dbase_setup.rst:522
 msgid "itol_record_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:518
+#: ../dbase_setup.rst:524
 msgid ""
 "Overrides the maximum number of records that can be included in an ITOL "
 "job. Default: 2000 (this can also be set globally in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:521
+#: ../dbase_setup.rst:527
 msgid "itol_seq_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:523
+#: ../dbase_setup.rst:529
 msgid ""
 "Overrides the maximum number of sequeneces (records x loci) that can be "
 "included in an ITOL job. Default: 100,000 (this can also be set globally "
 "in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:527 ../dbase_setup.rst:1338
+#: ../dbase_setup.rst:533 ../dbase_setup.rst:1349
 msgid "job_priority"
 msgstr ""
 
-#: ../dbase_setup.rst:529 ../dbase_setup.rst:1340
+#: ../dbase_setup.rst:535 ../dbase_setup.rst:1351
 msgid "Integer with default job priority for offline jobs (default:5)."
 msgstr ""
 
-#: ../dbase_setup.rst:531 ../dbase_setup.rst:1342
+#: ../dbase_setup.rst:537 ../dbase_setup.rst:1353
 msgid "job_quota"
 msgstr ""
 
-#: ../dbase_setup.rst:533 ../dbase_setup.rst:1344
+#: ../dbase_setup.rst:539 ../dbase_setup.rst:1355
 msgid ""
 "Integer with number of offline jobs that can be queued or currently "
 "running for this database."
 msgstr ""
 
-#: ../dbase_setup.rst:536 ../dbase_setup.rst:1347
+#: ../dbase_setup.rst:542 ../dbase_setup.rst:1358
 msgid "jobs_require_login"
 msgstr ""
 
-#: ../dbase_setup.rst:538 ../dbase_setup.rst:1349
+#: ../dbase_setup.rst:544 ../dbase_setup.rst:1360
 msgid ""
 "Force users to log in to run offline jobs: either 'yes' or 'no'. This "
 "value overrides the value set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:541
+#: ../dbase_setup.rst:547
 msgid "Kaptive"
 msgstr ""
 
-#: ../dbase_setup.rst:543
+#: ../dbase_setup.rst:549
 msgid ""
 "Enable Kaptive plugin: either 'yes' or 'no'. If no value is set then the "
 "plugin will not be available even if the all_plugins attribute is set to "
 "'yes'. Make sure that kaptive_path is set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:547
+#: ../dbase_setup.rst:553
 msgid "kaptive_dbs"
 msgstr ""
 
-#: ../dbase_setup.rst:549
+#: ../dbase_setup.rst:555
 msgid ""
 "Comma-separated list of Kaptive databases to enable. Choice is kpsc_k "
 "(*Klebsiella* K locus), kpsc_o (*Klebsiella* O locus), ab_k "
@@ -1004,11 +1016,11 @@ msgid ""
 " OC locus), e.g. 'kpsc_k,kpsc_o'."
 msgstr ""
 
-#: ../dbase_setup.rst:554
+#: ../dbase_setup.rst:560
 msgid "kaptive_view"
 msgstr ""
 
-#: ../dbase_setup.rst:556
+#: ../dbase_setup.rst:562
 msgid ""
 "Running Kaptive may not be valid for all isolates in a database, e.g. the"
 " *A. baumannii* databases may not be suitable for screening other "
@@ -1018,33 +1030,33 @@ msgid ""
 " the name of the view with this attribute, default is 'isolates'."
 msgstr ""
 
-#: ../dbase_setup.rst:563
+#: ../dbase_setup.rst:569
 msgid "kaptive_view_desc"
 msgstr ""
 
-#: ../dbase_setup.rst:565
+#: ../dbase_setup.rst:571
 msgid ""
 "If kaptive_view is set, you can add a description which will be used in "
 "the interface to explain why isolates may not be anaysed, e.g. "
 "'Restricted to A. baumannii isolates only.'."
 msgstr ""
 
-#: ../dbase_setup.rst:569
+#: ../dbase_setup.rst:575
 msgid "Kleborate"
 msgstr ""
 
-#: ../dbase_setup.rst:571
+#: ../dbase_setup.rst:577
 msgid ""
 "Enable Kleborate plugin: either 'yes' or 'no'. If no value is set then "
 "the plugin will not be available even if the all_plugins attribute is set"
 " to 'yes'. Make sure that kleborate_path is set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:575
+#: ../dbase_setup.rst:581
 msgid "kleborate_preset"
 msgstr ""
 
-#: ../dbase_setup.rst:577
+#: ../dbase_setup.rst:583
 msgid ""
 "Select the preset modules to use (if Kleborate v3 is used). Available "
 "options are kpsc (for Klebsiella pneumoniae species complex), kosc (for "
@@ -1052,32 +1064,32 @@ msgid ""
 "coli). Default is kpsc."
 msgstr ""
 
-#: ../dbase_setup.rst:582
+#: ../dbase_setup.rst:588
 msgid "labelfield"
 msgstr ""
 
-#: ../dbase_setup.rst:584
+#: ../dbase_setup.rst:590
 msgid ""
 "Field that is used to describe record in isolate info page, default "
 "'isolate'."
 msgstr ""
 
-#: ../dbase_setup.rst:587
+#: ../dbase_setup.rst:593
 msgid "locus_aliases"
 msgstr ""
 
-#: ../dbase_setup.rst:589
+#: ../dbase_setup.rst:595
 msgid ""
 "Display locus aliases and use them in dropdown lists by default: must be "
 "either 'yes' or 'no', default 'no'. This option can be overridden by a "
 "user preference."
 msgstr ""
 
-#: ../dbase_setup.rst:593
+#: ../dbase_setup.rst:599
 msgid "locus_superscript_prefix"
 msgstr ""
 
-#: ../dbase_setup.rst:595
+#: ../dbase_setup.rst:601
 msgid ""
 "Superscript the first letter of a locus name if it is immediately "
 "following by an underscore, e.g. f_abcZ would be displayed as fabcZ "
@@ -1085,75 +1097,75 @@ msgid ""
 "can be used to designate gene fragments (or any other meaning you like)."
 msgstr ""
 
-#: ../dbase_setup.rst:600 ../dbase_setup.rst:1391
+#: ../dbase_setup.rst:606 ../dbase_setup.rst:1402
 msgid "login_to_show_after_date"
 msgstr ""
 
-#: ../dbase_setup.rst:602
+#: ../dbase_setup.rst:608
 msgid ""
 "Set a date (in yyyy-mm-dd format) that is the cut-off date for display or"
 " export of data if not logged in. If set, isolate display or export will "
 "only be available for records that were added on or before this date."
 msgstr ""
 
-#: ../dbase_setup.rst:606
+#: ../dbase_setup.rst:612
 msgid "maindisplay_aliases"
 msgstr ""
 
-#: ../dbase_setup.rst:608
+#: ../dbase_setup.rst:614
 msgid ""
 "Default setting for whether isolates aliases are displayed in main "
 "results tables: either 'yes' or 'no', default 'no'. This setting can be "
 "overridden by individual user preferences."
 msgstr ""
 
-#: ../dbase_setup.rst:612 ../dbase_setup.rst:2379
+#: ../dbase_setup.rst:618 ../dbase_setup.rst:2390
 msgid "max_contigs"
 msgstr ""
 
-#: ../dbase_setup.rst:614
+#: ../dbase_setup.rst:620
 msgid ""
 "Number of contigs above which genome submissions will be rejected. "
 "Default: 1000"
 msgstr ""
 
-#: ../dbase_setup.rst:617
+#: ../dbase_setup.rst:623
 msgid "max_embargo"
 msgstr ""
 
-#: ../dbase_setup.rst:619
+#: ../dbase_setup.rst:625
 msgid ""
 "Overrides the value set in bigsdb.conf. This is the maximum embargo "
 "period that can be set by a curator on existing isolate records. Values "
 "are in months and should be positive integers."
 msgstr ""
 
-#: ../dbase_setup.rst:623
+#: ../dbase_setup.rst:629
 msgid "max_initital_embargo"
 msgstr ""
 
-#: ../dbase_setup.rst:625
+#: ../dbase_setup.rst:631
 msgid ""
 "Overrides the value set in bigsdb.conf. This is the maximum embargo "
 "period that can be requested when submitting new isolate records. Values "
 "are in months and should be positive integers."
 msgstr ""
 
-#: ../dbase_setup.rst:629
+#: ../dbase_setup.rst:635
 msgid "max_total_length"
 msgstr ""
 
-#: ../dbase_setup.rst:631
+#: ../dbase_setup.rst:637
 msgid ""
 "Total length (bp) above which genome submissions will be rejected. "
 "Default: 15000000"
 msgstr ""
 
-#: ../dbase_setup.rst:634
+#: ../dbase_setup.rst:640
 msgid "Microreact"
 msgstr ""
 
-#: ../dbase_setup.rst:636
+#: ../dbase_setup.rst:642
 msgid ""
 "Enable Microreact plugin: either 'yes' or 'no'. If no value is set then "
 "the plugin will not be available unless the all_plugins attribute is set "
@@ -1165,69 +1177,69 @@ msgid ""
 "bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:644
+#: ../dbase_setup.rst:650
 msgid "microreact_country_field"
 msgstr ""
 
-#: ../dbase_setup.rst:646
+#: ../dbase_setup.rst:652
 msgid "Overrides the field in which country is stored. Default: 'country'"
 msgstr ""
 
-#: ../dbase_setup.rst:648
+#: ../dbase_setup.rst:654
 msgid "microreact_record_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:650
+#: ../dbase_setup.rst:656
 msgid ""
 "Overrides the maximum number of records that can be included in a "
 "Microreact job. Default: 2000 (this can also be set globally in "
 "bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:654
+#: ../dbase_setup.rst:660
 msgid "microreact_seq_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:656
+#: ../dbase_setup.rst:662
 msgid ""
 "Overrides the maximum number of sequences (records x loci) that can be "
 "included in an Microreact job. Default: 100,000 (this can also be set "
 "globally in bigsdb.conf)."
 msgstr ""
 
-#: ../dbase_setup.rst:660
+#: ../dbase_setup.rst:666
 msgid "microreact_year_field"
 msgstr ""
 
-#: ../dbase_setup.rst:662
+#: ../dbase_setup.rst:668
 msgid "Overrides the field in which year is stored. Default: 'year'"
 msgstr ""
 
-#: ../dbase_setup.rst:664 ../dbase_setup.rst:2384
+#: ../dbase_setup.rst:670 ../dbase_setup.rst:2395
 msgid "min_n50"
 msgstr ""
 
-#: ../dbase_setup.rst:666
+#: ../dbase_setup.rst:672
 msgid ""
 "Minimum N50 for genome submissions below which the submission will be "
 "rejected. Default: 10000"
 msgstr ""
 
-#: ../dbase_setup.rst:669 ../dbase_setup.rst:2389
+#: ../dbase_setup.rst:675 ../dbase_setup.rst:2400
 msgid "min_total_length"
 msgstr ""
 
-#: ../dbase_setup.rst:671
+#: ../dbase_setup.rst:677
 msgid ""
 "Minimum total length (bp) for genome submissions below which the "
 "submission will be rejected. Default: 1000000."
 msgstr ""
 
-#: ../dbase_setup.rst:674
+#: ../dbase_setup.rst:680
 msgid "min_genome_size"
 msgstr ""
 
-#: ../dbase_setup.rst:676
+#: ../dbase_setup.rst:682
 msgid ""
 "Size in bp that is the minimum size of the sequence bin considered to "
 "represent a whole genome. This is used in the REST interface to "
@@ -1236,67 +1248,67 @@ msgid ""
 "appropriate search to return genome records."
 msgstr ""
 
-#: ../dbase_setup.rst:682
+#: ../dbase_setup.rst:688
 msgid "new_version"
 msgstr ""
 
-#: ../dbase_setup.rst:684
+#: ../dbase_setup.rst:690
 msgid ""
 "Set to 'no' to prevent copying field value when creating a new version of"
 " the isolate record."
 msgstr ""
 
-#: ../dbase_setup.rst:687
+#: ../dbase_setup.rst:693
 msgid "noshow"
 msgstr ""
 
-#: ../dbase_setup.rst:689
+#: ../dbase_setup.rst:695
 msgid "Comma-separated list of fields not to use in breakdown statistic plugins."
 msgstr ""
 
-#: ../dbase_setup.rst:691
+#: ../dbase_setup.rst:697
 msgid "no_publication_filter"
 msgstr ""
 
-#: ../dbase_setup.rst:693
+#: ../dbase_setup.rst:699
 msgid ""
 "Isolate databases only: Switches off display of publication filter in "
 "isolate query form by default: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:696
+#: ../dbase_setup.rst:702
 msgid "only_sets"
 msgstr ""
 
-#: ../dbase_setup.rst:698
+#: ../dbase_setup.rst:704
 msgid ""
 "Don't allow option to view the 'whole database' - only list sets that "
 "have been defined: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:701
+#: ../dbase_setup.rst:707
 msgid "password"
 msgstr ""
 
-#: ../dbase_setup.rst:703
+#: ../dbase_setup.rst:709
 msgid "Password for access to isolates database, default 'remote'."
 msgstr ""
 
-#: ../dbase_setup.rst:705
+#: ../dbase_setup.rst:711
 msgid "pcr_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:707
+#: ../dbase_setup.rst:713
 msgid ""
 "Overrides the isolate number limit for the in silico PCR plugin. Default:"
 " '10000'."
 msgstr ""
 
-#: ../dbase_setup.rst:710
+#: ../dbase_setup.rst:716
 msgid "PhyloViz"
 msgstr ""
 
-#: ../dbase_setup.rst:712
+#: ../dbase_setup.rst:718
 msgid ""
 "Enable third party PhyloViz plugin: either 'yes' or 'no'. If no value is "
 "set then the plugin will not be available unless the all_plugins "
@@ -1304,66 +1316,66 @@ msgid ""
 "the PhyloViz plugin can be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:717
+#: ../dbase_setup.rst:723
 msgid "port"
 msgstr ""
 
-#: ../dbase_setup.rst:719
+#: ../dbase_setup.rst:725
 msgid "Port number that the isolate host is listening on, default '5432'."
 msgstr ""
 
-#: ../dbase_setup.rst:721
+#: ../dbase_setup.rst:727
 msgid "privacy"
 msgstr ""
 
-#: ../dbase_setup.rst:723
+#: ../dbase_setup.rst:729
 msgid ""
 "Displays E-mail address for sender in isolate information page if set to "
 "'no'. Default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:726 ../dbase_setup.rst:1418
+#: ../dbase_setup.rst:732 ../dbase_setup.rst:1429
 msgid "public_login"
 msgstr ""
 
-#: ../dbase_setup.rst:728 ../dbase_setup.rst:1420
+#: ../dbase_setup.rst:734 ../dbase_setup.rst:1431
 msgid ""
 "Optionally allow users to log in to a public database - this is useful as"
 " any jobs will be associated with the user and their preferences will "
 "also be linked to the account. Set to 'no' to disable. Default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:732 ../dbase_setup.rst:1424 ../dbase_setup.rst:1539
+#: ../dbase_setup.rst:738 ../dbase_setup.rst:1435 ../dbase_setup.rst:1550
 msgid "query_script"
 msgstr ""
 
-#: ../dbase_setup.rst:734
+#: ../dbase_setup.rst:740
 msgid "Relative web path to bigsdb script. Default ‘bigsdb.pl’ (version 1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:735
+#: ../dbase_setup.rst:741
 msgid ""
 "This is only needed if automated submissions are enabled. If bigsdb.pl is"
 " in a different directory from bigscurate.pl, you need to include the "
 "whole web path, e.g. /cgi-bin/bigsdb/bigsdb.pl."
 msgstr ""
 
-#: ../dbase_setup.rst:739 ../dbase_setup.rst:1431
+#: ../dbase_setup.rst:745 ../dbase_setup.rst:1442
 msgid "read_access"
 msgstr ""
 
-#: ../dbase_setup.rst:741
+#: ../dbase_setup.rst:747
 msgid ""
 "Describes who can view data: either 'public' for everybody or "
 "'authenticated_users' for anybody who has been able to log in. Default "
 "'public'."
 msgstr ""
 
-#: ../dbase_setup.rst:745 ../dbase_setup.rst:1437
+#: ../dbase_setup.rst:751 ../dbase_setup.rst:1448
 msgid "related_databases"
 msgstr ""
 
-#: ../dbase_setup.rst:747
+#: ../dbase_setup.rst:753
 msgid ""
 "Semi-colon separated list of links to related BIGSdb databases on the "
 "system. This should be in the form of database configuration name "
@@ -1372,21 +1384,21 @@ msgid ""
 "items."
 msgstr ""
 
-#: ../dbase_setup.rst:753
+#: ../dbase_setup.rst:759
 msgid "remote_contigs"
 msgstr ""
 
-#: ../dbase_setup.rst:755
+#: ../dbase_setup.rst:761
 msgid ""
 "Optionally allow the use of remote contigs. These are stored in a remote "
 "BIGSdb database, accessible via the RESTful API. Set to 'yes' to enable."
 msgstr ""
 
-#: ../dbase_setup.rst:758
+#: ../dbase_setup.rst:764
 msgid "rest_kiosk"
 msgstr ""
 
-#: ../dbase_setup.rst:760
+#: ../dbase_setup.rst:766
 msgid ""
 "If 'kiosk' attribute is set, then the REST interface will be disabled for"
 " the configuration unless a value is set here. The only supported value "
@@ -1394,11 +1406,11 @@ msgid ""
 "sequences."
 msgstr ""
 
-#: ../dbase_setup.rst:765
+#: ../dbase_setup.rst:771
 msgid "rMLSTSpecies"
 msgstr ""
 
-#: ../dbase_setup.rst:767
+#: ../dbase_setup.rst:773
 msgid ""
 "Enable rMLST Species identifier plugin: either 'yes' or 'no'. If no value"
 " is set then the plugin will not be available unless the all_plugins "
@@ -1406,21 +1418,21 @@ msgid ""
 "the plugin can be disabled by setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:772 ../dbase_setup.rst:1445
+#: ../dbase_setup.rst:778 ../dbase_setup.rst:1456
 msgid "script_path_includes"
 msgstr ""
 
-#: ../dbase_setup.rst:774 ../dbase_setup.rst:1447
+#: ../dbase_setup.rst:780 ../dbase_setup.rst:1458
 msgid ""
 "Partial path of the bigsdb.pl script used to access the database. See "
 ":ref:`user authentication <user_authentication>`."
 msgstr ""
 
-#: ../dbase_setup.rst:777
+#: ../dbase_setup.rst:783
 msgid "search_sequence_variation"
 msgstr ""
 
-#: ../dbase_setup.rst:779
+#: ../dbase_setup.rst:785
 msgid ""
 "If loci are defined that have sequence variants (single amino acid or "
 "single nucleotide polymorphisms) defined in their respective typing "
@@ -1430,11 +1442,11 @@ msgid ""
 "unnecessary, performance hit in databases that don't have any such loci."
 msgstr ""
 
-#: ../dbase_setup.rst:786 ../dbase_setup.rst:1450
+#: ../dbase_setup.rst:792 ../dbase_setup.rst:1461
 msgid "separate_dataset"
 msgstr ""
 
-#: ../dbase_setup.rst:788 ../dbase_setup.rst:1452
+#: ../dbase_setup.rst:794 ../dbase_setup.rst:1463
 msgid ""
 "Treat database configuration as though it was a separate database for the"
 " purposes of handling submissions and curators: either 'yes' or 'no', "
@@ -1444,22 +1456,22 @@ msgid ""
 "also affects whether they are notified of submissions."
 msgstr ""
 
-#: ../dbase_setup.rst:795
+#: ../dbase_setup.rst:801
 msgid "seqbin_downloads_require_login"
 msgstr ""
 
-#: ../dbase_setup.rst:797
+#: ../dbase_setup.rst:803
 msgid ""
 "Force users to log in to download sequence bin FASTA and EMBL files via "
 "web interface: either 'yes' or 'no'. This value overrides the value set "
 "in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:801
+#: ../dbase_setup.rst:807
 msgid "SeqbinBreakdown"
 msgstr ""
 
-#: ../dbase_setup.rst:803
+#: ../dbase_setup.rst:809
 msgid ""
 "Enable Sequence bin breakdown plugin: either 'yes' or 'no'. If no value "
 "is set then the plugin will not be available unless the all_plugins "
@@ -1470,70 +1482,70 @@ msgid ""
 " table."
 msgstr ""
 
-#: ../dbase_setup.rst:811 ../dbase_setup.rst:1464
+#: ../dbase_setup.rst:817 ../dbase_setup.rst:1475
 msgid "SequenceExport"
 msgstr ""
 
-#: ../dbase_setup.rst:813 ../dbase_setup.rst:1466
+#: ../dbase_setup.rst:819 ../dbase_setup.rst:1477
 msgid ""
 "Enable sequence export plugin: either 'yes' or 'no'. If the all_plugins "
 "attribute is set to 'yes', the sequence export plugin can be disabled by "
 "setting this attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:817 ../dbase_setup.rst:1459
+#: ../dbase_setup.rst:823 ../dbase_setup.rst:1470
 msgid "seq_export_limit"
 msgstr ""
 
-#: ../dbase_setup.rst:819 ../dbase_setup.rst:1461
+#: ../dbase_setup.rst:825 ../dbase_setup.rst:1472
 msgid ""
 "Overrides the sequence export limit (records x loci) in the Sequence "
 "Export plugin.  Default: '1000000'."
 msgstr ""
 
-#: ../dbase_setup.rst:822 ../dbase_setup.rst:1470
+#: ../dbase_setup.rst:828 ../dbase_setup.rst:1481
 msgid "sets"
 msgstr ""
 
-#: ../dbase_setup.rst:824 ../dbase_setup.rst:1472
+#: ../dbase_setup.rst:830 ../dbase_setup.rst:1483
 msgid "Use :ref:`sets <sets>`: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:826 ../dbase_setup.rst:1474
+#: ../dbase_setup.rst:832 ../dbase_setup.rst:1485
 msgid "set_id"
 msgstr ""
 
-#: ../dbase_setup.rst:828 ../dbase_setup.rst:1476
+#: ../dbase_setup.rst:834 ../dbase_setup.rst:1487
 msgid ""
 "Force the use of a specific set when accessing database via this XML "
 "configuration: Value is the name of the set."
 msgstr ""
 
-#: ../dbase_setup.rst:831 ../dbase_setup.rst:1479
+#: ../dbase_setup.rst:837 ../dbase_setup.rst:1490
 msgid "show_classification_schemes"
 msgstr ""
 
-#: ../dbase_setup.rst:833
+#: ../dbase_setup.rst:839
 msgid ""
 "Show similar isolates determined by classification schemes (if defined) "
 "on an isolate record page. Set to either 'yes' or 'no', default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:836 ../dbase_setup.rst:1485
+#: ../dbase_setup.rst:842 ../dbase_setup.rst:1496
 msgid "show_lincode_matches"
 msgstr ""
 
-#: ../dbase_setup.rst:838
+#: ../dbase_setup.rst:844
 msgid ""
 "Show similar isolates determined by LIN code prefixes (if defined) on an "
 "isolate record page. Set to either 'yes' or 'no', default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:841 ../dbase_setup.rst:1491
+#: ../dbase_setup.rst:847 ../dbase_setup.rst:1502
 msgid "start_codons"
 msgstr ""
 
-#: ../dbase_setup.rst:843
+#: ../dbase_setup.rst:849
 msgid ""
 "Semi-colon separated list of start codons to allow. Note that this list "
 "will replace the built-in defaults of ATG, GTG, and TTG, and is used for "
@@ -1541,11 +1553,11 @@ msgid ""
 " automated allele definition."
 msgstr ""
 
-#: ../dbase_setup.rst:848
+#: ../dbase_setup.rst:854
 msgid "start_id"
 msgstr ""
 
-#: ../dbase_setup.rst:850
+#: ../dbase_setup.rst:856
 msgid ""
 "Defines the minimum record id to be used when uploading new isolate "
 "records. This can be useful when it is anticipated that two databases may"
@@ -1553,38 +1565,38 @@ msgid ""
 "databases were different.  Default: '1'."
 msgstr ""
 
-#: ../dbase_setup.rst:855 ../dbase_setup.rst:1497
+#: ../dbase_setup.rst:861 ../dbase_setup.rst:1508
 msgid "submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:857 ../dbase_setup.rst:1499
+#: ../dbase_setup.rst:863 ../dbase_setup.rst:1510
 msgid ""
 "Enable automated submission system: either 'yes' or 'no', default 'no' "
 "(version 1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:859 ../dbase_setup.rst:1501
+#: ../dbase_setup.rst:865 ../dbase_setup.rst:1512
 msgid ""
 "The curate_script and query_script paths should also be set, either in "
 "the bigsdb.conf file (for site-wide configuration) or within the system "
 "attribute of config.xml."
 msgstr ""
 
-#: ../dbase_setup.rst:863 ../dbase_setup.rst:1505
+#: ../dbase_setup.rst:869 ../dbase_setup.rst:1516
 msgid "submissions_deleted_days"
 msgstr ""
 
-#: ../dbase_setup.rst:865 ../dbase_setup.rst:1507
+#: ../dbase_setup.rst:871 ../dbase_setup.rst:1518
 msgid ""
 "Overrides the default number of days before closed submissions are "
 "deleted from the system. Default: '90'."
 msgstr ""
 
-#: ../dbase_setup.rst:868
+#: ../dbase_setup.rst:874
 msgid "TagStatus"
 msgstr ""
 
-#: ../dbase_setup.rst:870
+#: ../dbase_setup.rst:876
 msgid ""
 "Enable Tag status plugin: either 'yes' or 'no'. If no value is set then "
 "the plugin will not be available unless the all_plugins attribute is set "
@@ -1594,156 +1606,166 @@ msgid ""
 "and an integer year field must be defined in the isolates table."
 msgstr ""
 
-#: ../dbase_setup.rst:877
+#: ../dbase_setup.rst:883
+msgid "tblastx_record_limit"
+msgstr ""
+
+#: ../dbase_setup.rst:885
+msgid ""
+"Limit the number of records to analyse using tblastx in BLAST plugin. The"
+" default for this is 500."
+msgstr ""
+
+#: ../dbase_setup.rst:888
 msgid "tblastx_tagging"
 msgstr ""
 
-#: ../dbase_setup.rst:879
+#: ../dbase_setup.rst:890
 msgid ""
 "Sets whether tagging can be performed using TBLASTX: either 'yes' or "
 "'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:882 ../dbase_setup.rst:1510
+#: ../dbase_setup.rst:893 ../dbase_setup.rst:1521
 msgid "total_pending_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:884 ../dbase_setup.rst:1512
+#: ../dbase_setup.rst:895 ../dbase_setup.rst:1523
 msgid ""
 "Overrides the total limit on pending submissions that a user can submit "
 "via the web submission system. Default: '20'."
 msgstr ""
 
-#: ../dbase_setup.rst:887
+#: ../dbase_setup.rst:898
 msgid "user"
 msgstr ""
 
-#: ../dbase_setup.rst:889
+#: ../dbase_setup.rst:900
 msgid "Username for access to isolates database, default 'apache'."
 msgstr ""
 
-#: ../dbase_setup.rst:891 ../dbase_setup.rst:1515
+#: ../dbase_setup.rst:902 ../dbase_setup.rst:1526
 msgid "user_job_quota"
 msgstr ""
 
-#: ../dbase_setup.rst:893 ../dbase_setup.rst:1517
+#: ../dbase_setup.rst:904 ../dbase_setup.rst:1528
 msgid ""
 "Integer with number of offline jobs that can be queued or currently "
 "running for this database by any specific user - this parameter is only "
 "effective if users have to log in."
 msgstr ""
 
-#: ../dbase_setup.rst:897
+#: ../dbase_setup.rst:908
 msgid "user_projects"
 msgstr ""
 
-#: ../dbase_setup.rst:899
+#: ../dbase_setup.rst:910
 msgid ""
 "Sets whether authenticated users can create their own projects in order "
 "to group isolates: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:902
+#: ../dbase_setup.rst:913
 msgid "view"
 msgstr ""
 
-#: ../dbase_setup.rst:904
+#: ../dbase_setup.rst:915
 msgid "Database view containing isolate data, default 'isolates'."
 msgstr ""
 
-#: ../dbase_setup.rst:906
+#: ../dbase_setup.rst:917
 msgid "views"
 msgstr ""
 
-#: ../dbase_setup.rst:908
+#: ../dbase_setup.rst:919
 msgid ""
 "Comma-separated list of views of the isolate table defined in the "
 "database. This is used to set a view for a set, or to restrict loci or "
 "schemes to a subset of isolate data."
 msgstr ""
 
-#: ../dbase_setup.rst:912 ../dbase_setup.rst:2449
+#: ../dbase_setup.rst:923 ../dbase_setup.rst:2460
 msgid "warn_max_contigs"
 msgstr ""
 
-#: ../dbase_setup.rst:914
+#: ../dbase_setup.rst:925
 msgid ""
 "Set a threshold for the number of contigs in a submitted genome assembly "
 "to trigger a warning in the submission interface. This value overrides "
 "the value set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:918
+#: ../dbase_setup.rst:929
 msgid "warn_max_total_length"
 msgstr ""
 
-#: ../dbase_setup.rst:920
+#: ../dbase_setup.rst:931
 msgid ""
 "Set an upper threshold for the total size of a submitted genome assembly "
 "to trigger a warning in the submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:923 ../dbase_setup.rst:2454
+#: ../dbase_setup.rst:934 ../dbase_setup.rst:2465
 msgid "warn_min_n50"
 msgstr ""
 
-#: ../dbase_setup.rst:925
+#: ../dbase_setup.rst:936
 msgid ""
 "Set a threshold for the minimum N50 value in a submitted genome assembly "
 "to trigger a warning in the submission interface. This value overrides "
 "the value set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:929 ../dbase_setup.rst:2459
+#: ../dbase_setup.rst:940 ../dbase_setup.rst:2470
 msgid "warn_min_total_length"
 msgstr ""
 
-#: ../dbase_setup.rst:931
+#: ../dbase_setup.rst:942
 msgid ""
 "Set a lower threshold for the total size of a submitted genome assembly "
 "to trigger a warning in the submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:934 ../dbase_setup.rst:1521
+#: ../dbase_setup.rst:945 ../dbase_setup.rst:1532
 msgid "webroot"
 msgstr ""
 
-#: ../dbase_setup.rst:936 ../dbase_setup.rst:1523
+#: ../dbase_setup.rst:947 ../dbase_setup.rst:1534
 msgid ""
 "URL of web root, which can be relative or absolute. This is used to "
 "provide a hyperlinked item in the dropdown menu. Default '/'."
 msgstr ""
 
-#: ../dbase_setup.rst:939 ../dbase_setup.rst:1526
+#: ../dbase_setup.rst:950 ../dbase_setup.rst:1537
 msgid "webroot_label"
 msgstr ""
 
-#: ../dbase_setup.rst:941
+#: ../dbase_setup.rst:952
 msgid ""
 "Label text for the breadcrumb link defined by the webroot value. This can"
 " be formatted using Markdown.  Currently only supports *\\*italics\\** "
 "and **\\*\\*bold\\*\\***."
 msgstr ""
 
-#: ../dbase_setup.rst:951
+#: ../dbase_setup.rst:962
 msgid ""
 "Element content: Field name + optional list <optlist> of allowed values, "
 "e.g.::"
 msgstr ""
 
-#: ../dbase_setup.rst:965
+#: ../dbase_setup.rst:976
 msgid "**type**"
 msgstr ""
 
-#: ../dbase_setup.rst:967
+#: ../dbase_setup.rst:978
 msgid "Data type: int, text, float, bool, date, or geography_point."
 msgstr ""
 
-#: ../dbase_setup.rst:969
+#: ../dbase_setup.rst:980
 msgid "allow_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:971
+#: ../dbase_setup.rst:982
 msgid ""
 "Show in submission template and allow data to be submitted even if field "
 "is set as 'curate_only'. This has no effect on fields that do not have "
@@ -1752,32 +1774,32 @@ msgid ""
 "'no_submissions' attribute set."
 msgstr ""
 
-#: ../dbase_setup.rst:977
+#: ../dbase_setup.rst:988
 msgid "annotation_metric"
 msgstr ""
 
-#: ../dbase_setup.rst:979
+#: ../dbase_setup.rst:990
 msgid ""
 "Use field for provenance annotation status metrics. The field should be "
 "expected to have a value for records with complete provenance data. Set "
 "to 'yes' to include."
 msgstr ""
 
-#: ../dbase_setup.rst:983
+#: ../dbase_setup.rst:994
 msgid "comments"
 msgstr ""
 
-#: ../dbase_setup.rst:985
+#: ../dbase_setup.rst:996
 msgid ""
 "Comments about the field.  These will be displayed in the field "
 "description plugin and as tooltips within the curation interface."
 msgstr ""
 
-#: ../dbase_setup.rst:988
+#: ../dbase_setup.rst:999
 msgid "curate_only"
 msgstr ""
 
-#: ../dbase_setup.rst:990
+#: ../dbase_setup.rst:1001
 msgid ""
 "Set to 'yes' to hide field unless logged-in user is a curator or admin. "
 "Set the 'allow_submissions' attribute to still include the field in the "
@@ -1785,21 +1807,21 @@ msgid ""
 "records by standard users."
 msgstr ""
 
-#: ../dbase_setup.rst:995
+#: ../dbase_setup.rst:1006
 msgid "default"
 msgstr ""
 
-#: ../dbase_setup.rst:997
+#: ../dbase_setup.rst:1008
 msgid ""
 "Default value.  This will be entered automatically in the web form but "
 "can be overridden."
 msgstr ""
 
-#: ../dbase_setup.rst:1000
+#: ../dbase_setup.rst:1011
 msgid "dropdown"
 msgstr ""
 
-#: ../dbase_setup.rst:1002
+#: ../dbase_setup.rst:1013
 msgid ""
 "Select if you want this field to have its own dropdown filter box on the "
 "query page. If the field has an option list it will use the values in it,"
@@ -1808,11 +1830,11 @@ msgid ""
 "preferences."
 msgstr ""
 
-#: ../dbase_setup.rst:1008
+#: ../dbase_setup.rst:1019
 msgid "geography_point_lookup"
 msgstr ""
 
-#: ../dbase_setup.rst:1010
+#: ../dbase_setup.rst:1021
 msgid ""
 "Set to 'yes' if this field should be linked to a lookup table of GPS "
 "coordinates in order to facilitate mapping within the isolate information"
@@ -1822,11 +1844,11 @@ msgid ""
 "requires that the PostgreSQL PostGIS module is installed."
 msgstr ""
 
-#: ../dbase_setup.rst:1017
+#: ../dbase_setup.rst:1028
 msgid "group"
 msgstr ""
 
-#: ../dbase_setup.rst:1019
+#: ../dbase_setup.rst:1030
 msgid ""
 "Fields can be grouped in the isolate information page by specifying the "
 "group attribute. The group name must be defined in the field_groups "
@@ -1835,89 +1857,89 @@ msgid ""
 "group."
 msgstr ""
 
-#: ../dbase_setup.rst:1024
+#: ../dbase_setup.rst:1035
 msgid "hide"
 msgstr ""
 
-#: ../dbase_setup.rst:1026
+#: ../dbase_setup.rst:1037
 msgid ""
 "Completely ignore field. This is useful if you access a database using "
 "different configuration files and a field is not relevant to a particular"
 " instance. See also :ref:`Over-riding values<system_overrides>`."
 msgstr ""
 
-#: ../dbase_setup.rst:1030
+#: ../dbase_setup.rst:1041
 msgid "isolate_display"
 msgstr ""
 
-#: ../dbase_setup.rst:1032
+#: ../dbase_setup.rst:1043
 msgid "Set to 'no' to not show field on the isolate information page."
 msgstr ""
 
-#: ../dbase_setup.rst:1034 ../dbase_setup.rst:1745
+#: ../dbase_setup.rst:1045 ../dbase_setup.rst:1756
 msgid "length"
 msgstr ""
 
-#: ../dbase_setup.rst:1036
+#: ../dbase_setup.rst:1047
 msgid "Length of field, default 12."
 msgstr ""
 
-#: ../dbase_setup.rst:1038
+#: ../dbase_setup.rst:1049
 msgid "log_delete"
 msgstr ""
 
-#: ../dbase_setup.rst:1040
+#: ../dbase_setup.rst:1051
 msgid ""
 "Sets if the field value will be recorded in the log table if the isolate "
 "is deleted. Set to 'yes' or 'no', default is 'no'. The id and isolate "
 "name are always recorded if deletion is logged."
 msgstr ""
 
-#: ../dbase_setup.rst:1044
+#: ../dbase_setup.rst:1055
 msgid "maindisplay"
 msgstr ""
 
-#: ../dbase_setup.rst:1046
+#: ../dbase_setup.rst:1057
 msgid ""
 "Sets if field is displayed in the main table after a database search, "
 "'yes' or 'no', default 'yes'. This setting can be overridden by "
 "individual user preferences."
 msgstr ""
 
-#: ../dbase_setup.rst:1050
+#: ../dbase_setup.rst:1061
 msgid "max"
 msgstr ""
 
-#: ../dbase_setup.rst:1052
+#: ../dbase_setup.rst:1063
 msgid ""
 "Maximum value for integer and date types. Special values such as "
 "CURRENT_YEAR and CURRENT_DATE can be used."
 msgstr ""
 
-#: ../dbase_setup.rst:1055
+#: ../dbase_setup.rst:1066
 msgid "min"
 msgstr ""
 
-#: ../dbase_setup.rst:1057
+#: ../dbase_setup.rst:1068
 msgid "Minimum value for integer and date types."
 msgstr ""
 
-#: ../dbase_setup.rst:1059
+#: ../dbase_setup.rst:1070
 msgid "multiple"
 msgstr ""
 
-#: ../dbase_setup.rst:1061
+#: ../dbase_setup.rst:1072
 msgid ""
 "Sets if field allows multiple values to be set for it, 'yes' or 'no', "
 "default 'no'. If set to 'yes', then the underlying field in the database "
 "must be an ARRAY type, e.g. text[]."
 msgstr ""
 
-#: ../dbase_setup.rst:1065
+#: ../dbase_setup.rst:1076
 msgid "no_curate"
 msgstr ""
 
-#: ../dbase_setup.rst:1067
+#: ../dbase_setup.rst:1078
 msgid ""
 "Setting this will hide the field in the curator interface and prevent it "
 "from being manually modified. This is useful for fields that are "
@@ -1925,41 +1947,41 @@ msgid ""
 "'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1072
+#: ../dbase_setup.rst:1083
 msgid "no_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:1074
+#: ../dbase_setup.rst:1085
 msgid ""
 "Setting this will hide the field in the submission template. The field is"
 " still available if it is added back to the template manually."
 msgstr ""
 
-#: ../dbase_setup.rst:1077
+#: ../dbase_setup.rst:1088
 msgid "optlist"
 msgstr ""
 
-#: ../dbase_setup.rst:1079
+#: ../dbase_setup.rst:1090
 msgid ""
 "Sets if this field has a list of allowed values, default 'no'. Surround "
 "each option with an <option> tag."
 msgstr ""
 
-#: ../dbase_setup.rst:1082
+#: ../dbase_setup.rst:1093
 msgid "placeholder"
 msgstr ""
 
-#: ../dbase_setup.rst:1084
+#: ../dbase_setup.rst:1095
 msgid ""
 "Placeholder text that will appear in search form when empty. This can be "
 "used to provide an example value."
 msgstr ""
 
-#: ../dbase_setup.rst:1087
+#: ../dbase_setup.rst:1098
 msgid "prefixes"
 msgstr ""
 
-#: ../dbase_setup.rst:1089
+#: ../dbase_setup.rst:1100
 msgid ""
 "Sets the name of a field that this field should be used as a prefix for. "
 "That field must be defined. An example of where this would be useful is "
@@ -1971,30 +1993,30 @@ msgid ""
 "appear immediately before and inline with the prefixed field."
 msgstr ""
 
-#: ../dbase_setup.rst:1098
+#: ../dbase_setup.rst:1109
 msgid "query"
 msgstr ""
 
-#: ../dbase_setup.rst:1100
+#: ../dbase_setup.rst:1111
 msgid "Set to 'no' to exclude field from query drop-down lists."
 msgstr ""
 
-#: ../dbase_setup.rst:1102
+#: ../dbase_setup.rst:1113
 msgid "regex"
 msgstr ""
 
-#: ../dbase_setup.rst:1104
+#: ../dbase_setup.rst:1115
 msgid ""
 "Regular expression used to constrain field values, e.g. "
 "regex=\"^[A-Z].*$\" forces the first letter of the value to be "
 "capitalized."
 msgstr ""
 
-#: ../dbase_setup.rst:1107
+#: ../dbase_setup.rst:1118
 msgid "required"
 msgstr ""
 
-#: ../dbase_setup.rst:1109
+#: ../dbase_setup.rst:1120
 msgid ""
 "Sets if data is required for this field. Allowed values are 'yes', 'no', "
 "'expected', 'genome_required' or 'genome_expected'; default 'yes'. If set"
@@ -2006,51 +2028,51 @@ msgid ""
 "'genome_required' or 'genome_expected' only affect genome submissions."
 msgstr ""
 
-#: ../dbase_setup.rst:1118
+#: ../dbase_setup.rst:1129
 msgid "separator"
 msgstr ""
 
-#: ../dbase_setup.rst:1120
+#: ../dbase_setup.rst:1131
 msgid ""
 "Optional string to place between field prefix value and field value if "
 "the prefixes attribute is defined."
 msgstr ""
 
-#: ../dbase_setup.rst:1123
+#: ../dbase_setup.rst:1134
 msgid "sort"
 msgstr ""
 
-#: ../dbase_setup.rst:1125
+#: ../dbase_setup.rst:1136
 msgid ""
 "Sets if optlist should be sorted. Allowed values are 'yes' and 'no'. "
 "Default is 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1128
+#: ../dbase_setup.rst:1139
 msgid "suffix"
 msgstr ""
 
-#: ../dbase_setup.rst:1130
+#: ../dbase_setup.rst:1141
 msgid ""
 "Optional string that is displayed after value in isolate information page"
 " and curation interface. Useful for adding units for numerical values."
 msgstr ""
 
-#: ../dbase_setup.rst:1133
+#: ../dbase_setup.rst:1144
 msgid "userfield"
 msgstr ""
 
-#: ../dbase_setup.rst:1135
+#: ../dbase_setup.rst:1146
 msgid ""
 "Select if you want this field to have its own dropdown filter box of "
 "users (populated from the users table): 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1138
+#: ../dbase_setup.rst:1149
 msgid "web"
 msgstr ""
 
-#: ../dbase_setup.rst:1140
+#: ../dbase_setup.rst:1151
 msgid ""
 "URL that will be used to hyperlink field values. If [?] is included in "
 "the URL, this will be substituted for the actual field value. If "
@@ -2058,11 +2080,11 @@ msgid ""
 " fall back to this as the default value if the regex does not match."
 msgstr ""
 
-#: ../dbase_setup.rst:1145
+#: ../dbase_setup.rst:1156
 msgid "web_regex"
 msgstr ""
 
-#: ../dbase_setup.rst:1147
+#: ../dbase_setup.rst:1158
 msgid ""
 "List of regular expressions each linked to a URL so that links can vary "
 "depending on the value of the field. If [?] is included in the URL, this "
@@ -2072,72 +2094,72 @@ msgid ""
 "expressions, it will fall back to using the web attribute if set, e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1158
+#: ../dbase_setup.rst:1169
 msgid "Special values"
 msgstr ""
 
-#: ../dbase_setup.rst:1159
+#: ../dbase_setup.rst:1170
 msgid "The following special variables can be used in place of an actual value:"
 msgstr ""
 
-#: ../dbase_setup.rst:1161
+#: ../dbase_setup.rst:1172
 msgid "CURRENT_DATE: current date in yyyy-mm-dd format"
 msgstr ""
 
-#: ../dbase_setup.rst:1162
+#: ../dbase_setup.rst:1173
 msgid "CURRENT_YEAR: the 4 digit value of the current year"
 msgstr ""
 
-#: ../dbase_setup.rst:1167
+#: ../dbase_setup.rst:1178
 msgid "Sequence definition database XML attributes"
 msgstr ""
 
-#: ../dbase_setup.rst:1169
+#: ../dbase_setup.rst:1180
 msgid "Required attributes are in **bold**."
 msgstr ""
 
-#: ../dbase_setup.rst:1175
+#: ../dbase_setup.rst:1186
 msgid "Top level element. Contains child element: system."
 msgstr ""
 
-#: ../dbase_setup.rst:1199
+#: ../dbase_setup.rst:1210
 msgid "Description of database used throughout interface."
 msgstr ""
 
-#: ../dbase_setup.rst:1206
+#: ../dbase_setup.rst:1217
 msgid "allele_comments"
 msgstr ""
 
-#: ../dbase_setup.rst:1208
+#: ../dbase_setup.rst:1219
 msgid "Enable comments on allele sequences: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1209
+#: ../dbase_setup.rst:1220
 msgid ""
 "This is not enabled by default to discourage the practice of adding "
 "isolate information to allele definitions (this sort of information "
 "belongs in an isolate database)."
 msgstr ""
 
-#: ../dbase_setup.rst:1213
+#: ../dbase_setup.rst:1224
 msgid "allele_downloads_require_login"
 msgstr ""
 
-#: ../dbase_setup.rst:1215
+#: ../dbase_setup.rst:1226
 msgid ""
 "Force users to log in to download alleles via web interface: either 'yes'"
 " or 'no'. This value overrides the value set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:1218
+#: ../dbase_setup.rst:1229
 msgid "allele_flags"
 msgstr ""
 
-#: ../dbase_setup.rst:1220
+#: ../dbase_setup.rst:1231
 msgid "Enable flags to be set for alleles: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1224
+#: ../dbase_setup.rst:1235
 msgid ""
 "Enable alternative codon tables: either 'yes' or 'no', default is 'no'. "
 "Set to 'yes' to allow different codon tables to be selected when viewing "
@@ -2145,74 +2167,74 @@ msgid ""
 "definitions."
 msgstr ""
 
-#: ../dbase_setup.rst:1238
+#: ../dbase_setup.rst:1249
 msgid ""
 "Set the id of the global codon table to use. See "
 "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi for a list with "
 "the of ids and their description."
 msgstr ""
 
-#: ../dbase_setup.rst:1251
+#: ../dbase_setup.rst:1262
 msgid ""
 "Partial path of the bigscurate.pl script used to curate the database. See"
 " :ref:`user authentication <user_authentication>`."
 msgstr ""
 
-#: ../dbase_setup.rst:1256
+#: ../dbase_setup.rst:1267
 msgid ""
 "Relative web path to curation script.  Default 'bigscurate.pl' (version "
 "1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:1258
+#: ../dbase_setup.rst:1269
 msgid ""
 "This is only needed if automated submissions are enabled.  If "
 "bigscurate.pl is in a different directory from bigsdb.pl, you need to "
 "include the whole web path, e.g. /cgi-bin/private/bigsdb/bigscurate.pl."
 msgstr ""
 
-#: ../dbase_setup.rst:1283
+#: ../dbase_setup.rst:1294
 msgid ""
 "Set to 'yes' to retire the id of any allele or profile that is deleted. "
 "This prevents re-use of ids. This setting will override the global "
 "setting in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:1287
+#: ../dbase_setup.rst:1298
 msgid "diploid"
 msgstr ""
 
-#: ../dbase_setup.rst:1289
+#: ../dbase_setup.rst:1300
 msgid ""
 "Allow IUPAC 2-nuclotide ambiguity codes in allele definitions for use "
 "with diploid typing schemes: either 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1292
+#: ../dbase_setup.rst:1303
 msgid "disable_seq_downloads"
 msgstr ""
 
-#: ../dbase_setup.rst:1294
+#: ../dbase_setup.rst:1305
 msgid ""
 "Prevent users or curators from downloading all alleles for a locus "
 "(admins always can). 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1297
+#: ../dbase_setup.rst:1308
 msgid "disable_profile_downloads"
 msgstr ""
 
-#: ../dbase_setup.rst:1299
+#: ../dbase_setup.rst:1310
 msgid ""
 "Prevent users or curators from downloading all profiles for a scheme "
 "(admins always can). 'yes' or 'no', default 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1302
+#: ../dbase_setup.rst:1313
 msgid "exemplars"
 msgstr ""
 
-#: ../dbase_setup.rst:1304
+#: ../dbase_setup.rst:1315
 msgid ""
 "Use exemplar sequences in the BLAST caches used for the sequence query "
 "pages. This is useful on larger databases as it speeds up the query "
@@ -2221,52 +2243,52 @@ msgid ""
 "'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1309
+#: ../dbase_setup.rst:1320
 msgid "FastaExport"
 msgstr ""
 
-#: ../dbase_setup.rst:1311
+#: ../dbase_setup.rst:1322
 msgid ""
 "Enable Fasta Export plugin: either 'yes' or 'no'. If the all_plugins "
 "attribute is set to 'yes', the plugin can be disabled by setting this "
 "attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1324
+#: ../dbase_setup.rst:1335
 msgid ""
 "Enable link to genome submissions (automated submission system): either "
 "'yes' or 'no', default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:1326
+#: ../dbase_setup.rst:1337
 msgid "To enable, you will also need to set isolate_submissions=\"yes\"."
 msgstr ""
 
-#: ../dbase_setup.rst:1328
+#: ../dbase_setup.rst:1339
 msgid "isolate_database"
 msgstr ""
 
-#: ../dbase_setup.rst:1330
+#: ../dbase_setup.rst:1341
 msgid ""
 "The config name of the isolate database. This is used to provide a link "
 "to isolate submissions. You also need to set isolate_submissions=\"yes\"."
 msgstr ""
 
-#: ../dbase_setup.rst:1333
+#: ../dbase_setup.rst:1344
 msgid "isolate_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:1335
+#: ../dbase_setup.rst:1346
 msgid ""
 "Set to yes to provide a link to isolate submissions. The isolate_database"
 " attribute also needs to be set. Default: 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1352
+#: ../dbase_setup.rst:1363
 msgid "kiosk"
 msgstr ""
 
-#: ../dbase_setup.rst:1354
+#: ../dbase_setup.rst:1365
 msgid ""
 "Set to a page name to restrict configuration to always start on this "
 "page, rather than an index page. This faciliates running in a cut-down "
@@ -2274,11 +2296,11 @@ msgid ""
 "*Currently only 'sequenceQuery' is supported*."
 msgstr ""
 
-#: ../dbase_setup.rst:1359
+#: ../dbase_setup.rst:1370
 msgid "kiosk_allowed_pages"
 msgstr ""
 
-#: ../dbase_setup.rst:1361
+#: ../dbase_setup.rst:1372
 msgid ""
 "Comma-separated list of pages that the configuration is allowed to show, "
 "apart from the page set in the 'kiosk' attribute. Example for a sequence "
@@ -2286,57 +2308,57 @@ msgid ""
 "translated sequence page following a query."
 msgstr ""
 
-#: ../dbase_setup.rst:1366
+#: ../dbase_setup.rst:1377
 msgid "kiosk_help"
 msgstr ""
 
-#: ../dbase_setup.rst:1368
+#: ../dbase_setup.rst:1379
 msgid "URL to context-sensitive help page."
 msgstr ""
 
-#: ../dbase_setup.rst:1370
+#: ../dbase_setup.rst:1381
 msgid "kiosk_locus"
 msgstr ""
 
-#: ../dbase_setup.rst:1372
+#: ../dbase_setup.rst:1383
 msgid ""
 "Restrict sequence query to a specific locus or scheme. Use either the "
 "locus primary name or 'SCHEME_X' where X is the scheme number."
 msgstr ""
 
-#: ../dbase_setup.rst:1375
+#: ../dbase_setup.rst:1386
 msgid "kiosk_no_upload"
 msgstr ""
 
-#: ../dbase_setup.rst:1377
+#: ../dbase_setup.rst:1388
 msgid "Set to \"yes\" to hide the sequence file upload in kiosk mode."
 msgstr ""
 
-#: ../dbase_setup.rst:1379
+#: ../dbase_setup.rst:1390
 msgid "kiosk_simple"
 msgstr ""
 
-#: ../dbase_setup.rst:1381
+#: ../dbase_setup.rst:1392
 msgid "Remove most explanatory text from kiosk page."
 msgstr ""
 
-#: ../dbase_setup.rst:1383
+#: ../dbase_setup.rst:1394
 msgid "kiosk_text"
 msgstr ""
 
-#: ../dbase_setup.rst:1385
+#: ../dbase_setup.rst:1396
 msgid "Alternative text to show on kiosk page."
 msgstr ""
 
-#: ../dbase_setup.rst:1387
+#: ../dbase_setup.rst:1398
 msgid "kiosk_title"
 msgstr ""
 
-#: ../dbase_setup.rst:1389
+#: ../dbase_setup.rst:1400
 msgid "Title text to use when running in kiosk mode."
 msgstr ""
 
-#: ../dbase_setup.rst:1393
+#: ../dbase_setup.rst:1404
 msgid ""
 "Set a date (in yyyy-mm-dd format) that is the cut-off date for display or"
 " export of data if not logged in. If set, allele or profile display or "
@@ -2344,38 +2366,38 @@ msgid ""
 "this date."
 msgstr ""
 
-#: ../dbase_setup.rst:1398
+#: ../dbase_setup.rst:1409
 msgid "profile_downloads_require_login"
 msgstr ""
 
-#: ../dbase_setup.rst:1400
+#: ../dbase_setup.rst:1411
 msgid ""
 "Force users to log in to download profiles via web interface: either "
 "'yes' or 'no'. This value overrides the value set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:1403
+#: ../dbase_setup.rst:1414
 msgid "ProfileExport"
 msgstr ""
 
-#: ../dbase_setup.rst:1405
+#: ../dbase_setup.rst:1416
 msgid ""
 "Enable Profile Export plugin: either 'yes' or 'no'. If the all_plugins "
 "attribute is set to 'yes', the plugin can be disabled by setting this "
 "attribute to 'no'."
 msgstr ""
 
-#: ../dbase_setup.rst:1409
+#: ../dbase_setup.rst:1420
 msgid "profile_submissions"
 msgstr ""
 
-#: ../dbase_setup.rst:1411
+#: ../dbase_setup.rst:1422
 msgid ""
 "Enable profile submissions (automated submission system): either 'yes' or"
 " 'no', default 'no' (version 1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:1413
+#: ../dbase_setup.rst:1424
 msgid ""
 "To enable, you will also need to set submissions=\"yes\".  By default, "
 "profile submissions are disabled since generally new profiles should be "
@@ -2383,25 +2405,25 @@ msgid ""
 "extracted from that."
 msgstr ""
 
-#: ../dbase_setup.rst:1426
+#: ../dbase_setup.rst:1437
 msgid "Relative web path to bigsdb script.  Default 'bigsdb.pl' (version 1.11+)."
 msgstr ""
 
-#: ../dbase_setup.rst:1427
+#: ../dbase_setup.rst:1438
 msgid ""
 "This is only needed if automated submissions are enabled.  If bigsdb.pl "
 "is in a different directory from bigscurate.pl, you need to include the "
 "whole web path, e.g. /cgi-bin/bigsdb/bigsdb.pl."
 msgstr ""
 
-#: ../dbase_setup.rst:1433
+#: ../dbase_setup.rst:1444
 msgid ""
 "Describes who can view data: either 'public' for everybody, or "
 "'authenticated_users' for anybody who has been able to log in. Default "
 "'public'."
 msgstr ""
 
-#: ../dbase_setup.rst:1439
+#: ../dbase_setup.rst:1450
 msgid ""
 "Semi-colon separated list of links to related BIGSdb databases on the "
 "system. This should be in the form of database configuration name "
@@ -2410,98 +2432,98 @@ msgid ""
 "items."
 msgstr ""
 
-#: ../dbase_setup.rst:1481
+#: ../dbase_setup.rst:1492
 msgid ""
 "Show similar isolates determined by classification schemes (if defined) "
 "on a sequence query or profile info page. Set to either 'yes' or 'no', "
 "default 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:1487
+#: ../dbase_setup.rst:1498
 msgid ""
 "Show similar isolates determined by LIN code prefixes (if defined) on a "
 "sequence query or profile info page. Set to either 'yes' or 'no', default"
 " 'yes'."
 msgstr ""
 
-#: ../dbase_setup.rst:1493
+#: ../dbase_setup.rst:1504
 msgid ""
 "Semi-colon separated list of start codons to allow. Note that this list "
 "will replace the built-in defaults of ATG, GTG, and TTG, and is used for "
 "all functions that require recognising complete coding sequences."
 msgstr ""
 
-#: ../dbase_setup.rst:1528
+#: ../dbase_setup.rst:1539
 msgid ""
 "Label text for the breadcrumb link defined by the webroot value. This can"
 " be formatted using Markdown. Currently only supports *\\*italics\\** and"
 " **\\*\\*bold\\*\\***."
 msgstr ""
 
-#: ../dbase_setup.rst:1534
+#: ../dbase_setup.rst:1545
 msgid "Over-riding global defaults set in bigsdb.conf"
 msgstr ""
 
-#: ../dbase_setup.rst:1535
+#: ../dbase_setup.rst:1546
 msgid ""
 "Certain values set in bigsdb.conf can be over-ridden by corresponding "
 "values set in a database-specific config.xml file. These can be set "
 "within the system tag like other attributes:"
 msgstr ""
 
-#: ../dbase_setup.rst:1541
+#: ../dbase_setup.rst:1552
 msgid "Relative web path to bigsdb script."
 msgstr ""
 
-#: ../dbase_setup.rst:1545
+#: ../dbase_setup.rst:1556
 msgid "Relative web path to curation script."
 msgstr ""
 
-#: ../dbase_setup.rst:1547
+#: ../dbase_setup.rst:1558
 msgid "prefs_db"
 msgstr ""
 
-#: ../dbase_setup.rst:1549
+#: ../dbase_setup.rst:1560
 msgid "The name of the preferences database."
 msgstr ""
 
-#: ../dbase_setup.rst:1551
+#: ../dbase_setup.rst:1562
 msgid "auth_db"
 msgstr ""
 
-#: ../dbase_setup.rst:1553
+#: ../dbase_setup.rst:1564
 msgid "The name of the authentication database."
 msgstr ""
 
-#: ../dbase_setup.rst:1555
+#: ../dbase_setup.rst:1566
 msgid "tmp_dir"
 msgstr ""
 
-#: ../dbase_setup.rst:1557
+#: ../dbase_setup.rst:1568
 msgid "Path to the web-accessible temporary directory."
 msgstr ""
 
-#: ../dbase_setup.rst:1559
+#: ../dbase_setup.rst:1570
 msgid "secure_tmp_dir"
 msgstr ""
 
-#: ../dbase_setup.rst:1561
+#: ../dbase_setup.rst:1572
 msgid "Path to the web-inaccessible (secure) temporary directory."
 msgstr ""
 
-#: ../dbase_setup.rst:1563
+#: ../dbase_setup.rst:1574
 msgid "ref_db"
 msgstr ""
 
-#: ../dbase_setup.rst:1565
+#: ../dbase_setup.rst:1576
 msgid "The name of the references database."
 msgstr ""
 
-#: ../dbase_setup.rst:1571
+#: ../dbase_setup.rst:1582
 msgid "Over-riding values set in config.xml"
 msgstr ""
 
-#: ../dbase_setup.rst:1572
+#: ../dbase_setup.rst:1583
 msgid ""
 "Any attribute used in the system tag of the database config.xml file can "
 "be over-ridden using a file called **system.overrides**, placed in the "
@@ -2514,7 +2536,7 @@ msgid ""
 "with the values quoted, e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1585
+#: ../dbase_setup.rst:1596
 msgid ""
 "You can also override these values for specific users or usergroups. This"
 " is useful if you wish to set different limits for plugins for different "
@@ -2522,32 +2544,33 @@ msgid ""
 "containing either `user:<username>` or `usergroup:<group name>`, e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1602
+#: ../dbase_setup.rst:1613
 msgid ""
 "A few attributes in the config.xml file, specifically database connection"
 " details, are used before a user authenticates. These attributes cannot "
 "be overridden on a per user basis."
 msgstr ""
 
-#: ../dbase_setup.rst:1606
+#: ../dbase_setup.rst:1617
 msgid ""
 "It is also possible to override the allow_submissions, required, "
-"maindisplay, default, hide, or curate_only attributes of a particular "
-"field using a file called **field.overrides**. The field.overrides file "
-"uses the format 'field:attribute=\"value\"' on each line, e.g. ::"
+"maindisplay, default, hide, no_curate or curate_only attributes of a "
+"particular field using a file called **field.overrides**. The "
+"field.overrides file uses the format 'field:attribute=\"value\"' on each "
+"line, e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1613
+#: ../dbase_setup.rst:1624
 msgid ""
 "You can also override optlist values by provides a '|' separated list, "
 "e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1621
+#: ../dbase_setup.rst:1632
 msgid "Setting field validation rules"
 msgstr ""
 
-#: ../dbase_setup.rst:1622
+#: ../dbase_setup.rst:1633
 msgid ""
 "Sometimes it may be necessary to restrict the allowed values in one "
 "isolate field depending on the values submitted for another field. It is "
@@ -2556,74 +2579,74 @@ msgid ""
 "isolate record upload to be rejected."
 msgstr ""
 
-#: ../dbase_setup.rst:1628
+#: ../dbase_setup.rst:1639
 msgid ""
 "An example of this may be if you have an age_year and an age_month field "
 "but you only want age_month to be populated if the subject is less than "
 "one year old. You can do this as follows."
 msgstr ""
 
-#: ../dbase_setup.rst:1632
+#: ../dbase_setup.rst:1643
 msgid ""
 "As an admin, on the curator interface, click the 'Field' toggle to show "
 "the validation table links. Then click 'Add' on the 'Validation "
 "conditions' setting:"
 msgstr ""
 
-#: ../dbase_setup.rst:1638
+#: ../dbase_setup.rst:1649
 msgid "Add the following conditions separately:"
 msgstr ""
 
-#: ../dbase_setup.rst:1640
+#: ../dbase_setup.rst:1651
 msgid "age_year > 0"
 msgstr ""
 
-#: ../dbase_setup.rst:1641 ../dbase_setup.rst:1674
+#: ../dbase_setup.rst:1652 ../dbase_setup.rst:1685
 msgid "age_month NOT null"
 msgstr ""
 
-#: ../dbase_setup.rst:1645
+#: ../dbase_setup.rst:1656
 msgid ""
 "Now add a new 'Validation rule', by clicking 'Add' on the 'Validation "
 "rules' setting:"
 msgstr ""
 
-#: ../dbase_setup.rst:1650
+#: ../dbase_setup.rst:1661
 msgid ""
 "Here you just enter the message that will be returned when the validation"
 " fails:"
 msgstr ""
 
-#: ../dbase_setup.rst:1655
+#: ../dbase_setup.rst:1666
 msgid ""
 "Finally add the conditions to the rule by clicking 'Add' on the 'Rule "
 "conditions' setting:"
 msgstr ""
 
-#: ../dbase_setup.rst:1660
+#: ../dbase_setup.rst:1671
 msgid "Select the rule message and the condition from the dropdown boxes:"
 msgstr ""
 
-#: ../dbase_setup.rst:1664
+#: ../dbase_setup.rst:1675
 msgid "Make sure you do this for each of the conditions that have to match."
 msgstr ""
 
-#: ../dbase_setup.rst:1666
+#: ../dbase_setup.rst:1677
 msgid ""
 "Validation checks are performed when adding or updating an isolate "
 "record, or when a user submits via the automated submission interface. "
 "Currently these checks are not enforced when doing a batch update."
 msgstr ""
 
-#: ../dbase_setup.rst:1671
+#: ../dbase_setup.rst:1682
 msgid "Special condition values"
 msgstr ""
 
-#: ../dbase_setup.rst:1672
+#: ../dbase_setup.rst:1683
 msgid "Use the value **null** to indicate that the field is empty, e.g."
 msgstr ""
 
-#: ../dbase_setup.rst:1676
+#: ../dbase_setup.rst:1687
 msgid ""
 "Use a field name in square brackets to compare the value in that field, "
 "e.g. suppose you have two date fields, 'date_sampled' and "
@@ -2631,21 +2654,21 @@ msgid ""
 "before 'date_sampled'. You can do this with the following condition:"
 msgstr ""
 
-#: ../dbase_setup.rst:1681
+#: ../dbase_setup.rst:1692
 msgid "date_received < [date_sampled]"
 msgstr ""
 
-#: ../dbase_setup.rst:1683
+#: ../dbase_setup.rst:1694
 msgid ""
 "The two fields have to be of the same data type in order to be compared "
 "(you cannot compare a text field to an integer field for example)."
 msgstr ""
 
-#: ../dbase_setup.rst:1693
+#: ../dbase_setup.rst:1704
 msgid "Sparsely-populated fields"
 msgstr ""
 
-#: ../dbase_setup.rst:1694
+#: ../dbase_setup.rst:1705
 msgid ""
 "Commonly used isolate fields should be described in the config.xml file "
 "and included as columns within the isolates table. Sometimes, however, "
@@ -2658,7 +2681,7 @@ msgid ""
 "is no limit to the number of such fields that can be defined."
 msgstr ""
 
-#: ../dbase_setup.rst:1704
+#: ../dbase_setup.rst:1715
 msgid ""
 "The default name for these fields is 'secondary metadata' and this is how"
 " they will be grouped in the interface. You can change this by setting "
@@ -2669,89 +2692,89 @@ msgid ""
 "config.xml<isolate_xml>`."
 msgstr ""
 
-#: ../dbase_setup.rst:1711
+#: ../dbase_setup.rst:1722
 msgid ""
 "You will need to be an admin to define sparely-populated fields. Make "
 "sure that the 'Fields' toggle is selected on the curators' page. Click "
 "the add (+) button on the 'Sparse fields' function."
 msgstr ""
 
-#: ../dbase_setup.rst:1717
+#: ../dbase_setup.rst:1728
 msgid "Fill in the form and click 'Submit'."
 msgstr ""
 
-#: ../dbase_setup.rst:1721
+#: ../dbase_setup.rst:1732
 msgid "Field options are:"
 msgstr ""
 
-#: ../dbase_setup.rst:1723
+#: ../dbase_setup.rst:1734
 msgid "**field**"
 msgstr ""
 
-#: ../dbase_setup.rst:1725
+#: ../dbase_setup.rst:1736
 msgid "name of field"
 msgstr ""
 
-#: ../dbase_setup.rst:1727
+#: ../dbase_setup.rst:1738
 msgid "**value_format**"
 msgstr ""
 
-#: ../dbase_setup.rst:1729
+#: ../dbase_setup.rst:1740
 msgid "date type - either integer, float, text, date or boolean."
 msgstr ""
 
-#: ../dbase_setup.rst:1731
+#: ../dbase_setup.rst:1742
 msgid "**no_curate**"
 msgstr ""
 
-#: ../dbase_setup.rst:1733
+#: ../dbase_setup.rst:1744
 msgid ""
 "Set to true to prevent user updates of fieldThis setting could be used if"
 " the value is calculated by an external script rather than entered by a "
 "curator."
 msgstr ""
 
-#: ../dbase_setup.rst:1737
+#: ../dbase_setup.rst:1748
 msgid "**no_submissions**"
 msgstr ""
 
-#: ../dbase_setup.rst:1739
+#: ../dbase_setup.rst:1750
 msgid "Set to true to prevent the field being listed in the submissions template."
 msgstr ""
 
-#: ../dbase_setup.rst:1741
+#: ../dbase_setup.rst:1752
 msgid "description"
 msgstr ""
 
-#: ../dbase_setup.rst:1743
+#: ../dbase_setup.rst:1754
 msgid "Tooltip text that will appear on curator forms."
 msgstr ""
 
-#: ../dbase_setup.rst:1747
+#: ../dbase_setup.rst:1758
 msgid "Restrict allowed length of value."
 msgstr ""
 
-#: ../dbase_setup.rst:1749
+#: ../dbase_setup.rst:1760
 msgid "option_list"
 msgstr ""
 
-#: ../dbase_setup.rst:1751
+#: ../dbase_setup.rst:1762
 msgid "Semi-colon separated list of allowed values."
 msgstr ""
 
-#: ../dbase_setup.rst:1753
+#: ../dbase_setup.rst:1764
 msgid "value_regex"
 msgstr ""
 
-#: ../dbase_setup.rst:1755
+#: ../dbase_setup.rst:1766
 msgid "Regular expression that can constrain allowed values."
 msgstr ""
 
-#: ../dbase_setup.rst:1757
+#: ../dbase_setup.rst:1768
 msgid "conditional_formatting"
 msgstr ""
 
-#: ../dbase_setup.rst:1759
+#: ../dbase_setup.rst:1770
 msgid ""
 "Semi-colon separated list of values - each consisting of the value, "
 "followed by a pipe character (|) and HTML to display instead of the "
@@ -2759,55 +2782,55 @@ msgid ""
 "colons (;;) otherwise it will be treated as the list separator.'"
 msgstr ""
 
-#: ../dbase_setup.rst:1765
+#: ../dbase_setup.rst:1776
 msgid "html_link_text"
 msgstr ""
 
-#: ../dbase_setup.rst:1767
+#: ../dbase_setup.rst:1778
 msgid ""
 "This defines the text that will appear on an information link that will "
 "trigger a slide-in message (if defined int the next field). Default is "
 "'info'."
 msgstr ""
 
-#: ../dbase_setup.rst:1771
+#: ../dbase_setup.rst:1782
 msgid "html_message"
 msgstr ""
 
-#: ../dbase_setup.rst:1773
+#: ../dbase_setup.rst:1784
 msgid ""
 "This message will slide-in on the isolate information page when the field"
 " value is populated and the information link is clicked. Full HTML "
 "formatting is supported."
 msgstr ""
 
-#: ../dbase_setup.rst:1777
+#: ../dbase_setup.rst:1788
 msgid "min_value"
 msgstr ""
 
-#: ../dbase_setup.rst:1779 ../dbase_setup.rst:1783
+#: ../dbase_setup.rst:1790 ../dbase_setup.rst:1794
 msgid "Valid for number fields only."
 msgstr ""
 
-#: ../dbase_setup.rst:1781
+#: ../dbase_setup.rst:1792
 msgid "max_value"
 msgstr ""
 
-#: ../dbase_setup.rst:1785
+#: ../dbase_setup.rst:1796
 msgid "field_order"
 msgstr ""
 
-#: ../dbase_setup.rst:1787
+#: ../dbase_setup.rst:1798
 msgid ""
 "Integer indicating the order that fields should be displayed. If this is "
 "not set they will appear alphabetically."
 msgstr ""
 
-#: ../dbase_setup.rst:1797
+#: ../dbase_setup.rst:1808
 msgid "Analysis fields"
 msgstr ""
 
-#: ../dbase_setup.rst:1798
+#: ../dbase_setup.rst:1809
 msgid ""
 "BIGSdb can store the results of arbitrary analyses as JSON within the "
 "analysis_results table without requiring any understanding of what the "
@@ -2820,7 +2843,7 @@ msgid ""
 "script."
 msgstr ""
 
-#: ../dbase_setup.rst:1807
+#: ../dbase_setup.rst:1818
 msgid ""
 "It also possible to register specific fields from this output and make "
 "them available for searching, analysis (currently only in :ref:`GrapeTree"
@@ -2831,13 +2854,13 @@ msgid ""
 "hierarchy can be described with a JSONPath of '$.predicted_serotype'."
 msgstr ""
 
-#: ../dbase_setup.rst:1815
+#: ../dbase_setup.rst:1826
 msgid ""
 "Admins can add fields by expanding the 'Fields' selection in the admin "
 "interface and clicking the 'Add' link for 'Analysis fields':"
 msgstr ""
 
-#: ../dbase_setup.rst:1820
+#: ../dbase_setup.rst:1831
 msgid ""
 "Enter the analysis tool name, which  must match the value used within the"
 " analysis_results table, the name of the field, and its JSONPath. You "
@@ -2846,22 +2869,22 @@ msgid ""
 "listed within the query and analysis interfaces."
 msgstr ""
 
-#: ../dbase_setup.rst:1828
+#: ../dbase_setup.rst:1839
 msgid ""
 "This will now be searchable within the isolate query interface. First you"
 " will need to select the 'Analysis results' form elements from the "
 "'Modify form' tab."
 msgstr ""
 
-#: ../dbase_setup.rst:1833
+#: ../dbase_setup.rst:1844
 msgid "Then select the field and the value to search on."
 msgstr ""
 
-#: ../dbase_setup.rst:1846
+#: ../dbase_setup.rst:1857
 msgid "Kiosk mode"
 msgstr ""
 
-#: ../dbase_setup.rst:1847
+#: ../dbase_setup.rst:1858
 msgid ""
 "Kiosk mode allows you to run a cut-down interface that offers a single "
 "main functionality. Currently, only a sequence query page is supported. "
@@ -2869,11 +2892,11 @@ msgid ""
 "supported and data cannot be exported."
 msgstr ""
 
-#: ../dbase_setup.rst:1852
+#: ../dbase_setup.rst:1863
 msgid "See the :ref:`kiosk_* attributes<isolate_xml>` in config.xml."
 msgstr ""
 
-#: ../dbase_setup.rst:1854
+#: ../dbase_setup.rst:1865
 msgid ""
 "As an example, the following settings are used for the rMLST 'Identify "
 "species' tool at https://pubmlst.org/rmlst/. The database usually "
@@ -2881,7 +2904,7 @@ msgid ""
 "functionality without logging in. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1866
+#: ../dbase_setup.rst:1877
 msgid ""
 "When you go to this `example kiosk page "
 "<https://pubmlst.org/bigsdb?db=pubmlst_rmlst_seqdef_kiosk>`_ you see only"
@@ -2889,27 +2912,27 @@ msgid ""
 "prevented."
 msgstr ""
 
-#: ../dbase_setup.rst:1870
+#: ../dbase_setup.rst:1881
 msgid ""
 "The rest_kiosk attribute enables queries to also be performed using the "
 ":ref:`RESTful API<api>` which will be similarly locked down."
 msgstr ""
 
-#: ../dbase_setup.rst:1879
+#: ../dbase_setup.rst:1890
 msgid "User authentication"
 msgstr ""
 
-#: ../dbase_setup.rst:1880
+#: ../dbase_setup.rst:1891
 msgid ""
 "You can choose whether to allow Apache to handle your authentication or "
 "use built-in authentication."
 msgstr ""
 
-#: ../dbase_setup.rst:1884
+#: ../dbase_setup.rst:1895
 msgid "Apache authentication"
 msgstr ""
 
-#: ../dbase_setup.rst:1885
+#: ../dbase_setup.rst:1896
 msgid ""
 "Using apache to provide your authentication allows a flexible range of "
 "methods and back-ends (see the `Apache authentication HowTo "
@@ -2917,7 +2940,7 @@ msgid ""
 "number of tutorials on the web)."
 msgstr ""
 
-#: ../dbase_setup.rst:1890
+#: ../dbase_setup.rst:1901
 msgid ""
 "At its simplest, use a .htaccess file in the directory containing the "
 "bigscurate.pl (and bigsdb.pl for restriction of read-access) script or by"
@@ -2931,48 +2954,48 @@ msgid ""
 "file:"
 msgstr ""
 
-#: ../dbase_setup.rst:1900
+#: ../dbase_setup.rst:1911
 msgid "script_path_includes: the BIGSdb script path must contain the value set."
 msgstr ""
 
-#: ../dbase_setup.rst:1901
+#: ../dbase_setup.rst:1912
 msgid ""
 "curate_path_includes: the BIGSdb curation script path must contain the "
 "value set."
 msgstr ""
 
-#: ../dbase_setup.rst:1904
+#: ../dbase_setup.rst:1915
 msgid ""
 "For public databases, the 'script_path_includes' attribute need not be "
 "set."
 msgstr ""
 
-#: ../dbase_setup.rst:1906
+#: ../dbase_setup.rst:1917
 msgid ""
 "To use apache authentication you need to set the authentication attribute"
 " in the system tag of the database XML configuration to 'apache'."
 msgstr ""
 
-#: ../dbase_setup.rst:1910
+#: ../dbase_setup.rst:1921
 msgid "Built-in authentication"
 msgstr ""
 
-#: ../dbase_setup.rst:1911
+#: ../dbase_setup.rst:1922
 msgid ""
 "BIGSdb has its own built-in authentication, using a separate database to "
 "store password and session hashes. The advantages of using this over many"
 " forms of apache authentication are:"
 msgstr ""
 
-#: ../dbase_setup.rst:1915
+#: ../dbase_setup.rst:1926
 msgid "Users are able to update their own passwords."
 msgstr ""
 
-#: ../dbase_setup.rst:1916
+#: ../dbase_setup.rst:1927
 msgid "Passwords are not transmitted over the Internet in plain text."
 msgstr ""
 
-#: ../dbase_setup.rst:1918
+#: ../dbase_setup.rst:1929
 msgid ""
 "When a user logs in, the server provides a random one-time session "
 "variable and the user is prompted to enter their username and password. "
@@ -2985,25 +3008,25 @@ msgid ""
 "passwords are salted and hashed using bcrypt."
 msgstr ""
 
-#: ../dbase_setup.rst:1928
+#: ../dbase_setup.rst:1939
 msgid ""
 "To use built-in authentication you need to set the authentication "
 "attribute in the system tag of the database XML configuration to "
 "'builtin'."
 msgstr ""
 
-#: ../dbase_setup.rst:1935
+#: ../dbase_setup.rst:1946
 msgid "Setting up the admin user"
 msgstr ""
 
-#: ../dbase_setup.rst:1936
+#: ../dbase_setup.rst:1947
 msgid ""
 "The first admin user needs to be manually added to the users table of the"
 " database. Connect to the database using psql and add the following "
 "(changing details to suit the user).::"
 msgstr ""
 
-#: ../dbase_setup.rst:1944
+#: ../dbase_setup.rst:1955
 msgid ""
 "If you are using built-in authentication, set the password for this user "
 "using the :ref:`add_user.pl <set_first_password>` script. This hashes the"
@@ -3014,11 +3037,11 @@ msgid ""
 "bigscurate.pl script)."
 msgstr ""
 
-#: ../dbase_setup.rst:1955
+#: ../dbase_setup.rst:1966
 msgid "Retrieving PubMed citations from NCBI"
 msgstr ""
 
-#: ../dbase_setup.rst:1956
+#: ../dbase_setup.rst:1967
 msgid ""
 "Publications listed in PubMed can be associated with individual isolate "
 "records, profiles, loci and sequences.  Full citations for these are "
@@ -3029,27 +3052,27 @@ msgid ""
 " record from the PubMed database."
 msgstr ""
 
-#: ../dbase_setup.rst:1964
+#: ../dbase_setup.rst:1975
 msgid ""
 "The script is called retrieve_pubmed_records.pl and can be found in the "
 "scripts/maintenance directory."
 msgstr ""
 
-#: ../dbase_setup.rst:1967
+#: ../dbase_setup.rst:1978
 msgid ""
 "Simply run the script either as the 'postgres' user or an account that is"
 " allowed to connect as the postgres user."
 msgstr ""
 
-#: ../dbase_setup.rst:1970
+#: ../dbase_setup.rst:1981
 msgid "This should be run periodically from a CRON job, e.g. every hour."
 msgstr ""
 
-#: ../dbase_setup.rst:1976
+#: ../dbase_setup.rst:1987
 msgid "Configuring access to remote contigs"
 msgstr ""
 
-#: ../dbase_setup.rst:1977
+#: ../dbase_setup.rst:1988
 msgid ""
 "It is possible for isolate records to have contigs in an external BIGSdb "
 "database. These must be accessible via the :ref:`RESTful "
@@ -3060,17 +3083,17 @@ msgid ""
 "enable contig retrieval."
 msgstr ""
 
-#: ../dbase_setup.rst:1984
+#: ../dbase_setup.rst:1995
 msgid ""
 "To enable remote contigs, set the remote_contigs attribute in the "
 ":ref:`<system><isolate_xml>` tag of config.xml, i.e. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1992
+#: ../dbase_setup.rst:2003
 msgid "Setting up authentication"
 msgstr ""
 
-#: ../dbase_setup.rst:1993
+#: ../dbase_setup.rst:2004
 msgid ""
 "A client key for the BIGSdb remote contig manager needs to be generated. "
 "This can be done using the "
@@ -3078,13 +3101,13 @@ msgid ""
 "e.g. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:1999
+#: ../dbase_setup.rst:2010
 msgid ""
 "This will generate a client id (key) and a client secret and add them to "
 "the authentication database."
 msgstr ""
 
-#: ../dbase_setup.rst:2002
+#: ../dbase_setup.rst:2013
 msgid ""
 "You will then need to obtain an access token and access secret using the "
 "client key and secret with the get_oauth_access_token.pl script. You will"
@@ -3097,25 +3120,25 @@ msgid ""
 "will be returned to you."
 msgstr ""
 
-#: ../dbase_setup.rst:2012
+#: ../dbase_setup.rst:2023
 msgid ""
 "From the curators' page, click the oauth credentials add link in the "
 "administrator settings. This function is normally hidden, so you may need"
 " to click the 'Misc' toggle to display it."
 msgstr ""
 
-#: ../dbase_setup.rst:2018
+#: ../dbase_setup.rst:2029
 msgid ""
 "Populate the OAuth_credentials table with the client key/secret and "
 "access token/secret. You should also enter the root REST URI for the "
 "database (e.g. http://rest.pubmlst.org/db/pubmlst_rmlst_isolates)."
 msgstr ""
 
-#: ../dbase_setup.rst:2027
+#: ../dbase_setup.rst:2038
 msgid "Processing remote contigs"
 msgstr ""
 
-#: ../dbase_setup.rst:2028
+#: ../dbase_setup.rst:2039
 msgid ""
 "When remote contigs are first linked to a record, the sequences are "
 "downloaded in bulk (without their metadata). This allows the sequence "
@@ -3129,11 +3152,11 @@ msgid ""
 "below: ::"
 msgstr ""
 
-#: ../dbase_setup.rst:2082
+#: ../dbase_setup.rst:2093
 msgid "Setting up front-end and query dashboards"
 msgstr ""
 
-#: ../dbase_setup.rst:2083
+#: ../dbase_setup.rst:2094
 msgid ""
 "Dashboards can be used as an alternative front-end to isolate databases. "
 "They can also be used to summarise the results of a query. In order to "
@@ -3143,13 +3166,13 @@ msgid ""
 "the standard index page."
 msgstr ""
 
-#: ../dbase_setup.rst:2089
+#: ../dbase_setup.rst:2100
 msgid ""
 "To enable globally and use the front-end dashboard by default, set the "
 "following in bigsdb.conf: ::"
 msgstr ""
 
-#: ../dbase_setup.rst:2095
+#: ../dbase_setup.rst:2106
 msgid ""
 "Each of these values can be overridden for a particular database by "
 "setting the same attribute in the database config.xml file, with either "
@@ -3158,22 +3181,22 @@ msgid ""
 "a particular database configuration."
 msgstr ""
 
-#: ../dbase_setup.rst:2101
+#: ../dbase_setup.rst:2112
 msgid "To enable query dashboards, set the following in bigsdb.conf: ::"
 msgstr ""
 
-#: ../dbase_setup.rst:2105
+#: ../dbase_setup.rst:2116
 msgid ""
 "Again, this value can be overridden for a particular database by setting "
 "the attribute in the database config.xml file, as above. Note that "
 "'enable_dashboard' also needs to be enabled."
 msgstr ""
 
-#: ../dbase_setup.rst:2110
+#: ../dbase_setup.rst:2121
 msgid "Defining default dashboards"
 msgstr ""
 
-#: ../dbase_setup.rst:2111
+#: ../dbase_setup.rst:2122
 msgid ""
 "A default global front-end dashboard can be set up by placing a "
 "dashboard_primary.toml file in /etc/bigsdb. This can be overridden for "
@@ -3183,7 +3206,7 @@ msgid ""
 " appear within a particular database is ignored."
 msgstr ""
 
-#: ../dbase_setup.rst:2118
+#: ../dbase_setup.rst:2129
 msgid ""
 "A default global query dashboard can be similarly set up with a file "
 "called dashboard_query.toml. As this dashboard appears above isolate "
@@ -3191,187 +3214,187 @@ msgid ""
 " with a height of 1."
 msgstr ""
 
-#: ../dbase_setup.rst:2122
+#: ../dbase_setup.rst:2133
 msgid "An example of the format can be seen below. ::"
 msgstr ""
 
-#: ../dbase_setup.rst:2236
+#: ../dbase_setup.rst:2247
 msgid "Attributes"
 msgstr ""
 
-#: ../dbase_setup.rst:2237
+#: ../dbase_setup.rst:2248
 msgid "The allowed attributes are listed below."
 msgstr ""
 
-#: ../dbase_setup.rst:2239
+#: ../dbase_setup.rst:2250
 msgid "background_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2241
+#: ../dbase_setup.rst:2252
 msgid ""
 "RGB hex code for the background colour, e.g. '#79cafb'. This is used only"
 " for 'big number' fields, e.g. isolate count."
 msgstr ""
 
-#: ../dbase_setup.rst:2244
+#: ../dbase_setup.rst:2255
 msgid "bar_colour_type"
 msgstr ""
 
-#: ../dbase_setup.rst:2246
+#: ../dbase_setup.rst:2257
 msgid "categorical - use contrasting colours for bars."
 msgstr ""
 
-#: ../dbase_setup.rst:2248
+#: ../dbase_setup.rst:2259
 msgid ""
 "continuous - use the same colour for all bars (set colour use "
 "'chart_colour' attibute)."
 msgstr ""
 
-#: ../dbase_setup.rst:2251
+#: ../dbase_setup.rst:2262
 msgid "breakdown_display - type of visualisation. Allowed values are:"
 msgstr ""
 
-#: ../dbase_setup.rst:2253
+#: ../dbase_setup.rst:2264
 msgid "bar"
 msgstr ""
 
-#: ../dbase_setup.rst:2255
+#: ../dbase_setup.rst:2266
 msgid "bar chart - particularly useful for continuous data such as year."
 msgstr ""
 
-#: ../dbase_setup.rst:2257
+#: ../dbase_setup.rst:2268
 msgid "cumulative"
 msgstr ""
 
-#: ../dbase_setup.rst:2259
+#: ../dbase_setup.rst:2270
 msgid "cumulative line chart - used for date_entered or datestamp fields."
 msgstr ""
 
-#: ../dbase_setup.rst:2261
+#: ../dbase_setup.rst:2272
 msgid "doughnut"
 msgstr ""
 
-#: ../dbase_setup.rst:2263
+#: ../dbase_setup.rst:2274
 msgid "doughut chart"
 msgstr ""
 
-#: ../dbase_setup.rst:2265
+#: ../dbase_setup.rst:2276
 msgid "gps_map"
 msgstr ""
 
-#: ../dbase_setup.rst:2267
+#: ../dbase_setup.rst:2278
 msgid ""
 "GPS map. This can only be used for geography_point fields or fields that "
 "are linked to a lookup table of GPS coordinates."
 msgstr ""
 
-#: ../dbase_setup.rst:2270
+#: ../dbase_setup.rst:2281
 msgid "pie"
 msgstr ""
 
-#: ../dbase_setup.rst:2272
+#: ../dbase_setup.rst:2283
 msgid "pie chart"
 msgstr ""
 
-#: ../dbase_setup.rst:2274
+#: ../dbase_setup.rst:2285
 msgid "top"
 msgstr ""
 
-#: ../dbase_setup.rst:2276
+#: ../dbase_setup.rst:2287
 msgid ""
 "top values list. You can choose the number of values to display by also "
 "setting the top_values attributes to either 3, 5, or 10."
 msgstr ""
 
-#: ../dbase_setup.rst:2279
+#: ../dbase_setup.rst:2290
 msgid "treemap"
 msgstr ""
 
-#: ../dbase_setup.rst:2281
+#: ../dbase_setup.rst:2292
 msgid "treemap chart"
 msgstr ""
 
-#: ../dbase_setup.rst:2283
+#: ../dbase_setup.rst:2294
 msgid "word"
 msgstr ""
 
-#: ../dbase_setup.rst:2285
+#: ../dbase_setup.rst:2296
 msgid ""
 "word cloud. This can only be used for fields that have a defined list of "
 "allowed values."
 msgstr ""
 
-#: ../dbase_setup.rst:2288
+#: ../dbase_setup.rst:2299
 msgid "map"
 msgstr ""
 
-#: ../dbase_setup.rst:2290
+#: ../dbase_setup.rst:2301
 msgid ""
 "global map. This can only be used for 'country' fields with a defined "
 "list allowed values or 'continent' fields which are an extended attribute"
 " of country."
 msgstr ""
 
-#: ../dbase_setup.rst:2294
+#: ../dbase_setup.rst:2305
 msgid "change_duration"
 msgstr ""
 
-#: ../dbase_setup.rst:2296
+#: ../dbase_setup.rst:2307
 msgid ""
 "Show the rate of change, e.g. the number of new records in past month. "
 "Used for 'big number' fields, e.g. isolate count or specific value count."
 " Allowed values are 'week', 'month', or 'year'."
 msgstr ""
 
-#: ../dbase_setup.rst:2300
+#: ../dbase_setup.rst:2311
 msgid "chart_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2302
+#: ../dbase_setup.rst:2313
 msgid "RGB hex code for bar or cumulative line charts, e.g. '#126716'."
 msgstr ""
 
-#: ../dbase_setup.rst:2304
+#: ../dbase_setup.rst:2315
 msgid "display"
 msgstr ""
 
-#: ../dbase_setup.rst:2306
+#: ../dbase_setup.rst:2317
 msgid "Element type. Allowed values are:"
 msgstr ""
 
-#: ../dbase_setup.rst:2308
+#: ../dbase_setup.rst:2319
 msgid "field - This is used for most elements."
 msgstr ""
 
-#: ../dbase_setup.rst:2310
+#: ../dbase_setup.rst:2321
 msgid "record_count - Used for isolate count fields."
 msgstr ""
 
-#: ../dbase_setup.rst:2312
+#: ../dbase_setup.rst:2323
 msgid "seqbin_size - Used to display a histogram of genome sizes."
 msgstr ""
 
-#: ../dbase_setup.rst:2314
+#: ../dbase_setup.rst:2325
 msgid "field"
 msgstr ""
 
-#: ../dbase_setup.rst:2316
+#: ../dbase_setup.rst:2327
 msgid ""
 "The name of the field to display. Different types of field have different"
 " prefixes as follows:"
 msgstr ""
 
-#: ../dbase_setup.rst:2319
+#: ../dbase_setup.rst:2330
 msgid "Primary isolate field - prefix with 'f\\_', e.g. 'f_country'."
 msgstr ""
 
-#: ../dbase_setup.rst:2321
+#: ../dbase_setup.rst:2332
 msgid ""
 ":ref:`Secondary metadata fields<sparsely_populated_fields>` - prefix with"
 " 'eav\\_'."
 msgstr ""
 
-#: ../dbase_setup.rst:2324
+#: ../dbase_setup.rst:2335
 msgid ""
 ":ref:`Extended attributes<extended_attributes>` - prefix with 'e\\_', "
 "followed by the primary field name, followed by '||' and then the "
@@ -3379,7 +3402,7 @@ msgid ""
 "use 'e_country||continent'."
 msgstr ""
 
-#: ../dbase_setup.rst:2329
+#: ../dbase_setup.rst:2340
 msgid ""
 "Scheme fields - e.g. clonal complex - prefix with 's\\_' followed by the "
 "scheme id number, then '_', followed by the scheme field name, e.g. for a"
@@ -3387,297 +3410,297 @@ msgid ""
 "'s_1_clonal_complex'."
 msgstr ""
 
-#: ../dbase_setup.rst:2334
+#: ../dbase_setup.rst:2345
 msgid "gauge_background_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2336
+#: ../dbase_setup.rst:2347
 msgid "RGB hex code, e.g. '#79cafb, for the background colour on a gauge chart."
 msgstr ""
 
-#: ../dbase_setup.rst:2338
+#: ../dbase_setup.rst:2349
 msgid "gauge_foreground_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2340
+#: ../dbase_setup.rst:2351
 msgid "RGB hex code, e.g. '#79cafb, for the foreground colour on a gauge chart."
 msgstr ""
 
-#: ../dbase_setup.rst:2342
+#: ../dbase_setup.rst:2353
 msgid "geography_view"
 msgstr ""
 
-#: ../dbase_setup.rst:2344
+#: ../dbase_setup.rst:2355
 msgid ""
 "Choice of view for GPS maps, either 'Aerial' or 'Map'. Note that Aerial "
 "views can only be used if you have a Bing Maps key set in bigsdb.conf."
 msgstr ""
 
-#: ../dbase_setup.rst:2347
+#: ../dbase_setup.rst:2358
 msgid "header_background_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2349
+#: ../dbase_setup.rst:2360
 msgid ""
 "RGB hex code, e.g. '#79cafb#, for the header background for a top values "
 "list."
 msgstr ""
 
-#: ../dbase_setup.rst:2352
+#: ../dbase_setup.rst:2363
 msgid "header_text_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2354
+#: ../dbase_setup.rst:2365
 msgid ""
 "RGB hex code, e.g. '#79cafb#, for the header text colour for a top values"
 " list."
 msgstr ""
 
-#: ../dbase_setup.rst:2357
+#: ../dbase_setup.rst:2368
 msgid "height"
 msgstr ""
 
-#: ../dbase_setup.rst:2359
+#: ../dbase_setup.rst:2370
 msgid "Height of element - either 1, 2, or 3."
 msgstr ""
 
-#: ../dbase_setup.rst:2361
+#: ../dbase_setup.rst:2372
 msgid "hide_mobile"
 msgstr ""
 
-#: ../dbase_setup.rst:2363
+#: ../dbase_setup.rst:2374
 msgid "Set to 1 to hide element on small mobile devices (width <= 480 pixels)."
 msgstr ""
 
-#: ../dbase_setup.rst:2365
+#: ../dbase_setup.rst:2376
 msgid "main_text_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2367
+#: ../dbase_setup.rst:2378
 msgid ""
 "RGB hex code, e.g. '#79cafb#, for the colour of the text used in big "
 "number elements."
 msgstr ""
 
-#: ../dbase_setup.rst:2370
+#: ../dbase_setup.rst:2381
 msgid "marker_colour"
 msgstr ""
 
-#: ../dbase_setup.rst:2372
+#: ../dbase_setup.rst:2383
 msgid ""
 "RGB hex code, e.g. '#79cafb#, or HTML colour value, for the colour of the"
 " markers on GPS maps."
 msgstr ""
 
-#: ../dbase_setup.rst:2375
+#: ../dbase_setup.rst:2386
 msgid "marker_size"
 msgstr ""
 
-#: ../dbase_setup.rst:2377
+#: ../dbase_setup.rst:2388
 msgid "Size of marker on GPS maps. Allowed values are 0-9."
 msgstr ""
 
-#: ../dbase_setup.rst:2381
+#: ../dbase_setup.rst:2392
 msgid ""
 "Number of contigs above which a genome will be rejected in the submission"
 " interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2386
+#: ../dbase_setup.rst:2397
 msgid ""
 "N50 value below which a genome will be rejected in the submission "
 "interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2391
+#: ../dbase_setup.rst:2402
 msgid ""
 "Minimum length in base pairs below which a genome will be rejected in the"
 " submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2394
+#: ../dbase_setup.rst:2405
 msgid "name"
 msgstr ""
 
-#: ../dbase_setup.rst:2396
+#: ../dbase_setup.rst:2407
 msgid "The name used for the title of the element."
 msgstr ""
 
-#: ../dbase_setup.rst:2398
+#: ../dbase_setup.rst:2409
 msgid "palette"
 msgstr ""
 
-#: ../dbase_setup.rst:2400
+#: ../dbase_setup.rst:2411
 msgid "ColorBrewer palette used for map displays. Allowed values are:"
 msgstr ""
 
-#: ../dbase_setup.rst:2402
+#: ../dbase_setup.rst:2413
 msgid "blue"
 msgstr ""
 
-#: ../dbase_setup.rst:2403
+#: ../dbase_setup.rst:2414
 msgid "green"
 msgstr ""
 
-#: ../dbase_setup.rst:2404
+#: ../dbase_setup.rst:2415
 msgid "purple"
 msgstr ""
 
-#: ../dbase_setup.rst:2405
+#: ../dbase_setup.rst:2416
 msgid "orange"
 msgstr ""
 
-#: ../dbase_setup.rst:2406
+#: ../dbase_setup.rst:2417
 msgid "red"
 msgstr ""
 
-#: ../dbase_setup.rst:2407
+#: ../dbase_setup.rst:2418
 msgid "blue/green"
 msgstr ""
 
-#: ../dbase_setup.rst:2408
+#: ../dbase_setup.rst:2419
 msgid "blue/purple"
 msgstr ""
 
-#: ../dbase_setup.rst:2409
+#: ../dbase_setup.rst:2420
 msgid "green/blue"
 msgstr ""
 
-#: ../dbase_setup.rst:2410
+#: ../dbase_setup.rst:2421
 msgid "orange/red"
 msgstr ""
 
-#: ../dbase_setup.rst:2411
+#: ../dbase_setup.rst:2422
 msgid "purple/blue"
 msgstr ""
 
-#: ../dbase_setup.rst:2412
+#: ../dbase_setup.rst:2423
 msgid "purple/blue/green"
 msgstr ""
 
-#: ../dbase_setup.rst:2413
+#: ../dbase_setup.rst:2424
 msgid "purple/red"
 msgstr ""
 
-#: ../dbase_setup.rst:2414
+#: ../dbase_setup.rst:2425
 msgid "red/purple"
 msgstr ""
 
-#: ../dbase_setup.rst:2415
+#: ../dbase_setup.rst:2426
 msgid "yellow/green"
 msgstr ""
 
-#: ../dbase_setup.rst:2416
+#: ../dbase_setup.rst:2427
 msgid "yellow/green/blue"
 msgstr ""
 
-#: ../dbase_setup.rst:2417
+#: ../dbase_setup.rst:2428
 msgid "yellow/orange/brown"
 msgstr ""
 
-#: ../dbase_setup.rst:2418
+#: ../dbase_setup.rst:2429
 msgid "yellow/orange/red"
 msgstr ""
 
-#: ../dbase_setup.rst:2420
+#: ../dbase_setup.rst:2431
 msgid "post_data"
 msgstr ""
 
-#: ../dbase_setup.rst:2422
+#: ../dbase_setup.rst:2433
 msgid ""
 "Used to pass data attributes for linked queries. Currently only 'genomes'"
 " is used to specify that isolates should be filtered to those with genome"
 " assemblies, e.g. '{genomes = 1}'."
 msgstr ""
 
-#: ../dbase_setup.rst:2426
+#: ../dbase_setup.rst:2437
 msgid "specific_value_display"
 msgstr ""
 
-#: ../dbase_setup.rst:2428
+#: ../dbase_setup.rst:2439
 msgid "Type of display to use for specific values. Allowed values are:"
 msgstr ""
 
-#: ../dbase_setup.rst:2430
+#: ../dbase_setup.rst:2441
 msgid "gauge - gauge chart"
 msgstr ""
 
-#: ../dbase_setup.rst:2431
+#: ../dbase_setup.rst:2442
 msgid "number - big number value"
 msgstr ""
 
-#: ../dbase_setup.rst:2433
+#: ../dbase_setup.rst:2444
 msgid "specific_values"
 msgstr ""
 
-#: ../dbase_setup.rst:2435
+#: ../dbase_setup.rst:2446
 msgid ""
 "list of field values to include in count shown in gauge chart or big "
 "number display, e.g. '['Neisseria meningitidis']'."
 msgstr ""
 
-#: ../dbase_setup.rst:2438
+#: ../dbase_setup.rst:2449
 msgid "url_text"
 msgstr ""
 
-#: ../dbase_setup.rst:2440
+#: ../dbase_setup.rst:2451
 msgid ""
 "link text to display when hovering over link leading to data query. Only "
 "available for isolate count or specific value charts."
 msgstr ""
 
-#: ../dbase_setup.rst:2443
+#: ../dbase_setup.rst:2454
 msgid "visualisation_type"
 msgstr ""
 
-#: ../dbase_setup.rst:2445
+#: ../dbase_setup.rst:2456
 msgid ""
 "Either 'breakdown' (default) or 'specific values'. You need to then set "
 "the visualisation using either the breakdown_display or "
 "specific_value_display attribute."
 msgstr ""
 
-#: ../dbase_setup.rst:2451
+#: ../dbase_setup.rst:2462
 msgid ""
 "Number of contigs above which a genome will have a warning message shown "
 "in the submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2456
+#: ../dbase_setup.rst:2467
 msgid ""
 "N50 value below which a genome will have a warning message shown in the "
 "submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2461
+#: ../dbase_setup.rst:2472
 msgid ""
 "Minimum length in base pairs below which a genome will have a warning "
 "shown in the submission interface."
 msgstr ""
 
-#: ../dbase_setup.rst:2464
+#: ../dbase_setup.rst:2475
 msgid "watermark"
 msgstr ""
 
-#: ../dbase_setup.rst:2466
+#: ../dbase_setup.rst:2477
 msgid ""
 "FontAwesome icon class used for background watermark on big number "
 "charts, e.g. 'fas fa-bacteria'. See https://fontawesome.com/icons?m=free."
 msgstr ""
 
-#: ../dbase_setup.rst:2469
+#: ../dbase_setup.rst:2480
 msgid "width"
 msgstr ""
 
-#: ../dbase_setup.rst:2471
+#: ../dbase_setup.rst:2482
 msgid "Width of element - either 1, 2, 3, or 4."
 msgstr ""
 
-#: ../dbase_setup.rst:2474
+#: ../dbase_setup.rst:2485
 msgid "Defining default colours"
 msgstr ""
 
-#: ../dbase_setup.rst:2475
+#: ../dbase_setup.rst:2486
 msgid ""
 "Sometimes you may wish to maintain consistent colours for specific field "
 "values. You can define colours for values by field using an additional "
@@ -3686,36 +3709,47 @@ msgid ""
 " directory. The format is as follows: ::"
 msgstr ""
 
-#: ../dbase_setup.rst:2500
+#: ../dbase_setup.rst:2511
 msgid "Field names are prefixed as follows:"
 msgstr ""
 
-#: ../dbase_setup.rst:2502
+#: ../dbase_setup.rst:2513
 msgid "f\\_  Standard provenance fields, e.g. f_country"
 msgstr ""
 
-#: ../dbase_setup.rst:2504
+#: ../dbase_setup.rst:2515
 msgid ""
 "e\\_  Extended attribute fields, e.g. e_country||continent (continent "
 "attribute linked to country)"
 msgstr ""
 
-#: ../dbase_setup.rst:2506
+#: ../dbase_setup.rst:2517
 msgid ""
 "eav\\_ :ref:`Sparely-populated fields<sparsely_populated_fields>`, e.g. "
 "eav_Bexsero_reactivity"
 msgstr ""
 
-#: ../dbase_setup.rst:2508
+#: ../dbase_setup.rst:2519
 msgid ""
 "s\\_  Scheme fields, e.g. s_1_clonal_complex (clonal complex field in "
 "scheme 1)"
 msgstr ""
 
-#: ../dbase_setup.rst:2510
+#: ../dbase_setup.rst:2521
 msgid ""
 "This works for pie, doughnut, bar, and pie charts. Note that if you "
 "define any values for a field then any value not defined will be shown as"
 " light grey in the visualisation."
 msgstr ""
+
+#~ msgid ""
+#~ "It is also possible to override "
+#~ "the allow_submissions, required, maindisplay, "
+#~ "default, hide, or curate_only attributes "
+#~ "of a particular field using a file"
+#~ " called **field.overrides**. The field.overrides"
+#~ " file uses the format "
+#~ "'field:attribute=\"value\"' on each line, e.g."
+#~ " ::"
+#~ msgstr ""
 

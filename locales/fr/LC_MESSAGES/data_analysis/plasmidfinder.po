@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2026, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.52.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-09 14:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../data_analysis/plasmidfinder.rst:8
+msgid "PlasmidFinder"
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:9
+msgid ""
+"PlasmidFinder is a tool for detecting plasmid sequences in whole genome "
+"data, primarily from *Enterobacteriaceae*. It is described in:"
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:12
+msgid ""
+"Carattoli et al. 2014 *In silico* detection and typing of plasmids using "
+"PlasmidFinder and plasmid multilocus sequence typing. Antimicrob Agents "
+"Chemother 58:3895-903. https://pubmed.ncbi.nlm.nih.gov/24777092/"
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:16
+msgid ""
+"Carattoli et al. 2020 PlasmidFinder and *in silico* pMLST: Identification"
+" and Typing of Plasmid Replicons in Whole-Genome Sequencing (WGS) Methods"
+" Mol Biol 2075:285-294. https://pubmed.ncbi.nlm.nih.gov/31584170/"
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:21
+msgid ""
+"The function can be accessed by selecting the 'Analysis' section on the "
+"main contents page."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:26
+msgid ""
+"Jump to the ‘Third party’ category, follow the link to PlasmidFinder, "
+"then click ‘Launch PlasmidFinder’."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:31
+msgid ""
+"Alternatively, it can be accessed following a query by clicking the "
+"‘PlasmidFinder’ button in the 'Third party' list at the bottom of the "
+"results table. Please note that the list of functions here may vary "
+"depending on the setup of the database."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:38
+msgid ""
+"Select the isolate records to analyse - these will be pre-selected if you"
+" accessed the plugin following a query."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:41
+msgid "Click submit."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:45
+msgid "The analysis will be submitted to the job queue."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:47
+msgid ""
+"If plasmids are found, these are displayed in a table as output. There "
+"will also be an output file containing the results. This will either be a"
+" single JSON file, or a zip file containing multiple JSON files if more "
+"than one isolate was selected."
+msgstr ""
+
+#: ../data_analysis/plasmidfinder.rst:54
+msgid ""
+"If plasmids are found, these results are stored within the database and "
+"will be displayed with an isolate record for anybody accessing it in the "
+"future."
+msgstr ""
+
