@@ -47,7 +47,7 @@ master_doc = "index"
 
 # General information about the project.
 project = u"BIGSdb"
-copyright = u"2014-2025, Keith Jolley"
+copyright = u"2014-2026, Keith Jolley"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -255,7 +255,7 @@ texinfo_documents = [
         u"BIGSdb Documentation",
         u"Keith Jolley",
         "BIGSdb",
-        "One line description of project.",
+        "Gene-by-gene population annotation and analysis.",
         "Miscellaneous",
     ),
 ]
