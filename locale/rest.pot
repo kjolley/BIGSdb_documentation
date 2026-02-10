@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2025, Keith Jolley
+# Copyright (C) 2014-2026, Keith Jolley
 # This file is distributed under the same license as the BIGSdb package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BIGSdb 1.52.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-20 16:37+0100\n"
+"POT-Creation-Date: 2026-02-09 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -351,11 +351,11 @@ msgstr ""
 #: ../rest.rst:344
 #: ../rest.rst:684
 #: ../rest.rst:719
-#: ../rest.rst:1070
-#: ../rest.rst:1454
-#: ../rest.rst:1714
-#: ../rest.rst:1794
-#: ../rest.rst:1826
+#: ../rest.rst:1085
+#: ../rest.rst:1469
+#: ../rest.rst:1729
+#: ../rest.rst:1809
+#: ../rest.rst:1841
 msgid "**Required route parameter:** database [string] - Database configuration name"
 msgstr ""
 
@@ -363,26 +363,25 @@ msgstr ""
 #: ../rest.rst:221
 #: ../rest.rst:244
 #: ../rest.rst:401
-#: ../rest.rst:837
-#: ../rest.rst:950
-#: ../rest.rst:1247
-#: ../rest.rst:1316
-#: ../rest.rst:1342
-#: ../rest.rst:1431
-#: ../rest.rst:1565
-#: ../rest.rst:1602
-#: ../rest.rst:1672
-#: ../rest.rst:1696
-#: ../rest.rst:1716
-#: ../rest.rst:1741
-#: ../rest.rst:1909
-#: ../rest.rst:1984
-#: ../rest.rst:2003
-#: ../rest.rst:2030
-#: ../rest.rst:2047
-#: ../rest.rst:2071
-#: ../rest.rst:2089
-#: ../rest.rst:2107
+#: ../rest.rst:842
+#: ../rest.rst:1262
+#: ../rest.rst:1331
+#: ../rest.rst:1357
+#: ../rest.rst:1446
+#: ../rest.rst:1580
+#: ../rest.rst:1617
+#: ../rest.rst:1687
+#: ../rest.rst:1711
+#: ../rest.rst:1731
+#: ../rest.rst:1756
+#: ../rest.rst:1924
+#: ../rest.rst:1999
+#: ../rest.rst:2018
+#: ../rest.rst:2045
+#: ../rest.rst:2062
+#: ../rest.rst:2086
+#: ../rest.rst:2104
+#: ../rest.rst:2122
 msgid "**Optional parameters:** None"
 msgstr ""
 
@@ -394,7 +393,7 @@ msgstr ""
 #: ../rest.rst:405
 #: ../rest.rst:704
 #: ../rest.rst:768
-#: ../rest.rst:1745
+#: ../rest.rst:1760
 msgid "**Response:** Object containing a subset of the following key/value pairs:"
 msgstr ""
 
@@ -434,19 +433,19 @@ msgstr ""
 #: ../rest.rst:225
 #: ../rest.rst:366
 #: ../rest.rst:491
-#: ../rest.rst:818
-#: ../rest.rst:881
-#: ../rest.rst:1094
-#: ../rest.rst:1218
-#: ../rest.rst:1286
-#: ../rest.rst:1379
-#: ../rest.rst:1436
-#: ../rest.rst:1480
-#: ../rest.rst:1643
-#: ../rest.rst:1701
-#: ../rest.rst:1772
-#: ../rest.rst:1806
-#: ../rest.rst:1883
+#: ../rest.rst:823
+#: ../rest.rst:891
+#: ../rest.rst:1109
+#: ../rest.rst:1233
+#: ../rest.rst:1301
+#: ../rest.rst:1394
+#: ../rest.rst:1451
+#: ../rest.rst:1495
+#: ../rest.rst:1658
+#: ../rest.rst:1716
+#: ../rest.rst:1787
+#: ../rest.rst:1821
+#: ../rest.rst:1898
 msgid "**Response:** Object containing:"
 msgstr ""
 
@@ -471,37 +470,37 @@ msgstr ""
 #: ../rest.rst:551
 #: ../rest.rst:583
 #: ../rest.rst:637
-#: ../rest.rst:797
-#: ../rest.rst:831
-#: ../rest.rst:855
-#: ../rest.rst:911
-#: ../rest.rst:944
-#: ../rest.rst:977
-#: ../rest.rst:1032
-#: ../rest.rst:1116
-#: ../rest.rst:1204
-#: ../rest.rst:1241
-#: ../rest.rst:1272
-#: ../rest.rst:1310
-#: ../rest.rst:1336
-#: ../rest.rst:1365
-#: ../rest.rst:1402
-#: ../rest.rst:1426
-#: ../rest.rst:1502
-#: ../rest.rst:1560
-#: ../rest.rst:1598
-#: ../rest.rst:1630
-#: ../rest.rst:1667
-#: ../rest.rst:1692
-#: ../rest.rst:1736
-#: ../rest.rst:1904
-#: ../rest.rst:1979
-#: ../rest.rst:1998
-#: ../rest.rst:2021
-#: ../rest.rst:2042
-#: ../rest.rst:2061
-#: ../rest.rst:2083
-#: ../rest.rst:2101
+#: ../rest.rst:802
+#: ../rest.rst:836
+#: ../rest.rst:860
+#: ../rest.rst:921
+#: ../rest.rst:954
+#: ../rest.rst:992
+#: ../rest.rst:1047
+#: ../rest.rst:1131
+#: ../rest.rst:1219
+#: ../rest.rst:1256
+#: ../rest.rst:1287
+#: ../rest.rst:1325
+#: ../rest.rst:1351
+#: ../rest.rst:1380
+#: ../rest.rst:1417
+#: ../rest.rst:1441
+#: ../rest.rst:1517
+#: ../rest.rst:1575
+#: ../rest.rst:1613
+#: ../rest.rst:1645
+#: ../rest.rst:1682
+#: ../rest.rst:1707
+#: ../rest.rst:1751
+#: ../rest.rst:1919
+#: ../rest.rst:1994
+#: ../rest.rst:2013
+#: ../rest.rst:2036
+#: ../rest.rst:2057
+#: ../rest.rst:2076
+#: ../rest.rst:2098
+#: ../rest.rst:2116
 msgid "**Required route parameters:**"
 msgstr ""
 
@@ -515,38 +514,38 @@ msgstr ""
 #: ../rest.rst:585
 #: ../rest.rst:639
 #: ../rest.rst:748
-#: ../rest.rst:799
-#: ../rest.rst:833
-#: ../rest.rst:857
-#: ../rest.rst:913
-#: ../rest.rst:946
-#: ../rest.rst:979
-#: ../rest.rst:1034
-#: ../rest.rst:1118
-#: ../rest.rst:1206
-#: ../rest.rst:1243
-#: ../rest.rst:1274
-#: ../rest.rst:1312
-#: ../rest.rst:1338
-#: ../rest.rst:1367
-#: ../rest.rst:1404
-#: ../rest.rst:1428
-#: ../rest.rst:1504
-#: ../rest.rst:1562
-#: ../rest.rst:1600
-#: ../rest.rst:1632
-#: ../rest.rst:1669
-#: ../rest.rst:1694
-#: ../rest.rst:1738
-#: ../rest.rst:1761
-#: ../rest.rst:1906
-#: ../rest.rst:1981
-#: ../rest.rst:2000
-#: ../rest.rst:2023
-#: ../rest.rst:2044
-#: ../rest.rst:2063
-#: ../rest.rst:2085
-#: ../rest.rst:2103
+#: ../rest.rst:804
+#: ../rest.rst:838
+#: ../rest.rst:862
+#: ../rest.rst:923
+#: ../rest.rst:956
+#: ../rest.rst:994
+#: ../rest.rst:1049
+#: ../rest.rst:1133
+#: ../rest.rst:1221
+#: ../rest.rst:1258
+#: ../rest.rst:1289
+#: ../rest.rst:1327
+#: ../rest.rst:1353
+#: ../rest.rst:1382
+#: ../rest.rst:1419
+#: ../rest.rst:1443
+#: ../rest.rst:1519
+#: ../rest.rst:1577
+#: ../rest.rst:1615
+#: ../rest.rst:1647
+#: ../rest.rst:1684
+#: ../rest.rst:1709
+#: ../rest.rst:1753
+#: ../rest.rst:1776
+#: ../rest.rst:1921
+#: ../rest.rst:1996
+#: ../rest.rst:2015
+#: ../rest.rst:2038
+#: ../rest.rst:2059
+#: ../rest.rst:2078
+#: ../rest.rst:2100
+#: ../rest.rst:2118
 msgid "database [string] - Database configuration name"
 msgstr ""
 
@@ -613,18 +612,19 @@ msgstr ""
 #: ../rest.rst:686
 #: ../rest.rst:721
 #: ../rest.rst:751
-#: ../rest.rst:802
-#: ../rest.rst:860
-#: ../rest.rst:916
-#: ../rest.rst:1072
-#: ../rest.rst:1209
-#: ../rest.rst:1277
-#: ../rest.rst:1370
-#: ../rest.rst:1456
-#: ../rest.rst:1635
-#: ../rest.rst:1764
-#: ../rest.rst:1796
-#: ../rest.rst:1877
+#: ../rest.rst:807
+#: ../rest.rst:865
+#: ../rest.rst:926
+#: ../rest.rst:960
+#: ../rest.rst:1087
+#: ../rest.rst:1224
+#: ../rest.rst:1292
+#: ../rest.rst:1385
+#: ../rest.rst:1471
+#: ../rest.rst:1650
+#: ../rest.rst:1779
+#: ../rest.rst:1811
+#: ../rest.rst:1892
 msgid "**Optional parameters:**"
 msgstr ""
 
@@ -632,16 +632,16 @@ msgstr ""
 #: ../rest.rst:313
 #: ../rest.rst:348
 #: ../rest.rst:465
-#: ../rest.rst:862
-#: ../rest.rst:1074
-#: ../rest.rst:1211
-#: ../rest.rst:1279
-#: ../rest.rst:1372
-#: ../rest.rst:1458
-#: ../rest.rst:1508
-#: ../rest.rst:1637
-#: ../rest.rst:1766
-#: ../rest.rst:1800
+#: ../rest.rst:867
+#: ../rest.rst:1089
+#: ../rest.rst:1226
+#: ../rest.rst:1294
+#: ../rest.rst:1387
+#: ../rest.rst:1473
+#: ../rest.rst:1523
+#: ../rest.rst:1652
+#: ../rest.rst:1781
+#: ../rest.rst:1815
 msgid "page [integer]"
 msgstr ""
 
@@ -649,16 +649,16 @@ msgstr ""
 #: ../rest.rst:314
 #: ../rest.rst:349
 #: ../rest.rst:466
-#: ../rest.rst:863
-#: ../rest.rst:1075
-#: ../rest.rst:1212
-#: ../rest.rst:1280
-#: ../rest.rst:1373
-#: ../rest.rst:1459
-#: ../rest.rst:1509
-#: ../rest.rst:1638
-#: ../rest.rst:1767
-#: ../rest.rst:1801
+#: ../rest.rst:868
+#: ../rest.rst:1090
+#: ../rest.rst:1227
+#: ../rest.rst:1295
+#: ../rest.rst:1388
+#: ../rest.rst:1474
+#: ../rest.rst:1524
+#: ../rest.rst:1653
+#: ../rest.rst:1782
+#: ../rest.rst:1816
 msgid "page_size [integer]"
 msgstr ""
 
@@ -666,16 +666,16 @@ msgstr ""
 #: ../rest.rst:315
 #: ../rest.rst:350
 #: ../rest.rst:467
-#: ../rest.rst:864
-#: ../rest.rst:1076
-#: ../rest.rst:1213
-#: ../rest.rst:1281
-#: ../rest.rst:1374
-#: ../rest.rst:1460
-#: ../rest.rst:1510
-#: ../rest.rst:1639
-#: ../rest.rst:1768
-#: ../rest.rst:1802
+#: ../rest.rst:869
+#: ../rest.rst:1091
+#: ../rest.rst:1228
+#: ../rest.rst:1296
+#: ../rest.rst:1389
+#: ../rest.rst:1475
+#: ../rest.rst:1525
+#: ../rest.rst:1654
+#: ../rest.rst:1783
+#: ../rest.rst:1817
 msgid "return_all [integer] - Set to non-zero value to disable paging."
 msgstr ""
 
@@ -699,16 +699,16 @@ msgstr ""
 #: ../rest.rst:328
 #: ../rest.rst:372
 #: ../rest.rst:503
-#: ../rest.rst:889
-#: ../rest.rst:1100
-#: ../rest.rst:1225
-#: ../rest.rst:1293
-#: ../rest.rst:1386
-#: ../rest.rst:1486
-#: ../rest.rst:1544
-#: ../rest.rst:1649
-#: ../rest.rst:1778
-#: ../rest.rst:1810
+#: ../rest.rst:899
+#: ../rest.rst:1115
+#: ../rest.rst:1240
+#: ../rest.rst:1308
+#: ../rest.rst:1401
+#: ../rest.rst:1501
+#: ../rest.rst:1559
+#: ../rest.rst:1664
+#: ../rest.rst:1793
+#: ../rest.rst:1825
 msgid "paging [object] - Some or all of the following:"
 msgstr ""
 
@@ -716,16 +716,16 @@ msgstr ""
 #: ../rest.rst:330
 #: ../rest.rst:374
 #: ../rest.rst:505
-#: ../rest.rst:891
-#: ../rest.rst:1102
-#: ../rest.rst:1227
-#: ../rest.rst:1295
-#: ../rest.rst:1388
-#: ../rest.rst:1488
-#: ../rest.rst:1546
-#: ../rest.rst:1651
-#: ../rest.rst:1780
-#: ../rest.rst:1812
+#: ../rest.rst:901
+#: ../rest.rst:1117
+#: ../rest.rst:1242
+#: ../rest.rst:1310
+#: ../rest.rst:1403
+#: ../rest.rst:1503
+#: ../rest.rst:1561
+#: ../rest.rst:1666
+#: ../rest.rst:1795
+#: ../rest.rst:1827
 msgid "previous - URI to previous page of results"
 msgstr ""
 
@@ -733,16 +733,16 @@ msgstr ""
 #: ../rest.rst:331
 #: ../rest.rst:375
 #: ../rest.rst:506
-#: ../rest.rst:892
-#: ../rest.rst:1103
-#: ../rest.rst:1228
-#: ../rest.rst:1296
-#: ../rest.rst:1389
-#: ../rest.rst:1489
-#: ../rest.rst:1547
-#: ../rest.rst:1652
-#: ../rest.rst:1781
-#: ../rest.rst:1813
+#: ../rest.rst:902
+#: ../rest.rst:1118
+#: ../rest.rst:1243
+#: ../rest.rst:1311
+#: ../rest.rst:1404
+#: ../rest.rst:1504
+#: ../rest.rst:1562
+#: ../rest.rst:1667
+#: ../rest.rst:1796
+#: ../rest.rst:1828
 msgid "next - URI to next page of results"
 msgstr ""
 
@@ -750,16 +750,16 @@ msgstr ""
 #: ../rest.rst:332
 #: ../rest.rst:376
 #: ../rest.rst:507
-#: ../rest.rst:893
-#: ../rest.rst:1104
-#: ../rest.rst:1229
-#: ../rest.rst:1297
-#: ../rest.rst:1390
-#: ../rest.rst:1490
-#: ../rest.rst:1548
-#: ../rest.rst:1653
-#: ../rest.rst:1782
-#: ../rest.rst:1814
+#: ../rest.rst:903
+#: ../rest.rst:1119
+#: ../rest.rst:1244
+#: ../rest.rst:1312
+#: ../rest.rst:1405
+#: ../rest.rst:1505
+#: ../rest.rst:1563
+#: ../rest.rst:1668
+#: ../rest.rst:1797
+#: ../rest.rst:1829
 msgid "first - URI to first page of results"
 msgstr ""
 
@@ -767,16 +767,16 @@ msgstr ""
 #: ../rest.rst:333
 #: ../rest.rst:377
 #: ../rest.rst:508
-#: ../rest.rst:894
-#: ../rest.rst:1105
-#: ../rest.rst:1230
-#: ../rest.rst:1298
-#: ../rest.rst:1391
-#: ../rest.rst:1491
-#: ../rest.rst:1549
-#: ../rest.rst:1654
-#: ../rest.rst:1783
-#: ../rest.rst:1815
+#: ../rest.rst:904
+#: ../rest.rst:1120
+#: ../rest.rst:1245
+#: ../rest.rst:1313
+#: ../rest.rst:1406
+#: ../rest.rst:1506
+#: ../rest.rst:1564
+#: ../rest.rst:1669
+#: ../rest.rst:1798
+#: ../rest.rst:1830
 msgid "last - URI to last page of results"
 msgstr ""
 
@@ -784,16 +784,16 @@ msgstr ""
 #: ../rest.rst:334
 #: ../rest.rst:378
 #: ../rest.rst:509
-#: ../rest.rst:895
-#: ../rest.rst:1106
-#: ../rest.rst:1231
-#: ../rest.rst:1299
-#: ../rest.rst:1392
-#: ../rest.rst:1492
-#: ../rest.rst:1550
-#: ../rest.rst:1655
-#: ../rest.rst:1784
-#: ../rest.rst:1816
+#: ../rest.rst:905
+#: ../rest.rst:1121
+#: ../rest.rst:1246
+#: ../rest.rst:1314
+#: ../rest.rst:1407
+#: ../rest.rst:1507
+#: ../rest.rst:1565
+#: ../rest.rst:1670
+#: ../rest.rst:1799
+#: ../rest.rst:1831
 msgid "return_all - URI to page containing all results (paging disabled)"
 msgstr ""
 
@@ -830,7 +830,7 @@ msgid "GET /db/{database}/loci - List loci"
 msgstr ""
 
 #: ../rest.rst:351
-#: ../rest.rst:804
+#: ../rest.rst:809
 msgid "alleles_added_after [date] - Include only loci with alleles added after (but not on) specified date (ISO 8601 format). Only recognized in sequence definition databases."
 msgstr ""
 
@@ -851,7 +851,7 @@ msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_se
 msgstr ""
 
 #: ../rest.rst:368
-#: ../rest.rst:820
+#: ../rest.rst:825
 msgid "records [integer] - Number of loci"
 msgstr ""
 
@@ -876,7 +876,7 @@ msgstr ""
 #: ../rest.rst:522
 #: ../rest.rst:554
 #: ../rest.rst:586
-#: ../rest.rst:1245
+#: ../rest.rst:1260
 msgid "locus [string] - Locus name"
 msgstr ""
 
@@ -935,8 +935,8 @@ msgstr ""
 #: ../rest.rst:420
 #: ../rest.rst:735
 #: ../rest.rst:771
-#: ../rest.rst:1725
-#: ../rest.rst:1748
+#: ../rest.rst:1740
+#: ../rest.rst:1763
 msgid "description [string]"
 msgstr ""
 
@@ -981,7 +981,7 @@ msgid "extended_attributes [array] (seqdef databases) - list of extended attribu
 msgstr ""
 
 #: ../rest.rst:440
-#: ../rest.rst:843
+#: ../rest.rst:848
 msgid "field [string] - field name"
 msgstr ""
 
@@ -998,7 +998,7 @@ msgid "description [string] - description of field"
 msgstr ""
 
 #: ../rest.rst:444
-#: ../rest.rst:1612
+#: ../rest.rst:1627
 msgid "length [integer] - maximum length of field"
 msgstr ""
 
@@ -1113,17 +1113,17 @@ msgstr ""
 
 #: ../rest.rst:563
 #: ../rest.rst:597
-#: ../rest.rst:841
-#: ../rest.rst:955
-#: ../rest.rst:993
-#: ../rest.rst:1043
-#: ../rest.rst:1676
+#: ../rest.rst:846
+#: ../rest.rst:969
+#: ../rest.rst:1008
+#: ../rest.rst:1058
+#: ../rest.rst:1691
 msgid "**Response:** Object containing the following key/value pairs:"
 msgstr ""
 
 #: ../rest.rst:565
-#: ../rest.rst:1255
-#: ../rest.rst:1583
+#: ../rest.rst:1270
+#: ../rest.rst:1598
 msgid "locus [string] - :ref:`URI to locus description<db_loci_locus>`"
 msgstr ""
 
@@ -1140,35 +1140,35 @@ msgid "status [string] - either 'Sanger trace checked', 'WGS: manual extract', '
 msgstr ""
 
 #: ../rest.rst:570
-#: ../rest.rst:964
-#: ../rest.rst:1135
-#: ../rest.rst:1260
-#: ../rest.rst:1577
+#: ../rest.rst:979
+#: ../rest.rst:1150
+#: ../rest.rst:1275
+#: ../rest.rst:1592
 msgid "sender [string] - :ref:`URI to user details<db_users_user_id>` of sender"
 msgstr ""
 
 #: ../rest.rst:571
-#: ../rest.rst:965
-#: ../rest.rst:1136
-#: ../rest.rst:1261
-#: ../rest.rst:1442
-#: ../rest.rst:1578
-#: ../rest.rst:1920
+#: ../rest.rst:980
+#: ../rest.rst:1151
+#: ../rest.rst:1276
+#: ../rest.rst:1457
+#: ../rest.rst:1593
+#: ../rest.rst:1935
 msgid "curator [string] - :ref:`URI to user details<db_users_user_id>` of curator"
 msgstr ""
 
 #: ../rest.rst:572
-#: ../rest.rst:966
-#: ../rest.rst:1137
-#: ../rest.rst:1579
+#: ../rest.rst:981
+#: ../rest.rst:1152
+#: ../rest.rst:1594
 msgid "date_entered [string] - record creation date (ISO 8601 format)"
 msgstr ""
 
 #: ../rest.rst:573
-#: ../rest.rst:967
-#: ../rest.rst:1138
-#: ../rest.rst:1262
-#: ../rest.rst:1580
+#: ../rest.rst:982
+#: ../rest.rst:1153
+#: ../rest.rst:1277
+#: ../rest.rst:1595
 msgid "datestamp [string] - last updated date (ISO 8601 format)"
 msgstr ""
 
@@ -1178,98 +1178,98 @@ msgstr ""
 
 #: ../rest.rst:588
 #: ../rest.rst:641
-#: ../rest.rst:982
-#: ../rest.rst:1037
-#: ../rest.rst:1828
-#: ../rest.rst:2066
+#: ../rest.rst:997
+#: ../rest.rst:1052
+#: ../rest.rst:1843
+#: ../rest.rst:2081
 msgid "**Required additional parameters (JSON-encoded in POST body):**"
 msgstr ""
 
 #: ../rest.rst:590
 #: ../rest.rst:643
-#: ../rest.rst:984
+#: ../rest.rst:999
 msgid "sequence [string] - Sequence string or base64-encoded FASTA file"
 msgstr ""
 
 #: ../rest.rst:592
 #: ../rest.rst:645
-#: ../rest.rst:986
+#: ../rest.rst:1001
 msgid "**Optional parameters (JSON-encoded in POST body):**"
 msgstr ""
 
 #: ../rest.rst:594
 #: ../rest.rst:647
-#: ../rest.rst:988
+#: ../rest.rst:1003
 msgid "details [true/false] - Return detailed exact match parameters"
 msgstr ""
 
 #: ../rest.rst:595
 #: ../rest.rst:648
-#: ../rest.rst:991
+#: ../rest.rst:1006
 msgid "base64 [true/false] - Sequence is a base64-encoded FASTA file"
 msgstr ""
 
 #: ../rest.rst:599
-#: ../rest.rst:995
+#: ../rest.rst:1010
 msgid "exact_matches [array] - list of match objects, each consisting of:"
 msgstr ""
 
 #: ../rest.rst:601
 #: ../rest.rst:618
 #: ../rest.rst:655
-#: ../rest.rst:997
+#: ../rest.rst:1012
 msgid "allele_id"
 msgstr ""
 
 #: ../rest.rst:602
 #: ../rest.rst:619
 #: ../rest.rst:656
-#: ../rest.rst:998
+#: ../rest.rst:1013
 msgid "href - :ref:`URI to allele record <db_loci_locus_alleles_allele_id>`."
 msgstr ""
 
 #: ../rest.rst:604
 #: ../rest.rst:658
-#: ../rest.rst:1000
+#: ../rest.rst:1015
 msgid "additionally if 'details' parameter passed:"
 msgstr ""
 
 #: ../rest.rst:606
 #: ../rest.rst:660
-#: ../rest.rst:1002
+#: ../rest.rst:1017
 msgid "start - start position on query"
 msgstr ""
 
 #: ../rest.rst:607
 #: ../rest.rst:661
-#: ../rest.rst:1003
+#: ../rest.rst:1018
 msgid "end - end position on query"
 msgstr ""
 
 #: ../rest.rst:608
 #: ../rest.rst:622
 #: ../rest.rst:662
-#: ../rest.rst:1004
+#: ../rest.rst:1019
 msgid "orientation - forward/reverse"
 msgstr ""
 
 #: ../rest.rst:609
 #: ../rest.rst:623
 #: ../rest.rst:663
-#: ../rest.rst:1005
+#: ../rest.rst:1020
 msgid "length - length of matched allele"
 msgstr ""
 
 #: ../rest.rst:610
 #: ../rest.rst:664
-#: ../rest.rst:1006
+#: ../rest.rst:1021
 msgid "contig - contig name if FASTA file is uploaded"
 msgstr ""
 
 #: ../rest.rst:612
 #: ../rest.rst:666
-#: ../rest.rst:1008
-#: ../rest.rst:1050
+#: ../rest.rst:1023
+#: ../rest.rst:1065
 msgid "If the locus is linked to field data in client isolate databases, there may also be an object called 'linked_data' containing values and frequencies of the field for the returned allele."
 msgstr ""
 
@@ -1307,9 +1307,9 @@ msgstr ""
 
 #: ../rest.rst:650
 #: ../rest.rst:729
-#: ../rest.rst:1321
-#: ../rest.rst:1347
-#: ../rest.rst:1720
+#: ../rest.rst:1336
+#: ../rest.rst:1362
+#: ../rest.rst:1735
 msgid "**Response:**"
 msgstr ""
 
@@ -1318,7 +1318,7 @@ msgid "exact_matches [object] consisting of locus keys, each consisting of array
 msgstr ""
 
 #: ../rest.rst:671
-#: ../rest.rst:1019
+#: ../rest.rst:1034
 msgid "This method only supports exact matches. If no match is indicated for a specific locus, use the :ref:`locus-specific call<db_loci_locus_sequence>` to identify the closest match."
 msgstr ""
 
@@ -1379,7 +1379,7 @@ msgid "schemes [array] - list of scheme objects, each containing:"
 msgstr ""
 
 #: ../rest.rst:734
-#: ../rest.rst:1954
+#: ../rest.rst:1969
 msgid "scheme [string] - :ref:`URI to scheme information<db_schemes_scheme_id>`"
 msgstr ""
 
@@ -1392,8 +1392,8 @@ msgid "Includes links to allelic profiles (in seqdef databases, if appropriate).
 msgstr ""
 
 #: ../rest.rst:749
-#: ../rest.rst:800
-#: ../rest.rst:834
+#: ../rest.rst:805
+#: ../rest.rst:839
 msgid "scheme_id [integer] - Scheme id number"
 msgstr ""
 
@@ -1426,8 +1426,8 @@ msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_se
 msgstr ""
 
 #: ../rest.rst:770
-#: ../rest.rst:1134
-#: ../rest.rst:1747
+#: ../rest.rst:1149
+#: ../rest.rst:1762
 msgid "id [integer]"
 msgstr ""
 
@@ -1460,1460 +1460,1485 @@ msgid "profiles_csv [string] - URI to tab-delimited file of all scheme profiles"
 msgstr ""
 
 #: ../rest.rst:781
-msgid "curators [array] (seqdef databases) - list of :ref:`URIs to user records<db_users_user_id>` of curators of the scheme"
+msgid "lincodes [object] containing -"
 msgstr ""
 
 #: ../rest.rst:783
-#: ../rest.rst:883
-msgid "records [integer] - Number of profiles"
+msgid "thresholds [string] - semi-colon-separated list of allelic difference thresholds"
 msgstr ""
 
 #: ../rest.rst:784
-msgid "last_added [date] - Latest profile addition/modification date (ISO 8601 format)."
+msgid "max_missing [integer] - maximum number of missing loci allowed for definition (seqdef db only)"
+msgstr ""
+
+#: ../rest.rst:785
+msgid "maindisplay [boolean] - show in main results table by default if scheme also enabled (isolate db only)"
 msgstr ""
 
 #: ../rest.rst:786
-#: ../rest.rst:884
+msgid "curators [array] (seqdef databases) - list of :ref:`URIs to user records<db_users_user_id>` of curators of the scheme"
+msgstr ""
+
+#: ../rest.rst:788
+#: ../rest.rst:893
+msgid "records [integer] - Number of profiles"
+msgstr ""
+
+#: ../rest.rst:789
+msgid "last_added [date] - Latest profile addition/modification date (ISO 8601 format)."
+msgstr ""
+
+#: ../rest.rst:791
+#: ../rest.rst:894
 msgid "last_updated [date] - Latest profile addition/modification date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:796
+#: ../rest.rst:801
 msgid "GET /db/{database}/schemes/{scheme_id}/loci - Retrieve scheme loci"
 msgstr ""
 
-#: ../rest.rst:807
+#: ../rest.rst:812
 msgid "alleles_added_reldate [integer] - Include only loci with alleles added within the specified number of days. Only recognized in sequence definition databases."
 msgstr ""
 
-#: ../rest.rst:809
+#: ../rest.rst:814
 msgid "alleles_updated_after [date] - Include only loci with alleles last modified after specified date (ISO 8601 format). Only recognized in sequence definition databases."
 msgstr ""
 
-#: ../rest.rst:812
+#: ../rest.rst:817
 msgid "alleles_updated_reldate [integer] - Include only loci with alleles last modified within the specified number of days. Only recognized in sequence definition databases."
 msgstr ""
 
-#: ../rest.rst:816
+#: ../rest.rst:821
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/loci"
 msgstr ""
 
-#: ../rest.rst:821
+#: ../rest.rst:826
 msgid "loci [array] - List of :ref:`URIs to defined locus records<db_loci_locus>`."
 msgstr ""
 
-#: ../rest.rst:830
+#: ../rest.rst:835
 msgid "GET /db/{database}/schemes/{scheme_id}/fields/{field} - Retrieve information about scheme field"
 msgstr ""
 
-#: ../rest.rst:835
+#: ../rest.rst:840
 msgid "field [string] - Field name"
 msgstr ""
 
-#: ../rest.rst:839
+#: ../rest.rst:844
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/fields/ST"
 msgstr ""
 
-#: ../rest.rst:844
+#: ../rest.rst:849
 msgid "type [string] - data type of field (integer or text)"
 msgstr ""
 
-#: ../rest.rst:845
+#: ../rest.rst:850
 msgid "primary_key [boolean] - true if field is the scheme primary key"
 msgstr ""
 
-#: ../rest.rst:854
+#: ../rest.rst:859
 msgid "GET /db/{database}/schemes/{scheme_id}/profiles - List allelic profiles defined for scheme"
 msgstr ""
 
-#: ../rest.rst:858
-#: ../rest.rst:914
-#: ../rest.rst:947
-#: ../rest.rst:980
-#: ../rest.rst:1035
+#: ../rest.rst:863
+#: ../rest.rst:924
+#: ../rest.rst:957
+#: ../rest.rst:995
+#: ../rest.rst:1050
 msgid "scheme_id [integer] - Scheme id"
 msgstr ""
 
-#: ../rest.rst:865
-#: ../rest.rst:918
-msgid "added_after [date] - Include only profiles added after (but not on) specified date (ISO 8601 format)."
+#: ../rest.rst:870
+msgid "include_records [integer] - Set to non-zero value to include array of profile records rather than links."
 msgstr ""
 
-#: ../rest.rst:867
-#: ../rest.rst:920
-msgid "added_reldate [integer] - Include only profiles added within the specified number of days."
-msgstr ""
-
-#: ../rest.rst:869
-#: ../rest.rst:922
-msgid "added_on [date] - Include only profiles added on specified date (ISO 8601 format)."
-msgstr ""
-
-#: ../rest.rst:871
-#: ../rest.rst:924
-msgid "updated_after [date] - Include only profiles last modified after (but not on) specified date (ISO 8601 format)."
-msgstr ""
-
-#: ../rest.rst:873
-#: ../rest.rst:926
-msgid "updated_reldate [integer] - Include only profiles last modified within the specified number of days."
+#: ../rest.rst:872
+#: ../rest.rst:962
+msgid "allele_ids_only [integer] - Set to non-zero value to use an object for each allele consisting of locus and allele_id keys. This is instead of a URL that links to the allele record."
 msgstr ""
 
 #: ../rest.rst:875
 #: ../rest.rst:928
+msgid "added_after [date] - Include only profiles added after (but not on) specified date (ISO 8601 format)."
+msgstr ""
+
+#: ../rest.rst:877
+#: ../rest.rst:930
+msgid "added_reldate [integer] - Include only profiles added within the specified number of days."
+msgstr ""
+
+#: ../rest.rst:879
+#: ../rest.rst:932
+msgid "added_on [date] - Include only profiles added on specified date (ISO 8601 format)."
+msgstr ""
+
+#: ../rest.rst:881
+#: ../rest.rst:934
+msgid "updated_after [date] - Include only profiles last modified after (but not on) specified date (ISO 8601 format)."
+msgstr ""
+
+#: ../rest.rst:883
+#: ../rest.rst:936
+msgid "updated_reldate [integer] - Include only profiles last modified within the specified number of days."
+msgstr ""
+
+#: ../rest.rst:885
+#: ../rest.rst:938
 msgid "updated_on [date] - Include only profiles last modified on specified date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:878
+#: ../rest.rst:888
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles"
 msgstr ""
 
-#: ../rest.rst:886
-msgid "profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
+#: ../rest.rst:896
+msgid "profiles [array] - List of :ref:`URIs to defined profile records<db_schemes_scheme_id_profiles_profile_id>`. Alternatively, if include_records is set to a non-zero value, the array will consist of full record objects. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:899
+#: ../rest.rst:909
 msgid "This method also supports content negotiation. If the request accepts header includes TSV or CSV, then the call is redirected to :ref:`/db/{database}/schemes/{scheme_id}/profiles_csv<db_schemes_scheme_id_profiles_csv>`."
 msgstr ""
 
-#: ../rest.rst:910
+#: ../rest.rst:920
 msgid "GET /db/{database}/schemes/{scheme_id}/profiles_csv - Download allelic profiles in CSV (tab-delimited) format"
 msgstr ""
 
-#: ../rest.rst:931
+#: ../rest.rst:941
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles_csv"
 msgstr ""
 
-#: ../rest.rst:934
+#: ../rest.rst:944
 msgid "**Response:**  Tab-delimited text file of allelic profiles"
 msgstr ""
 
-#: ../rest.rst:943
+#: ../rest.rst:953
 msgid "GET /db/{database}/schemes/{scheme_id}/profiles/{profile_id} - Retrieve allelic profile record"
 msgstr ""
 
-#: ../rest.rst:948
+#: ../rest.rst:958
 msgid "profile_id [string/integer] - Profile id"
 msgstr ""
 
-#: ../rest.rst:952
+#: ../rest.rst:966
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/schemes/1/profiles/11"
 msgstr ""
 
-#: ../rest.rst:957
+#: ../rest.rst:971
 msgid "*primary_key_term* [string/integer] - The field name is the primary key, e.g. ST.  The value is the primary key value (primary_id used as an argument)."
 msgstr ""
 
-#: ../rest.rst:960
-msgid "alleles [object] - :ref:`list of URIs to allele descriptions <db_loci_locus_alleles_allele_id>`"
+#: ../rest.rst:974
+msgid "alleles [array] - :ref:`list of URIs to allele descriptions <db_loci_locus_alleles_allele_id>` or a list of objects containing locus and allele_id keys if allele_ids_only is set to non-zero."
 msgstr ""
 
-#: ../rest.rst:962
+#: ../rest.rst:977
 msgid "*other_scheme_fields* [string/integer] - Each scheme field will have its own value if defined.  The field name is the name of the field."
 msgstr ""
 
-#: ../rest.rst:976
+#: ../rest.rst:991
 msgid "POST /db/{database}/schemes/{scheme_id}/sequence - Query sequence to extract allele designations/fields for a scheme"
 msgstr ""
 
-#: ../rest.rst:989
+#: ../rest.rst:1004
 msgid "partial_matches [true/false] - Return details of partial matches if exact match is not found"
 msgstr ""
 
-#: ../rest.rst:1012
+#: ../rest.rst:1027
 msgid "Example curl call to upload a FASTA file 'contigs.fasta' and extract MLST results from Neisseria database: ::"
 msgstr ""
 
-#: ../rest.rst:1031
+#: ../rest.rst:1046
 msgid "POST /db/{database}/schemes/{scheme_id}/designations - Query allelic profile to extract fields for a scheme"
 msgstr ""
 
-#: ../rest.rst:1039
+#: ../rest.rst:1054
 msgid "designations [object] - consisting of"
 msgstr ""
 
-#: ../rest.rst:1041
+#: ../rest.rst:1056
 msgid "locus objects each containing an array of alleles (see example)"
 msgstr ""
 
-#: ../rest.rst:1045
+#: ../rest.rst:1060
 msgid "exact_matches [object] - consisting of locus values, each consisting of an array of allele values:"
 msgstr ""
 
-#: ../rest.rst:1048
-#: ../rest.rst:1256
+#: ../rest.rst:1063
+#: ../rest.rst:1271
 msgid "allele_id [string]"
 msgstr ""
 
-#: ../rest.rst:1054
+#: ../rest.rst:1069
 msgid "fields [object] - consisting of key/value pairs of scheme fields (if defined)"
 msgstr ""
 
-#: ../rest.rst:1057
+#: ../rest.rst:1072
 msgid "Example curl call to query an allelic profile and extract MLST results from Neisseria database: ::"
 msgstr ""
 
-#: ../rest.rst:1069
+#: ../rest.rst:1084
 msgid "GET /db/{database}/isolates - Retrieve list of isolate records"
 msgstr ""
 
-#: ../rest.rst:1077
-#: ../rest.rst:1461
+#: ../rest.rst:1092
+#: ../rest.rst:1476
 msgid "added_after [date] - Include only isolates added after (but not on) specified date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:1079
-#: ../rest.rst:1463
+#: ../rest.rst:1094
+#: ../rest.rst:1478
 msgid "added_reldate [integer] - Include only isolates added within the specified number of days."
 msgstr ""
 
-#: ../rest.rst:1081
-#: ../rest.rst:1465
+#: ../rest.rst:1096
+#: ../rest.rst:1480
 msgid "added_on [date] - Include only isolates added on specified date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:1083
-#: ../rest.rst:1467
+#: ../rest.rst:1098
+#: ../rest.rst:1482
 msgid "include_old_versions [integer] - Set to 1 to include old record versions (the default is to only include new versions)"
 msgstr ""
 
-#: ../rest.rst:1085
-#: ../rest.rst:1469
+#: ../rest.rst:1100
+#: ../rest.rst:1484
 msgid "updated_after [date] - Include only isolates last modified after (but not on) specified date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:1087
-#: ../rest.rst:1471
+#: ../rest.rst:1102
+#: ../rest.rst:1486
 msgid "updated_reldate [integer] - Include only isolates last modified within the specified number of days."
 msgstr ""
 
-#: ../rest.rst:1089
-#: ../rest.rst:1473
+#: ../rest.rst:1104
+#: ../rest.rst:1488
 msgid "updated_on [date] - Include only isolates updated on specified date (ISO 8601 format)."
 msgstr ""
 
-#: ../rest.rst:1092
+#: ../rest.rst:1107
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates"
 msgstr ""
 
-#: ../rest.rst:1096
-#: ../rest.rst:1482
-#: ../rest.rst:1540
+#: ../rest.rst:1111
+#: ../rest.rst:1497
+#: ../rest.rst:1555
 msgid "records [integer] - Number of isolates"
 msgstr ""
 
-#: ../rest.rst:1097
-#: ../rest.rst:1483
-#: ../rest.rst:1541
+#: ../rest.rst:1112
+#: ../rest.rst:1498
+#: ../rest.rst:1556
 msgid "isolates [array] - List of :ref:`URIs to isolate records<db_isolates_isolate_id>`. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1115
+#: ../rest.rst:1130
 msgid "GET /db/{database}/isolates/{isolate_id} - Retrieve isolate record"
 msgstr ""
 
-#: ../rest.rst:1119
-#: ../rest.rst:1207
-#: ../rest.rst:1244
-#: ../rest.rst:1275
-#: ../rest.rst:1313
-#: ../rest.rst:1339
-#: ../rest.rst:1368
-#: ../rest.rst:1405
-#: ../rest.rst:1429
+#: ../rest.rst:1134
+#: ../rest.rst:1222
+#: ../rest.rst:1259
+#: ../rest.rst:1290
+#: ../rest.rst:1328
+#: ../rest.rst:1354
+#: ../rest.rst:1383
+#: ../rest.rst:1420
+#: ../rest.rst:1444
 msgid "isolate_id [integer] - Isolate identifier"
 msgstr ""
 
-#: ../rest.rst:1121
-#: ../rest.rst:1407
+#: ../rest.rst:1136
+#: ../rest.rst:1422
 msgid "**Optional parameter:**"
 msgstr ""
 
-#: ../rest.rst:1123
+#: ../rest.rst:1138
 msgid "provenance_only [integer] - Set to non-zero value to only return provenance metadata"
 msgstr ""
 
-#: ../rest.rst:1126
+#: ../rest.rst:1141
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1"
 msgstr ""
 
-#: ../rest.rst:1128
+#: ../rest.rst:1143
 msgid "**Response:** Object containing some or all of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1130
+#: ../rest.rst:1145
 msgid "provenance [object] - set of key/value pairs.  Keys are defined by calling the :ref:`/fields route<db_fields>` route.  The fields will vary by database but will always contain the following:"
 msgstr ""
 
-#: ../rest.rst:1140
+#: ../rest.rst:1155
 msgid "aliases [array] - list of alternative names for isolate"
 msgstr ""
 
-#: ../rest.rst:1141
+#: ../rest.rst:1156
 msgid "publications [array] (seqdef databases) - list of PubMed id numbers of papers that refer to the isolate"
 msgstr ""
 
-#: ../rest.rst:1143
+#: ../rest.rst:1158
 msgid "sequence_bin [object] - consists of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1145
+#: ../rest.rst:1160
 msgid "contigs_fasta [string] - :ref:`URI to FASTA file containing all the contigs belonging to this isolate<db_isolates_isolate_id_contigs_fasta>`"
 msgstr ""
 
-#: ../rest.rst:1147
+#: ../rest.rst:1162
 msgid "contigs [string] - :ref:`URI to list of contig records <db_isolates_isolate_id_contigs>`"
 msgstr ""
 
-#: ../rest.rst:1149
+#: ../rest.rst:1164
 msgid "contig_count [integer] - number of contigs"
 msgstr ""
 
-#: ../rest.rst:1150
+#: ../rest.rst:1165
 msgid "total_length [integer] - total length of contigs"
 msgstr ""
 
-#: ../rest.rst:1152
+#: ../rest.rst:1167
 msgid "allele_designations [object] - consists of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1154
+#: ../rest.rst:1169
 msgid "allele_ids - :ref:`URI to list of all allele_id values <db_isolates_isolate_id_allele_ids>` defined for the isolate"
 msgstr ""
 
-#: ../rest.rst:1156
+#: ../rest.rst:1171
 msgid "designation_count - number of allele designations defined for the isolate"
 msgstr ""
 
-#: ../rest.rst:1157
+#: ../rest.rst:1172
 msgid "full_designations - :ref:`URI to list of full allele designation records <db_isolates_isolate_id_allele_designations>`"
 msgstr ""
 
-#: ../rest.rst:1160
+#: ../rest.rst:1175
 msgid "schemes [array] - list of scheme objects, each containing some of the following:"
 msgstr ""
 
-#: ../rest.rst:1163
+#: ../rest.rst:1178
 msgid "description [string] - description of scheme"
 msgstr ""
 
-#: ../rest.rst:1164
+#: ../rest.rst:1179
 msgid "loci_designated_count [integer] - number of loci within scheme that have an allele designated for this isolate."
 msgstr ""
 
-#: ../rest.rst:1166
+#: ../rest.rst:1181
 msgid "allele_ids [string] - :ref:`URI to list of all allele_id values defined for this scheme<db_isolates_isolate_id_schemes_scheme_id_allele_ids>` for this isolate"
 msgstr ""
 
-#: ../rest.rst:1169
+#: ../rest.rst:1184
 msgid "full_designations [string] - :ref:`URI to list of full allele designation records<db_isolates_isolate_id_schemes_scheme_id_allele_designations>` for this isolate"
 msgstr ""
 
-#: ../rest.rst:1172
+#: ../rest.rst:1187
 msgid "fields [object] - consisting of key/value pairs where the key is the name of each scheme field"
 msgstr ""
 
-#: ../rest.rst:1174
+#: ../rest.rst:1189
 msgid "classification_schemes [object] - consisting of key/value pairs, where each key is the name of the classification scheme and the value is an object consisting of:"
 msgstr ""
 
-#: ../rest.rst:1178
+#: ../rest.rst:1193
 msgid "href [string] - :ref:`URI to classification scheme description<db_classification_schemes_id>`"
 msgstr ""
 
-#: ../rest.rst:1179
+#: ../rest.rst:1194
 msgid "groups [array] - list of group objects consisting of:"
 msgstr ""
 
-#: ../rest.rst:1181
+#: ../rest.rst:1196
 msgid "group [integer] - group id"
 msgstr ""
 
-#: ../rest.rst:1182
+#: ../rest.rst:1197
 msgid "records [integer] - number of isolates in group"
 msgstr ""
 
-#: ../rest.rst:1183
+#: ../rest.rst:1198
 msgid "isolates [string] - URI to classification group record containing URIs to member isolate records"
 msgstr ""
 
-#: ../rest.rst:1186
+#: ../rest.rst:1201
 msgid "projects [array] - list of project objects, each containing the following:"
 msgstr ""
 
-#: ../rest.rst:1188
+#: ../rest.rst:1203
 msgid "id [string] - :ref:`URI to project information<db_projects_project_id>`"
 msgstr ""
 
-#: ../rest.rst:1189
+#: ../rest.rst:1204
 msgid "description [string] - description of project"
 msgstr ""
 
-#: ../rest.rst:1191
+#: ../rest.rst:1206
 msgid "history [string] - :ref:`URI to isolate history record<db_isolates_isolate_id_history>`"
 msgstr ""
 
-#: ../rest.rst:1193
+#: ../rest.rst:1208
 msgid "new_version [string] - URI to newer version of record"
 msgstr ""
 
-#: ../rest.rst:1194
+#: ../rest.rst:1209
 msgid "old_version [string] - URI to older version of record"
 msgstr ""
 
-#: ../rest.rst:1203
+#: ../rest.rst:1218
 msgid "GET /db/{database}/isolates/{isolate_id}/allele_designations - Retrieve list of allele designation records"
 msgstr ""
 
-#: ../rest.rst:1215
+#: ../rest.rst:1230
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations"
 msgstr ""
 
-#: ../rest.rst:1220
+#: ../rest.rst:1235
 msgid "records [integer] - Number of allele designations"
 msgstr ""
 
-#: ../rest.rst:1221
+#: ../rest.rst:1236
 msgid "allele_designations [array] - List of :ref:`URIs to allele designation records <db_isolates_isolate_id_allele_designations_locus>`. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1240
+#: ../rest.rst:1255
 msgid "GET /db/{database}/isolates/{isolate_id}/allele_designations/{locus} - Retrieve full allele designation record"
 msgstr ""
 
-#: ../rest.rst:1249
+#: ../rest.rst:1264
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_designations/BACT000065"
 msgstr ""
 
-#: ../rest.rst:1252
+#: ../rest.rst:1267
 msgid "**Response:** List of allele_designation objects (there may be multiple designations for the same locus), each containing:"
 msgstr ""
 
-#: ../rest.rst:1257
+#: ../rest.rst:1272
 msgid "method [string] - either 'manual' or 'automatic'"
 msgstr ""
 
-#: ../rest.rst:1258
+#: ../rest.rst:1273
 msgid "status [string] - either 'confirmed' or 'provisional'"
 msgstr ""
 
-#: ../rest.rst:1259
-#: ../rest.rst:1618
+#: ../rest.rst:1274
+#: ../rest.rst:1633
 msgid "comments [string]"
 msgstr ""
 
-#: ../rest.rst:1271
+#: ../rest.rst:1286
 msgid "GET /db/{database}/isolates/{isolate_id}/allele_ids - Retrieve allele identifiers"
 msgstr ""
 
-#: ../rest.rst:1283
+#: ../rest.rst:1298
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/allele_ids"
 msgstr ""
 
-#: ../rest.rst:1288
-#: ../rest.rst:1349
+#: ../rest.rst:1303
+#: ../rest.rst:1364
 msgid "records [integer] - Number of allele id objects"
 msgstr ""
 
-#: ../rest.rst:1289
+#: ../rest.rst:1304
 msgid "allele_ids [array] - List of allele id objects, each consisting of a key/value pair where the key is the locus name. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1309
+#: ../rest.rst:1324
 msgid "GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_designations - Retrieve scheme allele designation records"
 msgstr ""
 
-#: ../rest.rst:1314
-#: ../rest.rst:1340
+#: ../rest.rst:1329
+#: ../rest.rst:1355
 msgid "scheme_id [integer] - Scheme identifier"
 msgstr ""
 
-#: ../rest.rst:1318
+#: ../rest.rst:1333
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_designations"
 msgstr ""
 
-#: ../rest.rst:1323
+#: ../rest.rst:1338
 msgid "records [integer] - Number of allele designation objects"
 msgstr ""
 
-#: ../rest.rst:1324
+#: ../rest.rst:1339
 msgid "allele_designations [array] - List of :ref:`allele designation objects<db_isolates_isolate_id_allele_designations_locus>` for each locus in the specified scheme that has been designated."
 msgstr ""
 
-#: ../rest.rst:1335
+#: ../rest.rst:1350
 msgid "GET /db/{database}/isolates/{isolate_id}/schemes/{scheme_id}/allele_ids - Retrieve list of scheme allele identifiers"
 msgstr ""
 
-#: ../rest.rst:1344
+#: ../rest.rst:1359
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/schemes/1/allele_ids"
 msgstr ""
 
-#: ../rest.rst:1350
+#: ../rest.rst:1365
 msgid "allele_ids [array] - List containing allele id objects for each locus in the specified scheme that has been designated.  Each allele_id object contains a key which is the name of the locus with a value that may be either a string, integer or array of strings or integers (required where there are multiple designations for a locus).  The data type depends on the allele_id_format set for the specific locus."
 msgstr ""
 
-#: ../rest.rst:1364
+#: ../rest.rst:1379
 msgid "GET /db/{database}/isolates/{isolate_id}/contigs - Retrieve list of contigs"
 msgstr ""
 
-#: ../rest.rst:1376
+#: ../rest.rst:1391
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs"
 msgstr ""
 
-#: ../rest.rst:1381
+#: ../rest.rst:1396
 msgid "records [integer] - Number of contigs"
 msgstr ""
 
-#: ../rest.rst:1382
+#: ../rest.rst:1397
 msgid "contigs [array] - List of :ref:`URIs to contig records <db_contigs_contig_id>` Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1401
+#: ../rest.rst:1416
 msgid "GET /db/{database}/isolates/{isolate_id}/contigs_fasta - Download contigs in FASTA format"
 msgstr ""
 
-#: ../rest.rst:1409
+#: ../rest.rst:1424
 msgid "header [string] - either 'original_designation' or 'id' (default is 'id'). This selects whether the FASTA header lines contain the originally uploaded FASTA headers or the sequence bin id numbers."
 msgstr ""
 
-#: ../rest.rst:1413
+#: ../rest.rst:1428
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/contigs_fasta?header=original_designation"
 msgstr ""
 
-#: ../rest.rst:1416
+#: ../rest.rst:1431
 msgid "**Response:** FASTA format file of isolate contig sequences"
 msgstr ""
 
-#: ../rest.rst:1425
+#: ../rest.rst:1440
 msgid "GET /db/{database}/isolates/{isolate_id}/history - Retrieve isolate update history"
 msgstr ""
 
-#: ../rest.rst:1433
+#: ../rest.rst:1448
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/isolates/1/history"
 msgstr ""
 
-#: ../rest.rst:1438
+#: ../rest.rst:1453
 msgid "records [integer] - Number of updayes"
 msgstr ""
 
-#: ../rest.rst:1439
+#: ../rest.rst:1454
 msgid "contigs [array] - List of update objects each consisting of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1443
+#: ../rest.rst:1458
 msgid "timestamp [string] - Time of update"
 msgstr ""
 
-#: ../rest.rst:1444
+#: ../rest.rst:1459
 msgid "actions [array] - List of update descriptions [strings]"
 msgstr ""
 
-#: ../rest.rst:1453
+#: ../rest.rst:1468
 msgid "GET /db/{database}/genomes - Retrieve list of isolate records that have genome assemblies"
 msgstr ""
 
-#: ../rest.rst:1475
+#: ../rest.rst:1490
 msgid "genome_size [integer] - Filter to only include records with a sequence bin of at least the specified size (default is 500,000bp)."
 msgstr ""
 
-#: ../rest.rst:1478
+#: ../rest.rst:1493
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/genomes"
 msgstr ""
 
-#: ../rest.rst:1501
+#: ../rest.rst:1516
 msgid "POST /db/{database}/isolates/search - Search isolate database"
 msgstr ""
 
-#: ../rest.rst:1506
+#: ../rest.rst:1521
 msgid "**Optional parameters (appended to URI):**"
 msgstr ""
 
-#: ../rest.rst:1512
+#: ../rest.rst:1527
 msgid "**Query parameters (JSON-encoded in POST body):**"
 msgstr ""
 
-#: ../rest.rst:1514
+#: ../rest.rst:1529
 msgid "You must include at least one query parameter."
 msgstr ""
 
-#: ../rest.rst:1516
+#: ../rest.rst:1531
 msgid "Parameter names in the following forms are supported:"
 msgstr ""
 
-#: ../rest.rst:1518
+#: ../rest.rst:1533
 msgid "field.{field} - key/value pairs for provenance fields. Supported field names can be found by calling the :ref:`/fields route<db_fields>`. The fields will vary by database."
 msgstr ""
 
-#: ../rest.rst:1522
+#: ../rest.rst:1537
 msgid "locus.{locus} - key/value pairs of locus and its allele designation. Supported locus names can be found by calling the :ref:`/loci route<db_loci>`."
 msgstr ""
 
-#: ../rest.rst:1526
+#: ../rest.rst:1541
 msgid "scheme.{scheme_id}.{scheme_field} - key/value pairs of scheme fields and their values. Supported field names can be determined by following routes from the :ref:`/schemes route<db_schemes>`."
 msgstr ""
 
-#: ../rest.rst:1530
+#: ../rest.rst:1545
 msgid "**Example method call using curl:** The following searches for *Neisseria* ST-11 isolates from Europe in 2015 (MLST is scheme#1 in this database). ::"
 msgstr ""
 
-#: ../rest.rst:1538
+#: ../rest.rst:1553
 msgid "**Response**: Object containing:"
 msgstr ""
 
-#: ../rest.rst:1559
+#: ../rest.rst:1574
 msgid "GET /db/{database}/contigs/{contig_id} - Retrieve contig record"
 msgstr ""
 
-#: ../rest.rst:1563
+#: ../rest.rst:1578
 msgid "contig_id [integer] - Contig identifier"
 msgstr ""
 
-#: ../rest.rst:1567
+#: ../rest.rst:1582
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/contigs/180062"
 msgstr ""
 
-#: ../rest.rst:1570
+#: ../rest.rst:1585
 msgid "**Response:** Contig object consisting of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1572
+#: ../rest.rst:1587
 msgid "id [integer] - contig identifier"
 msgstr ""
 
-#: ../rest.rst:1573
+#: ../rest.rst:1588
 msgid "isolate_id [integer] - isolate identifier"
 msgstr ""
 
-#: ../rest.rst:1574
+#: ../rest.rst:1589
 msgid "sequence [string] - contig sequence"
 msgstr ""
 
-#: ../rest.rst:1575
+#: ../rest.rst:1590
 msgid "length [integer] - length of contig sequence"
 msgstr ""
 
-#: ../rest.rst:1576
+#: ../rest.rst:1591
 msgid "method [string] - sequencing method"
 msgstr ""
 
-#: ../rest.rst:1581
+#: ../rest.rst:1596
 msgid "loci [array] - list of sequence tag objects consisting of:"
 msgstr ""
 
-#: ../rest.rst:1584
+#: ../rest.rst:1599
 msgid "locus_name [string]"
 msgstr ""
 
-#: ../rest.rst:1585
+#: ../rest.rst:1600
 msgid "start [integer]"
 msgstr ""
 
-#: ../rest.rst:1586
+#: ../rest.rst:1601
 msgid "end [integer]"
 msgstr ""
 
-#: ../rest.rst:1587
+#: ../rest.rst:1602
 msgid "direction [string] - forward/reverse"
 msgstr ""
 
-#: ../rest.rst:1588
+#: ../rest.rst:1603
 msgid "complete [boolean] - true/false"
 msgstr ""
 
-#: ../rest.rst:1597
+#: ../rest.rst:1612
 msgid "GET /db/{database}/fields - Retrieve list of isolate provenance field descriptions"
 msgstr ""
 
-#: ../rest.rst:1604
+#: ../rest.rst:1619
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields"
 msgstr ""
 
-#: ../rest.rst:1607
+#: ../rest.rst:1622
 msgid "**Response:** Array of field objects, each consisting of some or all of the following key/value pairs:"
 msgstr ""
 
-#: ../rest.rst:1610
+#: ../rest.rst:1625
 msgid "name [string] - name of field"
 msgstr ""
 
-#: ../rest.rst:1611
+#: ../rest.rst:1626
 msgid "type [string] - data type (int, text, date, float)"
 msgstr ""
 
-#: ../rest.rst:1613
+#: ../rest.rst:1628
 msgid "required [boolean] - true if field value is required"
 msgstr ""
 
-#: ../rest.rst:1614
+#: ../rest.rst:1629
 msgid "min [integer] - minimum value for integer values"
 msgstr ""
 
-#: ../rest.rst:1615
+#: ../rest.rst:1630
 msgid "max [integer] - maximum value for integer values"
 msgstr ""
 
-#: ../rest.rst:1616
+#: ../rest.rst:1631
 msgid "regex [string] - regular expression that constrains the allowed value of the field"
 msgstr ""
 
-#: ../rest.rst:1619
+#: ../rest.rst:1634
 msgid "allowed values [array] - list of allowed values for the field"
 msgstr ""
 
-#: ../rest.rst:1620
+#: ../rest.rst:1635
 msgid "values [string] - URI to list of used field values"
 msgstr ""
 
-#: ../rest.rst:1629
+#: ../rest.rst:1644
 msgid "GET /db/{database}/fields/{field} - Retrieve values set for a provenance field"
 msgstr ""
 
-#: ../rest.rst:1633
+#: ../rest.rst:1648
 msgid "field [string] - Provenance metadata field name"
 msgstr ""
 
-#: ../rest.rst:1641
+#: ../rest.rst:1656
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/fields/country"
 msgstr ""
 
-#: ../rest.rst:1645
+#: ../rest.rst:1660
 msgid "records [integer] - Number of values"
 msgstr ""
 
-#: ../rest.rst:1646
+#: ../rest.rst:1661
 msgid "values [array] - List of values used in isolate records. Pages are 100 records by default. Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1664
+#: ../rest.rst:1679
 msgid "GET /db/{database}/users/{user_id} - Retrieve user information"
 msgstr ""
 
-#: ../rest.rst:1665
+#: ../rest.rst:1680
 msgid "Users may be data submitters or curators."
 msgstr ""
 
-#: ../rest.rst:1670
+#: ../rest.rst:1685
 msgid "user_id [integer] - User id number"
 msgstr ""
 
-#: ../rest.rst:1674
+#: ../rest.rst:1689
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/users/2"
 msgstr ""
 
-#: ../rest.rst:1678
+#: ../rest.rst:1693
 msgid "id [integer] - user id number"
 msgstr ""
 
-#: ../rest.rst:1679
+#: ../rest.rst:1694
 msgid "first_name [string]"
 msgstr ""
 
-#: ../rest.rst:1680
+#: ../rest.rst:1695
 msgid "surname [string]"
 msgstr ""
 
-#: ../rest.rst:1681
+#: ../rest.rst:1696
 msgid "affiliation [string] - institutional affiliation"
 msgstr ""
 
-#: ../rest.rst:1682
+#: ../rest.rst:1697
 msgid "email [string] - E-mail address (may be hidden depending on server configuration)"
 msgstr ""
 
-#: ../rest.rst:1691
+#: ../rest.rst:1706
 msgid "GET /db/{database}/curators - Retrieve list of curators"
 msgstr ""
 
-#: ../rest.rst:1698
+#: ../rest.rst:1713
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/curators"
 msgstr ""
 
-#: ../rest.rst:1703
+#: ../rest.rst:1718
 msgid "records [integer] - Number of curators"
 msgstr ""
 
-#: ../rest.rst:1704
+#: ../rest.rst:1719
 msgid "curators [array] - List of :ref:`URIs to user records<db_users_user_id>`."
 msgstr ""
 
-#: ../rest.rst:1713
+#: ../rest.rst:1728
 msgid "GET /db/{database}/projects - Retrieve list of projects"
 msgstr ""
 
-#: ../rest.rst:1718
+#: ../rest.rst:1733
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects"
 msgstr ""
 
-#: ../rest.rst:1722
+#: ../rest.rst:1737
 msgid "projects [array] - List of project objects, each containing:"
 msgstr ""
 
-#: ../rest.rst:1724
+#: ../rest.rst:1739
 msgid "project [string] - :ref:`URI to project information<db_projects_project_id>`"
 msgstr ""
 
-#: ../rest.rst:1726
+#: ../rest.rst:1741
 msgid "isolate_count [integer] - number of isolates in project"
 msgstr ""
 
-#: ../rest.rst:1735
+#: ../rest.rst:1750
 msgid "GET /db/{database}/projects/{project_id} - Retrieve project information"
 msgstr ""
 
-#: ../rest.rst:1739
-#: ../rest.rst:1762
+#: ../rest.rst:1754
+#: ../rest.rst:1777
 msgid "project_id [integer] - Project id number"
 msgstr ""
 
-#: ../rest.rst:1743
+#: ../rest.rst:1758
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3"
 msgstr ""
 
-#: ../rest.rst:1749
+#: ../rest.rst:1764
 msgid "isolates [string] - :ref:`URI to list of URIs of member isolate records<db_projects_project_id_isolates>`."
 msgstr ""
 
-#: ../rest.rst:1758
+#: ../rest.rst:1773
 msgid "GET /db/{database}/projects/{project_id}/isolates - Retrieve list of isolates belonging to a project"
 msgstr ""
 
-#: ../rest.rst:1759
+#: ../rest.rst:1774
 msgid "**Required route parameter:**"
 msgstr ""
 
-#: ../rest.rst:1770
+#: ../rest.rst:1785
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/projects/3/isolates"
 msgstr ""
 
-#: ../rest.rst:1774
+#: ../rest.rst:1789
 msgid "records [integer] - Number of isolates in the project"
 msgstr ""
 
-#: ../rest.rst:1775
+#: ../rest.rst:1790
 msgid "isolates [array] - List of URIs to isolate records. Pages are 100 records by default.  Page size can be modified using the page_size parameter."
 msgstr ""
 
-#: ../rest.rst:1793
+#: ../rest.rst:1808
 msgid "GET /db/{database}/submissions - retrieve list of submissions"
 msgstr ""
 
-#: ../rest.rst:1798
+#: ../rest.rst:1813
 msgid "type [string] - either 'alleles', 'profiles' or 'isolates'"
 msgstr ""
 
-#: ../rest.rst:1799
+#: ../rest.rst:1814
 msgid "status [string] - either 'closed' or 'pending'"
 msgstr ""
 
-#: ../rest.rst:1804
+#: ../rest.rst:1819
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_isolates/submissions"
 msgstr ""
 
-#: ../rest.rst:1808
+#: ../rest.rst:1823
 msgid "records [integer] - Number of submissions"
 msgstr ""
 
-#: ../rest.rst:1809
+#: ../rest.rst:1824
 msgid "submissions [array] - List of :ref:`URIs to submission records<get_db_submissions_submissions_submission_id>`"
 msgstr ""
 
-#: ../rest.rst:1825
+#: ../rest.rst:1840
 msgid "POST /db/{database}/submissions - create new submission"
 msgstr ""
 
-#: ../rest.rst:1830
+#: ../rest.rst:1845
 msgid "type [string] - either:"
 msgstr ""
 
-#: ../rest.rst:1832
+#: ../rest.rst:1847
 msgid "alleles (sequence definition databases only)"
 msgstr ""
 
-#: ../rest.rst:1833
+#: ../rest.rst:1848
 msgid "profiles (sequence definition databases only)"
 msgstr ""
 
-#: ../rest.rst:1834
+#: ../rest.rst:1849
 msgid "isolates (isolate databases only)"
 msgstr ""
 
-#: ../rest.rst:1835
+#: ../rest.rst:1850
 msgid "genomes (isolate databases only)"
 msgstr ""
 
-#: ../rest.rst:1837
+#: ../rest.rst:1852
 msgid "The following are required with the specified database type:"
 msgstr ""
 
-#: ../rest.rst:1839
-#: ../rest.rst:1931
+#: ../rest.rst:1854
+#: ../rest.rst:1946
 msgid "**Allele submissions**"
 msgstr ""
 
-#: ../rest.rst:1841
-#: ../rest.rst:1933
+#: ../rest.rst:1856
+#: ../rest.rst:1948
 msgid "locus [string] - name of locus"
 msgstr ""
 
-#: ../rest.rst:1842
-#: ../rest.rst:1934
+#: ../rest.rst:1857
+#: ../rest.rst:1949
 msgid "technology [string] - name of sequencing technology: either '454', 'Illumina', 'Ion Torrent', 'PacBio', 'Oxford Nanopore', 'Sanger', 'Solexa', 'SOLiD', or 'other'"
 msgstr ""
 
-#: ../rest.rst:1845
-#: ../rest.rst:1937
+#: ../rest.rst:1860
+#: ../rest.rst:1952
 msgid "read_length [string] - read length of sequencing: either '<100', '100-199', '200-299', '300-499', '>500', or any positive integer (only required for Illumina)"
 msgstr ""
 
-#: ../rest.rst:1848
-#: ../rest.rst:1940
+#: ../rest.rst:1863
+#: ../rest.rst:1955
 msgid "coverage [string] - mean coverage of sequencing: either '<20x', '20-49x', '50-99x', '>100x', or any positive integer (only required for Illumina)"
 msgstr ""
 
-#: ../rest.rst:1850
-#: ../rest.rst:1942
+#: ../rest.rst:1865
+#: ../rest.rst:1957
 msgid "assembly [string] - assembly method: either 'de novo' or 'mapped'"
 msgstr ""
 
-#: ../rest.rst:1851
-#: ../rest.rst:1943
+#: ../rest.rst:1866
+#: ../rest.rst:1958
 msgid "software [string] - name of assembly software"
 msgstr ""
 
-#: ../rest.rst:1852
+#: ../rest.rst:1867
 msgid "sequences [string] - either single raw sequence or multiple sequences in FASTA format"
 msgstr ""
 
-#: ../rest.rst:1855
-#: ../rest.rst:1952
+#: ../rest.rst:1870
+#: ../rest.rst:1967
 msgid "**Profile submissions**"
 msgstr ""
 
-#: ../rest.rst:1857
+#: ../rest.rst:1872
 msgid "scheme_id [integer] - scheme id number"
 msgstr ""
 
-#: ../rest.rst:1858
+#: ../rest.rst:1873
 msgid "profiles [string] - tab-delimited profile data - this should include a header line containing the name of each locus"
 msgstr ""
 
-#: ../rest.rst:1861
-#: ../rest.rst:1964
+#: ../rest.rst:1876
+#: ../rest.rst:1979
 msgid "**Isolate submissions**"
 msgstr ""
 
-#: ../rest.rst:1863
+#: ../rest.rst:1878
 msgid "isolates [string] - tab-delimited isolate data - this should include a header line containing each field or locus included"
 msgstr ""
 
-#: ../rest.rst:1866
+#: ../rest.rst:1881
 msgid "**Genome submissions**"
 msgstr ""
 
-#: ../rest.rst:1868
+#: ../rest.rst:1883
 msgid "isolates [string] - tab-delimited isolate data - this should include a header line containing each field or locus included as well as for 'assembly_filename' and 'sequence_method'. The 'sequence_method' should be either '454', 'Illumina', 'Ion Torrent', 'PacBio', 'Oxford Nanopore', 'Sanger', 'Solexa', 'SOLiD', or 'other'.  Following submission, contig files should be uploaded with the same names as set for 'assembly_filename'. This can be done using the :ref:`file upload route<post_db_submissions_submission_id_files>`."
 msgstr ""
 
-#: ../rest.rst:1879
+#: ../rest.rst:1894
 msgid "message [string] - correspondence to the curator"
 msgstr ""
 
-#: ../rest.rst:1880
+#: ../rest.rst:1895
 msgid "email [integer] - set to 1 to enable E-mail updates (E-mails will be sent to the registered user account address)."
 msgstr ""
 
-#: ../rest.rst:1885
+#: ../rest.rst:1900
 msgid "submission - :ref:`URI to submission record<get_db_submissions_submissions_submission_id>`"
 msgstr ""
 
-#: ../rest.rst:1887
+#: ../rest.rst:1902
 msgid "For genome submissions, the response object will also contain:"
 msgstr ""
 
-#: ../rest.rst:1889
+#: ../rest.rst:1904
 msgid "missing_files [array] - List of filenames that need to be uploaded to complete the submission. These filenames are defined in the 'assembly_filename' field of the isolate record upload. The files should contain the contig assemblies."
 msgstr ""
 
-#: ../rest.rst:1893
+#: ../rest.rst:1908
 msgid "message [string] - 'Please upload missing contig files to complete submission.'"
 msgstr ""
 
-#: ../rest.rst:1903
+#: ../rest.rst:1918
 msgid "GET /db/{database}/submissions/{submission_id} - Retrieve submission record"
 msgstr ""
 
-#: ../rest.rst:1907
-#: ../rest.rst:1982
-#: ../rest.rst:2001
-#: ../rest.rst:2024
-#: ../rest.rst:2045
-#: ../rest.rst:2064
-#: ../rest.rst:2086
-#: ../rest.rst:2104
+#: ../rest.rst:1922
+#: ../rest.rst:1997
+#: ../rest.rst:2016
+#: ../rest.rst:2039
+#: ../rest.rst:2060
+#: ../rest.rst:2079
+#: ../rest.rst:2101
+#: ../rest.rst:2119
 msgid "submission_id [string] - Submission id"
 msgstr ""
 
-#: ../rest.rst:1911
-#: ../rest.rst:1986
+#: ../rest.rst:1926
+#: ../rest.rst:2001
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740"
 msgstr ""
 
-#: ../rest.rst:1913
+#: ../rest.rst:1928
 msgid "**Response:** Object containing some of the following:"
 msgstr ""
 
-#: ../rest.rst:1915
+#: ../rest.rst:1930
 msgid "id [string] - Submission id"
 msgstr ""
 
-#: ../rest.rst:1916
+#: ../rest.rst:1931
 msgid "type [string] - Either 'alleles', 'profiles', 'isolates'"
 msgstr ""
 
-#: ../rest.rst:1917
+#: ../rest.rst:1932
 msgid "date_submitted [string] - Submission date (ISO 8601 format)"
 msgstr ""
 
-#: ../rest.rst:1918
+#: ../rest.rst:1933
 msgid "datestamp [string] - Last updated date (ISO 8601 format)"
 msgstr ""
 
-#: ../rest.rst:1919
+#: ../rest.rst:1934
 msgid "submitter [string] - :ref:`URI to user details<db_users_user_id>` of submitter"
 msgstr ""
 
-#: ../rest.rst:1921
+#: ../rest.rst:1936
 msgid "status [string] - either 'started', 'pending', or 'closed'"
 msgstr ""
 
-#: ../rest.rst:1922
+#: ../rest.rst:1937
 msgid "outcome [string] - either 'good' (data uploaded), 'bad' (data rejected), or 'mixed' (parts of submission accepted)"
 msgstr ""
 
-#: ../rest.rst:1924
+#: ../rest.rst:1939
 msgid "correspondence [array] - List of correspondence objects in time order. Each contains:"
 msgstr ""
 
-#: ../rest.rst:1927
-#: ../rest.rst:2009
+#: ../rest.rst:1942
+#: ../rest.rst:2024
 msgid "user [string] :ref:`URI to user details<db_users_user_id>` of user"
 msgstr ""
 
-#: ../rest.rst:1928
-#: ../rest.rst:2010
+#: ../rest.rst:1943
+#: ../rest.rst:2025
 msgid "timestamp [string]"
 msgstr ""
 
-#: ../rest.rst:1929
-#: ../rest.rst:2011
+#: ../rest.rst:1944
+#: ../rest.rst:2026
 msgid "message [string]"
 msgstr ""
 
-#: ../rest.rst:1944
+#: ../rest.rst:1959
 msgid "seqs [array] - List of sequence objects each containing:"
 msgstr ""
 
-#: ../rest.rst:1946
+#: ../rest.rst:1961
 msgid "seq_id [string] - Sequence identifier"
 msgstr ""
 
-#: ../rest.rst:1947
+#: ../rest.rst:1962
 msgid "assigned_id [string] - Allele identifier if uploaded to the database (otherwise undefined)"
 msgstr ""
 
-#: ../rest.rst:1949
-#: ../rest.rst:1960
+#: ../rest.rst:1964
+#: ../rest.rst:1975
 msgid "status [string] - Either 'pending', 'assigned', or 'rejected'"
 msgstr ""
 
-#: ../rest.rst:1950
+#: ../rest.rst:1965
 msgid "sequence [string]"
 msgstr ""
 
-#: ../rest.rst:1955
+#: ../rest.rst:1970
 msgid "profiles [array] - List of profile record objects. Each contains:"
 msgstr ""
 
-#: ../rest.rst:1957
+#: ../rest.rst:1972
 msgid "profile_id [string] - Record identifier"
 msgstr ""
 
-#: ../rest.rst:1958
+#: ../rest.rst:1973
 msgid "assigned_id [string] - Profile identifier if uploaded to the database (otherwise undefined)"
 msgstr ""
 
-#: ../rest.rst:1961
+#: ../rest.rst:1976
 msgid "designations [object] containing key/value pairs for each locus containing the allele identifier"
 msgstr ""
 
-#: ../rest.rst:1966
+#: ../rest.rst:1981
 msgid "isolates [array] - List of isolate record objects. Each contains key/value pairs for included fields."
 msgstr ""
 
-#: ../rest.rst:1976
+#: ../rest.rst:1991
 msgid "DELETE /db/{database}/submissions/{submission_id} - Delete submission record"
 msgstr ""
 
-#: ../rest.rst:1977
+#: ../rest.rst:1992
 msgid "You must be the owner and the record must be closed."
 msgstr ""
 
-#: ../rest.rst:1988
+#: ../rest.rst:2003
 msgid "**Response:** message [string] - 'Submission deleted.'"
 msgstr ""
 
-#: ../rest.rst:1997
+#: ../rest.rst:2012
 msgid "GET /db/{database}/submissions/{submission_id}/messages - Retrieve submission correspondence"
 msgstr ""
 
-#: ../rest.rst:2005
+#: ../rest.rst:2020
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/messages"
 msgstr ""
 
-#: ../rest.rst:2007
+#: ../rest.rst:2022
 msgid "**Response:** Array of correspondence objects in time order. Each contains:"
 msgstr ""
 
-#: ../rest.rst:2020
+#: ../rest.rst:2035
 msgid "POST /db/{database}/submissions/{submission_id}/messages - Add submission correspondence"
 msgstr ""
 
-#: ../rest.rst:2026
+#: ../rest.rst:2041
 msgid "**Required additional parameter (JSON-encoded in POST body):**"
 msgstr ""
 
-#: ../rest.rst:2028
+#: ../rest.rst:2043
 msgid "message [string] - Message text"
 msgstr ""
 
-#: ../rest.rst:2032
+#: ../rest.rst:2047
 msgid "**Response:** message [string] - 'Message added.'"
 msgstr ""
 
-#: ../rest.rst:2041
+#: ../rest.rst:2056
 msgid "GET /db/{database}/submissions/{submission_id}/files - Retrieve list of supporting files uploaded for submission"
 msgstr ""
 
-#: ../rest.rst:2049
+#: ../rest.rst:2064
 msgid "**Example request URI:** https://rest.pubmlst.org/db/pubmlst_neisseria_seqdef/submissions/BIGSdb_20151013081836_14559_14740/files"
 msgstr ""
 
-#: ../rest.rst:2051
+#: ../rest.rst:2066
 msgid "**Response:** Array of URIs to files"
 msgstr ""
 
-#: ../rest.rst:2060
+#: ../rest.rst:2075
 msgid "POST /db/{database}/submissions/{submission_id}/files - Upload submission supporting file"
 msgstr ""
 
-#: ../rest.rst:2068
+#: ../rest.rst:2083
 msgid "filename [string] - Name of file to store within submission"
 msgstr ""
 
-#: ../rest.rst:2069
+#: ../rest.rst:2084
 msgid "upload [base64 encoded data] - Raw file data"
 msgstr ""
 
-#: ../rest.rst:2073
+#: ../rest.rst:2088
 msgid "**Response:** message [string] - 'File uploaded.'"
 msgstr ""
 
-#: ../rest.rst:2082
+#: ../rest.rst:2097
 msgid "GET /db/{database}/submissions/{submission_id}/files/{filename} - Download submission supporting file"
 msgstr ""
 
-#: ../rest.rst:2087
-#: ../rest.rst:2105
+#: ../rest.rst:2102
+#: ../rest.rst:2120
 msgid "filename [string] - Name of file"
 msgstr ""
 
-#: ../rest.rst:2091
+#: ../rest.rst:2106
 msgid "**Response:** File download"
 msgstr ""
 
-#: ../rest.rst:2100
+#: ../rest.rst:2115
 msgid "DELETE /db/{database}/submissions/{submission_id}/files/{filename} - Delete submission supporting file"
 msgstr ""
 
-#: ../rest.rst:2109
+#: ../rest.rst:2124
 msgid "**Response:** message [string] - 'File deleted.'"
 msgstr ""
 
-#: ../rest.rst:2115
+#: ../rest.rst:2130
 msgid "Authentication"
 msgstr ""
 
-#: ../rest.rst:2116
+#: ../rest.rst:2131
 msgid "Protected resources, i.e. those requiring a user to log in, can be accessed via the API using OAuth (1.0A) authentication (see `IETF RFC5849 <http://tools.ietf.org/html/rfc5849>`_ for details).  Third-party client software has to be registered with the BIGSdb site before they can access authenticated resources. The overall three-legged flow works as follows:"
 msgstr ""
 
-#: ../rest.rst:2122
+#: ../rest.rst:2137
 msgid ":ref:`Developer signs up <get_consumer_key>` and gets a consumer key and consumer secret specific to their application."
 msgstr ""
 
-#: ../rest.rst:2124
+#: ../rest.rst:2139
 msgid "Application :ref:`gets a request token <get_request_token>` and directs user to authorization page on BIGSdb."
 msgstr ""
 
-#: ../rest.rst:2126
+#: ../rest.rst:2141
 msgid "BIGSdb :ref:`asks user for authorization <get_user_authorization>` for application to access specific resource using their credentials.  A verifier code is provided."
 msgstr ""
 
-#: ../rest.rst:2129
+#: ../rest.rst:2144
 msgid "The application exchanges the request token and OAuth verifier code for an :ref:`access token and secret <get_access_token>` (these do not expire but may be revoked by the user or site admin)."
 msgstr ""
 
-#: ../rest.rst:2132
+#: ../rest.rst:2147
 msgid "Application uses access token/secret to :ref:`request session token <get_session_token>` (this is valid for 12 hours)."
 msgstr ""
 
-#: ../rest.rst:2135
+#: ../rest.rst:2150
 msgid "All calls to :ref:`access protected resources <accessing_protected_resources>` are signed using the session token/secret and consumer key/secret."
 msgstr ""
 
-#: ../rest.rst:2139
+#: ../rest.rst:2154
 msgid "It is recommended that application developers use an OAuth library to generate and sign requests."
 msgstr ""
 
-#: ../rest.rst:2144
+#: ../rest.rst:2159
 msgid "There are Python and Perl example scripts available at https://github.com/kjolley/BIGSdb/tree/develop/scripts/rest_examples to demonstrate and test OAuth authentication."
 msgstr ""
 
-#: ../rest.rst:2148
+#: ../rest.rst:2163
 msgid "There is also the BIGSdb Downloader script at https://github.com/kjolley/BIGSdb_downloader which can be used in place of wget or curl to seamlessly handle the OAuth authentication."
 msgstr ""
 
-#: ../rest.rst:2158
+#: ../rest.rst:2173
 msgid "Developer sign up to get a consumer key"
 msgstr ""
 
-#: ../rest.rst:2159
+#: ../rest.rst:2174
 msgid "Application developers should apply to the site administrator of the site running BIGSdb. The administrator can :ref:`generate a key and secret<create_client_credentials>` using a script - both of these will need to be used by the application to sign requests. Note that end users can also now request a personal key/secret directly from the user profile page if this is enabled on the site and site-wide accounts are in use, e.g. https://pubmlst.org/bigsdb for PubMLST.org."
 msgstr ""
 
-#: ../rest.rst:2167
+#: ../rest.rst:2182
 msgid "The client id is usually a 24 character alphanumeric string.  The secret is usually a 42 character alphanumeric (including punctuation) string, e.g."
 msgstr ""
 
-#: ../rest.rst:2170
+#: ../rest.rst:2185
 msgid "**client_id:** efKXmqp2D0EBlMBkZaGC2lPf"
 msgstr ""
 
-#: ../rest.rst:2171
+#: ../rest.rst:2186
 msgid "**client_secret:** F$M+fQ2AFFB2YBDfF9fpHF^qSWJdmmN%L4Fxf5Gur3"
 msgstr ""
 
-#: ../rest.rst:2179
+#: ../rest.rst:2194
 msgid "Getting a request token"
 msgstr ""
 
-#: ../rest.rst:2181
+#: ../rest.rst:2196
 msgid "**Relative URL:** /db/{database}/oauth/get_request_token"
 msgstr ""
 
-#: ../rest.rst:2182
-#: ../rest.rst:2249
-#: ../rest.rst:2289
+#: ../rest.rst:2197
+#: ../rest.rst:2264
+#: ../rest.rst:2304
 msgid "**Supported method:** GET"
 msgstr ""
 
-#: ../rest.rst:2184
+#: ../rest.rst:2199
 msgid "The application uses the consumer key to obtain a request token.  The request token is a temporary token used to initiate user authorization for the application and will expire in 60 minutes.  The request needs to contain the following parameters and to be signed using the consumer secret:"
 msgstr ""
 
-#: ../rest.rst:2189
-#: ../rest.rst:2257
-#: ../rest.rst:2296
-#: ../rest.rst:2331
+#: ../rest.rst:2204
+#: ../rest.rst:2272
+#: ../rest.rst:2311
+#: ../rest.rst:2346
 msgid "oauth_consumer_key"
 msgstr ""
 
-#: ../rest.rst:2190
-#: ../rest.rst:2258
-#: ../rest.rst:2297
-#: ../rest.rst:2332
+#: ../rest.rst:2205
+#: ../rest.rst:2273
+#: ../rest.rst:2312
+#: ../rest.rst:2347
 msgid "oauth_request_method ('GET')"
-msgstr ""
-
-#: ../rest.rst:2191
-#: ../rest.rst:2259
-#: ../rest.rst:2298
-#: ../rest.rst:2333
-msgid "oauth_request_url (request URL)"
-msgstr ""
-
-#: ../rest.rst:2192
-#: ../rest.rst:2260
-#: ../rest.rst:2299
-#: ../rest.rst:2334
-msgid "oauth_signature_method ('HMAC-SHA1')"
-msgstr ""
-
-#: ../rest.rst:2193
-#: ../rest.rst:2261
-#: ../rest.rst:2300
-#: ../rest.rst:2335
-msgid "oauth_signature"
-msgstr ""
-
-#: ../rest.rst:2194
-#: ../rest.rst:2263
-#: ../rest.rst:2302
-#: ../rest.rst:2337
-msgid "oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be within 600 seconds of the current time."
-msgstr ""
-
-#: ../rest.rst:2196
-msgid "oauth_callback ('oob' for desktop applications)"
-msgstr ""
-
-#: ../rest.rst:2197
-#: ../rest.rst:2265
-#: ../rest.rst:2304
-#: ../rest.rst:2339
-msgid "oauth_nonce (random string)"
-msgstr ""
-
-#: ../rest.rst:2198
-#: ../rest.rst:2266
-#: ../rest.rst:2305
-#: ../rest.rst:2340
-msgid "oauth_version ('1.0')"
-msgstr ""
-
-#: ../rest.rst:2200
-#: ../rest.rst:2268
-#: ../rest.rst:2307
-msgid "If the application has been registered and has been granted permission to access the specific resource, a JSON response will be returned containing the following parameters:"
 msgstr ""
 
 #: ../rest.rst:2206
 #: ../rest.rst:2274
 #: ../rest.rst:2313
-msgid "oauth_token"
-msgstr ""
-
-#: ../rest.rst:2205
-msgid "This is the request token.  It is usually a 32 character alphanumeric string."
+#: ../rest.rst:2348
+msgid "oauth_request_url (request URL)"
 msgstr ""
 
 #: ../rest.rst:2207
-msgid "e.g. fKFm0WNhCfbEX8zQm6qhDA8K23FOWDGE"
+#: ../rest.rst:2275
+#: ../rest.rst:2314
+#: ../rest.rst:2349
+msgid "oauth_signature_method ('HMAC-SHA1')"
 msgstr ""
 
-#: ../rest.rst:2210
-#: ../rest.rst:2279
-#: ../rest.rst:2318
-msgid "oauth_token_secret"
+#: ../rest.rst:2208
+#: ../rest.rst:2276
+#: ../rest.rst:2315
+#: ../rest.rst:2350
+msgid "oauth_signature"
 msgstr ""
 
 #: ../rest.rst:2209
-msgid "This is the secret associated with the request token.  It is usually a 32 character alphanumeric string."
+#: ../rest.rst:2278
+#: ../rest.rst:2317
+#: ../rest.rst:2352
+msgid "oauth_timestamp (UNIX timestamp - seconds since Jan 1 1970) - this must be within 600 seconds of the current time."
 msgstr ""
 
 #: ../rest.rst:2211
-msgid "e.g. aZ0fncP7i5w5jlebdK5zyQ4vrRRVcdnv"
+msgid "oauth_callback ('oob' for desktop applications)"
+msgstr ""
+
+#: ../rest.rst:2212
+#: ../rest.rst:2280
+#: ../rest.rst:2319
+#: ../rest.rst:2354
+msgid "oauth_nonce (random string)"
 msgstr ""
 
 #: ../rest.rst:2213
-msgid "oauth_callback_confirmed"
+#: ../rest.rst:2281
+#: ../rest.rst:2320
+#: ../rest.rst:2355
+msgid "oauth_version ('1.0')"
 msgstr ""
 
-#: ../rest.rst:2213
-msgid "This parameter is always set to true."
+#: ../rest.rst:2215
+#: ../rest.rst:2283
+#: ../rest.rst:2322
+msgid "If the application has been registered and has been granted permission to access the specific resource, a JSON response will be returned containing the following parameters:"
 msgstr ""
 
 #: ../rest.rst:2221
-msgid "Getting user authorization"
+#: ../rest.rst:2289
+#: ../rest.rst:2328
+msgid "oauth_token"
+msgstr ""
+
+#: ../rest.rst:2220
+msgid "This is the request token.  It is usually a 32 character alphanumeric string."
 msgstr ""
 
 #: ../rest.rst:2222
-msgid "Once a request token has been obtained, this can be used by the end user to grant permission to access a specific resource to the application.  The application should direct the user to the client authorization page (authorizeClient) specific to a database within BIGSdb, e.g. http://pubmlst.org/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=authorizeClient&oauth_token=fKFm0WNhCfbEX8zQm6qhDA8K23FOWDGE"
+msgid "e.g. fKFm0WNhCfbEX8zQm6qhDA8K23FOWDGE"
+msgstr ""
+
+#: ../rest.rst:2225
+#: ../rest.rst:2294
+#: ../rest.rst:2333
+msgid "oauth_token_secret"
+msgstr ""
+
+#: ../rest.rst:2224
+msgid "This is the secret associated with the request token.  It is usually a 32 character alphanumeric string."
+msgstr ""
+
+#: ../rest.rst:2226
+msgid "e.g. aZ0fncP7i5w5jlebdK5zyQ4vrRRVcdnv"
 msgstr ""
 
 #: ../rest.rst:2228
+msgid "oauth_callback_confirmed"
+msgstr ""
+
+#: ../rest.rst:2228
+msgid "This parameter is always set to true."
+msgstr ""
+
+#: ../rest.rst:2236
+msgid "Getting user authorization"
+msgstr ""
+
+#: ../rest.rst:2237
+msgid "Once a request token has been obtained, this can be used by the end user to grant permission to access a specific resource to the application.  The application should direct the user to the client authorization page (authorizeClient) specific to a database within BIGSdb, e.g. http://pubmlst.org/cgi-bin/bigsdb/bigsdb.pl?db=pubmlst_neisseria_seqdef&page=authorizeClient&oauth_token=fKFm0WNhCfbEX8zQm6qhDA8K23FOWDGE"
+msgstr ""
+
+#: ../rest.rst:2243
 msgid "The user will be asked if they wish to grant access to the application on their behalf:"
 msgstr ""
 
-#: ../rest.rst:2233
+#: ../rest.rst:2248
 msgid "If they authorize the access, they will be presented with a verifier code. This should be entered in to the client application which will use this together with the request token to request an access token."
 msgstr ""
 
-#: ../rest.rst:2239
+#: ../rest.rst:2254
 msgid "The verifier code is valid for 60 minutes."
 msgstr ""
 
-#: ../rest.rst:2247
+#: ../rest.rst:2262
 msgid "Getting an access token"
 msgstr ""
 
-#: ../rest.rst:2248
+#: ../rest.rst:2263
 msgid "**Relative URL:** /db/{database}/oauth/get_access_token"
 msgstr ""
 
-#: ../rest.rst:2251
+#: ../rest.rst:2266
 msgid "The application uses the request token, verifier code and its consumer key to obtain an access token. The access token does not expire but can be revoked by either the end user or the site administrator. The request needs to contain the following parameters and to be signed using the consumer secret and request token secret:"
 msgstr ""
 
-#: ../rest.rst:2262
+#: ../rest.rst:2277
 msgid "oauth_token (request token)"
 msgstr ""
 
-#: ../rest.rst:2273
+#: ../rest.rst:2288
 msgid "This is the access token.  It is usually a 32 character alphanumeric string."
 msgstr ""
 
-#: ../rest.rst:2275
+#: ../rest.rst:2290
 msgid "e.g. SDrC74ZVl5SYSqY8lWZqrRxnyDnNGVFO"
 msgstr ""
 
-#: ../rest.rst:2277
+#: ../rest.rst:2292
 msgid "This is the secret associated with the access token.  It is usually a 32 character alphanumeric string."
 msgstr ""
 
-#: ../rest.rst:2279
+#: ../rest.rst:2294
 msgid "e.g. tYI2SPzgiO02IRVzW4JR1ez6Vvm4gVyv"
 msgstr ""
 
-#: ../rest.rst:2287
+#: ../rest.rst:2302
 msgid "Getting a session token"
 msgstr ""
 
-#: ../rest.rst:2288
+#: ../rest.rst:2303
 msgid "**Relative URL:** /db/{database}/oauth/get_session_token"
 msgstr ""
 
-#: ../rest.rst:2291
+#: ../rest.rst:2306
 msgid "The application uses the access token and its consumer key to obtain a session token.  The session token is valid for 12 hours before it expires.  The request needs to contain the following parameters and to be signed using the consumer secret and access token secret:"
 msgstr ""
 
-#: ../rest.rst:2301
+#: ../rest.rst:2316
 msgid "oauth_token (access token)"
 msgstr ""
 
-#: ../rest.rst:2312
+#: ../rest.rst:2327
 msgid "This is the session token.  It is usually a 32 character alphanumeric string."
 msgstr ""
 
-#: ../rest.rst:2314
+#: ../rest.rst:2329
 msgid "e.g. H8CjIS8Ikq6hwCUqUfF1l4pTaCYl8Ljw"
 msgstr ""
 
-#: ../rest.rst:2316
+#: ../rest.rst:2331
 msgid "This is the secret associated with the session token.  It is usually a 32 character alphanumeric string."
 msgstr ""
 
-#: ../rest.rst:2318
+#: ../rest.rst:2333
 msgid "e.g. RfponbaNPO7tkZ2miHFISk0pMndePNfJ"
 msgstr ""
 
-#: ../rest.rst:2326
+#: ../rest.rst:2341
 msgid "Accessing protected resources"
 msgstr ""
 
-#: ../rest.rst:2327
+#: ../rest.rst:2342
 msgid "The application uses the session token and its consumer key to access a protected resource.  The request needs to contain the following parameters and to be signed using the consumer secret and session token secret:"
 msgstr ""
 
-#: ../rest.rst:2336
+#: ../rest.rst:2351
 msgid "oauth_token (session token)"
 msgstr ""
