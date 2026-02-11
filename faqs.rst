@@ -65,6 +65,12 @@ Administration
 
 1. **How can I make some isolates public but not others?**
 
+ .. note::
+
+   Since writing this, :ref:`private records <private_records>` are now 
+   directly supported within BIGSdb. The following may still be useful as a 
+   quick and dirty way to hide data.
+
  The easiest way to do this is to set up two or more separate configuration 
  directories that refer to the database. The URLs to access these will differ 
  by the value of the 'db' attribute, which refers to the name of the 
