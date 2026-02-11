@@ -5,7 +5,8 @@
 LINtree
 *******
 LINtree is a tool to infer prefix trees with branch lengths from sets of Life 
-Identification Number (LIN) codes. Such LIN-based prefix trees are very useful
+Identification Number® (LIN) (trademark registered by This Genomic Life, Inc., 
+Floyd, VA, USA) codes. Such LIN-based prefix trees are very useful
 to reflect the phylogenetic relationships among genomes typed by cgMLST where 
 LIN codes have been assigned. Once the tree has been generated, the resultant
 Newick file is uploaded to iTOL for visualisation (if enabled) along with 
