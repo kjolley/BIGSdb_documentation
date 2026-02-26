@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2026, Keith Jolley
+# This file is distributed under the same license as the BIGSdb package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BIGSdb 1.53.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-26 13:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data_analysis/linvis.rst:6
+msgid "LINvis"
+msgstr ""
+
+#: ../data_analysis/linvis.rst:7
+msgid "LINvis displays a dataset of LIN® code values as a hierarchical circle-packing visualisation. Hovering over each node will display the partial or full LIN code associated with it and you can choose to set labels for any LIN code threshold."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:12
+msgid "The visualisation can be exported as a SVG file for further manipulation or for publication."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:17
+msgid "LIN is a trademark registered by This Genomic Life, Inc, Floyd, VA, USA."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:21
+msgid "LINvis can be accessed by selecting the 'Analysis' section on the main contents page."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:26
+msgid "Jump to the 'Analysis' category, follow the link to LINvis, then click 'Launch LINvis'."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:29
+msgid "LINvis can be accessed from the contents page by clicking the 'LINtree' link."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:33
+msgid "Alternatively, it can be accessed following a query by clicking the 'LINvis' button at the bottom of the results table.  Isolates returned from the query will be automatically selected within the LINvis interface."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:39
+msgid "Select the isolates to include. If there is more than one scheme in the database that has LIN codes assigned, then select the required scheme."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:42
+msgid "Click 'Submit' to start the analysis."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:46
+msgid "The job will be sent to the job queue. When it has finished, click the button marked 'Launch LINvis'. There will also be a JSON format data file that you can download. This can be loaded into the LINvis viewer manually if you open the viewer page without passing a job parameter."
+msgstr ""
+
+#: ../data_analysis/linvis.rst:53
+msgid "Your browser will open the LINvis viewer and display your visualisation."
+msgstr ""
