@@ -5,7 +5,7 @@
 LINtree
 *******
 LINtree is a tool to infer prefix trees with branch lengths from sets of Life 
-Identification Number (LIN) codes. Such LIN-based prefix trees are very useful
+Identification Number® (LIN®) codes. Such LIN-based prefix trees are very useful
 to reflect the phylogenetic relationships among genomes typed by cgMLST where 
 LIN codes have been assigned. Once the tree has been generated, the resultant
 Newick file is uploaded to iTOL for visualisation (if enabled) along with 
@@ -15,7 +15,7 @@ selected metadata that can be used to annotate it.
 
 Only isolates with an assigned LIN code can be included in the tree.
 
-Lintree can be accessed by selecting the 'Analysis' section on the main 
+Lintree can be accessed by selecting the 'Third party' section on the main 
 contents page.
 
 .. image:: /images/data_analysis/analysis.png
@@ -27,9 +27,9 @@ LINtree can be accessed from the contents page by clicking the 'LINtree' link.
 
 .. image:: /images/data_analysis/lintree2.png
 
-Alternatively, it can be accessed following a query by clicking the 'iTOL'
+Alternatively, it can be accessed following a query by clicking the 'LINtree'
 button at the bottom of the results table.  Isolates returned from the query 
-will be automatically selected within the iTOL interface.
+will be automatically selected within the LINtree interface.
 
 .. image:: /images/data_analysis/lintree3.png
 
@@ -60,5 +60,7 @@ Your browser will open the iTOL website with your tree.
 
    Genome Informatics & Phylogenetics (GIPhy), Centre de Ressources Biologiques
    de l'Institut Pasteur (CRBIP), Institut Pasteur, Paris, France
+   
+   LIN is a trademark registered by This Genomic Life, Inc, Floyd, VA, USA.
    
   
