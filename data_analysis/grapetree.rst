@@ -79,7 +79,7 @@ follows:
 .. image:: /images/data_analysis/grapetree6.png
 
 Full details can be found in
-the `GrapeTree manual <https://bitbucket.org/enterobase/enterobase-web/wiki/GrapeTree>`_.
+the `GrapeTree manual <https://enterobase.readthedocs.io/en/latest/grapetree/grapetree-about.html>`_.
 
 .. note::
    GrapeTree has been described in the following publication:
