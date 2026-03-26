@@ -1821,7 +1821,9 @@ available for searching, analysis (currently only in
 describe the location of the field in question within the JSON field. This can
 be done using `JSONPath <https://en.wikipedia.org/wiki/JSONPath>`_, e.g. a
 field called 'predicted_serotype' at the top-level within the JSON hierarchy
-can be described with a JSONPath of '$.predicted_serotype'.
+can be described with a JSONPath of '$.predicted_serotype'. Note that 
+PostgreSQL uses a dot accessor with double-quoted key for names that contain
+spaces, e.g. '$.data.kpsc_k.fields."Best match type"'.
 
 Admins can add fields by expanding the 'Fields' selection in the admin 
 interface and clicking the 'Add' link for 'Analysis fields':
