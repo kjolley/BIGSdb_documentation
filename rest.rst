@@ -1894,6 +1894,8 @@ POST /db/{database}/submissions - create new submission
 * message [string] - correspondence to the curator
 * email [integer] - set to 1 to enable E-mail updates (E-mails will be sent to the
   registered user account address).
+* embargo [integer] - embargo time to request. Value is in months. Only for 
+  isolate or genome submissions.
   
 **Response:** Object containing: 
 
