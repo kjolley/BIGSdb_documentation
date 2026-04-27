@@ -2144,7 +2144,7 @@ e.g. https://pubmlst.org/bigsdb.
 
 .. image:: /images/rest/api_keys.png
 
-This keys can then be passed in the request header using the `X-API-Key`
+This key can then be passed in the request header using the `X-API-Key`
 attribute.
 
 The key can be changed at any time by the user. Doing so will immediately 
