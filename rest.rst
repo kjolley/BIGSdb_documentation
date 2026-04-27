@@ -2130,8 +2130,31 @@ DELETE /db/{database}/submissions/{submission_id}/files/{filename} - Delete subm
 **************
 Authentication
 **************
-Protected resources, i.e. those requiring a user to log in, can be accessed via
-the API using OAuth (1.0A) authentication (see 
+BIGSdb supports two means of authenticating - personal API keys and OAuth. API
+keys are easier to implement as they can just be passed within the request 
+header but have lower security and are intended primarily for downloading 
+unprivileged data. Restrictions on the use of API keys may be set by site
+administrators where user identification is important, such as for accessing 
+private data or for making submissions.
+
+API keys
+========
+If API keys are enabled, users can create a key by going to their profile page,
+e.g. https://pubmlst.org/bigsdb. 
+
+.. image:: /images/rest/api_keys.png
+
+This keys can then be passed in the request header using the `X-API-Key`
+attribute.
+
+The key can be changed at any time by the user. Doing so will immediately 
+revoke access to any script using it. It is also possible for site 
+administrators to ban keys.
+
+OAuth
+=====
+Protected resources, i.e. those requiring a user to log in, can also be 
+accessed via the API using OAuth (1.0A) authentication (see 
 `IETF RFC5849 <http://tools.ietf.org/html/rfc5849>`_ for details).  Third-party
 client software has to be registered with the BIGSdb site before they can 
 access authenticated resources. The overall three-legged flow works as follows:
@@ -2172,7 +2195,7 @@ and sign requests.
    single: API authentication; consumer key
 
 Developer sign up to get a consumer key
-=======================================
+---------------------------------------
 Application developers should apply to the site administrator of the site 
 running BIGSdb. The administrator can 
 :ref:`generate a key and secret<create_client_credentials>` using a script - 
@@ -2193,7 +2216,7 @@ usually a 42 character alphanumeric (including punctuation) string, e.g.
    single: API authentication; request token
 
 Getting a request token
-=======================
+-----------------------
 
 * **Relative URL:** /db/{database}/oauth/get_request_token
 * **Supported method:** GET
@@ -2235,7 +2258,7 @@ following parameters:
    single: API authentication; user authorization
    
 Getting user authorization
-==========================
+--------------------------
 Once a request token has been obtained, this can be used by the end user to
 grant permission to access a specific resource to the application.  The 
 application should direct the user to the client authorization page 
@@ -2261,7 +2284,7 @@ The verifier code is valid for 60 minutes.
    single: API authentication; access token
 
 Getting an access token
-=======================
+-----------------------
 * **Relative URL:** /db/{database}/oauth/get_access_token
 * **Supported method:** GET
  
@@ -2301,7 +2324,7 @@ following parameters:
    single: API authentication; session token
 
 Getting a session token
-=======================
+-----------------------
 * **Relative URL:** /db/{database}/oauth/get_session_token
 * **Supported method:** GET
 
@@ -2340,7 +2363,7 @@ following parameters:
    single: API authentication; accessing protected resources
  
 Accessing protected resources
-=============================
+-----------------------------
 The application uses the session token and its consumer key to access a 
 protected resource.  The request needs to contain the following parameters and
 to be signed using the consumer secret and session token secret:
