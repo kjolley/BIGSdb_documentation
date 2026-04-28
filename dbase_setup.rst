@@ -270,6 +270,12 @@ Any value set here can be overridden in a
 
   * Overrides the record limit for the Codon Usage plugin.  Default: '500'.
   
+* Combinations  
+
+  * Enable Unique Combinations plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. It is enabled by default.
+  
 * contig_analysis_limit
 
   * Overrides the isolate number limit for the Contig Export plugin. 
@@ -508,6 +514,12 @@ Any value set here can be overridden in a
   * To enable, you will also need to set submissions="yes". By default, 
     genome submissions are enabled. 
     
+* GrapeTree  
+
+  * Enable GrapeTree plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. 
+    
 * hide_unused_schemes   
 
   * Sets whether a scheme is shown in a main results table if none of the
@@ -529,6 +541,12 @@ Any value set here can be overridden in a
   * Overrides the maximum number of sequeneces (records x loci) that can be 
     included in an ITOL job. Default: 100,000 (this can also be set globally
     in bigsdb.conf).
+    
+* ITOL  
+
+  * Enable iTOL plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. 
     
 * job_priority 
 
@@ -729,6 +747,12 @@ Any value set here can be overridden in a
   * Displays E-mail address for sender in isolate information page if set to
     'no'. Default 'yes'.
     
+* Publications  
+
+  * Enable Publications Breakdown plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. It is enabled by default.
+    
 * public_login
 
   * Optionally allow users to log in to a public database - this is useful as
@@ -774,6 +798,12 @@ Any value set here can be overridden in a
     is set then the plugin will not be available unless the all_plugins 
     attribute is set to 'yes'. If the all_plugins attribute is set to 'yes', 
     the plugin can be disabled by setting this attribute to 'no'.
+    
+* ReporTree  
+
+  * Enable ReporTree plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. 
 
 * script_path_includes  
 
@@ -894,6 +924,12 @@ Any value set here can be overridden in a
 
   * Overrides the total limit on pending submissions that a user can submit
     via the web submission system. Default: '20'.
+    
+* TwoFieldBreakdown  
+
+  * Enable Two Field Breakdown plugin: either 'yes' or 'no'. If the all_plugins 
+    attribute is set to 'yes', the plugin can be disabled by setting this 
+    attribute to 'no'. It is enabled by default.
     
 * user   
 
