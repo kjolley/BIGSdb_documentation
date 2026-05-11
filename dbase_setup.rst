@@ -1508,6 +1508,11 @@ Any value set here can be overridden in a
   * Overrides the sequence export limit (records x loci) in the Sequence
     Export plugin.  Default: '1000000'.
     
+* seq_queries_require_login
+
+  * Force users to log in to query sequences via web interface: either 'yes'
+    or 'no'. This value overrides the value set in bigsdb.conf.
+    
 * SequenceExport  
 
   * Enable sequence export plugin: either 'yes' or 'no'. If the all_plugins 
