@@ -21,7 +21,7 @@ isolates returned in the query will be pre-selected.
 Press submit.
 
 A table will be produced with download links.  Clicking these will produce the 
-contigs in FASTA, EMBL, or Genbank format.
+contigs in FASTA, EMBL, or Genbank format. 
 
 .. image:: /images/data_export/contig_export4.png
 
