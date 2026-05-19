@@ -21,11 +21,11 @@ isolates returned in the query will be pre-selected.
 Press submit.
 
 A table will be produced with download links.  Clicking these will produce the 
-contigs in FASTA format.
+contigs in FASTA, EMBL, or Genbank format.
 
 .. image:: /images/data_export/contig_export4.png
 
-You can also download all the data in a tar.gz file by clicking the 'Batch 
-download' link.
+You can also download all the data in a tar.gz file by clicking the appropriate 
+'Batch download' link for the format you want.
 
 .. image:: /images/data_export/contig_export5.png
