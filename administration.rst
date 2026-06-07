@@ -101,6 +101,10 @@ Individual permissions can be set for each curator:
   changes to user details will be seen throughout the site).
 * modify_geopoints - allowed to modify the geography point GPS coordinate 
   lookup table used for mapping.
+* refresh_scheme_caches - allowed to refresh scheme caches if necessary.
+* query_interfaces - allowed to define new pre-populated query interfaces.
+* set_embargo - allowed to embargo isolates or increase time limits on 
+  currently embargoed isolates.
 
 Permissions can be set by clicking the Update/delete button in the Permissions
 box in the admin functions area of the curator's interface: 
@@ -127,9 +131,9 @@ curator.  This will not be selected by the 'All/None' buttons.
 ***********************************************************
 Locus and scheme permissions (sequence definition database)
 ***********************************************************
-To be allowed to define alleles or scheme profiles, curators must be granted 
-specific permission for each locus and scheme by adding their user id number 
-to the 'locus curator' and 'scheme curator' lists.
+To be allowed to define alleles or scheme profiles in the typing database, 
+curators must be granted specific permission for each locus and scheme by 
+adding their user id number to the 'locus curator' and 'scheme curator' lists.
 
 The easiest way to modify these lists is to use the batch update link next to 
 'locus curator control list' and 'scheme curator control list':
