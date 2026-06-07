@@ -1880,11 +1880,17 @@ query and analysis interfaces.
 .. image:: /images/dbase_setup/analysis_fields2.png
 
 This will now be searchable within the isolate query interface. First you will
-need to select the 'Analysis results' form elements from the 'Modify form' tab.
+need to enable the 'Analysis results' form elements. Click the 'Modify form' 
+tab at the top of the query page.
+
+.. image:: /images/dbase_setup/analysis_fields3a.png
+
+Now select the 'Analysis fields' toggle.
 
 .. image:: /images/dbase_setup/analysis_fields3.png
 
-Then select the field and the value to search on.
+Then select the field and the value to search on in the newly-appeared search
+box.
 
 .. image:: /images/dbase_setup/analysis_fields4.png
 
