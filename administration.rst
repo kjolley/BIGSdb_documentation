@@ -2137,8 +2137,8 @@ much easier way is possible. For this method to work, the reference genome
 must be represented by a single contig.
 
 From the curator's main page, you need to do a query to find the isolate that 
-you will base your numbering on. Click 'isolate query' to take you to a 
-standard query form.
+you will base your numbering on. Click the isolate 'Edit' button to take you to 
+a standard query form.
 
 .. image:: /images/administration/genome_positions.png
 
@@ -2146,12 +2146,12 @@ Perform your search and click the hyperlinked id number of the record.
 
 .. image:: /images/administration/genome_positions2.png
 
-In the isolate record, click the 'Show sequence bin' button to bring up 
+In the isolate record, click the 'Explore sequence bin' button to bring up 
 details of the isolate contigs.
 
 .. image:: /images/administration/genome_positions3.png
 
-Click the 'Renumber' button:
+Click the 'Renumber' button in the contigs table:
 
 .. image:: /images/administration/genome_positions4.png
 
@@ -2169,7 +2169,7 @@ Defining composite fields
 Composite fields are virtual fields that don't themselves exist within the 
 database but are made up of values retrieved from other fields or schemes and 
 formatted in a particular way. They are used for display and analysis purposes 
-only and can not be searched against.
+only and cannot be searched against.
 
 One example of a composite field is used in the Neisseria PubMLST database 
 which has a strain designation composite field made up of serogroup, PorA VR1 
@@ -2183,8 +2183,9 @@ Additionally, the clonal complex field in the above example is converted using
 a regular expression from 'ST-4 complex/subgroup IV' to 'cc4'.
 
 Composite fields can be added to the database by clicking the add (+) 
-composite fields link on the curator's main page. This function is normally 
-hidden, so you may need to click the 'Fields' toggle to display it.
+composite fields link in the admin section on the curator's main page. This 
+function is normally hidden, so you may need to click the 'Fields' toggle to 
+display it.
 
 .. image:: /images/administration/composite_fields.png
 
@@ -2196,7 +2197,7 @@ overrideable by user preferences.
 .. image:: /images/administration/composite_fields2.png
 
 Once the field has been created it needs to be defined. This can be done from 
-query composite field link on the main curator's page.
+the 'Edit' composite field link.
 
 .. image:: /images/administration/composite_fields3.png
 
@@ -2243,9 +2244,9 @@ Instead, each record may have a country field and the continent is then
 determined from the lookup table, allowing, for example, a search of isolates 
 limited to those from Europe.
 
-To set up such an extended attribute, click the add (+) isolate field extended 
-attributes link on the curator's main page. This function is normally hidden, 
-so you may need to click the 'Fields' toggle to display it.
+To set up such an extended attribute, click the add (+) field extended 
+attributes link in the admin section on the curator's main page. This function 
+is normally hidden, so you may need to click the 'Fields' toggle to display it.
 
 .. image:: /images/administration/extended_attributes.png
 
@@ -2301,10 +2302,10 @@ exclamation mark (!) next to them:
   * Allowed: any integer.
 
 The easiest way to populate the lookup table is to do a batch update copied 
-from a spreadsheet. Click the batch add (++) isolate field extended attribute 
-values link on the curator's main page (this link will only appear once an 
-extended attribute has been defined). This function is normally hidden, 
-so you may need to click the 'Show all' toggle to display it.
+from a spreadsheet. Click the batch add (++) field extended attributes 
+link under the Metadata heading in the  curator's section (this link will only 
+appear once an extended attribute has been defined). This function is normally 
+hidden, so you may need to click the 'All functions' toggle to display it.
 
 .. image:: /images/administration/extended_attributes2.png
 
@@ -2365,7 +2366,8 @@ This new attribute will then be available when
 *************************************************
 Checking external database configuration settings
 *************************************************
-Click the 'Configuration check' link on the curator's index page.
+Click the 'Configuration check' button in the admin section on the curator's 
+index page.
 
 .. image:: /images/administration/config_check.png
 
@@ -2388,9 +2390,9 @@ Exporting table configurations
 Sometimes it is useful to transfer configurations between different databases
 or to export a configuration for troubleshooting.  Data from most of the tables
 can be exported in tab-delimited text format suitable for batch uploading. For
-example, to export scheme configuration data, click the query link (Update or
-delete) next to schemes in the curator's interface. This function is normally 
-hidden, so you may need to click the 'Schemes' toggle to display it.
+example, to export scheme configuration data, click the Edit link under schemes 
+in the admin section. This function is normally hidden, so you may need to click 
+the 'Schemes' toggle to display it.
 
 .. image:: /images/administration/config_export.png
 
