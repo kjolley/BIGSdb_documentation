@@ -1003,7 +1003,7 @@ define extended attributes.  Examples of these include higher order grouping
 of antigen sequences, antibody reactivities, identification of important 
 mutations, or cross-referencing of alternative nomenclatures.
 
-To add extended attributes for a locus, click add (+) locus extended attributes
+To add extended attributes for a locus, click add (+) extended attributes
 in the sequence definition database curator's interface contents page. This 
 function is normally hidden, so you may need to click the 'Loci' toggle 
 to display it.
@@ -1216,7 +1216,7 @@ number will be filled in already.
   submission of new profiles (only relevant for schemes with primary key 
   fields).
 
-To add loci to the scheme, click the add (+) scheme members link on the 
+To add loci to the scheme, click the add (+) scheme loci link on the 
 curator's interface contents page. This function is normally hidden, so you 
 may need to click the 'Schemes' toggle to display it.
 
@@ -1441,8 +1441,7 @@ group to the dropdown lists in the :ref:`sequence query <sequence_query>`
 page.  This enables all loci belonging to schemes within the group to be 
 queried together.
 
-Schemes can be added to groups by clicking the add (+) group members (scheme) 
-link.
+Schemes can be added to groups by clicking the add (+) group schemes link.
 
 .. image:: /images/administration/scheme_groups4.png
 
@@ -1538,12 +1537,12 @@ exclamation mark (!) next to them:
 
   * Allowed: valid script path.
   * This can be relative (e.g. /cgi-bin/bigsdb/bigsdb.pl) if running on the 
-    same machine as the seqdef database or absolute (including http://) if 
+    same machine as the seqdef database or absolute (including https://) if 
     on a different machine.
 
 Look up isolates with given allele
 ==================================
-To link a locus, click the add (+) client database loci link on the curator's 
+To link a locus, click the add (+) client loci link on the curator's 
 interface contents page.	
 
 .. image:: /images/administration/add_client_databases3.png
@@ -1563,7 +1562,7 @@ database to retrieve these.
 Look up isolates with a given scheme primary key
 ================================================
 Setting this up is identical to setting up for alleles (see above) except you 
-click on the add (+) client database schemes link and choose the scheme and 
+click on the add (+) client schemes link and choose the scheme and 
 client databases in the dropdown list boxes.
 
 Now when information on a given scheme profile (e.g. MLST sequence type) is 
@@ -1574,7 +1573,7 @@ that profile and link to a search on the database to retrieve these.
 
 Look up specific isolate database fields linked to a given allele
 =================================================================
-To link an allele to an isolate field, click the add (+) 'client database 
+To link an allele to an isolate field, click the add (+) 'client 
 fields linked to loci' link on the curator's interface contents page.
 
 .. image:: /images/administration/add_client_databases7.png
@@ -1606,9 +1605,9 @@ database is called seqdef_db):
 
 1. Create appropriate loci
 2. Create new scheme 'MLST'
-3. Add scheme_field 'ST' with primary_key=TRUE (add clonal_complex if you want;
+3. Add each locus as a scheme_member
+4. Add scheme_field 'ST' with primary_key=TRUE (add clonal_complex if you want;
    set this with primary_key=FALSE)
-4. Add each locus as a scheme_member
 5. You'll then be able to add profiles
 
 **Isolate database**
@@ -1627,7 +1626,7 @@ database is called seqdef_db):
   * dbase_id: 1 (or whatever the id of your seqdef scheme is)
 
 3. Add scheme_field ST as before
-4. Add loci as scheme_members
+4. Add loci to scheme
 
 .. index::
    pair: scheme profiles; automated assignment
