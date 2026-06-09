@@ -12,7 +12,8 @@ would be better to prevent this.
 
 You can retire a profile identifier by clicking the 'Add' link in the 'Retired
 profiles' box on the sequence database curators' page. This function is 
-normally hidden, so you may need to click the 'Show all' toggle to display it.
+normally hidden, so you may need to click the 'All functions' toggle to display
+it.
 
 .. image:: /images/curation/retire_profile1.png
 
@@ -39,7 +40,7 @@ it so that it can be re-assigned. To do this, you need to remove the identifier
 from the retired_profiles table.
 
 First, find the profile identifier in the retired_profiles table by clicking the 
-'Update/delete' retired profiles link on the sequence database curators' page. 
+'Edit' retired profiles link on the sequence database curators' page. 
 This function is normally hidden, so you may need to click the 'Show all' 
 toggle to display it.
 

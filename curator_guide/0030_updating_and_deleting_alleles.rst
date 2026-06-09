@@ -13,7 +13,7 @@ Updating and deleting allele sequence definitions
    profile first, then re-create it after deleting and re-adding the allele.
 
 In order to update or delete an allele, first you must select it. Click the 
-update/delete sequences link.
+'Edit' sequences link.
 
 .. image:: /images/curation/update_alleles.png
 

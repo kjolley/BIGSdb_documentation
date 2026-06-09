@@ -94,6 +94,12 @@ Download a template Excel file from the following page.
 
 .. image:: /images/curation/add_alleles4.png
 
+.. note::
+
+   A tab-delimited text file in the required format for batch uploading is
+   created if new alleles are found when running the 
+   :ref:`web-based sequence tagging<tag_scanning>`.
+
 Fill in the spreadsheet.  If the locus uses integer allele identifiers, the 
 allele_id can be left blank and the next available number will be used 
 automatically.   

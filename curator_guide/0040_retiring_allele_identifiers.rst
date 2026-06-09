@@ -39,8 +39,8 @@ that it can be re-assigned. To do this, you need to remove the identifier from
 the retired_alleles table.
 
 First, find the allele identifier in the retired_alleles table by clicking the 
-'Update/delete' retired alleles link on the sequence database curators' page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+'Edit' retired alleles link on the sequence database curators' page. 
+This function is normally hidden, so you may need to click the 'All functions' 
 toggle to display it.
 
 .. image:: /images/curation/unretire_alleles.png

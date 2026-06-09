@@ -4,7 +4,7 @@
 ***************************************
 Batch updating multiple isolate records
 ***************************************
-Select 'batch update' isolates link on the curator's index page.
+Select 'batch edit' isolates link on the curator's index page.
 
 .. image:: /images/curation/batch_update_isolate.png
 

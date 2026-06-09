@@ -7,7 +7,7 @@
 Updating and deleting single isolate records
 ********************************************
 First you need to locate the isolate record. You can either browse or use a 
-search or list query.
+search or list query. Click the 'Edit' isolates link.
 
 .. image:: /images/curation/update_isolate.png
 
@@ -51,8 +51,7 @@ clicking 'Add/update'.
 The allele designation update page allows you to modify an existing 
 designation, or alternatively add additional designations. The sender, status 
 (confirmed/provisional) and method (manual/automatic) needs to be set for each
-designation (all pending designations have a provisional status). The method is
-used to differentiate designations that have been determined manually from 
-those determined by an automated algorithm.
+designation. The method is used to differentiate designations that have been 
+determined manually from those determined by an automated algorithm.
 
 .. image:: /images/curation/update_isolate7.png

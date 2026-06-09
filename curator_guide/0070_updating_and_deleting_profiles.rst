@@ -7,8 +7,10 @@
 Updating and deleting scheme profile definitions
 ************************************************
 In order to update or delete a scheme profile, first you must select it. Click 
-the update/delete profiles link in the scheme profiles box named after the 
-scheme (e.g. MLST):
+the 'Edit' profiles link in the scheme profiles box named after the 
+scheme (e.g. MLST). If you are an admin but have not been explicitly set as a 
+scheme curator, then you will need to click the 'All functions' toggle to show 
+the scheme. 
 
 .. image:: /images/curation/update_scheme_profile.png
 
@@ -27,7 +29,7 @@ records retrieved from the search.
 For deletion of a single record, the full record will be displayed. Confirm 
 deletion by clicking 'Delete'. You can also choose to delete and
 retire the profile identifier. If you do this, the profile identifier will not
-be re-used. The database configuration can be set so that you can only delete
+be re-used. The database configuration may be set so that you can only delete
 and retire.
 
 .. image:: /images/curation/delete_scheme_profile.png

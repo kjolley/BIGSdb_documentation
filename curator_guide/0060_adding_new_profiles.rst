@@ -3,9 +3,11 @@
 *************************************
 Adding new scheme profile definitions
 *************************************
-Provided a scheme has been set up with at least one locus and a scheme field 
-set as a primary key, there will be links on the curator's main page to add 
-profiles for that scheme.
+Provided a scheme has been set up with at least one locus, a scheme field 
+set as a primary key, and you have been added as a scheme curator, there will 
+be links on the curator's main page to add profiles for that scheme. If you
+are an admin but have not been explicitly set as a scheme curator, then you
+will need to click the 'All functions' toggle to show the scheme. 
 
 To add a single profile you can click the add (+) profiles link in the box 
 named after the scheme name (e.g. MLST):
