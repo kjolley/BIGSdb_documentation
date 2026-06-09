@@ -12,7 +12,7 @@ it would be better to prevent this.
 
 You can retire an isolate identifier by clicking the 'Add' retired isolates
 link on the isolates database curators' page. This function is normally hidden,
-so you may need to click the 'Show all' toggle to display it.
+so you may need to click the 'All functions' toggle to display it.
 
 .. image:: /images/curation/retire_isolate1.png
 
@@ -38,8 +38,8 @@ it so that it can be re-assigned. To do this, you need to remove the identifier
 from the retired_isolates table.
 
 First, find the isolate identifier in the retired_isolates table by clicking the 
-'Update/delete' retired isolates link on the isolate database curators' page. 
-This function is normally hidden, so you may need to click the 'Show all' 
+'Edit' retired isolates link on the isolate database curators' page. 
+This function is normally hidden, so you may need to click the 'All functions' 
 toggle to display it.
 
 .. image:: /images/curation/unretire_isolates.png

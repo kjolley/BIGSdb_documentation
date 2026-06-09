@@ -12,7 +12,7 @@ Deleting multiple isolate records
    this.
 
 Before you can delete multiple records, you need to search for them. From the 
-curator's main page, click the update/delete isolates link:
+curator's main page, click the 'Edit' isolates link:
 
 .. image:: /images/curation/batch_delete_isolate.png
 
