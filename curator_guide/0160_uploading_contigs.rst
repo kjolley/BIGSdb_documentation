@@ -34,7 +34,7 @@ As an alternative to selecting the isolate from a dropdown list (or entering
 the id on large databases), it is also possible to upload sequence 
 data following an isolate query.
 
-Click the isolate update/delete link from the curator's main page.
+Click the isolate 'Edit' link from the curator's main page.
 
 .. image:: /images/curation/upload_contigs6.png
 

@@ -10,7 +10,7 @@ lists of PubMed ids can be entered in to the web form.
 
 They can also be associated in batch after the upload of isolate records. Click
 the PubMed batch add (++) link on the curator's main page. This function is 
-normally hidden, so you may need to click the 'Show all' toggle to display it.
+normally hidden, so you may need to click the 'All functions' toggle to display it.
 
 .. image:: /images/curation/add_publications.png
 

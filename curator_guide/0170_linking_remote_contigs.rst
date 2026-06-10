@@ -21,7 +21,7 @@ Click the sequences link icon on the curator's main page.
 Either select the isolate id from the dropdown list, or enter it manually 
 (list is disabled if there are >1000 records in the database). Enter the URI
 for the RESTful API of the parent isolate record, e.g. 
-http://rest.pubmlst.org/db/pubmlst_rmlst_isolates/isolates/933. This URI can
+http://rest.pubmlst.org/db/pubmlst_rmlst_isolates/isolates/11492. This URI can
 require authentication if credentials have been 
 :ref:`set up<oauth_remote_contigs>`.
 

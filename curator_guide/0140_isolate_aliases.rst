@@ -17,7 +17,7 @@ list in the aliases column.
 
 As stated above, aliases can also be batch added. To do this, click the batch
 add (++) isolate aliases link on the curator's index page. This function is 
-normally hidden, so you may need to click the 'Show all' toggle to display it.
+normally hidden, so you may need to click the 'All functions' toggle to display it.
 
 .. image:: /images/curation/isolate_aliases1.png
 
