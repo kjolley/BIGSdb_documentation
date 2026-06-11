@@ -28,10 +28,10 @@ Again, multiple selections can be made.
 
 Choose your scan parameters. Lowering the value for BLASTN word size will 
 increase the sensitivity of the search at the expense of time. Using TBLASTX 
-is more sensitive but also much slower. TBLASTX can only be used to identify 
-the sequence region rather than a specific allele (since it will only match the
-translated sequence and there may be multiple alleles that encode a particular 
-peptide sequence).
+(if it is available) is more sensitive but also much slower. TBLASTX can only 
+be used to identify the sequence region rather than a specific allele (since 
+it will only match the translated sequence and there may be multiple alleles 
+that encode a particular peptide sequence).
 
 By default, for each isolate only loci that have not had either an allele 
 designation made or a sequence region scanned will be scanned again. To rescan 

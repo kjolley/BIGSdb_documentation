@@ -13,7 +13,7 @@ coordinates to facilitate mapping.
 If the user has curator privileges with the 'modify_geopoints' permission set,
 or is an admin, a curator link to modify 'Geopoint field lookup' will be 
 available in the curator interface. This link is normally hidden but can be
-shown by selecting the 'Show all' toggle.
+shown by selecting the 'All functions' toggle.
 
 To add a value, click the 'Add' link:
 

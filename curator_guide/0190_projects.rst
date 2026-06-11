@@ -10,7 +10,7 @@ Creating the project
 The first step in grouping by project is to set up a project.
 
 Click the add (+) project link on the curator's main page. This function is 
-normally hidden, so you may need to click the 'Show all' toggle to display it.
+normally hidden, so you may need to click the 'All functions' toggle to display it.
 
 .. image:: /images/curation/projects.png
 
@@ -51,7 +51,7 @@ Explicitly adding isolates to a project
 Explicitly adding isolates to the project can be done individually or in batch
 mode. To add individually, click the add (+) project member link on the 
 curator's main page. This function is normally hidden, so you may need to click
-the 'Show all' toggle to display it.
+the 'All functions' toggle to display it.
 
 .. image:: /images/curation/projects3.png
 
