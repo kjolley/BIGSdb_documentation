@@ -48,7 +48,7 @@ upload sequences in FASTA format by clicking the file browse button.
 
 .. index::
    pair: identify; sequence type
-
+   
 Querying whole genome data
 ==========================
 The sequence query is not limited to single genes.  You can also paste or 
@@ -60,6 +60,8 @@ also be returned if these are defined.  This, for example, enables you to
 identify the MLST sequence type of a genome in one step.
 
 .. image:: /images/data_query/sequence_query6.png
+
+.. _batch_sequence_query:
 
 *********************************************************
 Querying multiple sequences to identify allele identities

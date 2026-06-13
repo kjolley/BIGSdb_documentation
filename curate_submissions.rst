@@ -64,8 +64,14 @@ should always reflect the live database values.
 
 Batch allele curation
 =====================
-Often, you will want to batch upload submitted sequences.  This can be done by
-clicking the 'Batch curate' button.
+Often, you will want to batch upload submitted sequences. First you may want
+to check that these properly align with other alleles of this locus using the 
+'Batch Query' button that will take you to the 
+:ref:`batch sequence check<batch_sequence_query>` page. You can also check
+individual sequences using the 'Query' link on each row.
+
+Once you are satisfied that the sequences should be assigned, click the 
+'Batch curate' button. 
 
 .. note::
  
@@ -102,7 +108,8 @@ Rejecting sequences
 ===================
 Sometimes you may need to reject all, or some of, the sequences in a submission.
 You can do this by changing the value in the status dropdown box next to each
-sequence.  Click 'Update' to make the change. 
+sequence. You can also click the 'Mark all rejected' button underneath the 
+table to reject all the sequences. Click 'Update' to make the change. 
 
 .. image:: /images/curate_submissions/curate_submissions15.png
 
@@ -173,6 +180,12 @@ The upload form will be filled with details from the submission.
 
 .. image:: /images/curate_submissions/curate_submissions24.png
 
+Click submit and a confirmation page will be displayed.
+
+.. image:: /images/curate_submissions/curate_submissions24a.png
+
+Finally, click 'Import data'.
+
 After upload, a link on the confirmation page leads back to the submission
 management page.
 
@@ -185,18 +198,22 @@ The status of the profiles should reflect their newly assigned status.
 Rejecting profiles
 ==================
 Sometimes you may need to reject all, or some of, the profiles in the 
-submission.  This may be because isolate data had not been made available, 
-against the policy of the database.  You can do this by changing the value in
-the status dropdown box next to each profile.  Click 'Update' to make the 
-change.
+submission. This may be because isolate data had not been made available, 
+against the policy of the database. You can do this by changing the value in
+the status dropdown box next to each profile. You can also click the 
+'Mark all rejected' button underneath the table to reject all the profiles.
+Click 'Update' to make the change.
 
 .. image:: /images/curate_submissions/curate_submissions27.png
 
 Requesting additonal information
 ================================
 You can send a message to the submitter by entering it in the Messages box and
-clicking 'Send now'.  This will append a message to the submission and send an
-update to the submitter so that they can respond.
+clicking 'Send now'. This will append a message to the submission and send an
+update to the submitter so that they can respond. 
+
+If you are rejecting profiles you should also 'Append' a message to explain why 
+(don't 'Send now' as they will get the message when you close the submission).
 
 Closing the submission
 ======================
