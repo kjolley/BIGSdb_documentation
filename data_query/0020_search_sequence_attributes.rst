@@ -62,11 +62,12 @@ The query form can be modified by clicking the 'Modify form options' tab:
 .. index::
    pair: list query; alleles
 
-A list box can be added by clicking the 'Show' button for 'Allele id list box'.
+A list box can be added by clicking the toggle for 'Allele id list box'.
 
 .. image:: /images/data_query/sequence_attributes11.png
 
-Close the form modification tab and you can now enter a list of allele ids for
+Close the form modification tab by clicking anywhere outside it, or by clicking
+the X in the top-right corner, and you can now enter a list of allele ids for
 retrieval.
 
 .. image:: /images/data_query/sequence_attributes12.png
