@@ -51,7 +51,7 @@ Other query options are available by clicking the 'Modify form options' tab.
 .. image:: /images/data_query/query_profiles4.png
 
 For example, you can enter a list of attributes to query on by clicking the
-'Show' button next to 'Attribute values list'. 
+toggle button next to 'Attribute values list'. 
 
 .. image:: /images/data_query/query_profiles5.png
 
