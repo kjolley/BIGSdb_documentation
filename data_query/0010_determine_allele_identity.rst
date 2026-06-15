@@ -37,12 +37,15 @@ position of the locus within your sequence.
 If only a partial match is found, the most similar allele is identified along 
 with any nucleotide differences. The varying nucleotide positions are numbered 
 both relative to the pasted in sequence and to the reference sequence. The 
-start position of the locus within your sequence is also indicated.
+start position of the locus within your sequence is also indicated. An 
+alignment will also be available which you can see by clicking the 
+'Show alignment' button.
 
 .. image:: /images/data_query/sequence_query4.png 
 
 As an alternative to pasting a sequence in to the box, you can also choose to 
-upload sequences in FASTA format by clicking the file browse button.
+upload sequences in FASTA format by clicking the file browse button or drag
+and dropping the file.
 
 .. image:: /images/data_query/sequence_query5.png 
 
