@@ -25,7 +25,8 @@ Projects
 
 This displays a list of projects that the isolate is a member of. Only projects
 that have a full description and the 'isolate_display' flag in their settings 
-will be displayed. 
+will be displayed. Projects are displayed as cards which are hyperlinked to a
+query that returns the project dataset.
 
 Provenance metadata
 ===================
@@ -43,8 +44,8 @@ This section includes:
   * last update times
   * links to update history
 
-The update link displays page with exact times of who and when updated the 
-record.
+The update history link displays page with exact times of who and when updated
+the record.
 
 .. image:: /images/data_records/isolate_record7.png
 
