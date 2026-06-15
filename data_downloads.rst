@@ -9,7 +9,8 @@ identifier to a sequence.  It also defines scheme, e.g. MLST, profiles.
 ***************************
 Allele sequence definitions
 ***************************
-Click the 'Allele sequences' link in the 'Downloads' section. 
+Expand the 'Downloads' section by clicking the '+' button and then click the
+'Allele sequences' link. 
 
 .. image:: /images/data_downloads/download_alleles.png
 
