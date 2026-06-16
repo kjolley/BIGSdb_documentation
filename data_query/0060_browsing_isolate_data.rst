@@ -6,7 +6,9 @@
 *********************
 Browsing isolate data
 *********************
-Isolate records can be browsed by clicking the link to 'Search database'. 
+Isolate records can be expanding the 'Search' menu on the right-hand side and
+then clicking 'Search database' (other options may also be shown here depending
+on the database configuration). 
 
 .. image:: /images/data_query/browse_isolates.png
 

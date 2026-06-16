@@ -106,7 +106,7 @@ it in the 'Modify form options' tab.
 
 .. image:: /images/data_query/query_isolates14.png
 
-For example, to find all isolates that have designations at >1000 loci, select
+For example, to find all isolates that have multiple designations at >1000 loci, select
 'total designations > 1000', then click 'Submit'.
 
 .. image:: /images/data_query/query_isolates15.png
