@@ -340,8 +340,12 @@ within it.  Common filters are:
 * Provenance fields - Dropdown list boxes of values for specific provenance 
   fields may be present if set for the database.  Users can choose to 
   :ref:`add additional filters <modify_query_filters>`.
+* Private records - Filter on whether the isolate is public or 
+  private/embargoed.
 * Old record versions - Checkbox which, if selected, will include all record 
   versions in a query.
+  
+.. image:: /images/data_query/filters2.png  
     
 .. index::
    pair: isolates; allelic profiles    
@@ -352,9 +356,8 @@ If a scheme, such as MLST, has been defined for an isolate database it is
 possible to query the database against complete or partial allelic profiles. 
 Even if no scheme is defined, queries can be made against all loci. 
 
-On the index page, click 'Search by combinations of loci (profiles)' for any 
-defined scheme. Enter either a partial (any combination of loci) or complete 
-profile. 
+On the index page, expand the Search menu and click 'Search by combinations 
+of loci'. 
 
 .. image:: /images/data_query/profile_combinations.png
 
@@ -363,8 +366,8 @@ query in the 'Schemes' dropdown box and click 'Select'.
 
 .. image:: /images/data_query/profile_combinations2.png
 
-Enter the combination of alleles that you want to query for.  Fields can be 
-left blank.
+Enter the combination of alleles that you want to query for. Some of the fields
+can be left blank.
 
 .. image:: /images/data_query/profile_combinations3.png
 

@@ -10,15 +10,21 @@ that it can be repeated in the future. You need to have an account and be
 logged in to the database to be able to bookmark.
 
 Following a query, there will be a 'Bookmark query' section in the results
-header section. Enter a name for the bookmark (a default name based on the
-date will be shown) and click 'Add bookmark'.
+header section. Click to expand the section.
 
 .. image:: /images/data_query/bookmarks.png
+
+Enter a name for the bookmark (a default name based on the
+date will be shown) and click 'Add bookmark'.
+
+.. image:: /images/data_query/bookmarks7.png
 
 A new top-right tab will appear when you have saved bookmarks. You can click on
 this to easily access all saved bookmarks.
 
 .. image:: /images/data_query/bookmarks2.png
+
+.. image:: /images/data_query/bookmarks8.png
 
 You can also access your bookmarks from the main contents page. A link will
 appear in the query section once you have saved a bookmark.

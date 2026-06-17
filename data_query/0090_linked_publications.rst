@@ -4,17 +4,10 @@
 *****************************************
 Retrieving isolates by linked publication
 *****************************************
-Click 'Analysis' on the contents page.
+Expand the 'Analysis' section on the contents page and click 
+'Publication breakdown'.
 
 .. image:: /images/data_query/publications.png
-
-Click 'Publication breakdown'
-
-.. image:: /images/data_query/publications1.png
-
-Then click 'Launch Publication Breakdown'.
-
-.. image:: /images/data_query/publications1a.png
 
 A list of publications linked by isolates within the database will be 
 displayed.
