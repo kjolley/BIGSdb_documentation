@@ -13,9 +13,10 @@ shared with other user accounts. Note, that simply adding a record to a user
 project does not make the record itself private.
 
 .. note::
-   User projects can be enabled by an administrator by setting 
-   'user_projects="yes"' in the :ref:`config.xml<isolate_xml>` file for the
-   database.
+   User projects can be enabled by an administrator globally by setting 
+   `user_projects=1` in bigsdb.conf. This can be overridden for individual
+   databases by setting `user_projects="yes"` (or "no") in the 
+   :ref:`config.xml<isolate_xml>` file for the database.
 
 To create a new project, go to the isolate database contents page and expand 
 the 'Projects' section. Click 'Your projects'.
@@ -36,8 +37,8 @@ manually editing a list of ids.
 Adding isolates to a user project following a query
 ***************************************************
 Perform an isolate database query. If you have set up a project, there will be
-a link in the results header box. Select your project and click 'Add these 
-records'.
+a link 'Add to project' in the results header box. Click to expand this, select
+your project and click 'Add these records'.
 
 .. image:: /images/user_projects/user_projects3.png
 

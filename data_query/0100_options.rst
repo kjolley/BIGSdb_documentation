@@ -212,6 +212,8 @@ Possible options for loci are:
 
 * analysis - Sets whether the locus can be used in data analysis functions.
 
+.. image:: /images/data_query/locus_options5.png
+
 .. note::
 
    Settings for loci can be overridden by those set for schemes that they are 
