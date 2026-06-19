@@ -7,13 +7,8 @@ BLAST
 The BLAST plugin enables you to BLAST a sequence against any of the genomes in 
 the database, displaying a table of matches and extracting matching sequences.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to BLAST, then click 
-'Launch BLAST'.
 
 .. image:: /images/data_analysis/blast.png
 
@@ -60,7 +55,7 @@ be included in the results table.
 
 .. image:: /images/data_analysis/blast7.png
 
-Multiple values can be selected by clicking while holding down Ctrl.
+Multiple values can be selected.
 
 Parameters fieldset
 ===================

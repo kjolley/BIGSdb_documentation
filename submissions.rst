@@ -58,6 +58,7 @@ how the sequence was obtained:
 * technology - the sequencing platform used, allowed values are:
    
   * 454
+  * DNBSEQ
   * Illumina
   * Ion Torrent
   * PacBio
@@ -125,8 +126,10 @@ box and click 'Append'. This is not normally necessary for routine submissions.
 
 .. image:: /images/submissions/submission9.png
 
-The message will be attached.  A curator may respond to the message and attach
-their own, with the full conversation becoming part of the submission record.
+The message will be attached. Note that you can delete the last message in the 
+conversation if it was you that added it and it was added on the same day. A 
+curator may respond to the message and attach their own, with the full 
+conversation becoming part of the submission record.
 
 .. image:: /images/submissions/submission10.png
 
@@ -303,8 +306,12 @@ their own, with the full conversation becoming part of the submission record.
 Finalize submission
 ===================
 Make sure the 'E-mail submission updates' box is checked if you wish to receive
-E-mail notification of the result of your submission.  This setting is 
-remembered between sessions.
+E-mail notification of the result of your submission. This setting is 
+remembered between sessions. You may also be able to request that your isolate
+record is embargoed (whether this is available depends on the site). If you
+request an embargo, your isolate will remain private until the embargo period
+ends when it will automatically be made public. You can request to make it 
+public at any point before this.
 
 Click 'Finalize submission!'.
 
