@@ -15,13 +15,8 @@ Output is equivalent to a whole genome MLST profile, a distance matrix
 calculated based on allelic differences and a NeighborNet graph generated from 
 this distance matrix.
 
-Genome Comparator can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to 'Genome Comparator', then click 
-'Launch Genome Comparator'.
 
 .. image:: /images/data_analysis/genome_comparator.png 
 
@@ -122,6 +117,10 @@ and speed.
   results in most cases.  The default setting used to be 15 but the new default
   of 20 is almost as good (there was 1 difference among 2000 loci in a test 
   run) but the analysis runs twice as fast.
+* Rescan undesignated loci - By default, if a genome has >= 50% of the selected
+  loci designated, it will not be rescanned. Selecting this option will perform
+  a BLAST query for each genome to attempt to fill in any missing annotations. 
+  Please note that this will take **much longer** to run.
 
 Distance matrix calculation fieldset
 ====================================

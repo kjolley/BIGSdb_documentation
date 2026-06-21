@@ -7,16 +7,8 @@ Field breakdown
 The field breakdown plugin for isolate databases displays the frequency of each
 value for fields, alleles and schemes.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-In the 'Breakdown' category, follow the link to 'Field Breakdown', then click 
-'Launch Field Breakdown'.
-
-The breakdown function can be selected for the whole database by clicking the 
-'Single field' link in the Breakdown section of the main contents page.
 
 .. image:: /images/data_analysis/field_breakdown.png
 
@@ -28,8 +20,8 @@ depending on the setup of the database.
 .. image:: /images/data_analysis/field_breakdown2.png
 
 A chart will be displayed for the first field. Depending on the field type,
-this may be either a world map (for country or continent fields), pie chart,
-or bar chart.
+this may be either a world map (for country or continent fields), pie chart, 
+bar chart or treemap.
 
 .. image:: /images/data_analysis/field_breakdown3.png
 
@@ -67,7 +59,8 @@ a reasonable display for most latitudes but you may prefer others such as
 
 .. image:: /images/data_analysis/field_breakdown5c.png
 
-To see the same data as a pie chart, click the 'Pie' or 'Donut' icons.
+To see the same data as a pie chart or a treemap, click the 'Pie', 'Donut', or 
+'Treemap' icons.
 
 .. image:: /images/data_analysis/field_breakdown5d.png
 
@@ -88,10 +81,20 @@ chart).
 
 .. image:: /images/data_analysis/field_breakdown7a.png
 
-
 Values can also be removed from the analysis by clicking their label in the 
 legend below the chart. The percentages of the other values will be 
 recalculated. Clicking the label again will re-add the value.  
+
+Treemaps
+========
+The chart can be transformed in to a treemap by clicking the treemap icon.
+
+.. image:: /images/data_analysis/field_breakdown18.png
+
+As with pie charts, the area of rectangles within the visualisation represent
+the frequency of values.
+
+.. image:: /images/data_analysis/field_breakdown19.png
 
 Bar charts
 ==========

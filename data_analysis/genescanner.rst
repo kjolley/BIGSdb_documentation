@@ -14,13 +14,8 @@ It reads nucleotide, protein, or both types of FASTA alignments and produces:
   * Detection of protein mutations types and location.
   * Group-wise comparisons.
   
-GeneScanner can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to 'GeneScanner', then click 
-'Launch GeneScanner'.
 
 .. image:: /images/data_analysis/genescanner.png
 

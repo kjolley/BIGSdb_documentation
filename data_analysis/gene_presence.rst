@@ -14,15 +14,10 @@ scanning the genomes. The results can be displayed as interactive pivot tables
 or a heatmap. The analysis is limited to 500,000 data points (locus x 
 isolates).
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
 
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to 'Gene Presence', then click 
-'Launch Gene Presence'.
-
-.. image:: /images/data_analysis/gene_presence1.png
+.. image:: /images/data_analysis/gene_presence.png
 
 Alternatively, it can be accessed following a query by clicking the 'Gene 
 Presence' button at the bottom of the results table. Isolates returned from 

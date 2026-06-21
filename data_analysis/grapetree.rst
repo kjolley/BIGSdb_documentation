@@ -14,16 +14,8 @@ algorithms and is able to produce publication quality outputs. Datasets can
 include metadata which allows nodes in the resultant tree to be coloured 
 interactively.
 
-GrapeTree can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Third party' category, follow the link to GrapeTree, then click 
-'Launch GrapeTree'.
-
-GrapeTree can be accessed from the contents page by clicking the 'GrapeTree'
-link.
 
 .. image:: /images/data_analysis/grapetree.png 
 

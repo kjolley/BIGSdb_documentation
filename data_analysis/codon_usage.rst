@@ -9,16 +9,8 @@ Codon usage
 The codon usage plugin for isolate databases calculates the absolute and 
 relative synonymous codon usage by isolate and by locus.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to 'Codon Usage', then click 
-'Launch Codon Usage'.
-
-The function can be selected by clicking the 'Codon usage' link in the Analysis
-section of the main contents page.
 
 .. image:: /images/data_analysis/codon_usage.png
 
