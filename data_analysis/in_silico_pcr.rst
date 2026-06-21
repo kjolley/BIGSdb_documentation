@@ -10,13 +10,8 @@ plugin uses the `exonerate ipcress
 <https://www.animalgenome.org/bioinfo/resources/manuals/exonerate/>`_ 
 program to perform its simulation.
 
-The tool can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to BLAST, then click 
-'Launch PCR'.
 
 .. image:: /images/data_analysis/pcr1.png
 
