@@ -49,15 +49,10 @@ If you use the *A. baumannii* K or OC locus databases, please also cite:
   extensive and diverse repertoire of genes found at and outside the K locus.
   Microbial Genomics 8. https://doi.org/10.1099/mgen.0.000878
       
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
 
 .. image:: /images/data_analysis/kaptive.png
-
-Jump to the ‘Third party’ category, follow the link to Kaptive, then click 
-‘Launch Kaptive’.
-
-.. image:: /images/data_analysis/kaptive2.png
 
 Alternatively, it can be accessed following a query by clicking the ‘Kleborate’ 
 button in the 'Third party' list at the bottom of the results table. Please 
@@ -75,9 +70,9 @@ Click submit.
 
 The analysis will be submitted to the job queue.
 
-When the job has completed you will see a files available for download in 
-tab-delimited text and Excel formats, as well as SVG file(s) containing a
-visualisation of each locus.
+When the job has completed you will see files available for download in 
+tab-delimited text and Excel formats. If a single isolate has been selected 
+these may also include SVG file(s) containing a visualisation of each locus.
 
 .. image:: /images/data_analysis/kaptive5.png
 

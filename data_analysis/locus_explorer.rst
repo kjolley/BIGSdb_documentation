@@ -88,7 +88,7 @@ If a DNA coding sequence locus is selected, an aligned translation can be
 produced.
 
 Select the alleles that you would like to include in the analysis. Again, 
-variable length loci are limited to 200 sequences or fewer since these need 
+variable length loci are limited to 2000 sequences or fewer since these need 
 to be aligned. Click ‘Translate’.
 
 .. image:: /images/data_analysis/locus_explorer10.png

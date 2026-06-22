@@ -29,33 +29,20 @@ Lam *et al.* 2022 *Microb Genom* **8:** 000800
 Kleborate will usually only be available on databases hosting suitable data
 i.e. *Klebsiella* isolates.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
 
 .. image:: /images/data_analysis/kleborate.png
 
-Jump to the ‘Third party’ category, follow the link to Kleborate, then click 
-‘Launch Kleborate’.
-
-.. image:: /images/data_analysis/kleborate2.png
-
 Alternatively, it can be accessed following a query by clicking the ‘Kleborate’ 
-button in the 'Third party' list at the bottom of the results table. Please 
+button in the 'Analysis' list at the bottom of the results table. Please 
 note that the list of functions here may vary depending on the setup of the 
 database.
 
 .. image:: /images/data_analysis/kleborate3.png
 
 Select the isolate records to analyse - these will be pre-selected if you 
-accessed the plugin following a query. You can then choose the analysis to run:
-
-* Basic screening for species, MLST and virulence loci
-* As above and turn on screening for resistance genes (--resistance)
-* As above and turn on screening for K & O antigen loci (--all)
-
-Click submit.
-
-.. image:: /images/data_analysis/kleborate4.png
+accessed the plugin following a query. 
 
 The analysis will be submitted to the job queue.
 

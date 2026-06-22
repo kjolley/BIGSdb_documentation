@@ -15,15 +15,8 @@ selected metadata that can be used to annotate it.
 
 Only isolates with an assigned LIN code can be included in the tree.
 
-Lintree can be accessed by selecting the 'Third party' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Third party' category, follow the link to LINtree, then click 
-'Launch LINtree'.
-
-LINtree can be accessed from the contents page by clicking the 'LINtree' link.
 
 .. image:: /images/data_analysis/lintree2.png
 

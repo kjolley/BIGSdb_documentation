@@ -12,21 +12,10 @@ threshold.
 The visualisation can be exported as a SVG file for further manipulation or for
 publication.
 
-.. note::
-   
-   LIN is a trademark registered by This Genomic Life, Inc, Floyd, VA, USA.
-
 .. image:: /images/data_analysis/linvis.png
 
-LINvis can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to LINvis, then click 
-'Launch LINvis'.
-
-LINvis can be accessed from the contents page by clicking the 'LINtree' link.
 
 .. image:: /images/data_analysis/linvis2.png
 
