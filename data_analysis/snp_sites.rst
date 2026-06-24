@@ -15,13 +15,10 @@ showing the number of alleles and polymorphisms found for each locus.
 The snp-sites algorithm and program are described in 
 `Page et al. 2016. Microb Gen 2:e000056 <https://pubmed.ncbi.nlm.nih.gov/28348851/>`_.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
 
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to 'SNPSites', then click 
-'Launch SNPsites'.
+.. image:: /images/data_analysis/snp_sites4.png
 
 Alternatively, it can be accessed following a query by clicking the 'SNPSites' 
 button in the Analysis list at the bottom of the results table.  Please note 

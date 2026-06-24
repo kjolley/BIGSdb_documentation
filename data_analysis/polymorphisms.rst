@@ -10,13 +10,8 @@ The Polymorphisms plugin generates a :ref:`Locus Explorer <locus_explorer>`
 polymorphic site analysis on the alleles designated in an isolate dataset 
 following a query.
 
-The analysis can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Breakdown' category, follow the link to Polymorphisms, then click 
-'Launch Polymorphisms'.
 
 .. image:: /images/data_analysis/polymorphisms.png
 
@@ -25,7 +20,10 @@ Breakdown list at the bottom of a results table following a query.
 
 .. image:: /images/data_analysis/polymorphisms2.png
 
-Select the locus that you would like to analyse from the list.
+Select the isolate records to analyse (on large databases you will need to 
+enter a list of ids). These will be pre-selected if you accessed the plugin 
+following a query. Select the locus that you would like to analyse from the 
+list.
 
 .. image:: /images/data_analysis/polymorphisms3.png
 

@@ -7,16 +7,8 @@ ReporTree
 ReporTree is a pan-pathogen tool for automated and reproducible identification 
 and characterization of genetic clusters.
 
-ReporTree can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Third party' category, follow the link to ReporTree, then click 
-'Launch ReporTree'.
-
-ReporTree can be accessed from the contents page by clicking the 'ReporTree'
-link.
 
 .. image:: /images/data_analysis/reportree1.png 
 

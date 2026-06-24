@@ -20,7 +20,16 @@ isolate fields and schemes to include.
 
 .. image:: /images/data_export/isolate_export3.png
 
-Click Submit.
+Note that you can enable additional search terms by clicking the 'Modify form'
+tab at the top-right of the page:
+
+.. image:: /images/data_export/isolate_export7.png
+
+This loads an option page with different categories that can be toggled on.
+
+.. image:: /images/data_export/isolate_export8.png
+
+Click Submit once you have selected all fields to include.
 
 You can then download the data in tab-delimited text or Excel formats.
 
@@ -30,6 +39,12 @@ Export jobs for larger datasets will be sent to the job queue.
 
 Advanced options
 ================
+
+Toggle 'General options' on the form modification panel.
+
+.. image:: /images/data_export/isolate_export9.png
+
+This enables the Options fieldset:
 
 .. image:: /images/data_export/isolate_export5.png
 
@@ -51,6 +66,12 @@ Molecular weight calculation
 ============================
 The plugin can also calculate the predicted molecular weight of the gene 
 product of any allele designated in the dataset.
+
+Toggle 'Molecular weights' on the form modification panel.
+
+.. image:: /images/data_export/isolate_export10.png
+
+This enables the Molecular weight calculation fieldset.
 
 .. image:: /images/data_export/isolate_export6.png
 

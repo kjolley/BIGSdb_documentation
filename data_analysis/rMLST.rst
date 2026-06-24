@@ -12,15 +12,8 @@ found within a single species (or higher taxonomic rank if alleles unique
 to a species are not found). This is done by making a query to the rMLST
 genome database.
 
-The tool can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Analysis' category, follow the link to rMLST species identity, then click 
-'Launch rMLST species identity'.
-
-The tool can be accessed from the front page of an isolate database.
 
 .. image:: /images/data_analysis/rmlst1.png
 

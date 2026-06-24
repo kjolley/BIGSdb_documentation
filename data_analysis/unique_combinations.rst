@@ -8,17 +8,8 @@ The Unique Combinations plugin calculates the frequencies of unique field
 combinations within an isolate dataset.  Provenance fields, composite fields, 
 allele designations and scheme fields can be combined.
 
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
-
-.. image:: /images/data_analysis/analysis.png
-
-Jump to the 'Breakdown' category, follow the link to Unique Combinations, then 
-click 'Launch Unique Combinations'.
-
-The function can be selected by clicking the 'Unique combinations' link in the
-Breakdown section of the main contents page.  This will run the analysis on the
-entire database.
 
 .. image:: /images/data_analysis/unique_combinations.png
 
@@ -30,8 +21,9 @@ database.
 
 .. image:: /images/data_analysis/unique_combinations2.png
 
-Select the combination of fields to analyse, e.g. serogroup and finetyping 
-antigens.
+Select the combination of fields to analyse, e.g. serogroup, finetyping 
+antigens, and the locus fHbp_peptide. The dropdown lists allow you to search
+and select multiple values.
 
 .. image:: /images/data_analysis/unique_combinations3.png
 
@@ -40,3 +32,7 @@ completed, you will be able to download the results in tab-delimited text or
 Excel formats.
 
 .. image:: /images/data_analysis/unique_combinations4.png
+
+An exemple output (Excel format) is shown below:
+
+.. image:: /images/data_analysis/unique_combinations5.png

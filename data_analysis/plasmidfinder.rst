@@ -18,15 +18,10 @@ primarily from *Enterobacteriaceae*. It is described in:
    Methods Mol Biol 2075:285-294.
    https://pubmed.ncbi.nlm.nih.gov/31584170/
    
-The function can be accessed by selecting the 'Analysis' section on the main 
+The function can be accessed by expanding the 'Analysis' section on the main 
 contents page.
 
 .. image:: /images/data_analysis/plasmidfinder1.png
-
-Jump to the ‘Third party’ category, follow the link to PlasmidFinder, then click 
-‘Launch PlasmidFinder’.
-
-.. image:: /images/data_analysis/plasmidfinder2.png
 
 Alternatively, it can be accessed following a query by clicking the ‘PlasmidFinder’ 
 button in the 'Third party' list at the bottom of the results table. Please 

@@ -12,3 +12,7 @@ specialists. It uses template files that can be modified as required.
 
 See https://github.com/kjolley/Klebsiella_reports for examples of how to 
 configure report templates.
+
+An example report is shown below:
+
+.. image:: /images/data_analysis/reports2.png
