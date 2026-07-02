@@ -13,7 +13,7 @@ page.
 
 The next available id will be filled in automatically but you are free to 
 change this. Fill in the individual fields. Required fields are listed first 
-and are marked with an exclamation mark (!). Some fields may have drop-down 
+and are in bold. Some fields may have drop-down 
 list boxes of allowed values. You can also enter allele designations for any 
 loci that have been defined.
 
