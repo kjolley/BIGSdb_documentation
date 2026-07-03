@@ -15,6 +15,10 @@ and the design of effective vaccines. FlavoTyper enables this characterization
 directly from genome assemblies, making serotyping scalable, reproducible, and
 independent of wet-lab assays.
 
+FlavoTyper was developed by Salma Mbarki in the Laboratory of Eric Duchaud, 
+Unité Virologie et Immunologie Moléculaires (INRAE), France. The code can be 
+found at https://pypi.org/project/flavotyper/.
+
 The tool will only be enabled on the database for *Flavobacterium psychrophilum*.
 
 The function can be accessed by expanding the 'Analysis' section on the main 
