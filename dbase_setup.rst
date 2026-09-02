@@ -520,6 +520,12 @@ Any value set here can be overridden in a
     attribute is set to 'yes', the plugin can be disabled by setting this 
     attribute to 'no'. 
     
+* hide_account_requests
+
+  * Sets whether to hide account requests in the specific database 
+    configuration. Used where there may be multiple configurations in use.
+    Either 'yes' or 'no', default 'no'.
+
 * hide_unused_schemes   
 
   * Sets whether a scheme is shown in a main results table if none of the
@@ -1371,6 +1377,12 @@ Any value set here can be overridden in a
   * Enable link to genome submissions (automated submission system): either 
     'yes' or 'no', default 'yes'.
   * To enable, you will also need to set isolate_submissions="yes".
+  
+* hide_account_requests
+
+  * Sets whether to hide account requests in the specific database 
+    configuration. Used where there may be multiple configurations in use.
+    Either 'yes' or 'no', default 'no'.
     
 * isolate_database
 
