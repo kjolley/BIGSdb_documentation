@@ -1176,7 +1176,9 @@ Element content: Field name + optional list <optlist> of allowed values, e.g.::
 * sort
 
   * Sets if optlist should be sorted. Allowed values are 'yes' and 'no'.
-    Default is 'no'.
+    Default is 'no'. If this is set to 'yes', you can exclude specific options
+    so that they appear at the end by setting sort="no" in the <option> 
+    attribute.
     
 * suffix
 
