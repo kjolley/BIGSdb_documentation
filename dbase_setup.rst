@@ -722,6 +722,11 @@ Any value set here can be overridden in a
 
   * Isolate databases only: Switches off display of publication filter in
     isolate query form by default: either 'yes' or 'no', default 'no'.
+    
+* nowarn_no_designations
+
+  * Isolate databases only. Set to 'yes' to suppress the warning if an isolate
+    submission has no allele designations set.
   
 * only_sets
 
