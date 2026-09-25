@@ -537,6 +537,11 @@ Any value set here can be overridden in a
   * Host name/IP address of machine hosting isolate database, default
     'localhost'. 
     
+* isolate_submission_supporting_files
+
+  * Set to 'yes' to allow supporting files to be added to isolate submissions.
+    These are not usually required for isolates so this is disabled by default.
+    
 * itol_record_limit
 
   * Overrides the maximum number of records that can be included in an ITOL 
